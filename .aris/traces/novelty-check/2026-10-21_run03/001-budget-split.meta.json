@@ -1,0 +1,11 @@
+{
+  "call_number": 1,
+  "purpose": "budget-split",
+  "agent_id": "/root/budget_split_check",
+  "reviewer_family": "openai",
+  "status": "ok",
+  "decision": "PROCEED WITH CAUTION",
+  "model": "gpt-6-astra",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional"
+}

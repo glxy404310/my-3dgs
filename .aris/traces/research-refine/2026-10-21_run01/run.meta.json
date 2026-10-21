@@ -1,0 +1,17 @@
+{
+  "skill": "research-refine",
+  "run_id": "2026-10-21_run01",
+  "started_at": "2026-10-21T18:34:32+08:00",
+  "completed_at": "2026-10-21T18:41:46.803109+08:00",
+  "executor": "codex",
+  "executor_family": "openai",
+  "reviewer_model": "gpt-6-astra",
+  "project_dir": "D:\\Documents\\my 3dgs",
+  "rounds_completed": 5,
+  "max_rounds": 5,
+  "final_score": 7.55,
+  "final_verdict": "REVISE",
+  "calibration": "none",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional"
+}

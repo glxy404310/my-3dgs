@@ -1,0 +1,157 @@
+{
+  "date": "2026-10-21",
+  "scope": "Focused literature roadmap; not exhaustive novelty verification; no new experiments",
+  "papers": [
+    {
+      "id": "P00",
+      "title": "3D Gaussian Splatting for Real-Time Radiance Field Rendering",
+      "arxiv": "2308.04079",
+      "year": "2023",
+      "status": "baseline",
+      "routes": [
+        "R1",
+        "R2"
+      ],
+      "url": "https://arxiv.org/abs/2308.04079"
+    },
+    {
+      "id": "P01",
+      "title": "Revising Densification in Gaussian Splatting",
+      "arxiv": "2404.06109",
+      "year": "2024",
+      "status": "published",
+      "routes": [
+        "R1",
+        "R3"
+      ],
+      "url": "https://arxiv.org/abs/2404.06109"
+    },
+    {
+      "id": "P02",
+      "title": "Steepest Descent Density Control for Compact 3D Gaussian Splatting",
+      "arxiv": "2505.05587",
+      "year": "2025",
+      "status": "published",
+      "routes": [
+        "R1",
+        "R2"
+      ],
+      "url": "https://arxiv.org/abs/2505.05587"
+    },
+    {
+      "id": "P03",
+      "title": "DC4GS: Directional Consistency-Driven Adaptive Density Control for 3D Gaussian Splatting",
+      "arxiv": "2510.26921",
+      "year": "2025",
+      "status": "published",
+      "routes": [
+        "R1",
+        "R2"
+      ],
+      "url": "https://arxiv.org/abs/2510.26921"
+    },
+    {
+      "id": "P04",
+      "title": "AdpSplit: Error-Driven Adaptive Splitting for Faster Geometry Discovery in 3D Gaussian Splatting",
+      "arxiv": "2605.06876",
+      "year": "2026",
+      "status": "preprint",
+      "routes": [
+        "R2"
+      ],
+      "url": "https://arxiv.org/abs/2605.06876"
+    },
+    {
+      "id": "P05",
+      "title": "BOGausS: Better Optimized Gaussian Splatting",
+      "arxiv": "2504.01844",
+      "year": "2025",
+      "status": "published",
+      "routes": [
+        "R3",
+        "R4"
+      ],
+      "url": "https://arxiv.org/abs/2504.01844"
+    },
+    {
+      "id": "P06",
+      "title": "Improving Densification in 3D Gaussian Splatting for High-Fidelity Rendering",
+      "arxiv": "2508.12313",
+      "year": "2025/2026",
+      "status": "arxiv_version_2025_venue_not_used",
+      "routes": [
+        "R2",
+        "R3"
+      ],
+      "url": "https://arxiv.org/abs/2508.12313"
+    },
+    {
+      "id": "P07",
+      "title": "Faster 3D Gaussian Splatting Convergence via Structure-Aware Densification",
+      "arxiv": "2604.28016",
+      "year": "2026",
+      "status": "published",
+      "routes": [
+        "R2"
+      ],
+      "url": "https://arxiv.org/abs/2604.28016"
+    },
+    {
+      "id": "P08",
+      "title": "Decomposing Densification in Gaussian Splatting for Faster 3D Scene Reconstruction",
+      "arxiv": "2507.20239",
+      "year": "2025",
+      "status": "preprint",
+      "routes": [
+        "R5"
+      ],
+      "url": "https://arxiv.org/abs/2507.20239"
+    },
+    {
+      "id": "P09",
+      "title": "Taming 3DGS: High-Quality Radiance Fields with Limited Resources",
+      "arxiv": "2406.15643",
+      "year": "2024",
+      "status": "published",
+      "routes": [
+        "R5"
+      ],
+      "url": "https://arxiv.org/abs/2406.15643"
+    },
+    {
+      "id": "P10",
+      "title": "ResGS: Residual Densification of 3D Gaussian for Efficient Detail Recovery",
+      "arxiv": "2412.07494",
+      "year": "2024/2025",
+      "status": "published_ICCV2025",
+      "routes": [
+        "R4",
+        "R5"
+      ],
+      "url": "https://arxiv.org/abs/2412.07494"
+    },
+    {
+      "id": "P11",
+      "title": "A Hierarchical 3D Gaussian Representation for Real-Time Rendering of Very Large Datasets",
+      "arxiv": "2406.12080",
+      "year": "2024",
+      "status": "published",
+      "routes": [
+        "R6"
+      ],
+      "url": "https://arxiv.org/abs/2406.12080"
+    },
+    {
+      "id": "P12",
+      "title": "EvoGS: Constructing Continuous-Layered Gaussian Splatting with Evolution Tree for Scalable 3D Streaming",
+      "arxiv": "2606.07179",
+      "year": "2026",
+      "status": "preprint",
+      "routes": [
+        "R4",
+        "R6"
+      ],
+      "url": "https://arxiv.org/abs/2606.07179"
+    }
+  ]
+}

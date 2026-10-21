@@ -1,0 +1,12 @@
+{
+  "call_number": 2,
+  "purpose": "method-review-round-2",
+  "agent_id": "/root/handoff_refine_review",
+  "model": "gpt-6-astra",
+  "reviewer_family": "openai",
+  "status": "ok",
+  "score": 7.55,
+  "verdict": "REVISE",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional"
+}

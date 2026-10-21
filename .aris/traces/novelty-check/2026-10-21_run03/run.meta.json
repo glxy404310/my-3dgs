@@ -1,0 +1,11 @@
+{
+  "skill": "novelty-check",
+  "run_id": "2026-10-21_run03",
+  "started_at": "2026-10-21T18:11:19.880840+08:00",
+  "executor": "codex",
+  "executor_family": "openai",
+  "project_dir": "D:\\Documents\\my 3dgs",
+  "model": "gpt-6-astra",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional"
+}

@@ -1,0 +1,10 @@
+{
+  "skill": "novelty-check",
+  "run_id": "2026-10-21_run02",
+  "started_at": "2026-10-21T14:55:09.471252",
+  "executor": "codex",
+  "executor_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "project_dir": "D:\\Documents\\my 3dgs"
+}

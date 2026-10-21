@@ -1,0 +1,11 @@
+{
+  "call_number": 1,
+  "purpose": "topic-validation",
+  "agent_id": "/root/final_novelty_validation",
+  "model": "gpt-6-astra",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "decision": "PROCEED WITH CAUTION",
+  "timestamp": "2026-10-21T14:55:09.471252"
+}

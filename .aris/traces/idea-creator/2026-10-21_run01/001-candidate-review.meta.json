@@ -1,0 +1,10 @@
+{
+  "call_number": 1,
+  "purpose": "candidate-novelty-and-pilot-review",
+  "agent_id": "/root/novelty_review",
+  "model": "gpt-6-astra",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok"
+}

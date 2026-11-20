@@ -1,0 +1,47 @@
+{
+  "kind": "analytic_mechanism_sanity_check",
+  "not_evidence_of": [
+    "novelty",
+    "real-scene improvement",
+    "Gaussian parent fit",
+    "runtime speedup"
+  ],
+  "seed": 20261022,
+  "random_rays": 2000,
+  "counterexample": {
+    "original_rgb_black_background": [
+      0.5,
+      0.25,
+      0.125
+    ],
+    "background_transmittance": 0.125,
+    "external_green_coefficient": 0.25,
+    "parent_opacity_preserving_total_transmittance": 0.75,
+    "parent_before_external_green_coefficient": 0.125,
+    "parent_after_external_green_coefficient": 0.5,
+    "scope": "response to variable external color; not impossibility of fitting one fixed pixel"
+  },
+  "max_adjacent_swap_identity_error": 3.5558023124046426e-16,
+  "triangle_bound_violations": 0,
+  "max_total_transmittance_change": 2.7755575615628914e-17,
+  "mean_order_error_l2": 0.06970507203622014,
+  "mean_bound": 0.07971284720275511,
+  "same_geometry_controls": {
+    "contrasting_visible": {
+      "depth_span": 2.0,
+      "bound": 0.3535533905932738,
+      "actual_order_error_l2": 0.3535533905932738
+    },
+    "same_colors": {
+      "depth_span": 2.0,
+      "bound": 0.0,
+      "actual_order_error_l2": 0.0
+    },
+    "transparent_external": {
+      "depth_span": 2.0,
+      "bound": 0.0,
+      "actual_order_error_l2": 0.0
+    }
+  },
+  "pass": true
+}

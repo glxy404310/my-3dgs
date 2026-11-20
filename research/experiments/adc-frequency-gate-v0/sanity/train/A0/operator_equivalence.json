@@ -1,0 +1,6 @@
+{
+  "pass_checks": true,
+  "full_capture_and_optimizer_exact": true,
+  "reference": "known_adc_ops.py",
+  "event": 3600
+}

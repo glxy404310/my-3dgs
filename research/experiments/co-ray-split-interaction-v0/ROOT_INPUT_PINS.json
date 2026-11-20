@@ -1,0 +1,30 @@
+{
+  "research/experiments/split-diagnostic-v0/early3600_seed0/event_state.pth": {
+    "sha256": "72f3a02b3bc126bf69a71a573162d97b022304ff4f4c354e54dd19e2ca454ed1",
+    "bytes": 770456920
+  },
+  "research/experiments/matched-count-v0/early/las_split/selection.json": {
+    "sha256": "c0fc4b67b007cf4331c1880d4928d20e5ed792f6e9a1bbf9b5d8d9eecb0661d6",
+    "bytes": 60988
+  },
+  "research/experiments/matched-count-v0/early/las_split/split_children.pt": {
+    "sha256": "8a0580500b050bf82793ccd0ce8bef136654eddef44ebd8e1994f9a0c0468f46",
+    "bytes": 85088
+  },
+  "research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/CAMERAS.json": {
+    "sha256": "1dee02c8e1a7f36309a040c5413fd05676a149256c75ed53a6de756411702b55",
+    "bytes": 823075
+  },
+  "scripts/experiments/split_diagnostic.py": {
+    "sha256": "ceba6db575be441c62ee61b75a18a9d226df4ce6a44348add32e7863c6943252",
+    "bytes": 17213
+  },
+  "research/experiments/mode-state-v0/main/MODE_RESULTS.json": {
+    "sha256": "cf206a0a246777c9e67dbb73cf20bc235ab45220e32ff8d91191dbb276e28bb8",
+    "bytes": 12974
+  },
+  "research/experiments/adc-frequency-gate-v0/main/truck/RESULTS.json": {
+    "sha256": "f206728b95a7271224a19ec191ef622d777270c623ca595c15203742e74952b6",
+    "bytes": 12584
+  }
+}

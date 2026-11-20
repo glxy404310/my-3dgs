@@ -1,0 +1,82 @@
+[
+  {
+    "iteration": 3600,
+    "n_before": 1058297,
+    "cloned_parents": 23206,
+    "split_parents": 12946,
+    "pruned_points": 1565,
+    "n_after": 1092884
+  },
+  {
+    "iteration": 3700,
+    "n_before": 1092884,
+    "cloned_parents": 20060,
+    "split_parents": 11464,
+    "pruned_points": 1365,
+    "n_after": 1123043
+  },
+  {
+    "iteration": 3800,
+    "n_before": 1123043,
+    "cloned_parents": 19103,
+    "split_parents": 11245,
+    "pruned_points": 1316,
+    "n_after": 1152075
+  },
+  {
+    "iteration": 3900,
+    "n_before": 1152075,
+    "cloned_parents": 14730,
+    "split_parents": 9174,
+    "pruned_points": 1299,
+    "n_after": 1174680
+  },
+  {
+    "iteration": 4000,
+    "n_before": 1174680,
+    "cloned_parents": 16846,
+    "split_parents": 9541,
+    "pruned_points": 1279,
+    "n_after": 1199788
+  },
+  {
+    "iteration": 4100,
+    "n_before": 1199788,
+    "cloned_parents": 13981,
+    "split_parents": 7390,
+    "pruned_points": 1165,
+    "n_after": 1219994
+  },
+  {
+    "iteration": 4200,
+    "n_before": 1219994,
+    "cloned_parents": 13693,
+    "split_parents": 7808,
+    "pruned_points": 1155,
+    "n_after": 1240340
+  },
+  {
+    "iteration": 4300,
+    "n_before": 1240340,
+    "cloned_parents": 12163,
+    "split_parents": 6623,
+    "pruned_points": 1051,
+    "n_after": 1258075
+  },
+  {
+    "iteration": 4400,
+    "n_before": 1258075,
+    "cloned_parents": 14186,
+    "split_parents": 7243,
+    "pruned_points": 1065,
+    "n_after": 1278439
+  },
+  {
+    "iteration": 4500,
+    "n_before": 1278439,
+    "cloned_parents": 10717,
+    "split_parents": 5375,
+    "pruned_points": 962,
+    "n_after": 1293569
+  }
+]

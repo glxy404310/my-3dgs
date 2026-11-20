@@ -1,0 +1,74 @@
+[
+  {
+    "view": "000002.jpg",
+    "rank": 0,
+    "filename": "CACHE_000.npz",
+    "sha256": "193ae8e0be4dfd52de21ad767b35e11a62b1e65f17e1cee647446b27edf07da4",
+    "selected_candidates": 530618,
+    "unique_selected_ids": 333624,
+    "native_num_rendered": 4525910
+  },
+  {
+    "view": "000037.jpg",
+    "rank": 31,
+    "filename": "CACHE_031.npz",
+    "sha256": "47f87025b53db689e6456cd2b1265c99cb02504bf6690aaaa8ba3d5c01365201",
+    "selected_candidates": 627772,
+    "unique_selected_ids": 364330,
+    "native_num_rendered": 5020416
+  },
+  {
+    "view": "000072.jpg",
+    "rank": 62,
+    "filename": "CACHE_062.npz",
+    "sha256": "5c990a5f3a97dc24da4506ce677706673488a8ef2e08ab27bc9b7253907dec1b",
+    "selected_candidates": 543070,
+    "unique_selected_ids": 284947,
+    "native_num_rendered": 4506790
+  },
+  {
+    "view": "000108.jpg",
+    "rank": 93,
+    "filename": "CACHE_093.npz",
+    "sha256": "90dd7a966038e30c647a508667f2c761cbab2e337a58009a293f57e102eb939d",
+    "selected_candidates": 524488,
+    "unique_selected_ids": 345242,
+    "native_num_rendered": 4365006
+  },
+  {
+    "view": "000143.jpg",
+    "rank": 124,
+    "filename": "CACHE_124.npz",
+    "sha256": "d0bf8e29e1bc517d57a6025010fb3843d0ccbd85dabc9e19acbe0243647f67f5",
+    "selected_candidates": 621954,
+    "unique_selected_ids": 314785,
+    "native_num_rendered": 5150419
+  },
+  {
+    "view": "000179.jpg",
+    "rank": 155,
+    "filename": "CACHE_155.npz",
+    "sha256": "ffb948fed7051856cdf75b3ef48aa3d023e61e9d6f3390a39a962eed12b73224",
+    "selected_candidates": 561407,
+    "unique_selected_ids": 320964,
+    "native_num_rendered": 4610243
+  },
+  {
+    "view": "000214.jpg",
+    "rank": 186,
+    "filename": "CACHE_186.npz",
+    "sha256": "96182628e0b43bcb3897c2752dfd4bbc8b2ee1ac101adeb4ae4af240e68e7603",
+    "selected_candidates": 648378,
+    "unique_selected_ids": 350999,
+    "native_num_rendered": 5305793
+  },
+  {
+    "view": "000251.jpg",
+    "rank": 218,
+    "filename": "CACHE_218.npz",
+    "sha256": "eb26d27ede28b8943e39216f3606eca7f8a03004d24a7b517d703867eee09cc6",
+    "selected_candidates": 453972,
+    "unique_selected_ids": 288255,
+    "native_num_rendered": 3941761
+  }
+]

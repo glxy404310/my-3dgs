@@ -1,0 +1,249 @@
+"3DGS"^2-TR: Scalable Second-Order Trust-Region Method for 3D Gaussian Splatting (https://arxiv.org/html/2602.00395v1)
+citeturn39view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2602.00395v1","lineno":300}); Total lines: 578
+L285: ADAM-TR (Ours)  | 0.774  | 0.791  | 0.798  | 21.62  | 22.16  | 22.42  | 0.273  | 0.264  | 0.295  | 227  | 3.27
+L286: 3DGS^{2}-TR (Ours) ^{2}^{2}footnotemark: 2  | 0.787  | 0.800  | 0.805  | 22.12  | 22.63  | 22.85  | 0.262  | 0.255  | 0.279  | 484  | 4.12
+L287:   * 1
+L288: 
+L289: 3DGS-LM results are reported @35, @75, and @150 iterations.
+L290: 
+L291:   * 2
+L292: 
+L293: System implementation is not fully optimized. See Section 【26†6】 for details.
+L294: 
+L295: Table 1: The main quantitative result. Best results are boldfaced and second best are underlined. 【81†Image: Refer to caption】 Figure 4: Qualitative comparison of different methods of the truck, playroom, and room scenes. The red boxes highlight regions where $\text{3DGS}^{2}$-TR significantly outperforms other methods.
+L296: We also include an ablation study which applies our Hellinger-distance-based trust region to the ADAM update step (ADAM-TR).
+L297: 
+L298: Since 3DGS-LM has a high computation overhead, we only run it for 150 iterations in total, and report the results at 35, 75, and 150 iterations. We run all other methods for 30k iterations and report results at 7k, 15k, and 30k iterations. We use the same train/test split and report the same metrics (SSIM, PSNR, LPIPS) on the test images as proposed by 3DGS.
+L299: The main quantitative results are presented in 【82†Table 1】. (Results for individual scenes can be found in 【29†Appendix A】.) Qualitative comparisons for some scenes are shown in 【83†Figure 4】. $\text{3DGS}^{2}$-TR significantly outperforms other methods, reaching comparable or better reconstruction quality using 50% fewer iterations than first-order methods (ADAM and ADAM-TR).
+L300: In the case of Tanks & Temples, $\text{3DGS}^{2}$-TR is able to exceed the best ADAM PSNR by 0.56dB at 7k iterations and 1.19dB at 30k iterations. Moreover, $\text{3DGS}^{2}$-TR requires less than 1GB of additional GPU memory for training in all scenes, which is 17% more than ADAM and 85% less than 3DGS-LM on average.
+L301: In contrast, 3DGS-LM does not produce comparable results with the same initialization, given significantly more time and resources. We also note that by applying our trust-region clipping to the ADAM updates (ADAM-TR), we are already able to achieve better quality than the vanilla ADAM optimizer.
+L302: ## 6 Discussions and Limitations
+L303: 
+L304: Our method achieves much faster convergence per step compared to ADAM. However, due to a naive implementation of the Sophia optimizer in PyTorch, our second-order method has a higher run time per iteration, which is not a fundamental limitation of the algorithm itself. We plan to optimize the PyTorch implementation to reach comparable performance to ADAM for tensor manipulation in future work.
+L305: Compared to other proposed second-order optimizers, our method is fairly non-intrusive to the vanilla training pipeline, which makes it amenable to orthogonal improvements to 3DGS training, such as Markov Chain Monte Carlo (MCMC) densification (【49†Kheradmand et al., 2024】), co-regularization (【84†Zhang et al., 2024a】), drop-out Gaussians (【85†Park et al., 2025】), etc. However, one current limitation with our work is that we do not support adding or moving around Gaussian splats.
+L306: Naively inserting rows and columns to the Hessian matrix results in a biased estimation of the diagonal entries, leading to degraded performance, which we aim to resolve in future work.
+L307: ## 7 Conclusion
+L308: We present $\text{3DGS}^{2}$-TR, a second-order optimizer for training 3D Gaussian Splatting scenes. We approximate the curvature information of the loss function using a stochastic diagonal estimator, which eliminates the storage and computation overhead of classical second-order methods, thus maintains the same $O(n)$ complexity as ADAM in both computational cost and memory.
+L309: Furthermore, we introduce a parameter-wise trust-region technique based on the squared Hellinger distance to bound the update step size. Instead of tuning learning rates for each parameter group, our method requires only one hyperparameter. We show that $\text{3DGS}^{2}$-TR achieves better reconstruction quality after 50% of training iterations, while incurring only 10% of computation overhead and less than 1GB of memory overhead compared to ADAM.
+L310: Our method is a drop-in replacement for the ADAM optimizer to accelerate 3DGS training in all settings.
+L311: ## Impact Statement
+L312: 
+L313: This paper presents work whose goal is to advance the field of Machine Learning. There are many potential societal consequences of our work, none which we feel must be specifically highlighted here.
+L314: ## References
+L315:   * Ali et al. (2024) M. S. Ali, M. Qamar, S. Bae, and E. Tartaglione Trimming the fat: efficient compression of 3d gaussian splats through pruning. arXiv preprint arXiv:2406.18214. Cited by: 【86†§1】.
+L316:   * Barron et al. (2022) J. T. Barron, B. Mildenhall, D. Verbin, P. P. Srinivasan, and P. Hedman Mip-nerf 360: unbounded anti-aliased neural radiance fields. CVPR. Cited by: 【87†§5】.
+L317:   * Bottou et al. (2018) L. Bottou, F. E. Curtis, and J. Nocedal Optimization methods for large-scale machine learning. SIAM review 60 (2), pp. 223–311. Cited by: 【88†§1】.
+L318:   * Dauphin et al. (2014) Y. N. Dauphin, R. Pascanu, C. Gulcehre, K. Cho, S. Ganguli, and Y. Bengio Identifying and attacking the saddle point problem in high-dimensional non-convex optimization. Advances in neural information processing systems 27. Cited by: 【88†§1】.
+--------------------------------------------------------------------------------
+Revisiting Photometric Ambiguity for Accurate Gaussian-Splatting Surface Reconstruction (https://arxiv.org/html/2605.12494v1)
+citeturn39view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2605.12494v1","lineno":108}); Total lines: 602
+L102: Recently, some attempts (【71†Yu et al., 2022】; 【61†Chen et al., 2024b】; 【62†Zhang et al., 2025a】; 【81†Li et al., 2025】; 【58†Zhang et al., 2025b】) notice and introduce powerful geometry foundation models (【82†Eftekhar et al., 2021】; 【83†Yang et al., 2024】; 【84†Wen et al., 2025】) for regularization, while it’s unsolved in 3DGS to identify ambiguous regions to maximize the effect (【81†Li et al., 2025】).
+L103: In representation, some methods with ray tracing (【57†Yao et al., 2025】; 【58†Zhang et al., 2025b】) target reflective surfaces, but are designed reflection-oriented only. This paper revisits and reveals the criticality of photometric ambiguity from foundations in Gaussian Splatting, achieving high-quality surface recovery with  broad  ambiguity  robustness.
+L104: 【85†Image: Refer to caption】 Figure 2: Overview of AmbiSuR. Our approach stems and operates from two perspectives: (a) Representationally, two disambiguation techniques are applied to resolve primitive-wise ambiguity problems in photometric learning, diminishing the overblown Gaussian edges and enforcing optical property local consistency to ensure correct geometry formation.
+L105: (b) For ambiguous photometric supervisions, we reveal and propose taking the free-lunch Spherical Harmonics as effective self-indicators for captured ambiguities, identifying high-risk regions to enable the priors-compatible fine-grained amorphous regularizer for precise geometry compensating and adjustment.
+L106: ## 3 Method
+L107: ### 3.1 Preliminaries
+L108: Gaussian-Splatting Representation. 3D Gaussian splitting (3DGS) (【50†Kerbl et al., 2023】) represents a 3D radiance field with a set of Gaussian primitives. Typically, an $i$-th Gaussian is parameterized as $\theta_{i}=\{\mu_{i},s_{i},q_{i},\alpha_{i},f_{i}\}$, including a center $\mu$, scaling $s$, rotation $q$, base opacity $\alpha$, and the coefficients $f$ of Spherical Harmonics for per-primitive color $c$. The basis function of the $i$-th primitive $\mathcal{G}_{i}$ is formulated:
+L109:  | $$\mathcal{G}_{i}(\mathbf{x})=e^{-\frac{1}{2}(\mathbf{x-\mu_{i}})^{T}\Sigma_{i}^{-1}(\mathbf{x-\mu_{i}})},$$  |  | (1)
+L110: 
+L111: where the covariance matrix $\Sigma$ is calculated from $s$ and $q$.
+L112: 
+L113: During rendering, Gaussian Splatting utilizes a point-based rendering to compute the color $\mathbf{C}$ of pixel $\mathbf{x}_{p}$ by blending $N$ ordered primitives, conducted in a rasterizer:
+L114:  | $$\mathbf{C}(\mathbf{x}_{p})=\sum_{i\in N}{c_{i}\tilde{\alpha}_{i}\prod_{j=1}^{i-1}(1-\tilde{\alpha}_{j})};\,\,\,\tilde{\alpha}_{i}=\alpha_{i}\mathcal{G}^{2D}_{i}(\mathbf{x}_{p}).$$  |  | (2)
+L115: 
+L116: The rendering opacity $\tilde{\alpha}$ of $N$ ordered intersected primitives to the ray $\mathbf{r}$ across $\mathbf{x}_{p}$ is calculated by the base opacity $\alpha$, and their projected 2D Gaussians $\mathcal{G}^{2D}$ on image plane.
+L117: Geometrically, based on the $\alpha$-blending, pixel depth $\mathbf{D}$ can be derived with per primitive distance. On the shortest axis, the normal of each Gaussian can be defined (【43†Cheng et al., 2024】), and thus pixel normal $\mathbf{N}$ can be blended similarly.
+L118: Challenges and Prerequisites. Classic photometric multi-view consistency assumes the photometric consistency in multi-views, sufficiently distinguishing to locate a unique 3D position in the space. Nevertheless, ambiguous photometrics inevitably and unpredictably exist in the real world, and brings long-standing challenges for 3D reconstruction.
+L119: Recently, knowledge from geometry foundation models (【83†Yang et al., 2024】; 【86†Lin et al., 2025】; 【87†Wang et al., 2025】) delivers external constraints to hint at the structure, which has become an essential tool for the recent high-performance surface reconstructions (【81†Li et al., 2025】; 【62†Zhang et al., 2025a】; 【88†Wolf et al., 2024】; 【61†Chen et al., 2024b】; 【58†Zhang et al., 2025b】).
+L120: In this work, we inherit the strong but imperfect depth priors as basic prerequisites to investigate the photometric ambiguity problem in the task of high-accuracy surface reconstruction.
+L121: ### 3.2 Gaussian Splatting Photometric Disambiguation
+L122: Learning accurate geometry from photometric supervisions is an important problem for Gaussian Splatting, for which a key is the representational ambiguity. Previous solutions either focus on ray tracing in limited environments (【57†Yao et al., 2025】; 【58†Zhang et al., 2025b】) or geometrically surface-aligned primitives (【52†Huang et al., 2024】; 【54†Yu et al., 2024b】; 【55†Guédon et al., 2025】). Nevertheless, two photometric-related ambiguity problems still lie in the prevailing pipelines.
+L123: 1) Primitive Edge Ambiguity. First, an inherent ambiguity is in the Gaussian primitive itself, which retains a large area with low-opacity tail at its edge that may cause negative overlapping. Specifically, considering a projected Gaussian primitive $\mathcal{G}^{2D}$ into a core region $\mathcal{G}_{core}$ that contributes primarily, and the edge region $\mathcal{G}_{edge}(\mathbf{x})\ll 1$ at far position, the pixel-wise opacity $\tilde{\alpha}$ can be represented by two parts:
+--------------------------------------------------------------------------------
+TruncGradGS: Improved 3D Gaussian Splatting viaTruncated Gradient Updates (https://arxiv.org/html/2609.03534v1)
+citeturn39view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2609.03534v1","lineno":82}); Total lines: 378
+L63: In summary, our contributions are as follows:
+L64: 
+L65:   * •
+L66: 
+L67: We provide a formal analysis of the partial derivative of 2D Gaussians that shine light on the vanishing gradient problem. While this is sometimes discussed in the literature, this work pin-points the root of the problem on the theory and implementation of 3DGS.
+L68: 
+L69:   * •
+L70: We present a piecewise truncated gradient field to address the vanishing gradient problem of 3DGS. Our modification effectively widens the support of 2D Gaussian splats. We apply this modified gradient during training by expanding the radius of the splats to extend their tile coverage.
+L71: 
+L72:   * •
+L73: We demonstrate the effectiveness of truncated gradients on both static and dynamic settings. In the static setting, we show consistent improvement for random and COLMAP initializations. For the dynamic setting, we show consistent improvement on SOTA methods.
+L74: 
+L75:   * •
+L76: 
+L77: We introduce a novel dataset of six synthetic scenes for multi-view 4D reconstruction. This presents a new benchmark for raising the quality standard for dynamic 3D Gaussian Splatting methods.
+L78: ## 2 Related Works
+L79: #### Robust optimization.
+L80: 
+L81: The original 3D Gaussian Splatting (3DGS) [【25†22】] heavily relies on Structure-from-Motion (SfM) point clouds for initialization and heuristic adaptive density control (ADC) for densification/pruning. This often leads to sensitivity to poor or sparse initialization, vanishing gradients in under-constrained regions, floaters, and inefficient Gaussian proliferation, especially in sparse-view or long-range fitting scenarios.
+L82: Several recent works target the initialization bottleneck. RAIN-GS [【26†19】] relaxes the dependency on accurate SfM points through sparse-large-variance (SLV) initialization, progressive low-pass filtering, and adaptive bound-expanding splits, enabling robust training even from random point clouds. Librated-GS [【27†34】] further eliminates SfM reliance via monocular depth alignment, progressive segmented initialization, and importance-aware resampling.
+L83: Other approaches explore stochastic/MCMC-based optimization that reframes densification as probabilistic sampling for improved robustness [【28†23】]. Additional SfM-free strategies include hierarchical training with video frame interpolation [【29†18】], dense feature matching to improve point cloud initialization in sparse-view scenarios [【30†38】], and various depth-prior initialization pipelines [【31†9】].
+L84: For densification and pruning, methods have moved beyond naive gradient-based cloning/splitting. Taming 3DGS [【32†30】] introduces guided, purely constructive densification with importance scoring and strict budgeting for controlled Gaussian counts. ConeGS [【33†1】] uses error-guided densification along pixel viewing cones with a geometric proxy, achieving superior quality with fewer primitives.
+L85: Further advances include Pixel-GS for pixel-aware gradient control [【34†54】], AD-GS with alternating high/low densification phases for sparse inputs [【35†36】], complexity-density consistency strategies [【36†10】], perceptual and generative densification [【37†32】], ESA-GS with elongation splitting and assimilation [【38†5】], reconstruction-aware adaptive pruning schedulers [【39†12】], learning-to-prune frameworks with Gumbel-Sigmoid masks (LP-3DGS) [【40†53】], and significance-aware or spatio-spectral pruning [【41†29】].
+L86: These works are particularly relevant for random or sparse initialization settings as they reduce heuristic dependency, mitigate vanishing gradient issues, and improve stability in challenging geometries.
+L87: Recent works have also explored feed-forward or optimization-free Gaussian reconstruction pipelines that directly predict Gaussian primitives from sparse observations using neural networks [【42†40】, 【43†39】, 【44†16】]. Unlike optimization-based 3DGS methods that iteratively refine Gaussian attributes through differentiable rendering, these approaches amortize reconstruction into a learned inference process for significantly faster scene generation.
+L88: While feed-forward approaches improve scalability and inference speed, they typically require large-scale training data and may generalize less robustly to out-of-distribution scenes or highly sparse viewpoints. In contrast, optimization-based methods remain more flexible and adaptable across diverse capture conditions, motivating continued research on improving optimization robustness and stability.
+L89: Compared to existing methods, our work takes a different perspective by directly addressing the locality and vanishing-gradient limitations of Gaussian optimization. Whereas prior approaches primarily focus on improving initialization, densification, pruning, or deformation modeling, we instead modify the gradient field itself to enlarge the effective optimization region of Gaussian primitives during training.
+L90: The closest work to ours is PAPR [【22†52】], which also addresses vanishing gradients in point-based rendering. However, PAPR focuses on point radiance fields and stochastic point propagation, whereas our method derives a piecewise truncated gradient formulation specifically designed for Gaussian splatting and tiled rasterization. Our approach is lightweight, easy to integrate into existing static and dynamic 3DGS frameworks, and complementary to existing initialization and densification strategies.
+--------------------------------------------------------------------------------
+GitHub - moholo-founder/ogc-3dgs: Training-free observation-Gram compaction of spherical-harmonic appearance in 3D Gaussian Splatting · GitHub (https://github.com/moholo-founder/ogc-3dgs)
+citeturn39view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://github.com/moholo-founder/ogc-3dgs","lineno":249}); Total lines: 344
+L207: 【99†fastrender.py】  | 【99†fastrender.py】  |    |
+L208: 【100†fig_teaser.py】  | 【100†fig_teaser.py】  |    |
+L209: 【101†geo.py】  | 【101†geo.py】  |    |
+L210: 【102†geo_adaptive.py】  | 【102†geo_adaptive.py】  |    |
+L211: 【103†gram.py】  | 【103†gram.py】  |    |
+L212: 【104†gsrender.py】  | 【104†gsrender.py】  |    |
+L213: 【105†hessian.py】  | 【105†hessian.py】  |    |
+L214: 【106†make_abstract_txt.py】  | 【106†make_abstract_txt.py】  |    |
+L217: 【109†make_figs.py】  | 【109†make_figs.py】  |    |
+L218: 【110†make_page.py】  | 【110†make_page.py】  |    |
+L219: 【111†make_rd.py】  | 【111†make_rd.py】  |    |
+L220: 【112†make_tables.py】  | 【112†make_tables.py】  |    |
+L221: 【113†master2.sh】  | 【113†master2.sh】  |    |
+L222: 【114†master3.sh】  | 【114†master3.sh】  |    |
+L223: 【115†master4.sh】  | 【115†master4.sh】  |    |
+L224: 【116†night.sh】  | 【116†night.sh】  |    |
+L225: 【117†night2.sh】  | 【117†night2.sh】  |    |
+L226: 【118†night3.sh】  | 【118†night3.sh】  |    |
+L227: 【119†pipeline.py】  | 【119†pipeline.py】  |    |
+L228: 【120†plugin.py】  | 【120†plugin.py】  |    |
+L229: 【121†pull_results.sh】  | 【121†pull_results.sh】  |    |
+L230: 【122†queue.sh】  | 【122†queue.sh】  |    |
+L231: 【123†rd.py】  | 【123†rd.py】  |    |
+L232: 【124†rd_metrics.py】  | 【124†rd_metrics.py】  |    |
+L233: 【125†repair.sh】  | 【125†repair.sh】  |    |
+L234: 【126†repair2.sh】  | 【126†repair2.sh】  |    |
+L235: 【127†repair3.sh】  | 【127†repair3.sh】  |    |
+L236: 【128†requirements.txt】  | 【128†requirements.txt】  |    |
+L237: 【129†run_exps.py】  | 【129†run_exps.py】  |    |
+L238: 【130†run_gram.sh】  | 【130†run_gram.sh】  |    |
+L239: 【131†shfit.py】  | 【131†shfit.py】  |    |
+L240: 【132†sweep.py】  | 【132†sweep.py】  |    |
+L241: 【133†vq.py】  | 【133†vq.py】  |    |
+L242: [Button: View all files]
+L243: ## Repository files navigation
+L244: 
+L245:   *   * 【134†README】
+L246:   * 【134†License】
+L247: 
+L248: More items
+L249: # OGC: Observation-Gram Compaction of View-Dependent Appearance in 3D Gaussian Splatting
+L250: 
+L251: Training-free compaction of the spherical-harmonic (SH) appearance of pretrained 3D Gaussian Splatting models. Only the trained model and its camera poses are needed: no training images, no gradients, no fine-tuning.
+L252: 
+L253: For every Gaussian we accumulate an observation Gram matrix
+L254: 
+L255:     `A_i = sum_j w_ij Y(d_ij) Y(d_ij)^T          (16 x 16)
+L256:     `
+L257: from the directions `d_ij` and blending-weight statistics `w_ij` with which the Gaussian contributed to the training views. `A_i` is the first-order metric that maps a change of the SH coefficients to squared image error. Under this metric:
+L258:   * Degree reduction is a closed-form regularised least-squares solve (`shfit.py`); plain truncation is the special case that assumes uniform observation over the sphere.
+L259:   * Per-Gaussian degree allocation is a Lagrangian rate-distortion optimisation of the predicted residuals (`rd.py`).
+L260:   * Vector quantisation of the coefficients uses generalised Lloyd iterations with the per-point matrix metric (`vq.py`).
+L261:   * A complete pipeline (contribution pruning, allocation, Gram-metric VQ, fp16 storage) is in `pipeline.py`.
+L262: ## Layout
+L263: file  | purpose
+L264: --- | ---
+L265: `gsrender.py`  | PyTorch re-implementation of the reference 3DGS forward rasteriser (tile loop)
+L266: `fastrender.py`  | batched-tile version of the same rasteriser with per-Gaussian weight accumulation
+L267: `gram.py`  | pass 1: render every training view, store per-Gaussian blending-weight statistics
+L268: `shfit.py`  | Gram accumulation, closed-form SH degree reduction, residuals
+L269: `rd.py`  | rate-distortion degree allocation, baselines, coefficient assembly
+L270: `vq.py`  | Gram-metric vector quantisation
+L271: `pipeline.py`  | full compaction pipeline with size accounting
+L272: `geo.py`  | training-free geometry stage on top (16-bit positions, 8-bit attributes) with two entropy coders: rANS (`entropy.py`, default) and byte-planed zlib; both sizes are stored
+L273: `entropy.py`  | rANS coding of the geometry streams (constriction) with per-stream models; exact round trip
+L274: `plugin.py`  | the metric as a drop-in for other pipelines: `observation_gram`, `project_degree`, `degree_residual`, `allocate`, `gram_vq` from a `.ply` + COLMAP dir, CPU-capable
+L275: `hosts/c3dgs_run.py`  | host-pipeline experiment: Compressed3D (Niedermayr et al.) with its colour VQ metric replaced by ours, nothing else changed
+L276: `sweep.py`, `rd_metrics.py`, `make_rd.py`  | rate-distortion sweep of the stack, Bjontegaard BD-rate / BD-PSNR, Pareto fronts and the RD figure
+L277: `make_claims.py`  | turns validation artifacts and results into the LaTeX macros the paper's prose quotes (`paper/tables/{validation,claims}.tex`)
+L278: `compact.py`  | one-command compaction of a standard PLY; `--holdout 8` skips the 3DGS test split (every 8th sorted camera), `--holdout 0` uses all cameras
+L279: `evaluate.py`  | PSNR / SSIM / LPIPS on the test split (3DGS protocol)
+L280: `run_exps.py`  | experiment driver (core, allocation, VQ, ablations), results cached as JSON
+L281: `make_tables.py`, `make_figs.py`, `fig_teaser.py`  | paper tables and figures from the JSON results
+L282: `tests/`  | pytest suite for the maths (projection, bound, allocation, VQ) and the renderer
+L283: ## Data
+L284: 
+L285: Set `OGC_DATA` to a directory with
+L286: 
+L287:     `m360/<scene>/{images_2,images_4,sparse/0}           Mip-NeRF 360 (garden, bicycle, ...)
+L288:     tandt_db/tandt/<scene>/{images,sparse/0}            Tanks & Temples (train, truck)
+L289:     tandt_db/db/<scene>/{images,sparse/0}               Deep Blending (drjohnson, playroom)
+L290:     pretrained/<scene>/{cfg_args,point_cloud/iteration_30000/point_cloud.ply}
+L291:     `
+--------------------------------------------------------------------------------
+GitHub - nerficg-project/faster-gaussian-splatting: An efficient and research-friendly Gaussian Splatting framework described in the CVPR'26 paper "Faster-GS: Analyzing and Improving Gaussian Splatting Optimization" · GitHub (https://github.com/nerficg-project/faster-gaussian-splatting)
+citeturn39view4 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://github.com/nerficg-project/faster-gaussian-splatting","lineno":260}); Total lines: 366
+L245: Easy integration into existing codebases:
+L246: We understand that for compatibility with previous or current projects you might not be able to immediately switch from your current 3DGS framework. Therefore, we tried to make it as easy as possible to integrate the most impactful improvements into existing codebases. Our CUDA backend can be installed into an existing environment as a PyTorch extension through the following command:
+L247:     pip install git+https://github.com/nerficg-project/faster-gaussian-splatting/#subdirectory=FasterGSCudaBackend --no-build-isolation
+L248: Integrating the key features of this extension into the official 3DGS codebase (`graphdeco-inria/gaussian-splatting`) requires only minimal code changes.
+L249: A reference implementation is available 【113†here】.
+L250: That being said, we encourage you to give the native implementation a shot as it provides the full performance improvements as well as a ton of additional features. We also tried to make the code as readable and extensible as possible by optimizing and refactoring the PyTorch and CUDA code of all integrated methods.
+L251: ### Requirements
+L252: 
+L253:   * An NVIDIA GPU
+L254:   * Linux (preferred) or Windows
+L255:   * A recent CUDA SDK (【114†CUDA Toolkit 12.8†developer.nvidia.com】 recommended) and a compatible C++ compiler
+L256:   * 【115†Anaconda / Miniconda†www.anaconda.com】 installed
+L257: ### Setup
+L258: 
+L259: As a preparatory step, the 【116†NeRFICG framework】 needs to be set up. Please follow the instructions in its README to set up a compatible Conda environment.
+L260: 
+L261: Now add Faster-GS as an additional method by cloning this repository into `src/Methods/FasterGS`:
+L262: 
+L263:     # HTTPS
+L264:     git clone https://github.com/nerficg-project/faster-gaussian-splatting.git src/Methods/FasterGS
+L265: 
+L266: or
+L267: 
+L268:     # SSH
+L269:     git clone git@github.com:nerficg-project/faster-gaussian-splatting.git src/Methods/FasterGS
+L270: Next, install all method-specific dependencies and CUDA extensions using:
+L271: 
+L272:     python ./scripts/install.py -m FasterGS
+L273: 
+L274: Note: The framework determines on-the-fly what extra modules need to be installed. Sometimes this causes unnecessary errors/warnings that can interrupt the installation process. In this case, first try to rerun the command before investigating the error in detail.
+L275: ### Variants
+L276: 
+L277: Installing one of our Faster-GS variants (e.g., `FasterGS4D`) from their respective branch can be achieved by
+L278: 
+L279:     # HTTPS
+L280:     git clone --single-branch -b FasterGS4D https://github.com/nerficg-project/faster-gaussian-splatting.git src/Methods/FasterGS4D
+L281: 
+L282: or
+L283: 
+L284:     # SSH
+L285:     git clone --single-branch -b FasterGS4D git@github.com:nerficg-project/faster-gaussian-splatting.git src/Methods/FasterGS4D
+L286: 
+L287: and then
+L288: 
+L289:     python ./scripts/install.py -m FasterGS4D
+L290: ## Usage
+L291: 
+L292: The Faster-GS method is fully compatible with the NeRFICG scripts in the `scripts/` directory. This includes config file generation via `create_config.py`, training via `train.py`/`sequential_train.py`/`benchmark.py`, inference and performance benchmarking via `inference.py`, exporting trained models to .ply files via `convert_to_ply.py`, and interactive rendering via `gui.py`.
+L293: 
+L294: For detailed instructions, please refer to the 【116†NeRFICG repository】.
+L295: ## Acknowledgements
+L296: 
+L297: This work was partially funded by the DFG projects 【117†Real-Action VR†graphics.tu-bs.de】 (ID 523421583) and 【118†Increasing Realism of Omnidirectional Videos in Virtual Reality†graphics.tu-bs.de】 (ID 491805996).
+L298: Linus Franke was supported by the ERC Advanced Grant 【119†NERPHYS†project.inria.fr】 (ID 101141721).
+L299: 
+L300: We thank the authors of the following works, whose ideas and open-source implementations form the foundation of this project:
+L301:   * Kerbl et al. 【97†3D Gaussian Splatting for Real-Time Radiance Field Rendering.†repo-sam.inria.fr】 SIGGRAPH 2023.
+L302:   * Radl et al. 【120†StopThePop: Sorted Gaussian Splatting for View-Consistent Real-time Rendering.†r4dl.github.io】 SIGGRAPH 2024.
+L303:   * Mallick et al. 【121†Taming 3DGS: High-Quality Radiance Fields with Limited Resources.†humansensinglab.github.io】 SIGGRAPH Asia 2024.
+L304:   * Schütz et al. 【122†Splatshop: Efficiently Editing Large Gaussian Splat Models.†publications.graphics.tudelft.nl】 HPG 2025.
+L305:   * Yang et al. 【112†Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting.†fudan-zvg.github.io】 ICLR 2024.
+L306:   * Yu et al. 【105†Mip-Splatting: Alias-free 3D Gaussian Splatting.†niujinshuchong.github.io】 CVPR 2024.
+L307:   * Kheradmand et al. 【106†3D Gaussian Splatting as Markov Chain Monte Carlo.†ubc-vision.github.io】 NeurIPS 2024.
+L308:   * Hanson et al. 【107†Speedy-Splat: Fast 3D Gaussian Splatting with Sparse Pixels and Sparse Primitives.†speedysplat.github.io】 CVPR 2025.
+L309:   * Deutsch et al. 【108†PPISP: Physically-Plausible Compensation and Control of Photometric Variations in Radiance Field Reconstruction.†research.nvidia.com】 CVPR 2026.
+L310:   * Yang et al. 【109†Warp-Level Culling for Efficient Blending in 3D Gaussian Splatting.†plse-splats.github.io】 HPG 2026.
+L311:   * Ye et al. 【110†AbsGS: Recovering Fine Details for 3D Gaussian Splatting.†ty424.github.io】 ACM MM 2024.
+

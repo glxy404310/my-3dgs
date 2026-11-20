@@ -1,0 +1,56 @@
+# Result-to-claim review: fixed sibling-mode optimizer rule
+
+Review date: 2026-10-21. This is a fresh-context, read-only assessment of the completed evidence in `D:/Documents/my 3dgs`. No GPU jobs or source changes were performed.
+
+- claim_supported: no
+- confidence: high
+- review_independence: same-family
+- acceptance_status: provisional
+- integrity_status: unavailable
+- deterministic_artifact_checks: pass
+- immediate_route: stop_fixed_rule
+- next_experiments_needed: none for this fixed rule; stop this local optimizer route as the current research lead
+
+The intended claim fails its frozen primary gate. The candidate does have a small observed 20-step advantage over the two all-fresh controls in this replay, so the result is not evidence of exactly zero effect. It does not meet the preregistered magnitude requirement, and the additional controls undermine the proposed benefit of restarting the differential mode. Passing the 500-step tolerance and timing screen does not change that decision. The confidence above applies to this decision on the observed experiment; it is not confidence that all possible optimizer-state approaches are ineffective.
+
+**Evidence reviewed.** I inspected `research/experiments/mode-state-v0/main/MODE_RESULTS.json` and `MODE_RESULTS.md`, `research/experiments/MODE_PILOT_PLAN.md`, `MODE_STATE_HYPOTHESIS.md`, the six policies' `summary.json`, `config.json`, `mode_checks.json`, and `recovery.csv`, `research/experiments/candidate-composition-long-seed1-v0/long_recovery_results.json`, `research/experiments/MODE_NOVELTY_REPORT.md`, and `.aris/evidence_precheck.json`. All these paths are relative to the authoritative project above. A separate read-only arithmetic crosscheck recomputed the raw CSV means and reported exact agreement with the aggregate results for all policies and all five endpoints, including PSNR, L1, SSIM, legacy deltas, and candidate-control deltas. This supports the reported arithmetic; it is not a formal experiment-integrity audit.
+
+**what_results_support / actual_support.** The data support a bounded negative screen and a few descriptive observations on one Truck event: 1,481 matched LAS parent splits, the same initial child geometry and 500 recovery cameras, 32 held-out views, and later ADC disabled. The candidate's control comparisons are:
+
+| Control | Candidate minus control PSNR at 20, dB | Candidate minus control L1 at 20 | Candidate minus control PSNR at 500, dB |
+|---|---:|---:|---:|
+| legacy | +0.003726721 | -0.0000148197 | -0.005449891 |
+| inherit | -0.002876520 | +0.0000178699 | -0.003094077 |
+| fresh | +0.017608047 | -0.0000689621 | -0.002187848 |
+| rotated_fresh | +0.016097784 | -0.0000631487 | -0.000384033 |
+| rotated_old_difference | -0.003071487 | +0.0000185365 | -0.001460552 |
+
+Lower L1 is better. Both required 20-step L1 comparisons pass, but both required PSNR improvements miss +0.02 dB: by 0.002391953 dB against fresh and by 0.003902216 dB against rotated_fresh. Therefore `primary20_pass=false` and `quality_pass=false` are correct. A margin can be numerically small and still fail a frozen decision rule; it must not be rounded into a pass.
+
+At 500 steps, the largest candidate PSNR deficit among these controls is 0.005449891 dB against legacy, within the declared 0.01 dB tolerance. Thus `late500_pass=true` is correct. Nevertheless, the candidate has the lowest 500-step PSNR of all six arms, and it has worse 500-step L1 than legacy and ordinary inherit. The admissible statement is that its observed PSNR loss stayed within this pilot's tolerance. The data do not establish identical quality, statistical noninferiority, or a lasting advantage.
+
+Candidate recovery updates took 21.112108301 seconds versus fresh's 21.076047867 seconds, an observed overhead of 0.001710968 as a fraction, or 0.171097%. This is below the 10% exclusion threshold. It is a timing-screen pass, not an efficiency result: there are no timing repeats or time-to-quality demonstration, candidate quality did not pass the primary screen, and the instrumented implementation computes redundant native child updates. Legacy also pays extra consistency-check costs, so its longer measured time must not be used to claim a speedup.
+
+**Mechanism interpretation.** The cleanest intervention is candidate versus rotated_old_difference: common initialization, common old age, coordinates, and differential zero moments are the same; the differential clock/schedule differs. Restarting that schedule worsens 20-step PSNR by 0.003071487 dB and L1 by 0.0000185365 in this replay. It also has lower PSNR at 100, 200, and 500 steps than this control. This is evidence against the tested restart choice at the intended endpoint, not evidence for its necessity.
+
+Ordinary inherit also beats the candidate in both PSNR and L1 at every recorded positive endpoint. Hence the candidate's small advantage over all-fresh arms cannot establish that the special common/differential assignment is needed. The candidate-versus-rotated_fresh comparison changes both common moments and common age, so it cannot isolate useful parent-history direction from the common-mode effective schedule. The ordinary inherited states and candidate common states also have different heuristic scaling, so their comparison is not solely a test of coordinates. These are attribution limits, not reasons to add post-hoc tuning.
+
+The recorded update magnitudes verify that the intervention meaningfully changed motion. For example, at step 1 the candidate and rotated_old_difference have nearly equal common xyz RMS updates (0.000462903 and 0.000462914), while their differential xyz RMS updates are 0.000192831 and 0.000601102. At step 20, differential xyz RMS is 0.000151754 versus 0.000916192. This is consistent with the fresh differential schedule producing smaller early differential updates. RMS alone does not show that motion was useful or harmful, and later trajectories differ. It does not justify increasing a coefficient or learning rate to rescue this result.
+
+**what_results_dont_support / unsupported_claims.** The experiment does not support a validated novel 3DGS method, a benefit from differential clock restart, improvement over ordinary inherited Adam, recovery improvement at the frozen minimum effect size, full-training convergence, a universal advantage across scenes or split events, or an efficiency claim. It also does not support exact state transport, a function-preservation theorem, or a clock principle independent of effective learning-rate/epsilon scheduling. The novelty report was a permission to test a narrow combination, not evidence of effectiveness; I have not upgraded its provisional literature assessment or conducted a new novelty search here.
+
+The 100-step candidate improvement of +0.020178914 dB against fresh must not replace the declared 20-step endpoint. It is also only +0.016213775 dB against rotated_fresh at 100 steps. Neither selecting a later endpoint nor dropping a control can rescue the failed contract.
+
+**Related split-selection result.** The second replay reproduces only the reported 500-step PSNR ordering: gradient minus noop is +0.028275251 dB, random101 is +0.012410223, and random202 is +0.009527922. Gradient L1 is 0.0417031131, worse than random202's 0.0416947257 by 0.0000083874. The predeclared dual-metric ranking therefore fails. In that event the gradient branch suffers a larger immediate PSNR loss (-0.089401305 dB versus noop) than the random branches but later has higher PSNR. This is a useful counterexample to ranking split utility by immediate stability alone. It is not universal gradient superiority, and it does not identify optimizer initialization as the cause. The shared source checkpoint and event-level replays are not independent training replications. Nothing in this result reverses the mode-rule failure or justifies reviving the failed teacher route.
+
+**missing_evidence.** There is no independent-event/scene/training-seed evidence for the candidate, no uncertainty estimate across independent training runs, no complete ADC handoff when sibling pairs split or are pruned, and no normal full-training quality/time result. Thirty-two views from one scene do not supply 32 independent training replications. The available mode-update RMS records do not establish an alignment or causal quality mechanism. These gaps describe why broader claims are unavailable; they are not a work order to expand a rule that has failed its initial gate.
+
+All six policy summaries report completion, identical initial metrics and counts, and passing custom mode checks. Configurations differ only in the intended policy and output paths; the 500 recovery cameras, 100 warmup cameras, 32 held-out test names, source hashes, and remaining configuration fields match. Recovery cameras do not overlap the held-out list. Recorded parent Adam steps are 3569, and the candidate ages progress as intended. The legacy native-update check reports a maximum absolute discrepancy of 3.814697265625e-06, with the custom check marked passing. These are useful consistency checks, not bit-exact trajectory equivalence or independent verification of the entire implementation.
+
+The formal `evidence_check.py` helper remains unresolved, and no formal `EXPERIMENT_AUDIT.json` is present in the checked project/experiment locations. Consequently `integrity_status` remains `unavailable`, even though `MODE_RESULTS.json` labels its custom paired checks `integrity: pass`. The semantic review remains same-family and provisional. Neither the custom checks nor raw-number agreement upgrade it to an accepted independent audit.
+
+**suggested_claim_revision.** “In one matched Truck split-event replay, the fixed common-inherited/difference-fresh Adam rule slightly improved 20-step PSNR and L1 over two all-fresh controls, but missed the preregistered +0.02 dB requirement against both. Ordinary inheritance and the identical common-state rule with an old differential schedule performed better at 20 steps. The candidate's 500-step PSNR loss remained within 0.01 dB, but no effective novel method or efficiency gain was established.”
+
+**next_experiments_needed and immediate route.** Stop this fixed rule now. Do not run the second-event candidate replication reserved for a passing screen, advance to ablations or a method claim, change the threshold, replace the endpoint, or sweep inheritance coefficients, differential learning rates, clock ages, or epsilon to regain a positive result. Do not promote an alternative arm after seeing these results without a genuinely new, independently justified question.
+
+I recommend stopping this local optimizer route as the current research lead and propose no additional mechanism diagnostic. The existing old-difference control already answers the central intervention question for this pilot; its direction is unfavorable, ordinary inheritance is stronger, and no measured anomaly or positive mechanism-specific effect provides a clear basis for another targeted experiment. This is a resource-allocation judgment grounded in the present evidence, not a theorem excluding future optimizer research. Preserve the negative result and its control comparisons in the research record, and require a new independently motivated hypothesis before spending more runs on this route.

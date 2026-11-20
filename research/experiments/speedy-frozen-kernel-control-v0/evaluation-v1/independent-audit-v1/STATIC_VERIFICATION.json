@@ -1,0 +1,16 @@
+{
+  "schema": "speedy-frozen-control/independent-static-preparation-v1",
+  "status": "PREPARED_NOT_EXECUTED",
+  "Python_AST": true,
+  "bash_n": true,
+  "help_stdlib_only": true,
+  "tiny_CPU_checks": true,
+  "producer_calculation_imports": false,
+  "actual_audit_executed": false,
+  "actual_metrics_or_timing_read": false,
+  "real_RGB_PLY_or_model_arrays_read": false,
+  "CUDA_initialized": false,
+  "child_agents_spawned": false,
+  "run_v1_absent": true,
+  "scope": "Source, JSON structure/metadata and generated tiny CPU fixtures only. No actual outcome is certified."
+}

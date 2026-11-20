@@ -1,0 +1,18 @@
+{
+  "status": "PUP_FROZEN_NATIVE_EVALUATED_AUDIT_PENDING",
+  "automatic_retries": 0,
+  "main_limit_seconds": 188,
+  "audit_reserved_external_seconds": 100,
+  "combined_external_limit_seconds": 300,
+  "host_RSS_limit_bytes": 8589934592,
+  "gpu_allocated_limit_bytes": 4294967296,
+  "independent_audit_status": "NOT_RUN",
+  "supervisor_torch_imported": false,
+  "worker_exit_code": 0,
+  "main_internal_wall_seconds": 58.32953274399999,
+  "peak_sampled_combined_host_RSS_bytes": 7670894592,
+  "within_188_seconds": true,
+  "prior_failed_main_external_seconds": 11.7440519,
+  "all_primary_external_limit_seconds": 200,
+  "actual_cumulative_external_wall": "Root saves v1 plus v2 actual host walls separately"
+}

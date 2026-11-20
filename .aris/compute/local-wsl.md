@@ -1,5 +1,20 @@
 # Local WSL compute ledger
 
+### env: 3dgs@11c04553 — CPU nearest-neighbor extension, 2026-10-23
+
+- spec: `.aris/compute/env-spec.json`, canonical content hash `11c04553`; historical `caff637c` block below remains the earlier baseline.
+- how: same Ubuntu-22.04 venv `/home/administrator/venvs/3dgs`; added `scipy==1.15.3` with `pip install --no-deps`, retaining `numpy==2.2.6`, torch and all CUDA extensions.
+- reason: opacity-transfer attempt0 failed importing absent scipy before main, any model load or experiment run directory. Failure log and metadata preserved; no scientific condition or experimental script changed.
+- tier1/2: executor ran combined seeded cKDTree nearest-neighbor and CUDA matmul witness, exit0; output `TRANSFER_ENV_WITNESS 1.15.3 [0, 1, 2] (8, 8) NVIDIA GeForce RTX 5070 30.45614242553711`.
+- tier3: fresh `scipy_env_follows_doc` ran the documented invocation verbatim once, exit0 and identical sentinel; no doc/reality divergence. Trace: `.aris/traces/idea-creator/2026-10-23_continue/015-scipy-env-follows-doc.response.md`.
+- documented invocation (PowerShell, run verbatim; it reads no research inputs and trains nothing):
+
+```powershell
+wsl -d Ubuntu-22.04 -- /home/administrator/venvs/3dgs/bin/python '/mnt/d/Documents/my 3dgs/scripts/experiments/witness_transfer_environment.py'
+```
+
+- gotcha: py_compile alone does not check runtime scipy import; this explicit dependency and kernel witness cover cKDTree. The earlier renderer source/binary identity is checked separately by each experiment.
+
 ### env: 3dgs@caff637c
 
 - how: Python virtual environment `/home/administrator/venvs/3dgs` in WSL2 distribution `Ubuntu-22.04`

@@ -1,0 +1,9 @@
+# Fresh result-to-claim: actual prune lineage
+Reviewer /root/prune_lineage_claim_gate, gpt-6-astra ultra, fork none, completed2026-10-22.
+claim_supported:no for 大量新生项被立即最终裁剪因此应保护新生项.
+descriptive_claim_supported:yes; confidence:medium; review_independence:same-family; acceptance_status:provisional; integrity_status:unavailable; evidence_precheck:helper_unresolved.
+Three seed0 shortarms passed all122camera/6exactchecks/48rows each. C1391pruned=1373preexisting+18splitnew;18/26634=.0676%,1.29%ofdeleted,0clone/0clonemothers. A/B10splitnew. Newdeletedallworldsize;Coldalph1033/world340. Actualmask,reasons,count/sourceindependently reconstructed;IDs event-local,preexisting!=mature;internalparentremoval separate.
+No support large mistaken newbornpruning or protectionefficacy.18countdoesnotproveimpactsmall. No harmful/harmless/longquality/repeatedevent/generalization claim.
+Revisedclaim: singleTruckresumeevent mostlydeletespreexisting;newfractionlow/worldsizeonly;cannotattributequalityorjustifyprotection.
+Stop大量新生项误删motivation;do not run6fullcountstudies. Onefrozenstatequalitydiagnostic justified byactualsame-runafter_split→after_prune PSNRA/B/C−.283959/−.118160/−.344019. NewCsinglecapture,thenoffline4masksnone/old/new/all fromuniqueexactrenderstate. None/allmustmatchsamecapturerun anchors1e-5dB/1e-7L1SSIM; failratherthanloosentolerance. Verifyactualpostprune6rawparamsequalpre[~mask]. Reportperview andnewmarginalimpactunderoldkept/deleted,nonadditivity. Ifnewimpactnegligible stopnewbornprotection/focussplitinit; ifmaterial confirmanotherprespecifiedeventbeforemethod. Immediatequalitynotlongtrainingevidence.
+No currentpreprunerendercapture. DifferentCUDAtrajectorynotreconstruction. Renderingcapturecannotresumeoptimizer; shorttrainingneedsseparateexactphase/optimizer/grads/ADC/camerastack/RNGplan. No noveltyclaim;noformalexperiment-audit.

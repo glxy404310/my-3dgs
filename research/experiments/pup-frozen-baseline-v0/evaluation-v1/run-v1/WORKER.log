@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/mnt/d/Documents/my 3dgs/scripts/experiments/evaluate_pup_frozen_baseline.py", line 498, in <module>
+    raise SystemExit(main())
+  File "/mnt/d/Documents/my 3dgs/scripts/experiments/evaluate_pup_frozen_baseline.py", line 490, in main
+    return worker()
+  File "/mnt/d/Documents/my 3dgs/scripts/experiments/evaluate_pup_frozen_baseline.py", line 225, in worker
+    _check_import_path(name, DEFAULT_REPO)
+  File "/mnt/d/Documents/my 3dgs/scripts/experiments/shared_coordinate_native_v3.py", line 124, in _check_import_path
+    reject(module_name)
+  File "/mnt/d/Documents/my 3dgs/scripts/experiments/shared_coordinate_native_v3.py", line 108, in reject
+    raise RuntimeError(f'{name} is already imported from another repository or has ambiguous provenance')
+RuntimeError: utils is already imported from another repository or has ambiguous provenance

@@ -1,0 +1,607 @@
+{
+  "status": "complete",
+  "exploratory": true,
+  "records": [
+    {
+      "seed": 0,
+      "method": "native",
+      "event": 3600,
+      "cloned_families": 23199,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1382,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "native",
+      "event": 3700,
+      "cloned_families": 24441,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1368,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "native",
+      "event": 3800,
+      "cloned_families": 25631,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1303,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "native",
+      "event": 3900,
+      "cloned_families": 24354,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1177,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "native",
+      "event": 4000,
+      "cloned_families": 24538,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1079,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "native",
+      "event": 4100,
+      "cloned_families": 24151,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1044,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "native",
+      "event": 4200,
+      "cloned_families": 24576,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1044,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "native",
+      "event": 4300,
+      "cloned_families": 24592,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 958,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "native",
+      "event": 4400,
+      "cloned_families": 22844,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 885,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "native",
+      "event": 4500,
+      "cloned_families": 20836,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 943,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected",
+      "event": 3600,
+      "cloned_families": 23203,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1382,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected",
+      "event": 3700,
+      "cloned_families": 20369,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1436,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected",
+      "event": 3800,
+      "cloned_families": 18441,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1428,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected",
+      "event": 3900,
+      "cloned_families": 16199,
+      "both_below_opacity_threshold": 1,
+      "prior_alpha_above_threshold_but_pair_members_below": 1,
+      "all_final_pruned_points": 1321,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected",
+      "event": 4000,
+      "cloned_families": 16426,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1199,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected",
+      "event": 4100,
+      "cloned_families": 15134,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1165,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected",
+      "event": 4200,
+      "cloned_families": 16119,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1206,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected",
+      "event": 4300,
+      "cloned_families": 15006,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1066,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected",
+      "event": 4400,
+      "cloned_families": 13844,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1001,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected",
+      "event": 4500,
+      "cloned_families": 11594,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1114,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected_las",
+      "event": 3600,
+      "cloned_families": 23207,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1392,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected_las",
+      "event": 3700,
+      "cloned_families": 20177,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1419,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected_las",
+      "event": 3800,
+      "cloned_families": 17943,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1466,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected_las",
+      "event": 3900,
+      "cloned_families": 15802,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1287,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected_las",
+      "event": 4000,
+      "cloned_families": 15384,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1173,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected_las",
+      "event": 4100,
+      "cloned_families": 14085,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1206,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected_las",
+      "event": 4200,
+      "cloned_families": 14604,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1197,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected_las",
+      "event": 4300,
+      "cloned_families": 13648,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1121,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected_las",
+      "event": 4400,
+      "cloned_families": 12890,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1099,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected_las",
+      "event": 4500,
+      "cloned_families": 10252,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1096,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "native",
+      "event": 3600,
+      "cloned_families": 23208,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1553,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "native",
+      "event": 3700,
+      "cloned_families": 24487,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1311,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "native",
+      "event": 3800,
+      "cloned_families": 26459,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1304,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "native",
+      "event": 3900,
+      "cloned_families": 23352,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1121,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "native",
+      "event": 4000,
+      "cloned_families": 25645,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1166,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "native",
+      "event": 4100,
+      "cloned_families": 23566,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 989,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "native",
+      "event": 4200,
+      "cloned_families": 24214,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 961,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "native",
+      "event": 4300,
+      "cloned_families": 22803,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 933,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "native",
+      "event": 4400,
+      "cloned_families": 24734,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 924,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "native",
+      "event": 4500,
+      "cloned_families": 21343,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 837,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected",
+      "event": 3600,
+      "cloned_families": 23207,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1553,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected",
+      "event": 3700,
+      "cloned_families": 20538,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1427,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected",
+      "event": 3800,
+      "cloned_families": 19637,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1329,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected",
+      "event": 3900,
+      "cloned_families": 15659,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1230,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected",
+      "event": 4000,
+      "cloned_families": 17838,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1332,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected",
+      "event": 4100,
+      "cloned_families": 15002,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1138,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected",
+      "event": 4200,
+      "cloned_families": 14906,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1117,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected",
+      "event": 4300,
+      "cloned_families": 13255,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1052,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected",
+      "event": 4400,
+      "cloned_families": 15367,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1043,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected",
+      "event": 4500,
+      "cloned_families": 11742,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 968,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected_las",
+      "event": 3600,
+      "cloned_families": 23206,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1565,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected_las",
+      "event": 3700,
+      "cloned_families": 20060,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1365,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected_las",
+      "event": 3800,
+      "cloned_families": 19103,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1316,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected_las",
+      "event": 3900,
+      "cloned_families": 14730,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1299,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected_las",
+      "event": 4000,
+      "cloned_families": 16846,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1279,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected_las",
+      "event": 4100,
+      "cloned_families": 13981,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1165,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected_las",
+      "event": 4200,
+      "cloned_families": 13693,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1155,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected_las",
+      "event": 4300,
+      "cloned_families": 12163,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1051,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected_las",
+      "event": 4400,
+      "cloned_families": 14186,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1065,
+      "exploratory": true
+    },
+    {
+      "seed": 1,
+      "method": "clone_corrected_las",
+      "event": 4500,
+      "cloned_families": 10717,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 962,
+      "exploratory": true
+    }
+  ],
+  "scope": "Post-hoc mathematical threshold counts from actual post-clone alpha witnesses. No saved final prune membership mask or counterfactual quality intervention. Do not claim this accounts for observed PSNR loss, novel mechanism, or effectiveness."
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "iteration": 3600,
+    "n_before": 435419,
+    "n_after": 450513,
+    "cloned": 12237,
+    "split": 4080,
+    "pruned": 1223
+  }
+]

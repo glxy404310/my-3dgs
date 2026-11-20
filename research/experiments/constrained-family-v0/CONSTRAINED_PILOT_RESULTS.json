@@ -1,0 +1,227 @@
+{
+  "status": "complete",
+  "actual_gpu_evaluations": 2,
+  "total_metric_rows": 176,
+  "integrity_checks": "pass",
+  "first_configuration_screen_pass": false,
+  "event_screens": [
+    {
+      "event": 3600,
+      "improves_native": true,
+      "distinct_placement": true,
+      "matched_count_comparisons": {
+        "coincident": {
+          "delta_psnr": 0.038153886795043945,
+          "delta_l1": -0.0001915046013891697
+        },
+        "random_20261022": {
+          "delta_psnr": 0.01519775390625,
+          "delta_l1": -6.827479228377342e-05
+        },
+        "random_20261023": {
+          "delta_psnr": 0.01132059097290039,
+          "delta_l1": -5.676131695508957e-05
+        }
+      }
+    },
+    {
+      "event": 3700,
+      "improves_native": true,
+      "distinct_placement": false,
+      "matched_count_comparisons": {
+        "coincident": {
+          "delta_psnr": 0.02521538734436035,
+          "delta_l1": -7.382407784461975e-05
+        },
+        "random_20261022": {
+          "delta_psnr": 0.005926609039306641,
+          "delta_l1": -1.3972166925668716e-05
+        },
+        "random_20261023": {
+          "delta_psnr": 0.009317159652709961,
+          "delta_l1": -1.9822269678115845e-05
+        }
+      }
+    }
+  ],
+  "records": [
+    {
+      "event": 3600,
+      "policy": "none",
+      "n_gaussians": 1094818,
+      "psnr": 22.030059337615967,
+      "l1": 0.045925624668598175,
+      "ssim": 0.8128963336348534
+    },
+    {
+      "event": 3600,
+      "policy": "all",
+      "n_gaussians": 1093426,
+      "psnr": 21.686017274856567,
+      "l1": 0.047227779403328896,
+      "ssim": 0.8106547817587852
+    },
+    {
+      "event": 3600,
+      "policy": "old_only",
+      "n_gaussians": 1093444,
+      "psnr": 21.968045234680176,
+      "l1": 0.046374856028705835,
+      "ssim": 0.8121872991323471
+    },
+    {
+      "event": 3600,
+      "policy": "new_only",
+      "n_gaussians": 1094800,
+      "psnr": 21.7650465965271,
+      "l1": 0.04668648075312376,
+      "ssim": 0.8115242347121239
+    },
+    {
+      "event": 3600,
+      "policy": "no_world",
+      "n_gaussians": 1093784,
+      "psnr": 22.030035257339478,
+      "l1": 0.045925701037049294,
+      "ssim": 0.8128967136144638
+    },
+    {
+      "event": 3600,
+      "policy": "simplex",
+      "n_gaussians": 1093453,
+      "psnr": 22.10744595527649,
+      "l1": 0.0457995324395597,
+      "ssim": 0.81375303119421
+    },
+    {
+      "event": 3600,
+      "policy": "coincident",
+      "n_gaussians": 1093453,
+      "psnr": 22.069292068481445,
+      "l1": 0.04599103704094887,
+      "ssim": 0.8130403310060501
+    },
+    {
+      "event": 3600,
+      "policy": "random_20261022",
+      "n_gaussians": 1093453,
+      "psnr": 22.09224820137024,
+      "l1": 0.04586780723184347,
+      "ssim": 0.8135099560022354
+    },
+    {
+      "event": 3600,
+      "policy": "random_20261023",
+      "n_gaussians": 1093453,
+      "psnr": 22.09612536430359,
+      "l1": 0.04585629375651479,
+      "ssim": 0.8134400695562363
+    },
+    {
+      "event": 3600,
+      "policy": "recursive_published",
+      "n_gaussians": 1093466,
+      "psnr": 22.012439012527466,
+      "l1": 0.04633986623957753,
+      "ssim": 0.8120790347456932
+    },
+    {
+      "event": 3600,
+      "policy": "recursive_shared",
+      "n_gaussians": 1093466,
+      "psnr": 22.100046396255493,
+      "l1": 0.04583427915349603,
+      "ssim": 0.8136861324310303
+    },
+    {
+      "event": 3700,
+      "policy": "none",
+      "n_gaussians": 1125039,
+      "psnr": 22.679466485977173,
+      "l1": 0.04320189589634538,
+      "ssim": 0.8190438225865364
+    },
+    {
+      "event": 3700,
+      "policy": "all",
+      "n_gaussians": 1123624,
+      "psnr": 22.53696894645691,
+      "l1": 0.04392361454665661,
+      "ssim": 0.8179392963647842
+    },
+    {
+      "event": 3700,
+      "policy": "old_only",
+      "n_gaussians": 1123638,
+      "psnr": 22.615725994110107,
+      "l1": 0.043637901078909636,
+      "ssim": 0.8186468258500099
+    },
+    {
+      "event": 3700,
+      "policy": "new_only",
+      "n_gaussians": 1125025,
+      "psnr": 22.600303411483765,
+      "l1": 0.04348520655184984,
+      "ssim": 0.8183471709489822
+    },
+    {
+      "event": 3700,
+      "policy": "no_world",
+      "n_gaussians": 1123961,
+      "psnr": 22.67901849746704,
+      "l1": 0.04320490825921297,
+      "ssim": 0.8190440014004707
+    },
+    {
+      "event": 3700,
+      "policy": "simplex",
+      "n_gaussians": 1123649,
+      "psnr": 22.640138387680054,
+      "l1": 0.04352408740669489,
+      "ssim": 0.8190913796424866
+    },
+    {
+      "event": 3700,
+      "policy": "coincident",
+      "n_gaussians": 1123649,
+      "psnr": 22.614923000335693,
+      "l1": 0.04359791148453951,
+      "ssim": 0.8188500702381134
+    },
+    {
+      "event": 3700,
+      "policy": "random_20261022",
+      "n_gaussians": 1123649,
+      "psnr": 22.634211778640747,
+      "l1": 0.04353805957362056,
+      "ssim": 0.8190143629908562
+    },
+    {
+      "event": 3700,
+      "policy": "random_20261023",
+      "n_gaussians": 1123649,
+      "psnr": 22.630821228027344,
+      "l1": 0.043543909676373005,
+      "ssim": 0.8190311789512634
+    },
+    {
+      "event": 3700,
+      "policy": "recursive_published",
+      "n_gaussians": 1123668,
+      "psnr": 22.59583306312561,
+      "l1": 0.0436924765817821,
+      "ssim": 0.8185077980160713
+    },
+    {
+      "event": 3700,
+      "policy": "recursive_shared",
+      "n_gaussians": 1123668,
+      "psnr": 22.62188720703125,
+      "l1": 0.043581214267760515,
+      "ssim": 0.8188967034220695
+    }
+  ],
+  "next_action": "Stop this first fixed configuration; do not tune opacity/orientation on these diagnostic views",
+  "scope": "Offline first-configuration pilot on reused heldouts, not independent generalization, training improvement, timing, or novelty evidence."
+}

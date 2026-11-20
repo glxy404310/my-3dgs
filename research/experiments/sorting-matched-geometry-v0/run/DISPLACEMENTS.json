@@ -1,0 +1,1474 @@
+[
+  {
+    "mode": "base_float32",
+    "view": "000002.jpg",
+    "tau": null,
+    "union_active_points": 917676,
+    "old_active_points": 917676,
+    "new_active_points": 917676,
+    "q_only_active_points": 0,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 333624,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.0,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 917676,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "selected_candidate_support_union": {
+      "points": 333624,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "inside_original_frustum": {
+      "points": 899514,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "outside_original_frustum_footprint": {
+      "points": 18162,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    }
+  },
+  {
+    "mode": "base_float32",
+    "view": "000037.jpg",
+    "tau": null,
+    "union_active_points": 785120,
+    "old_active_points": 785120,
+    "new_active_points": 785120,
+    "q_only_active_points": 0,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 364330,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.0,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 785120,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "selected_candidate_support_union": {
+      "points": 364330,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "inside_original_frustum": {
+      "points": 761659,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "outside_original_frustum_footprint": {
+      "points": 23461,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    }
+  },
+  {
+    "mode": "base_float32",
+    "view": "000072.jpg",
+    "tau": null,
+    "union_active_points": 646900,
+    "old_active_points": 646900,
+    "new_active_points": 646900,
+    "q_only_active_points": 0,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 284947,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.0,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 646900,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "selected_candidate_support_union": {
+      "points": 284947,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "inside_original_frustum": {
+      "points": 612332,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "outside_original_frustum_footprint": {
+      "points": 34568,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    }
+  },
+  {
+    "mode": "base_float32",
+    "view": "000108.jpg",
+    "tau": null,
+    "union_active_points": 912708,
+    "old_active_points": 912708,
+    "new_active_points": 912708,
+    "q_only_active_points": 0,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 345242,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.0,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 912708,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "selected_candidate_support_union": {
+      "points": 345242,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "inside_original_frustum": {
+      "points": 900967,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "outside_original_frustum_footprint": {
+      "points": 11741,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    }
+  },
+  {
+    "mode": "base_float32",
+    "view": "000143.jpg",
+    "tau": null,
+    "union_active_points": 660727,
+    "old_active_points": 660727,
+    "new_active_points": 660727,
+    "q_only_active_points": 0,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 314785,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.0,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 660727,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "selected_candidate_support_union": {
+      "points": 314785,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "inside_original_frustum": {
+      "points": 633113,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "outside_original_frustum_footprint": {
+      "points": 27614,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    }
+  },
+  {
+    "mode": "base_float32",
+    "view": "000179.jpg",
+    "tau": null,
+    "union_active_points": 742538,
+    "old_active_points": 742538,
+    "new_active_points": 742538,
+    "q_only_active_points": 0,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 320964,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.0,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 742538,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "selected_candidate_support_union": {
+      "points": 320964,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "inside_original_frustum": {
+      "points": 716413,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "outside_original_frustum_footprint": {
+      "points": 26125,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    }
+  },
+  {
+    "mode": "base_float32",
+    "view": "000214.jpg",
+    "tau": null,
+    "union_active_points": 749425,
+    "old_active_points": 749425,
+    "new_active_points": 749425,
+    "q_only_active_points": 0,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 350999,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.0,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 749425,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "selected_candidate_support_union": {
+      "points": 350999,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "inside_original_frustum": {
+      "points": 713043,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "outside_original_frustum_footprint": {
+      "points": 36382,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    }
+  },
+  {
+    "mode": "base_float32",
+    "view": "000251.jpg",
+    "tau": null,
+    "union_active_points": 848089,
+    "old_active_points": 848089,
+    "new_active_points": 848089,
+    "q_only_active_points": 0,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 288255,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.0,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 848089,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "selected_candidate_support_union": {
+      "points": 288255,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "inside_original_frustum": {
+      "points": 836422,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    },
+    "outside_original_frustum_footprint": {
+      "points": 11667,
+      "max_axis_displacement_px": 0.0,
+      "p99_max_axis_displacement_px": 0.0,
+      "count_above_tau": null
+    }
+  },
+  {
+    "mode": "local_tau025",
+    "view": "000002.jpg",
+    "tau": 0.25,
+    "union_active_points": 917677,
+    "old_active_points": 917676,
+    "new_active_points": 917676,
+    "q_only_active_points": 1,
+    "old_only_active_points": 1,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 333656,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.6611328125,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": false,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 917677,
+      "max_axis_displacement_px": 0.6611328125,
+      "p99_max_axis_displacement_px": 0.007293701171875,
+      "count_above_tau": 2
+    },
+    "selected_candidate_support_union": {
+      "points": 333656,
+      "max_axis_displacement_px": 0.6611328125,
+      "p99_max_axis_displacement_px": 0.00775146484375,
+      "count_above_tau": 2
+    },
+    "inside_original_frustum": {
+      "points": 899514,
+      "max_axis_displacement_px": 0.02398681640625,
+      "p99_max_axis_displacement_px": 0.00714111328125,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 18163,
+      "max_axis_displacement_px": 0.6611328125,
+      "p99_max_axis_displacement_px": 0.012093658447265648,
+      "count_above_tau": 2
+    }
+  },
+  {
+    "mode": "local_tau025",
+    "view": "000037.jpg",
+    "tau": 0.25,
+    "union_active_points": 785122,
+    "old_active_points": 785120,
+    "new_active_points": 785120,
+    "q_only_active_points": 2,
+    "old_only_active_points": 2,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 364351,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.18115234375,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 785122,
+      "max_axis_displacement_px": 0.18115234375,
+      "p99_max_axis_displacement_px": 0.0091552734375,
+      "count_above_tau": 0
+    },
+    "selected_candidate_support_union": {
+      "points": 364351,
+      "max_axis_displacement_px": 0.18115234375,
+      "p99_max_axis_displacement_px": 0.009365081787109375,
+      "count_above_tau": 0
+    },
+    "inside_original_frustum": {
+      "points": 761659,
+      "max_axis_displacement_px": 0.057281494140625,
+      "p99_max_axis_displacement_px": 0.0089569091796875,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 23463,
+      "max_axis_displacement_px": 0.18115234375,
+      "p99_max_axis_displacement_px": 0.013520259857177763,
+      "count_above_tau": 0
+    }
+  },
+  {
+    "mode": "local_tau025",
+    "view": "000072.jpg",
+    "tau": 0.25,
+    "union_active_points": 646903,
+    "old_active_points": 646900,
+    "new_active_points": 646897,
+    "q_only_active_points": 3,
+    "old_only_active_points": 6,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 284966,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.251708984375,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": false,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 646903,
+      "max_axis_displacement_px": 0.251708984375,
+      "p99_max_axis_displacement_px": 0.0106201171875,
+      "count_above_tau": 1
+    },
+    "selected_candidate_support_union": {
+      "points": 284966,
+      "max_axis_displacement_px": 0.251708984375,
+      "p99_max_axis_displacement_px": 0.0103759765625,
+      "count_above_tau": 1
+    },
+    "inside_original_frustum": {
+      "points": 612332,
+      "max_axis_displacement_px": 0.05572509765625,
+      "p99_max_axis_displacement_px": 0.0096435546875,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 34571,
+      "max_axis_displacement_px": 0.251708984375,
+      "p99_max_axis_displacement_px": 0.015420532226562589,
+      "count_above_tau": 1
+    }
+  },
+  {
+    "mode": "local_tau025",
+    "view": "000108.jpg",
+    "tau": 0.25,
+    "union_active_points": 912708,
+    "old_active_points": 912708,
+    "new_active_points": 912708,
+    "q_only_active_points": 0,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 345270,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.08837890625,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 912708,
+      "max_axis_displacement_px": 0.08837890625,
+      "p99_max_axis_displacement_px": 0.006805419921875,
+      "count_above_tau": 0
+    },
+    "selected_candidate_support_union": {
+      "points": 345270,
+      "max_axis_displacement_px": 0.08837890625,
+      "p99_max_axis_displacement_px": 0.00732421875,
+      "count_above_tau": 0
+    },
+    "inside_original_frustum": {
+      "points": 900967,
+      "max_axis_displacement_px": 0.02557373046875,
+      "p99_max_axis_displacement_px": 0.006683349609375,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 11741,
+      "max_axis_displacement_px": 0.08837890625,
+      "p99_max_axis_displacement_px": 0.011493301391601565,
+      "count_above_tau": 0
+    }
+  },
+  {
+    "mode": "local_tau025",
+    "view": "000143.jpg",
+    "tau": 0.25,
+    "union_active_points": 660730,
+    "old_active_points": 660727,
+    "new_active_points": 660729,
+    "q_only_active_points": 3,
+    "old_only_active_points": 1,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 314809,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.15673828125,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 660730,
+      "max_axis_displacement_px": 0.15673828125,
+      "p99_max_axis_displacement_px": 0.01263427734375,
+      "count_above_tau": 0
+    },
+    "selected_candidate_support_union": {
+      "points": 314809,
+      "max_axis_displacement_px": 0.15673828125,
+      "p99_max_axis_displacement_px": 0.013214111328125,
+      "count_above_tau": 0
+    },
+    "inside_original_frustum": {
+      "points": 633113,
+      "max_axis_displacement_px": 0.03558349609375,
+      "p99_max_axis_displacement_px": 0.01251220703125,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 27617,
+      "max_axis_displacement_px": 0.15673828125,
+      "p99_max_axis_displacement_px": 0.01531478881835938,
+      "count_above_tau": 0
+    }
+  },
+  {
+    "mode": "local_tau025",
+    "view": "000179.jpg",
+    "tau": 0.25,
+    "union_active_points": 742542,
+    "old_active_points": 742538,
+    "new_active_points": 742540,
+    "q_only_active_points": 4,
+    "old_only_active_points": 2,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 320988,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.3095703125,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": false,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 742542,
+      "max_axis_displacement_px": 0.3095703125,
+      "p99_max_axis_displacement_px": 0.009862117767333922,
+      "count_above_tau": 1
+    },
+    "selected_candidate_support_union": {
+      "points": 320988,
+      "max_axis_displacement_px": 0.3095703125,
+      "p99_max_axis_displacement_px": 0.01055908203125,
+      "count_above_tau": 1
+    },
+    "inside_original_frustum": {
+      "points": 716413,
+      "max_axis_displacement_px": 0.0440673828125,
+      "p99_max_axis_displacement_px": 0.009796142578125,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 26129,
+      "max_axis_displacement_px": 0.3095703125,
+      "p99_max_axis_displacement_px": 0.01123046875,
+      "count_above_tau": 1
+    }
+  },
+  {
+    "mode": "local_tau025",
+    "view": "000214.jpg",
+    "tau": 0.25,
+    "union_active_points": 749427,
+    "old_active_points": 749425,
+    "new_active_points": 749427,
+    "q_only_active_points": 2,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 351027,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.387451171875,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": false,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 749427,
+      "max_axis_displacement_px": 0.387451171875,
+      "p99_max_axis_displacement_px": 0.01068115234375,
+      "count_above_tau": 1
+    },
+    "selected_candidate_support_union": {
+      "points": 351027,
+      "max_axis_displacement_px": 0.387451171875,
+      "p99_max_axis_displacement_px": 0.0109100341796875,
+      "count_above_tau": 1
+    },
+    "inside_original_frustum": {
+      "points": 713043,
+      "max_axis_displacement_px": 0.0457763671875,
+      "p99_max_axis_displacement_px": 0.010589599609375,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 36384,
+      "max_axis_displacement_px": 0.387451171875,
+      "p99_max_axis_displacement_px": 0.012827758789062393,
+      "count_above_tau": 1
+    }
+  },
+  {
+    "mode": "local_tau025",
+    "view": "000251.jpg",
+    "tau": 0.25,
+    "union_active_points": 848089,
+    "old_active_points": 848089,
+    "new_active_points": 848088,
+    "q_only_active_points": 0,
+    "old_only_active_points": 1,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 288274,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.164794921875,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 848089,
+      "max_axis_displacement_px": 0.164794921875,
+      "p99_max_axis_displacement_px": 0.00518798828125,
+      "count_above_tau": 0
+    },
+    "selected_candidate_support_union": {
+      "points": 288274,
+      "max_axis_displacement_px": 0.164794921875,
+      "p99_max_axis_displacement_px": 0.00577545166015625,
+      "count_above_tau": 0
+    },
+    "inside_original_frustum": {
+      "points": 836422,
+      "max_axis_displacement_px": 0.02862548828125,
+      "p99_max_axis_displacement_px": 0.0051116943359375,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 11667,
+      "max_axis_displacement_px": 0.164794921875,
+      "p99_max_axis_displacement_px": 0.012858886718750018,
+      "count_above_tau": 0
+    }
+  },
+  {
+    "mode": "global_tau025",
+    "view": "000002.jpg",
+    "tau": 0.25,
+    "union_active_points": 917677,
+    "old_active_points": 917676,
+    "new_active_points": 917677,
+    "q_only_active_points": 1,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 333644,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.15478515625,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 917677,
+      "max_axis_displacement_px": 0.15478515625,
+      "p99_max_axis_displacement_px": 0.00469970703125,
+      "count_above_tau": 0
+    },
+    "selected_candidate_support_union": {
+      "points": 333644,
+      "max_axis_displacement_px": 0.15478515625,
+      "p99_max_axis_displacement_px": 0.0050048828125,
+      "count_above_tau": 0
+    },
+    "inside_original_frustum": {
+      "points": 899514,
+      "max_axis_displacement_px": 0.020404815673828125,
+      "p99_max_axis_displacement_px": 0.00457763671875,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 18163,
+      "max_axis_displacement_px": 0.15478515625,
+      "p99_max_axis_displacement_px": 0.00872802734375,
+      "count_above_tau": 0
+    }
+  },
+  {
+    "mode": "global_tau025",
+    "view": "000037.jpg",
+    "tau": 0.25,
+    "union_active_points": 785121,
+    "old_active_points": 785120,
+    "new_active_points": 785121,
+    "q_only_active_points": 1,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 364349,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.14208984375,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 785121,
+      "max_axis_displacement_px": 0.14208984375,
+      "p99_max_axis_displacement_px": 0.0059051513671875,
+      "count_above_tau": 0
+    },
+    "selected_candidate_support_union": {
+      "points": 364349,
+      "max_axis_displacement_px": 0.14208984375,
+      "p99_max_axis_displacement_px": 0.00604248046875,
+      "count_above_tau": 0
+    },
+    "inside_original_frustum": {
+      "points": 761659,
+      "max_axis_displacement_px": 0.023468017578125,
+      "p99_max_axis_displacement_px": 0.005767822265625,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 23462,
+      "max_axis_displacement_px": 0.14208984375,
+      "p99_max_axis_displacement_px": 0.008576183319091796,
+      "count_above_tau": 0
+    }
+  },
+  {
+    "mode": "global_tau025",
+    "view": "000072.jpg",
+    "tau": 0.25,
+    "union_active_points": 646903,
+    "old_active_points": 646900,
+    "new_active_points": 646901,
+    "q_only_active_points": 3,
+    "old_only_active_points": 2,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 284965,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.0853271484375,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 646903,
+      "max_axis_displacement_px": 0.12109375,
+      "p99_max_axis_displacement_px": 0.0069580078125,
+      "count_above_tau": 0
+    },
+    "selected_candidate_support_union": {
+      "points": 284965,
+      "max_axis_displacement_px": 0.0853271484375,
+      "p99_max_axis_displacement_px": 0.0068359375,
+      "count_above_tau": 0
+    },
+    "inside_original_frustum": {
+      "points": 612332,
+      "max_axis_displacement_px": 0.0325927734375,
+      "p99_max_axis_displacement_px": 0.0063629150390625,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 34571,
+      "max_axis_displacement_px": 0.12109375,
+      "p99_max_axis_displacement_px": 0.009765625,
+      "count_above_tau": 0
+    }
+  },
+  {
+    "mode": "global_tau025",
+    "view": "000108.jpg",
+    "tau": 0.25,
+    "union_active_points": 912708,
+    "old_active_points": 912708,
+    "new_active_points": 912708,
+    "q_only_active_points": 0,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 345264,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.07373046875,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 912708,
+      "max_axis_displacement_px": 0.07373046875,
+      "p99_max_axis_displacement_px": 0.00445556640625,
+      "count_above_tau": 0
+    },
+    "selected_candidate_support_union": {
+      "points": 345264,
+      "max_axis_displacement_px": 0.07373046875,
+      "p99_max_axis_displacement_px": 0.00482177734375,
+      "count_above_tau": 0
+    },
+    "inside_original_frustum": {
+      "points": 900967,
+      "max_axis_displacement_px": 0.035736083984375,
+      "p99_max_axis_displacement_px": 0.004364013671875,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 11741,
+      "max_axis_displacement_px": 0.07373046875,
+      "p99_max_axis_displacement_px": 0.0087890625,
+      "count_above_tau": 0
+    }
+  },
+  {
+    "mode": "global_tau025",
+    "view": "000143.jpg",
+    "tau": 0.25,
+    "union_active_points": 660727,
+    "old_active_points": 660727,
+    "new_active_points": 660726,
+    "q_only_active_points": 0,
+    "old_only_active_points": 1,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 314801,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.12255859375,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 660727,
+      "max_axis_displacement_px": 0.12255859375,
+      "p99_max_axis_displacement_px": 0.0079345703125,
+      "count_above_tau": 0
+    },
+    "selected_candidate_support_union": {
+      "points": 314801,
+      "max_axis_displacement_px": 0.12255859375,
+      "p99_max_axis_displacement_px": 0.00823974609375,
+      "count_above_tau": 0
+    },
+    "inside_original_frustum": {
+      "points": 633113,
+      "max_axis_displacement_px": 0.025075912475585938,
+      "p99_max_axis_displacement_px": 0.00787353515625,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 27614,
+      "max_axis_displacement_px": 0.12255859375,
+      "p99_max_axis_displacement_px": 0.009797983169555626,
+      "count_above_tau": 0
+    }
+  },
+  {
+    "mode": "global_tau025",
+    "view": "000179.jpg",
+    "tau": 0.25,
+    "union_active_points": 742541,
+    "old_active_points": 742538,
+    "new_active_points": 742541,
+    "q_only_active_points": 3,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 320979,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.180908203125,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 742541,
+      "max_axis_displacement_px": 0.180908203125,
+      "p99_max_axis_displacement_px": 0.00634765625,
+      "count_above_tau": 0
+    },
+    "selected_candidate_support_union": {
+      "points": 320979,
+      "max_axis_displacement_px": 0.180908203125,
+      "p99_max_axis_displacement_px": 0.00677490234375,
+      "count_above_tau": 0
+    },
+    "inside_original_frustum": {
+      "points": 716413,
+      "max_axis_displacement_px": 0.05084228515625,
+      "p99_max_axis_displacement_px": 0.00628662109375,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 26128,
+      "max_axis_displacement_px": 0.180908203125,
+      "p99_max_axis_displacement_px": 0.00787353515625,
+      "count_above_tau": 0
+    }
+  },
+  {
+    "mode": "global_tau025",
+    "view": "000214.jpg",
+    "tau": 0.25,
+    "union_active_points": 749426,
+    "old_active_points": 749425,
+    "new_active_points": 749426,
+    "q_only_active_points": 1,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 351023,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.139404296875,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 749426,
+      "max_axis_displacement_px": 0.139404296875,
+      "p99_max_axis_displacement_px": 0.0067138671875,
+      "count_above_tau": 0
+    },
+    "selected_candidate_support_union": {
+      "points": 351023,
+      "max_axis_displacement_px": 0.139404296875,
+      "p99_max_axis_displacement_px": 0.0068206787109375,
+      "count_above_tau": 0
+    },
+    "inside_original_frustum": {
+      "points": 713043,
+      "max_axis_displacement_px": 0.03021240234375,
+      "p99_max_axis_displacement_px": 0.00665283203125,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 36383,
+      "max_axis_displacement_px": 0.139404296875,
+      "p99_max_axis_displacement_px": 0.00811767578125,
+      "count_above_tau": 0
+    }
+  },
+  {
+    "mode": "global_tau025",
+    "view": "000251.jpg",
+    "tau": 0.25,
+    "union_active_points": 848089,
+    "old_active_points": 848089,
+    "new_active_points": 848089,
+    "q_only_active_points": 0,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 288271,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.33154296875,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": false,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 848089,
+      "max_axis_displacement_px": 0.33154296875,
+      "p99_max_axis_displacement_px": 0.00341033935546875,
+      "count_above_tau": 1
+    },
+    "selected_candidate_support_union": {
+      "points": 288271,
+      "max_axis_displacement_px": 0.33154296875,
+      "p99_max_axis_displacement_px": 0.003875732421875,
+      "count_above_tau": 1
+    },
+    "inside_original_frustum": {
+      "points": 836422,
+      "max_axis_displacement_px": 0.01953125,
+      "p99_max_axis_displacement_px": 0.00335693359375,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 11667,
+      "max_axis_displacement_px": 0.33154296875,
+      "p99_max_axis_displacement_px": 0.00958251953125,
+      "count_above_tau": 1
+    }
+  },
+  {
+    "mode": "local_tau0125",
+    "view": "000002.jpg",
+    "tau": 0.125,
+    "union_active_points": 917676,
+    "old_active_points": 917676,
+    "new_active_points": 917676,
+    "q_only_active_points": 0,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 333639,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.39501953125,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": false,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 917676,
+      "max_axis_displacement_px": 0.39501953125,
+      "p99_max_axis_displacement_px": 0.003631591796875,
+      "count_above_tau": 3
+    },
+    "selected_candidate_support_union": {
+      "points": 333639,
+      "max_axis_displacement_px": 0.39501953125,
+      "p99_max_axis_displacement_px": 0.00384521484375,
+      "count_above_tau": 3
+    },
+    "inside_original_frustum": {
+      "points": 899514,
+      "max_axis_displacement_px": 0.01739501953125,
+      "p99_max_axis_displacement_px": 0.0035400390625,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 18162,
+      "max_axis_displacement_px": 0.39501953125,
+      "p99_max_axis_displacement_px": 0.0063714599609374645,
+      "count_above_tau": 3
+    }
+  },
+  {
+    "mode": "local_tau0125",
+    "view": "000037.jpg",
+    "tau": 0.125,
+    "union_active_points": 785123,
+    "old_active_points": 785120,
+    "new_active_points": 785121,
+    "q_only_active_points": 3,
+    "old_only_active_points": 2,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 364344,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.15966796875,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": false,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 785123,
+      "max_axis_displacement_px": 0.15966796875,
+      "p99_max_axis_displacement_px": 0.00457763671875,
+      "count_above_tau": 1
+    },
+    "selected_candidate_support_union": {
+      "points": 364344,
+      "max_axis_displacement_px": 0.15966796875,
+      "p99_max_axis_displacement_px": 0.004669189453125,
+      "count_above_tau": 1
+    },
+    "inside_original_frustum": {
+      "points": 761659,
+      "max_axis_displacement_px": 0.02252197265625,
+      "p99_max_axis_displacement_px": 0.0044708251953125,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 23464,
+      "max_axis_displacement_px": 0.15966796875,
+      "p99_max_axis_displacement_px": 0.006827279329299926,
+      "count_above_tau": 1
+    }
+  },
+  {
+    "mode": "local_tau0125",
+    "view": "000072.jpg",
+    "tau": 0.125,
+    "union_active_points": 646903,
+    "old_active_points": 646900,
+    "new_active_points": 646902,
+    "q_only_active_points": 3,
+    "old_only_active_points": 1,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 284954,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.07861328125,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 646903,
+      "max_axis_displacement_px": 0.096435546875,
+      "p99_max_axis_displacement_px": 0.00531005859375,
+      "count_above_tau": 0
+    },
+    "selected_candidate_support_union": {
+      "points": 284954,
+      "max_axis_displacement_px": 0.07861328125,
+      "p99_max_axis_displacement_px": 0.00518798828125,
+      "count_above_tau": 0
+    },
+    "inside_original_frustum": {
+      "points": 612332,
+      "max_axis_displacement_px": 0.0167236328125,
+      "p99_max_axis_displacement_px": 0.00482177734375,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 34571,
+      "max_axis_displacement_px": 0.096435546875,
+      "p99_max_axis_displacement_px": 0.0078125,
+      "count_above_tau": 0
+    }
+  },
+  {
+    "mode": "local_tau0125",
+    "view": "000108.jpg",
+    "tau": 0.125,
+    "union_active_points": 912708,
+    "old_active_points": 912708,
+    "new_active_points": 912708,
+    "q_only_active_points": 0,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 345256,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.06005859375,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 912708,
+      "max_axis_displacement_px": 0.06005859375,
+      "p99_max_axis_displacement_px": 0.00341796875,
+      "count_above_tau": 0
+    },
+    "selected_candidate_support_union": {
+      "points": 345256,
+      "max_axis_displacement_px": 0.06005859375,
+      "p99_max_axis_displacement_px": 0.003662109375,
+      "count_above_tau": 0
+    },
+    "inside_original_frustum": {
+      "points": 900967,
+      "max_axis_displacement_px": 0.015167236328125,
+      "p99_max_axis_displacement_px": 0.00335693359375,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 11741,
+      "max_axis_displacement_px": 0.06005859375,
+      "p99_max_axis_displacement_px": 0.005831146240234376,
+      "count_above_tau": 0
+    }
+  },
+  {
+    "mode": "local_tau0125",
+    "view": "000143.jpg",
+    "tau": 0.125,
+    "union_active_points": 660728,
+    "old_active_points": 660727,
+    "new_active_points": 660726,
+    "q_only_active_points": 1,
+    "old_only_active_points": 2,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 314794,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.1328125,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": false,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 660728,
+      "max_axis_displacement_px": 0.1328125,
+      "p99_max_axis_displacement_px": 0.006328582763671875,
+      "count_above_tau": 3
+    },
+    "selected_candidate_support_union": {
+      "points": 314794,
+      "max_axis_displacement_px": 0.1328125,
+      "p99_max_axis_displacement_px": 0.006591796875,
+      "count_above_tau": 3
+    },
+    "inside_original_frustum": {
+      "points": 633113,
+      "max_axis_displacement_px": 0.0196533203125,
+      "p99_max_axis_displacement_px": 0.006256103515625,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 27615,
+      "max_axis_displacement_px": 0.1328125,
+      "p99_max_axis_displacement_px": 0.007527786493301392,
+      "count_above_tau": 3
+    }
+  },
+  {
+    "mode": "local_tau0125",
+    "view": "000179.jpg",
+    "tau": 0.125,
+    "union_active_points": 742538,
+    "old_active_points": 742538,
+    "new_active_points": 742537,
+    "q_only_active_points": 0,
+    "old_only_active_points": 1,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 320984,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.08203125,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": true,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 742538,
+      "max_axis_displacement_px": 0.08203125,
+      "p99_max_axis_displacement_px": 0.004913330078125,
+      "count_above_tau": 0
+    },
+    "selected_candidate_support_union": {
+      "points": 320984,
+      "max_axis_displacement_px": 0.08203125,
+      "p99_max_axis_displacement_px": 0.0052490234375,
+      "count_above_tau": 0
+    },
+    "inside_original_frustum": {
+      "points": 716413,
+      "max_axis_displacement_px": 0.022216796875,
+      "p99_max_axis_displacement_px": 0.0048828125,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 26125,
+      "max_axis_displacement_px": 0.08203125,
+      "p99_max_axis_displacement_px": 0.0056915283203125,
+      "count_above_tau": 0
+    }
+  },
+  {
+    "mode": "local_tau0125",
+    "view": "000214.jpg",
+    "tau": 0.125,
+    "union_active_points": 749427,
+    "old_active_points": 749425,
+    "new_active_points": 749426,
+    "q_only_active_points": 2,
+    "old_only_active_points": 1,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 351011,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.17138671875,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": false,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 749427,
+      "max_axis_displacement_px": 0.17138671875,
+      "p99_max_axis_displacement_px": 0.00531005859375,
+      "count_above_tau": 2
+    },
+    "selected_candidate_support_union": {
+      "points": 351011,
+      "max_axis_displacement_px": 0.17138671875,
+      "p99_max_axis_displacement_px": 0.00543212890625,
+      "count_above_tau": 2
+    },
+    "inside_original_frustum": {
+      "points": 713043,
+      "max_axis_displacement_px": 0.0196533203125,
+      "p99_max_axis_displacement_px": 0.005279541015625,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 36384,
+      "max_axis_displacement_px": 0.17138671875,
+      "p99_max_axis_displacement_px": 0.006535530090332031,
+      "count_above_tau": 2
+    }
+  },
+  {
+    "mode": "local_tau0125",
+    "view": "000251.jpg",
+    "tau": 0.125,
+    "union_active_points": 848089,
+    "old_active_points": 848089,
+    "new_active_points": 848089,
+    "q_only_active_points": 0,
+    "old_only_active_points": 0,
+    "original_near_or_behind_count": 0,
+    "quantized_near_or_behind_count": 0,
+    "near_plane_crossing_count": 0,
+    "selected_support_union_points": 288267,
+    "selected_support_invalid_original_projection_points": 0,
+    "selected_support_max_axis_displacement_px": 0.16162109375,
+    "selected_support_original_near_crossing_count": 0,
+    "displacement_tolerance_px": 0.0002,
+    "displacement_control_valid": false,
+    "actual_projection_definition": "Native initialized centers; F32 actual-camera-matrix fallback only for inactive centers. No FMA-equivalence claim for fallback.",
+    "theorem_scope": "Original center inside +/-1 NDC x/y, native depth>.2; no assertion for outside centers with overlapping footprint.",
+    "scene_camera_znear_attribute": 0.01,
+    "all_union": {
+      "points": 848089,
+      "max_axis_displacement_px": 0.16162109375,
+      "p99_max_axis_displacement_px": 0.00257110595703125,
+      "count_above_tau": 1
+    },
+    "selected_candidate_support_union": {
+      "points": 288267,
+      "max_axis_displacement_px": 0.16162109375,
+      "p99_max_axis_displacement_px": 0.0028839111328125,
+      "count_above_tau": 1
+    },
+    "inside_original_frustum": {
+      "points": 836422,
+      "max_axis_displacement_px": 0.01385498046875,
+      "p99_max_axis_displacement_px": 0.0025634765625,
+      "count_above_tau": 0
+    },
+    "outside_original_frustum_footprint": {
+      "points": 11667,
+      "max_axis_displacement_px": 0.16162109375,
+      "p99_max_axis_displacement_px": 0.006595649719238282,
+      "count_above_tau": 1
+    }
+  }
+]

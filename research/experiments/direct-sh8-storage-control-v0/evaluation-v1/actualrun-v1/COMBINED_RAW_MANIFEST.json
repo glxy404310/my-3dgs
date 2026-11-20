@@ -1,0 +1,2774 @@
+[
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000001.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "75d0523ca5dd061c464fe59c43e015f3efcb9fe8de33d7ffd8a6746e0138053c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000001.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "161609b6744ab5735b9cb4243bfa6909584fd8e2b7621c13f5c08360fb65564e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000009.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "6ed1fcc65e247450c8aa00b8638308b6b8d93e22e715b605d48623a361948ae5",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000009.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "47f8cb4e52f79dd60cbfd3760a4c4fa0618dd5181364c81d3e5b21efb255dc1e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000017.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "7ef26daf1a4d28fd2f53707145b56e6f47048c99965c767abcb8e411d5d8e718",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000017.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "a6fbce47742a603201750127a0b0a490cae991564d17aeaed4f4521faadab342",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000025.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "2afb731450fda68db0f9735eddfc63840c5d8db1a16ec60fbc0cacf7afbcab1b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000025.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "528179c4883962f18f80fa00cbde996ee3c88e0fe4d4f5bc98e390178e7f0c19",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000033.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "4835c0e1047d273d5e63bbba7610c958a61e854e7e8aea2c3e7c410aacdf24d9",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000033.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "37e090ae0e69fe9643b28eebaabaafbf337e56cb88d4df077603ab9f34304b65",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000041.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "244716f92a4a69bd9eeb5b6c097cf5ae0bcf961483425de3261cd0ceb6883f8a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000041.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "68cffb96cd62be43f26d5075ac2d0bdba1de8b04392e0b631295a5e185462dcc",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000049.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "5107c7f17f5de7d4faa0e753d1ea41eaacc020dabeac83314656243fbbe3bc8d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000049.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "425e02fd3fce77dff9aa5c36f20e6b27292ec87c2ad2bc5d3ef391f37ea09b43",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000057.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "a7bed7d3d1806149b13a10cadfbb649ac9bc6adce38e9139b3212cd7c5797532",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000057.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "3c8ab6537796977bd80be4b2bf95df6e1860ba5fbdeafe6782ef13376837c3ca",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000065.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "a790aaaf834362e88ff6466b75ef1cd730c23cda1f55831382bf49c9d6efab32",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000065.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "029995c67bf2ad9fc61b60a9b2f152aca79381d5bf7061eba9269c4b666574ac",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000073.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "2ec05ee3e93248d84efd918eb347d4b8a7ea4cd8ec1bb554b5da76afc37a076e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000073.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "ea46c057d4969c585de0b62089fcd5730c3e364b8841e921ff0bfe3d4ac2b1f1",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000081.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "0c454860671110b87237b8a0417371309a5c8b23d7507a4bbf7cb5ce20e1ffcf",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000081.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "08b1d5a8ab76e2d9685351e626e09f44f0853a1e1fb5e73d73a7d1acc1819c8e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000089.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "ef70e42bdb4a10a98fbac4b1e2b52e5ebb08c162b4167ea26649f617598ab9e8",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000089.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "9100b83113f1b4112c1b888b826f0ed6b2394c4de9449f4bea2740f5575e2c20",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000097.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "2527d2413defa0226b4e293ea8cd2eb6bb8459b111f480fc4c4ef616cd7d05fb",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000097.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "cc6ad94b3ed61c7e8e32443bbd8dc6629dbd7000229322cd8bf46beebec6e338",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000105.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "4ab1abcaf0462cf335870559081b7fee2342ea8b61c4610c4f5a5332b41cb90d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000105.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "608ec298932914fbc60af23d6c7285315fb305edb6e9acfacfe5d66ba139f825",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000113.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "5b3e2061efff1c35d2cc57b12d5d02ee8d2a5548dce47c5df4435cf9bd7bdff6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000113.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "949da00c4d0706cf60cde5da5b93de63038d0ea4ef860129dd2ba6210324c59b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000121.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "102154db6930008895c6ff2ffb7e00c8438c3d0714ed41053ef676fea8f2b028",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000121.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "b073644f65d4dda8714006e164eda61cb1af3e7875c5ac55a5924a7d18121ff3",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000129.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "b940c9c837dd01cd44ebf157b35172076d1b0e52d40536932ce3e42410d6eb38",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000129.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "3c58634bae837fb1da936cdd610e04c5c8ca426af97536a2f914c4e0e2299f32",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000137.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "58a969c748ab036b89579f309a4d4e386e8b60114bc94662bb0dbb51b3a197a1",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000137.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "43d6bbf95c052499355d30eae1c1534504cb54f4e2d2c534ba0d77abd228d576",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000145.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "d2c6f65c0d4868aec6e8b1b120513cae1d9b2d57770df46f792d64f35842ace4",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000145.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "f89cacd73d13f70e53ae0099862ec29efe3e8aba9a34103932c2f603ec371159",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000153.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "e95e6fc597a6d68fcc34bc089275b2f7f4a52dcfcd3226cb20198a4c002dbc78",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000153.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "8cb72a0d7f47d20ea6150565f1831794edd242826fc8f9f4438ca88426634d7c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000161.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "c341ab5131bbbbdaabb03ba2ed6dec0d9c7c16dbb4bcfd7e90138f40b28587f5",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000161.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "1d508461432516124154bf8a1b480cb8d0c4d245c6e8d6cd58378d1968ab7f8b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000169.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "050ce5812036a2b7435bc759a47cb11513a7a9137ebaa74fa486d349e15ca4e6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000169.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "089d0efecde7206a5dd045efd0089d8ba03a791b813674b1ce22f3e6b5dd16ab",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000177.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "c7b890bbc0da37e50723019161412af725ddec7738bd9d8a90b43251e5b8780e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000177.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "e62e73036ef01b8e524a30de02e7234126e4047cd146a25adf9e55edb0c26801",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000185.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "ccf507e8aa8c8307ae9fb0f4f918393681e6aab458364546619387086abd3733",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000185.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "3b5dbf0368b136ecf6ab9d850cf26854622ec1ad6426f62abb60387928acae39",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000193.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "97a3cc3b48a240d761b21522944501aab1a4356618d25348d976be8627525da4",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000193.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "b4d5fd202a0382425c31637914b48d8c7bed6461c6dee6f0ff17715b911134f5",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000201.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "308a4a7886b5dd9585bec3b0652c7bb02b60d4b328c2989666737a54b9efb182",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000201.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "9626d86519ea1f82370459aae1e2f94f0d2589e7c569f2191c30d4216b162fc6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000209.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "dfd74a9a2497a19412ff77c65817afd2c6d84ebc6875cca647c26dde9edaff19",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000209.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "a335ab2a1aab5ab3b797524e605330440af571bbf2876ca7d02b643007c36725",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000217.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "60ddbc46a97f80502cba24d55d447e869f5042b196b4e3edd1fd919793e8f621",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000217.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "16b0cfbfae60677810b175ee150718fa4730386cc5f74b9036d742d0cbbbb272",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000225.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "e05e0c993392e1f6970ecb290f40cae1c536109f6bc121c5b22081663fc0ff05",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000225.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "69cb682390caec928a123343767b832904ee281a45010dc3ef9a6eebea5c35b6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000233.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "b2e9eb6b3d50369a7c91a62ba79b83a52140943a8a9d30aa4b20d2272bc88e7a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000233.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "a3ef509de4961047fdec7cc591ef2e9fae4756b4d216d386986d3c8328b942c8",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000241.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "f5124c1c33a64c4889de444ea2850edf5e22c51bfd9fe786ddb3246614e38460",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000241.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "2e6eb13a6a66cf70c48a81e74182b0eed3cf77237f9533902fdb55ec0cdf47a2",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000249.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "137ac84b685cc5e5f271f8c8e45899d340c4a25cff3b67bd9f51b0b9a8c9546c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000249.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "214779fd9bab15fdb1054db7b86244a93a61b988c7c99f61f4779f973206d880",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000016.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "c3c10ed2dc083432419d53f2cd195849371f6062313d7a223ae946ac43ee77ff",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000016.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "a8e1c292c6af398fba57feec3689e5cefba9b1912f15b3e27a6b7b1e5c589833",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000001.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "042719be80920c87bea2ba76061f7c64ccde70a8aca4b67bc8e5c6a6543c997c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000009.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "3b075054084ed7622092aa9e83b1e0b3ebe27ae30c86f1448042731690550c37",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000017.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "e75f5afa3263ab781328f65ec3ed778eab2e3a6346b2bff9834da8a16b10061b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000025.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "c5780334c9ccf1c0b16feb4b960dcfae791ca6d92a0e80e0e295bd6803c9aadb",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000033.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "8f6886cc1f067362c519cb465d0a78de65d1d5a055c72bdfbef737463841bb16",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000041.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "18db89b023bf4e09b153386ed37b74b62241cd6d8b8171efe6529a314e311c06",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000049.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "ffa341c6da4ae2e5bfc17aa0c70ca7df60c56734b9455ff1c23c79162d886357",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000057.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "77c4621555569ef62253ae0c49bb2e717e10dab20b0f4ccfd42e3859ce9c0104",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000065.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "0b5c94b858d6e0952181c60fb910722093cd02dc185606900d8f99d060426c30",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000073.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "fe901cc6e20379bf58be33ce78f59cd920c7fb42ea8059ff7022afd77335222e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000081.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "79d6bc822044f857ce0f9474a596f53160bf930e589f55d98549e5b02e197768",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000089.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "b373f3fa9eeef7a9c27dcd09c4ea0c85e548de686c5d1cfcfd56158716c571f6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000097.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "80693e79900c0a61780bdea4f81c4591eb2d3f143c9fa808913c0c91a000129d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000105.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "1cf4197ad15532f15e5d4c4aa3086162eae9327fb624cff70a6b15589bc65e9c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000113.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "bff9d9e5aa140cc6b89a15e133702cec2f0425263788645acef283d2463be187",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000121.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "446133021a26fb1948a92b521ac0c09a5a40e329fa60ebd54571e3976fb85438",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000129.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "9a6145975610704d6c0707b2a59559042c9c0f36782d6c105be5c3524c2277bc",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000137.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "a0d71fb3390f4a47ce96ed01c92bfe3084476f82d326a81fd1899494784e1730",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000145.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "1ff85dc8dfbc83e69d0e57ae4513612a5ef627c1a81a3e756a63b16c9d6f9de4",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000153.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "7b8783802caabcdebafc257913551df516fc2a592ade04352a1fd9fc2165142e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000161.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "dd2e4d408a45ad0256c2a422f18f2052c1342e2ced027c7a61d1ad107e279cc6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000169.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "7e8eeb4ecd3e8904669cfd9a6f2a924e5d37db2cbd54c63158d7b96f12eac16a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000177.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "aa9cf03088cd11f19e0c9f04953021b9792747136a890e70e16b5f259e6099dc",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000185.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "66082ed510336e978932d6199ecfedfcdba871c3f78bcab671b0716c5a7c300e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000193.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "0c549352643bbe077d2b82e0c2d4bc03b2887f3334eb9be18000ffc635caab3a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000201.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "94268ba7065f76398ab5c65b65d534420fc5358bd54f2968ed0d653e537a008b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000209.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "f86fe982104c7e8b5c79d15454f18720881a11f9fe0c0786b1f77448c7de3541",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000217.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "adf5dc3715b790e5fa1267aa9fe2e3c01d0d6b92d128114bdd9bf46abb9ad981",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000225.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "7bbc4a974e0b609fc0b8370bfbac09188e50b7c1f46f92d95ce8bf381cdbd631",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000233.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "9a7d8e0081106c077398e18210d3d348680d8bce4193d1b16370b55a07a47dd9",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000241.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "5e2457d7ac4391c9336a59ffa862aca6453b4e18011cf43e21b948662f550f98",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000249.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "49409cd585043e05010d337f330d4e95b4e6a01615b7fc3c22d28a365f377653",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000016.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "5fe275502fcd8a705c07fe66bac049282434850e4a9caf6039c9461bd40d976b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000001.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "176c21a0cafcde4680d2725cc368bff54627ec04cbc9ca7f9f960714af0196a1",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000009.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "06bd87fa585ec7955c24f5e709fe9ffadf168361797c022e32a1e9db1a9257f3",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000017.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "c7a87ea14b105ad37699faab19b182d12fbf9972d96ee54abf0a5914b9f95209",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000025.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "2df5a1bbaf0a572e733f281048890c340664b2eb811872131b50383dcc7c982a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000033.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "4696472f19cee855baa119c5a327c12f7c93e8d24a98e3e86b4546703551bc3a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000041.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "2fd00b183bedea22a3cdf9ae4a56e54c5a6df868be4e6badd9a0fc656b7e19b5",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000049.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "b47491ce7cb055c0f4f94a514681fdc17a421f8887f21c04bc8646e4cec16e7e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000057.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "949bc69aa7d5982ff32c2364e33eb0769bd92f66dc62214ed4a2eaf0e6d93ddd",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000065.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "8ab1d74bc56b3db8e2b8358b157a3770237c520daa676c3c9075be9aeada204d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000073.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "8a84594827a43b1aa274de858692c4cf57ae10f3dc34cfa3e33f62d994126bc0",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000081.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "eee66d24cecd3194d454f4dd0301e3025e0e4d6f16f0d80a7331d9de413a5760",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000089.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "2ecb66fd8550213b6b0f1dbac259a740bdaa619249eaf59bbcdc9b7ee2491aba",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000097.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "3bdfa82db79357ae7bb9503bf0769d2a9c24331b5d49d169c5a2e44bb830f2f0",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000105.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "460bdae9093ff14d77c69d11320862061b1885a472e47d5c79305a7f98f70488",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000113.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "95575c02cc932ee94a8abe19c66d4c67767fd9df79865e817d48e34d82938882",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000121.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "1a009121b4ceb192f69167fd16324869bbe3b1297dad779dd2e622c5c2a526ab",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000129.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "7a99f97c4153c8b1af3df229f47caef539625cc64af8eda74b393e77eae54d6c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000137.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "ba5fcf3fdbe7c5513f890f380f57022b19a8a6cdf067caf396e6c7b87b8c2b9a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000145.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "e686489d2ace57bbdc475ac172c48b5c2ddeccb6b463c734090810c74052e442",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000153.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "41133341e01c22f64cf569317d95ac8bf4f7e44bdbe37fe7055317fb22fbeb1d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000161.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "6d8804af2244080e9daad2946de9867cc284d58213f2a7f47e8d94f30c5ee408",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000169.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "6c7a9009b9d4f412a5f34f300b398c9135d5363425e5ccc36654623dfe356cde",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000177.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "1c24225974999c269a1222eefbe7ebc363101d115a5b69aac0d723d20100ae38",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000185.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "f270b7e12517716d438af0c36b5c6cc2b868ded773cb49a59a87a4226c351c41",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000193.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "bcd37cff244c37d51aa0fe18a5ea9979e842ce63bca2a55bd6b2a639d9b9d3ee",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000201.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "24f8990f8c4d2fbc29caf5933b98b24b7cc0fb064644b1392e867c26d86086cd",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000209.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "5bd0480ef8e8244f433f9b31f2243f791101c1039e2bb7f8bd9697609c864912",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000217.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "bbcccf5908d8881c2ebc2755afcb706939a370a7d8558f38e989338c1c01561a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000225.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "b76a1a9e09294190b51b6dce5435d219bc156c7f824e64be64e424b160c934d9",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000233.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "d0529378afc3cdadca94e4d4dc9b9d690c1e6826a251ac44b2ff86d7d887e7a3",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000241.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "5aab7fa91d3abd600d7fa7d49da684acd9f6b6d9f93a9b2764a2e783a43b4b20",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000249.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "64e9f53a72c1687b98774780d7a0798c60adb43ea8efd7783e61e4a5b8561994",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000016.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "6bf126bb3f27fd1a4b700224f915ac5ae3a1a5a2b0ab7a9b52a05a898b15c822",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000001.jpg.npz",
+    "sha256": "6c4594f4f27ce277a74b8869ef23b4d23bf6264f0b49abe952a86aaf0da46fa4",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "86c9abdf6cff129e2a17febda648706ea9c7b0b5fe882c790a17af6b63190ea6",
+    "png_path": "images/pup/000001.jpg.png",
+    "png_sha256": "454d478be20f87419e9099151483edfc3c716140b02217f96ec6c940cad505e6",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000009.jpg.npz",
+    "sha256": "03244213be813f2c4f2ae20365f82f3e065d325a59c3819d7dfe5b16b3c7e48c",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "499d85eb0b08e61e24a3b4bdda93045fedb8d3ad4fe5d89a6902e0b5e326d195",
+    "png_path": "images/pup/000009.jpg.png",
+    "png_sha256": "d4de6d71f9d403a159d83ff00c987a810dcba24caf9e5b32fd4a367068de513a",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000017.jpg.npz",
+    "sha256": "c6cb34bc1811ed7d3e5a2ddd362e0a3ae99f17bba26fe18fe32d270af843ceda",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "bfef1bca7a46dd819f8b362721460883bc601422705a2ba3eab0ba58b09752fa",
+    "png_path": "images/pup/000017.jpg.png",
+    "png_sha256": "ee783c5a5a61d9d228589eeeeedc4b1e0c86f4508f87e49c9ded547a5e664b56",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000025.jpg.npz",
+    "sha256": "f7af80aca399e7180deb1a720311b13f560cc04a6412b2a1ee0da94e900df3ab",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "4e688144d94dca646c43606db02d2ec17d227c4fd090a6dc5a597692ae4f8658",
+    "png_path": "images/pup/000025.jpg.png",
+    "png_sha256": "b0792deac88bf175e2999e86b8673e02537d9f54fef10aa9290c327d4fd72f20",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000033.jpg.npz",
+    "sha256": "74d4c5ebc19d5f875f91a59997f5321899e6c75407f909323328ade24c624d37",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "7b9399c1797687fd05e64f3d9cccc8ef385958c5f244e7f8dd0db6a0b8566847",
+    "png_path": "images/pup/000033.jpg.png",
+    "png_sha256": "6f11aa1d5bd0235a19a4d5999843e4b17784ece1d7d8b0471a586dbbe1fc0efc",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000041.jpg.npz",
+    "sha256": "f408de4a7f05a1cac0774e2549d480747f221448c9c186e9d6fdd46b8f4b3fe7",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "17210e88be2f63ea876293b32efebb3f2f3d6e3afd9fe3f79a6d05af44bacd7e",
+    "png_path": "images/pup/000041.jpg.png",
+    "png_sha256": "a9a6048a75201db19c768b00f5be470124625d6bca4f4f53a48da2b79e2b69f3",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000049.jpg.npz",
+    "sha256": "bdea0c2eb7af2a28c9320ad01785b54133ff60548037668d639143ddfce73186",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "c19329efd5e7d297294be795e188458d0903e2ca613eb618c11302874e23c177",
+    "png_path": "images/pup/000049.jpg.png",
+    "png_sha256": "adaacc4bb2a59f15d41b4c066ecaaa75ce32a057a16af238d9d653d5bbf4d050",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000057.jpg.npz",
+    "sha256": "91878c008dfea91b4261a87ff09d2b3da4c1984d1e52f3ed35962b4a448d310a",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "efeb5e0c977751f1e942ae5eac977ba83f3d4d3a83a7fbdbda2fdb77d40aa1a7",
+    "png_path": "images/pup/000057.jpg.png",
+    "png_sha256": "581071031109c3ba5b1bf95d830c701f692ad0c491a3c5a69c956be27aca0618",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000065.jpg.npz",
+    "sha256": "27d4e397cbac25a1037018a4aea3d68733b62a4e429ba17b791467463edfb56f",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "d70b9886290bb763cbe8e6c02c4e3376c711077a2c3d5f14b1e742c604f6aaae",
+    "png_path": "images/pup/000065.jpg.png",
+    "png_sha256": "383396b4983b409d7f3d67ec85f7f3882099697c3e94eda99b65662e4070c5c6",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000073.jpg.npz",
+    "sha256": "e263ff17d030b928ba3b3e35d238998dc08a7f844f4bf49fa28b4634626beed2",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "c9855dbfce39d114772063fa4ffe4ee71cee901625d6dae40f0eb03be189f720",
+    "png_path": "images/pup/000073.jpg.png",
+    "png_sha256": "aa0f83b4de231a3d537830078b10371290564dd911caf337ccbffa9fdf8f8304",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000081.jpg.npz",
+    "sha256": "fa78825c3d2beb51baf022396948b464f70796d0b0cebb95697727f862c93928",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "fbf686e051ba404bb37767ba8cdeb2376146a1e254fc46f16d72b687e618f3bb",
+    "png_path": "images/pup/000081.jpg.png",
+    "png_sha256": "7cb277c3709e1e6db8559542601aa438fc6e21c7b7fd28e9a553baecbc4e5f98",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000089.jpg.npz",
+    "sha256": "5a57cd1b367e17cdb2c6f6ad29860fd84e4d2a6b49645a14ae6232853d45f572",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "6a5ece555a64a973fca463745df3a069a7a11cd95a9486ebe3d1a92c2aa469c1",
+    "png_path": "images/pup/000089.jpg.png",
+    "png_sha256": "3665f298dd7d15affde795621ae62bb062bb42774569d197b0c9854e7d2cc3f4",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000097.jpg.npz",
+    "sha256": "ff7da1f3b7ef002f6e06bf75eb0df9938c9bb21fe670f908152cfdc2cbebdefb",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "a294affcdc956fa2f2f74f5a79a3eae20a810702fa2b64262607474a01279887",
+    "png_path": "images/pup/000097.jpg.png",
+    "png_sha256": "7da230199d497bf9d27bbd0d76cccab4350da74f2a4b01a2338da4498298a1a9",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000105.jpg.npz",
+    "sha256": "46e57b40119a98f6f2ceb37810277fc4aa0751dc79d35cd4bd9deef3d46968e9",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "032f15880db25d8d13f564e7f1cd7ae5a1f0fdc2171a79e882e2f071c22063db",
+    "png_path": "images/pup/000105.jpg.png",
+    "png_sha256": "b8cc423e4562aee572ff30ce65e16b5e7d5bba5b90cd11fbad953c88eabe935a",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000113.jpg.npz",
+    "sha256": "762c3e339e6a6e1e81d49fa0cc8a5b6241a215ef1dfee1d9ee762df3730e9225",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "1fc79d0fcbf8cfa9e69561a5e354aa7179d96884c17138b81b0101b8dfdc8abc",
+    "png_path": "images/pup/000113.jpg.png",
+    "png_sha256": "cce59581a232aa9c0e814cabb8c643dfc614ba7809c65b59b882097d29bef8e2",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000121.jpg.npz",
+    "sha256": "5074314cdc7597cb513e281a033c1f4c194dbf8fa90ba853f869abcdb152518c",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "87c6bbb8057dce38548c525795c2cc07b364c2b2dff800a439ff8d1d187ebfd6",
+    "png_path": "images/pup/000121.jpg.png",
+    "png_sha256": "16f022201cd4e47b71b2537b653916c40b0290e51240fad1acb334bf81f60313",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000129.jpg.npz",
+    "sha256": "dd1a202b1bae8a29fd8cb2ee79d6172f55aca7c4d11e66b13d944354e75ff58b",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "8141f1d139a4907bfa1518d3d57d529cd70b2b8fc6f833de50bf65023fa37343",
+    "png_path": "images/pup/000129.jpg.png",
+    "png_sha256": "b7361c54c1a0818446b3c85ed831d7db27d467f1ed8e9790575f387dd1e82e78",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000137.jpg.npz",
+    "sha256": "de777faa3fa5e310615c84b94492468608c93ac2e5c6b5b5cf62534c8eaa5659",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "e8caabdddc0545eecb461fe17ff4ba240b816b7e2311d9982a1a9f74b0e5398c",
+    "png_path": "images/pup/000137.jpg.png",
+    "png_sha256": "470547a0584adb98e06a82909e9c85a6a2b5b34741db13f22f084c169a5c884a",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000145.jpg.npz",
+    "sha256": "50aa09607c8d57b9c191bd2c43bd2adac3ca2f2a63ef9dbc4d6554412b1b64db",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "b2367db81298987d986a750c9a8bb4430df68a28607818f57a87d631f1f36fea",
+    "png_path": "images/pup/000145.jpg.png",
+    "png_sha256": "ef944320de41e4f02671478fe5cc6843947e92912a92fefbfd5b62cb82b4921b",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000153.jpg.npz",
+    "sha256": "e89cfdcacaba46326f76efec0b3cf0659fa6abffccaf41cfd57c934c5fcfed7c",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "b6758d3d5ad3c6b4c115dafe41e9792aed2f341580cc1b0c419405d945357583",
+    "png_path": "images/pup/000153.jpg.png",
+    "png_sha256": "b5a1656cc9137db7e21a53cb3619900d08e1dbd220e66e7df2e2e511ada53d5d",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000161.jpg.npz",
+    "sha256": "8e2f7f8144a8c934cd3acc8ee71404092db017d753b86e0eea2e033fb3d2cd3c",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "ee5ef0c16ae291d9ab3e210095bb045c3c622f49897acd44e8dd9b72faa52ec7",
+    "png_path": "images/pup/000161.jpg.png",
+    "png_sha256": "6374cf3e5648046d908aa74a1f9c7e3e297b97a1b5d084fe074c5a52232a36ea",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000169.jpg.npz",
+    "sha256": "f393ae43c757ae00f47da69f976fa397058ab8dd7fc450cede0e936f38f38577",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "f4a1ff206f9f7b610c9f4fae57b67ba324cd657e8661663ec5108cd825dd42b5",
+    "png_path": "images/pup/000169.jpg.png",
+    "png_sha256": "9a35d9e30d17bd51905635e6a1cb52a5b7b7adf21edea3e192d3e34791062f0c",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000177.jpg.npz",
+    "sha256": "a138a5df1d86a26093ac2372c925825ddee1fa1c6cf204a5df22dfdfea6c2303",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "8b2925473e9472e4ee71d15dfafd33e0198251935c790cef9688c53bc6fa89d5",
+    "png_path": "images/pup/000177.jpg.png",
+    "png_sha256": "e5a605ddc7b64541c45ad54ff7fc55f334b4ed414f87672530d981a40b9fb7d4",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000185.jpg.npz",
+    "sha256": "7451205f7bdaef3f365dd90953e6dd80ee34adc752ae47e165e4324b53d07a02",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "cff9de09d5d8dd8aef5f71f5941f8d0c43225eec946fa806255b70cb1fb2519e",
+    "png_path": "images/pup/000185.jpg.png",
+    "png_sha256": "cb2b40b583c4f2301a7cf16ac0966435580644f58e74771434cd13872561c2c7",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000193.jpg.npz",
+    "sha256": "c420a99a55abebc57c94cf8c5bda5307ff1e3c479cff4e9ce5d6c9a78e373f33",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "26e9bfed9c5b1d6b508e04638451387dd29d2554c224cba5362c13557039e2b9",
+    "png_path": "images/pup/000193.jpg.png",
+    "png_sha256": "7c1c93dc5df5cb10a71d8e2392c8164bbb593b7247255e87d0e42c28a03db3df",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000201.jpg.npz",
+    "sha256": "4609d2ca76273c3c268959d43977633109747ee5a78260bdb3c4f6924224171f",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "a8514031e78a1be8407602f13ecd1722ce94e36a68a412c69bd8527043784c67",
+    "png_path": "images/pup/000201.jpg.png",
+    "png_sha256": "79297558da08a919ec42932c903eac73c97c8a6657edae64edd30287ea0fc561",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000209.jpg.npz",
+    "sha256": "926203e3d7ee537a3b67f9ab0cb961273a4e9762b89c98a88f07ae2cdfd34691",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "4887077a11d3e7954bb2358c46de8511a881e89f8e4e5904cb5863b6bb3dd308",
+    "png_path": "images/pup/000209.jpg.png",
+    "png_sha256": "8a03dd0af0b3055b9b77865cbed74f3681f7079647fc211737477cfc442fea78",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000217.jpg.npz",
+    "sha256": "3981d7a40b2b453c691be1b7b00274bd9fd797918e9d13fb1657c3b70448757d",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "4ce2ba598be76c83ea20241e0f7388c39d3d924091f47b3d2d0442ebd70cf325",
+    "png_path": "images/pup/000217.jpg.png",
+    "png_sha256": "0f13ea8464ac0e9981381dabed976c6fcc71f27b6d25f27e6615b01a71ea118c",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000225.jpg.npz",
+    "sha256": "15e3be57b918a18d89a9fbd8cacac3f6bddd0d1f0e0a14bb2e4f4bacbee3d647",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "29d714bb67d6a557711c062598ae43ac2b0d4013425080e7e9b8eb40885601dc",
+    "png_path": "images/pup/000225.jpg.png",
+    "png_sha256": "9c3345afa0058f3b16eb9e93adb6b70ea2dae951c8328356b14e85c3c84ef893",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000233.jpg.npz",
+    "sha256": "d0fad41af6e479e6ec578578a795af1bdc91346571164d8ab4439008658c12bb",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "9147b5d37e7c829702a20a07fa282c888b693128186cf13ce9d6c217ff2146fc",
+    "png_path": "images/pup/000233.jpg.png",
+    "png_sha256": "574f779db774a5d03614b339558fdb326e05ae67c8d481b10fec987a048fab6e",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000241.jpg.npz",
+    "sha256": "7eac54779c018904cc31dfcff40c15721398aa6916a4889ddffd82c77deb5b77",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "6e29c36e175dcad9c2a1ce586a1cfc05a6d9384ea83964159e2cf15d7af04368",
+    "png_path": "images/pup/000241.jpg.png",
+    "png_sha256": "ce0a57986f7c641aeb3a33b992fbb22cceb336e66d88d4eb60d9d8e04aa8504f",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000249.jpg.npz",
+    "sha256": "21b450e841cf1b263a2edf7a73aef9e350a1c53c9561b679c83a959a1dbefffc",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "0e78d655b4c534494f07338bf8c6d8006d181523512a735bb12c685bda849246",
+    "png_path": "images/pup/000249.jpg.png",
+    "png_sha256": "5f7f4dd72c6d9e81897a8097559c0be185bcc5a863033d55fbbd7f8e0a10dec4",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000016.jpg.npz",
+    "sha256": "0e599d3714e5c307973318a940a737d2c7944cf71c0567be412ab993de2753e7",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "27c2b0a14e4bf621ebff2ca4557207c16bee7229889fda2a6efbd282969a1ceb",
+    "png_path": "images/pup/000016.jpg.png",
+    "png_sha256": "7234b9a1a02f0413f8a16acd24486f4232574b3bb69cb91a816a58a515f8ad01",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000001.jpg.npz",
+    "sha256": "fefc682c00cee506fb81daa46cd7df619406700dd19484202ab89d45dcd055bc",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "b457c6e3c1851928a2e780ae9a2c8fb324cdc15e787a4b284c54e8603924ae74",
+    "png_path": "images/sh8/000001.jpg.png",
+    "png_sha256": "c5048d133bac044d05069675ae08361597c82260784e6929e17c6f3a8d245a89",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000009.jpg.npz",
+    "sha256": "5de7ff78ad6c26730be6ff0069f98589dd52085f723c6198aee7270be3b1dacd",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "d42becdcc4a500fb8f6e957bbc023ac1ae16146ba171552bcd6c6b11ef08d278",
+    "png_path": "images/sh8/000009.jpg.png",
+    "png_sha256": "f5ea1873b34e8d441f6eeb665f659db1cc22e4145bcb1ea96a09509905e28825",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000017.jpg.npz",
+    "sha256": "89dd69f68a0fc1e7fd7f5988eb4dda8f9fa7b44f39575445b3cea3a2da8cafeb",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "434fa4b7cc46fff4624eb53e434ea9604261131863f615a22cb035e11ed3387f",
+    "png_path": "images/sh8/000017.jpg.png",
+    "png_sha256": "65b406d0370a66bd35497128fc17aef4b8f254da266cf795c4ab786ee4825e24",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000025.jpg.npz",
+    "sha256": "d56510e4ee29b17ab655b7df206f19478484c5c3f6b53d9fd96c1467ff1c59f1",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "1259c46fc773dc40a3c4885c8c2966bb3d284ad3f17c54a416f039018e9cf75c",
+    "png_path": "images/sh8/000025.jpg.png",
+    "png_sha256": "fbe945584e00f17c0d7cfb8780054bb56f9144e19ceaface414a35777b030829",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000033.jpg.npz",
+    "sha256": "bdfb48f02d085cf6234d681e9f26a5cab6726517a4910559e01a99c5276064a1",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "5f88354e359ed085cc22beb11ca29e8caabaa00dfa92a2c8999883bf8597a3f4",
+    "png_path": "images/sh8/000033.jpg.png",
+    "png_sha256": "65a7161bac4238113ac77ab4f5961b5eb0271e8e33b289d0af6c793121d5a6c3",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000041.jpg.npz",
+    "sha256": "ed8c92e054d4646f4fc90faac832dc247985161f30119cbf5cddb5536ca04815",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "8f3ab53bedb2c29fd7e72dc84a8c898e73065f52d8e3a2ee379342ff9a04bd37",
+    "png_path": "images/sh8/000041.jpg.png",
+    "png_sha256": "7d84247c1f815a9b05d64776a068d127f19c8bbcceea5580aca5c78f86880d40",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000049.jpg.npz",
+    "sha256": "0842cefbc8b8078b56f07343f5ee3feb6c5081697b456f53758f69f3c3cd8294",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "2d5b945f979fe8e767e57f2fa057ec67b19dff49809226d9b074293adcc263df",
+    "png_path": "images/sh8/000049.jpg.png",
+    "png_sha256": "4b666f1701f8284867266b44c202ac6b334c04e8efe062ee70b150e6a2b3c6ad",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000057.jpg.npz",
+    "sha256": "a3db6ceeda0618c99775b435668ce001c99683370d428d2d45eb110aaa0b236d",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "3d493f69af60374f46fb5d42198d6367a4086f0f1d9143ebfa934b6dd21e7557",
+    "png_path": "images/sh8/000057.jpg.png",
+    "png_sha256": "d8e3af1a3a5c3ceea209d2b5b355dc9372c9fb1ba49baac35cbe9c27e1f24217",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000065.jpg.npz",
+    "sha256": "9d30e0df1897499517fb4a87a48b31b4e3d0fb762693e0e9591b7842102f37dd",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "5b3c42a201c8b15bf7e8e48f29aaa83f2c91aee02a015da3d1516c41cc3049c5",
+    "png_path": "images/sh8/000065.jpg.png",
+    "png_sha256": "88c243a5c0d71efe31526b1d72614783dfd1ae85c87398b29c8a627efec75681",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000073.jpg.npz",
+    "sha256": "d27eb3c317b5a4bf2f41cb36165e77063cb8018d0b42b628b671a7e3a41c90e9",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "56c5406346435dbb5a3aa7ece0e6a2e868b55fa3f357f69befd8179986aa4e8a",
+    "png_path": "images/sh8/000073.jpg.png",
+    "png_sha256": "3c4ace7e325ff87b35930946fc3355934f10e8718425ecaeb88396925073923a",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000081.jpg.npz",
+    "sha256": "3e2b1631bace9c8a9b8a87fb798f7ef6e92691c6db814835550f231cee73538b",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "869f1eaaaf6d72757c705752a183d0e1426755cad78ef3f91110c6f253e863a0",
+    "png_path": "images/sh8/000081.jpg.png",
+    "png_sha256": "838da239429db73dd5ce3b6368a7ac40a96a853e260a0146744763d6d4987e51",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000089.jpg.npz",
+    "sha256": "f82948efa781522d3a0897da8753fcd0b77bd75b4bde6bdafe47d98f508362f0",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "c1c5f053a38cdb83252b8f501cd53917e2a6135d27704b363b2ff3631f87b451",
+    "png_path": "images/sh8/000089.jpg.png",
+    "png_sha256": "3abb50dd83d73698db119a0996f5df666d1f0b71051e400bb1c0fca0cdca735e",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000097.jpg.npz",
+    "sha256": "340cc39961be775b4c02c4fcf79d0703278491efd16a0fd4064d8511ba0210fa",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "c4b07f97cc25092632a3a60d193e059804c314b73bd0129f38a49b868806956c",
+    "png_path": "images/sh8/000097.jpg.png",
+    "png_sha256": "438599b0894aa33efdff1a37d2c2af5de129980072b25c2f431cc242c58c40a0",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000105.jpg.npz",
+    "sha256": "79814d888e141e121c63fbd10aa49452fdbdd6dacd1487bd78fd4239b7835d97",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "4211a4a95f2c60865e7a787c64dc8af1c80e2a17b03cc237201e82e381d46073",
+    "png_path": "images/sh8/000105.jpg.png",
+    "png_sha256": "3c96e133b794a9e6d32e5773a7983cb9238cee4753a838dad83b1ab6663b8531",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000113.jpg.npz",
+    "sha256": "0ac013a868c34f8425710c77780d9a11784de75f574879e8ba8d47338b3a940a",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "bd6f49c7f8e5591fdd1860a824c9d52f80286aa8d00b6bc5469bac9c5dba3ed3",
+    "png_path": "images/sh8/000113.jpg.png",
+    "png_sha256": "a4d5670f0a8b74046acd1becdba72963edc17ef0bbb5b63147b9edad80ace8c3",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000121.jpg.npz",
+    "sha256": "758b64108bb3a4e01deee67f29b27ac3939ea7fdfb3ebf3e1d5df6536c8704cb",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "de137a56c7d6ddf2a5a9725cf7e4ca6b29a15a76d5492913674d998955a7610c",
+    "png_path": "images/sh8/000121.jpg.png",
+    "png_sha256": "0d3d37d90678ae4ea755551f9604f97bffb41f2bb4e392364cc4c07b66f12f74",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000129.jpg.npz",
+    "sha256": "479a6b4811dca445faba7d47129ed64ee457a6195f4fecc1711988fad34b46aa",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "05c76d29c421eb0e3ecbb6032666c35b825d8088e6896a4c22cc9bc39b5c8257",
+    "png_path": "images/sh8/000129.jpg.png",
+    "png_sha256": "40f4fedd52163e157cc259465c57417e640736346e1238d0f1fc6b1e8dd0e570",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000137.jpg.npz",
+    "sha256": "8be7aad915041e3d72accac25c1ba7d486905dde7285101e2d0612c8a4aeeb09",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "a605434e72c605763554f992d42764d61df8873abda46b6926ff66abc0056790",
+    "png_path": "images/sh8/000137.jpg.png",
+    "png_sha256": "a8cc9dc90cc6fac3bbabf6c55508a1c46755bbc38ef72435a3bf5eeefaae673c",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000145.jpg.npz",
+    "sha256": "2c3d4a263c421721f593789478011658eca4043e58e42bb53df66bbf98eebbb1",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "d683e31a36499a72a669ff8a2cb06ee66489647146ce6e1d67ac5df1b4708102",
+    "png_path": "images/sh8/000145.jpg.png",
+    "png_sha256": "d8ba832a60456cd37cd17633bb8d1f1fd7d75f7ad589a9ca12fbbc0304e6bcfb",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000153.jpg.npz",
+    "sha256": "bb751ac8873ba440e488497ee7a0a8a82f9670bb4bb8b49df0ee66ebdb78df4d",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "7ff08e70fc547437c91e00df037f0192ed9c44b9ddd91122d8be8b1c31657fbc",
+    "png_path": "images/sh8/000153.jpg.png",
+    "png_sha256": "d2f98eb2eeebead70704229eeaec2b45f7f93d88b58218cfdd3fd00e68250dcd",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000161.jpg.npz",
+    "sha256": "e12a1ebeaa1c38ffaf0f066a6a4ddd1ddc10988f44eefff4ddbfa9aa0f45ff95",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "2a588503e8a5a1fbd67eec74fe90af561b1131b0b5712a2910b3655e0a1b3d56",
+    "png_path": "images/sh8/000161.jpg.png",
+    "png_sha256": "e6c1f7f394f4487e6ef43d729eefd7f3090decbb4dd259e94718112e16b4c95b",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000169.jpg.npz",
+    "sha256": "f8d38b01501bb10582676326c1cbf049419d965902b1de23479ceeca1d8dedd1",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "2822ebdaa788da84548617799bb97c0116ea858001585c0c217f3e1dafd5e6a4",
+    "png_path": "images/sh8/000169.jpg.png",
+    "png_sha256": "7279e947dffffc94797a9ad9ad992135a1ba1f5b3dc80717c0236cb9c7e34e5d",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000177.jpg.npz",
+    "sha256": "9149b05fad2b768d03ff26b528eb30746a37c5436f147dc3ab04520663493da5",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "4b1545656d0e1a9d529529a98813282e11dfbf3835f800ef8ca5a2df03fd44f0",
+    "png_path": "images/sh8/000177.jpg.png",
+    "png_sha256": "4456be7b37eb59275d7cac4e4f8472d65f1040a159970936a23b8089131d5fd9",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000185.jpg.npz",
+    "sha256": "44fcb65e86c285cfa8ea0b03be9d6b22bc566639575ffe6a0f853849238e182e",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "ccad59d25fa9f50b64ec30e7cf530c982d4f7b027728e5e249d23e5c5d642f98",
+    "png_path": "images/sh8/000185.jpg.png",
+    "png_sha256": "61a3cc1c0e71527e4f4413103d4052a3148d7102747816a482481aeee9a096cb",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000193.jpg.npz",
+    "sha256": "5d9ecb90e97356e669f41ba6fde025ff0015d3773d73e191faa8a460ecf18525",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "c71572d844a3aa9e307800d62bfa0a45d17b1308dd0423e577e26bee909f8956",
+    "png_path": "images/sh8/000193.jpg.png",
+    "png_sha256": "d541c500ac4c42dc98de588ed1f66064f76a98abc82ea87cb1a12a313d72d83b",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000201.jpg.npz",
+    "sha256": "0c51d0c2e4082c7e5b1b439681ac42062937be7422873bb33c79ef89cd6d9539",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "bbf0d5355ec65024347863ee23ff42350cf1251d51092e2855e8ae360243f9c6",
+    "png_path": "images/sh8/000201.jpg.png",
+    "png_sha256": "bf75e639443928e57cc54ee2d74c05057c06528087581fca0ad7893033f32584",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000209.jpg.npz",
+    "sha256": "cc02b024cf0a7582dff3254eb4df38d54795adf3f69bfb6f11f6fc3ecbaf5a94",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "3609bbff0e60a00d6d05b021c5d4de96700e9be75526665183d5ef1d13ff30d4",
+    "png_path": "images/sh8/000209.jpg.png",
+    "png_sha256": "5162fbd185f723104e4e098154794371c5a2517d3b3f87d4b9af3a5c8d3037f0",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000217.jpg.npz",
+    "sha256": "8cfa85327b02005e797f8967e8f97534f7d0b64dc8d64b5fc13f9794ede7cb27",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "a8cfa205c51ef2b736672045bc28d5af670db927a8986c6d33877d4d5d01443b",
+    "png_path": "images/sh8/000217.jpg.png",
+    "png_sha256": "4a2ec790533ac2f181ee1f1eefd7acef23210d8c3b31c3ab4e402d47e778b0d3",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000225.jpg.npz",
+    "sha256": "071156b07fa3cf2925e43adc53b7a126b0f7ee14663d750c1ddeb2d3391e8aa0",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "c76e0c70ad11d2586f5a3ba19a273225b0fed3b211987d39225f1907f7dec336",
+    "png_path": "images/sh8/000225.jpg.png",
+    "png_sha256": "0cb00dfe305afe6c11f19d721f216fba8840e601cc2aa447cab6a9a4971b7386",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000233.jpg.npz",
+    "sha256": "062d984be7101e5a4b82b7f0e6b9deeab568775e08bf1ddf27789ae26d7e67d3",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "d9b044487fadd4bc5e0144ea5b613e3d10d914df0cf1cc7314868b33f7cd66b5",
+    "png_path": "images/sh8/000233.jpg.png",
+    "png_sha256": "34dba4cb0d3f01f8c7c1cf63948278979fbdba068e1bb48b024dae5c042c0e71",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000241.jpg.npz",
+    "sha256": "879040639a09f08651e74470b8bada7186e1aee5548eab133c5567dba12f86a5",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "8d12ed1517e9533198b0c990ee98350ff7474359ba8ade4d4451146669a3368d",
+    "png_path": "images/sh8/000241.jpg.png",
+    "png_sha256": "28596123ddd29ceba6effbf4a7ddbbad763a77f5b031c7cfded18df93b7a82d2",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000249.jpg.npz",
+    "sha256": "380fbabe432936c821ce1ca60eddcb5489d609777a163f5e552224f60c4ae2a3",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "139f5582774830ccc5456c82521b90d1edebd91dd13c67f2b7db83b0d786455f",
+    "png_path": "images/sh8/000249.jpg.png",
+    "png_sha256": "453d16af898ec1c75f867ed1b180da924cf925d9e87a3eeee545db5d8bdcb7b8",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  },
+  {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/raw/sh8/000016.jpg.npz",
+    "sha256": "66ff5210f11351c62f2740ca66a128e849b25a36cd9cb87c61940ed47f64ee08",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "3183c0d7e45a0b9e44d0e003f692facabd8e4b9a88ab4f816fd68885bfb0b960",
+    "png_path": "images/sh8/000016.jpg.png",
+    "png_sha256": "46abbca7a787237a2dc108266dcdec638266c6ba7cf1e753a3f1b3b9b645ebcc",
+    "stage": "native_final_clamped_rgb",
+    "origin": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1"
+  }
+]

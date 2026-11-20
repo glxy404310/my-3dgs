@@ -1,0 +1,27 @@
+{
+  "repo_commit": "54c035f7834b564019656c3e3fcc3646292f727d",
+  "model": "/mnt/d/Documents/my 3dgs/research/experiments/train-independent-v0/native",
+  "source": "/home/administrator/datasets/tandt_db/tandt/train",
+  "iteration": 4500,
+  "n": 562165,
+  "resolution": 2,
+  "stage": "sanity",
+  "cases": 8,
+  "seed": 20261022,
+  "fit": [
+    "00002.jpg",
+    "00027.jpg",
+    "00053.jpg",
+    "00079.jpg"
+  ],
+  "check": [
+    "00014.jpg",
+    "00040.jpg"
+  ],
+  "test": [
+    "00001.jpg",
+    "00041.jpg"
+  ],
+  "script_sha256": "bd751314140b3009005b63b58b606739bfb7a9327ffad4e0c02a830b0547f9b0",
+  "ply_sha256": "335654db0330a445d8a40e5f75def9d068b0cc4f90ff8f4a185609be6d107e10"
+}

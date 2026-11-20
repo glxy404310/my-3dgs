@@ -1,0 +1,962 @@
+[
+  {
+    "arm": "teacher",
+    "camera_rank": 0,
+    "image_name": "000001.jpg",
+    "reference_file_sha256": "161609b6744ab5735b9cb4243bfa6909584fd8e2b7621c13f5c08360fb65564e",
+    "reference_RGB_array_sha256": "26941373864032ef358a109587b992fd9ebe9b7d08c7508808cf13274660c784",
+    "replay_RGB_array_sha256": "26941373864032ef358a109587b992fd9ebe9b7d08c7508808cf13274660c784",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 1,
+    "image_name": "000009.jpg",
+    "reference_file_sha256": "47f8cb4e52f79dd60cbfd3760a4c4fa0618dd5181364c81d3e5b21efb255dc1e",
+    "reference_RGB_array_sha256": "865a296745673cc374a67f42d80164818ff3a9e24e2247d41dd1aae20be216b2",
+    "replay_RGB_array_sha256": "865a296745673cc374a67f42d80164818ff3a9e24e2247d41dd1aae20be216b2",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 2,
+    "image_name": "000017.jpg",
+    "reference_file_sha256": "a6fbce47742a603201750127a0b0a490cae991564d17aeaed4f4521faadab342",
+    "reference_RGB_array_sha256": "25d4d34676c2cca7da1717acec4c223d6a714a34f0f61b4261625e17a06cd9b8",
+    "replay_RGB_array_sha256": "25d4d34676c2cca7da1717acec4c223d6a714a34f0f61b4261625e17a06cd9b8",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 3,
+    "image_name": "000025.jpg",
+    "reference_file_sha256": "528179c4883962f18f80fa00cbde996ee3c88e0fe4d4f5bc98e390178e7f0c19",
+    "reference_RGB_array_sha256": "cfd2163fb53ec908997d0730afe5bf3171d9bb88bb360536eef3c7abf567c35f",
+    "replay_RGB_array_sha256": "cfd2163fb53ec908997d0730afe5bf3171d9bb88bb360536eef3c7abf567c35f",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 4,
+    "image_name": "000033.jpg",
+    "reference_file_sha256": "37e090ae0e69fe9643b28eebaabaafbf337e56cb88d4df077603ab9f34304b65",
+    "reference_RGB_array_sha256": "adeb64a3dc698fe29289ad5798678447167084d6fd1ab46d8f569ca5a0f4034e",
+    "replay_RGB_array_sha256": "adeb64a3dc698fe29289ad5798678447167084d6fd1ab46d8f569ca5a0f4034e",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 5,
+    "image_name": "000041.jpg",
+    "reference_file_sha256": "68cffb96cd62be43f26d5075ac2d0bdba1de8b04392e0b631295a5e185462dcc",
+    "reference_RGB_array_sha256": "f81f54607e89c79254c5857ee4860fb160ac861d2d68a596bcc0a1c26a07377c",
+    "replay_RGB_array_sha256": "f81f54607e89c79254c5857ee4860fb160ac861d2d68a596bcc0a1c26a07377c",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 6,
+    "image_name": "000049.jpg",
+    "reference_file_sha256": "425e02fd3fce77dff9aa5c36f20e6b27292ec87c2ad2bc5d3ef391f37ea09b43",
+    "reference_RGB_array_sha256": "97213922e1cbea9c1b1794612e668d2ea461c2178ccc9ec8e6895f721933d06d",
+    "replay_RGB_array_sha256": "97213922e1cbea9c1b1794612e668d2ea461c2178ccc9ec8e6895f721933d06d",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 7,
+    "image_name": "000057.jpg",
+    "reference_file_sha256": "3c8ab6537796977bd80be4b2bf95df6e1860ba5fbdeafe6782ef13376837c3ca",
+    "reference_RGB_array_sha256": "b83bb33b18831b3960699f65b7485f4e15c9758faafe7fb0d5fa72785c230197",
+    "replay_RGB_array_sha256": "b83bb33b18831b3960699f65b7485f4e15c9758faafe7fb0d5fa72785c230197",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 8,
+    "image_name": "000065.jpg",
+    "reference_file_sha256": "029995c67bf2ad9fc61b60a9b2f152aca79381d5bf7061eba9269c4b666574ac",
+    "reference_RGB_array_sha256": "0772b80fde66a1bcb81e2c11652e9bcfcfd4a3f93274dcf0546dd37d730c7046",
+    "replay_RGB_array_sha256": "0772b80fde66a1bcb81e2c11652e9bcfcfd4a3f93274dcf0546dd37d730c7046",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 9,
+    "image_name": "000073.jpg",
+    "reference_file_sha256": "ea46c057d4969c585de0b62089fcd5730c3e364b8841e921ff0bfe3d4ac2b1f1",
+    "reference_RGB_array_sha256": "97cb506b0575c28d72989a285f964dd812e051a36e082de9cdd4bbd339692fd8",
+    "replay_RGB_array_sha256": "97cb506b0575c28d72989a285f964dd812e051a36e082de9cdd4bbd339692fd8",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 10,
+    "image_name": "000081.jpg",
+    "reference_file_sha256": "08b1d5a8ab76e2d9685351e626e09f44f0853a1e1fb5e73d73a7d1acc1819c8e",
+    "reference_RGB_array_sha256": "0fe8e0479e3795b0a22fd9548d4423880dc3ddecbf0fd315d88e12a068e422d3",
+    "replay_RGB_array_sha256": "0fe8e0479e3795b0a22fd9548d4423880dc3ddecbf0fd315d88e12a068e422d3",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 11,
+    "image_name": "000089.jpg",
+    "reference_file_sha256": "9100b83113f1b4112c1b888b826f0ed6b2394c4de9449f4bea2740f5575e2c20",
+    "reference_RGB_array_sha256": "5ef45903f60d3c665fb16e47b7b7c5e923ff582344be4e5e25cce66630e67502",
+    "replay_RGB_array_sha256": "5ef45903f60d3c665fb16e47b7b7c5e923ff582344be4e5e25cce66630e67502",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 12,
+    "image_name": "000097.jpg",
+    "reference_file_sha256": "cc6ad94b3ed61c7e8e32443bbd8dc6629dbd7000229322cd8bf46beebec6e338",
+    "reference_RGB_array_sha256": "1e004007559051f2a721f13102e1dc5ea58791c8c2879568e091a5209689185c",
+    "replay_RGB_array_sha256": "1e004007559051f2a721f13102e1dc5ea58791c8c2879568e091a5209689185c",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 13,
+    "image_name": "000105.jpg",
+    "reference_file_sha256": "608ec298932914fbc60af23d6c7285315fb305edb6e9acfacfe5d66ba139f825",
+    "reference_RGB_array_sha256": "5ffd19a63cf02821f3e4453d612164729b802dd4682a5e6c343614aad7147bf2",
+    "replay_RGB_array_sha256": "5ffd19a63cf02821f3e4453d612164729b802dd4682a5e6c343614aad7147bf2",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 14,
+    "image_name": "000113.jpg",
+    "reference_file_sha256": "949da00c4d0706cf60cde5da5b93de63038d0ea4ef860129dd2ba6210324c59b",
+    "reference_RGB_array_sha256": "784a8878c90ba480552e8b3fdce5ae1a25e7eee7a8389cfce5a5e5c8da1769e0",
+    "replay_RGB_array_sha256": "784a8878c90ba480552e8b3fdce5ae1a25e7eee7a8389cfce5a5e5c8da1769e0",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 15,
+    "image_name": "000121.jpg",
+    "reference_file_sha256": "b073644f65d4dda8714006e164eda61cb1af3e7875c5ac55a5924a7d18121ff3",
+    "reference_RGB_array_sha256": "3d6a47986d58983f5b04fe8876d08f488264097f14d2fdbe422a075a20da475c",
+    "replay_RGB_array_sha256": "3d6a47986d58983f5b04fe8876d08f488264097f14d2fdbe422a075a20da475c",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 16,
+    "image_name": "000129.jpg",
+    "reference_file_sha256": "3c58634bae837fb1da936cdd610e04c5c8ca426af97536a2f914c4e0e2299f32",
+    "reference_RGB_array_sha256": "f5ef6d33258e9df10f5e560c44966bb8df8078c00718b0724e424f8bbdd881dc",
+    "replay_RGB_array_sha256": "f5ef6d33258e9df10f5e560c44966bb8df8078c00718b0724e424f8bbdd881dc",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 17,
+    "image_name": "000137.jpg",
+    "reference_file_sha256": "43d6bbf95c052499355d30eae1c1534504cb54f4e2d2c534ba0d77abd228d576",
+    "reference_RGB_array_sha256": "ba7fd7cee1de8bdec19028fca90028329ca7821b534e66bb4b6832a6a580dd1e",
+    "replay_RGB_array_sha256": "ba7fd7cee1de8bdec19028fca90028329ca7821b534e66bb4b6832a6a580dd1e",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 18,
+    "image_name": "000145.jpg",
+    "reference_file_sha256": "f89cacd73d13f70e53ae0099862ec29efe3e8aba9a34103932c2f603ec371159",
+    "reference_RGB_array_sha256": "c9dd70d9378212765c5c867cdcec439f5a037db856d81e35afbd6426b0c00608",
+    "replay_RGB_array_sha256": "c9dd70d9378212765c5c867cdcec439f5a037db856d81e35afbd6426b0c00608",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 19,
+    "image_name": "000153.jpg",
+    "reference_file_sha256": "8cb72a0d7f47d20ea6150565f1831794edd242826fc8f9f4438ca88426634d7c",
+    "reference_RGB_array_sha256": "4c0a264e8ff23f00109359eb5a29a7cb02b57e18fa505bea989a9a50a7969ea9",
+    "replay_RGB_array_sha256": "4c0a264e8ff23f00109359eb5a29a7cb02b57e18fa505bea989a9a50a7969ea9",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 20,
+    "image_name": "000161.jpg",
+    "reference_file_sha256": "1d508461432516124154bf8a1b480cb8d0c4d245c6e8d6cd58378d1968ab7f8b",
+    "reference_RGB_array_sha256": "d620cb072a697d1f3075ef3f4f16822541ec04ba0ac14e5de872658a5a443ba3",
+    "replay_RGB_array_sha256": "d620cb072a697d1f3075ef3f4f16822541ec04ba0ac14e5de872658a5a443ba3",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 21,
+    "image_name": "000169.jpg",
+    "reference_file_sha256": "089d0efecde7206a5dd045efd0089d8ba03a791b813674b1ce22f3e6b5dd16ab",
+    "reference_RGB_array_sha256": "b5b139277a93508584507fa1a921be6bb15985dbb1cecc6877e69e3d0c191b46",
+    "replay_RGB_array_sha256": "b5b139277a93508584507fa1a921be6bb15985dbb1cecc6877e69e3d0c191b46",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 22,
+    "image_name": "000177.jpg",
+    "reference_file_sha256": "e62e73036ef01b8e524a30de02e7234126e4047cd146a25adf9e55edb0c26801",
+    "reference_RGB_array_sha256": "78e7ca20165f9e87729d19494f5c1b8f976c9e865fda5c58d05ed59c89e2b0e2",
+    "replay_RGB_array_sha256": "78e7ca20165f9e87729d19494f5c1b8f976c9e865fda5c58d05ed59c89e2b0e2",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 23,
+    "image_name": "000185.jpg",
+    "reference_file_sha256": "3b5dbf0368b136ecf6ab9d850cf26854622ec1ad6426f62abb60387928acae39",
+    "reference_RGB_array_sha256": "f661f2717c41e79468540efa08aec9df8a82e22b77f7eeec8db556eb089a5fea",
+    "replay_RGB_array_sha256": "f661f2717c41e79468540efa08aec9df8a82e22b77f7eeec8db556eb089a5fea",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 24,
+    "image_name": "000193.jpg",
+    "reference_file_sha256": "b4d5fd202a0382425c31637914b48d8c7bed6461c6dee6f0ff17715b911134f5",
+    "reference_RGB_array_sha256": "a0875b7c04fcaac429b4f4d5aa664795b43ee0421720acf852766f1d3c2c9f99",
+    "replay_RGB_array_sha256": "a0875b7c04fcaac429b4f4d5aa664795b43ee0421720acf852766f1d3c2c9f99",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 25,
+    "image_name": "000201.jpg",
+    "reference_file_sha256": "9626d86519ea1f82370459aae1e2f94f0d2589e7c569f2191c30d4216b162fc6",
+    "reference_RGB_array_sha256": "85d056164ea0c651ad7ceec66620d5a60d00f5304fc6db0a828885e2bd12cbb4",
+    "replay_RGB_array_sha256": "85d056164ea0c651ad7ceec66620d5a60d00f5304fc6db0a828885e2bd12cbb4",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 26,
+    "image_name": "000209.jpg",
+    "reference_file_sha256": "a335ab2a1aab5ab3b797524e605330440af571bbf2876ca7d02b643007c36725",
+    "reference_RGB_array_sha256": "daa27232879125cd158f65ef8ea3d498666c0f4da72d7dc6f17e2db383c7eb8e",
+    "replay_RGB_array_sha256": "daa27232879125cd158f65ef8ea3d498666c0f4da72d7dc6f17e2db383c7eb8e",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 27,
+    "image_name": "000217.jpg",
+    "reference_file_sha256": "16b0cfbfae60677810b175ee150718fa4730386cc5f74b9036d742d0cbbbb272",
+    "reference_RGB_array_sha256": "26966bb236cf38de1a699ccd7ebd21cb9588be78ffb70ed3804e3d4e28b4620c",
+    "replay_RGB_array_sha256": "26966bb236cf38de1a699ccd7ebd21cb9588be78ffb70ed3804e3d4e28b4620c",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 28,
+    "image_name": "000225.jpg",
+    "reference_file_sha256": "69cb682390caec928a123343767b832904ee281a45010dc3ef9a6eebea5c35b6",
+    "reference_RGB_array_sha256": "1281f96dd0db9a59a1f4819ecee28fc6ca57669615111cf691f995bc6db2a623",
+    "replay_RGB_array_sha256": "1281f96dd0db9a59a1f4819ecee28fc6ca57669615111cf691f995bc6db2a623",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 29,
+    "image_name": "000233.jpg",
+    "reference_file_sha256": "a3ef509de4961047fdec7cc591ef2e9fae4756b4d216d386986d3c8328b942c8",
+    "reference_RGB_array_sha256": "10284e330182fa6286fbcc0ca3cceee250b67e7156a985ed20372abe1b0bc52d",
+    "replay_RGB_array_sha256": "10284e330182fa6286fbcc0ca3cceee250b67e7156a985ed20372abe1b0bc52d",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 30,
+    "image_name": "000241.jpg",
+    "reference_file_sha256": "2e6eb13a6a66cf70c48a81e74182b0eed3cf77237f9533902fdb55ec0cdf47a2",
+    "reference_RGB_array_sha256": "40f3c22391f4ffd9cb905d8e35e3a685c55671e026296a83a51e2ee77422f2fa",
+    "replay_RGB_array_sha256": "40f3c22391f4ffd9cb905d8e35e3a685c55671e026296a83a51e2ee77422f2fa",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "teacher",
+    "camera_rank": 31,
+    "image_name": "000249.jpg",
+    "reference_file_sha256": "214779fd9bab15fdb1054db7b86244a93a61b988c7c99f61f4779f973206d880",
+    "reference_RGB_array_sha256": "318cbe83d00cf6f5921c6c16e34e5d62673c984b64a78266de23bea2d2397bc0",
+    "replay_RGB_array_sha256": "318cbe83d00cf6f5921c6c16e34e5d62673c984b64a78266de23bea2d2397bc0",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 0,
+    "image_name": "000001.jpg",
+    "reference_file_sha256": "042719be80920c87bea2ba76061f7c64ccde70a8aca4b67bc8e5c6a6543c997c",
+    "reference_RGB_array_sha256": "ceb9da4e19d275bc7f1995499e2a32c33603bb9dfc266e08a7eb5545037c401f",
+    "replay_RGB_array_sha256": "ceb9da4e19d275bc7f1995499e2a32c33603bb9dfc266e08a7eb5545037c401f",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 1,
+    "image_name": "000009.jpg",
+    "reference_file_sha256": "3b075054084ed7622092aa9e83b1e0b3ebe27ae30c86f1448042731690550c37",
+    "reference_RGB_array_sha256": "7ec2d6fb265945785d21cffedb48329add7d790685da3577c781a4da75dbf9d8",
+    "replay_RGB_array_sha256": "7ec2d6fb265945785d21cffedb48329add7d790685da3577c781a4da75dbf9d8",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 2,
+    "image_name": "000017.jpg",
+    "reference_file_sha256": "e75f5afa3263ab781328f65ec3ed778eab2e3a6346b2bff9834da8a16b10061b",
+    "reference_RGB_array_sha256": "23866ab8afe806445539fa0e19f24ecbcfc4f19ee21d93aa63ab60395a543907",
+    "replay_RGB_array_sha256": "23866ab8afe806445539fa0e19f24ecbcfc4f19ee21d93aa63ab60395a543907",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 3,
+    "image_name": "000025.jpg",
+    "reference_file_sha256": "c5780334c9ccf1c0b16feb4b960dcfae791ca6d92a0e80e0e295bd6803c9aadb",
+    "reference_RGB_array_sha256": "61474aa8268e66ed8b83a11027ab6a1ddf2fd841fe7d982a8d965138ae548f95",
+    "replay_RGB_array_sha256": "61474aa8268e66ed8b83a11027ab6a1ddf2fd841fe7d982a8d965138ae548f95",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 4,
+    "image_name": "000033.jpg",
+    "reference_file_sha256": "8f6886cc1f067362c519cb465d0a78de65d1d5a055c72bdfbef737463841bb16",
+    "reference_RGB_array_sha256": "4d47ddb98112f875f8b07b82ad997a27082eca3fd202cbe1e0a2f7468ccf3d05",
+    "replay_RGB_array_sha256": "4d47ddb98112f875f8b07b82ad997a27082eca3fd202cbe1e0a2f7468ccf3d05",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 5,
+    "image_name": "000041.jpg",
+    "reference_file_sha256": "18db89b023bf4e09b153386ed37b74b62241cd6d8b8171efe6529a314e311c06",
+    "reference_RGB_array_sha256": "92b0fb195275114b46fbbadc318ebae2175743ae2bb157fd6b1d67d98348bb8c",
+    "replay_RGB_array_sha256": "92b0fb195275114b46fbbadc318ebae2175743ae2bb157fd6b1d67d98348bb8c",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 6,
+    "image_name": "000049.jpg",
+    "reference_file_sha256": "ffa341c6da4ae2e5bfc17aa0c70ca7df60c56734b9455ff1c23c79162d886357",
+    "reference_RGB_array_sha256": "f61909b3ee9ff03a1134e439c95ce1f4979a7ff412e2993342c272a6eaacb796",
+    "replay_RGB_array_sha256": "f61909b3ee9ff03a1134e439c95ce1f4979a7ff412e2993342c272a6eaacb796",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 7,
+    "image_name": "000057.jpg",
+    "reference_file_sha256": "77c4621555569ef62253ae0c49bb2e717e10dab20b0f4ccfd42e3859ce9c0104",
+    "reference_RGB_array_sha256": "3711ae22a33a69c8964f71e8d08944719786bb4994801b89e143646cd10ff068",
+    "replay_RGB_array_sha256": "3711ae22a33a69c8964f71e8d08944719786bb4994801b89e143646cd10ff068",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 8,
+    "image_name": "000065.jpg",
+    "reference_file_sha256": "0b5c94b858d6e0952181c60fb910722093cd02dc185606900d8f99d060426c30",
+    "reference_RGB_array_sha256": "e281b42bac2d52ecfe47d4950ae6cc573081a5a17474d8614ec7521d24d355e6",
+    "replay_RGB_array_sha256": "e281b42bac2d52ecfe47d4950ae6cc573081a5a17474d8614ec7521d24d355e6",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 9,
+    "image_name": "000073.jpg",
+    "reference_file_sha256": "fe901cc6e20379bf58be33ce78f59cd920c7fb42ea8059ff7022afd77335222e",
+    "reference_RGB_array_sha256": "429423ba5d281599a238f759cfd43fde83416be0b82497f4fcdd58bbe7ef5cf7",
+    "replay_RGB_array_sha256": "429423ba5d281599a238f759cfd43fde83416be0b82497f4fcdd58bbe7ef5cf7",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 10,
+    "image_name": "000081.jpg",
+    "reference_file_sha256": "79d6bc822044f857ce0f9474a596f53160bf930e589f55d98549e5b02e197768",
+    "reference_RGB_array_sha256": "c71744d6e6dc3d2c5de6b3776c5d8eba7d993323a4aaff7aca83174611768d04",
+    "replay_RGB_array_sha256": "c71744d6e6dc3d2c5de6b3776c5d8eba7d993323a4aaff7aca83174611768d04",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 11,
+    "image_name": "000089.jpg",
+    "reference_file_sha256": "b373f3fa9eeef7a9c27dcd09c4ea0c85e548de686c5d1cfcfd56158716c571f6",
+    "reference_RGB_array_sha256": "58c8e6f9622f10b255aaaaae866b08b03e2deefc67112078999ef5689ede9fa7",
+    "replay_RGB_array_sha256": "58c8e6f9622f10b255aaaaae866b08b03e2deefc67112078999ef5689ede9fa7",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 12,
+    "image_name": "000097.jpg",
+    "reference_file_sha256": "80693e79900c0a61780bdea4f81c4591eb2d3f143c9fa808913c0c91a000129d",
+    "reference_RGB_array_sha256": "04228dbaf261d053f082e5e252467a35c83135694854f428d8e411a8cd947aa8",
+    "replay_RGB_array_sha256": "04228dbaf261d053f082e5e252467a35c83135694854f428d8e411a8cd947aa8",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 13,
+    "image_name": "000105.jpg",
+    "reference_file_sha256": "1cf4197ad15532f15e5d4c4aa3086162eae9327fb624cff70a6b15589bc65e9c",
+    "reference_RGB_array_sha256": "764b5a4cb6fe1b71d4442b28a1229c9b7d612d048d5a8d637dfec02d96f02787",
+    "replay_RGB_array_sha256": "764b5a4cb6fe1b71d4442b28a1229c9b7d612d048d5a8d637dfec02d96f02787",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 14,
+    "image_name": "000113.jpg",
+    "reference_file_sha256": "bff9d9e5aa140cc6b89a15e133702cec2f0425263788645acef283d2463be187",
+    "reference_RGB_array_sha256": "db9a75d4fb16c1756d6b720c3cdca408c4eefb8acb18617d7d01422fb91f14b2",
+    "replay_RGB_array_sha256": "db9a75d4fb16c1756d6b720c3cdca408c4eefb8acb18617d7d01422fb91f14b2",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 15,
+    "image_name": "000121.jpg",
+    "reference_file_sha256": "446133021a26fb1948a92b521ac0c09a5a40e329fa60ebd54571e3976fb85438",
+    "reference_RGB_array_sha256": "3eee236450d65aa8a20f257e8de9312963330c26b58163bf4c4cd6b161916667",
+    "replay_RGB_array_sha256": "3eee236450d65aa8a20f257e8de9312963330c26b58163bf4c4cd6b161916667",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 16,
+    "image_name": "000129.jpg",
+    "reference_file_sha256": "9a6145975610704d6c0707b2a59559042c9c0f36782d6c105be5c3524c2277bc",
+    "reference_RGB_array_sha256": "b3175224f4399a852d7b4b42d89b2eca630948e629a3cf806cbd5b2e079357a3",
+    "replay_RGB_array_sha256": "b3175224f4399a852d7b4b42d89b2eca630948e629a3cf806cbd5b2e079357a3",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 17,
+    "image_name": "000137.jpg",
+    "reference_file_sha256": "a0d71fb3390f4a47ce96ed01c92bfe3084476f82d326a81fd1899494784e1730",
+    "reference_RGB_array_sha256": "af301a88901e036189e7a9a0c1f3c7a339344fdf4b686ea4646bcb6535f6b018",
+    "replay_RGB_array_sha256": "af301a88901e036189e7a9a0c1f3c7a339344fdf4b686ea4646bcb6535f6b018",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 18,
+    "image_name": "000145.jpg",
+    "reference_file_sha256": "1ff85dc8dfbc83e69d0e57ae4513612a5ef627c1a81a3e756a63b16c9d6f9de4",
+    "reference_RGB_array_sha256": "8a4369503173cd553f10c73f3f54d33a075fab8ae423e38e1f828412b04b914b",
+    "replay_RGB_array_sha256": "8a4369503173cd553f10c73f3f54d33a075fab8ae423e38e1f828412b04b914b",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 19,
+    "image_name": "000153.jpg",
+    "reference_file_sha256": "7b8783802caabcdebafc257913551df516fc2a592ade04352a1fd9fc2165142e",
+    "reference_RGB_array_sha256": "882722c11cb1ee9ed83a79cd5c3610d24ddd5c12fa5f09ec5b09ad484379d6c7",
+    "replay_RGB_array_sha256": "882722c11cb1ee9ed83a79cd5c3610d24ddd5c12fa5f09ec5b09ad484379d6c7",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 20,
+    "image_name": "000161.jpg",
+    "reference_file_sha256": "dd2e4d408a45ad0256c2a422f18f2052c1342e2ced027c7a61d1ad107e279cc6",
+    "reference_RGB_array_sha256": "4db5788a15bebe85901c2fba91674f0306784de027e3ae2de274d7265e578f0e",
+    "replay_RGB_array_sha256": "4db5788a15bebe85901c2fba91674f0306784de027e3ae2de274d7265e578f0e",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 21,
+    "image_name": "000169.jpg",
+    "reference_file_sha256": "7e8eeb4ecd3e8904669cfd9a6f2a924e5d37db2cbd54c63158d7b96f12eac16a",
+    "reference_RGB_array_sha256": "42708d2dc8594a76342232c8c714fc5530120e8a1110e133841bbb7e36d918eb",
+    "replay_RGB_array_sha256": "42708d2dc8594a76342232c8c714fc5530120e8a1110e133841bbb7e36d918eb",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 22,
+    "image_name": "000177.jpg",
+    "reference_file_sha256": "aa9cf03088cd11f19e0c9f04953021b9792747136a890e70e16b5f259e6099dc",
+    "reference_RGB_array_sha256": "557fd45d64bb140c4e6bc8f5a70523731389e8a27dac1ddda9ffcad210b6a1a4",
+    "replay_RGB_array_sha256": "557fd45d64bb140c4e6bc8f5a70523731389e8a27dac1ddda9ffcad210b6a1a4",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 23,
+    "image_name": "000185.jpg",
+    "reference_file_sha256": "66082ed510336e978932d6199ecfedfcdba871c3f78bcab671b0716c5a7c300e",
+    "reference_RGB_array_sha256": "e5c53ec6bcee996ce4f7188d36fb07d4fcd4543b887dcba23ff5b823289b8a3e",
+    "replay_RGB_array_sha256": "e5c53ec6bcee996ce4f7188d36fb07d4fcd4543b887dcba23ff5b823289b8a3e",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 24,
+    "image_name": "000193.jpg",
+    "reference_file_sha256": "0c549352643bbe077d2b82e0c2d4bc03b2887f3334eb9be18000ffc635caab3a",
+    "reference_RGB_array_sha256": "6497704db6996b6a3affc062dd6d32a0c14463b7db902ffcd565657ea417e68d",
+    "replay_RGB_array_sha256": "6497704db6996b6a3affc062dd6d32a0c14463b7db902ffcd565657ea417e68d",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 25,
+    "image_name": "000201.jpg",
+    "reference_file_sha256": "94268ba7065f76398ab5c65b65d534420fc5358bd54f2968ed0d653e537a008b",
+    "reference_RGB_array_sha256": "9358b3271b7b996731326f209502614924fee5e010798c9cc54d0d22e9ed24bc",
+    "replay_RGB_array_sha256": "9358b3271b7b996731326f209502614924fee5e010798c9cc54d0d22e9ed24bc",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 26,
+    "image_name": "000209.jpg",
+    "reference_file_sha256": "f86fe982104c7e8b5c79d15454f18720881a11f9fe0c0786b1f77448c7de3541",
+    "reference_RGB_array_sha256": "530aba47b68be1abef352f4d27de045a9e5fc25a825906dad5cde47ce3db1048",
+    "replay_RGB_array_sha256": "530aba47b68be1abef352f4d27de045a9e5fc25a825906dad5cde47ce3db1048",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 27,
+    "image_name": "000217.jpg",
+    "reference_file_sha256": "adf5dc3715b790e5fa1267aa9fe2e3c01d0d6b92d128114bdd9bf46abb9ad981",
+    "reference_RGB_array_sha256": "1ba3ae8a43b2371945fc9fa6c03c3ba40e8f82d52e07c721acad05a28afc0760",
+    "replay_RGB_array_sha256": "1ba3ae8a43b2371945fc9fa6c03c3ba40e8f82d52e07c721acad05a28afc0760",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 28,
+    "image_name": "000225.jpg",
+    "reference_file_sha256": "7bbc4a974e0b609fc0b8370bfbac09188e50b7c1f46f92d95ce8bf381cdbd631",
+    "reference_RGB_array_sha256": "d033aa712935af05892739b0779144919b229d7648830ecfe72bd697011116b4",
+    "replay_RGB_array_sha256": "d033aa712935af05892739b0779144919b229d7648830ecfe72bd697011116b4",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 29,
+    "image_name": "000233.jpg",
+    "reference_file_sha256": "9a7d8e0081106c077398e18210d3d348680d8bce4193d1b16370b55a07a47dd9",
+    "reference_RGB_array_sha256": "8a021bdfd03c848886c878cf4e57e6b98336b478a63f72de8ab6d478a4939a98",
+    "replay_RGB_array_sha256": "8a021bdfd03c848886c878cf4e57e6b98336b478a63f72de8ab6d478a4939a98",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 30,
+    "image_name": "000241.jpg",
+    "reference_file_sha256": "5e2457d7ac4391c9336a59ffa862aca6453b4e18011cf43e21b948662f550f98",
+    "reference_RGB_array_sha256": "c2125c58f4c13b2a08463dc77bb37308df2d66881243b288459d405e38312d48",
+    "replay_RGB_array_sha256": "c2125c58f4c13b2a08463dc77bb37308df2d66881243b288459d405e38312d48",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "all219",
+    "camera_rank": 31,
+    "image_name": "000249.jpg",
+    "reference_file_sha256": "49409cd585043e05010d337f330d4e95b4e6a01615b7fc3c22d28a365f377653",
+    "reference_RGB_array_sha256": "48304fe85e3f66077015e454dfa3bdc491c30e363b44acf7cf4a32a764c7bd62",
+    "replay_RGB_array_sha256": "48304fe85e3f66077015e454dfa3bdc491c30e363b44acf7cf4a32a764c7bd62",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 0,
+    "image_name": "000001.jpg",
+    "reference_file_sha256": "176c21a0cafcde4680d2725cc368bff54627ec04cbc9ca7f9f960714af0196a1",
+    "reference_RGB_array_sha256": "2806a230c54c44da1d9ff43b6ff423be9a706771a3361556ae5fd575da19cd24",
+    "replay_RGB_array_sha256": "2806a230c54c44da1d9ff43b6ff423be9a706771a3361556ae5fd575da19cd24",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 1,
+    "image_name": "000009.jpg",
+    "reference_file_sha256": "06bd87fa585ec7955c24f5e709fe9ffadf168361797c022e32a1e9db1a9257f3",
+    "reference_RGB_array_sha256": "a7ddd46e063abe46bbd1fb1d5783731c6f0632c7dfcb4bd99ba6eab2e4c5465e",
+    "replay_RGB_array_sha256": "a7ddd46e063abe46bbd1fb1d5783731c6f0632c7dfcb4bd99ba6eab2e4c5465e",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 2,
+    "image_name": "000017.jpg",
+    "reference_file_sha256": "c7a87ea14b105ad37699faab19b182d12fbf9972d96ee54abf0a5914b9f95209",
+    "reference_RGB_array_sha256": "d0a936746e64b89ea3d4449c80609a9a814f7d8152c18aa2fe423bb2df939e43",
+    "replay_RGB_array_sha256": "d0a936746e64b89ea3d4449c80609a9a814f7d8152c18aa2fe423bb2df939e43",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 3,
+    "image_name": "000025.jpg",
+    "reference_file_sha256": "2df5a1bbaf0a572e733f281048890c340664b2eb811872131b50383dcc7c982a",
+    "reference_RGB_array_sha256": "9df3752c3bd9f103ee665371a1f5337d5591513ab5eefadb2cbfa6d12695195c",
+    "replay_RGB_array_sha256": "9df3752c3bd9f103ee665371a1f5337d5591513ab5eefadb2cbfa6d12695195c",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 4,
+    "image_name": "000033.jpg",
+    "reference_file_sha256": "4696472f19cee855baa119c5a327c12f7c93e8d24a98e3e86b4546703551bc3a",
+    "reference_RGB_array_sha256": "c9c14ec28bb25f82666cd41d68bdba53109985313a6131c75f7cbdb461827217",
+    "replay_RGB_array_sha256": "c9c14ec28bb25f82666cd41d68bdba53109985313a6131c75f7cbdb461827217",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 5,
+    "image_name": "000041.jpg",
+    "reference_file_sha256": "2fd00b183bedea22a3cdf9ae4a56e54c5a6df868be4e6badd9a0fc656b7e19b5",
+    "reference_RGB_array_sha256": "9c3843f5fa2793cef2bd65c79fcb457bb76d726b5611d6c9412b66537afa39c9",
+    "replay_RGB_array_sha256": "9c3843f5fa2793cef2bd65c79fcb457bb76d726b5611d6c9412b66537afa39c9",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 6,
+    "image_name": "000049.jpg",
+    "reference_file_sha256": "b47491ce7cb055c0f4f94a514681fdc17a421f8887f21c04bc8646e4cec16e7e",
+    "reference_RGB_array_sha256": "3542b18460b2b3aa1b77cbbd12843766a9e097d7f2bd0a005bdd19ed3ddd1329",
+    "replay_RGB_array_sha256": "3542b18460b2b3aa1b77cbbd12843766a9e097d7f2bd0a005bdd19ed3ddd1329",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 7,
+    "image_name": "000057.jpg",
+    "reference_file_sha256": "949bc69aa7d5982ff32c2364e33eb0769bd92f66dc62214ed4a2eaf0e6d93ddd",
+    "reference_RGB_array_sha256": "e2526201c0a5d4d72a16679fe058260eaf8545b5dc9fbfcc198cd5ee6421247c",
+    "replay_RGB_array_sha256": "e2526201c0a5d4d72a16679fe058260eaf8545b5dc9fbfcc198cd5ee6421247c",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 8,
+    "image_name": "000065.jpg",
+    "reference_file_sha256": "8ab1d74bc56b3db8e2b8358b157a3770237c520daa676c3c9075be9aeada204d",
+    "reference_RGB_array_sha256": "9169e713063c4105b09dc64c3c572db34cb65822feb1cc1fdbd028ca3f131af3",
+    "replay_RGB_array_sha256": "9169e713063c4105b09dc64c3c572db34cb65822feb1cc1fdbd028ca3f131af3",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 9,
+    "image_name": "000073.jpg",
+    "reference_file_sha256": "8a84594827a43b1aa274de858692c4cf57ae10f3dc34cfa3e33f62d994126bc0",
+    "reference_RGB_array_sha256": "22c41d9aba37f00d57f8069d360eaae9352a09ff3ac602b5be8886124984db44",
+    "replay_RGB_array_sha256": "22c41d9aba37f00d57f8069d360eaae9352a09ff3ac602b5be8886124984db44",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 10,
+    "image_name": "000081.jpg",
+    "reference_file_sha256": "eee66d24cecd3194d454f4dd0301e3025e0e4d6f16f0d80a7331d9de413a5760",
+    "reference_RGB_array_sha256": "9a38b2454ff8cd00f393671ac25fe3f635bd233f241c07d37de39a46da856bc7",
+    "replay_RGB_array_sha256": "9a38b2454ff8cd00f393671ac25fe3f635bd233f241c07d37de39a46da856bc7",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 11,
+    "image_name": "000089.jpg",
+    "reference_file_sha256": "2ecb66fd8550213b6b0f1dbac259a740bdaa619249eaf59bbcdc9b7ee2491aba",
+    "reference_RGB_array_sha256": "6382447fc2e3de0cbe3ed81caad8ee6e9513e2a5bc78600264fed8346b25b09e",
+    "replay_RGB_array_sha256": "6382447fc2e3de0cbe3ed81caad8ee6e9513e2a5bc78600264fed8346b25b09e",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 12,
+    "image_name": "000097.jpg",
+    "reference_file_sha256": "3bdfa82db79357ae7bb9503bf0769d2a9c24331b5d49d169c5a2e44bb830f2f0",
+    "reference_RGB_array_sha256": "6428cc58876797866718e4f632b94b44b49f5899e218a24bddefb21e82a25f6d",
+    "replay_RGB_array_sha256": "6428cc58876797866718e4f632b94b44b49f5899e218a24bddefb21e82a25f6d",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 13,
+    "image_name": "000105.jpg",
+    "reference_file_sha256": "460bdae9093ff14d77c69d11320862061b1885a472e47d5c79305a7f98f70488",
+    "reference_RGB_array_sha256": "144326c90f8b3f5a366248bd8f00c564f2d29b99aa7c3411e5ef5733d41e0191",
+    "replay_RGB_array_sha256": "144326c90f8b3f5a366248bd8f00c564f2d29b99aa7c3411e5ef5733d41e0191",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 14,
+    "image_name": "000113.jpg",
+    "reference_file_sha256": "95575c02cc932ee94a8abe19c66d4c67767fd9df79865e817d48e34d82938882",
+    "reference_RGB_array_sha256": "d5eb33b6905e1593c7c127449023913ebecc5940624a46adb7bdf6f90b996321",
+    "replay_RGB_array_sha256": "d5eb33b6905e1593c7c127449023913ebecc5940624a46adb7bdf6f90b996321",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 15,
+    "image_name": "000121.jpg",
+    "reference_file_sha256": "1a009121b4ceb192f69167fd16324869bbe3b1297dad779dd2e622c5c2a526ab",
+    "reference_RGB_array_sha256": "2abc9eb9c753f50916a15a8d7497e57dfd1d411e87f5ad02ddb91601d04846e3",
+    "replay_RGB_array_sha256": "2abc9eb9c753f50916a15a8d7497e57dfd1d411e87f5ad02ddb91601d04846e3",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 16,
+    "image_name": "000129.jpg",
+    "reference_file_sha256": "7a99f97c4153c8b1af3df229f47caef539625cc64af8eda74b393e77eae54d6c",
+    "reference_RGB_array_sha256": "41d42f69c0def694e83fd4d8d66a30ab81580d46df43bea48574e62f4d04d7e7",
+    "replay_RGB_array_sha256": "41d42f69c0def694e83fd4d8d66a30ab81580d46df43bea48574e62f4d04d7e7",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 17,
+    "image_name": "000137.jpg",
+    "reference_file_sha256": "ba5fcf3fdbe7c5513f890f380f57022b19a8a6cdf067caf396e6c7b87b8c2b9a",
+    "reference_RGB_array_sha256": "8a7e559688bef81a1564e5d0407c112f44c326707aa83465cad450aac76785c3",
+    "replay_RGB_array_sha256": "8a7e559688bef81a1564e5d0407c112f44c326707aa83465cad450aac76785c3",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 18,
+    "image_name": "000145.jpg",
+    "reference_file_sha256": "e686489d2ace57bbdc475ac172c48b5c2ddeccb6b463c734090810c74052e442",
+    "reference_RGB_array_sha256": "f9a8258db7f146fd717669a251a7b64b934d6212a5174abdea45c5a49be0fed5",
+    "replay_RGB_array_sha256": "f9a8258db7f146fd717669a251a7b64b934d6212a5174abdea45c5a49be0fed5",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 19,
+    "image_name": "000153.jpg",
+    "reference_file_sha256": "41133341e01c22f64cf569317d95ac8bf4f7e44bdbe37fe7055317fb22fbeb1d",
+    "reference_RGB_array_sha256": "4023506a98d6a47ec2f5d8c7e004276abcf213406a5b9babec21dc524f79a3a0",
+    "replay_RGB_array_sha256": "4023506a98d6a47ec2f5d8c7e004276abcf213406a5b9babec21dc524f79a3a0",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 20,
+    "image_name": "000161.jpg",
+    "reference_file_sha256": "6d8804af2244080e9daad2946de9867cc284d58213f2a7f47e8d94f30c5ee408",
+    "reference_RGB_array_sha256": "c6f344c993532f787c89c154d19394e4d012b27efb884f4b7fe1672020dca94c",
+    "replay_RGB_array_sha256": "c6f344c993532f787c89c154d19394e4d012b27efb884f4b7fe1672020dca94c",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 21,
+    "image_name": "000169.jpg",
+    "reference_file_sha256": "6c7a9009b9d4f412a5f34f300b398c9135d5363425e5ccc36654623dfe356cde",
+    "reference_RGB_array_sha256": "d9d871af60779f2f04cca0f48c426e6678970265eb3a791a39242e459d59a4ee",
+    "replay_RGB_array_sha256": "d9d871af60779f2f04cca0f48c426e6678970265eb3a791a39242e459d59a4ee",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 22,
+    "image_name": "000177.jpg",
+    "reference_file_sha256": "1c24225974999c269a1222eefbe7ebc363101d115a5b69aac0d723d20100ae38",
+    "reference_RGB_array_sha256": "001f3b85d4e3908d735ac87975d63e5f397a04b07ccc2e016278cb074b3e810a",
+    "replay_RGB_array_sha256": "001f3b85d4e3908d735ac87975d63e5f397a04b07ccc2e016278cb074b3e810a",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 23,
+    "image_name": "000185.jpg",
+    "reference_file_sha256": "f270b7e12517716d438af0c36b5c6cc2b868ded773cb49a59a87a4226c351c41",
+    "reference_RGB_array_sha256": "fd54c7f7c7029e052edb2eb173acfd39a125ba0fa6b34d564aa5c05c84b30e89",
+    "replay_RGB_array_sha256": "fd54c7f7c7029e052edb2eb173acfd39a125ba0fa6b34d564aa5c05c84b30e89",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 24,
+    "image_name": "000193.jpg",
+    "reference_file_sha256": "bcd37cff244c37d51aa0fe18a5ea9979e842ce63bca2a55bd6b2a639d9b9d3ee",
+    "reference_RGB_array_sha256": "2f3face204b7c52d82a0ffd3f617daab11a7b14e1dc5c07b926c4baf64c14d3c",
+    "replay_RGB_array_sha256": "2f3face204b7c52d82a0ffd3f617daab11a7b14e1dc5c07b926c4baf64c14d3c",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 25,
+    "image_name": "000201.jpg",
+    "reference_file_sha256": "24f8990f8c4d2fbc29caf5933b98b24b7cc0fb064644b1392e867c26d86086cd",
+    "reference_RGB_array_sha256": "0e3d4bdf97525c5aec522de878b4bf95e59ae7b50d6ed671c8b47278c6c8049b",
+    "replay_RGB_array_sha256": "0e3d4bdf97525c5aec522de878b4bf95e59ae7b50d6ed671c8b47278c6c8049b",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 26,
+    "image_name": "000209.jpg",
+    "reference_file_sha256": "5bd0480ef8e8244f433f9b31f2243f791101c1039e2bb7f8bd9697609c864912",
+    "reference_RGB_array_sha256": "c11de8705791064485b4a29a2275f06310483fbe83363664af1eb9a27cb9a517",
+    "replay_RGB_array_sha256": "c11de8705791064485b4a29a2275f06310483fbe83363664af1eb9a27cb9a517",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 27,
+    "image_name": "000217.jpg",
+    "reference_file_sha256": "bbcccf5908d8881c2ebc2755afcb706939a370a7d8558f38e989338c1c01561a",
+    "reference_RGB_array_sha256": "c420560d0daadf4ff68dd5025d7c565cd893e024111858b862b55a36e9f1cb8c",
+    "replay_RGB_array_sha256": "c420560d0daadf4ff68dd5025d7c565cd893e024111858b862b55a36e9f1cb8c",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 28,
+    "image_name": "000225.jpg",
+    "reference_file_sha256": "b76a1a9e09294190b51b6dce5435d219bc156c7f824e64be64e424b160c934d9",
+    "reference_RGB_array_sha256": "f2335a32992bd881f0160afce8297c5c7213390abbb6b83156e5a903d71eacdc",
+    "replay_RGB_array_sha256": "f2335a32992bd881f0160afce8297c5c7213390abbb6b83156e5a903d71eacdc",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 29,
+    "image_name": "000233.jpg",
+    "reference_file_sha256": "d0529378afc3cdadca94e4d4dc9b9d690c1e6826a251ac44b2ff86d7d887e7a3",
+    "reference_RGB_array_sha256": "5b087fdc912a7737659d51f25d67c7623bd00f206212d575d9977642507827eb",
+    "replay_RGB_array_sha256": "5b087fdc912a7737659d51f25d67c7623bd00f206212d575d9977642507827eb",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 30,
+    "image_name": "000241.jpg",
+    "reference_file_sha256": "5aab7fa91d3abd600d7fa7d49da684acd9f6b6d9f93a9b2764a2e783a43b4b20",
+    "reference_RGB_array_sha256": "70ad97d58886020841df37558be6382bb36233037dfb4d26c1a052dd3972b60a",
+    "replay_RGB_array_sha256": "70ad97d58886020841df37558be6382bb36233037dfb4d26c1a052dd3972b60a",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "nanogs",
+    "camera_rank": 31,
+    "image_name": "000249.jpg",
+    "reference_file_sha256": "64e9f53a72c1687b98774780d7a0798c60adb43ea8efd7783e61e4a5b8561994",
+    "reference_RGB_array_sha256": "8388a750d128363f6a57e6904adeefb5e184492848f2ba02389de3c6015bb7a8",
+    "replay_RGB_array_sha256": "8388a750d128363f6a57e6904adeefb5e184492848f2ba02389de3c6015bb7a8",
+    "max_abs_RGB_error": 0.0,
+    "passed": true
+  }
+]

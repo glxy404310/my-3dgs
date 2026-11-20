@@ -1,0 +1,381 @@
+[
+  {
+    "id": "2606.23212",
+    "title": "Temporally Aware Densification for Dynamic 3D Gaussian Splatting",
+    "authors": [
+      "Vikram Sandu",
+      "Mayurdeep Pathak",
+      "Rajiv Soundararajan"
+    ],
+    "abstract": "Despite modeling temporal motion, dynamic 3D Gaussian Splatting (3DGS) methods still inherit a static densification strategy that is ill-suited for dynamic scenes. This neglect of temporal behavior leads to under-reconstructed and blurry dynamic regions, as short-lived Gaussians receive sparse supervision and fail to densify effectively. We propose a Visibility-Aware Densification (VAD) framework that integrates temporal visibility into the densification process, ensuring that Gaussians are refined based on their actual temporal presence. A Temporally-Adaptive Thresholding (TAT) mechanism further adjusts each Gaussian's densification threshold according to its temporal lifespan, promoting balanced refinement of both static and dynamic regions. Finally, a Temporal Offset Warping (TOW) design enhances deformation capacity around temporal centers, extending the lifespan of highly dynamic Gaussians and facilitating more effective densification. Our approach achieves substantial improvements in the visual quality of dynamic regions, outperforming existing methods across three dynamic multi-view benchmark datasets. Moreover, the proposed VAD module generalizes across diverse dynamic 3DGS methods, consistently improving dynamic reconstruction as a plug-and-play component.",
+    "published": "2026-06-22",
+    "updated": "2026-06-22",
+    "categories": [
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.23212.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.23212"
+  },
+  {
+    "id": "2604.28016",
+    "title": "Faster 3D Gaussian Splatting Convergence via Structure-Aware Densification",
+    "authors": [
+      "Linjie Lyu",
+      "Ayush Tewari",
+      "Jianchun Chen",
+      "Thomas Leimkühler",
+      "Christian Theobalt"
+    ],
+    "abstract": "3D Gaussian Splatting has emerged as a powerful scene representation for real-time novel-view synthesis. However, its standard adaptive density control relies on screen-space positional gradients, which do not distinguish between geometric misplacement and frequency aliasing, often leading to either over-blurred high-frequency textures or inefficient over-densification. We present a structure-aware densification framework. Our key insight is that the decision to subdivide a Gaussian should be driven by an explicit comparison between its projected screen-space extent and the local structure of the texture it seeks to represent. We introduce a multi-scale frequency analysis combining structure tensors with Laplacian scale space analysis to estimate the dominant frequency at each pixel, enabling robust supervision across varying texture scales. Based on this analysis, we define $η$, a per-Gaussian, per-axis frequency violation metric that indicates when a primitive may be under-resolving local texture details. Unlike methods that perform isotropic splitting (e.g., splitting each Gaussian into two smaller ones with uniform shape), our approach performs anisotropic splitting. For each axis with high $η$, we compute a split factor to better resolve the local frequency content. We further introduce a multiview consistency criterion that aggregates $η$ observations across multiple views. By performing densification early and faster, we skip the lengthy iterative densification phases required by baseline methods and achieve significantly faster convergence. Experiments on standard benchmarks demonstrate that our method also achieves superior reconstruction quality, particularly in high-frequency regions.",
+    "published": "2026-04-30",
+    "updated": "2026-04-30",
+    "categories": [
+      "cs.CV",
+      "cs.GR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.28016.pdf",
+    "abs_url": "https://arxiv.org/abs/2604.28016"
+  },
+  {
+    "id": "2610.27108",
+    "title": "Counting Contributions, Not Views: Occlusion-Aware Densification for 3D Gaussian Splatting",
+    "authors": [
+      "Marcel Rogge",
+      "René Schuster",
+      "Didier Stricker"
+    ],
+    "abstract": "3D Gaussian Splatting grows a dense scene from a sparse initialization through adaptive density control (ADC), driven by per-Gaussian statistics gathered during rendering. These statistics pass a frustum-based visibility filter blind to occlusion: fully occluded Gaussians still count as observed, diluting the averaged gradient signal and suppressing densification precisely where geometry is occluded. We correct this with an occlusion-aware filter that restricts densification statistics to views in which a Gaussian actually contributes, and replace the criterion's raw view-count normalizer with an average-contribution one. Integrated into a StopThePop-based framework, the two together improve every image-quality metric over the occlusion-blind baseline on occlusion-heavy scenes (up to 6% lower LPIPS), at less than half the Gaussians a view-count normalizer requires. Under the longer schedules these large scenes require, the count stays bounded where most criteria diverge, and on smaller benchmarks our method stays competitive at a fraction of the competitors' count.",
+    "published": "2026-10-19",
+    "updated": "2026-10-19",
+    "categories": [
+      "cs.CV",
+      "cs.GR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.27108.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.27108"
+  },
+  {
+    "id": "2605.06876",
+    "title": "AdpSplit: Error-Driven Adaptive Splitting for Faster Geometry Discovery in 3D Gaussian Splatting",
+    "authors": [
+      "Yongjae Lee",
+      "Jingxing Li",
+      "Abhay Kumar Yadav",
+      "Rama Chellappa",
+      "Deliang Fan"
+    ],
+    "abstract": "Adaptive density control in 3D Gaussian Splatting (3DGS) repeatedly grows the Gaussian population through fixed-cardinality random splitting to discover useful scene structure. However, in vanilla 3DGS, its binary split operator requires many densification rounds to expose fine details, making it a bottleneck for efficient training schedules with fewer iterations. We introduce AdpSplit, an error-driven adaptive split operator that determines the number of split children and initializes the child parameters from L1-pixel-error region statistics, enabling fewer densification iterations, thus reduced training time, while preserving the rendering quality of full-schedule training. Across the MipNeRF360, Deep-Blending, and Tanks&Temples datasets, AdpSplit reduces the training time of multiple accelerated 3DGS pipelines by 9.2%-22.3% as a simple drop-in replacement for the standard split operator. With FastGS, AdpSplit matches the full-schedule PSNR on MipNeRF360 while reducing training time by 16.4%, corresponding to a 12.6x acceleration over vanilla 3DGS.",
+    "published": "2026-05-07",
+    "updated": "2026-05-07",
+    "categories": [
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.06876.pdf",
+    "abs_url": "https://arxiv.org/abs/2605.06876"
+  },
+  {
+    "id": "2606.29400",
+    "title": "Adaptive Densification for High-Fidelity and Efficient Sparse Gaussian Splatting in Arbitrary-Scale Super-Resolution",
+    "authors": [
+      "Giulio Federico",
+      "Giuseppe Amato",
+      "Claudio Gennaro",
+      "Fabio Carrara",
+      "Marco Di Benedetto"
+    ],
+    "abstract": "Arbitrary-Scale Super-Resolution (ASR) aims to reconstruct high-resolution images at any continuous magnification. While 2D Gaussian Splatting (GS) has recently shown great promise for ASR, current methods struggle to balance visual quality and computational cost. Approaches targeting high fidelity rely on powerful backbones and uniform, highly dense Gaussian grids, leading to prohibitive memory and inference costs. Conversely, methods prioritizing efficiency aggressively simplify their architectures, severely compromising visual quality. To bridge this gap, we observe that a core capability of GS remains largely underexplored in ASR: the potential for dynamic densification, i.e., the spatially adaptive allocation of Gaussians based on image content. Unlike standard scene fitting, where densification is guided by a known ground truth, applying this to ASR is highly non-trivial because the high-resolution target is exactly what the model must predict. To address this challenge, we propose QuADA-GS, an approach that retains a powerful representational backbone but autonomously predicts where to allocate Gaussians relying strictly on the low-resolution input. By adopting a sparse approach, QuADA-GS refines features and increases Gaussian density strictly where structural complexity demands it. Because this adaptive allocation produces a non-uniform hierarchical topology, we introduce a novel, highly efficient communication mechanism to process these sparse features, bypassing standard dense bottlenecks. Extensive experiments indicate that our approach successfully balances visual quality and computational requirements, providing an improved and competitive trade-off for ASR.",
+    "published": "2026-06-28",
+    "updated": "2026-09-08",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.GR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.29400.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.29400"
+  },
+  {
+    "id": "2605.16158",
+    "title": "Smart target point control for Gaussian Splatting methods",
+    "authors": [
+      "Pratik Singh Bisht",
+      "Andreas Kolb"
+    ],
+    "abstract": "Standard Gaussian splatting methods rely on heuristic densification and pruning to adaptively allocate primitives during training, and the resulting Gaussian count strongly influences both reconstruction quality and runtime. This makes comparisons across methods fragile: improvements can stem from higher representational capacity rather than algorithmic design. A common and naive workaround for this is hard-stopping or budgeting densification/pruning once a target count is reached, which biases training because different methods hit the cap at different times, yielding non-uniform densify/prune exposure across views and uneven point distributions. We propose a target point control scheme that preserves the standard densification window and cadence, but adjusts only the existing densification and opacity-culling hyper-parameters to track a quadratic target count trajectory. This quota-governor reaches the desired count by 15k iterations without abrupt cutoffs, ensuring that all methods and views receive equal densification and pruning cycles, enabling fairer, capacity-matched evaluation.",
+    "published": "2026-05-15",
+    "updated": "2026-05-15",
+    "categories": [
+      "cs.GR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.16158.pdf",
+    "abs_url": "https://arxiv.org/abs/2605.16158"
+  },
+  {
+    "id": "2605.29136",
+    "title": "Eulerian Gaussian Splatting using Hashed Probability Pyramids",
+    "authors": [
+      "Mia Gaia Polansky",
+      "George Kopanas",
+      "Stephan Garbin",
+      "Todd Zickler",
+      "Dor Verbin"
+    ],
+    "abstract": "We introduce a probabilistic splat-based radiance field framework that retains the fast rasterization and test-time efficiency of 3D Gaussian Splatting (3DGS) while replacing heuristic primitive manipulation with gradient-based optimization of a volumetric probability density. Rather than relocating, splitting, or culling Gaussians via hand-tuned densification (e.g., ADC), we treat primitive locations as samples drawn from a persistent, learnable density. We instantiate this density using a novel, memory-efficient multi-scale hierarchical grid that enables end-to-end gradient-based optimization. To stabilize the optimization, we derive an unbiased gradient estimator with control variates that markedly reduces variance. By allowing probability mass to flow to where the loss demands, our framework eliminates brittle priors and naturally explores the volume, achieving state-of-the-art reconstruction quality on mip-NeRF 360 while preserving 3DGS-level rendering speed.",
+    "published": "2026-05-27",
+    "updated": "2026-05-27",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.29136.pdf",
+    "abs_url": "https://arxiv.org/abs/2605.29136"
+  },
+  {
+    "id": "2609.00994",
+    "title": "EvoGS: Modeling Deformation Evolution for Dynamic Gaussian Splatting",
+    "authors": [
+      "Wei Dong",
+      "Shahram Shirani",
+      "Jun Chen",
+      "Han Zhou"
+    ],
+    "abstract": "Recent extensions of 3D Gaussian Splatting (3DGS) enable real-time novel view synthesis in dynamic scenes by learning time-conditioned Gaussian deformations. However, existing MLP-based methods typically estimate deformations independently at each timestamp, making them less robust to large or abrupt motions. To address this issue, we propose \\textbf{EvoGS}, a 3DGS-based dynamic reconstruction framework that models Gaussian deformation as a temporal evolution process. EvoGS maintains persistent deformation states for each Gaussian, extrapolates future states from historical deformation states, and corrects the predictions with MLP-derived observations. The correction is adaptively weighted using a temporal residual memory and evolution statistics such as deformation velocity and trajectory deviation. To further improve reconstruction quality, EvoGS introduces deformation-aware densification. Clone and split operations are performed along corrected deformation directions, while an uncertainty-aware strategy suppresses densification for Gaussians with unstable deformation histories. Experiments show that EvoGS improves dynamic novel view synthesis quality and achieves competitive performance across benchmarks.",
+    "published": "2026-09-01",
+    "updated": "2026-09-01",
+    "categories": [
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.00994.pdf",
+    "abs_url": "https://arxiv.org/abs/2609.00994"
+  },
+  {
+    "id": "2609.12343",
+    "title": "VS-Splat: Voxel-Selective feed-forward Gaussian Splatting for end-to-end 3D object reconstruction from sparse-views",
+    "authors": [
+      "Yunsu Jeong",
+      "Hyuk Heo",
+      "Youngsang Kwak",
+      "Jaehwa Kwak",
+      "Il Yong Chun"
+    ],
+    "abstract": "Feed-forward Gaussian splatting models have demonstrated remarkable effectiveness in reconstructing three-dimensional (3D) objects from a few two-dimensional (2D) images, even if they are unseen. As existing methods typically predict Gaussian primitives uniformly across the 3D space, most primitives are placed in non-object regions. This may hinder the representation of fine object details. This paper proposes a Voxel-Selective Gaussian Splatting model (VS-Splat), a new end-to-endfeed-forward Gaussian splatting framework that predicts many primitives only within selected voxels that are likely to belong to an object, without 3D structural supervision. To achieve this, we propose a new learnable voxel selection approach that identifies object-centric voxels only with 2D rendering supervision. Our sparse-view rendering experiments with three benchmark datasets show that proposed VS-Splat outperforms several state-of-the-art methods. We further demonstrate its effectiveness as a backbone for an existing densification method and show that anoptional extension improves its robustness to inaccurate camera pose estimates.",
+    "published": "2026-09-11",
+    "updated": "2026-09-11",
+    "categories": [
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.12343.pdf",
+    "abs_url": "https://arxiv.org/abs/2609.12343"
+  },
+  {
+    "id": "2609.19421",
+    "title": "RGS: Reflection-aware Gaussian Splatting via Learning Geometry Continuity for Reflective Objects",
+    "authors": [
+      "Xiaobiao Du",
+      "Yida Wang",
+      "Cheng Bi",
+      "Kun Zhan",
+      "Xin Yu"
+    ],
+    "abstract": "Gaussian Splatting has significantly improved the quality of novel view synthesis with explicit Gaussian representation. However, we observed that existing 3D Gaussian Splatting methods (3DGS) often suffer from surface collapse issues on reflective regions, and thus produce inferior geometry and low-quality specular. In this work, we propose a physically-based deferred rendering framework, named Reflection-aware Gaussian Splatting (RGS), that can accurately model specular regions and improve novel view synthesis performance. Specifically, we found that a powerful 3D foundation model can provide a strong 3D geometric prior to foster correct geometric modeling. Based on this, we propose a cross-view shape consistency regularization to regularize the geometry surface with the large model prior and cross-view constraints. In this manner, our RGS can produce smoother geometric surfaces on reflective regions while reducing geometric hollows. To further improve rendering results on reflective regions, we present a reflection-aware densification strategy that is designed to capture specular variations across various views. With this strategy, our RGS is able to render novel views of objects in higher quality. Extensive experiments demonstrate our method consistently renders high-quality reflective objects, achieving state-of-the-art performance.",
+    "published": "2026-09-16",
+    "updated": "2026-09-16",
+    "categories": [
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.19421.pdf",
+    "abs_url": "https://arxiv.org/abs/2609.19421"
+  },
+  {
+    "id": "2610.14963",
+    "title": "AD-GS: Anatomical Density-guided 3D Gaussian Splatting for Sparse-View Dental CBCT Reconstruction",
+    "authors": [
+      "Zonglin Li",
+      "Kexian Xie",
+      "Feiran Li",
+      "Chu Zhou",
+      "Yixing Huang",
+      "Ruiyang Chen",
+      "Zhanyu Ma",
+      "Heng Guo"
+    ],
+    "abstract": "Sparse-view Cone-Beam Computed Tomography (CBCT) reconstruction is essential for reducing radiation dose and scan effort, but remains underconstrained due to limited projection information. Recent 3D Gaussian Splatting (3DGS)-based CBCT reconstruction methods rely on gradient-driven densification, which becomes unstable under sparse acquisition and often leads to over-smoothed structures. We propose AD-GS, an Anatomical Density-guided 3D Gaussian Splatting framework that formulates Gaussian densification as an attenuation-aware Markov Chain Monte Carlo (MCMC) sampling process. By interpreting Gaussians as samples from an underlying anatomical attenuation distribution, AD-GS adaptively concentrates representation capacity in high-attenuation regions, enabling sharper structural boundaries under sparse projections. To further constrain reconstruction, we incorporate a semantic regularization based on zero-shot features from Segment Anything in Medical Images, enforcing multi-view consistency through semantic priors. Experiments on the ToothFairy3 dental CBCT dataset demonstrate that AD-GS achieves superior structural fidelity and boundary preservation compared with existing 3DGS-based approaches under sparse-view settings within the dental and maxillofacial setting. Code is available at https://github.com/yulinjiaxue/AD-GS-BMVC2026.",
+    "published": "2026-10-10",
+    "updated": "2026-10-10",
+    "categories": [
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.14963.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.14963"
+  },
+  {
+    "id": "2606.30017",
+    "title": "Monte Carlo Energy Aggregation for Mobile 3D Gaussian Splatting",
+    "authors": [
+      "Xiaobiao Du",
+      "YuAn Wang",
+      "Hao Li",
+      "Bosheng Wang",
+      "Xun Sun",
+      "Xin Yu"
+    ],
+    "abstract": "Recent advances in 3D Gaussian Splatting have demonstrated unprecedented success in novel view synthesis. However, the substantial inference and storage overhead driven by high-order Spherical Harmonics (SH) are primary bottlenecks for mobile platforms. In this paper, we present Flux-GS, a real-time Gaussian Splatting method designed to achieve high-fidelity rendering with significantly reduced overhead for resource-constrained mobile platforms. We first propose a Monte Carlo Specular Energy Aggregator, sampling third-order radiance residuals and aggregating specular energy into a compact latent space. In this way, our method effectively preserves visually salient lighting features in lower-order bands without expensive distillation or pre-training. To mitigate the high-frequency details lost during compression, we introduce an Attribute-Conditioned SH Enhancement module. This module predicts Gaussian-aware offsets based on intrinsic Gaussian attributes, which enhance the first-order SH representation prior to inference, without extra inference costs. Furthermore, the original single-view gradient-based densification is prone to producing excessive Gaussians and overfitting to a certain view. We address these limitations by proposing a Multi-view Alpha-based Densification and Pruning strategy. By leveraging multi-view guidance, we ensure multi-view structure consistency and the precise removal of redundant primitives. Extensive experiments demonstrate that Flux-GS achieves substantial parameter reduction while maintaining competitive visual quality, offering a robust and scalable solution for real-time mobile rendering. Code: \\textcolor{magenta}{\\href{https://xiaobiaodu.github.io/flux-gs-project/}{https://xiaobiaodu.github.io/flux-gs-project/}}.",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "categories": [
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.30017.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.30017"
+  },
+  {
+    "id": "2607.04127",
+    "title": "Real-Time LiDAR Gaussian Splatting SLAM",
+    "authors": [
+      "Seungjun Tak",
+      "Yewon Jeon",
+      "Jaeik Hwang",
+      "SukMin Hwang",
+      "Seongbo Ha",
+      "Hyeonwoo Yu"
+    ],
+    "abstract": "We present a real-time LiDAR-based framework for Gaussian Splatting SLAM that tightly couples fast G-ICP registration with spherical rasterization-based dense mapping for large-scale sequences. Leveraging LiDAR geometry rather than appearance, we reuse tracking-estimated local covariances to initialize Gaussians with range-aware scales and to derive surface normals for geometry-aware map optimization. We further introduce a covariance-derived geometry score that measures local complexity and drives pruning in planar regions and selective densification in structurally rich areas, while optimized Gaussians and LiDAR-specific confidence cues are fed back to improve tracking robustness. On the Newer College dataset, our method achieves an F-score of 86.78\\% using purely online trajectories at real-time speed ($>$20 FPS), and additional experiments on other datasets confirm its stability and scalability.",
+    "published": "2026-07-05",
+    "updated": "2026-07-05",
+    "categories": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.04127.pdf",
+    "abs_url": "https://arxiv.org/abs/2607.04127"
+  },
+  {
+    "id": "2605.18334",
+    "title": "3D Skew Gaussian Splatting with Any Camera Trajectory Visualization Engine",
+    "authors": [
+      "Beizhen Zhao",
+      "Yifan Zhou",
+      "Gaochao Song",
+      "Ziran Yin",
+      "Hao Wang"
+    ],
+    "abstract": "While 3D Gaussian Splatting (3DGS) has revolutionized real-time photorealistic view synthesis, its fundamental reliance on symmetric Gaussian distributions introduces visual artifacts that hinder accurate spatial data exploration. Specifically, symmetric kernels struggle to capture shape and color discontinuities , which cause blurriness and primitive redundancy that mislead human perception during visual analysis. To address these visualization barriers, we introduce 3D Skew Gaussian Splatting (3DSGS), a novel framework that significantly enhances the structural fidelity and compactness of explicit scene representations. Our key insight lies in extending the standard primitive to a general Skew Gaussian counterpart. This generalized primitive inherits the highly efficient rasterization properties of standard Gaussians while gaining intrinsic asymmetric modeling capabilities. We couple this with an enhanced opacity representation to better handle complex transparency, alongside a depth-aware densification strategy that intelligently manages primitive allocation. Furthermore, to make these advancements actionable for real-world visual analytics, we re-derive the CUDA rasterization pipeline to universally support both symmetric and skew Gaussians, integrating it into a decoupled, free-camera interactive visualization engine. Extensive experiments demonstrate that 3DSGS achieves superior rendering quality and structural compactness, particularly in regions with intricate details, while maintaining the real-time frame rates necessary for fluid interactive exploration. Supplementary derivations and visual results are available at \\textbf{\\textit{https://3d-skew-gs.github.io/}}.",
+    "published": "2026-05-18",
+    "updated": "2026-05-18",
+    "categories": [
+      "cs.CV",
+      "cs.GR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.18334.pdf",
+    "abs_url": "https://arxiv.org/abs/2605.18334"
+  },
+  {
+    "id": "2606.27509",
+    "title": "Structured-Li-GS: Structured 3D Gaussians Splatting with LiDAR Incorporation and Spatial Constraints",
+    "authors": [
+      "Huaiyuan Weng",
+      "Huibin Li",
+      "Chul Min Yeum"
+    ],
+    "abstract": "In this study, we develop a Structured framework for Gaussian Splatting (3DGS) with LiDAR integration (Structured-Li-GS). It is a lightweight Gaussian Splatting pipeline that leverages LiDAR-inertial-visual SLAM. Structured-Li-GS achieves high-quality 3D reconstructions with fewer Gaussians by training on accurate, dense, colorized point clouds. Gaussian primitives are anchored using sub-sampled point clouds, and their ellipsoidal parameters are initialized from local surface geometry. Our training strategy integrates a comprehensive set of loss terms, including photometric, flattening, offset, depth, and normal losses, guided by the dense point cloud, enabling accurate reconstruction without Gaussian densification. This approach produces up-to-scale, high-fidelity results with a moderate model size. For experimental validation, we develop a custom hardware-synchronized LiDAR-camera handheld scanner. Experiments on both benchmark datasets and our real-world in-house dataset demonstrate that Structured-Li-GS surpasses state-of-the-art methods while using fewer Gaussians.",
+    "published": "2026-06-25",
+    "updated": "2026-06-25",
+    "categories": [
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.27509.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.27509"
+  },
+  {
+    "id": "2608.01588",
+    "title": "D^2-4DGS: Dual-Depth Guided Sparse-Camera 4D Gaussian Splatting",
+    "authors": [
+      "Jijian Zhao"
+    ],
+    "abstract": "Dynamic 4D Gaussian Splatting has emerged as an efficient representation for dynamic novel view synthesis through explicit scene modeling and real-time rendering. However, existing methods typically require dense multi-view videos for sufficient geometric constraints, making capture expensive and limiting sparse-camera deployment. Reducing input views lowers acquisition cost but weakens geometry supervision, often causing missing structures and floating Gaussians. Depth priors provide geometric cues, yet no single source offers both dense coverage and reliable geometry. Monocular depth provides dense structure but is scale-ambiguous and locally biased, whereas multi-view geometric depth provides incomplete anchors consistent with the reconstruction coordinate system. To exploit their complementarity, we propose D$^2$-4DGS, a sparse-camera dynamic 4D Gaussian Splatting framework guided by dual-source depth priors. We align monocular estimates with valid multi-view geometric depths and verify their consistency to identify reliable geometric anchors. These verified anchors support consistency-aware pruning and depth supervision, while verified geometric depths and aligned mono-only estimates provide candidate geometry for densification in under-reconstructed regions. Finally, RGB-D joint optimization improves appearance fidelity and geometric consistency under sparse-view supervision. Across all nine dataset--view settings, D$^2$-4DGS achieves the highest PSNR, improving by 1.33 dB on average over the best competing method in each setting.",
+    "published": "2026-08-03",
+    "updated": "2026-08-03",
+    "categories": [
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.01588.pdf",
+    "abs_url": "https://arxiv.org/abs/2608.01588"
+  },
+  {
+    "id": "2606.26985",
+    "title": "Vis4GS: A Visual Analytic Tool for 3D Gaussian Splatting Reconstruction",
+    "authors": [
+      "Kai-Yuan Lin",
+      "Aryabima Mandala Putra",
+      "Jui-Chi Lee",
+      "Shih-Hsuan Hung"
+    ],
+    "abstract": "3D Gaussian Splatting (3DGS) supports fast training and real-time rendering, but its optimization process remains difficult to interpret. Existing viewers mainly expose the final reconstructed scene and offer limited support for explaining how Gaussian properties contribute to visible artifacts or evolve during training. We present Vis4GS, a multi-view visual analytics tool for primitive-level diagnosis of 3DGS reconstruction artifacts. Built on the original 3DGS viewer and training framework, Vis4GS links rendered artifacts to Gaussian properties, View Coverage, training progress, and Gaussian genealogy through four linked views: an interactive Gaussian analysis view, a property timeline view, a Gaussian densification tree view, and a log and control panel. The system supports Gaussian selection, blur and needle-like artifact scoring, View Coverage analysis, and multiscale genealogy exploration of clone, split, prune, and clone-split events. By connecting scene-level artifacts with primitive-level evidence and optimization history, Vis4GS enables a structured workflow for diagnosing reconstruction failures beyond final-image inspection and global metrics. A user study also shows that Vis4GS provides stronger support for usability and artifact understanding than the original 3DGS viewer.",
+    "published": "2026-06-25",
+    "updated": "2026-07-17",
+    "categories": [
+      "cs.GR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.26985.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.26985"
+  },
+  {
+    "id": "2610.05289",
+    "title": "Mobile-4DGS: Unified Static-Dynamic Real-time Mobile Gaussian Splatting",
+    "authors": [
+      "Xiaobiao Du",
+      "Zhen Fang",
+      "Tianqing Zhu",
+      "Richard Hartley",
+      "Xin Yu"
+    ],
+    "abstract": "Recent advances in 3D Gaussian Splatting (3DGS) have achieved remarkable performance in novel view synthesis, yet deploying both static and dynamic Gaussian representations on resource-constrained mobile devices remains challenging due to heavy storage, redundant primitives, and costly per-frame computation. We present Mobile-4DGS, a unified lightweight framework for high-fidelity real-time static and dynamic Gaussian rendering on mobile platforms. For compact appearance modeling, we introduce a Monte Carlo Specular Energy Aggregator that compresses high-order radiance residuals into the first-order Spherical Harmonics (SH), together with an Attribute-Conditioned SH Enhancement module whose predicted offsets are pre-baked before inference. We further propose a Multi-View Alpha-Based Densification and Pruning strategy to suppress redundant primitives while maintaining multi-view consistency. For dynamic scenes, we develop a compact explicit 4D representation by constructing second-order Gaussian motion, learnable temporal support, and a binary static-dynamic partition, enabling continuous-time modeling without runtime deformation networks. Based on this partition, a Depth-Order Certificate selectively reuses previously committed depth orders to reduce re-projection, sorting, merging, and index-buffer updates during playback. Extensive experiments on static and dynamic scenes demonstrate that Mobile-4DGS substantially reduces storage and rendering overhead while maintaining competitive visual quality, enabling real-time 3D and 4D Gaussian Splatting on mobile devices. \\textcolor{magenta}{\\href{https://xiaobiaodu.github.io/mobile-4dgs-project/}{Code has been released: https://xiaobiaodu.github.io/mobile-4dgs-project/}}.",
+    "published": "2026-10-04",
+    "updated": "2026-10-10",
+    "categories": [
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.05289.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.05289"
+  },
+  {
+    "id": "2608.14902",
+    "title": "Geometry-Aware Online Mapping for 3D Gaussian Splatting SLAM",
+    "authors": [
+      "Thai Luu",
+      "Quan Tran",
+      "Hieu Phan",
+      "Tuan Dang"
+    ],
+    "abstract": "Recent 3D Gaussian Splatting (3DGS) has enabled efficient photorealistic view synthesis and is rapidly being adopted in simultaneous localization and mapping (SLAM) systems for online mapping. In these systems, a Gaussian map must be expanded and refined incrementally while tracking runs in real time, so initialization and density control directly determine where limited computation and iterations are spent. This contrasts with offline 3DGS reconstruction, where such heuristics can be amortized over long optimization schedules. However, most 3DGS-SLAM pipelines inherit initialization and density-control heuristics from offline reconstruction, which can become brittle under the strict per-keyframe optimization budgets and incremental map growth of online SLAM. In this work, we revisit these heuristics in a decoupled 3DGS-SLAM setting and propose three geometry-aware methods that operate in the mapping thread: transmittance-preserving densification, camera-aware scale initialization from depth and intrinsics, and error-guided densification that focuses new primitives on high-residual regions. Our results show consistent improvements in rendering quality with negligible overhead, highlighting the coupling between photometric residuals and pose uncertainty in online SLAM. We will open-source our code to the community to foster growth and validate reproducibility.",
+    "published": "2026-08-14",
+    "updated": "2026-08-14",
+    "categories": [
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14902.pdf",
+    "abs_url": "https://arxiv.org/abs/2608.14902"
+  },
+  {
+    "id": "2610.13541",
+    "title": "Efficient Confidence-Aware Densification for 3DGS",
+    "authors": [
+      "Manuel Hofer",
+      "Thomas Köhler",
+      "Felix Windisch",
+      "Bernhard Kerbl",
+      "Markus Steinberger",
+      "Lukas Radl"
+    ],
+    "abstract": "3DGS-MCMC has replaced the gradient-driven density control of 3D Gaussian Splatting with opacity-based sampling and relocation, and is now the de facto standard for prior-free densification under a fixed primitive budget. Because opacity stays high where the scene is already well reconstructed, this sampling sends most new primitives to the foreground and leaves the background under-reconstructed. At low budgets, prior-based methods such as ConeGS and EDGS outperform it, at the cost of a pre-trained radiance field or dense image matches and a separate initialization stage. We argue for a comeback of error-driven densification within the fixed-budget MCMC framework. Our confidence-aware densification keeps the fixed budget and gradual growth of 3DGS-MCMC, but places primitives by the image error instead of the opacity. New primitives are drawn mostly where screen-space gradients are large. We favor primitives with a low learned confidence, which marks regions the reconstruction still explains poorly, and relocate the primitives that contribute least to the rendered images to these places. Averaged over 24 scenes, our method outperforms 3DGS-MCMC in PSNR, SSIM and LPIPS at every budget from 100k to 2M primitives. At 100k, without a prior or an initialization stage, it recovers 0.84dB of the 1.05dB PSNR by which ConeGS leads 3DGS-MCMC, and from 500k on, it has the highest PSNR and SSIM of all fixed-budget methods we compare with, including ConeGS and EDGS. While inherently prior-free, our densification can also exploit priors: from the ConeGS or EDGS initialization, it matches ConeGS in PSNR and SSIM at 100k and is best in all three metrics at 500k.",
+    "published": "2026-10-09",
+    "updated": "2026-10-09",
+    "categories": [
+      "cs.CV",
+      "cs.GR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.13541.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.13541"
+  }
+]

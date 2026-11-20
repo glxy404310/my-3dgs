@@ -1,0 +1,14 @@
+{
+  "call_number": 25,
+  "purpose": "psf-primary-overlap",
+  "timestamp": "2026-10-22T17:54:07.177Z",
+  "agent_id": "01a164bb-bbf4-74a2-944f-89ecbcc40596",
+  "agent_path": "/root/psf_primary_source_overlap",
+  "model": "inherited-primary",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "request_recovered_verbatim": true,
+  "response_recovered_verbatim": true
+}

@@ -1,0 +1,150 @@
+{
+  "event": 3700,
+  "world_threshold": 0.5847915172576904,
+  "deleted_new_split_children": 14,
+  "unique_parents": 7,
+  "all_parents_already_oversized": true,
+  "families": [
+    {
+      "event_local_parent_id": 1070895,
+      "deleted_children": 2,
+      "parent_max_scale": 0.9403370022773743,
+      "parent_alpha": 0.27783963084220886,
+      "axes_above_world_threshold": 3,
+      "normalized_moment_feasibility_min_children": 4,
+      "parent_already_above_world_threshold": true,
+      "child_max_scales": [
+        0.5950003266334534,
+        0.5950003266334534
+      ],
+      "child_alphas": [
+        0.16670379042625427,
+        0.16670379042625427
+      ],
+      "opacity_reason": false,
+      "screen_reason": false,
+      "world_reason_all": true
+    },
+    {
+      "event_local_parent_id": 1076133,
+      "deleted_children": 2,
+      "parent_max_scale": 0.9191015362739563,
+      "parent_alpha": 0.8860501646995544,
+      "axes_above_world_threshold": 3,
+      "normalized_moment_feasibility_min_children": 4,
+      "parent_already_above_world_threshold": true,
+      "child_max_scales": [
+        0.7457634210586548,
+        0.7457634210586548
+      ],
+      "child_alphas": [
+        0.5316300988197327,
+        0.5316300988197327
+      ],
+      "opacity_reason": false,
+      "screen_reason": false,
+      "world_reason_all": true
+    },
+    {
+      "event_local_parent_id": 1077607,
+      "deleted_children": 2,
+      "parent_max_scale": 0.8071457743644714,
+      "parent_alpha": 0.9151812195777893,
+      "axes_above_world_threshold": 2,
+      "normalized_moment_feasibility_min_children": 3,
+      "parent_already_above_world_threshold": true,
+      "child_max_scales": [
+        0.6071634292602539,
+        0.6071634292602539
+      ],
+      "child_alphas": [
+        0.5491087436676025,
+        0.5491087436676025
+      ],
+      "opacity_reason": false,
+      "screen_reason": false,
+      "world_reason_all": true
+    },
+    {
+      "event_local_parent_id": 1079414,
+      "deleted_children": 2,
+      "parent_max_scale": 0.7672271728515625,
+      "parent_alpha": 0.8842491507530212,
+      "axes_above_world_threshold": 3,
+      "normalized_moment_feasibility_min_children": 4,
+      "parent_already_above_world_threshold": true,
+      "child_max_scales": [
+        0.645686149597168,
+        0.645686149597168
+      ],
+      "child_alphas": [
+        0.5305495262145996,
+        0.5305495262145996
+      ],
+      "opacity_reason": false,
+      "screen_reason": false,
+      "world_reason_all": true
+    },
+    {
+      "event_local_parent_id": 1082614,
+      "deleted_children": 2,
+      "parent_max_scale": 0.747032642364502,
+      "parent_alpha": 0.8864140510559082,
+      "axes_above_world_threshold": 2,
+      "normalized_moment_feasibility_min_children": 3,
+      "parent_already_above_world_threshold": true,
+      "child_max_scales": [
+        0.6431248188018799,
+        0.6431248188018799
+      ],
+      "child_alphas": [
+        0.5318484306335449,
+        0.5318484306335449
+      ],
+      "opacity_reason": false,
+      "screen_reason": false,
+      "world_reason_all": true
+    },
+    {
+      "event_local_parent_id": 1086153,
+      "deleted_children": 2,
+      "parent_max_scale": 0.8461031913757324,
+      "parent_alpha": 0.9303703308105469,
+      "axes_above_world_threshold": 2,
+      "normalized_moment_feasibility_min_children": 3,
+      "parent_already_above_world_threshold": true,
+      "child_max_scales": [
+        0.7312456369400024,
+        0.7312456369400024
+      ],
+      "child_alphas": [
+        0.558222234249115,
+        0.558222234249115
+      ],
+      "opacity_reason": false,
+      "screen_reason": false,
+      "world_reason_all": true
+    },
+    {
+      "event_local_parent_id": 1089439,
+      "deleted_children": 2,
+      "parent_max_scale": 0.7695834040641785,
+      "parent_alpha": 0.8276017904281616,
+      "axes_above_world_threshold": 3,
+      "normalized_moment_feasibility_min_children": 4,
+      "parent_already_above_world_threshold": true,
+      "child_max_scales": [
+        0.5937071442604065,
+        0.5937071442604065
+      ],
+      "child_alphas": [
+        0.49656108021736145,
+        0.49656108021736145
+      ],
+      "opacity_reason": false,
+      "screen_reason": false,
+      "world_reason_all": true
+    }
+  ],
+  "scope": "Exact event-local source/parent witness join. A parent already violating size regularization is a key alternative explanation; birth-age effect is not isolated."
+}

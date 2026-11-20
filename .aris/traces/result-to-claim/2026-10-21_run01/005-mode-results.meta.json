@@ -1,0 +1,14 @@
+{
+  "reviewer": "/root/mode_result_claim_gate",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "claim_supported": "no",
+  "decision": "stop_fixed_rule",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "integrity_status": "unavailable",
+  "status": "response_saved_before_terminal_error",
+  "terminal_error": "usage_limit",
+  "response_file": "005-mode-results.response.md",
+  "note": "Complete structured review was saved before agent terminal quota error. Do not label clean reviewer completion or formal integrity audit."
+}

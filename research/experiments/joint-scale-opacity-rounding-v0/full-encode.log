@@ -1,0 +1,9 @@
+{"encoded_points": 16384, "total": 2050770, "elapsed": 8.027138333}
+{"encoded_points": 344064, "total": 2050770, "elapsed": 27.352475119}
+{"encoded_points": 671744, "total": 2050770, "elapsed": 45.543845774000005}
+{"encoded_points": 999424, "total": 2050770, "elapsed": 64.887292942}
+{"encoded_points": 1327104, "total": 2050770, "elapsed": 84.95769750699999}
+{"encoded_points": 1654784, "total": 2050770, "elapsed": 104.418167476}
+{"encoded_points": 1982464, "total": 2050770, "elapsed": 123.229330228}
+{"encoded_points": 2050770, "total": 2050770, "elapsed": 127.714467497}
+{"encoding_complete": true, "elapsed": 129.613532404, "bytes": {"8x8": {"A_independent": 8203080, "B_opacity_only": 8203080, "C_joint27": 8203080}, "10x8": {"A_independent": 9741158, "B_opacity_only": 9741158, "C_joint27": 9741158}}}

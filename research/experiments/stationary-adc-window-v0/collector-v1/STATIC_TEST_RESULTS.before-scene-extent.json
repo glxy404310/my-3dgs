@@ -1,0 +1,163 @@
+{
+  "schema": "stationary-adc-window-v0/preparation-tests-v1",
+  "status": "PASS",
+  "fixture_training_authorized": false,
+  "scope": "Non-ML safety and fake-object control-flow tests only; no scientific experiment",
+  "tests": {
+    "stdlib_imports": {
+      "status": "PASS",
+      "worker_new_modules": [
+        "_bisect",
+        "_random",
+        "_sha512",
+        "bisect",
+        "random"
+      ],
+      "supervisor_new_modules": [],
+      "torch_imported": false
+    },
+    "authorization_denial": {
+      "status": "PASS",
+      "details": {
+        "checks": [
+          "preparation_test_worker:linux:authorization_first",
+          "preparation_test_supervisor:linux:authorization_first",
+          "preparation_test_worker:win32:authorization_first",
+          "preparation_test_supervisor:win32:authorization_first"
+        ],
+        "main_entrypoints_denied": true,
+        "output_created": false,
+        "subprocesses_started": 0,
+        "torch_imported": false
+      }
+    },
+    "instrumented_fake_control_flow": {
+      "status": "PASS",
+      "details": {
+        "exactly_two_added_lines": [
+          "+    first_iter = collector.restore(locals())",
+          "+                collector.after_stats(locals())"
+        ],
+        "instrumented_source_sha256": "02b5cf97271f5f45a7d8da427000b5afe541f2568d74854bcddda6610858733b",
+        "executed_scope": "AST-extracted native training FUNCTION only; every tensor/model/loss/optimizer is fake",
+        "mock_counts": {
+          "mock_render": 100,
+          "mock_backward": 100,
+          "mock_stats": 100,
+          "mock_scene_step": 99,
+          "mock_exposure_step": 99,
+          "mock_adc": 0,
+          "mock_reset": 0,
+          "mock_restore": 1,
+          "mock_after_stats": 100
+        },
+        "mock_lr_iteration_start": 3501,
+        "mock_lr_iteration_end": 3600,
+        "actual_forward": 0,
+        "actual_backward": 0,
+        "actual_parameter_updates": 0
+      }
+    },
+    "numpy_optimizer_lr_scalar_regression": {
+      "status": "PASS",
+      "details": {
+        "native_lr_step": 3501,
+        "native_lr_type": "float64",
+        "lr_value": 9.348027528576477e-05,
+        "numpy_version": "2.2.6",
+        "typed_scalar": {
+          "dtype": "<f8",
+          "shape": [],
+          "sha256": "6e3f5f95d760afd5615a67f2c0acf7649735c2264f9422e3a063bc086f1a6d6d"
+        },
+        "optimizer_group_like_tree_json_serialized": true,
+        "actual_optimizer_constructed": false
+      }
+    },
+    "supervisor_already_exited_worker_output_cap": {
+      "status": "PASS",
+      "details": {
+        "return_code": 2,
+        "stop_reason": "OUTPUT_BYTE_LIMIT",
+        "status": "INVALID",
+        "fake_worker_bytes": 2,
+        "fixture_limit_bytes": 1,
+        "actual_worker_started": false,
+        "actual_signals_sent": 0,
+        "fixture_authorization": false,
+        "isolated_validate_mock": "Only this unit test bypasses validation; fixture remains unauthorized"
+      }
+    }
+  },
+  "failures": [],
+  "source_sha256_before": {
+    "/home/administrator/projects/gaussian-splatting/arguments/__init__.py": "36265b385d6cd3115e0a5f302acbcc4c4efba3fcb385070857d26cc2a173f951",
+    "/home/administrator/projects/gaussian-splatting/gaussian_renderer/__init__.py": "a25cf5fdb22cd8757fb2a1e37b75352042d65b16138a9fa6243f8616ca1369b8",
+    "/home/administrator/projects/gaussian-splatting/scene/__init__.py": "895d042f4dd2c6ee521dd985aea5c49d9c6f5c7379f76c4d537d8dc5468f18bf",
+    "/home/administrator/projects/gaussian-splatting/scene/cameras.py": "7344b9a4c95e3649becab1b9e30eb0b351a15a61370f64352dcb231aed916128",
+    "/home/administrator/projects/gaussian-splatting/scene/dataset_readers.py": "b06f01648fee893c4785ed38eeb934f91b79817b9dcbb694291c9162b0b6ba94",
+    "/home/administrator/projects/gaussian-splatting/scene/gaussian_model.py": "546ba41528a879af4d83bd280a3ef3cbcca9a5e9132204185aaa8f8ee9ffa310",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/auxiliary.h": "5a3345d46acd23a85e44c214dac404f4be195d7c4c49c9effa280ba3bbb10a51",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/config.h": "86d90fe26989e5a991104842961341d1bcb4374d5068dcb2a56d63a9017f8d65",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/forward.cu": "4bfb6830a138bd016f39fa4558f998825d4182b12cfbda2f62bed0ab75042b54",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.cu": "e338380e2d4631cf842904fbf87025ddb46d49b5f1a5a22fd53bf8ada0ec1109",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.h": "58b97a9728e24d41602a2ac3e8eace025cfd3228de6e75033dc458d0303a46f4",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/ext.cpp": "102d6ca2a07cf57717e5828c49a7100841cc0147f7373de768070f06bc4909ef",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/rasterize_points.cu": "462bb16c83f41e3d029cab20d46a951ddd4db10931da5fc6595537268babbd32",
+    "/home/administrator/projects/gaussian-splatting/train.py": "0fc5d65b0c789b250b6e770757925909f5ea94cdc7c5e977eaaec99ddc03e92c",
+    "/home/administrator/projects/gaussian-splatting/utils/camera_utils.py": "7644d89893f2481a7a9be592227bf11f3e6e5c469c9ce92c3cb25f9ff920c458",
+    "/home/administrator/projects/gaussian-splatting/utils/general_utils.py": "97553507caa4f3e6849919d9658b0b0da064e6c8f19142045da79072171ffa51",
+    "/home/administrator/projects/gaussian-splatting/utils/graphics_utils.py": "d6e75de8161e98b72c2691e8a944a842e1b6625d2306035d079c868ac632edfc",
+    "/home/administrator/projects/gaussian-splatting/utils/loss_utils.py": "e4c69eca823525d3057c5441953c5b7c83ddb21d579039d7e82cdb13d35d3455",
+    "/home/administrator/projects/gaussian-splatting/utils/sh_utils.py": "7d1ff267546390635e6d1f68c4f88c4a8b052482d5c9be1d32f06bc69e9a96e7",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/fused_ssim/__init__.py": "c4a9caf98599b378050d1aa258a0b5d8b5817635bc5aefa29ab6893f442490bf",
+    "/mnt/d/Documents/my 3dgs/research/experiments/stationary-adc-window-v0/collector-v1/CONTRACT.preparation.json": "e657b94820dc57200829289506813100e6de1df444d0aefbbe64a71788fcc9f3",
+    "/mnt/d/Documents/my 3dgs/research/experiments/stationary-adc-window-v0/collector-v1/collect.py": "f313683cd8f72e5db98658a8a01018c38a3b760ec6336268a6293b0a0eb97e92",
+    "/mnt/d/Documents/my 3dgs/research/experiments/stationary-adc-window-v0/collector-v1/supervise.py": "e2c24ae55b957e26d146ca22b3a55badfe2eff491e2596696f51dac74807590c"
+  },
+  "actual_counts": {
+    "forward": 0,
+    "backward": 0,
+    "parameter_updates": 0,
+    "optimizer_instances": 0,
+    "worker_subprocesses": 0
+  },
+  "limitations": [
+    "Does not validate actual CUDA or native package restoration",
+    "Does not prove real training-window runtime usability or resource fit",
+    "Mock counters are not experiment counters or independent GPU certification"
+  ],
+  "source_sha256_after": {
+    "/home/administrator/projects/gaussian-splatting/arguments/__init__.py": "36265b385d6cd3115e0a5f302acbcc4c4efba3fcb385070857d26cc2a173f951",
+    "/home/administrator/projects/gaussian-splatting/gaussian_renderer/__init__.py": "a25cf5fdb22cd8757fb2a1e37b75352042d65b16138a9fa6243f8616ca1369b8",
+    "/home/administrator/projects/gaussian-splatting/scene/__init__.py": "895d042f4dd2c6ee521dd985aea5c49d9c6f5c7379f76c4d537d8dc5468f18bf",
+    "/home/administrator/projects/gaussian-splatting/scene/cameras.py": "7344b9a4c95e3649becab1b9e30eb0b351a15a61370f64352dcb231aed916128",
+    "/home/administrator/projects/gaussian-splatting/scene/dataset_readers.py": "b06f01648fee893c4785ed38eeb934f91b79817b9dcbb694291c9162b0b6ba94",
+    "/home/administrator/projects/gaussian-splatting/scene/gaussian_model.py": "546ba41528a879af4d83bd280a3ef3cbcca9a5e9132204185aaa8f8ee9ffa310",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/auxiliary.h": "5a3345d46acd23a85e44c214dac404f4be195d7c4c49c9effa280ba3bbb10a51",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/config.h": "86d90fe26989e5a991104842961341d1bcb4374d5068dcb2a56d63a9017f8d65",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/forward.cu": "4bfb6830a138bd016f39fa4558f998825d4182b12cfbda2f62bed0ab75042b54",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.cu": "e338380e2d4631cf842904fbf87025ddb46d49b5f1a5a22fd53bf8ada0ec1109",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.h": "58b97a9728e24d41602a2ac3e8eace025cfd3228de6e75033dc458d0303a46f4",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/ext.cpp": "102d6ca2a07cf57717e5828c49a7100841cc0147f7373de768070f06bc4909ef",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/rasterize_points.cu": "462bb16c83f41e3d029cab20d46a951ddd4db10931da5fc6595537268babbd32",
+    "/home/administrator/projects/gaussian-splatting/train.py": "0fc5d65b0c789b250b6e770757925909f5ea94cdc7c5e977eaaec99ddc03e92c",
+    "/home/administrator/projects/gaussian-splatting/utils/camera_utils.py": "7644d89893f2481a7a9be592227bf11f3e6e5c469c9ce92c3cb25f9ff920c458",
+    "/home/administrator/projects/gaussian-splatting/utils/general_utils.py": "97553507caa4f3e6849919d9658b0b0da064e6c8f19142045da79072171ffa51",
+    "/home/administrator/projects/gaussian-splatting/utils/graphics_utils.py": "d6e75de8161e98b72c2691e8a944a842e1b6625d2306035d079c868ac632edfc",
+    "/home/administrator/projects/gaussian-splatting/utils/loss_utils.py": "e4c69eca823525d3057c5441953c5b7c83ddb21d579039d7e82cdb13d35d3455",
+    "/home/administrator/projects/gaussian-splatting/utils/sh_utils.py": "7d1ff267546390635e6d1f68c4f88c4a8b052482d5c9be1d32f06bc69e9a96e7",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/fused_ssim/__init__.py": "c4a9caf98599b378050d1aa258a0b5d8b5817635bc5aefa29ab6893f442490bf",
+    "/mnt/d/Documents/my 3dgs/research/experiments/stationary-adc-window-v0/collector-v1/CONTRACT.preparation.json": "e657b94820dc57200829289506813100e6de1df444d0aefbbe64a71788fcc9f3",
+    "/mnt/d/Documents/my 3dgs/research/experiments/stationary-adc-window-v0/collector-v1/collect.py": "f313683cd8f72e5db98658a8a01018c38a3b760ec6336268a6293b0a0eb97e92",
+    "/mnt/d/Documents/my 3dgs/research/experiments/stationary-adc-window-v0/collector-v1/supervise.py": "e2c24ae55b957e26d146ca22b3a55badfe2eff491e2596696f51dac74807590c"
+  },
+  "source_unchanged": true,
+  "torch_imported": false,
+  "native_modules_imported": [],
+  "elapsed_seconds": 0.315037542999999,
+  "test_source_sha256": "0c587c476415c27e33c6d5d7ab6a1549cf03f7e96616459df93b19b1365f016b",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "package_loaded": true,
+  "package": "/mnt/d/Documents/my 3dgs/research/experiments/native-known-controls-v0/main/packages/seed0.pth",
+  "seed": 0,
+  "create_requested": true,
+  "source_iteration": 3500,
+  "all_capture_values_exact": true,
+  "exposure_exact": true,
+  "all_rng_restored": true,
+  "scene_order_match": true,
+  "initial_stack_and_indices_match": true,
+  "fresh_stack_scope": "Native training already created full stack from verified Scene order before first update_lr.",
+  "n_gaussians": 1058297
+}

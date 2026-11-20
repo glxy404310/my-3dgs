@@ -1,0 +1,10 @@
+{
+  "call_number": 49,
+  "purpose": "shape-codec-primary-overlap",
+  "timestamp": "2026-10-22T20:08:44.860Z",
+  "tool": "collaboration.followup_task",
+  "agent_path": "/root/artifact_posthoc_primary_overlap",
+  "model": "inherited-primary",
+  "prompt": "#27 stage1已按原合同停止：replayvalid，top64仅13支持，不进stage2；来源报告保留不改。为避免下一候选重包装，请只读窄查#29 resolvable_eigensymmetry_shape_codec的最强primary近邻。原方案：冻结Gs eigengap实际可观测性，按sphere/axial/full可变DOF记录（sphere1scale无rotation，axial2scale+2orientation，full3scale+3orientation）+tags实际字节，平均lambda球/最近两lambda平均轴对称、真实相机2Dcov含nativefilter及实际contributionweight容量，不训练。已知KISS-GS arxiv2608.26948官方fraunhoferhhi.github.io/KISS-GS PRAS48轴排列/符号规范（exact symmetry，别误称sameapprox类型）；新CompressionofUniformlyDistributedUnitQuaternions arxiv2610.22052 Oct15直接3DGS；IsotropicGS2403.14244；Compressed3DGSnormalizedcovVQ；PLEDGE。请primary核有没有sphere/axial/full mixture typedvariableDOF/eigengap precision编码，强反对/可能原创差别，仅查这个，不生成新idea，不做effects。不因可测就推荐，若现有强方法实质覆盖要明确。保存独立 EIGENSYMMETRY_SHAPE_PRIMARY_OVERLAP.md 到idea-stage/artifact-pivot-20261023，给精确公式/原文段落和未知，no noveltyPASS。",
+  "prompt_provenance": "Readable root tool call manually transcribed; encrypted argument logs not decrypted"
+}

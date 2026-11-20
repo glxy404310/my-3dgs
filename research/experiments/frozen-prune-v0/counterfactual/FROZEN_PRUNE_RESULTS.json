@@ -1,0 +1,61 @@
+{
+  "status": "pass",
+  "capture": "/mnt/d/Documents/my 3dgs/research/experiments/frozen-prune-v0/capture",
+  "means": {
+    "none": {
+      "psnr": 22.030059337615967,
+      "l1": 0.045925624668598175,
+      "ssim": 0.8128963336348534
+    },
+    "old_only": {
+      "psnr": 21.968045234680176,
+      "l1": 0.046374856028705835,
+      "ssim": 0.8121872991323471
+    },
+    "new_only": {
+      "psnr": 21.7650465965271,
+      "l1": 0.04668648075312376,
+      "ssim": 0.8115242347121239
+    },
+    "all": {
+      "psnr": 21.686017274856567,
+      "l1": 0.047227779403328896,
+      "ssim": 0.8106547817587852
+    }
+  },
+  "contrasts": {
+    "old_deletion_new_kept": {
+      "psnr": -0.062014102935791016,
+      "l1": 0.0004492313601076603,
+      "ssim": -0.0007090345025062561
+    },
+    "old_deletion_new_deleted": {
+      "psnr": -0.07902932167053223,
+      "l1": 0.0005412986502051353,
+      "ssim": -0.000869452953338623
+    },
+    "new_deletion_old_kept": {
+      "psnr": -0.2650127410888672,
+      "l1": 0.0007608560845255852,
+      "ssim": -0.0013720989227294922
+    },
+    "new_deletion_old_deleted": {
+      "psnr": -0.2820279598236084,
+      "l1": 0.0008529233746230602,
+      "ssim": -0.0015325173735618591
+    },
+    "full_deletion": {
+      "psnr": -0.3440420627593994,
+      "l1": 0.0013021547347307205,
+      "ssim": -0.0022415518760681152
+    }
+  },
+  "removed": {
+    "none": 0,
+    "old_only": 1374,
+    "new_only": 18,
+    "all": 1392
+  },
+  "anchor_checks_pass": true,
+  "scope": "Single-event immediate quality intervention with actual fixed masks. Not training, generalization, novelty, or protection efficacy."
+}

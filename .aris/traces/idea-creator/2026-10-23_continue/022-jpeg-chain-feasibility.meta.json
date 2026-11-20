@@ -1,0 +1,16 @@
+{
+  "call_number": 22,
+  "purpose": "jpeg-chain-feasibility",
+  "timestamp": "2026-10-22T17:35:28.193Z",
+  "agent_id": "01a164ad-5198-7021-aba5-a1dd63f50b46",
+  "agent_path": "/root/jpeg_chain_feasibility",
+  "model": "inherited-primary",
+  "reasoning_effort": "inherited-primary",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "request_recovered_verbatim": true,
+  "response_recovered_verbatim": true,
+  "response_scope": "selected actual final answer; inherited transcript answers excluded"
+}

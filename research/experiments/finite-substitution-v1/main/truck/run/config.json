@@ -1,0 +1,18 @@
+{
+  "checkpoint": "/home/administrator/projects/gaussian-splatting/output/truck_windows_3500_11000_20261021/chkpnt3500.pth",
+  "iteration": 3500,
+  "source": "/home/administrator/datasets/tandt_db/tandt/truck",
+  "n": 1058297,
+  "cases": 12,
+  "steps": 120,
+  "prior_packet": "/mnt/d/Documents/my 3dgs/research/experiments/split-capacity-v0/main/truck/packet.pth",
+  "learning_rates": {
+    "xyz": 0.0005467485176442078,
+    "f_dc": 0.0025,
+    "f_rest": 0.000125,
+    "opacity": 0.025,
+    "scaling": 0.005,
+    "rotation": 0.001
+  },
+  "train_pool": 48
+}

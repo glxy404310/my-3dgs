@@ -1,0 +1,76 @@
+{
+  "status": "pass",
+  "schema_version": 2,
+  "scene": "train",
+  "source": "/home/administrator/datasets/tandt_db/tandt/train",
+  "registered_images": 301,
+  "train_images": 263,
+  "test_images": 38,
+  "sfm_points": 182686,
+  "intrinsic_models": [
+    "PINHOLE"
+  ],
+  "image_sizes": [
+    [
+      980,
+      545
+    ]
+  ],
+  "test_names": [
+    "00001.jpg",
+    "00009.jpg",
+    "00017.jpg",
+    "00025.jpg",
+    "00033.jpg",
+    "00041.jpg",
+    "00049.jpg",
+    "00057.jpg",
+    "00065.jpg",
+    "00073.jpg",
+    "00081.jpg",
+    "00089.jpg",
+    "00097.jpg",
+    "00105.jpg",
+    "00113.jpg",
+    "00121.jpg",
+    "00129.jpg",
+    "00137.jpg",
+    "00145.jpg",
+    "00153.jpg",
+    "00161.jpg",
+    "00169.jpg",
+    "00177.jpg",
+    "00185.jpg",
+    "00193.jpg",
+    "00201.jpg",
+    "00209.jpg",
+    "00217.jpg",
+    "00225.jpg",
+    "00233.jpg",
+    "00241.jpg",
+    "00249.jpg",
+    "00257.jpg",
+    "00265.jpg",
+    "00273.jpg",
+    "00281.jpg",
+    "00289.jpg",
+    "00297.jpg"
+  ],
+  "colmap_and_actual_dimensions": [
+    [
+      1959,
+      1090,
+      980,
+      545
+    ]
+  ],
+  "all_registered_files_match_source_archive_crc": true,
+  "dimension_scope": "Archive images are pre-scaled; native loader keeps COLMAP-derived FOV and uses actual image size. No focal/FOV alteration performed.",
+  "repo_commit": "54c035f7834b564019656c3e3fcc3646292f727d",
+  "colmap_sha256": {
+    "images.bin": "14e48a5bd9afc87ce7f46fbf093852a4ff2185b4b24d79bdcd3ad58db7a101e0",
+    "cameras.bin": "25d6f6bc51d126c680a5f5598bae17722d9b29030eb0b9b0b242406f508b9cc0",
+    "points3D.bin": "e54fc1d534ed7cc248442dbb567de1094ecca5c28c61a8c96986cc95766d706f"
+  },
+  "scope": "Input metadata and all registered image files verified. No render scores, method selection, or ground-truth fabrication."
+}

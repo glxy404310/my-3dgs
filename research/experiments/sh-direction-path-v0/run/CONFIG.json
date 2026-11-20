@@ -1,0 +1,47 @@
+{
+  "repo": "/home/administrator/projects/gaussian-splatting",
+  "source": "/home/administrator/datasets/tandt_db/tandt/truck",
+  "model": "/home/administrator/projects/gaussian-splatting/output/truck_30000_r1",
+  "input_kind": "PLY snapshots from the same truck_30000_r1 run",
+  "script_sha256": "3055fb089b43679f9fbc8106c6d515f1e01817a0a046d9c795baf45612c5f09d",
+  "ply_sha256": {
+    "7000": "e54272f09be80a577288dbbc8475df6a35368578b5c8c444b4eede76064da020",
+    "30000": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736"
+  },
+  "iterations": [
+    7000,
+    30000
+  ],
+  "resolution": 2,
+  "native_python_max_image_difference": 2e-05,
+  "native_python_relative_gradient_difference": 0.001,
+  "tiny_median_ratio": 0.01,
+  "tiny_p90_ratio": 0.05,
+  "time_limit_seconds": 300,
+  "allocator_limit_bytes": 10000000000,
+  "training_performed": false,
+  "optimizer_created": false,
+  "parameter_updates": 0,
+  "full_training_camera_count": 219,
+  "full_heldout_camera_count": 32,
+  "training_views": [
+    "000002.jpg",
+    "000037.jpg",
+    "000072.jpg",
+    "000108.jpg",
+    "000143.jpg",
+    "000179.jpg",
+    "000214.jpg",
+    "000251.jpg"
+  ],
+  "heldout_views": [
+    "000001.jpg",
+    "000033.jpg",
+    "000065.jpg",
+    "000105.jpg",
+    "000137.jpg",
+    "000177.jpg",
+    "000209.jpg",
+    "000249.jpg"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "main_external_wall_seconds": 97.906989883,
+  "main_watchdog_sha256": "0f11a2cb9ea95c01729af27588f7e3ccbd4814aa74ef012be93f1eec0e3c5271",
+  "remaining_shared_seconds_at_launch": 202.093010117,
+  "hard_shared_limit_seconds": 300,
+  "audit_start_unix_ns": 1792703351859960748,
+  "process_exit_code": 0,
+  "timeout": false,
+  "cleanup_reserve_seconds": 2,
+  "terminate_to_kill_grace_seconds": 5,
+  "shared_definition": "main external wall + audit external wall, including Python startups",
+  "command": [
+    "/home/administrator/venvs/3dgs/bin/python",
+    "-B",
+    "-u",
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/verify_nanogs_premerge_independent.py",
+    "--work-deadline-unix-ns",
+    "1792703545952970865",
+    "--output",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-opacity-premerge-v0/INDEPENDENT_PREMERGE_VERIFICATION.json"
+  ],
+  "term_deadline_unix_ns": 1792703546952970865,
+  "kill_deadline_unix_ns": 1792703551952970865,
+  "audit_pid": 379,
+  "audit_result_status": "PASS",
+  "audit_output_sha256": "14a90f805895339f55bd4c574f6950a911c5bdd22c816adeadc73c1575e03ab4",
+  "audit_external_wall_seconds": 41.343655784,
+  "combined_external_wall_seconds": 139.250645667,
+  "within_shared_300_seconds": true,
+  "main_watchdog_unchanged": true
+}

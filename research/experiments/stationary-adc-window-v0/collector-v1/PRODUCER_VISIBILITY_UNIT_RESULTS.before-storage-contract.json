@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic CPU tests of actual producer helper only; no real arrays/model/worker",
+  "tests": {
+    "empty": {
+      "status": "PASS",
+      "logical_count": 0,
+      "packed_payload_bytes": 2
+    },
+    "full": {
+      "status": "PASS",
+      "logical_count": 11,
+      "packed_payload_bytes": 2
+    },
+    "partial_non_multiple_of_8": {
+      "status": "PASS",
+      "logical_count": 4,
+      "packed_payload_bytes": 2
+    },
+    "whole_byte": {
+      "status": "PASS",
+      "logical_count": 2,
+      "packed_payload_bytes": 1
+    },
+    "unsorted_rejected": {
+      "status": "PASS",
+      "rejected": "Visibility indices are not unique and ascending; cannot encode losslessly"
+    },
+    "duplicate_rejected": {
+      "status": "PASS",
+      "rejected": "Visibility indices are not unique and ascending; cannot encode losslessly"
+    },
+    "negative_rejected": {
+      "status": "PASS",
+      "rejected": "Visibility indices outside point rows"
+    },
+    "upper_bound_rejected": {
+      "status": "PASS",
+      "rejected": "Visibility indices outside point rows"
+    }
+  },
+  "collector_sha256_before": "fee6c3f48204c1499d136e3024adb18ca81443d50437bf746d583053b0b7e517",
+  "collector_sha256_after": "fee6c3f48204c1499d136e3024adb18ca81443d50437bf746d583053b0b7e517",
+  "stdlib_only_module_import_verified": true,
+  "torch_imported": false,
+  "actual_forward": 0,
+  "actual_backward": 0,
+  "actual_parameter_updates": 0,
+  "actual_models_loaded": 0,
+  "actual_worker_subprocesses": 0,
+  "test_sha256": "5dc862b8c568416d8cbf600f7a6ce6c67f2e624f6d79c56d2c7dd8b25e4cb5eb"
+}

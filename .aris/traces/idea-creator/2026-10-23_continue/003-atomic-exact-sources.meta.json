@@ -1,0 +1,10 @@
+{
+  "reviewer_family": "openai",
+  "status": "ok",
+  "purpose": "atomic-exact-sources",
+  "call_number": 3,
+  "model": "inherited-primary",
+  "review_independence": "same-family",
+  "agent_id": "01a1646d-bd7e-78d3-92b6-36016196ee2c",
+  "acceptance_status": "provisional"
+}

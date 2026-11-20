@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "interval": 200,
+  "seed": 0,
+  "sanity": true,
+  "source_iteration": 3500,
+  "final_iteration": 3622,
+  "updates": 122,
+  "actual_events": [
+    3600
+  ],
+  "n_gaussians": 450513,
+  "training_seconds": 3.083107546000001,
+  "process_seconds": 12.508756003999999,
+  "peak_training_allocated_bytes": 1410573312,
+  "peak_training_reserved_bytes": 1639972864,
+  "measurement": "Synchronized block wall time including forward/backward/ADC/optimizer; excludes evaluation, loading, audit, saving. Sanity timing includes equivalence audit and is not a cost result.",
+  "scope": "Fixed restored checkpoint and precomputed camera sequence; continuation seeds are not independent training seeds."
+}

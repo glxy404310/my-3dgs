@@ -1,0 +1,8 @@
+{
+  "status": "FAILED",
+  "error_type": "AssertionError",
+  "error": "Native/Python parity gate failed; do not interpret this diagnostic",
+  "training_performed": false,
+  "parameter_updates": 0,
+  "elapsed_gpu_stage_seconds": 12.770300951000024
+}

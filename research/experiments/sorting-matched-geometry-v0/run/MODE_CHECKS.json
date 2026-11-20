@@ -1,0 +1,30 @@
+[
+  {
+    "mode": "base_float32",
+    "non_xyz_hash": "664095da63127b8d540c1ebaf45c502cd983a37bf792ecff401263990e4ce6ca",
+    "xyz_matches_file_decode": true,
+    "no_optimizer": true,
+    "elapsed_seconds": 12.706240917000002
+  },
+  {
+    "mode": "local_tau025",
+    "non_xyz_hash": "664095da63127b8d540c1ebaf45c502cd983a37bf792ecff401263990e4ce6ca",
+    "xyz_matches_file_decode": true,
+    "no_optimizer": true,
+    "elapsed_seconds": 12.861143505000001
+  },
+  {
+    "mode": "global_tau025",
+    "non_xyz_hash": "664095da63127b8d540c1ebaf45c502cd983a37bf792ecff401263990e4ce6ca",
+    "xyz_matches_file_decode": true,
+    "no_optimizer": true,
+    "elapsed_seconds": 10.96792533499999
+  },
+  {
+    "mode": "local_tau0125",
+    "non_xyz_hash": "664095da63127b8d540c1ebaf45c502cd983a37bf792ecff401263990e4ce6ca",
+    "xyz_matches_file_decode": true,
+    "no_optimizer": true,
+    "elapsed_seconds": 13.131540099000006
+  }
+]

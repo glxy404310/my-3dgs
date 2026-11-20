@@ -1,0 +1,25 @@
+{
+  "schema": "speedy-private-extension/import-v1",
+  "status": "PRIVATE_IMPORT_PASS_ONLY",
+  "paths": {
+    "wrapper": "/home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/lib.linux-x86_64-3.10/diff_gaussian_rasterization/__init__.py",
+    "extension": "/home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/lib.linux-x86_64-3.10/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so"
+  },
+  "hashes": {
+    "wrapper": "a16fee3c02d7b16c319259405d1d13b8fdab7cdce9e74f934b647918388cbce0",
+    "extension": "9d4ac9f6cfac0e316e43d0a006e89405703658e013103a5ad58a0ffeef0ba3d1"
+  },
+  "bindings": {
+    "rasterize_gaussians": true,
+    "rasterize_gaussians_backward": true,
+    "mark_visible": true
+  },
+  "torch": "2.7.1+cu128",
+  "cuda": "12.8",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "cuda_initialized": false,
+  "forward_calls": 0,
+  "backward_calls": 0,
+  "numerical_verified": false,
+  "environment_ready": false
+}

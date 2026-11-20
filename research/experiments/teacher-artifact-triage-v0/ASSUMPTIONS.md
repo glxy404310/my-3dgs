@@ -1,0 +1,15 @@
+# Teacher-only exploratory visual triage
+
+This task uses only the existing 32 official heldout `raw/teacher` and `raw/GT` NPZ files under `pruned-opacity-transfer-v0/run`. It does not load models, render, use a GPU, fit any parameter, or continue the shared-coordinate diagnostic. No compressed/student images are loaded. Compression-induced black holes must not be described as problems of the mature teacher.
+
+This is an exploratory display chosen **after observing teacher-versus-GT residuals**. Large MSE is not certification of an artifact, a particular cause, or novelty. It may reflect ordinary reconstruction error, misalignment, appearance differences, or other causes. Specific visual descriptions require the root to inspect the images; the script does not label floaters, ghosting, or other artifact types.
+
+- The fixed input names are `000001.jpg.npz`, then every eighth frame through `000249.jpg.npz`, exactly 32 files per source directory. `rgb` must be finite float32 CHW `(3,546,979)`. Teacher RGB is uniformly clipped to `[0,1]` before both metrics and display. GT is the cached original encoded RGB, validated to already lie in `[0,1]`; no gamma, exposure, sharpening, contrast, or source-pixel change is applied.
+- Per-view MSE uses all channels/pixels and float64 subtraction/accumulation. PSNR is `-10*log10(MSE)` for a unit range. Exact zero MSE would have infinite PSNR, represented explicitly rather than adding an epsilon.
+- Rank views by descending MSE, breaking exact ties by filename. Display the first six, the fixed zero-based sorted position 16 (rank 17 of 32, the lower-MSE member of the two middle views), and rank 32 as best. This is eight distinct views. The representative median view is not a claim that a single view equals the scalar median of an even-sized population.
+- Full pairs retain each original 979x546 image, teacher left and GT right, without headers or resizing; the paired PNG is 1958x546. PNG bytes are `rint(clip(rgb,0,1)*255).astype(uint8)`. The numeric metrics use the pre-quantized floats, not the display PNGs.
+- For each of the two worst views only, use fixed 192x192 candidates starting at `(y,x)=(24*j,24*i)` and fully inside the image. Rank by mean teacher-GT squared RGB error in the crop; row-major `(y,x)` breaks exact ties. Select the maximum, then the maximum remaining crop with no area overlap with the first. This is **posthoc maximum-error ROI selection** for explanation, not an independent evaluation or artifact detector.
+- Each crop pair keeps teacher left/GT right and is enlarged exactly 2x using nearest-neighbor: 768x384 PNG. Neither image is recolored or enhanced. Source-coordinate boxes, crop scores, selection rules, paths, all input hashes before/after, script hash, and output hashes are archived.
+- The script is CPU-only with numerical thread limits of one and is authorized for one execution. It refuses to overwrite its manifest, metrics, index, or panel directory; failures are preserved and are not automatically retried. All upstream NPZs are opened read only.
+
+No image-based artifact interpretation or causal/method conclusion is included in this preparation note.

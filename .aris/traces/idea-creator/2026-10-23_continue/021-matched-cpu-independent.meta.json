@@ -1,0 +1,16 @@
+{
+  "call_number": 21,
+  "purpose": "matched-cpu-independent",
+  "timestamp": "2026-10-22T17:41:07.907Z",
+  "agent_id": "01a164af-790f-71a2-91f4-8a6ab0ab0c73",
+  "agent_path": "/root/matched_geometry_cpu_verify",
+  "model": "inherited-primary",
+  "reasoning_effort": "inherited-primary",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "request_recovered_verbatim": true,
+  "response_recovered_verbatim": true,
+  "response_scope": "selected actual final answer; inherited transcript answers excluded"
+}

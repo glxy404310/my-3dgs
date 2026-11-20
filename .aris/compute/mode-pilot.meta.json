@@ -1,0 +1,33 @@
+{
+  "recorded_at": "2026-10-21T23:07:11.8910250+08:00",
+  "status": "completed",
+  "exit_code": 0,
+  "policies": [
+    "legacy",
+    "inherit",
+    "fresh",
+    "rotated_fresh",
+    "rotated_old_difference",
+    "mode_clock"
+  ],
+  "branch_count": 6,
+  "sanity_branch_count": 2,
+  "checkpoint_iteration": 3500,
+  "event_iteration": 3600,
+  "actual_parent_adam_step": 3569,
+  "parents": 1481,
+  "recovery_steps": [
+    0,
+    20,
+    100,
+    200,
+    500
+  ],
+  "test_views": 32,
+  "analysis_script_sha256": "1f4574c6c8768c2bed181cbc6aa20f81014e4986d54d1236b79888ecb2e3f1af",
+  "results_sha256": "cf206a0a246777c9e67dbb73cf20bc235ab45220e32ff8d91191dbb276e28bb8",
+  "quality_gate": "failed",
+  "decision": "stop_fixed_rule",
+  "timing_scope": "Instrumented diagnostic; redundant native child update remains; not a full-training speedup",
+  "formal_integrity_audit": "unavailable"
+}

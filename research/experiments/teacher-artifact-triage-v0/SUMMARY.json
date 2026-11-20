@@ -1,0 +1,47 @@
+{
+  "views": 32,
+  "mean_MSE": 0.002947339577882787,
+  "median_MSE": 0.002820158918323569,
+  "PSNR_of_mean_MSE_db": 25.30569824006006,
+  "mean_per_view_PSNR_db": 25.46554618148813,
+  "worst_two": [
+    {
+      "view": "000217.jpg",
+      "input_filename": "000217.jpg.npz",
+      "mse": 0.006126526942477726,
+      "psnr_db": 22.127856522619858,
+      "psnr_infinite": false,
+      "teacher_values_outside_0_1_before_clamp": 46637,
+      "rank_mse_descending": 1
+    },
+    {
+      "view": "000121.jpg",
+      "input_filename": "000121.jpg.npz",
+      "mse": 0.004494045788043235,
+      "psnr_db": 23.473625070407856,
+      "psnr_infinite": false,
+      "teacher_values_outside_0_1_before_clamp": 94516,
+      "rank_mse_descending": 2
+    }
+  ],
+  "representative_median_rank17": {
+    "view": "000017.jpg",
+    "input_filename": "000017.jpg.npz",
+    "mse": 0.0027490185758153613,
+    "psnr_db": 25.608223255087136,
+    "psnr_infinite": false,
+    "teacher_values_outside_0_1_before_clamp": 26656,
+    "rank_mse_descending": 17
+  },
+  "best": {
+    "view": "000185.jpg",
+    "input_filename": "000185.jpg.npz",
+    "mse": 0.0017688403107107857,
+    "psnr_db": 27.523113730301052,
+    "psnr_infinite": false,
+    "teacher_values_outside_0_1_before_clamp": 39610,
+    "rank_mse_descending": 32
+  },
+  "artifact_classification": null,
+  "cause_or_novelty_conclusion": null
+}

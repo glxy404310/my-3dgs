@@ -1,0 +1,10 @@
+{
+  "agent_path": "/root/co_ray_result_to_claim",
+  "public_final_count": 1,
+  "public_final_timestamps": [
+    "2026-10-22T23:30:35.865Z"
+  ],
+  "status": "COMPLETE_PUBLIC_RESPONSE_SAVED",
+  "captured_at": "2026-10-23T07:33:43.652205+08:00",
+  "capture_scope": "public tool arguments and assistant final messages only; no private reasoning"
+}

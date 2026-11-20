@@ -1,0 +1,115 @@
+{
+  "role": "Fresh agent follows document executor",
+  "prompt_file": "TASK_PROMPT.txt",
+  "public_final_file": "PUBLIC_FINAL.md",
+  "trace_directory_label_is_not_timestamp_evidence": true,
+  "authoritative_external_timestamps": "The two EXTERNAL_RUN.json files",
+  "invocations_each": 1,
+  "retries": 0,
+  "doc_divergences": [],
+  "root_certification_created": false,
+  "evidence_files": [
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\witness-fixed-v1\\RESULTS.json",
+      "sha256": "fe17840ed6db092073df4b6ead71a8a3ff99e4e508e2d61f86dc5242eaa000fc",
+      "bytes": 5625
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\witness-fixed-v1\\WATCHDOG.json",
+      "sha256": "00f32cca82f15277cc1a87d2e0a4a17f2b9f7efbc876d721835fe9d2f5e0c2fa",
+      "bytes": 1037
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\witness-fixed-v1\\MANIFEST.json",
+      "sha256": "29832880b0c8d1b8b20fe5b7e6f3f4e21f1c4e3054beb1e7d2d6474a4256fd47",
+      "bytes": 24041
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\witness-fixed-v1.EXTERNAL_RUN.json",
+      "sha256": "9e73108164f076773ca211c23cac69aae57d2af20d1bff7b20c66c74203dbb88",
+      "bytes": 314
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\witness-fixed-v1.EXTERNAL.log",
+      "sha256": "76df5e5e6cb4a4c8bd30795d575111ed0da0da3f27ca6ff4d628107a9f33fb2d",
+      "bytes": 327
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\witness-fixed-sh3-v1\\RESULTS.json",
+      "sha256": "c529da10c0b8a6f29302ba7c1235f914de9fca6d5f54c6bed4b0d6cb8709d6e1",
+      "bytes": 6842
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\witness-fixed-sh3-v1\\WATCHDOG.json",
+      "sha256": "6f66553d4300fc9ab6afebf631f086a13665659b4b2867e5e2c4c0cb0cd9d09f",
+      "bytes": 1041
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\witness-fixed-sh3-v1\\MANIFEST.json",
+      "sha256": "0f0583a69b7ed7832481135aaf964280b10a2e7bf8e2df4823fc65ebf795b08d",
+      "bytes": 26607
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\witness-fixed-sh3-v1.EXTERNAL_RUN.json",
+      "sha256": "5a875facb2beab94b2bc3c7bde1f7f61256b93a1edd4cf65bd3113e488439a0f",
+      "bytes": 340
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\witness-fixed-sh3-v1.EXTERNAL.log",
+      "sha256": "afe39b3fd963c68c94dd0bc0dff2841fc9e4bf6b762ecc8864b9af4a5e8245ee",
+      "bytes": 327
+    }
+  ],
+  "trace_files": [
+    {
+      "file": "INVOCATION1_TOOL_SESSION.json",
+      "sha256": "603c353ece4951f39219a6c871155f40c2b3e26eebd05556ac1a88b53f75863f",
+      "bytes": 923
+    },
+    {
+      "file": "INVOCATION1.ps1",
+      "sha256": "ea3ceceb78d2299f93efaa815cdb29fc3c83fa92c4d5a5d40314fad7bbda7f54",
+      "bytes": 1738
+    },
+    {
+      "file": "INVOCATION2_TOOL_SESSION.json",
+      "sha256": "a912b42609cf43508d24041b2f1aaa860556b4587df1bc04d75e3aaedbfe002a",
+      "bytes": 923
+    },
+    {
+      "file": "INVOCATION2.ps1",
+      "sha256": "aad172444e14d864c95fcde1cfc089d78972e7c3728e3252a76b7bc2bed9f961",
+      "bytes": 1780
+    },
+    {
+      "file": "PREFLIGHT_TOOL_RESULTS.json",
+      "sha256": "e29dd5f29a2bd42c45ec45feae6cab5ee5004a9ec124c9c3a7ad75e85bad088c",
+      "bytes": 2651
+    },
+    {
+      "file": "PUBLIC_FINAL.md",
+      "sha256": "c32a20a8c71f2d08b66420a65d6f55a56365fc572ed17999bdbb2becee10596c",
+      "bytes": 3299
+    },
+    {
+      "file": "SH0_EVIDENCE_CHECK.json",
+      "sha256": "a1e22cd4ec4118bdf0615ca119d51c315f6c9daa75327ab8c053b5299c613f91",
+      "bytes": 6919
+    },
+    {
+      "file": "SH3_EVIDENCE_CHECK.json",
+      "sha256": "2064dae5237a7a6814990d1fe904360798fef9c67211f43b2afaf50f9855c82d",
+      "bytes": 7597
+    },
+    {
+      "file": "SH3_PREINVOCATION_ABSENCE.json",
+      "sha256": "1968e1dd912929eb0e3f300349caada5e053b5f4e6dbfc6ff1ea78008416965c",
+      "bytes": 110
+    },
+    {
+      "file": "TASK_PROMPT.txt",
+      "sha256": "6e74d637e07c01b0ceb16eaf97b44d942266f0c8845be4ca3e39a0d675ffef3d",
+      "bytes": 1377
+    }
+  ]
+}

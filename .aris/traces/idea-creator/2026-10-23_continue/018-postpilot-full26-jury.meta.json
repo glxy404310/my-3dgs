@@ -1,0 +1,15 @@
+{
+  "call_number": 18,
+  "purpose": "postpilot-full26-jury",
+  "timestamp": "2026-10-23T01:18:02.504127+08:00",
+  "agent_id": "01a16498-d547-78c1-9418-ed73fec0c40e",
+  "agent_path": "/root/postpilot_next_jury",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "request_recovered_verbatim": true,
+  "response_recovered_verbatim": true
+}

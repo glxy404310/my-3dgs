@@ -1,0 +1,71 @@
+{
+  "schema": "co-ray-split-interaction-v0/contract-v1",
+  "frozen_by_root": true,
+  "phase": "projection",
+  "root_review": {
+    "reviewed_full_code": true,
+    "reviewed_code_sha256": {
+      "execute.py": "81836c1d4bfae10d93dedcf32ec557aa441643961b65bf9405eec26c2a777dbc",
+      "cpu_metrics.py": "3e3033905509ef2d560536e61a1942acfd9aace6d65447cde832857229fa6c09",
+      "run-diagnostic.sh": "0c97b909e52b394ef3c19dc39da439b6236b131be08e5acbf147b321d15f61f4",
+      "launch.ps1": "857a9c746ab3f99c680f0153f160674992aceecfd2b4a6034c85141d94e0a809",
+      "ASSUMPTIONS.md": "daa462e282c277d703596826d2dd99dc2a91c784903a979d8663ffe1205ed4b8",
+      "PREPARATION.md": "365f3696023ab66a4588570e08d84aedabf447966aaad624f4fdf9e397210a70",
+      "CONTRACT.template.json": "671c1ff0903b159fe969f212477be6c86ee336ee57e4507ee1829d2323a91e14",
+      "ARMS.template.json": "1e1ef2537cdcd5834a437573404f7c9a78f1de197d8435837d7c69d82be8aa7e",
+      "READONLY_PINS.json": "40bd06441240570d123697fd58efc34f459577bdca47809334d030680070f878",
+      "ROOT_PROTOCOL.md": "6843f9c6b5c11269e21edb58a35896c1a7c4cc7cb04d7d4f2dbcb0e908d64a46",
+      "ROOT_INPUT_PINS.json": "7ff5ebbe6ba914655ae602226db3176491a01b776328af77c19dedaf7f380e85"
+    }
+  },
+  "scope_statement": "Current native original prebirth projection only; support proxy preparation; no historical trajectory or training claim",
+  "scientific_gates": {
+    "root_protocol_sha256": "6843f9c6b5c11269e21edb58a35896c1a7c4cc7cb04d7d4f2dbcb0e908d64a46",
+    "E_over_D_minimum": 0.01,
+    "positive_H_over_signed_complete_event_increase_minimum": 0.1,
+    "over_repeat_floor_multiplier": 10,
+    "graph_E_and_H_ratio_vs_both_random_maximum": 0.8,
+    "near_zero_D": 1e-18,
+    "near_zero_abs_signed_Delta": 1e-10,
+    "H_absolute_floor": 1e-12,
+    "no_training_authorized": true
+  },
+  "training_authorized": false,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "views": [
+    "000002.jpg",
+    "000037.jpg",
+    "000072.jpg",
+    "000108.jpg",
+    "000143.jpg",
+    "000179.jpg",
+    "000214.jpg",
+    "000251.jpg"
+  ],
+  "loss": null,
+  "source_JPEG_sha256": {},
+  "renderer": {
+    "SH": 3,
+    "background": [
+      0,
+      0,
+      0
+    ],
+    "AA": false,
+    "exposure": false,
+    "scaling_modifier": 1.0,
+    "separate_sh": false,
+    "convert_SHs_python": false,
+    "compute_cov3D_python": false,
+    "native_final_clamp": false
+  },
+  "limits": {
+    "external_seconds": 300,
+    "host_RSS_bytes": 8589934592,
+    "gpu_allocator_bytes": 4294967296,
+    "raw_bytes": 4294967296
+  },
+  "raw_file_count": 8,
+  "raw_upper_bound_bytes": 459296
+}

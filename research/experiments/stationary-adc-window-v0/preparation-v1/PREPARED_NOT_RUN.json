@@ -1,0 +1,27 @@
+{
+  "status": "BOUNDED_BLUEPRINT_NOT_EXECUTABLE_NOT_RUN",
+  "new_updates_authorized": false,
+  "model_imports": 0,
+  "torch_imports": 0,
+  "forwards": 0,
+  "backwards": 0,
+  "optimizer_steps": 0,
+  "source_edits": 0,
+  "native_commit_required": "54c035f7834b564019656c3e3fcc3646292f727d",
+  "source_package": "research/experiments/native-known-controls-v0/main/packages/seed0.pth",
+  "source_iteration": 3500,
+  "requested_future_horizon": 30000,
+  "old_control_horizon": 4500,
+  "future_window": [3501, 3600],
+  "future_expected_counts": {"forward": 100, "loss_backward": 100, "scene_optimizer": 99, "exposure_optimizer": 99, "adc": 0},
+  "endpoint": "after iteration 3600 add_densification_stats; before first densify_and_prune and before iteration 3600 optimizer step",
+  "trajectory_scope": "restored trajectory, not original uninterrupted history",
+  "historical_loss_backend": "UNRESOLVED",
+  "root_result_gates_prelocked": false,
+  "static_sources_read": {
+    "scripts/experiments/observe_native_adc_v1.py": "f2c5f8efa840527314d4605dfa6913c9ec50230169e6847a1fe0be0aac800a4a",
+    "scripts/experiments/run_native_controls.py": "bb350569a3a8bb1a1f1f804fcbc17dcd64b134aca0f826b55915bb616d6f8c9c",
+    "/home/administrator/projects/gaussian-splatting/train.py": "0fc5d65b0c789b250b6e770757925909f5ea94cdc7c5e977eaaec99ddc03e92c"
+  },
+  "not_yet_done": ["implement collector", "review collector and exact injected diff", "pin package and full runtime input identities", "set resource budgets", "obtain user authorization for new optimizer updates", "run collector", "independent acceptance audit", "prepare separate frozen diagnostic gates"]
+}

@@ -1,0 +1,351 @@
+{
+  "decision": "STOP_CURRENT_NEAREST_NEIGHBOR_PROXY_TRANSFER",
+  "tool_valid": true,
+  "phase": "complete",
+  "training_performed": false,
+  "optimizer_created": false,
+  "optimizer_updates": 0,
+  "backward_calls": 0,
+  "native_forward_calls": 731,
+  "completed_train_views": 219,
+  "completed_eval_rows": 224,
+  "fixed_parameter_interventions": true,
+  "teacher_parameters_before": "f90a54ffe88db1b16eb78e7acc7f2ebb44556570227f21c48342e6eb819a6822",
+  "base_gates": {
+    "teacher_MSE_at_least_20pct_lower": true,
+    "GT_MSE_at_least_5pct_lower": true,
+    "own_tail4_GT_MSE_nonworse": true,
+    "at_least_24_nonworse_GT_views": true
+  },
+  "control_gates": {
+    "A_local": {
+      "GT_mean_at_least_5pct_lower": false,
+      "own_tail4_GT_MSE_nonworse": false
+    },
+    "A_global": {
+      "GT_mean_at_least_5pct_lower": false,
+      "own_tail4_GT_MSE_nonworse": true
+    },
+    "A_shuffle": {
+      "GT_mean_at_least_5pct_lower": true,
+      "own_tail4_GT_MSE_nonworse": true
+    },
+    "B_global": {
+      "GT_mean_at_least_5pct_lower": true,
+      "own_tail4_GT_MSE_nonworse": true
+    },
+    "B_shuffle": {
+      "GT_mean_at_least_5pct_lower": true,
+      "own_tail4_GT_MSE_nonworse": true
+    },
+    "historical_gain_1.05": {
+      "GT_mean_at_least_5pct_lower": true,
+      "own_tail4_GT_MSE_nonworse": true
+    },
+    "historical_gain_1.1": {
+      "GT_mean_at_least_5pct_lower": true,
+      "own_tail4_GT_MSE_nonworse": true
+    },
+    "historical_gain_1.25": {
+      "GT_mean_at_least_5pct_lower": true,
+      "own_tail4_GT_MSE_nonworse": true
+    },
+    "historical_opacity_1.1": {
+      "GT_mean_at_least_5pct_lower": false,
+      "own_tail4_GT_MSE_nonworse": true
+    },
+    "historical_opacity_1.25": {
+      "GT_mean_at_least_5pct_lower": true,
+      "own_tail4_GT_MSE_nonworse": true
+    },
+    "historical_opacity_1.5": {
+      "GT_mean_at_least_5pct_lower": true,
+      "own_tail4_GT_MSE_nonworse": true
+    }
+  },
+  "main_mechanism_passed": false,
+  "summary": {
+    "base": {
+      "mean_gt_mse": 0.00355829674663255,
+      "tail4_gt_mse": 0.00594499777071178,
+      "mean_teacher_mse": 0.0006992238702423492,
+      "mean_gt_psnr": 24.69381582736969,
+      "nonworse_GT_views_vs_base": 32,
+      "worst4_views": [
+        "000017.jpg",
+        "000217.jpg",
+        "000097.jpg",
+        "000121.jpg"
+      ],
+      "source": "current-fixed-state"
+    },
+    "A_local": {
+      "mean_gt_mse": 0.003435980343056144,
+      "tail4_gt_mse": 0.0053451182320714,
+      "mean_teacher_mse": 0.0006009757232732227,
+      "mean_gt_psnr": 24.804219961166382,
+      "nonworse_GT_views_vs_base": 19,
+      "worst4_views": [
+        "000217.jpg",
+        "000121.jpg",
+        "000017.jpg",
+        "000113.jpg"
+      ],
+      "source": "current-fixed-state"
+    },
+    "A_global": {
+      "mean_gt_mse": 0.0035008294726139866,
+      "tail4_gt_mse": 0.005608203588053584,
+      "mean_teacher_mse": 0.0006872513204143615,
+      "mean_gt_psnr": 24.730237245559692,
+      "nonworse_GT_views_vs_base": 19,
+      "worst4_views": [
+        "000217.jpg",
+        "000017.jpg",
+        "000121.jpg",
+        "000097.jpg"
+      ],
+      "source": "current-fixed-state"
+    },
+    "A_shuffle": {
+      "mean_gt_mse": 0.011494317674078047,
+      "tail4_gt_mse": 0.02910519950091839,
+      "mean_teacher_mse": 0.008455880197288934,
+      "mean_gt_psnr": 20.099062979221344,
+      "nonworse_GT_views_vs_base": 0,
+      "worst4_views": [
+        "000137.jpg",
+        "000017.jpg",
+        "000121.jpg",
+        "000233.jpg"
+      ],
+      "source": "current-fixed-state"
+    },
+    "B_local": {
+      "mean_gt_mse": 0.003333746310090646,
+      "tail4_gt_mse": 0.005371631821617484,
+      "mean_teacher_mse": 0.0004546048643305767,
+      "mean_gt_psnr": 24.95389199256897,
+      "nonworse_GT_views_vs_base": 31,
+      "worst4_views": [
+        "000217.jpg",
+        "000017.jpg",
+        "000121.jpg",
+        "000097.jpg"
+      ],
+      "source": "current-fixed-state"
+    },
+    "B_global": {
+      "mean_gt_mse": 0.00354917252479936,
+      "tail4_gt_mse": 0.005924700875766575,
+      "mean_teacher_mse": 0.000691377309294694,
+      "mean_gt_psnr": 24.703976809978485,
+      "nonworse_GT_views_vs_base": 30,
+      "worst4_views": [
+        "000017.jpg",
+        "000217.jpg",
+        "000097.jpg",
+        "000121.jpg"
+      ],
+      "source": "current-fixed-state"
+    },
+    "B_shuffle": {
+      "mean_gt_mse": 0.003808341294643469,
+      "tail4_gt_mse": 0.006078006699681282,
+      "mean_teacher_mse": 0.0009663658265708364,
+      "mean_gt_psnr": 24.364844918251038,
+      "nonworse_GT_views_vs_base": 0,
+      "worst4_views": [
+        "000017.jpg",
+        "000217.jpg",
+        "000121.jpg",
+        "000097.jpg"
+      ],
+      "source": "current-fixed-state"
+    },
+    "historical_gain_1.05": {
+      "mean_gt_mse": 0.004118906806979794,
+      "tail4_gt_mse": 0.006205980898812413,
+      "mean_teacher_mse": 0.0012526389127742732,
+      "mean_gt_psnr": 23.980770647525787,
+      "nonworse_GT_views_vs_base": 2,
+      "worst4_views": [
+        "000017.jpg",
+        "000217.jpg",
+        "000153.jpg",
+        "000097.jpg"
+      ],
+      "source": "historical-pruned-alpha-oracle-v0"
+    },
+    "historical_gain_1.1": {
+      "mean_gt_mse": 0.00601188356813509,
+      "tail4_gt_mse": 0.0079816032666713,
+      "mean_teacher_mse": 0.003147898802126292,
+      "mean_gt_psnr": 22.28186047077179,
+      "nonworse_GT_views_vs_base": 0,
+      "worst4_views": [
+        "000153.jpg",
+        "000017.jpg",
+        "000217.jpg",
+        "000121.jpg"
+      ],
+      "source": "historical-pruned-alpha-oracle-v0"
+    },
+    "historical_gain_1.25": {
+      "mean_gt_mse": 0.01765403416357003,
+      "tail4_gt_mse": 0.02169511141255498,
+      "mean_teacher_mse": 0.014837768889265135,
+      "mean_gt_psnr": 17.57227712869644,
+      "nonworse_GT_views_vs_base": 0,
+      "worst4_views": [
+        "000153.jpg",
+        "000193.jpg",
+        "000073.jpg",
+        "000081.jpg"
+      ],
+      "source": "historical-pruned-alpha-oracle-v0"
+    },
+    "historical_opacity_1.1": {
+      "mean_gt_mse": 0.00347305070317816,
+      "tail4_gt_mse": 0.005687371012754738,
+      "mean_teacher_mse": 0.0006296937895058363,
+      "mean_gt_psnr": 24.78081703186035,
+      "nonworse_GT_views_vs_base": 25,
+      "worst4_views": [
+        "000017.jpg",
+        "000217.jpg",
+        "000121.jpg",
+        "000097.jpg"
+      ],
+      "source": "historical-pruned-alpha-oracle-v0"
+    },
+    "historical_opacity_1.25": {
+      "mean_gt_mse": 0.0035444110544631258,
+      "tail4_gt_mse": 0.005576257826760411,
+      "mean_teacher_mse": 0.0007354435028901207,
+      "mean_gt_psnr": 24.66554033756256,
+      "nonworse_GT_views_vs_base": 14,
+      "worst4_views": [
+        "000217.jpg",
+        "000017.jpg",
+        "000121.jpg",
+        "000097.jpg"
+      ],
+      "source": "historical-pruned-alpha-oracle-v0"
+    },
+    "historical_opacity_1.5": {
+      "mean_gt_mse": 0.0039713073638267815,
+      "tail4_gt_mse": 0.005826795822940767,
+      "mean_teacher_mse": 0.001228031309437938,
+      "mean_gt_psnr": 24.13772976398468,
+      "nonworse_GT_views_vs_base": 3,
+      "worst4_views": [
+        "000217.jpg",
+        "000017.jpg",
+        "000121.jpg",
+        "000153.jpg"
+      ],
+      "source": "historical-pruned-alpha-oracle-v0"
+    }
+  },
+  "rows": 224,
+  "original_student_parameters_before": "48ef8ee6dea3cd03c051c9933e8dab8eb593fd2a0a280abe25fb7377e86d21e8",
+  "original_student_parameters_after": "48ef8ee6dea3cd03c051c9933e8dab8eb593fd2a0a280abe25fb7377e86d21e8",
+  "original_opacity_object_restored": true,
+  "teacher_parameters_after": "f90a54ffe88db1b16eb78e7acc7f2ebb44556570227f21c48342e6eb819a6822",
+  "state_geometry_integrity": [
+    {
+      "state": "base",
+      "geometry_before": "fe8f903ad9ece7a79e40b227904f00025aab928f3872c4f677e695763d528495",
+      "geometry_after": "fe8f903ad9ece7a79e40b227904f00025aab928f3872c4f677e695763d528495"
+    },
+    {
+      "state": "A_local",
+      "geometry_before": "fe8f903ad9ece7a79e40b227904f00025aab928f3872c4f677e695763d528495",
+      "geometry_after": "fe8f903ad9ece7a79e40b227904f00025aab928f3872c4f677e695763d528495"
+    },
+    {
+      "state": "A_global",
+      "geometry_before": "fe8f903ad9ece7a79e40b227904f00025aab928f3872c4f677e695763d528495",
+      "geometry_after": "fe8f903ad9ece7a79e40b227904f00025aab928f3872c4f677e695763d528495"
+    },
+    {
+      "state": "A_shuffle",
+      "geometry_before": "fe8f903ad9ece7a79e40b227904f00025aab928f3872c4f677e695763d528495",
+      "geometry_after": "fe8f903ad9ece7a79e40b227904f00025aab928f3872c4f677e695763d528495"
+    },
+    {
+      "state": "B_local",
+      "geometry_before": "fe8f903ad9ece7a79e40b227904f00025aab928f3872c4f677e695763d528495",
+      "geometry_after": "fe8f903ad9ece7a79e40b227904f00025aab928f3872c4f677e695763d528495"
+    },
+    {
+      "state": "B_global",
+      "geometry_before": "fe8f903ad9ece7a79e40b227904f00025aab928f3872c4f677e695763d528495",
+      "geometry_after": "fe8f903ad9ece7a79e40b227904f00025aab928f3872c4f677e695763d528495"
+    },
+    {
+      "state": "B_shuffle",
+      "geometry_before": "fe8f903ad9ece7a79e40b227904f00025aab928f3872c4f677e695763d528495",
+      "geometry_after": "fe8f903ad9ece7a79e40b227904f00025aab928f3872c4f677e695763d528495"
+    }
+  ],
+  "input_hashes_before": {
+    "teacher": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+    "indices": "f6c9f4da05e064db5c94134c8ee241eb2188fb83a5c3f860655d2eaf279f992f",
+    "history": "de65e533436cd4c073ce35e0eb12c4c5dc58bbc8b0f345f097c9a14c30dcf6c8",
+    "abi_reference": "9567eceb72bc84fb7f82fd8838a479489c3e03fa8d7487eaa6f61516f29bcf84",
+    "contract": "515abe9defd4c4dbd8806113acdea20f457fab85ac278e48d335fef72256565d",
+    "script": "211780be26ce7de41afc85a682f0993e466736a870e66a3771d0f248e527785d",
+    "hash_helper": "184608c651a8f080b192f741267fe221dfd404be13c67dafed26f92e5ec2b06e",
+    "abi_helper": "5227988308b8da132f89da7576ef400a9b1280fb7f1781081ed5e9becf77d35b"
+  },
+  "input_hashes_after": {
+    "teacher": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+    "indices": "f6c9f4da05e064db5c94134c8ee241eb2188fb83a5c3f860655d2eaf279f992f",
+    "history": "de65e533436cd4c073ce35e0eb12c4c5dc58bbc8b0f345f097c9a14c30dcf6c8",
+    "abi_reference": "9567eceb72bc84fb7f82fd8838a479489c3e03fa8d7487eaa6f61516f29bcf84",
+    "contract": "515abe9defd4c4dbd8806113acdea20f457fab85ac278e48d335fef72256565d",
+    "script": "211780be26ce7de41afc85a682f0993e466736a870e66a3771d0f248e527785d",
+    "hash_helper": "184608c651a8f080b192f741267fe221dfd404be13c67dafed26f92e5ec2b06e",
+    "abi_helper": "5227988308b8da132f89da7576ef400a9b1280fb7f1781081ed5e9becf77d35b"
+  },
+  "source_hashes_before": {
+    "/home/administrator/projects/gaussian-splatting/gaussian_renderer/__init__.py": "a25cf5fdb22cd8757fb2a1e37b75352042d65b16138a9fa6243f8616ca1369b8",
+    "/home/administrator/projects/gaussian-splatting/scene/__init__.py": "895d042f4dd2c6ee521dd985aea5c49d9c6f5c7379f76c4d537d8dc5468f18bf",
+    "/home/administrator/projects/gaussian-splatting/scene/gaussian_model.py": "546ba41528a879af4d83bd280a3ef3cbcca9a5e9132204185aaa8f8ee9ffa310",
+    "/home/administrator/projects/gaussian-splatting/scene/cameras.py": "7344b9a4c95e3649becab1b9e30eb0b351a15a61370f64352dcb231aed916128",
+    "/home/administrator/projects/gaussian-splatting/scene/dataset_readers.py": "b06f01648fee893c4785ed38eeb934f91b79817b9dcbb694291c9162b0b6ba94",
+    "/home/administrator/projects/gaussian-splatting/utils/camera_utils.py": "7644d89893f2481a7a9be592227bf11f3e6e5c469c9ce92c3cb25f9ff920c458",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.h": "58b97a9728e24d41602a2ac3e8eace025cfd3228de6e75033dc458d0303a46f4",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.cu": "e338380e2d4631cf842904fbf87025ddb46d49b5f1a5a22fd53bf8ada0ec1109",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/forward.cu": "4bfb6830a138bd016f39fa4558f998825d4182b12cfbda2f62bed0ab75042b54",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/config.h": "86d90fe26989e5a991104842961341d1bcb4374d5068dcb2a56d63a9017f8d65",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so": "6fb6d2d0539cfc28a0ca150a0fd5ff02a1402ef0a92f97ce05f5e72b46255b3c"
+  },
+  "source_hashes_after": {
+    "/home/administrator/projects/gaussian-splatting/gaussian_renderer/__init__.py": "a25cf5fdb22cd8757fb2a1e37b75352042d65b16138a9fa6243f8616ca1369b8",
+    "/home/administrator/projects/gaussian-splatting/scene/__init__.py": "895d042f4dd2c6ee521dd985aea5c49d9c6f5c7379f76c4d537d8dc5468f18bf",
+    "/home/administrator/projects/gaussian-splatting/scene/gaussian_model.py": "546ba41528a879af4d83bd280a3ef3cbcca9a5e9132204185aaa8f8ee9ffa310",
+    "/home/administrator/projects/gaussian-splatting/scene/cameras.py": "7344b9a4c95e3649becab1b9e30eb0b351a15a61370f64352dcb231aed916128",
+    "/home/administrator/projects/gaussian-splatting/scene/dataset_readers.py": "b06f01648fee893c4785ed38eeb934f91b79817b9dcbb694291c9162b0b6ba94",
+    "/home/administrator/projects/gaussian-splatting/utils/camera_utils.py": "7644d89893f2481a7a9be592227bf11f3e6e5c469c9ce92c3cb25f9ff920c458",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.h": "58b97a9728e24d41602a2ac3e8eace025cfd3228de6e75033dc458d0303a46f4",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.cu": "e338380e2d4631cf842904fbf87025ddb46d49b5f1a5a22fd53bf8ada0ec1109",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/forward.cu": "4bfb6830a138bd016f39fa4558f998825d4182b12cfbda2f62bed0ab75042b54",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/config.h": "86d90fe26989e5a991104842961341d1bcb4374d5068dcb2a56d63a9017f8d65",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so": "6fb6d2d0539cfc28a0ca150a0fd5ff02a1402ef0a92f97ce05f5e72b46255b3c"
+  },
+  "historical_base_maximum_MSE_replay_difference": 0.0,
+  "historical_controls_source_sha256": "de65e533436cd4c073ce35e0eb12c4c5dc58bbc8b0f345f097c9a14c30dcf6c8",
+  "max_background_T_channel_delta": 2.384185791015625e-07,
+  "alpha_roundoff_pixels": 0,
+  "raw_NPZ_files": 293,
+  "raw_NPZ_bytes": 3089871120,
+  "peak_torch_allocated_bytes": 1631183360,
+  "ABI_scope": "Validated source/binary hashes, saved tensor shapes, aligned geometry prefixes and initialized radii/conic entries; no claim of source-to-binary build provenance.",
+  "scope": "Known simple proxy mechanism check; no strict optical conservation, optimizer, novelty or deployment-speed claim.",
+  "elapsed_seconds": 64.95719970100004
+}

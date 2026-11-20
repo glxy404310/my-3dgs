@@ -1,0 +1,60 @@
+{
+  "status": "PRE_EFFECT_ROOT_REVIEW_FIX_STATIC_PASS",
+  "previous_manifest_sha256": "5c66c2a8353b886097a516a5c3ec54d8df8f3e6c68da71ab57dbe1656000a332",
+  "executable_fix": "run_private_build.py: add import json only",
+  "only_executable_edit": true,
+  "python_global_binding_checks": {
+    "common.py": {
+      "sha256": "f8f5d1b8daa32f40c8ff8121eb572a91049f9b3bce15a9cc7e9fd198f0e00238",
+      "unresolved_global_bindings": []
+    },
+    "freeze_preparation.py": {
+      "sha256": "b8a0d45b4d36fa39aaac8ba13b20622cbe49a18124357f715f9e62de7cad6c1d",
+      "unresolved_global_bindings": []
+    },
+    "import_only.py": {
+      "sha256": "10dfce5fcdca758ae17bb52176015e4dcc1d4f90f1fbdc0718f73854f56232a1",
+      "unresolved_global_bindings": []
+    },
+    "prepare_sources.py": {
+      "sha256": "7a31c0d53892aa9f2e05157260fd170d9175902afa7a1e0cf2f9c5a8065bec05",
+      "unresolved_global_bindings": []
+    },
+    "prepare_test.py": {
+      "sha256": "6eaf8db2aa7759fa7f64eff72141ebacae097575e335977345d5da7782816b9e",
+      "unresolved_global_bindings": []
+    },
+    "run_private_build.py": {
+      "sha256": "11c8275c0fb19d8d54139f4640b22aaea2a05a4d3bcdadff1c8ad40a54fa8cac",
+      "unresolved_global_bindings": []
+    },
+    "tiny_forward_witness.py": {
+      "sha256": "3dca23cfac6b38b4366bfae4a4196cc6b1a1b1a1c93075d196d282ecc8451447",
+      "unresolved_global_bindings": []
+    }
+  },
+  "tiny_argparse_flags": [
+    "--build-external-sha256",
+    "--build-result-sha256",
+    "--build-supervisor-sha256",
+    "--cpu-synthcheck",
+    "--preparation-manifest-sha256",
+    "--worker"
+  ],
+  "build_argparse_flags": [
+    "--preparation-manifest-sha256",
+    "--worker"
+  ],
+  "witness_powershell_required_flag_forwarding": [
+    "--preparation-manifest-sha256",
+    "--build-result-sha256",
+    "--build-supervisor-sha256",
+    "--build-external-sha256"
+  ],
+  "common_supervisor_worker_flags_checked": true,
+  "gates_source_budgets_changed": false,
+  "build_performed": false,
+  "torch_imported": false,
+  "cuda_initialized": false,
+  "real_arrays_read": false
+}

@@ -1,0 +1,274 @@
+Predictive Photometric Uncertainty in Gaussian Splatting for Novel View Synthesis (https://arxiv.org/html/2603.22786v2)
+citeturn38view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2603.22786v2","lineno":65}); Total lines: 441
+L60: Stochastic formulations [【48†52】, 【49†1】, 【50†33】, 【51†37】] model distributions over Gaussian parameters, but rely on sampling-based optimization or complex inference that introduces prohibitive latency, requires architectural modifications degrading baseline visual fidelity, and lacks modularity with the rapidly expanding ecosystem of 3DGS variants. Post-hoc alternatives instead estimate epistemic uncertainty in parameter space via Hessian approximations [【52†21】, 【53†58】].
+L61: However, as shown in our experiments (Sec. 【18†4.1】), these parameter-centric methods capture view-dependent uncertainty poorly, hindering their use in downstream perception tasks.
+L62: In contrast, we model uncertainty directly in the rendered radiance field [【54†15】], introducing an efficient, plug-and-play system that estimates pixel-wise predictive uncertainty for NVS. Our approach generates view-dependent uncertainty maps alongside RGB images, with areas of high uncertainty reflecting regions of low rendering fidelity in the novel view (see Fig. 【55†1】).
+L63: This yields a single, actionable reliability signal that is particularly valuable for NVS, where downstream tasks consume and act directly upon the rendered pixels. We demonstrate this utility across three perception tasks, leveraging our uncertainty estimates to improve performance for next-best-view planning [【56†43】], pose-agnostic scene change detection [【57†13】], and pose-agnostic anomaly detection [【58†31】].
+L64: 【59†Image: Refer to caption】
+L65: Figure 1: Per-pixel UE for NVS. Our post-hoc method generates a view-dependent uncertainty map that closely mirrors regions of error within the RGB render.
+L66: 
+L67: 【60†Image: Refer to caption】
+L68: 
+L69: 【61†Image: Refer to caption】
+L70: Figure 2: Visual example of reconstruction residual on training views. (Left) ground truth, (Center) rendering, (Right) residual map. The residual maps capture errors caused by both imperfect geometry (e.g., under-reconstructed regions in vegetation) and the limited capacity of view-dependent appearance (e.g., reflections on the table).
+L71: Our approach exploits a simple but powerful observation: regions that exhibit high reconstruction residual often correspond to areas where 3DGS fails to accurately represent the scene (see Fig. 【62†2】). We leverage this signal to guide the learning of a dedicated uncertainty channel within each 3DGS primitive, correlating representation error with high uncertainty.
+L72: Yet reconstruction residuals alone are not a reliable proxy for uncertainty – in sparse-view settings, the highly parameterized nature of 3DGS enables the model to overfit to the training views, driving residuals toward zero (thus signaling zero predictive uncertainty). To mitigate this, we introduce a Bayesian prior within our linear least-squares formulation of uncertainty estimation.
+L73: This prior encourages uncertainty estimates to revert toward a maximal uncertainty level when insufficient multi-view evidence is available. This process is entirely post-hoc: it requires zero modifications to the base architecture or its optimization pipeline, ensuring preservation of the original rendering fidelity and compatibility with any 3DGS variant.
+L74: In summary, we make the following claims:
+L75: 
+L76:   * •
+L77: 
+L78: We introduce a lightweight, plug-and-play system for view-dependent UE for novel view synthesis in 3DGS. We achieve state-of-the-art performance for UE while strictly preserving rendering fidelity (see Sec. 【18†4.1】).
+L79: 
+L80:   * •
+L81: 
+L82: We formulate this estimation as a (Bayesian-inspired) regularized linear least-squares problem, which ensures robust uncertainty predictions across both dense and sparse capture settings (see Sec. 【19†4.2】).
+L83: 
+L84:   * •
+L85: Beyond state-of-the-art UE in 3DGS, our uncertainty maps can be practically utilized in downstream tasks to improve state-of-the-art performance in active view selection (Sec. 【20†4.3】), pose-agnostic scene change detection (Sec. 【21†4.4】), and pose-agnostic anomaly detection (Sec. 【22†4.5】).
+L86: ## 2 Related Work
+L87: ### 2.1 Uncertainty Estimation in Gaussian Splatting
+L88: UE in NeRFs [【36†40】] has been extensively explored through stochastic sampling [【63†50】], ensemble models [【64†53】], conditional normalizing flows [【65†51】], and provenance modeling [【66†41】]. Bayes’ Rays [【67†14】] interprets uncertainty as allowable volumetric variation to identify under-constrained regions.
+--------------------------------------------------------------------------------
+LiTe-GS: Oracle-Efficient Next Best View Selection for 3D Gaussian Splatting (https://arxiv.org/html/2609.30393v1)
+citeturn38view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2609.30393v1","lineno":50}); Total lines: 459
+L47: Selecting informative camera views is critical for efficient training and adaptive refinement in 3D Gaussian Splatting, where each observation significantly influences model parameters. However, information-driven view-selection strategies can require repeated evaluations of expensive information-gain oracles as the number of candidate views increases. We propose LiTe-GS, an oracle-efficient method for next best view selection in 3D Gaussian Splatting.
+L48: LiTe-GS reduces the number of information-oracle evaluations by performing randomized subset evaluation of candidate views rather than exhaustively scoring the full candidate pool. The resulting approach achieves expected $O(M\log(1/\epsilon))$ oracle complexity with respect to the number of candidate views $M$, independent of the selection cardinality $K$, while providing an explicit trade-off between oracle efficiency and approximation quality through $\epsilon$.
+L49: We provide theoretical guarantees on oracle complexity and approximation performance under the proposed selection scheme. Experiments on Blender and Mip-NeRF 360 demonstrate that LiTe-GS maintains reconstruction quality comparable to Fisher-information-based baselines while substantially reducing the number of Fisher-oracle evaluations across different acquisition settings.
+L50: ## 1 Introduction
+L51: 
+L52: 【31†Image: Refer to caption】
+L53: 
+L54: 【32†Image: Refer to caption】
+L55: 
+L56: 【33†Image: Refer to caption】
+L57: 
+L58: 【34†Image: Refer to caption】
+L59: 
+L60: 【35†Image: Refer to caption】
+L61: 
+L62: 【36†Image: Refer to caption】
+L63: 
+L64: 【37†Image: Refer to caption】
+L65: 
+L66: 【38†Image: Refer to caption】
+L67: 
+L68: 【39†Image: Refer to caption】 (a) Random
+L69: 
+L70: 【40†Image: Refer to caption】 (b) POP-GS
+L71: 
+L72: 【41†Image: Refer to caption】 (c) Ours
+L73: 
+L74: 【42†Image: Refer to caption】 (d) Ground Truth
+L75: Figure 1: Setup 1: Qualitative comparison of rendered images on the Blender dataset. Results obtained using Random sampling, POP-GS [【43†34】], and LiTe-GS are shown alongside the corresponding ground-truth images.
+L76: Volumetric rendering has become a fundamental paradigm for photorealistic novel-view synthesis in computer vision and robotics, enabling scene reconstruction by modeling light transport along camera rays. Recent advances have enabled high-quality reconstruction from multi-view imagery using both implicit and explicit scene representations.
+L77: Neural Radiance Fields (NeRF) [【44†23】] demonstrated high-fidelity reconstruction using implicit neural scene parameterizations, while subsequent works such as Instant Neural Graphics Primitives [【45†25】], Plenoxels [【46†7】], and Mip-NeRF 360 [【47†1】] improved scalability and optimization efficiency through accelerated volumetric representations.
+L78: Despite these advances, volumetric rendering methods remain computationally demanding for latency-sensitive applications common in robotics and real-time perception tasks such as autonomous navigation and simultaneous localization and mapping (SLAM).
+L79: 【48†Image: Refer to caption】 Figure 2: Overview of the LiTe-GS pipeline. Given a small set of seed views, we first build an initial 3D Gaussian Splatting (3DGS) reconstruction and define a pool of $M$ candidate viewpoints. We then perform iterative view selection ($K$ views) to refine the reconstruction.
+L80: We compare POP-GS [【43†34】], which evaluates the full Fisher oracle over all candidates, with LiTe-GS, which uses an $\varepsilon$-constrained randomized strategy that evaluates only a subset of views for efficient selection. The pipeline proceeds in four stages: seed views and initial reconstruction, candidate view generation, view selection, and final refinement using the selected views.
+L81: The seminal work on 3D Gaussian Splatting (3DGS) [【49†16】] introduced a fundamentally explicit and anisotropic representation using millions of 3D Gaussians-each with optimized position, orientation, scaling, opacity, and spherical harmonics-paired with a fast, differentiable, visibility-aware rasterization pipeline.
+L82: By avoiding volumetric sampling in empty space and leveraging efficient GPU splatting, 3DGS achieves reconstruction quality comparable to or exceeding NeRF and Plenoxels while drastically reducing training time and enabling real-time rendering.
+--------------------------------------------------------------------------------
+Revisiting Photometric Ambiguity for Accurate Gaussian-Splatting Surface Reconstruction (https://arxiv.org/html/2605.12494v1)
+citeturn38view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2605.12494v1","lineno":56}); Total lines: 602
+L54: Jiahe Li Affiliation: School of Computer Science and Engineering, State Key Laboratory of Complex Critical & Software Environment, Jiangxi Research Institute, Beihang University Affiliation: School of Computing, National University of Singapore    Jiawei Zhang Affiliation: School of Computer Science and Engineering, State Key Laboratory of Complex Critical & Software Environment, Jiangxi Research Institute, Beihang University    Xiao Bai Affiliation: School of Computer Science and Engineering, State Key Laboratory of Complex Critical & Software Environment, Jiangxi Research Institute, Beihang University Correspondence to: baixiao@buaa.edu.cn    Jin Zheng Affiliation: School of Computer Science and Engineering, State Key Laboratory of Complex Critical & Software Environment, Jiangxi Research Institute, Beihang University Affiliation: State Key Laboratory of Virtual Reality Technology and Systems, Beijing Correspondence to: jinzheng@buaa.edu.cn    Xiaohan Yu Affiliation: Macquarie University    Lin Gu Affiliation: Tohoku University    Gim Hee Lee Affiliation: School of Computing, National University of Singapore
+L55: ###### Abstract
+L56: Surface reconstruction with differentiable rendering has achieved impressive performance in recent years, yet the pervasive photometric ambiguities have strictly bottlenecked existing approaches. This paper presents AmbiSuR, a framework that explores an intrinsic solution upon Gaussian Splatting for the photometric ambiguity-robust surface 3D reconstruction with high performance.
+L57: Starting by revisiting the foundation, our investigation uncovers two built-in primitive-wise ambiguities in representation, while revealing an intrinsic potential for ambiguity self-indication in Gaussian Splatting. Stemming from these, a photometric disambiguation is first introduced, constraining ill-posed geometry solution for definite surface formation.
+L58: Then, we propose an ambiguity indication module that unleashes the self-indication potential to identify and further guide correcting underconstrained reconstructions. Extensive experiments demonstrate our superior surface reconstructions compared to existing methods across various challenging scenarios, excelling in broad compatibility. Project: 【40†https://fictionarry.github.io/AmbiSuR-Proj/†fictionarry.github.io】.
+L59: ###### Keywords:
+L60: 
+L61: 3D Reconstruction, Gaussian Splatting, Surface Reconstruction, Photometric Ambiguity
+L62: ## 1 Introduction
+L63: Recovering geometry from multi-view images has been a long-term challenging problem in the fields of machine learning (【41†Hartley and Zisserman, 2003】; 【42†Zheng et al., 2014】; 【43†Cheng et al., 2024】; 【44†Zhou and Ni, 2025】; 【45†Hu and Han, 2025】).
+L64: With the development of differentiable rendering (【46†Mildenhall et al., 2021】), optimization-based methods (【47†Yariv et al., 2020】; 【48†Yariv et al., 2021】; 【49†Wang et al., 2021】) appeared to directly learn the surface geometry from 2D images, and achieve impressive performance.
+L65: In recent years, surface reconstruction evolves significantly with the introduction of 3D Gaussian Splatting (3DGS) (【50†Kerbl et al., 2023】), with remarkable advancements (【51†Guédon and Lepetit, 2024】; 【52†Huang et al., 2024】; 【53†Zhang et al., 2026】; 【54†Yu et al., 2024b】; 【55†Guédon et al., 2025】) in efficient and high-precision geometry recovery for diverse scenarios.
+L66: The rationale behind these methods stands on photometric consistency. By minimizing the photometric error between renderings and observations, ideally, a unique solution of scene geometry emerges end-to-end as a result of enforcing multi-view photometric consistency.
+L67: Nevertheless, photometric ambiguities inevitably and unpredictably exist in the real world due to imperfect consistency, such as insufficient, varied, or lost information in distinct cases, which pose long-standing challenges for 3D reconstruction. Thus, multi-view triangulations of these regions become hard and ill-posed to solve via prevailing optimization-based photometric methods upon Gaussian Splatting, as shown in Figure 【56†1】.
+--------------------------------------------------------------------------------
+Steepest Descent Density Control for Compact 3D Gaussian Splatting (https://arxiv.org/html/2505.05587v1)
+citeturn38view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2505.05587v1","lineno":65}); Total lines: 721
+L62: Peihao Wang^{1}^{1} 1 Equal contribution. Affiliation: The University of Texas at Austin    ^{2}^{2} 2 Work done during an internship with Meta Reality Labs.    Yuehao Wang^{1}^{1} 1 Equal contribution.
+L63: Affiliation: The University of Texas at Austin    Dilin Wang Affiliation: Meta Reality Labs    Sreyas Mohan Affiliation: Meta Reality Labs    Zhiwen Fan Affiliation: The University of Texas at Austin    Lemeng Wu Affiliation: Meta Reality Labs    Ruisi Cai Affiliation: The University of Texas at Austin    Yu-Ying Yeh Affiliation: Meta Reality Labs    Zhangyang Wang Affiliation: The University of Texas at Austin    Qiang Liu Affiliation: The University of Texas at Austin    Rakesh Ranjan Email: {peihaowang, yuehao, zhiwenfan, ruisi.cai, atlaswang}@utexas.edu,lqiang@cs.utexas.edu, {wdilin, sreyasmohan, lmwu, yyyeh, rakeshr}@meta.com【49†vita-group.github.io/SteepGS†vita-group.github.io】 Affiliation: Meta Reality Labs
+L64: ###### Abstract
+L65: 3D Gaussian Splatting (3DGS) has emerged as a powerful technique for real-time, high-resolution novel view synthesis. By representing scenes as a mixture of Gaussian primitives, 3DGS leverages GPU rasterization pipelines for efficient rendering and reconstruction. To optimize scene coverage and capture fine details, 3DGS employs a densification algorithm to generate additional points.
+L66: However, this process often leads to redundant point clouds, resulting in excessive memory usage, slower performance, and substantial storage demands–posing significant challenges for deployment on resource-constrained devices. To address this limitation, we propose a theoretical framework that demystifies and improves density control in 3DGS. Our analysis reveals that splitting is crucial for escaping saddle points.
+L67: Through an optimization-theoretic approach, we establish the necessary conditions for densification, determine the minimal number of offspring Gaussians, identify the optimal parameter update direction, and provide an analytical solution for normalizing off-spring opacity. Building on these insights, we introduce SteepGS, incorporating steepest density control, a principled strategy that minimizes loss while maintaining a compact point cloud.
+L68: SteepGS achieves a $\sim$ 50% reduction in Gaussian points without compromising rendering quality, significantly enhancing both efficiency and scalability.
+L69: 【50†Image: [Uncaptioned image]】  |
+L70: Figure 1: We theoretically investigate density control in 3DGS. As training via gradient descent progresses, many Gaussian primitives are observed to become stationary while failing to reconstruct the regions they cover (e.g. the cyan-colored blobs in the top-left figure marked with 【51†Image: Refer to caption】).
+L71: From an optimization-theoretic perspective (see figure on the right), we reveal that these primitives are trapped in saddle points, the regions in the loss landscape where gradients are insufficient to further reduce loss, leaving parameters sub-optimal locally. To address this, we introduce SteepGS, which efficiently identifies Gaussian points located in saddle area, splits them into two off-springs, and displaces new primitives along the steepest descent directions.
+L72: This restores the effectiveness of successive gradient-based updates by escaping the saddle area (e.g. the orange-colored blobs in the top-left figure marked with 【52†Image: Refer to caption】 become optimizable after densification). As shown in the bottom-left visualization, SteepGS achieves a more compact parameterization while preserving the fidelity of fine geometric details.
+L73: ## 1 Introduction
+--------------------------------------------------------------------------------
+Two-View Accumulation as the Primary Training Lever for Hybrid-Capture Gaussian Splatting:A Variance-Decomposition View of When Gradient Surgery Helps (https://arxiv.org/html/2605.00052v1)
+citeturn38view4 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2605.00052v1","lineno":100}); Total lines: 945
+L65:     4. 【55†D.4 Gradient-Ratio Trajectories】
+L66:     5. 【56†D.5 Distance Variance and Conflict】
+L67:   12. 【57†E Additional Ablations and Grouping Sensitivity】
+L68:     1. 【58†E.1 Partition Threshold Sensitivity】
+L69:     2. 【59†E.2 Alternative Grouping Signals】
+L70:     3. 【60†E.3 Operator Variants】
+L71:     4. 【61†E.4 Magnitude-Only Preconditioning】
+L72:     5. 【62†E.5 Pseudocode】
+L73:   13. 【63†F Backbone Transfer, Seeds, and Budget Controls】
+L74:     1. 【64†F.1 Scaffold-GS Transfer】
+L75:     2. 【65†F.2 Pixel-GS Transfer】
+L76:     3. 【66†F.3 Multi-Seed Results】
+L77:     4. 【67†F.4 Matched Rendered-View Controls】
+L78:   14. 【68†G Additional Qualitative Results】
+L79:     1. 【69†G.1 Primary Training-Only CrossGrad-GS】
+L80:     2. 【70†G.2 Optional Distance-Conditioned Extension】
+L81:   15. 【71†H Optional Extensions】
+L82:     1. 【72†H.1 Confidence-Gated Projection】
+L83:     2. 【73†H.2 Distance-Conditioned Attributes】
+L84:       1. 【74†Regularization.】
+L85:       2. 【75†Attribute modulation.】
+L86:     3. 【76†H.3 Why These Variants Are Not Primary】
+L87:   16. 【77†I Limitations and Broader Impact】
+L88:     1. 【78†Grouping sensitivity.】
+L89:     2. 【79†Operator specificity.】
+L90:     3. 【80†Diagnostic scope.】
+L91:     4. 【81†Computational cost.】
+L92:     5. 【82†Broader impact.】
+L93:     6. 【83†Compute resources.】
+L94: 【84†License: CC BY 4.0†info.arxiv.org】
+L95: 
+L96: arXiv:2605.00052v1 [cs.CV] 29 Apr 2026
+L97: # Two-View Accumulation as the Primary Training Lever for Hybrid-Capture Gaussian Splatting:
+L98: A Variance-Decomposition View of When Gradient Surgery Helps
+L99: 
+L100: Sungjun Cho Affiliation: The Hong Kong University of Science and Technology Email: schoaq@connect.ust.hk
+L101: ###### Abstract
+L102: 
+L103: Hybrid-capture novel view synthesis combines images at substantially different camera distances (e.g., aerial drone and ground-level views). Standard 3D Gaussian Splatting (3DGS), trained for 30K iterations with one rendered view per optimizer step, under-fits the minority regime by 1–3 dB on five hybrid-capture benchmarks. We isolate the lever that closes this gap.
+L104: Among compute-matched alternatives—vanilla 60K iterations, magnitude corrections (GradNorm), direction-aware near/far gradient surgery, projective preconditioning, confidence-gated sample-level surgery, and a random two-view-per-step control—the simplest structural change wins: rendering two views per optimizer step.
+L105: The pairing rule (geometry-defined near/far, random, or active loss-disparity) does not change PSNR beyond seed variance on any of the five scenes; the structural change of having two views per step does.
+L106: We propose a variance-decomposition framework that predicts and explains this finding: under bimodal camera regimes, between-regime gradient variance turns out to be small relative to within-regime variance in 3DGS, so structured and random pairings are variance-equivalent in expectation, and the variance halving from two-view accumulation itself is the dominant effect.
+L107: We verify the framework on five scenes whose camera-altitude bimodality coefficients span $[0.55,1.00]$, and we report the negative result that direction-aware projection, magnitude correction, confidence gating, and an active loss-disparity pairing all fall within seed variance of random two-view pairing. The two-view structural lever transfers cleanly to the Scaffold-GS and Pixel-GS backbones.
+L108: We position this work as an honest characterization of which training-side axes do and do not move PSNR for hybrid-capture 3DGS, together with the framework that explains why.
+L109: ## 1 Introduction
+L110: Hybrid-capture novel view synthesis is increasingly important for large-scale scene reconstruction, digital twins, aerial–ground mapping, and autonomous navigation. In this setting, ground-level cameras capture local texture and fine geometric detail, while aerial cameras provide broad spatial coverage and global context (【85†Li et al., 2024a】; 【86†Zhang and others, 2024】; 【87†Li et al., 2023】).
+L111: Unlike conventional NVS settings where cameras observe a scene from relatively similar distances, hybrid-capture scenes require a single radiance representation to serve views taken from substantially different distances. This makes hybrid capture not merely a multi-scale rendering problem, but a multi-regime optimization problem: the same scene parameters must be updated by near and far views that impose different, and sometimes incompatible, training signals.
+--------------------------------------------------------------------------------
+GitHub - moholo-founder/ogc-3dgs: Training-free observation-Gram compaction of spherical-harmonic appearance in 3D Gaussian Splatting · GitHub (https://github.com/moholo-founder/ogc-3dgs)
+citeturn38view5 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://github.com/moholo-founder/ogc-3dgs","lineno":260}); Total lines: 344
+L237: 【129†run_exps.py】  | 【129†run_exps.py】  |    |
+L238: 【130†run_gram.sh】  | 【130†run_gram.sh】  |    |
+L239: 【131†shfit.py】  | 【131†shfit.py】  |    |
+L240: 【132†sweep.py】  | 【132†sweep.py】  |    |
+L241: 【133†vq.py】  | 【133†vq.py】  |    |
+L242: [Button: View all files]
+L243: ## Repository files navigation
+L244: 
+L245:   *   * 【134†README】
+L246:   * 【134†License】
+L247: 
+L248: More items
+L249: # OGC: Observation-Gram Compaction of View-Dependent Appearance in 3D Gaussian Splatting
+L250: 
+L251: Training-free compaction of the spherical-harmonic (SH) appearance of pretrained 3D Gaussian Splatting models. Only the trained model and its camera poses are needed: no training images, no gradients, no fine-tuning.
+L252: 
+L253: For every Gaussian we accumulate an observation Gram matrix
+L254: 
+L255:     `A_i = sum_j w_ij Y(d_ij) Y(d_ij)^T          (16 x 16)
+L256:     `
+L257: from the directions `d_ij` and blending-weight statistics `w_ij` with which the Gaussian contributed to the training views. `A_i` is the first-order metric that maps a change of the SH coefficients to squared image error. Under this metric:
+L258:   * Degree reduction is a closed-form regularised least-squares solve (`shfit.py`); plain truncation is the special case that assumes uniform observation over the sphere.
+L259:   * Per-Gaussian degree allocation is a Lagrangian rate-distortion optimisation of the predicted residuals (`rd.py`).
+L260:   * Vector quantisation of the coefficients uses generalised Lloyd iterations with the per-point matrix metric (`vq.py`).
+L261:   * A complete pipeline (contribution pruning, allocation, Gram-metric VQ, fp16 storage) is in `pipeline.py`.
+L262: ## Layout
+L263: file  | purpose
+L264: --- | ---
+L265: `gsrender.py`  | PyTorch re-implementation of the reference 3DGS forward rasteriser (tile loop)
+L266: `fastrender.py`  | batched-tile version of the same rasteriser with per-Gaussian weight accumulation
+L267: `gram.py`  | pass 1: render every training view, store per-Gaussian blending-weight statistics
+L268: `shfit.py`  | Gram accumulation, closed-form SH degree reduction, residuals
+L269: `rd.py`  | rate-distortion degree allocation, baselines, coefficient assembly
+L270: `vq.py`  | Gram-metric vector quantisation
+L271: `pipeline.py`  | full compaction pipeline with size accounting
+L272: `geo.py`  | training-free geometry stage on top (16-bit positions, 8-bit attributes) with two entropy coders: rANS (`entropy.py`, default) and byte-planed zlib; both sizes are stored
+L273: `entropy.py`  | rANS coding of the geometry streams (constriction) with per-stream models; exact round trip
+L274: `plugin.py`  | the metric as a drop-in for other pipelines: `observation_gram`, `project_degree`, `degree_residual`, `allocate`, `gram_vq` from a `.ply` + COLMAP dir, CPU-capable
+L275: `hosts/c3dgs_run.py`  | host-pipeline experiment: Compressed3D (Niedermayr et al.) with its colour VQ metric replaced by ours, nothing else changed
+L276: `sweep.py`, `rd_metrics.py`, `make_rd.py`  | rate-distortion sweep of the stack, Bjontegaard BD-rate / BD-PSNR, Pareto fronts and the RD figure
+L277: `make_claims.py`  | turns validation artifacts and results into the LaTeX macros the paper's prose quotes (`paper/tables/{validation,claims}.tex`)
+L278: `compact.py`  | one-command compaction of a standard PLY; `--holdout 8` skips the 3DGS test split (every 8th sorted camera), `--holdout 0` uses all cameras
+L279: `evaluate.py`  | PSNR / SSIM / LPIPS on the test split (3DGS protocol)
+L280: `run_exps.py`  | experiment driver (core, allocation, VQ, ablations), results cached as JSON
+L281: `make_tables.py`, `make_figs.py`, `fig_teaser.py`  | paper tables and figures from the JSON results
+L282: `tests/`  | pytest suite for the maths (projection, bound, allocation, VQ) and the renderer
+L283: ## Data
+L284: 
+L285: Set `OGC_DATA` to a directory with
+L286: 
+L287:     `m360/<scene>/{images_2,images_4,sparse/0}           Mip-NeRF 360 (garden, bicycle, ...)
+L288:     tandt_db/tandt/<scene>/{images,sparse/0}            Tanks & Temples (train, truck)
+L289:     tandt_db/db/<scene>/{images,sparse/0}               Deep Blending (drjohnson, playroom)
+L290:     pretrained/<scene>/{cfg_args,point_cloud/iteration_30000/point_cloud.ply}
+L291:     `
+--------------------------------------------------------------------------------
+GitHub - nerficg-project/faster-gaussian-splatting: An efficient and research-friendly Gaussian Splatting framework described in the CVPR'26 paper "Faster-GS: Analyzing and Improving Gaussian Splatting Optimization" · GitHub (https://github.com/nerficg-project/faster-gaussian-splatting)
+citeturn38view6 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://github.com/nerficg-project/faster-gaussian-splatting","lineno":250}); Total lines: 366
+L241: On the `FasterGSBasis` branch, we provide our basis implementation described in the appendix of our paper. All other variants are built on top of this basis. We used it to develop and test multiple minor algorithmic and cleanup changes to ensure that they do not affect quality.
+L242: ## Installation
+L243: 
+L244: Our implementation is provided as an extension to 【61†NeRFICG】, a radiance field and view synthesis framework actively maintained and developed by our research group.
+L245: Easy integration into existing codebases:
+L246: We understand that for compatibility with previous or current projects you might not be able to immediately switch from your current 3DGS framework. Therefore, we tried to make it as easy as possible to integrate the most impactful improvements into existing codebases. Our CUDA backend can be installed into an existing environment as a PyTorch extension through the following command:
+L247:     pip install git+https://github.com/nerficg-project/faster-gaussian-splatting/#subdirectory=FasterGSCudaBackend --no-build-isolation
+L248: Integrating the key features of this extension into the official 3DGS codebase (`graphdeco-inria/gaussian-splatting`) requires only minimal code changes.
+L249: A reference implementation is available 【113†here】.
+L250: That being said, we encourage you to give the native implementation a shot as it provides the full performance improvements as well as a ton of additional features. We also tried to make the code as readable and extensible as possible by optimizing and refactoring the PyTorch and CUDA code of all integrated methods.
+L251: ### Requirements
+L252: 
+L253:   * An NVIDIA GPU
+L254:   * Linux (preferred) or Windows
+L255:   * A recent CUDA SDK (【114†CUDA Toolkit 12.8†developer.nvidia.com】 recommended) and a compatible C++ compiler
+L256:   * 【115†Anaconda / Miniconda†www.anaconda.com】 installed
+L257: ### Setup
+L258: 
+L259: As a preparatory step, the 【116†NeRFICG framework】 needs to be set up. Please follow the instructions in its README to set up a compatible Conda environment.
+L260: 
+L261: Now add Faster-GS as an additional method by cloning this repository into `src/Methods/FasterGS`:
+L262: 
+L263:     # HTTPS
+L264:     git clone https://github.com/nerficg-project/faster-gaussian-splatting.git src/Methods/FasterGS
+L265: 
+L266: or
+L267: 
+L268:     # SSH
+L269:     git clone git@github.com:nerficg-project/faster-gaussian-splatting.git src/Methods/FasterGS
+L270: Next, install all method-specific dependencies and CUDA extensions using:
+L271: 
+L272:     python ./scripts/install.py -m FasterGS
+L273: 
+L274: Note: The framework determines on-the-fly what extra modules need to be installed. Sometimes this causes unnecessary errors/warnings that can interrupt the installation process. In this case, first try to rerun the command before investigating the error in detail.
+L275: ### Variants
+L276: 
+L277: Installing one of our Faster-GS variants (e.g., `FasterGS4D`) from their respective branch can be achieved by
+L278: 
+L279:     # HTTPS
+L280:     git clone --single-branch -b FasterGS4D https://github.com/nerficg-project/faster-gaussian-splatting.git src/Methods/FasterGS4D
+L281: 
+L282: or
+L283: 
+L284:     # SSH
+L285:     git clone --single-branch -b FasterGS4D git@github.com:nerficg-project/faster-gaussian-splatting.git src/Methods/FasterGS4D
+L286: 
+L287: and then
+L288: 
+L289:     python ./scripts/install.py -m FasterGS4D
+L290: ## Usage
+L291: 
+L292: The Faster-GS method is fully compatible with the NeRFICG scripts in the `scripts/` directory. This includes config file generation via `create_config.py`, training via `train.py`/`sequential_train.py`/`benchmark.py`, inference and performance benchmarking via `inference.py`, exporting trained models to .ply files via `convert_to_ply.py`, and interactive rendering via `gui.py`.
+L293: 
+L294: For detailed instructions, please refer to the 【116†NeRFICG repository】.
+L295: ## Acknowledgements
+L296: 
+L297: This work was partially funded by the DFG projects 【117†Real-Action VR†graphics.tu-bs.de】 (ID 523421583) and 【118†Increasing Realism of Omnidirectional Videos in Virtual Reality†graphics.tu-bs.de】 (ID 491805996).
+L298: Linus Franke was supported by the ERC Advanced Grant 【119†NERPHYS†project.inria.fr】 (ID 101141721).
+L299: 
+L300: We thank the authors of the following works, whose ideas and open-source implementations form the foundation of this project:
+

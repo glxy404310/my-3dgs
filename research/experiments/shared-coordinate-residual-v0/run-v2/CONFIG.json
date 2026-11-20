@@ -1,0 +1,105 @@
+{
+  "contract_sha256": "7536a2641dd54ef84c02b2159ee6ec31fa8fab895e4ef9001c367b33f9a2273c",
+  "repo": "/home/administrator/projects/gaussian-splatting",
+  "source": "/home/administrator/datasets/tandt_db/tandt/truck",
+  "model_root": "/home/administrator/projects/gaussian-splatting/output/truck_30000_r1",
+  "output": "/mnt/d/Documents/my 3dgs/research/experiments/shared-coordinate-residual-v0/run-v2",
+  "selected_ranks": [
+    0,
+    19,
+    39,
+    59,
+    79,
+    99,
+    118,
+    138,
+    158,
+    178,
+    198,
+    218
+  ],
+  "selected_names": [
+    "000002.jpg",
+    "000023.jpg",
+    "000046.jpg",
+    "000069.jpg",
+    "000092.jpg",
+    "000115.jpg",
+    "000136.jpg",
+    "000159.jpg",
+    "000182.jpg",
+    "000205.jpg",
+    "000228.jpg",
+    "000251.jpg"
+  ],
+  "checkpoint_iterations": [
+    7000,
+    30000
+  ],
+  "cpu_threads": 1,
+  "process_budget_seconds": 300.0,
+  "width": 979,
+  "height": 546,
+  "sh_degree": 3,
+  "white_background": false,
+  "antialiasing": false,
+  "exposure": false,
+  "arms": [
+    "zero",
+    "shared_translation",
+    "per_image_affine",
+    "pose",
+    "pose_translation",
+    "pose_shuffle",
+    "pose_brown"
+  ],
+  "main_cell_order": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "h": 0.00025,
+  "translation_step": "h * scene_extent",
+  "spatial_step_px": 0.125,
+  "search_range_px": [
+    -2,
+    2
+  ],
+  "search_step_px": 0.25,
+  "known_shifts_yx": [
+    [
+      0.375,
+      -0.625
+    ],
+    [
+      -0.45,
+      0.7
+    ],
+    [
+      0.6,
+      0.3
+    ]
+  ],
+  "lstsq_rcond": 1e-10,
+  "rank_relative_threshold": 1e-08,
+  "seed": 20261023,
+  "patch_size": 13,
+  "FD_saved_RGB_size": 15,
+  "support_halo": 12,
+  "training_performed": false,
+  "Gaussian_parameter_updates": 0,
+  "has_2D_matching_quadratic_fits_and_linear_least_squares": true
+}

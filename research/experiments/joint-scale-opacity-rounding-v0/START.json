@@ -1,0 +1,10 @@
+{
+  "training": false,
+  "started_at": "2026-10-23T00:08:03.1784232+08:00",
+  "contract_sha256": "E7B863631EFB2041D79C82DF9549D52F562F958608E25E6D9742E60E255BF3D0",
+  "script_sha256": "723A6CF3DE8FEA9A7369A8DFD2BC788706AFAEE178F3A318F0D9DD2EB832A4EC",
+  "preflight_review": "same-family read-only check; fixed zero-capped-teacher exclusion and all-pair grid ranking checks before first scene run",
+  "execution": "CPU frozen single pilot; output directory run must be new",
+  "gpu": false,
+  "goal_previous_turn": "progress: global-worst image extracted and scope verified; no new method evidence"
+}

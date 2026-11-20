@@ -1,0 +1,80 @@
+{
+  "schema": "root-decision/co-ray-split-interaction-v0/v1",
+  "recorded_at": "2026-10-23T07:40:35.360968+08:00",
+  "decision": "STOP_CURRENT_CARRIER",
+  "scientific_effect": "NEGATIVE",
+  "claim_supported": "no",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "artifact_consistency_status": "SAVED_ARTIFACT_CONSISTENCY_PASS",
+  "full_experiment_integrity_status": "unavailable",
+  "GPU_trace_independently_certified": false,
+  "metric_scope": "unclamped native RGB, eight prelocked TRAIN effect views, single existing early3600 isolated event",
+  "summary": {
+    "partitions": {
+      "graph": {
+        "E": 3.370853253133985e-07,
+        "D": 8.275782769556812e-05,
+        "H": -4.049187776437413e-06
+      },
+      "random101": {
+        "E": 1.3901078939347852e-07,
+        "D": 8.391210124343309e-05,
+        "H": -1.7810670030736237e-06
+      },
+      "random202": {
+        "E": 4.458809190072156e-07,
+        "D": 8.277310206241e-05,
+        "H": -7.774981815913398e-07
+      }
+    },
+    "Delta": -0.0002740370297290211,
+    "E_floor": 0.0,
+    "H_floor": 0.0,
+    "view_event_delta": {
+      "000019.jpg": 6.065867753022366e-05,
+      "000054.jpg": 9.056607236180084e-06,
+      "000090.jpg": -0.0007513668439529646,
+      "000125.jpg": 2.7044919804874133e-05,
+      "000160.jpg": -2.5939454267675556e-05,
+      "000196.jpg": 6.960354539276622e-05,
+      "000231.jpg": -0.0002598014592342466,
+      "000250.jpg": -0.001321552230341326
+    }
+  },
+  "scientific_checks": {
+    "random101": {
+      "energy_ratio_at_least_1percent": false,
+      "energy_above_10repeatfloor": true,
+      "harm_at_least_10percent_event_delta": true,
+      "harm_above_max_40repeatfloor_1e12": false
+    },
+    "random202": {
+      "energy_ratio_at_least_1percent": false,
+      "energy_above_10repeatfloor": true,
+      "harm_at_least_10percent_event_delta": true,
+      "harm_above_max_40repeatfloor_1e12": false
+    },
+    "graph": {
+      "energy_at_most_80percent_both_controls": false,
+      "harm_at_most_80percent_both_controls": true
+    }
+  },
+  "total_producer_forward_calls": 680,
+  "new_backward_calls": 0,
+  "new_parameter_updates": 0,
+  "optimizer_instances": 0,
+  "total_five_phase_external_wall_seconds": 212.4768275,
+  "prelocked_cumulative_wall_limit_seconds": 600,
+  "stage_B_run": false,
+  "training_authorized": false,
+  "original_ADC_MODE_Nano_Train_verdicts": "UNCHANGED",
+  "protected_critical_artifacts_sha256": {
+    "ROOT_PROTOCOL.md": "6843f9c6b5c11269e21edb58a35896c1a7c4cc7cb04d7d4f2dbcb0e908d64a46",
+    "run-effects-v1/RESULTS.json": "8dd01bef56111b6521240b02f20a01628c207ff132a46502848de385a0bd771b",
+    "graph-v1/metrics-v1/METRICS.json": "d3848c847d5f339674cc32ca3d02aea5d15a36a955150523edcf25abbc8721d8",
+    "independent-audit-v1/run-v1/AUDIT.json": "3c52779593ca315d895778a9f415bdcc85663ed692b2fe887ad8e80cc2c81e23"
+  },
+  "no_threshold_view_seed_parent_recipe_rescue": true,
+  "novel_method_accepted": false
+}

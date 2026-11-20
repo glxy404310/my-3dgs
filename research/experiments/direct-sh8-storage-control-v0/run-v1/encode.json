@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "program": "encode.py",
+  "numpy": "2.2.6",
+  "source_sha256": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+  "source_bytes": 508592492,
+  "points": 2050770,
+  "finite_fields": 127147740,
+  "zero_fields": 13161224,
+  "zero_amax_points": 71532,
+  "nonzero_amax_points": 1979238,
+  "amax_min": 0.0,
+  "amax_max": 1.0958144664764404,
+  "codec_bytes": 239940218,
+  "codec_sha256": "0b6e62e28165df7e89635575906af403cc0952cc50f420d86d2e46da861a1038",
+  "payload_sha256": "c1d5e5d2a380c56e42f1232f030f1d4c072dfee7ff3abbf24574b78ad0d3b685",
+  "codec": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/control.dsh8",
+  "partial": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/control.dsh8.partial",
+  "elapsed_seconds": 3.10052091
+}

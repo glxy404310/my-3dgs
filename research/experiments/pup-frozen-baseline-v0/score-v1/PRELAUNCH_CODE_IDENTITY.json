@@ -1,0 +1,78 @@
+{
+  "schema": "pup-frozen-score-prelaunch-code-identity-v1",
+  "scope": "Static implementation and CPU synthetic checks only; no Torch, Scene, teacher load, CUDA, Fisher scoring or scientific launch",
+  "scientific_output_path": "D:/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/score-v1/run-v1",
+  "scientific_output_exists": false,
+  "actual_root_certification_sha256": "e5885056577cf602b48a9fa8cc736bf711efb8516aed749641f107ef173dac99",
+  "actual_root_certification_interface_checked": true,
+  "root_supplied_parity_reference_sha256": "a8e1c292c6af398fba57feec3689e5cefba9b1912f15b3e27a6b7b1e5c589833",
+  "final_fixes_after_last_independent_review": true,
+  "root_review_required": true,
+  "files": [
+    {
+      "path": "D:\\Documents\\my 3dgs\\scripts\\experiments\\run_pup_frozen_score.py",
+      "sha256": "200bf457ba93f4cc4b32bbf9d9a61b0b78543e6e2a605d24c54c8286df92954f",
+      "bytes": 42317
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\run-score.sh",
+      "sha256": "eb3ac6daae77e72e234a93efa044bfe33e8fafadadbed515ebe0ace06865c4c7",
+      "bytes": 791
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\score-v1\\BUILD_NOTE.md",
+      "sha256": "0ee43d340f86ebfd2d59f68d69e2a230eb55982531dfe91058d6f33699b74c84",
+      "bytes": 3932
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\score-v1\\CPU_SPINE.json",
+      "sha256": "fdb9d7821f3f2917d1265712a1bc53e7e3b5727cdb49458b58a2334b166aed67",
+      "bytes": 112
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\score-v1\\CPU_SYNTHCHECK.json",
+      "sha256": "5d6aa9b4375065eebe32945ad8858f6d438afd6649a492c635ef46369bab4e4d",
+      "bytes": 356
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\score-v1\\REVIEW_RESOLUTION.json",
+      "sha256": "a62434af44ce9e2988bb501c976b5e498adf24681575eb0f9e8389aaf4cd3ed2",
+      "bytes": 1324
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\score-v1\\ROOT_CERT_INTERFACE_CHECK.json",
+      "sha256": "0b638fc50f10f1e2f5e28b26d9a6c9413b56d0a47cd8ad017d5591aa1288af4e",
+      "bytes": 770
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\score-v1\\SCORE_ASSUMPTIONS.md",
+      "sha256": "6d38ab03de1ee36f6f6c361c830a68908448169f5d217035f26a3592ab77afe1",
+      "bytes": 5429
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\score-v1\\SCORE_CONTRACT.md",
+      "sha256": "c01a18e8f412cc3bea44166d9282aa1488f1094ec425566898d0e93c117ba58b",
+      "bytes": 5400
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\score-v1\\SILENT_ASSUMPTION_SWEEP.json",
+      "sha256": "db189817fac382b6d302a37bb47b6c423c9a2ed6f3d402a6efe0ed932920b14f",
+      "bytes": 517
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\score-v1\\STATIC_CHECKS.json",
+      "sha256": "3f7a1d4a174da248790d4d38c76905a645f61b63463cf2cf8cc647c1965c4079",
+      "bytes": 2033
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\score-v1\\STATIC_REVIEW_ROUND1.json",
+      "sha256": "67cee2a7ffe0aadaaa9bd9c3059489ea478b6ac333c36d97640f8ae563d06c33",
+      "bytes": 555
+    },
+    {
+      "path": "D:\\Documents\\my 3dgs\\research\\experiments\\pup-frozen-baseline-v0\\score-v1\\STATIC_REVIEW_ROUND2.json",
+      "sha256": "9f722cccbdddecbe19d64707102efbecc2166f20acbaf1214ecdf3d5c49ce0a1",
+      "bytes": 1372
+    }
+  ]
+}

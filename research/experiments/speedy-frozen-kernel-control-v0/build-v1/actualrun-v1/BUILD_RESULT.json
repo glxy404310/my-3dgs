@@ -1,0 +1,108 @@
+{
+  "schema": "speedy-private-extension/build-v1",
+  "status": "PRIVATE_BUILD_IMPORT_PASS_ONLY",
+  "stages": [
+    {
+      "name": "hardware",
+      "argv": [
+        "/usr/lib/wsl/lib/nvidia-smi",
+        "--query-gpu=name,driver_version,memory.total",
+        "--format=csv,noheader"
+      ],
+      "cwd": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/actualrun-v1",
+      "log": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/actualrun-v1/hardware.log",
+      "exit_code": 0,
+      "elapsed_seconds": 0.08141911999999962
+    },
+    {
+      "name": "nvcc",
+      "argv": [
+        "/usr/local/cuda-12.8/bin/nvcc",
+        "--version"
+      ],
+      "cwd": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/actualrun-v1",
+      "log": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/actualrun-v1/nvcc.log",
+      "exit_code": 0,
+      "elapsed_seconds": 0.020289922999999987
+    },
+    {
+      "name": "compiler",
+      "argv": [
+        "g++",
+        "--version"
+      ],
+      "cwd": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/actualrun-v1",
+      "log": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/actualrun-v1/compiler.log",
+      "exit_code": 0,
+      "elapsed_seconds": 0.010426628000000271
+    },
+    {
+      "name": "author_build",
+      "argv": [
+        "/home/administrator/venvs/3dgs/bin/python",
+        "-B",
+        "setup.py",
+        "build",
+        "--build-base",
+        "/home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1"
+      ],
+      "cwd": "/home/administrator/projects/speedy-frozen-rasterizer-b38abb6d",
+      "log": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/actualrun-v1/author_build.log",
+      "exit_code": 0,
+      "elapsed_seconds": 69.974398925
+    },
+    {
+      "name": "private_import_only",
+      "argv": [
+        "/home/administrator/venvs/3dgs/bin/python",
+        "-B",
+        "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/import_only.py",
+        "/home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/lib.linux-x86_64-3.10",
+        "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/actualrun-v1/IMPORT_RESULT.json"
+      ],
+      "cwd": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/actualrun-v1",
+      "log": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/actualrun-v1/private_import_only.log",
+      "exit_code": 0,
+      "elapsed_seconds": 1.144816156999994
+    }
+  ],
+  "forward_calls": 0,
+  "backward_calls": 0,
+  "optimizer_updates": 0,
+  "model_loads": 0,
+  "scene_instances": 0,
+  "numerical_verified": false,
+  "environment_ready": false,
+  "source_sha256_before": "b9eecdef3daf1272681f79f0a0a34d51d5cb1b2f7739e60bf906a0d9b9ee6677",
+  "protected_before": {
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so": "6fb6d2d0539cfc28a0ca150a0fd5ff02a1402ef0a92f97ce05f5e72b46255b3c",
+    "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/__init__.py": "1d4fc43bb67c4552193d340e2d6894ad7ec3c0d04a620fd7655c89ccf855df5b",
+    "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/_C.cpython-310-x86_64-linux-gnu.so": "ca99d74bf9d880585b64f75444339bf739276883c8c0f4a85b926fb6e15c9219"
+  },
+  "canonical_spec_sha256": "5d2d53f39bae50eb363a2d6e3501ecd8561d02ab58ad5347505ab5267cae9275",
+  "preparation_manifest_sha256": "c4f8684236b8390d8a8be22ed95990d776b4f6ea2044a72cff4d50c74bcaa2ee",
+  "private_lib": "/home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/lib.linux-x86_64-3.10",
+  "import_record": {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/actualrun-v1/IMPORT_RESULT.json",
+    "sha256": "277ceb8f2261a900590c6796301a6def50382afe7586bbee030baf8203932651"
+  },
+  "wrapper": {
+    "path": "/home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/lib.linux-x86_64-3.10/diff_gaussian_rasterization/__init__.py",
+    "sha256": "a16fee3c02d7b16c319259405d1d13b8fdab7cdce9e74f934b647918388cbce0"
+  },
+  "extension": {
+    "path": "/home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/lib.linux-x86_64-3.10/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so",
+    "sha256": "9d4ac9f6cfac0e316e43d0a006e89405703658e013103a5ad58a0ffeef0ba3d1"
+  },
+  "source_sha256_after": "b9eecdef3daf1272681f79f0a0a34d51d5cb1b2f7739e60bf906a0d9b9ee6677",
+  "tracked_sources_unchanged": true,
+  "protected_after": {
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so": "6fb6d2d0539cfc28a0ca150a0fd5ff02a1402ef0a92f97ce05f5e72b46255b3c",
+    "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/__init__.py": "1d4fc43bb67c4552193d340e2d6894ad7ec3c0d04a620fd7655c89ccf855df5b",
+    "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/_C.cpython-310-x86_64-linux-gnu.so": "ca99d74bf9d880585b64f75444339bf739276883c8c0f4a85b926fb6e15c9219"
+  },
+  "protected_unchanged": true,
+  "elapsed_seconds": 71.94914521199999
+}

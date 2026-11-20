@@ -1,0 +1,15 @@
+{
+  "call_number": 17,
+  "purpose": "transfer-independent-raw",
+  "timestamp": "2026-10-23T01:18:02.504127+08:00",
+  "agent_id": "01a16491-02c2-71e0-a790-148ab41004fe",
+  "agent_path": "/root/transfer_static_check",
+  "model": "inherited-primary",
+  "reasoning_effort": "inherited",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "request_recovered_verbatim": true,
+  "response_recovered_verbatim": true
+}

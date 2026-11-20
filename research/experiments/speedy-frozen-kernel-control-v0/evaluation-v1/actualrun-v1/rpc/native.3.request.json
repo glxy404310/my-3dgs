@@ -1,0 +1,264 @@
+{
+  "seq": 3,
+  "arm": "native",
+  "action": "timed_block",
+  "repeat": 0,
+  "rows": [
+    {
+      "timed_forward_index": 0,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 0,
+      "view": "000001.jpg"
+    },
+    {
+      "timed_forward_index": 1,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 1,
+      "view": "000009.jpg"
+    },
+    {
+      "timed_forward_index": 2,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 2,
+      "view": "000017.jpg"
+    },
+    {
+      "timed_forward_index": 3,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 3,
+      "view": "000025.jpg"
+    },
+    {
+      "timed_forward_index": 4,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 4,
+      "view": "000033.jpg"
+    },
+    {
+      "timed_forward_index": 5,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 5,
+      "view": "000041.jpg"
+    },
+    {
+      "timed_forward_index": 6,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 6,
+      "view": "000049.jpg"
+    },
+    {
+      "timed_forward_index": 7,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 7,
+      "view": "000057.jpg"
+    },
+    {
+      "timed_forward_index": 8,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 8,
+      "view": "000065.jpg"
+    },
+    {
+      "timed_forward_index": 9,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 9,
+      "view": "000073.jpg"
+    },
+    {
+      "timed_forward_index": 10,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 10,
+      "view": "000081.jpg"
+    },
+    {
+      "timed_forward_index": 11,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 11,
+      "view": "000089.jpg"
+    },
+    {
+      "timed_forward_index": 12,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 12,
+      "view": "000097.jpg"
+    },
+    {
+      "timed_forward_index": 13,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 13,
+      "view": "000105.jpg"
+    },
+    {
+      "timed_forward_index": 14,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 14,
+      "view": "000113.jpg"
+    },
+    {
+      "timed_forward_index": 15,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 15,
+      "view": "000121.jpg"
+    },
+    {
+      "timed_forward_index": 16,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 16,
+      "view": "000129.jpg"
+    },
+    {
+      "timed_forward_index": 17,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 17,
+      "view": "000137.jpg"
+    },
+    {
+      "timed_forward_index": 18,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 18,
+      "view": "000145.jpg"
+    },
+    {
+      "timed_forward_index": 19,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 19,
+      "view": "000153.jpg"
+    },
+    {
+      "timed_forward_index": 20,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 20,
+      "view": "000161.jpg"
+    },
+    {
+      "timed_forward_index": 21,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 21,
+      "view": "000169.jpg"
+    },
+    {
+      "timed_forward_index": 22,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 22,
+      "view": "000177.jpg"
+    },
+    {
+      "timed_forward_index": 23,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 23,
+      "view": "000185.jpg"
+    },
+    {
+      "timed_forward_index": 24,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 24,
+      "view": "000193.jpg"
+    },
+    {
+      "timed_forward_index": 25,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 25,
+      "view": "000201.jpg"
+    },
+    {
+      "timed_forward_index": 26,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 26,
+      "view": "000209.jpg"
+    },
+    {
+      "timed_forward_index": 27,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 27,
+      "view": "000217.jpg"
+    },
+    {
+      "timed_forward_index": 28,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 28,
+      "view": "000225.jpg"
+    },
+    {
+      "timed_forward_index": 29,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 29,
+      "view": "000233.jpg"
+    },
+    {
+      "timed_forward_index": 30,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 30,
+      "view": "000241.jpg"
+    },
+    {
+      "timed_forward_index": 31,
+      "repeat": 0,
+      "arm": "native",
+      "arm_position": 0,
+      "camera_rank": 31,
+      "view": "000249.jpg"
+    }
+  ]
+}

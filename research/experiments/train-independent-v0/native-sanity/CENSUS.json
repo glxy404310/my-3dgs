@@ -1,0 +1,36 @@
+[
+  {
+    "iteration": 600,
+    "n_before": 182686,
+    "cloned": 905,
+    "split_parents": 297,
+    "pruned": 32,
+    "groups": [
+      {
+        "code": 0,
+        "present": 182389,
+        "pruned": 32,
+        "opacity": 32,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 905,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 594,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 183856
+  }
+]

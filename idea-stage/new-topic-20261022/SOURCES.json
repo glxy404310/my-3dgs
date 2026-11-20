@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-22",
+  "primary_urls": [
+    "https://arxiv.org/abs/2501.13558",
+    "https://arxiv.org/abs/2610.28615",
+    "https://arxiv.org/html/2406.12080",
+    "https://arxiv.org/html/2505.23158v2",
+    "https://arxiv.org/html/2506.09534",
+    "https://arxiv.org/html/2511.15102",
+    "https://arxiv.org/html/2512.11800",
+    "https://arxiv.org/html/2603.16103",
+    "https://arxiv.org/html/2605.05876v1",
+    "https://arxiv.org/html/2607.18067v1",
+    "https://arxiv.org/html/2609.08730v1",
+    "https://github.com/saliteta/NanoGS",
+    "https://occlugaussian.github.io/",
+    "https://openaccess.thecvf.com/content/CVPR2026/papers/Pan_Learning_Differentiable_Hierarchies_in_3D_Gaussian_Splatting_CVPR_2026_paper.pdf",
+    "https://r4dl.github.io/StopThePop/"
+  ],
+  "status_details": "SEARCH_STATUS.json",
+  "parent_primary_pdf": "Pan_CVPR2026.pdf",
+  "source_scope": "Primary sources supporting chosen topic; not every URL implies identical depth of reading"
+}

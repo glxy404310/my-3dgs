@@ -1,0 +1,14 @@
+{
+  "call_number": 31,
+  "purpose": "shared-coordinate-primary-overlap",
+  "timestamp": "2026-10-22T18:34:26.931Z",
+  "agent_id": "01a164dc-7adc-7211-8e6f-82d2727aefe9",
+  "agent_path": "/root/shared_coord_primary_overlap",
+  "model": "inherited-primary",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "request_recovered_verbatim": true,
+  "response_recovered_verbatim": true
+}

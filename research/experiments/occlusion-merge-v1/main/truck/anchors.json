@@ -1,0 +1,211 @@
+[
+  {
+    "kind": "official_wrapper",
+    "error": 0.0,
+    "tolerance": 2e-06
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000002.jpg",
+    "error": 5.323854825878271e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "mask_vs_delete",
+    "case": 0,
+    "error": 0.0,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "mask_vs_delete",
+    "case": 1,
+    "error": 0.0,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000022.jpg",
+    "error": 4.2697052937690216e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000044.jpg",
+    "error": 6.163123055236142e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000066.jpg",
+    "error": 5.385381230960107e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000087.jpg",
+    "error": 4.3170099572886755e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000109.jpg",
+    "error": 6.543939184977532e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000131.jpg",
+    "error": 4.221386012970285e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000152.jpg",
+    "error": 4.815221027465455e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000174.jpg",
+    "error": 3.6385777046898937e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000196.jpg",
+    "error": 4.3155597984068095e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000218.jpg",
+    "error": 3.827502892406187e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000239.jpg",
+    "error": 4.396895268987677e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000012.jpg",
+    "error": 2.997261826509501e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000034.jpg",
+    "error": 5.11718651674542e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000055.jpg",
+    "error": 4.046928359091595e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000077.jpg",
+    "error": 4.4674995247628857e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000099.jpg",
+    "error": 2.9961353242846656e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000120.jpg",
+    "error": 3.4597762110788466e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000142.jpg",
+    "error": 4.4606605043018277e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000164.jpg",
+    "error": 4.194662425183182e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000186.jpg",
+    "error": 4.545794994870178e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000207.jpg",
+    "error": 4.6280770960027695e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000229.jpg",
+    "error": 3.4466703291435863e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000251.jpg",
+    "error": 4.934203646778101e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000001.jpg",
+    "error": 5.275839374263569e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000033.jpg",
+    "error": 5.198973866971102e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000065.jpg",
+    "error": 5.083573590969337e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000105.jpg",
+    "error": 4.3518379111429084e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000137.jpg",
+    "error": 5.462835744873829e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000177.jpg",
+    "error": 3.188658195263372e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000209.jpg",
+    "error": 4.03254545422449e-07,
+    "tolerance": 2e-05
+  },
+  {
+    "kind": "cpu_replay",
+    "view": "000249.jpg",
+    "error": 5.391489379391601e-07,
+    "tolerance": 2e-05
+  }
+]

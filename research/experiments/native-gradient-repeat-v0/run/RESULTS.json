@@ -1,0 +1,208 @@
+{
+  "decision": "STOP_CURRENT_NONDETERMINISM_DRIVEN_IMPLEMENTATION",
+  "training_performed": false,
+  "optimizer_created": false,
+  "parameter_updates": 0,
+  "tool_valid": true,
+  "checkpoint_states": [
+    {
+      "iteration": 7000,
+      "parameters_before": "c56e8512a70b981ad5062406344d120b2efa501a26c4b0226b523aae51146236",
+      "parameters_after": "c56e8512a70b981ad5062406344d120b2efa501a26c4b0226b523aae51146236",
+      "point_count": 1680879,
+      "optimizer_created": false
+    },
+    {
+      "iteration": 30000,
+      "parameters_before": "f90a54ffe88db1b16eb78e7acc7f2ebb44556570227f21c48342e6eb819a6822",
+      "parameters_after": "f90a54ffe88db1b16eb78e7acc7f2ebb44556570227f21c48342e6eb819a6822",
+      "point_count": 2050770,
+      "optimizer_created": false
+    }
+  ],
+  "source_hashes_after": {
+    "7000": "e54272f09be80a577288dbbc8475df6a35368578b5c8c444b4eede76064da020",
+    "30000": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736"
+  },
+  "grouped_gate": [
+    {
+      "iteration": 7000,
+      "loss": "mse",
+      "field": "_xyz",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 7000,
+      "loss": "mse",
+      "field": "_features_dc",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 7000,
+      "loss": "mse",
+      "field": "_features_rest",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 7000,
+      "loss": "mse",
+      "field": "_scaling",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 7000,
+      "loss": "mse",
+      "field": "_rotation",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 7000,
+      "loss": "mse",
+      "field": "_opacity",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 7000,
+      "loss": "training",
+      "field": "_xyz",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 7000,
+      "loss": "training",
+      "field": "_features_dc",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 7000,
+      "loss": "training",
+      "field": "_features_rest",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 7000,
+      "loss": "training",
+      "field": "_scaling",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 7000,
+      "loss": "training",
+      "field": "_rotation",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 7000,
+      "loss": "training",
+      "field": "_opacity",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 30000,
+      "loss": "mse",
+      "field": "_xyz",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 30000,
+      "loss": "mse",
+      "field": "_features_dc",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 30000,
+      "loss": "mse",
+      "field": "_features_rest",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 30000,
+      "loss": "mse",
+      "field": "_scaling",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 30000,
+      "loss": "mse",
+      "field": "_rotation",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 30000,
+      "loss": "mse",
+      "field": "_opacity",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 30000,
+      "loss": "training",
+      "field": "_xyz",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 30000,
+      "loss": "training",
+      "field": "_features_dc",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 30000,
+      "loss": "training",
+      "field": "_features_rest",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 30000,
+      "loss": "training",
+      "field": "_scaling",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 30000,
+      "loss": "training",
+      "field": "_rotation",
+      "signal_views": [],
+      "gate": false
+    },
+    {
+      "iteration": 30000,
+      "loss": "training",
+      "field": "_opacity",
+      "signal_views": [],
+      "gate": false
+    }
+  ],
+  "summary_rows": 96,
+  "repeat_rows": 672,
+  "largest_weighted_repeat_ratio": 7.26107206179685e-05,
+  "largest_noise_to_neighbor_ratio": 5.918588793430689e-05,
+  "largest_selected_mass_fraction_noise_ge_1pct": 0.000844634875449302,
+  "scope": "Only repeat-order nondeterminism on these inputs. Systematic precision bias, kappa, optimizer updates, and quality untested.",
+  "camera_load_seconds": 7.198956934,
+  "gpu_process_stage_wall_seconds": 20.418471382,
+  "peak_torch_allocated_bytes": 3731682304,
+  "integrity_complete": true,
+  "elapsed_process_seconds": 21.957426617000003
+}

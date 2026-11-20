@@ -1,0 +1,200 @@
+[
+  {
+    "label": "virtual_check_worst1",
+    "view": "virtual_check_e05_t75",
+    "boxes": [
+      [
+        720,
+        0,
+        912,
+        192
+      ],
+      [
+        528,
+        0,
+        720,
+        192
+      ]
+    ]
+  },
+  {
+    "label": "virtual_check_worst2",
+    "view": "virtual_check_e05_t50",
+    "boxes": [
+      [
+        768,
+        0,
+        960,
+        192
+      ],
+      [
+        576,
+        0,
+        768,
+        192
+      ]
+    ]
+  },
+  {
+    "label": "virtual_check_worst3",
+    "view": "virtual_check_e05_t25",
+    "boxes": [
+      [
+        600,
+        0,
+        792,
+        192
+      ],
+      [
+        48,
+        48,
+        240,
+        240
+      ]
+    ]
+  },
+  {
+    "label": "virtual_discovery_worst1",
+    "view": "virtual_discovery_e06_t25",
+    "boxes": [
+      [
+        384,
+        0,
+        576,
+        192
+      ],
+      [
+        192,
+        0,
+        384,
+        192
+      ]
+    ]
+  },
+  {
+    "label": "virtual_discovery_worst2",
+    "view": "virtual_discovery_e28_t75",
+    "boxes": [
+      [
+        168,
+        0,
+        360,
+        192
+      ],
+      [
+        408,
+        0,
+        600,
+        192
+      ]
+    ]
+  },
+  {
+    "label": "virtual_discovery_worst3",
+    "view": "virtual_discovery_e28_t50",
+    "boxes": [
+      [
+        168,
+        0,
+        360,
+        192
+      ],
+      [
+        432,
+        0,
+        624,
+        192
+      ]
+    ]
+  },
+  {
+    "label": "real_test_worst1",
+    "view": "000017.jpg",
+    "boxes": [
+      [
+        576,
+        0,
+        768,
+        192
+      ],
+      [
+        384,
+        0,
+        576,
+        192
+      ]
+    ]
+  },
+  {
+    "label": "real_test_worst2",
+    "view": "000009.jpg",
+    "boxes": [
+      [
+        600,
+        0,
+        792,
+        192
+      ],
+      [
+        144,
+        0,
+        336,
+        192
+      ]
+    ]
+  },
+  {
+    "label": "real_test_worst3",
+    "view": "000105.jpg",
+    "boxes": [
+      [
+        528,
+        0,
+        720,
+        192
+      ],
+      [
+        288,
+        0,
+        480,
+        192
+      ]
+    ]
+  },
+  {
+    "label": "virtual_check_median",
+    "view": "virtual_check_e33_t75",
+    "boxes": [
+      [
+        504,
+        0,
+        696,
+        192
+      ],
+      [
+        696,
+        0,
+        888,
+        192
+      ]
+    ]
+  },
+  {
+    "label": "calibration_worst",
+    "view": "000098.jpg",
+    "boxes": [
+      [
+        384,
+        0,
+        576,
+        192
+      ],
+      [
+        576,
+        0,
+        768,
+        192
+      ]
+    ]
+  }
+]

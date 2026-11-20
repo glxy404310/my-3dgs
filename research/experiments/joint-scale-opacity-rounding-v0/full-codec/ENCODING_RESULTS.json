@@ -1,0 +1,64 @@
+{
+  "teacher_sha256_before": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+  "teacher_sha256_after": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+  "script_sha256": "4f6af77aee5a1855936fe2c246f51737eb836ae19fcf21bc41a07ba029bc012c",
+  "pilot_script_sha256": "723a6cf3de8fea9a7369a8dfd2bc788706afaee178f3a318f0d9dd2eb832a4ec",
+  "contract_sha256": "d7eaa756cbcd214a30476cb5d24631810d6ac216f978612dd7058727057d7f77",
+  "COMMON_sha256": "e154807d08f019e1d832bc6a4e836992f67255707253c012a144118491af24c3",
+  "HEADER_sha256": "c70ffb303aa369aaf6b203c1d83cc19e97dec2b73de387f87c3c38c6ef8bc2e0",
+  "training_performed": false,
+  "gpu_used": false,
+  "parameter_updates": 0,
+  "point_count": 2050770,
+  "pilot_codes_exactly_reproduced_points": 8192,
+  "common_bytes": 451169400,
+  "header_bytes": 1659,
+  "payload_bytes": {
+    "8x8": {
+      "A_independent": 8203080,
+      "B_opacity_only": 8203080,
+      "C_joint27": 8203080
+    },
+    "10x8": {
+      "A_independent": 9741158,
+      "B_opacity_only": 9741158,
+      "C_joint27": 9741158
+    }
+  },
+  "changed_scale_code_points": {
+    "8": 1786912,
+    "10": 1858929
+  },
+  "geometric_fit_camera_support_count_histogram": [
+    90394,
+    220473,
+    170284,
+    171076,
+    133303,
+    167999,
+    162091,
+    114168,
+    151694,
+    84724,
+    14328,
+    23816,
+    15388,
+    9806,
+    10960,
+    18643,
+    89808,
+    42307,
+    29728,
+    44527,
+    60006,
+    76069,
+    104410,
+    44768,
+    0
+  ],
+  "negative_sse_roundoff_entries": 0,
+  "elapsed_cpu_seconds": 129.613532404,
+  "peak_rss_bytes": 996700160,
+  "decoder_files": "COMMON.bin + HEADER.json + one arm .bin",
+  "scope": "Partial-attribute fixed-rate codec; most SH/position/rotation fields remain raw float32, not a mature compression method."
+}

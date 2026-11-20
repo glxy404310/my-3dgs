@@ -1,0 +1,204 @@
+Gaussian Splats Rendering in Vulkan: A Comprehensive Guide :: Vulkan Documentation Project (https://docs.vulkan.org/samples/latest/samples/complex/render_octomap/Tutorials/gaussian-splats-rendering.html)
+citeturn58search0 [wordlim: 200] Crawled: 2 weeks ago; We compute how far we are from the Gaussian’s center (that `dot(inCoord, inCoord)` operation), evaluate the exponential falloff, multiply by opacity, and output. ... This is called premultiplied alpha (or associated alpha), and it’s crucial for correct Gaussian splat rendering. ... With premultiplied alpha (where `source.rgb` already contains `color × alpha`), the blend equation is:
+    
+        // Output with premultiplied alpha
+        // This is important for correct blending
+        outColor = vec4(inColor * alpha, alpha);
+    }`
+
+Beautiful! That’s only 20 lines of actual code. We compute how far we are from the Gaussian’s center (that `dot(inCoord, inCoord)` operation), evaluate the exponential falloff, multiply by opacity, and output. The `discard` for low alpha values is an optimization allowing us to drop pixels that are too transparent to see.
+
+### 7.5. Premultiplied Alpha
+
+Notice the output `vec4(inColor * alpha, alpha)` instead of the more common `vec4(inColor, alpha)`. This is called premultiplied alpha (or associated alpha), and it’s crucial for correct Gaussian splat rendering.
+
+Here’s why: when you blend multiple semi-transparent Gaussians on top of each other, you want them to additively accumulate. With premultiplied alpha (where `source.rgb` already contains `color × alpha`), the blend equation is:
+    
+    `result = source.rgb + destination.rgb * (1 - source.alpha)`
+
+With straight (non-premultiplied) alpha it would be:
+    
+    `result = source.rgb * source.alpha + destination.rgb * (1 - source.alpha)`
+
+Premultiplied alpha eliminates that extra multiply. More importantly, a fully transparent pixel contributes `(0, 0, 0, 0)`, which adds nothing — there is no color bleeding from transparent regions. This is why premultiplied alpha is the correct choice for Gaussian splats.
+
+Note: this equation only composites correctly when fragments are drawn back-to-front (furthest splat first). That is why depth sorting is a mandatory step in the pipeline, not an optional optimisation.
+
+Plus, there’s a performance bonus: the blend equation is simpler without that extra multiply for the source color.
+
+--------------------------------------------------------------------------------
+glTF/extensions/2.0/Khronos/KHR_gaussian_splatting/README.md at main · KhronosGroup/glTF · GitHub (https://github.com/KhronosGroup/glTF/blob/main/extensions/2.0/Khronos/KHR_gaussian_splatting/README.md)
+citeturn58search1 [wordlim: 200] Crawled: 2 days ago; In a case when a normalized color buffer format is used instead, e.g., for performance or memory reasons, blending should be performed with alpha-premultiplied values by passing the $c_i \alpha_i$ product to the blending unit and setting the source blend factor to one. ...                     "KHR_gaussian_splatting:OPACITY": 4, ... If the color space is `"srgb_rec709_display"` or `"lin_rec709_display"`, the diffuse color for the ellipse kernel suitable for `COLOR_0` fallback usage can be computed from the `KHR_gaussian_splatting:SH_DEGREE_0_COEF_0` attribute by multiplying each of the RGB components by the constant spherical harmonic value of 0.282095, adding 0.5, and clamping the sum to the $[0, 1]$ range; if the color space is `"srgb_rec709_display"`, the clamped values would have to be decoded from sRGB to linear because the `COLOR_0` attribute contains linear values as per the glTF specification.
+
+Where:
+
+  * $C$ is the final color of the pixel. This value MUST be either clamped or tonemapped in an implementation-specific manner to fit into the splat's color space.
+  * $\mathscr{N}$ is the set of splats that contribute to the pixel.
+  * $c_i$ is the color of the $i$-th Gaussian. Unless specified otherwise by additional extensions, negative $c_i$ values MUST be clamped to zero.
+  * $\alpha_i = \alpha \cdot G(x)$ where $G(x)$ is the value of the projected 2D Gaussian's probability density function evaluated at the pixel center $x$ and $\alpha$ is the splat's opacity attribute value.
+  * $\prod_{j=1}^{i-1} (1 - \alpha_j)$ is the accumulated transmittance.
+
+Note
+
+Within rasterizer implementations, transmittance is usually handled by the GPU's blending hardware.
+
+Since intermediate results of splats composition are not explicitly limited to any range, blending should be performed using floating-point color buffer formats. This approach more closely follows the design of the original paper.
+
+In a case when a normalized color buffer format is used instead, e.g., for performance or memory reasons, blending should be performed with alpha-premultiplied values by passing the $c_i \alpha_i$ product to the blending unit and setting the source blend factor to one. While still lossy, this approach causes less range clamping than passing color and alpha values separately.
+
+If using unsigned normalized color buffers, clamping of $c_i$ values less than zero and $C$ values greater then one happens automatically.
+
+--------------------------------------------------------------------------------
+we compute the Gaussian intensity \(G\), using Equation 3.4, where \(t\) is equal to the interpolated 2D coordinate of the canonical texture space for the current fragment. Since \(t\) is a vector in the shader, we compute \(t^2\) as the dot product of \(t\) with itself. As \(G\) is evaluated once per fragment, the simplified Gaussian function enables us to perform fewer arithmetic operations per fragment, directly improving performance. We ensure the roundness of the Gaussian by discarding fragments early if \(t^2 > \tau^2\), maintaining the threshold defined earlier. Niedermayr et al. [24] employ a similar fragment discarding strategy; however, their implementation uses a threshold of \(t^2 > 2\tau\). Although their approach maintains roundness, it is overly aggressive, discarding fragments before the visibility threshold of \(G = \frac{1}{255}\) is reached. Using \(G\), we compute the final splat intensity value \(\phi\): (https://dspacemainprd01.lib.uwaterloo.ca/server/api/core/bitstreams/14d008af-7dc8-47f8-bbcb-e563ae3be975/content)
+citeturn58search12 [wordlim: 200] Published: 6 months ago; we compute the Gaussian intensity \(G\), using Equation 3.4, where \(t\) is equal to the interpolated 2D coordinate of the canonical texture space for the current fragment. ... where \(\alpha\) is the splat-wise opacity value. ... To achieve accurate compositing with premultiplied alpha, we configure the splat rendering pipeline’s colour and alpha blend state to use \(srcFactor = One\), \(dstFactor = OneMinusSrcAlpha\), and \(operation = Add\), yielding the following per-pixel composition:
+Further, we take the minimum of 0.99 and the computed Gaussian intensity to emulate the behavior from Kerbl et al. [15], providing numerical stability. Following this, we premultiply the splat-wise RGB colour value by the computed intensity \(\phi\) to obtain the final colour value for this fragment.
+
+As opposed to the mesh rendering pass, the splat rendering pass is configured to test depth values, but not write them. Using the depth value buffer created in the precomputation pass, we compute the per-splat depth value for each vertex as the inverse of the depth value in the buffer, reversing the inversion used in the precomputation stage, which enabled back-to-front sorting. This allows us to depth test the planar quads against the depth values emitted by the mesh rendering pass, discarding fragments that are behind current mesh depth values, and drawing splat fragments that are in front of current mesh depth values as seen in Figure 3.6. We do not write back depth values as it could result in z-fighting amongst the planar quads with similar depth values. Further, the splats are already sorted back to front. Thus, writing depth values is a wasted operation, as they are already drawn in the correct depth sorted order. Further, all splats share the same output buffer and are consequently sorted as if they were one global model. Thus, multiple 3D Gaussian models in the same scene are correctly depth buffered against each other.
+
+To achieve accurate compositing with premultiplied alpha, we configure the splat rendering pipeline’s colour and alpha blend state to use \(srcFactor = One\), \(dstFactor = OneMinusSrcAlpha\), and \(operation = Add\), yielding the following per-pixel composition:
+
+\[
+RGB_{result} = RGB_{src} + (RGB_{dst} \times (1 - \alpha_{src}))
+\qquad (3.18)
+\]
+
+and
+
+\[
+\alpha_{result} = \alpha_{src} + (\alpha_{dst} \times (1 - \alpha_{src}))
+\qquad (3.19)
+\]
+
+38--------------------------------------------------------------------------------
+Render Pipeline Architecture - Godot Gaussian Splatting Docs (https://klausi3d.github.io/godotGS/latest/architecture/render-pipeline/)
+citeturn58search2 [wordlim: 200] Published: 6 days ago; Crawled: 5 days ago; /../modules/gaussian_splatting/renderer/render_streaming_orchestrator.cpp ... The pre-upscale destination is the linear pre-tonemap scene buffer, so the compute blit decodes the source sRGB→linear on straight (un-premultiplied) color before blending (`source_decode_srgb` in `viewport_blit.glsl` and its host mirror `ViewportBlitPushConstant`).
+The pre-upscale destination is the linear pre-tonemap scene buffer, so the compute blit decodes the source sRGB→linear on straight (un-premultiplied) color before blending (`source_decode_srgb` in `viewport_blit.glsl` and its host mirror `ViewportBlitPushConstant`). Splats therefore pass through the same tonemap/exposure as meshes. If the compute composite cannot run, the graphics fallback composites without the decode and reports `source_decode_honored=false`, which the compositor surfaces as a degraded copy (never a clean success).
+
+Destination alpha. The two phases have different destination-alpha contracts, and the compute blit is told which one applies via `destination_has_alpha` (`viewport_blit.glsl` and its host mirror). The legacy destination is Godot's post-tonemap framebuffer, whose alpha channel is undefined — sky, meshes and background are all opaque content — so that phase writes a fully opaque result, as it always has. The pre-upscale destination is the internal scene buffer, whose alpha is meaningful: a `transparent_bg` viewport clears it to 0 and the tonemapper passes sampled alpha through unchanged, so that phase blends alpha with straight source-over (`out.a = src.a + dst.a * (1 - src.a)`), matching the premultiplied source-over already applied to colour. Forcing 1.0 on the pre-upscale destination flattens splat coverage: every splat-touched texel becomes fully opaque, the silhouette turns hard-edged, and the premultiplied fringe reads dark because the consumer un-premultiplies by 1.0 instead of by the real coverage (#928). This is invisible to opaque-viewport oracles, so it is covered by a dedicated GPU case rather than by the six-config visual matrix.
+
+--------------------------------------------------------------------------------
+Lighting and Shadows - Vulkan Gaussian Splatting (https://nvpro-samples.github.io/vk_gaussian_splatting/deep-dives/lighting_and_shadows/)
+citeturn58search3 [wordlim: 200] Crawled: last month; This accumulated opacity is later used by the mesh color pass (Pass 3) to compute the remaining transmittance \((1 - \alpha_{\text{dst}})\), which determines how much of the mesh color is visible behind the splats. ... When front-to-back (FTB) mode is activated, the blend state switches to the "under" compositing operator with premultiplied alpha. ... The blend states are configured in the `initPipelines()` method of gaussian_splatting.cpp.
+In pure BTF mode without meshes, the alpha channel is unused for display.
+
+#### 1.5.2. Adaptation of Vulkan Blend Modes for Front-to-Back (FTB) Rasterization¶
+
+When front-to-back (FTB) mode is activated, the blend state switches to the "under" compositing operator with premultiplied alpha. The fragment shader outputs `float4(color.rgb * opacity, opacity)` and the blend configuration becomes:
+
+Component  | Source Factor  | Destination Factor  | Operation
+--- | --- | --- | ---
+Color  | `ONE_MINUS_DST_ALPHA`  | `ONE`  | Add
+Alpha  | `ONE_MINUS_DST_ALPHA`  | `ONE`  | Add
+
+This gives: \(C_{\text{dst}} = C_{\text{src}}^{\text{premul}} \cdot (1 - \alpha_{\text{dst}}) + C_{\text{dst}}\), where the destination alpha accumulates the total opacity seen so far, and incoming contributions are attenuated by the remaining transmittance \((1 - \alpha_{\text{dst}})\).
+
+The normal buffer uses the same blend operators as the color buffer in both modes. The depth buffer, however, is handled differently: in FTB mode it is accessed as a storage image with manual interlocked reads/writes (not as a color attachment), while in BTF mode it is a standard color attachment with hardware blending.
+
+The blend states are configured in the `initPipelines()` method of gaussian_splatting.cpp.
+
+--------------------------------------------------------------------------------
+Alpha Blending & the Rendering Pass (https://richoncode.github.io/webartests/learning-gaussian-splatting/alpha-blending/)
+citeturn58search4 [wordlim: 200] Crawled: 2 weeks ago; How Gaussian Splatting composites sorted blobs into a final pixel — and how the backward pass undoes each blend step to propagate gradients. ... This matters because the blending formula adds the Gaussian's contribution scaled by remaining transparency — and that formula only produces the right answer when the source colour is already premultiplied. ... The accumulator pixel starts at (0, 0, 0, 1) — black colour with full remaining transparency (not full opacity).
+--------------------------------------------------------------------------------
+Front-to-Back Splat Accumulation - Medium | PixelBank (https://pixelbank.dev/problems/cv-image-based-rendering/front-to-back-splat-accumulation)
+citeturn58search5 [wordlim: 200] Crawled: 2 weeks ago; In image‑based rendering and Gaussian splatting, each splat is like a small, semi‑transparent blob projected onto the image plane, with a color $C_i$C i​ and opacity $\alpha_i$α i​. ... For two layers A (front) and B (behind), with premultiplied colors and opacities, the resulting color is:
+--------------------------------------------------------------------------------
+Episode 04: Color, Opacity & Alpha Blending — Gaussian Splatting From Zero · MasterAllArts (https://masterallarts.com/learn/gaussian-splatting-from-zero/04-color-opacity-blending/)
+citeturn58search6 [wordlim: 200] Crawled: 2 weeks ago; Color, Opacity & Alpha Blending is Episode 04 of Gaussian Splatting From Zero, a MasterAllArts free interactive lesson for artists learning creative 3D on the web. ... You're using straight alpha where you need premultiplied, or your texture/output color space is wrong.
+--------------------------------------------------------------------------------
+Gaussian-Splat-Lite/docs/GaussianSplatRenderer.md at main · WilliamLiu-1997/Gaussian-Splat-Lite · GitHub (https://996e1f714b08e971.startparking.org/WilliamLiu-1997/Gaussian-Splat-Lite/blob/main/docs/GaussianSplatRenderer.md)
+citeturn58search7 [wordlim: 200] Crawled: 2 weeks ago; `premultipliedAlpha`  | `boolean`  | `true`  | Blend with premultiplied alpha ... Control the final image with your Three.js renderer's output color space, as for any other scene. ...     import { GaussianSplatRenderer, SplatMesh } from "gaussian-splat-lite"; ...     splat.opacity = 0.5;
+--------------------------------------------------------------------------------
+GaussianSplatsMaterial (WebGPU) · Three.js Blocks (https://www.threejs-blocks.com/docs/GaussianSplatsMaterial)
+citeturn58search8 [wordlim: 200] Crawled: 3 months ago; Custom NodeMaterial for rendering Gaussian Splats. ... Global opacity multiplier for all splats (0.0 to 1.0). ... Convert splat colors from sRGB to linear color space. ...   * `premultiplied`optional`boolean`
+--------------------------------------------------------------------------------
+Premultiplied alpha - Windows apps | Microsoft Learn (https://learn.microsoft.com/da-dk/windows/apps/develop/win2d/premultiplied-alpha)
+citeturn58search9 [wordlim: 200] Published: 3.4 years ago; Crawled: 5 months ago; In computer graphics there are two different ways to represent the opacity of a color value. ... To convert a straight alpha color value to premultiplied format, multiply its R, G, and B values by A.
+--------------------------------------------------------------------------------
+Technical Introduction to OpenEXR — OpenEXR Documentation (https://openexr.com/en/latest/TechnicalIntroduction.html)
+citeturn58search10 [wordlim: 200] Crawled: 3 days ago; The `A`, `AR`, `AG`, and `AB` channels in an OpenEXR image represent alpha or opacity: 0.0 means the pixel is transparent; 1.0 means the pixel is opaque. ... In the visual effects industry premultiplied color channels are the norm, and application software packages typically use internal image representations that are also premultiplied. ... After reading an OpenEXR image such an application must undo the premultiplication by dividing the color channels by alpha.
+--------------------------------------------------------------------------------
+which assumes that colors are premultiplied with their corresponding opacity values: (https://naos-be.zcu.cz/server/api/core/bitstreams/fd504320-23e7-48ab-b4fa-196f2220d18b/content)
+citeturn58search13 [wordlim: 200] Published: 13.7 years ago; which assumes that colors are premultiplied with their corresponding opacity values: ... After the raytracing loop, the remaining transparency is filled with a texture lookup from the fully opaque grass slice or the average color of the grass data set.
+--------------------------------------------------------------------------------
+UNIVERSITAT POLITÈCNICA DE (https://upcommons.upc.edu/bitstreams/96a017e8-f7b7-41f9-ba8f-a299a1f67d27/download)
+citeturn58search14 [wordlim: 200] Published: 8 months ago; where each color ci is premultiplied by their alpha values αi, Ci = αici. ... Similarly, αn is the current opacity value and αn+1 is the new opacity.
+--------------------------------------------------------------------------------
+Outline - Compositing (https://pages.cs.wisc.edu/~lizhang/courses/cs559-2010s/pub/Lectures/08-Compositing.pdf)
+citeturn58search15 [wordlim: 200] Published: 1.8 years ago; Pre-Multiplied Alpha ... • Premultiplied gives easy common form ... • Transparent pixel has no color
+--------------------------------------------------------------------------------
+Transparency - Smash Ultimate Material Research (https://scanmountgoat.github.io/Smush-Material-Research/materials/transparency/)
+citeturn58search11 [wordlim: 200] Crawled: 3 months ago; The multiplication of the source or foreground alpha can be baked into the source color (premultiplied) or calculated later (postmultiplied or “straight” alpha). ... These are the same blend factors required to make premultiplied alpha work when premultiplying the RGB color of the nutexb texture for a shader that does premultiply the calculated shader alpha.
+--------------------------------------------------------------------------------
+crossfit: A Graph-Based Cross-Fitting Engine in R (https://arxiv.org/abs/2605.15856)
+citeturn58academia16 [wordlim: 200] Published: 5 months ago; Title: crossfit: A Graph-Based Cross-Fitting Engine in R ... The crossfit package is available on CRAN, openly developed on GitHub under GPL-3, and is intended as a lightweight, tested foundation to prototype and empirically evaluate cross-fitted estimators with explicit control over fold geometry, dependence, and computation.
+--------------------------------------------------------------------------------
+Weighted Blended Order-Independent Transparency (https://jcgt.org/published/0002/02/09/paper.pdf)
+citeturn58search17 [wordlim: 200] Published: 7 months ago; Partial coverage is useful for modeling surfaces with cutouts, such as a plant leaf modeled as a square with an opacity map; MIP-maps of and magnification filters (such as bilinear interpolation) applied to such surfaces; window screens and other barely-perceptible detail; layered images for compositing; antialiased boundaries of surfaces and stroked lines; and volumes comprising both fine opaque structure and empty regions, such as hair and smoke. ... We model a surface exhibiting partial coverage with scalar coverage α and a color C (which represents radiance towards the eye in most applications) that has been premultiplied by its coverage.
+--------------------------------------------------------------------------------
+Počítačová grafika 1 (https://mrl.cs.vsb.cz/people/fabian/pg1/pr01.pdf)
+citeturn58search18 [wordlim: 200] Published: 1.1 years ago; - alpha ... opacity value (0 – transparent fg, 1 – opaque fg)- rgb ... linear color (radiance)- Associated (premultiplied) alpha
+--------------------------------------------------------------------------------
+Transparency (graphic) (https://en.wikipedia.org/wiki/Transparency_%28graphic%29)
+citeturn58search19 [wordlim: 200] Crawled: 1.6 years ago; An alternative model is that at every point in each element to be combined for transparency there is an associated color and opacity between 0 and 1. ... Each channel must be multiplied by corresponding alpha value before composition (so called premultiplied alpha).
+--------------------------------------------------------------------------------
+Hey all. I just published a video about an often overlooked concept in VFX, premultiplication. It isn't sexy, but it's important 😊. If you're interested, I've linked it below. (https://www.reddit.com/r/davinciresolve/comments/1acw8cl)
+citeturn58reddit20 [wordlim: 200] Published: 2.7 years ago; Crawled: 2.7 years ago; "Premultiplying adds transparency": this isn't the case, it just simplifies the calculation of transparency (i.e. how much each pixel contributes to the final color) in compositing foreground with background images. ... Practically speaking, the color channels are just being darkened where their alpha < 1, so (0.5,0,0,0.5) premultiplied vs (1,0,0,0.5) when not for 50% red. ...               Speaking of dissing, I'm a bit curious about the "less convenient" use of opacity in the Hanna Barbera system:)
+--------------------------------------------------------------------------------
+Blending on screen vs in texture (https://www.reddit.com/r/opengl/comments/m39tq4)
+citeturn58reddit21 [wordlim: 200] Published: 5.6 years ago; Crawled: 5.6 years ago; With premultiplied alpha, the color components are multiplied by the alpha component (e.g., the complete transparency is always `(0, 0, 0, 0)`).
+--------------------------------------------------------------------------------
+Alpha compositing (https://en.wikipedia.org/wiki/Alpha_compositing)
+citeturn58search22 [wordlim: 200] Crawled: last week; * Texture splatting ... Another advantage of premultiplied alpha is performance; in certain situations, it can reduce the number of multiplication operations (e.g. if the image is used many times during later compositing). ... Assuming that the pixel color is expressed using straight (non-premultiplied) RGBA tuples, a pixel value of (0, 0.7, 0, 0.5) implies a pixel that has 70% of the maximum green intensity and 50% opacity.
+--------------------------------------------------------------------------------
+Depth from Gaussian splats in the forward pass, enough to drive DOF and volumetric fog (https://www.reddit.com/r/GaussianSplatting/comments/1w4cx5j/depth_from_gaussian_splats_in_the_forward_pass/)
+citeturn58reddit23 [wordlim: 200] Published: last month; It rides the same premultiplied blend as the color, so the result is a coverage-weighted average and the weights sum to one on their own. ... Scene: SplatGen\_demo\_addon by shehab mekky, CC BY 4.0 (cropped) → https://superspl.at/scene/c1e6297e
+--------------------------------------------------------------------------------
+S3 Texture Compression (https://en.wikipedia.org/wiki/S3_Texture_Compression)
+citeturn58search24 [wordlim: 200] Crawled: 3 weeks ago; In DXT2, the color data is interpreted as being premultiplied by alpha, in DXT3 it is interpreted as not having been premultiplied by alpha. ... BCn can be combined with Oodle Texture, a lossy preprocessor that modifies the input texture so that the BCn output is more easily compressed by a LZ77 compressor (rate-distortion optimization).
+--------------------------------------------------------------------------------
+Parameter-Shift Rules for Gradients in Boson Sampling Experiments (https://arxiv.org/abs/2607.15160)
+citeturn58academia25 [wordlim: 200] Published: 3 months ago; We also show that in general it is not possible to generalize this gradient recipe to the case of Gaussian boson sampling.Only in the specific case where the transmission matrix of the interferometer can be factorized as a diagonal loss matrix premultiplied by a pure unitary it is possible to obtain parameter-shift rules with a finite order given by twice the total number of photons detected.
+--------------------------------------------------------------------------------
+How I can properly blend a texture in top of a color with transparency? (https://www.reddit.com/r/opengl/comments/p8rdpm)
+citeturn58reddit26 [wordlim: 200] Published: 5.2 years ago; Crawled: 5.2 years ago; You generally want to use premultiplied alpha textures where the blending equation becomes  `color = background*(1 - a) + foreground` (you don't multiply the foreground with alpha).
+--------------------------------------------------------------------------------
+Floating Point Errors While Compositing Transparent Colors (https://www.reddit.com/r/AskProgramming/comments/foet0c)
+citeturn58reddit27 [wordlim: 200] Published: 6.6 years ago; Yet as `compositePreMultiplied` is written, you're taking the opacity of the background pixel.Intuitively, you would expect that the output color would be heavily influenced by the alpha of the new pixel, and (due to premultiplication) not at all by the alpha of the existing pixel.
+--------------------------------------------------------------------------------
+I have failed at this years ago and I still can't seem to figure this out: Why would the transparent area get darker with every time I assign the texture? (https://www.reddit.com/r/godot/comments/vwpv7v)
+citeturn58reddit28 [wordlim: 200] Published: 4.3 years ago; Crawled: 4.3 years ago; PS: At first I thought the textures were adding up, and the darkening is caused by a reduction of transparency, but upon closer inspection of saved textures, this is not the case: The transparency opacity (alpha) stays the same, it's the color that changes and gets darker, however only on pixels with and alpha lower than 1.0: ... Viewports do not implement premultiplied alpha.
+--------------------------------------------------------------------------------
+Color Burn shader behaving differently on DX11 if compared to DX9 (https://www.reddit.com/r/shaders/comments/qpm193)
+citeturn58reddit29 [wordlim: 200] Published: 5.0 years ago; Crawled: 4.8 years ago;     float4 Demultiply(float4 _color) ... Might be a dumb question, but is there a reason you're demultiplying the alpha in the DX11 version? ...   On Clickteam Fusion it comes with Premultiplied Alpha on by default, so we need to make both versions, for some reason the non-premultiplied one also needs to be demultiplied, but not multiplied back in the end (this part only the premultiplied version needs)
+--------------------------------------------------------------------------------
+Semi-transparent pixels render as black in Metal View (https://www.reddit.com/r/swift/comments/qq4qgk)
+citeturn58reddit30 [wordlim: 200] Published: 5.0 years ago; Crawled: 5.0 years ago; As a result, the anti-aliased pixels on the edge are gray and have non-zero opacity. ... I'm trying to blend a color sampled from the input texture with an opaque background color.I think the colors in the texture have premultiplied alpha - which is messing with the blending operation.
+--------------------------------------------------------------------------------
+What to do when AlphaComposite (premultiply) doesn't work for transparency (https://www.reddit.com/r/unrealengine/comments/146ts1y)
+citeturn58reddit31 [wordlim: 200] Published: 3.4 years ago; Crawled: 3.4 years ago; I've premultiplied the texture in nuke, just to check that in fact it's related to the premult ...     edit: I've just checked and now it works correctly, the material should be set to "alpha composite", and you connect the RGB to the base color, and the A (alpha channel) to the "Opacity" input, it should work as expected, let me know if you need a screenshot or any more details    edit2: alternatively you can do a premult inside unreal simply using a multiply node and multiplying the RGB over the Alpha inside the material editor, works as well, just like this: https://imgur.com/a/32GWrJR
+--------------------------------------------------------------------------------
+Postshot - isolating object (https://www.reddit.com/r/GaussianSplatting/comments/1mjvhi4)
+citeturn58reddit32 [wordlim: 200] Published: 1.2 years ago; Crawled: 1.2 years ago; I’ve been diving into creating Gaussian Splats using Postshot. ... I’ve had some success with cropping using the box and manually deleting splats but I noticed that there is the option to ‘treat zero alpha as mask’ - I’m just not sure if I’m doing it correctly or if it’s supposed to work how I envision. ... I then exported as a 444QT with alpha (premultiplied and straight options attempted) ... I think you have to removes the background of all pictures used for the splatting.
+--------------------------------------------------------------------------------
+RGBA color model (https://en.wikipedia.org/wiki/RGBA_color_model)
+citeturn58search33 [wordlim: 200] Crawled: 2.2 years ago; RGB color model with an opacity channel ... It also does not state whether or not the colors are premultiplied by the alpha value, and if they are it does not state what color space that premultiplication was done in.
+--------------------------------------------------------------------------------
+What is the formula for drawing RGBA on RGBA? (https://www.reddit.com/r/GraphicsProgramming/comments/z54jge)
+citeturn58reddit34 [wordlim: 200] Published: 3.9 years ago; Crawled: 3.9 years ago; The alpha channel represents the opacity, the level of transparency. ... There are plenty of "combinations" of modifiers, where you end up with additive blending, multiplicative blending, alpha blending, pre-multiplied alpha blending, and so on. ... By convention, RGB(A) values with 8-bit channels (i.e. integer values 0-255, which yours appear to be) are in *sRGB* color space, which applies the *gamma* function to compress the color space in such a way that the most detail is preserved for the human eye (we see differences more easily between dark colors than between light colors).
+--------------------------------------------------------------------------------
+Premultiplied Alpha (https://www.reddit.com/r/programming/comments/tqkzst)
+citeturn58reddit35 [wordlim: 200] Published: 4.6 years ago; Crawled: 1.8 years ago; Though I think part of why it went badly for OP is because he assumed that premultiplied RGBA (X) is more popular than non-premultiplied RGBA (Y). ... It allows for representing emissiveness with the color as well as the opacity with separate alpha. ... Although it's true that premultiplied alpha can be used as an optimization, and particularly in games that has been its primary purpose, in general that's not actually what it's for.
+--------------------------------------------------------------------------------
+Composição alfa (https://pt.wikipedia.org/wiki/Composi%C3%A7%C3%A3o_alfa)
+citeturn58search36 [wordlim: 200] Crawled: last week; Quando combinado com alfa premultiplicado, a premultiplicação é feita no espaço linear, antes da compressão de gama.
+--------------------------------------------------------------------------------
+Alpha合成 (https://zh.wikipedia.org/wiki/Alpha%E5%90%88%E6%88%90)
+citeturn58search37 [wordlim: 200] Crawled: 1.4 years ago; 图像中使用的Alpha通道通常有两种表示形式：平直Alpha（英語：straight alpha）和预乘Alpha（英語：premultiplied alpha）。
+--------------------------------------------------------------------------------
+Double/Debiased Machine Learning for Treatment and Causal Parameters (https://arxiv.org/abs/1608.00060)
+citeturn58academia38 [wordlim: 200] Published: 10.2 years ago; In order to avoid overfitting, our construction also makes use of the K-fold sample splitting, which we call cross-fitting.
+--------------------------------------------------------------------------------
+Double/Debiased/Neyman Machine Learning of Treatment Effects (https://arxiv.org/abs/1701.08687)
+citeturn58academia39 [wordlim: 200] Published: 9.7 years ago; Chernozhukov, Chetverikov, Demirer, Duflo, Hansen, and Newey (2016) provide a generic double/de-biased machine learning (DML) approach for obtaining valid inferential statements about focal parameters, using Neyman-orthogonal scores and cross-fitting, in settings where nuisance parameters are estimated using a new generation of nonparametric fitting methods for high-dimensional data, called machine learning methods.
+

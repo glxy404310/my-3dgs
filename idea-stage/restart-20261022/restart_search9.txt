@@ -1,0 +1,369 @@
+3DGS²-TR (https://rogerhh.github.io/3dgs2-tr.github.io/)
+citeturn48search0 [wordlim: 200] Crawled: 4 months ago; ICML 2026 ... Under identical parameter initialization and without densification, 3DGS^{2}-TR is able to achieve better reconstruction quality on standard datasets, using 50% fewer training iterations compared to ADAM, while incurring less than 1GB of peak GPU memory overhead (17% more than ADAM and 85% less than 3DGS-LM), enabling scalability to very large scenes and potentially to distributed training settings. ... Sophia: A scalable stochastic second-order optimizer for language model pre-training. arXiv preprint arXiv:2305.14342, 2023.
+# 3DGS^{2}-TR: Scalable Second-Order Trust-Region Method for 3D Gaussian Splatting
+
+Roger Hsiao^{1}, Yuchen Fang^{1}, Xiangru Huang^{1}, Ruilong Li^{2}, Hesam Rabeti^{2}, Zan Gojcic^{2}, Javad Lavaei^{1}, James Demmel^{1}, Sophia Shao^{1}
+
+^{1}UC Berkeley, ^{2}NVIDIA
+
+ICML 2026
+
+Paper arXiv Code
+
+## Abstract
+
+We propose 3DGS^{2}-TR, a second-order optimizer for accelerating the scene training problem in 3D Gaussian Splatting (3DGS). Unlike existing second-order approaches that rely on explicit or dense curvature representations, such as 3DGS-LM (Höllein et al., 2025) or 3DGS2 (Lan et al., 2025), our method approximates curvature using only the diagonal of the Hessian matrix, efficiently via Hutchinson's method. Our approach is fully matrix-free and has the same complexity as ADAM (Kingma, 2024), O(n) in both computation and memory costs. To ensure stable optimization in the presence of strong nonlinearity in the 3DGS rasterization process, we introduce a parameter-wise trust-region technique based on the squared Hellinger distance, regularizing updates to Gaussian parameters. Under identical parameter initialization and without densification, 3DGS^{2}-TR is able to achieve better reconstruction quality on standard datasets, using 50% fewer training iterations compared to ADAM, while incurring less than 1GB of peak GPU memory overhead (17% more than ADAM and 85% less than 3DGS-LM), enabling scalability to very large scenes and potentially to distributed training settings.
+
+## Second Order Optimizer
+
+The 3DGS scene training problem can be formulated as an optimization problem. SOTA methods use first-order methods such as ADAM, which may have a slower convergence. We note that higher-order methods, such as Newton's Method, Gauss-Newton Method, Levenberg-Marquardt Method, make strong assumptions about the local smoothness of the loss function while also requiring the materialization of very large matrices given the problem dimensions. Instead we follow the approach of AdaHessian (Yao et al., 2021) and SOPHIA (Liu et al., 2023), which estimate the diagonal values of the Hessian matrix using Hutchinson's Method and use the diagonal values of the Hessian to condition the update step. \left(\dfrac{\Sigma+\Sigma'}{2}\right)^{\frac{1}{2}}}$, and $\Sigma_2 = \dfrac{\Sigma+\Sigma'}{2}$.
+
+A more intuitive interpretation is illustrated below.
+
+## Gaussian Fitting Example
+
+Image: Longside Image: Shortside Image: Rotation Image: Two Gaussians
+
+[Input]
+
+Longside
+
+Shortside
+
+Rotation
+
+Two Gaussians
+
+## Image Fitting Example
+
+Image: Image fitting Picasso
+
+## 3D Scene Training Example
+
+Image: 3D Gaussian fitting bonsai
+
+## Results and Conclusion
+
+We are able to achieve 2–4× speedup in terms of training iterations compared to ADAM, while incurring a 10% overhead from the diagonal estimation and only a 1GB GPU memory overhead. We will, however, note the following caveats: 1) the current implementation is not optimized, 2) densification is supported but does not work well with second-order methods. These are areas that we are actively improving.
+
+## References
+
+  * Liu, H., Li, Z., Hall, D., Liang, P., and Ma, T. Sophia: A scalable stochastic second-order optimizer for language model pre-training. arXiv preprint arXiv:2305.14342, 2023.
+  * Yao, Z., Gholami, A., Shen, S., Mustafa, M., Keutzer, K., and Mahoney, M. AdaHessian: An adaptive second order optimizer for machine learning. In Proceedings of the AAAI Conference on Artificial Intelligence, volume 35, pp. 10665–10673, 2021.
+
+## BibTeX
+    
+    `@article{hsiao20253dgs2tr,
+      author    = {Hsiao, Roger and Fang, Yuchen and Huang, Xiangru and Li, Ruilong and Rabeti, Hesam and Gojcic, Zan and Lavaei, Javad and Demmel, James and Shao, Sophia},
+      title     = {3DGS$^2$-TR: Scalable Second-Order Trust-Region Method for 3D Gaussian Splatting},
+      journal   = {arXiv preprint arXiv:2602.00395},
+      year      = {2025},
+    }`--------------------------------------------------------------------------------
+GitHub - rogerhh/3dgs2-tr: Scalable second-order trust-region method for 3DGS · GitHub (https://github.com/rogerhh/3dgs2-tr)
+citeturn48search1 [wordlim: 200] Crawled: 2 months ago; SIBR_viewers @ d8856f6  | SIBR_viewers @ d8856f6  |    | ... To run the optimizer, simply use ... For Adam with new densification strategy, use ... Scalable second-order trust-region method for 3DGS
+sourceme.sh  | sourceme.sh  |    |  
+srun_sub_all.sh  | srun_sub_all.sh  |    |  
+train.py  | train.py  |    |  
+train_cg.py  | train_cg.py  |    |  
+train_cg2.py  | train_cg2.py  |    |  
+train_cg3.py  | train_cg3.py  |    |  
+
+## Cloning the Repository
+
+The repository contains submodules, thus please check it out with
+    
+    # SSH
+    git clone https://github.com/rogerhh/gaussian-splatting-lm --recursive
+
+### Setup
+
+#### Local Setup
+    
+    mamba env create -f environment.yml
+    conda activate gaussian_splatting-jvp
+    (cd submodules/diff_gaussian_rasterization && pip install -e .)
+    (cd submodules/fused-ssim && pip install -e .)
+    (cd submodules/simple-knn && pip install -e .)
+    # extra env needed
+    apt update && apt install libtiff5
+
+### Running
+
+To run the optimizer, simply use
+    
+    python train_mcmc_sophia_hellinger.py -s <path to COLMAP or NeRF Synthetic dataset> --start_checkpoint <path/to/checkpoint> --iterations 30000 --loss_type="l1" --noise_lr=0.0 --eval --eval_interval=1000 --cap_max <CAP_MAX> --densify_preserve_gaussians --sparsify_gaussians --sparsify_ratio=0.01 [--diagonal_accum_abs]
+
+For Adam with new densification strategy, use
+    
+    python train_mcmc_adam.py -s <path to COLMAP or NeRF Synthetic dataset> --iterations 30000 --noise_lr=0.0 --eval --eval_interval=1000 --cap_max <CAP_MAX> --densify_preserve_gaussians --sparsify_gaussians --sparsify_ratio=0.01
+
+
+## About
+
+Scalable second-order trust-region method for 3DGS
+
+### Resources
+
+Readme
+
+License
+
+Activity
+
+### Stars
+
+2 stars
+--------------------------------------------------------------------------------
+3DGS-LM: Faster Gaussian-Splatting Optimization with Levenberg-Marquardt (https://openaccess.thecvf.com/content/ICCV2025/papers/Hollein_3DGS-LM_Faster_Gaussian-Splatting_Optimization_with_Levenberg-Marquardt_ICCV_2025_paper.pdf)
+citeturn48search12 [wordlim: 200] Our pipeline utilizes the LM optimizer in the second stage of 3DGS optimization (see Fig. ... This demonstrates that quasi second-order solvers like ours are well-known to be more sensitive to initialization. ... It also allows us to complete the densification of the Gaussians before employing the LM optimizer, which simplifies the implementation.
+
+**3.4. 3DGS Optimization In Two Stages**
+
+Our pipeline utilizes the LM optimizer in the second stage of 3DGS optimization (see Fig. 2). Before that, we run the ADAM optimizer to obtain an initialization of the Gaussian parameters. We compare this against running our LM optimizer directly on the Gaussian initialization obtained from the SfM point cloud (following [23]). Fig. 4 shows, that our LM converges faster for better initialized Gaussians and eventually beats pure ADAM. In contrast, running it directly on the SfM initialization is slower. This demonstrates that quasi second-order solvers like ours are well-known to be more sensitive to initialization. In other words, gradient descent makes rapid progress in the beginning, but needs more time to converge to final Gaussian parameters. The additional compute overhead of our LM optimization is especially helpful to converge more quickly. This motivates us to split the method in two stages. It also allows us to complete the densification of the Gaussians before employing the LM optimizer, which simplifies the implementation.
+
+**4. Results**
+
+**Baselines** We compare our LM optimizer against ADAM in multiple reference implementations of 3DGS. This shows, that our method is compatible with other runtime improvements. In other words, we can swap out the optimizer and retain everything else. Concretely, we compare against the original 3DGS [23], its reimplementation “gsplat” [48], and DISTWAR [12]. Additionally, we compare against Taming-3DGS [32] by utilizing their “budgeted” approach as the fastest baseline in terms of runtime. We run all baselines for 30K iterations with their default hyperparameters.--------------------------------------------------------------------------------
+3DGS$^2$-TR: Scalable Second-Order Trust-Region Method for 3D Gaussian Splatting (https://arxiv.org/abs/2602.00395)
+citeturn48academia13 [wordlim: 200] Published: 8 months ago; Date: Fri Jan 30 23:14:09 2026We propose 3DGS$^2$-TR,a second-order optimizer for accelerating the scene training problem in 3D Gaussian Splatting (3DGS). ... Under identical parameter initialization and without densification, 3DGS$^2$-TR is able to achieve better reconstruction quality on standard datasets, using 50% fewer training iterations compared to ADAM, while incurring less than 1GB of peak GPU memory overhead (17% more than ADAM and 85% less than 3DGS-LM), enabling scalability to very large scenes and potentially to distributed training settings.
+Title: 3DGS$^2$-TR: Scalable Second-Order Trust-Region Method for 3D Gaussian Splatting
+Authors: Roger Hsiao, Yuchen Fang, Xiangru Huang, Ruilong Li, Hesam Rabeti, Zan Gojcic, Javad Lavaei, James Demmel, Sophia Shao
+Date: Fri Jan 30 23:14:09 2026
+
+We propose 3DGS$^2$-TR,a second-order optimizer for accelerating the scene training problem in 3D Gaussian Splatting (3DGS). Unlike existing second-order approaches that rely on explicit or dense curvature representations, such as 3DGS-LM (Höllein et al., 2025) or 3DGS2 (Lan et al., 2025), our method approximates curvature using only the diagonal of the Hessian matrix, efficiently via Hutchinson's method. Our approach is fully matrix-free and has the same complexity as ADAM (Kingma, 2024), $O(n)$ in both computation and memory costs. To ensure stable optimization in the presence of strong nonlinearity in the 3DGS rasterization process, we introduce a parameter-wise trust-region technique based on the squared Hellinger distance, regularizing updates to Gaussian parameters. Under identical parameter initialization and without densification, 3DGS$^2$-TR is able to achieve better reconstruction quality on standard datasets, using 50% fewer training iterations compared to ADAM, while incurring less than 1GB of peak GPU memory overhead (17% more than ADAM and 85% less than 3DGS-LM), enabling scalability to very large scenes and potentially to distributed training settings.--------------------------------------------------------------------------------
+3DGS2-TR: Scalable Second-Order Trust-Region Method  for 3D Gaussian Splatting (https://lavaei.ieor.berkeley.edu/3DGS_2026_1.pdf)
+citeturn48search14 [wordlim: 200] Published: 8 months ago; Crawled: 8 months ago; We propose 3DGS²-TR, a second-order optimizer for accelerating the scene training problem in 3D Gaussian Splatting (3DGS). ... Under identical parameter initialization and without densification, 3DGS²-TR is able to achieve better reconstruction quality on standard datasets, using 50% fewer training iterations compared to ADAM, while incurring less than 1GB of peak GPU memory overhead (17% more than ADAM and 85% less than 3DGS-LM), enabling scalability to very large scenes and potentially to distributed training settings. ... January 30, 2026.
+3DGS²-TR: Scalable Second-Order Trust-Region Method for 3D Gaussian Splatting
+
+Roger Hsiao¹  Yuchen Fang¹  Xiangru Huang¹  Ruilong Li²  Hesam Rabeti²  Zan Gojcic²  Javad Lavaei¹  
+James Demmel¹  Sophia Shao¹
+
+## Abstract
+
+We propose 3DGS²-TR, a second-order optimizer for accelerating the scene training problem in 3D Gaussian Splatting (3DGS). Unlike existing second-order approaches that rely on explicit or dense curvature representations, such as 3DGS-LM (Höllein et al., 2025) or 3DGS² (Lan et al., 2025), our method approximates curvature using only the diagonal of the Hessian matrix, estimated efficiently via Hutchinson’s method. Our approach is fully matrix-free and has the same complexity as ADAM (Kingma, 2014), O(n) in both computation and memory costs. To ensure stable optimization in the presence of strong non-linearity in the 3DGS rasterization process, we introduce a parameter-wise trust-region technique based on the squared Hellinger distance, regularizing updates to Gaussian parameters. --------------------------------------------------------------------------------
+Paper-Notes-en/docs/CVPR2026/3d_vision/sparseoit_improving_order-independent_transparency_3dgs_via_active_set_method.md at main · zhaoyang97/Paper-Notes-en · GitHub (https://github.com/zhaoyang97/Paper-Notes-en/blob/main/docs/CVPR2026/3d_vision/sparseoit_improving_order-independent_transparency_3dgs_via_active_set_method.md)
+citeturn48search2 [wordlim: 200] Published: 5 months ago; Crawled: 2 weeks ago; Using the Adam optimizer, the learning rates are set to 0.01 for o, 0.1 for \sigma , and 0.005 for v, with other rates inherited from 3DGS; the weight v is represented by single-channel third-order spherical harmonics.The densification strategy is consistent with 3DGS, but to prevent GPU out-of-memory (OOM) errors, empirical random sampling probabilities are applied based on the scene to constrain the total number of Gaussians. ... Since the method exhibits noticeable run-to-run variance (e.g., PSNR can vary by 0.6 dB in scenes like Bicycle/Room), the reported values are averaged over multiple runs.
+### Loss & Training
+
+The loss function is identical to that of the original 3DGS ({L}_{1} + SSIM, inheriting {\lambda }_{ssim} from 3DGS). Using the Adam optimizer, the learning rates are set to 0.01 for o, 0.1 for \sigma , and 0.005 for v, with other rates inherited from 3DGS; the weight v is represented by single-channel third-order spherical harmonics. The densification strategy is consistent with 3DGS, but to prevent GPU out-of-memory (OOM) errors, empirical random sampling probabilities are applied based on the scene to constrain the total number of Gaussians. Densification terminates at 15,000 iterations, at which point active set acceleration is enabled. Since the method exhibits noticeable run-to-run variance (e.g., PSNR can vary by 0.6 dB in scenes like Bicycle/Room), the reported values are averaged over multiple runs.
+
+--------------------------------------------------------------------------------
+This ICCV paper is the Open Access version, provided by the Computer Vision Foundation. (https://www.openaccess.thecvf.com/content/ICCV2025/papers/Hollein_3DGS-LM_Faster_Gaussian-Splatting_Optimization_with_Levenberg-Marquardt_ICCV_2025_paper.pdf)
+citeturn48search15 [wordlim: 200] Published: 8 months ago; ber of Gaussians by changing the densification heuristics ... outputs Gaussians in a single forward pass [6, 8, 9, 13, 29, ... Second, in 3DGS the number of Gaussians is gradually ... ing second-order updates through solving the normal equa- ... Marquardt algorithm as our optimizer.
+tion. Recently, GS-MCMC [25], Taming-3DGS [32], Mini-
+Splatting [14], and Revising-3DGS [5] propose novel densi-
+fication schemes that reduce the number of required Gaus-
+sians to represent the scene. This makes the optimization
+more stable and also faster, since fewer Gaussians must be
+optimized and rendered in every iteration.
+Despite these improvements, the optimization still takes
+significant resources, requiring thousands of gradient de-
+scent iterations to converge. To this end, we aim to reduce
+the runtime by improving the underlying optimization dur-
+ing 3DGS reconstruction. More specifically, we propose
+to replace the widely used ADAM [26] optimizer with a
+tailored Levenberg-Marquardt (LM) [34]. LM is known to
+drastically reduce the number of iterations by approximat-
+ing second-order updates through solving the normal equa-
+tions (Tab. 4). This allows us to accelerate 3DGS recon-
+struction (Fig. 1 left) by over 20% on average. Concretely,
+we propose a highly efficient GPU parallelization scheme
+for the preconditioned conjugate gradient (PCG) algorithm
+--------------------------------------------------------------------------------
+Matrix-free Second-order Optimization of Gaussian Splats with Residual Sampling | alphaXiv (https://www.alphaxiv.org/abs/2504.12905)
+citeturn48search3 [wordlim: 200] Published: 9 months ago; Crawled: last month; Submitted 25 Jan 2026 ... In addition, our matrix-free implementation achieves 2x speedup over the concurrent second-order optimizer 3DGS-LM, while using 3.5x less memory. ... This research introduces a matrix-free second-order optimization framework specifically tailored for 3DGS, enabling faster training with lower memory requirements than previous attempts. ... Future developments may focus on integrating this optimizer with dynamic densification strategies (where Gaussians are added or removed during training) and extending the matrix-free kernels to support more complex loss functions like full SSIM, further pushing the boundaries of speed and quality in 3D scene representation.
+Submitted 25 Jan 2026
+
+en
+
+# Matrix-free Second-order Optimization of Gaussian Splats with Residual Sampling
+
+Max-Planck Institute for Informatics
+
+HP
+
+Hamza PehlivanAndrea Boscolo Camiletto
+
+LG
+
+Lin Geng FooMarc HabermannChristian Theobalt
+
+## Abstract
+
+3D Gaussian Splatting (3DGS) is widely used for novel view synthesis due to its high rendering quality and fast inference time. However, 3DGS predominantly relies on first-order optimizers such as Adam, which leads to long training times. To address this limitation, we propose a novel second-order optimization strategy based on Levenberg-Marquardt (LM) and Conjugate Gradient (CG), specifically tailored towards Gaussian Splatting. Our key insight is that the Jacobian in 3DGS exhibits significant sparsity since each Gaussian affects only a limited number of pixels. We exploit this sparsity by proposing a matrix-free and GPU-parallelized LM optimization. To further improve its efficiency, we propose sampling strategies for both camera views and loss function and, consequently, the normal equation, significantly reducing the computational complexity. --------------------------------------------------------------------------------
+3DGS2-TR Paper Guide | 3DGS Viewer (https://www.3dgsviewers.com/learn/guide/papers/3dgs2-tr)
+citeturn48search4 [wordlim: 200] Published: 9 months ago; Crawled: 3 weeks ago; A 2026 optimization paper that approximates curvature with a matrix-free diagonal Hessian and stabilizes Gaussian updates with parameter-wise trust regions. ... Densification can hide optimizer weaknesses by changing the representation itself. ... 3DGS^2-TR targets the optimizer itself, replacing standard first-order ADAM-style updates with a scalable second-order trust-region method.
+
+Research Paper
+
+# 3DGS^2-TR: Scalable Second-Order Trust-Region Method for 3D Gaussian Splatting
+
+A 2026 optimization paper that approximates curvature with a matrix-free diagonal Hessian and stabilizes Gaussian updates with parameter-wise trust regions.
+
+January 2026 Optimization arXiv:2602.00395
+
+## Paper Facts
+
+Authors
+    Roger Hsiao, Yuchen Fang, Xiangru Huang, Ruilong Li, Hesam Rabeti, Zan Gojcic, Javad Lavaei, James Demmel, Sophia Shao
+
+Venue
+    arXiv 2026
+
+Focus
+    second-order optimization trust region fast training
+
+## Detailed Reading
+
+Most 3DGS pipelines rely on first-order optimization because the parameter count is huge and the renderer is nonlinear. 3DGS^2-TR asks whether second-order information can help without making training impractical. The answer is a matrix-free approximation that keeps memory and compute linear in the number of parameters.
+
+The curvature estimate uses only the diagonal of the Hessian, computed efficiently with Hutchinson-style stochastic estimation. This does not capture every parameter interaction, but it gives the optimizer a sense of local curvature scale. --------------------------------------------------------------------------------
+(PDF) ReorgGS: Equivalent Distribution Reorganization for 3D Gaussian Splatting (https://www.researchgate.net/publication/404753925_ReorgGS_Equivalent_Distribution_Reorganization_for_3D_Gaussian_Splatting)
+citeturn48search5 [wordlim: 200] Published: 5 months ago; Crawled: last month; off-diagonal coupling in the Hessian / FIM. ... reset is applied, then ... Since the local curvature of Gaussian position and scale parameters is related to
+
+quadratically:
+
+O p= Ω(s 2¯α 2).
+
+This quadratic growth corresponds to severe parameter multicollinearity. If only a standard opacity
+
+reset is applied, then
+
+O reset =α 2
+
+0 X
+
+i=j Z G p
+
+i(x)G p
+
+j(x)dx.
+
+It reduces the opacity weights, but preserves the geometric overlap term of the old parameterization.
+
+After ReorgGS, we instead have
+
+O Reorg =α 2
+
+0 X
+
+i=j Z G q
+
+i(x)G q
+
+j(x)dx.
+
+By the bounded-overlap analysis in Section A.2, if the effective local overlap after reorganization is
+
+controlled by m q, then
+
+O q=O(Mm q α 2
+
+0),
+
+whereas the original overlap in a degenerate cluster can reach Ω(s 2¯α 2). ReorgGS therefore reduces
+
+not only the opacity weights, but also the geometric overlap induced by the parameterization. This
+
+weakens off-diagonal Hessian / FIM coupling and makes the local curvature closer to a block-diagonal
+
+structure.
+
+Finally, the kNN covariance provides a local manifold-alignment effect. If the scene is locally
+
+approximated by a low-dimensional manifold, let
+
+U
+
+denote the principal directions of the local
+--------------------------------------------------------------------------------
+Speedy-Splat: Fast 3D Gaussian Splatting with Sparse Pix... (https://bytez.com/docs/cvpr/32956/paper)
+citeturn48search6 [wordlim: 200] Published: 1.8 years ago; Crawled: last week; First, Gaussian Splatting grossly overestimates the extent of Gaussians in the image. ... To maintain a robust Hessian approximation, we observe that the Image: L1 loss becomes quite small by iteration 6000 and remains low except after an opacity reset is performed.
+
+Image: image
+
+Gradient Image: ∇giIGis already computed in the backward pass of render and can be efficiently squared and aggregated across all pixels. Moreover, the maximum space requirement for this score is proportional to the number of Gaussians N, reducing the storage requirement by Image: 36×and allowing this score to be used during training.
+
+4.2.2. Soft Pruning
+
+To maintain a robust Hessian approximation, we observe that the Image: L1loss becomes quite small by iteration 6000 and remains low except after an opacity reset is performed. As such, we augment the densification pipeline to include our Soft Pruning method, where the model is pruned immediately before the three opacity resets at 6000, 9000, and 12000 iterations. Surprisingly, we find that we can set extremely high Soft Pruning ratios – in our experiments, visual fidelity is preserved at 80% pruning.
+
+Image: image
+
+Figure 3. Visual comparison of 3D-GS, PUP 3D-GS, and our method. Notice that, while reaching similar compression ratios to PUP 3D-GS, our Speedy-Splat method delivers vastly faster rendering speeds. Top: playroom from the Deep Blending dataset. Middle: bicycle from the Mip-NeRF 360 dataset. Bottom: drjohnson from the Deep Blending dataset.
+
+4.2.3. Hard Pruning
+
+We also observe that the model’s performance after densification closely matches that of the fully-trained model. The iterations after the densification stage essentially finetune the model and can be used to further “refine” it after pruning, similar to PUP 3D-GS [11] and LightGaussian [6]. In practice, our Hard Pruning method prunes the model by a constant ratio every 3000 iterations starting at iteration 15000. We Hard Prune 30% of Gaussians in each interval, which, when paired with Soft Pruning, empirically reduces the total number of Gaussians across scenes by Image: 10.6×.
+
+--------------------------------------------------------------------------------
+TurboGS: Accelerating 3D Gaussian Splatting via Error-Guided Sparse Pixel Sampling and Optimization | alphaXiv (https://www.alphaxiv.org/abs/2606.15924v1)
+citeturn48search7 [wordlim: 200] Published: 4 months ago; Crawled: last month; Submitted 14 Jun 2026 ... In this paper, we present TurboGS, an error-guided training framework that accelerates 3DGS by concentrating optimization on perceptually informative pixels. ... where $m_g$m g​ and $v_g$v g​ are the first and second moments of the gradients (from the Adam optimizer), acting as the gradient and a diagonal damping term, respectively.This hybrid approach provides the stability of second-order methods with the efficiency of first-order moments, leading to faster and more robust convergence under sparse supervision.
+Submitted 14 Jun 2026
+
+en
+
+# TurboGS: Accelerating 3D Gaussian Splatting via Error-Guided Sparse Pixel Sampling and Optimization
+
+Zheng Dong
+
+DQ
+
+Daifei Qiu
+
+PD
+
+Pinxuan DaiKe Xu
+
+JX
+
+Jiamin Xu
+
+LH
+
+Lili HeRynson W.H. LauWeiwei Xu
+
+## Abstract
+
+Consumer-level applications require fast optimization of 3D Gaussian Splatting (3DGS) with high-fidelity novel view rendering. However, existing 3DGS acceleration approaches still incur substantial computation on redundant pixels while sacrificing fine details. In this paper, we present TurboGS, an error-guided training framework that accelerates 3DGS by concentrating optimization on perceptually informative pixels. TurboGS is built upon four core components: (1) a tile-wise sparse pixel sampling, which, driven by multi-view reconstruction errors during training, prioritizes challenging regions and skips well-reconstructed ones to avoid redundant gradient computation; (2) a tile-wise structure-aware loss with sparse Normalized Cross-Correlation, which provides sparse yet effective supervision to preserve fine details and stabilize training; (3) an error-driven Gaussian density control strategy, which dynamically allocates model capacity and removes redundant primitives; and (4) a tailored hybrid optimizer that couples Hessian-informed updates with Adam moment damping to stabilize and improve convergence under sparse supervision. --------------------------------------------------------------------------------
+ReorgGS: Equivalent Distribution Reorganization for 3D Gaussian Splatting | alphaXiv (https://www.alphaxiv.org/abs/2605.08739)
+citeturn48search8 [wordlim: 200] Published: 5 months ago; Crawled: last month; This leads to a poorly conditioned Hessian (or Fisher Information Matrix), creating a loss landscape characterized by "sharp deadlocks." ... Once a source Gaussian $k$k is chosen, a new center $x_j$x j​ is sampled from the continuous distribution $\mathcal{N}(\mu_k, \Sigma_k)$N(μ k​,Σ k​) using the reparameterization trick: ... The color parameters are inherited from the nearest neighbor in the original set, and all new opacities are reset to a small constant (typically 0.01) to maximize initial transmittance and gradient accessibility.
+When multiple redundant Gaussians overlap significantly to explain the same local image residual, their parameter blocks become highly coupled. In mathematical terms, the Jacobian responses of these parameters become nearly collinear. This leads to a poorly conditioned Hessian (or Fisher Information Matrix), creating a loss landscape characterized by "sharp deadlocks." In such a landscape, the optimizer struggles to find a clear direction for improvement, as any update to one Gaussian is confounded by the presence of its redundant neighbors.
+
+## The ReorgGS Algorithm
+
+The core contribution of ReorgGS is a systematic six-step process to transform a "degenerate" Gaussian set into a "well-conditioned" one. The goal is to preserve "what" the model has learned (the spatial distribution) while changing "how" it is parameterized.
+
+### 1. Modeling as a Gaussian Mixture
+
+The initial set of Gaussians, defined by their centers $\mu_i$μ i​, covariances $\Sigma_i$Σ i​, opacities $\alpha_i$α i​, and colors $C_i$C i​, is viewed as an unnormalized empirical Gaussian-mixture field:
+This step ensures that the new primitives are placed where the original model had high-confidence scene support.
+
+### 3. Anisotropic Initialization via kNN
+
+Sampling centers is only half the battle; the new Gaussians need appropriate shapes. For every newly sampled center $x_j$x j​, ReorgGS performs a k-nearest neighbors ($k$k) query within the new set of centers. The local second moment of these neighbors is used to estimate a new anisotropic covariance:
+
+$$\text{\$\textbackslash{}Sigma'\_j = \textbackslash{}frac\{1\}\{k\} \textbackslash{}sum\_l (x\_\{jl\} - x\_j)(x\_\{jl\} - x\_j)\textasciicircum{}T}$$$\Sigma’_j = \frac{1}{k} \sum_l (x_{jl} - x_j)(x_{jl} - x_j)^T
+
+This data-driven approach ensures that the new Gaussians are aligned with the local manifold of the scene.
+
+Image: Pipeline: The ReorgGS workflow involves modeling the initial scene as a GMM, resampling centers, and using local neighborhood statistics for covariance initialization.
+
+### 4. Parameter Recovery
+
+To make these new primitives compatible with the standard 3DGS renderer, the estimated covariance $\Sigma'_j$Σ j′​ must be decomposed back into rotation $R'_j$R j′​ and scale $S'_j$S j′​:
+
+$$\Sigma'_j = U_j \Lambda_j U_j^T$$Σ j′​=U j​Λ j​U j T​
+
+Here, the rotation is set as $R'_j = U_j$R j′​=U j​ and the scale as $S'_j = \sqrt{\Lambda_j}$S j′​=Λ j​​. The color parameters are inherited from the nearest neighbor in the original set, and all new opacities are reset to a small constant (typically 0.01) to maximize initial transmittance and gradient accessibility.
+
+--------------------------------------------------------------------------------
+Paperz (https://paperz.arrangedbits.com/papers/16819bf9-9b35-464e-95ec-aa8bdcdcebb5)
+citeturn48search9 [wordlim: 200] Crawled: last month; 4D-GSW · method · 98%4D Gaussian Splatting · technology · 95%Spatio-Temporal Curvature · metric · 92%HMM-MRF · model · 90%Optimal Transport · technique · 88%Dynamic Instants · concept · 87%FVD collapse · phenomenon · 85% ... confidence 90% · we integrate an Optimal Transport (OT) alignment module to resolve the correspondence ambiguity caused by Gaussian densification and pruning...
+--------------------------------------------------------------------------------
+August 2024 – SGI 2024 (https://summergeometry.org/sgi2024/2024/08/)
+citeturn48search10 [wordlim: 200] Crawled: 3 days ago; As with previous NeRF-like methods, the 3D Gaussian splatting method takes a set of images of a static scene, together with the corresponding cameras calibrated by Structure-from-Motion (SfM) [3] as input. ... Simply put, the densification procedure clones a new Gaussian when the small-scale geometry is not sufficiently covered.
+--------------------------------------------------------------------------------
+3DGS-LM: Faster Gaussian-Splatting Optimization with Levenberg-Marquardt | alphaXiv (https://www.alphaxiv.org/abs/2409.12892)
+citeturn48search11 [wordlim: 200] Published: 1.2 years ago; Crawled: 3 weeks ago; This paper introduces 3DGS-LM, a method that accelerates 3D Gaussian Splatting optimization by replacing the standard ADAM optimizer with a tailored Levenberg-Marquardt (LM) algorithm. ... By leveraging quasi-second-order optimization, 3DGS-LM achieves approximately 20% faster convergence while maintaining or improving reconstruction quality. ... The first stage uses standard ADAM optimization for initial Gaussian placement and densification.
+

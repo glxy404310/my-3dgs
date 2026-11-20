@@ -1,0 +1,241 @@
+PLEDGE: Progressive Lossy Error-Bounded Compressionof 3D Gaussian Splatting (https://arxiv.org/html/2610.17605v1)
+citeturn88view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2610.17605v1","lineno":null}); Total lines: 252
+L0: ##### Report GitHub Issue
+L1: 
+L2: [Button: ×]
+L3: 
+L4: Title: [Input: Enter title]
+L5: 
+L6: Content selection saved. Describe the issue below:
+L7: 
+L8: Description:
+L9: 
+L10: [Button: Submit without GitHub] [Button: Submit in GitHub]
+L11: 
+L12: 【0†Back to arXiv】
+L13: 
+L14: 【1†Why HTML?†info.arxiv.org】 【2†Report Issue】 【3†Back to Abstract】 【4†Download PDF】
+L15:   1. 【5†Abstract】
+L16:   2. 【6†1 1. Introduction】
+L17:   3. 【7†2 2. Related work】
+L18:   4. 【8†3 3. Declared bounds and their inversion】
+L19:   5. 【9†4 4. The codec】
+L20:   6. 【10†5 5. Experiments】
+L21:   7. 【11†6 6. Limitations and conclusion】
+L22:   8. 【12†7 References】
+L23:   9. 【13†References】
+L24: 
+L25: 【14†License: arXiv.org perpetual non-exclusive license†info.arxiv.org】
+L26: 
+L27: arXiv:2610.17605v1 [cs.CV] 13 Oct 2026
+L28: # PLEDGE: Progressive Lossy Error-Bounded Compression
+L29: of 3D Gaussian Splatting
+L30: 
+L31: Mingze Xia ^{*}    Yuxiao Li ^{†}    Baixi Sun ^{‡}    Wenbo Li ^{*}    Pu Jiao ^{§}
+L32: Sheng Di ^{‡}    Franck Cappello ^{‡}    Hanqi Guo ^{†}    Xin Liang ^{*}
+L33: ^{*}Oregon State University ^{†}The Ohio State University ^{‡}Argonne National Laboratory
+L34: ^{§}The University of Texas Rio Grande Valley
+L35: {xiami,liwenb,lianxin}@oregonstate.edu {li.14025,guo.2154}@osu.edu
+L36: {bsun,sdi1,cappello}@anl.gov pu.jiao@utrgv.edu
+L37: ###### Abstract
+L38: Existing 3D Gaussian Splatting (3DGS) codecs report reconstruction quality after compression, and give users little control over the distortion of individual primitives. We present PLEDGE, a training-free, progressive, error-bounded codec that translates four user-declared tolerances into per-primitive quantization bounds: screen-space position, footprint deformation due to rotation and scale, view-dependent color, and opacity.
+L39: The bounds apply throughout a declared camera domain, including previously unseen viewpoints. Position and opacity are bounded directly; footprint deformation is bounded under the rasterizer’s affine projection model, and color is bounded over all viewing directions. PLEDGE organizes quantized residuals into a progressive bitstream with explicit error bounds for every valid prefix.
+L40: Experiments across thirteen scenes verify all declared per-mechanism bounds and demonstrate competitive rate–distortion performance. The four tolerances incur substantially different rate costs, so users can spend rate where their application needs it.
+L41: ## 1 1. Introduction
+L42: 
+L43: A trained 3D Gaussian Splatting (3DGS) model [【15†9】] consists of anisotropic Gaussian primitives, each represented by a position, a covariance factored into scale and rotation, an opacity, and spherical-harmonic (SH) color coefficients. A benchmark scene typically occupies several hundred megabytes, and the codecs built to shrink it [【16†1】] optimize and report aggregate reconstruction quality.
+L44: Attribute-level control matters when a scene is consumed for more than viewing: an occlusion mask for AR needs primitives to stay within a pixel of where they were trained, a measurement or navigation task needs geometry more than color, and a streaming preview needs the opposite. The rate costs of these attributes are also asymmetric: at a tight color tolerance, degree 1–3 SH coefficients account for $48\%$ of our bitstream, compared with $14\%$ for position.
+L45: Error-bounded scientific compression [【17†5】] controls numerical distortion, but applying it to 3DGS requires connecting parameter errors to image-space effects. A one-pixel footprint displacement is directly interpretable, whereas a quaternion error of $10^{-3}$ is not. Image-space distortion depends on camera parameters and must account for viewpoints beyond those available during encoding.
+L46: Clients should also be able to reconstruct a scene at different download budgets with predictable error bounds. Existing progressive codecs [【18†3】] offer no such guarantee for intermediate reconstructions.
+L47: Contributions. PLEDGE (Progressive Lossy Error-bounded Declared-tolerance Gaussian-Splatting Encoder) needs only a trained 3DGS model and its camera calibration. It inverts the four tolerances into per-primitive quantization bounds over a declared camera domain (Figure 【19†1】), then codes the residuals with a hierarchical predictor and progressive bit planes, so every valid prefix of the bitstream carries its own bound (Proposition 【20†6】).
+L48: Figure 1: PLEDGE overview. Four user-declared tolerances and a camera domain give per-primitive quantization steps $\Delta=2\varepsilon$; by Proposition 【21†1】, everything after quantization affects rate but not the guarantee.
+L49: ## 2 2. Related work
+L50: 3DGS codecs split by whether they need the training images. Retraining methods — vector-quantized or entropy-regularized representations [【22†15】], anchor-based models [【23†11】], their context models [【24†4】] and the progressive member of that family [【18†3】] — reach the best rates but need the dataset.
+L51: Training-free methods post-process a trained model: LightGaussian [【25†7】] prunes, Self-Organizing Gaussians [【26†12】] sort attributes into 2D grids, SPZ [【27†14】] is a compact format, FlexGaussian [【28†18】] quantizes to a quality target, and geometry can go to a point-cloud coder [【29†13】]. PLEDGE is training-free; to our knowledge none bounds error. FlexGaussian comes closest with a $1\,\mathrm{dB}$ target, but a scene average says nothing about an individual primitive or an unseen viewpoint.
+L52: PLEDGE adapts the error-bounded discipline of scientific compression, whose bounds we must map from image to parameter space, to embedded coding [【30†16】, 【31†17】], and bounds every valid stream prefix rather than only the complete file.
+L53: ## 3 3. Declared bounds and their inversion
+L54: 
+L55: Table 1: Notation. The four $\tau$ are the declared errors; the $\varepsilon$ are what Section 3 inverts them into.
+L56: Symbol  | Meaning  | Symbol  | Meaning
+L57: --- | --- | --- | ---
+L58: $\tau_{\mathrm{px}}$  | Center shift, per axis, px.  | $\varepsilon_{\mu}$  | Position, from $\tau_{\mathrm{px}}$ (§3.2).
+L59: $\tau_{\mathrm{sh}}$  | Footprint deformation, per mech., px.  | $\theta$  | Rotation angle, from $\tau_{\mathrm{sh}}$ (§3.3).
+L60: $\tau_{C}$  | Color change, on a $0$–$1$ scale.  | $\varepsilon_{\omega}$  | Tangent-space $\omega$, $=\theta/2\sqrt{3}$ (§3.3, §4.3).
+L61: $\tau_{\alpha}$  | Opacity change, on a $0$–$1$ scale.  | $\varepsilon_{s}$  | Log-scale, from $\tau_{\mathrm{sh}}$ (§3.3).
+L62: $\mathcal{D}(z_{\min},f_{\max},\phi)$  | Camera domain: near plane, focal, angle.  | $\varepsilon_{k}$  | SH coefficient $k$, from $\tau_{C}$ (§3.4).
+L63: $\delta_{x,y,z}$  | Center displacement, camera axes.  | $\varepsilon_{\alpha}$  | Opacity, $=\tau_{\alpha}$ (§3.4).
+L64: $\delta_{u,v}$  | Its projection, px.  | $\varepsilon_{i,j}$  | Half-step actually used; $\Delta=2\varepsilon$.
+L65: $d_{H}$  | Footprint shift, Hausdorff, px.  |  |
+L66: The four tolerances do not reach equally far into the rendered image. $\tau_{\mathrm{px}}$ and $\tau_{\mathrm{sh}}$ bound how far drawn elements move, in pixels, at every camera in $\mathcal{D}$; neither bounds a pixel value. $\tau_{C}$ bounds each primitive’s radiance in every direction, and reaches the pixel itself only with the geometry and the alphas held fixed (§3.4). $\tau_{\alpha}$ is a parameter bound with no image-space consequence.
+L67: ### 3.1 The contract
+L68: Write $x_{i,j}$ for channel $j$ of primitive $i$ and $P_{i,j}$ for the decoder’s prediction of it. Channels are coded as stored for centers and SH, in the log domain for scales, as the tangent-space residual of §4.3 for rotation, and as $\alpha$ after the sigmoid for opacity, which is why $\varepsilon_{\alpha}=\tau_{\alpha}$; §5.3 measures each error in the same domain. Sections 3.2–3.4 turn the four declared targets into per-primitive, per-channel half-steps $\varepsilon_{i,j}$.
+L69: The encoder transmits one integer per channel,
+L70:  | $$k_{i,j}=\Big\lceil\frac{r_{i,j}}{\Delta_{i,j}}\Big\rfloor,\qquad r_{i,j}=x_{i,j}-P_{i,j},\qquad\Delta_{i,j}=2\varepsilon_{i,j},$$  |  | (1)
+L71: 
+L72: and the decoder reconstructs $\hat{x}_{i,j}=P_{i,j}+k_{i,j}\Delta_{i,j}$.
+L73: ###### Proposition 1 (predictor independence).
+L74: 
+L75: $|\hat{x}_{i,j}-x_{i,j}|\leq\varepsilon_{i,j}$ for all $i,j$ and any prediction $P_{i,j}$.
+L76: ###### Proof.
+L77: 
+L78: Rounding gives $|\hat{x}-x|=|k\Delta-r|\leq\Delta/2=\varepsilon$, for any $P$. ∎
+L79: 
+L80: The $\varepsilon$ are derived against a declared camera domain $\mathcal{D}$: the cameras for which the guarantee holds, fixed by a near plane $z_{\min}$, a largest focal length $f_{\max}$ and a half-angle $\phi$ — a constraint on imaging parameters, not on where the camera center lies. Every bound below is a worst case over $\mathcal{D}$, and covers cameras never supplied to the encoder.
+L81: Per attribute the per-primitive bounds are quantized into a transmitted eight-entry table, log-spaced above a floor at the minimum and always rounded down, so that no primitive receives a step larger than its own bound.
+L82: ### 3.2 Position ($\tau_{\mathrm{px}}$)
+L83: 
+L84: A primitive sits at camera-space $(x,y,z)$, $z>0$, under focal length $f$, and projects to $u=fx/z$.
+L85: ###### Proposition 2 (position).
+L86: 
+L87: If every world coordinate of the center is held to at most $\varepsilon_{\mu}=\tau_{\mathrm{px}}z_{\min}/[\sqrt{3}\,(f_{\max}\sec\phi+\tau_{\mathrm{px}})]$, then $|\delta_{u}|\leq\tau_{\mathrm{px}}$ and $|\delta_{v}|\leq\tau_{\mathrm{px}}$ at every camera in $\mathcal{D}$, for every primitive whose center projects inside its frustum.
+L88: ###### Proof.
+L89: Take $f_{\max}$ and $\phi$ over both image axes; WLOG we bound $|\delta_{u}|$. A bound of $\varepsilon_{\mu}$ on each world coordinate puts the displacement in a cube, so $\lVert\delta\rVert_{2}\leq\rho$ with $\rho=\sqrt{3}\,\varepsilon_{\mu}=\tau_{\mathrm{px}}z_{\min}/(f_{\max}\sec\phi+\tau_{\mathrm{px}})$, so $\rho<z_{\min}$ because $f_{\max}\sec\phi>0$; rotation into camera axes preserves the norm, so $\lVert(\delta_{x},\delta_{z})\rVert_{2}\leq\rho$ and $|\delta_{z}|\leq\rho$ there as well.
+--------------------------------------------------------------------------------
+Mobile-4DGS: Unified Static-Dynamic Real-time Mobile Gaussian Splatting (https://arxiv.org/html/2610.05289v1)
+citeturn88view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2610.05289v1","lineno":null}); Total lines: 555
+L0: ##### Report GitHub Issue
+L1: 
+L2: [Button: ×]
+L3: 
+L4: Title: [Input: Enter title]
+L5: 
+L6: Content selection saved. Describe the issue below:
+L7: 
+L8: Description:
+L9: 
+L10: [Button: Submit without GitHub] [Button: Submit in GitHub]
+L11: 
+L12: 【0†Back to arXiv】
+L13: 
+L14: 【1†Why HTML?†info.arxiv.org】 【2†Report Issue】 【3†Back to Abstract】 【4†Download PDF】
+L15:   1. 【5†Abstract】
+L16:   2. 【6†I Introduction】
+L17:   3. 【7†II Related work】
+L18:   4. 【8†III Preliminary】
+L19:   5. 【9†IV Methodology】
+L20:     1. 【10†IV-A Monte Carlo Specular Energy Aggregator】
+L21:     2. 【11†IV-B Multi-view Alpha-based Densification and Pruning】
+L22:     3. 【12†IV-C Dynamic Modeling】
+L23:     4. 【13†IV-D Mobile Rendering of the Gated Representation】
+L24:     5. 【14†IV-E Implementation】
+L25:   6. 【15†V Experiments】
+L26:     1. 【16†V-A Implementation Details】
+L27:     2. 【17†V-B Qualitative and Quantitative Results】
+L28:     3. 【18†V-C Ablation Study】
+L29:     4. 【19†V-D Monte Carlo $K$ Sampling Point Analysis】
+L30:     5. 【20†V-E Camera Count in Multi-view Alpha-based Densification】
+L31:   7. 【21†VI Conclusion】
+L32:   8. 【22†References】
+L33: 【23†License: CC BY 4.0†info.arxiv.org】
+L34: 
+L35: arXiv:2610.05289v1 [cs.CV] 04 Oct 2026
+L36: # Mobile-4DGS: Unified Static-Dynamic Real-time Mobile Gaussian Splatting Thanks: Xiaobiao Du and Zhen Fang are with the University of Technology Sydney, Sydney 2009, Australia.Thanks: Beixi Hao is with Yale University, New Haven, 06520, USA.Thanks: Tianqing Zhu is with City University of Macau, Macau, 999078, China.Thanks: Richard Hartley is with the Australian National University, Canberra, 2600, Australia.Thanks: Xin Yu is with Adelaide University, Adelaide, 5005, Australia.
+L37: (email: xin.yu@adelaide.edu.au)
+L38: Xiaobiao Du Beixi Hao Zhen Fang Tianqing Zhu ^{†}^{†}thanks: This research is funded in part by ARC-Discovery grant (DP220100800 to XY), ARC-DECRA grant (DE230100477 to XY), NVIDIA academic grant program, and Google Research Scholar Program. We thank all anonymous reviewers and editors for their constructive suggestions. Affiliation: Richard Hartley   Xin Yu
+L39: ###### Abstract
+L40: Recent advances in 3D Gaussian Splatting (3DGS) have achieved remarkable performance in novel view synthesis, yet deploying both static and dynamic Gaussian representations on resource-constrained mobile devices remains challenging due to heavy storage, redundant primitives, and costly per-frame computation. We present Mobile-4DGS, a unified lightweight framework for high-fidelity real-time static and dynamic Gaussian rendering on mobile platforms.
+L41: For compact appearance modeling, we introduce a Monte Carlo Specular Energy Aggregator that compresses high-order radiance residuals into the first-order Spherical Harmonics (SH), together with an Attribute-Conditioned SH Enhancement module whose predicted offsets are pre-baked before inference. We further propose a Multi-View Alpha-Based Densification and Pruning strategy to suppress redundant primitives while maintaining multi-view consistency.
+L42: For dynamic scenes, we develop a compact explicit 4D representation by constructing second-order Gaussian motion, learnable temporal support, and a binary static-dynamic partition, enabling continuous-time modeling without runtime deformation networks. Based on this partition, a Depth-Order Certificate selectively reuses previously committed depth orders to reduce re-projection, sorting, merging, and index-buffer updates during playback.
+L43: Extensive experiments on static and dynamic scenes demonstrate that Mobile-4DGS substantially reduces storage and rendering overhead while maintaining competitive visual quality, enabling real-time 3D and 4D Gaussian Splatting on mobile devices. 【24†Code has been released: https://xiaobiaodu.github.io/mobile-4dgs-project/†xiaobiaodu.github.io】.
+L44: 【25†Image: Refer to caption】 Fig. 1: (a)(b) Mobile-4DGS achieves rendering quality comparable to both 3DGS [【26†1】] and Mobile-GS [【27†2】], while reducing the number of Gaussian primitives and achieving significantly higher FPS on a mobile device with a Snapdragon 8 Gen 3 GPU. (c) The proposed Mobile-4DGS utilizes WebGL to enable seamless cross-platform rendering and support both static and dynamic novel view rendering.
+L45: ## I Introduction
+L46: Recent advancements in 3D scene reconstruction [【28†3】, 【29†4】, 【30†5】, 【31†6】, 【32†7】, 【33†8】] and novel view synthesis [【34†9】, 【35†10】, 【36†11】, 【37†12】, 【38†13】, 【39†14】] have been driven by 3D Gaussian Splatting (3DGS) [【26†1】]. By representing scenes as millions of explicit and differentiable 3D Gaussians, 3DGS delivers high-fidelity, real-time rendering on desktop hardware.
+L47: This capability has enabled diverse applications across autonomous driving [【40†15】, 【41†16】, 【42†17】], navigation [【43†18】, 【44†19】, 【45†20】], and virtual reality [【46†21】, 【47†22】, 【48†23】, 【49†24】]. Despite these successes, efficiently deploying static and dynamic Gaussian Splatting on resource-constrained mobile devices remains a critical bottleneck.
+L48: Mobile-GS [【27†2】] is the first to deploy 3DGS on mobile devices and achieves real-time rendering. It identifies the sorting process in the original volume rendering as causing slow rendering for mobiles. Therefore, it proposes an order-independent rendering pipeline to replace the traditional volume rendering so as to achieve fast rendering on mobiles. However, removing the sorting process causes Gaussian rendering in an arbitrary order, causing transparency artifacts in regions with overlapping geometry.
+L49: Although Flux-GS [【50†25】] maintains the original sorting process and achieves faster rendering, it cannot support dynamic rendering [【51†26】] in our daily 4D space. The two lines of work therefore leave the same tension unresolved: giving up the sort buys throughput at the price of correct compositing, whereas keeping it means paying for a depth order that a 4D scene has to rebuild at every playback frame, together with the upload of the resulting index buffer.
+L50: In our experiments, we identified four primary bottlenecks that hinder the efficient deployment of Gaussian Splatting (3DGS) on mobile devices: (1) Third-Order Spherical Harmonics Overhead: Prior methods [【52†27】, 【53†28】, 【54†29】, 【55†30】, 【56†31】] commonly rely on third-order Spherical Harmonics (SH) to model complex, view-dependent radiance. However, third-order SH requires 48 floating-point parameters per Gaussian primitive.
+L51: Scaled across millions of Gaussians, this creates prohibitive storage overhead and heavy memory bandwidth consumption during rasterization. (2) Redundant Primitive Densification: Lightweight 3DGS variants, such as Mobile-GS [【27†2】] and MEGS2 [【57†32】], typically adopt standard single-view gradient-based densification [【26†1】]. This approach aggressively spawns excess primitives, leading to overfitting and inflated point counts.
+L52: The resulting primitive redundancy severely impacts training efficiency, storage footprint, and inference latency on the resource-constrained edge devices. (3) MLP-based Dynamic Representation: Previous works [【51†26】, 【58†33】, 【59†34】] leverage neural networks to model temporal variation, introducing non-trivial per-frame deformation inference and limiting rendering efficiency on resource-constrained devices.
+L53: (4) Per-Frame Depth Ordering under Motion: Primitive motion continuously changes the relative depth of Gaussians, invalidating previously cached depth orders. As a result, the renderer must repeatedly re-project primitives, recompute their ordering, and update the draw list during playback, introducing additional runtime and data-transfer overhead.
+L54: 【60†Image: Refer to caption】 Fig. 2: Gaussian parameter distribution and Spherical Harmonic fidelity analysis. (a) Per Gaussian memory footprint across 3DGS variants. Mobile-4DGS achieves significant compression (61% and 26% reductions) by optimizing Spherical Harmonics (SH) coefficients and decoupling SH into the base and view-independent components. (b) Qualitative comparison demonstrates that Mobile-4DGS with only first-order SH can render high-fidelity high-frequency details comparable to 3DGS.
+L55: In this work, we present Mobile-4DGS, a mobile real-time Gaussian Splatting method designed to deliver high-fidelity rendering with significantly fewer parameters. As illustrated in Fig. 【61†1】, our proposed Mobile-4DGS achieves rendering quality comparable to existing baselines while utilizing fewer Gaussian primitives, thereby outperforming Mobile-GS [【27†2】] in inference speed.
+L56: Our framework is built upon four technical innovations: (1) Unified Mobile Static-Dynamic Representation: We extend the static Mobile-GS/Flux-GS foundations to a compact continuous-time representation in which each dynamic Gaussian requires only eight additional temporal scalars. Static scenes are represented as the zero-motion special case, allowing both modes to share the same appearance, compression, density-control, and rendering pipeline.
+L57: (2) Monte Carlo Specular Energy Aggregator: As shown in Fig. 【62†2】, our approach is motivated by the observation that substantial radiance information can be compressed into a lower-order subspace without compromising view-dependent specular features. We propose a Monte Carlo Specular Energy Aggregator that aggregates high-order specular energy into a compact representation, effectively preserving the complex lighting characteristics.
+L58: Furthermore, we decouple the SH representation into a view-independent base component and directional view-dependent components, allowing for a substantial reduction in SH memory overhead compared to traditional third-order baselines without the need for expensive offline distillation or pre-training. To recover the fine detail lost during this compression, we introduce an Attribute-Conditioned SH Enhancement module.
+--------------------------------------------------------------------------------
+RoofGS: Roofline-Guided End-to-End Acceleration of 3D Gaussian Splatting (https://arxiv.org/html/2608.15785v1)
+citeturn88view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2608.15785v1","lineno":null}); Total lines: 339
+L0: ##### Report GitHub Issue
+L1: 
+L2: [Button: ×]
+L3: 
+L4: Title: [Input: Enter title]
+L5: 
+L6: Content selection saved. Describe the issue below:
+L7: 
+L8: Description:
+L9: 
+L10: [Button: Submit without GitHub] [Button: Submit in GitHub]
+L11: 
+L12: 【0†Back to arXiv】
+L13: 
+L14: 【1†Why HTML?†info.arxiv.org】 【2†Report Issue】 【3†Back to Abstract】 【4†Download PDF】
+L15:   1. 【5†Abstract】
+L16:   2. 【6†I Introduction】
+L17:   3. 【7†II Related Work】
+L18:     1. 【8†II-A 3D Gaussian Splatting】
+L19:     2. 【9†II-B Acceleration of 3DGS】
+L20:     3. 【10†II-C Roofline Performance Model】
+L21:   4. 【11†III Analytical Roofline Characterization】
+L22:     1. 【12†III-A Preprocessing and Attribute Evaluation】
+L23:     2. 【13†III-B Duplication and Key-Value Generation】
+L24:     3. 【14†III-C Radix-Based Depth Sorting】
+L25:     4. 【15†III-D Rendering】
+L26:   5. 【16†IV Methods】
+L27:     1. 【17†IV-A Memory-Bound Optimization】
+L28:       1. 【18†IV-A1 Compact Attribute Storage】
+L29:       2. 【19†IV-A2 Resolution-Adaptive Sorting-Key Encoding】
+L30:       3. 【20†IV-A3 Preprocessing Kernel Fusion】
+L31:     2. 【21†IV-B Compute-Bound Optimization】
+L32:       1. 【22†IV-B1 Rasterization Reorganization for Dual-Pixel ILP】
+L33:       2. 【23†IV-B2 Range-Aware Fast Exponential Evaluation】
+L34:   6. 【24†V Conclusion】
+L35:   7. 【25†References】
+L36: 【26†License: arXiv.org perpetual non-exclusive license†info.arxiv.org】
+L37: 
+L38: arXiv:2608.15785v1 [cs.CV] 16 Aug 2026
+L39: # RoofGS: Roofline-Guided End-to-End Acceleration of 3D Gaussian Splatting
+L40: Yang Luo    Yan Gong    Yongsheng Gao*    Jie Zhao ^{†}^{†}thanks: This work was supported by the National Science and Technology Major Project (Grant No. 2025ZD1603200) and the National Outstanding Youth Science Fund of the National Natural Science Foundation of China (Grant No. 52025054).
+L41: (Corresponding author: Yongsheng Gao)^{†}^{†}thanks: Yang Luo, Yan Gong, Yongsheng Gao, and Jie Zhao are with the State Key Laboratory of Robotics and Systems, Harbin Institute of Technology, Harbin 150001, China (email: christoluo@outlook.com; gongyan2020@foxmail.com; gaoys@hit.edu.cn; jzhao@hit.edu.cn).
+L42: ###### Abstract
+L43: 3D Gaussian Splatting (3DGS) enables real-time novel-view synthesis but remains limited on GPUs at high resolutions. Through a stage-wise Roofline characterization, we identify two distinct hardware bottlenecks: global memory traffic dominates the front end, whereas instruction throughput limits rasterization. Guided by this analysis, we develop RoofGS, a rendering framework that applies bottleneck-specific optimizations rather than generic kernel acceleration.
+L44: For the memory-bound front end, we design a resolution-adaptive quantized depth sorting key that compresses each key to 32 bits. For the compute-bound rasterizer, we introduce a range-aware bit-level fast exponential approximation tailored to the bounded exponent range after opacity culling, with a derived per-pixel error bound.
+L45: These two core techniques are complemented by additional optimizations (kernel fusion, compact attribute storage, culling, dual-pixel evaluation) that additionally reduce memory traffic and improve instruction-level parallelism. Experiments show that RoofGS achieves a 10.1$\times$ end-to-end speedup over 3DGS at 4K on an RTX 4090, increasing throughput from 61 to 616 FPS, with only a 0.028 dB PSNR loss.
+L46: ###### Index Terms:
+L47: 
+L48: 3D Gaussian Splatting, Hardware optimization, Low-bit quantization, Rasterization, Roofline model.
+L49: ## I Introduction
+L50: Novel view synthesis has emerged as an important technique for applications such as augmented and virtual reality (AR/VR), immersive gaming, robotic perception, and digital twins[【27†1】, 【28†2】, 【29†3】, 【30†4】, 【31†5】]. Among recent approaches, 3D Gaussian Splatting (3DGS)[【32†6】] represents a scene using a set of anisotropic Gaussian primitives and renders novel views through a rasterization-based pipeline.
+L51: Compared with NeRF-based methods [【33†7】], 3DGS generally provides faster optimization and rendering while achieving comparable or higher visual quality. However, its rendering cost depends on factors such as the number of Gaussian primitives, image resolution, and scene complexity. For large-scale scenes or high-resolution rendering, the associated computation, memory usage, and data movement remain substantial, hindering the practical deployment of 3DGS in real-time applications.
+L52: 【34†Image: Refer to caption】 Fig. 1: Rendering pipeline comparison. RoofGS fuses preprocessing and duplication, employs INT8 spherical harmonics and quantized depth sorting, and accelerates rendering through fast exponential approximation and dual-pixel parallelism.
+L53: Existing approaches to accelerating 3DGS rendering mostly follow a stage-specific optimization paradigm. TC-GS [【35†8】] and GEMMGS [【36†9】] accelerate rasterization using Tensor Cores, whereas SpeedySplat [【37†10】] and AdR-GS [【38†11】] primarily focus on reducing front-end overhead. Although effective, these methods optimize individual stages or operations, and their local gains may not translate into proportional end-to-end acceleration when the bottleneck shifts across the pipeline.
+L54: Some studies, particularly hardware-oriented analyses, have also observed that the stages of the 3DGS rendering pipeline exhibit substantially different execution characteristics [【39†12】, 【40†13】, 【41†14】]. The front end, including Gaussian projection, frustum culling, tile assignment and duplication, and depth sorting, typically exhibits irregular memory-access patterns and low arithmetic intensity.
+L55: Rasterization, by contrast, involves more compute-intensive per-pixel operations, including Gaussian evaluation, exponential computation, and alpha blending [【42†15】, 【39†12】]. However, these observations have been explored mainly in hardware-oriented contexts, with limited attention to coordinated software optimization across the whole rendering pipeline.
+L56: We present RoofGS, a Roofline-guided implementation framework for end-to-end 3DGS rendering acceleration. As illustrated in Fig. 【43†1】, RoofGS uses stage-wise performance characterization to match optimization strategies to the dominant hardware constraints of the baseline pipeline, by reducing intermediate data movement in the front end and reducing arithmetic overhead in rasterization.
+L57: In the front end, it compresses SH and geometric attributes, packs the tile index and quantized depth into a dynamic 32-bit sorting key, and fuses preprocessing, tile duplication, and key generation into a single kernel. During rasterization, RoofGS evaluates two adjacent pixels and replaces the standard exponential operation with a bit-level approximation tailored to alpha-thresholded blending, thereby reducing arithmetic and special-function-unit (SFU) pressure.
+L58: At 4K resolution on an NVIDIA RTX 4090 GPU, RoofGS increases the average rendering throughput from 61 FPS to 616 FPS across Mip-NeRF 360 [【44†16】], Tanks & Temples [【45†17】], and Deep Blending [【46†18】], delivering about $10\times$ end-to-end speedup with an average PSNR reduction of only 0.028 dB.
+L59: The main contributions are summarized as follows:
+L60: 
+L61:   * •
+L62: 
+L63: We present a Roofline-guided stage-wise optimization methodology that allocates optimization effort according to the bottleneck of each stage, rather than applying uniform kernel acceleration.
+L64: 
+L65:   * •
+L66: 
+L67: We design a resolution-adaptive quantized depth sorting key that compresses the conventional 64-bit key into 32 bits, reducing sorting traffic and the number of radix passes.
+L68: 
+L69:   * •
+L70: We introduce a range-aware bit-level fast exponential approximation tailored to the bounded exponent range after opacity culling, together with a derived per-pixel error bound.
+L71: 
+L72:   * •
+L73: 
+L74: We implement and evaluate RoofGS on multiple datasets and GPUs, achieving $10\times$ end-to-end acceleration with negligible quality loss.
+L75: ## II Related Work
+L76: ### II-A 3D Gaussian Splatting
+L77: 3D Gaussian Splatting (3DGS) [【32†6】, 【28†2】, 【47†19】] represents 3D scenes using millions of optimizable Gaussian primitives, each parameterized by its spatial position, covariance, opacity, and view-dependent color encoded via Spherical Harmonics (SHs) coefficients. As illustrated on the left of Fig. 【43†1】, the standard pipeline routes these attributes through distinct preprocessing and rasterization stages.
+L78: In the Preprocess stage, the 3D Gaussians are projected onto the camera image plane to compute their 2D means $\boldsymbol{\mu}^{\prime}$ and inverse 2D covariance matrices $\Sigma^{\prime-1}$. In the Duplicate stage, primitives that intersect multiple tile boundaries are replicated across all overlapping tiles, while recording their camera-space depth $D$. The Depth Sort stage then groups these duplicated primitives by tile ID and sorts them within each tile by depth in back-to-front order.
+L79: Finally, the Render stage feeds the sorted lists into a tile-based rasterizer. Each tile is typically processed by a thread block that performs alpha blending over the contributing Gaussians to accumulate pixel colors. This design enables efficient parallel rendering but can still incur substantial memory bandwidth and computational overhead at high resolutions such as 4K due to frequent attribute streaming and per-Gaussian evaluations.
+L80: ### II-B Acceleration of 3DGS
+L81: 
+L82: Existing acceleration strategies improve 3DGS performance from three complementary perspectives: kernel-level optimization, pipeline-level optimization, and representation-level optimization.
+

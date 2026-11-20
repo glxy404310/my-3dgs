@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "claim_supported": "yes",
+  "claim_scope": "Bounded descriptive observation only: analogous degradation is not confined to isolated split diagnostics on this resumedTrucktrajectory",
+  "confidence": "medium",
+  "reviewer": "/root/native_adc_claim_gate",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "integrity_status": "unavailable",
+  "original_cross_run_equivalence": "failed",
+  "method_efficacy": "not_tested",
+  "next": "Three known-control arms with common resume packages and predeclared training continuations"
+}

@@ -1,0 +1,1136 @@
+{
+  "decision": "PREMERGE_STAGE_DESCRIPTION_COMPLETE_PENDING_INDEPENDENT_MSE_AUDIT",
+  "forward_calls": 33,
+  "KNN_calls": 0,
+  "merge_calls": 0,
+  "rank_cost_calls": 0,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "integrity_complete": true,
+  "CPU_construct_limit_seconds": 120,
+  "GPU_allocated_limit_bytes": 10737418240,
+  "quality_acceptance_gate": null,
+  "independent_audit_complete": false,
+  "old_SSIM_audit_status": "FAIL_UNCHANGED",
+  "teacher_fidelity_decomposition": "not performed; non-additive",
+  "models": {
+    "teacher": {
+      "before": {
+        "sha256": "b6b71329ebaec4c88887bd2320a7b67fa9189c20af3db54bcdb7824164a3a8f0",
+        "tensor_ids": {
+          "_xyz": 131522436164288,
+          "_features_dc": 131522436167888,
+          "_features_rest": 131522434704512,
+          "_scaling": 131522435014528,
+          "_rotation": 131522436287600,
+          "_opacity": 131522436292000
+        },
+        "point_count": 2050770,
+        "active_sh_degree": 3,
+        "max_sh_degree": 3
+      },
+      "after": {
+        "sha256": "b6b71329ebaec4c88887bd2320a7b67fa9189c20af3db54bcdb7824164a3a8f0",
+        "tensor_ids": {
+          "_xyz": 131522436164288,
+          "_features_dc": 131522436167888,
+          "_features_rest": 131522434704512,
+          "_scaling": 131522435014528,
+          "_rotation": 131522436287600,
+          "_opacity": 131522436292000
+        },
+        "point_count": 2050770,
+        "active_sh_degree": 3,
+        "max_sh_degree": 3
+      }
+    },
+    "premerge": {
+      "before": {
+        "sha256": "530026f530e4e9c706225f6451da5e6b3d81df80b02d765340b8530aca1a51fb",
+        "tensor_ids": {
+          "_xyz": 131522436287760,
+          "_features_dc": 131522436288640,
+          "_features_rest": 131522436288000,
+          "_scaling": 131522436288880,
+          "_rotation": 131522436288560,
+          "_opacity": 131522436288960
+        },
+        "point_count": 1033349,
+        "active_sh_degree": 3,
+        "max_sh_degree": 3
+      },
+      "after": {
+        "sha256": "530026f530e4e9c706225f6451da5e6b3d81df80b02d765340b8530aca1a51fb",
+        "tensor_ids": {
+          "_xyz": 131522436287760,
+          "_features_dc": 131522436288640,
+          "_features_rest": 131522436288000,
+          "_scaling": 131522436288880,
+          "_rotation": 131522436288560,
+          "_opacity": 131522436288960
+        },
+        "point_count": 1033349,
+        "active_sh_degree": 3,
+        "max_sh_degree": 3
+      }
+    }
+  },
+  "internal_wall_seconds_before_save": 95.64133345700003,
+  "CPU_construct_command": [
+    "/home/administrator/venvs/3dgs/bin/python",
+    "-B",
+    "-u",
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/diagnose_nanogs_premerge.py",
+    "--construct-only",
+    "--output-dir",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-opacity-premerge-v0/run-v1"
+  ],
+  "CPU_construct_exit_code": 0,
+  "CPU_construct_external_wall_seconds": 41.101745265999995,
+  "CPU_construct_sampled_peak_combined_RSS_bytes": 1962582016,
+  "construction": {
+    "input_count": 2050770,
+    "keep_count": 1033349,
+    "threshold": 0.1,
+    "header_properties": 62,
+    "field_checks": {
+      "x": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "f30ac96d4e4dabce248f4ed5489d11b14d29276d4aa0e6fa5666101ad1b782d8"
+      },
+      "y": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "4ea9764e090de964f0aa189150fdfbe87a65b7214b6d54ddfa792531bc000797"
+      },
+      "z": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "82db6d8ba399affd563b75e1a1316ae495f33b45f0ed0e850b09f0db854e0ae5"
+      },
+      "nx": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "41cf1a53952199d5f83adb4ed9cff38b9188743e824c48266c3a6e2ba5e1bb06"
+      },
+      "ny": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "41cf1a53952199d5f83adb4ed9cff38b9188743e824c48266c3a6e2ba5e1bb06"
+      },
+      "nz": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "41cf1a53952199d5f83adb4ed9cff38b9188743e824c48266c3a6e2ba5e1bb06"
+      },
+      "f_dc_0": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "1de2aa77bfbb6c984eab54be950e601396572369897416e9bd4e38862d2b5237"
+      },
+      "f_dc_1": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "6f4d63ce46fb7943bdb4f641ec540a94d4043937fce9e0609b2bc2caa847a326"
+      },
+      "f_dc_2": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "fd93b285ccd669e08b0f98340e18bcf95ff2ccb568934c22aacf0aaa07c4ccd5"
+      },
+      "f_rest_0": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "f1e66926bf90c78ad7aeec03deecb901d397cb4c9f688c6b65d1bd646fa76b13"
+      },
+      "f_rest_1": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "9d169f57eb557beb1e26964681813c45aee6931af85c34241e6846d4070aceff"
+      },
+      "f_rest_2": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "0e2ee04262ecd184ffeaf7e6196b778fc675b7a8b5084786f1c30b6267161381"
+      },
+      "f_rest_3": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "812725b9d1e571cfaf2f71964a248c4be7f04f5baba3f8327c170808a58dcff2"
+      },
+      "f_rest_4": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "4222ef8b88ba472ca31bcf26d062d63ff3cf4afb622ab3299ae09d3fda751ca2"
+      },
+      "f_rest_5": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "b2e9026df3d783aeb646e32995c010098c248ffc1af82496acb177fa371c1b06"
+      },
+      "f_rest_6": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "3d5cadcbde013f587486e250575ccbe79df03aa713e6ec6c0497371c66620887"
+      },
+      "f_rest_7": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "d6e68886973b7886dd2f5a325f172d06b77c5b4591537c3c2669390fe554e910"
+      },
+      "f_rest_8": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "f89e6afaf9143307b7c789d23eb5ec26a979350efb50e5080a76a54dd9aca005"
+      },
+      "f_rest_9": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "aff3c7f34bc5c548ec19b7abc8594739fc1a7b52138366e7049483e3c05a3c41"
+      },
+      "f_rest_10": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "ed209d95d300f1a1aadb3254938653dc689b2f49851431cd90e1ccb2b1ca7ad2"
+      },
+      "f_rest_11": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "990f35a2e07f6ee3a4c6b329709eac9568b5f030cdc14accc966015916374d3a"
+      },
+      "f_rest_12": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "4b6baac47fe211bf822b75062b3ded5abe51935b86cc00062d1d7629ea0a0db2"
+      },
+      "f_rest_13": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "ea6c0b42caf1128e09ce852e11210c0d700c9e6b03c8e8aff36620ced4ee706b"
+      },
+      "f_rest_14": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "e7827967e7128ed8fc72fe62a47acca1c588d4cc12c57aa0db9b4e77d4efefc5"
+      },
+      "f_rest_15": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "1971437c692bfeac5cdeb0f5bb0d87aecaa6b6beac0b0a457737be9868cd5295"
+      },
+      "f_rest_16": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "bab3ed80473d876a144eca41b727b6d55b00a8616e51b7fcb7db17247bda0837"
+      },
+      "f_rest_17": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "cff438ce946911d3bdbd0e7a3a2e2433a61bc0b923577a00918e5410d58c1d06"
+      },
+      "f_rest_18": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "45a3ae981993e694cfe27dc7550414d639a9792c43256e83cc94ffd735ee5237"
+      },
+      "f_rest_19": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "f6554a0a82f9d1c7ccb7e46ab5f3c73259d3942e7a8b4cec2643bee7b2f75862"
+      },
+      "f_rest_20": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "1792cb788914500cd2dee138ed6b9da8aba22684083e3950baaf0e68bdb6f4bf"
+      },
+      "f_rest_21": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "c0ddb9a83556cf3acabfb526c6d0bfea701e9b7120fed83939fa73700be34649"
+      },
+      "f_rest_22": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "b2f9fcb9df641b9c48a0a26ed65fa50716a7a17b527e2b425aa8480dd1334241"
+      },
+      "f_rest_23": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "680bcc1b203a27b2c9f2d9b448f3b1f673cd79bba6ea59cb86beda971895b1d2"
+      },
+      "f_rest_24": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "5997aefde90cd69d915fc000fcbca8d689f08be7234c097e328a43407bef813a"
+      },
+      "f_rest_25": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "9ab383649c84cc4ae45862bb086a4d5b4fc17a7612ad17b79963d9a6bb418151"
+      },
+      "f_rest_26": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "d7a8a6fb439687640376bb716142f0d26c1805e80cfdbaeda9022c0cca81dfcb"
+      },
+      "f_rest_27": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "a4cffdab63c3d794dad82402e5c03ed9fd535a70da780f773d8d0ff03e31e91b"
+      },
+      "f_rest_28": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "cf27d3738643ffbfedbeca6d5532866112958fa845b26b3581a1fdbd435b1f54"
+      },
+      "f_rest_29": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "bfe953ba805d0bac9f36d4cadd020c40e293515d862963ee79878dd5ee1c4e87"
+      },
+      "f_rest_30": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "820eb84472cdfc181562ee145d8f427242b69d81a9f65a77df3e6a262d8552e8"
+      },
+      "f_rest_31": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "91a6c4d9c013041b1068b3fd5c7819d9be242b3d6688814b224f1eedfdd41a63"
+      },
+      "f_rest_32": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "86fdb4aaeae89bcf7be96932a7136cc30f4ccd836f9abd970737b06846bc50a7"
+      },
+      "f_rest_33": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "8ad3f4309f1e15792583d397a0a6a5e7baf3e742b48ebfb85d4a4a9841678bc3"
+      },
+      "f_rest_34": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "a7040b532be0b917b451e9c17028ef79103053226a0168af2ab6f7b444b887e5"
+      },
+      "f_rest_35": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "708977f532aa7f1fedd3b619e233b6d5c17b533ac1f96ade3e6ee42196064f47"
+      },
+      "f_rest_36": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "5ff161a67f26abff8652b4a3f6534d2029d350585bb6210163fe9772b53fc204"
+      },
+      "f_rest_37": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "43b53922d863f06e6d3326d36f21e22ae6e3c413ff22682f965af7c445828c1b"
+      },
+      "f_rest_38": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "d586a4e2d740cb371b20c0c3a5550a7de7dec1d65974541a9289604d695ce6ec"
+      },
+      "f_rest_39": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "c23160a84da1e00644766880c1243db6f400986f73ac11219747cd70971d05ec"
+      },
+      "f_rest_40": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "3d720f9e087421da6a7751f17d060eeba20802019341378182097a966ea5aaa8"
+      },
+      "f_rest_41": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "9248a3432c5e20a1a6d6b49bba5ea7c7628e911852284dbff4a56641bfe284ec"
+      },
+      "f_rest_42": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "6b02e6655e659eb3edad54f08dab983f4dda078959dc6888f8352d68a74115b7"
+      },
+      "f_rest_43": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "3e63b86df19465c12b6ae3328af6fd1cf02f0d3e3deb25b3ef4432c0265f09d1"
+      },
+      "f_rest_44": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "b3a5613ab3fe4fd4d9f9ddfe2d13b3094eb8d43e1f9c254f07e4181a456c48a8"
+      },
+      "opacity": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "de1fdfab25864fee11cba3e1ddfe5160bf3e4f58ca52db3bca2fd3859d2d14f2"
+      },
+      "scale_0": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "3c3faf4b247592ad324fb5f159dabb6ab17e573cdc606a16f8178fa4335f70ac"
+      },
+      "scale_1": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "233e843882a0eb87f63b9e8683e8f2c656719ad1a91ec2d88df6a9d20f74a5ca"
+      },
+      "scale_2": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "9adc37d9f440da981fde8c6df57fb1ebbfa04420680846eccb8a4f991038701d"
+      },
+      "rot_0": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "3729a4b5c2dcec7af5d73042cc964fcd0445ad6e1fb4fc9962e541ef94e42768"
+      },
+      "rot_1": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "40d1f3dbffbf5f3564256caf431f59b145f52e1366064b4461a60caecdb99584"
+      },
+      "rot_2": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "2a140afef0061608f3f6b916ba10a1018dec6225ea8530139dc326168e38e222"
+      },
+      "rot_3": {
+        "exact": true,
+        "components": 1033349,
+        "sha256": "5944f604b3e1f30b75b828e4b1e82337721c9a9759d22ecca13a915a1ac57591"
+      }
+    },
+    "native_tensor_sha256_expected": "530026f530e4e9c706225f6451da5e6b3d81df80b02d765340b8530aca1a51fb",
+    "premerge_ply_sha256": "483a284996a21dc62326b6f09871a30f84bdcf109a07f9e71ffef6c121fe4dc0",
+    "premerge_PLY_bytes": 256272084,
+    "keep_ids_sha256": "d496c81fdbbe35a62a12f3991cd708fa8d04fc017e6e72979d51346dd4650d35",
+    "KNN_calls": 0,
+    "rank_cost_calls": 0,
+    "merge_calls": 0,
+    "official_read_prune_store": true,
+    "identity_full_PLY_written": false
+  },
+  "summary": {
+    "teacher": {
+      "mean_GT_MSE_float64": 0.0029473395778827874,
+      "mean_GT_PSNR": 25.465546181488122,
+      "zero_GT_MSE_views": 0,
+      "PSNR_from_mean_GT_MSE": 25.30569824006006,
+      "native_Torch_SSIM_descriptive_mean": 0.8850201144814491,
+      "own_GT_tail4": [
+        {
+          "arm": "teacher",
+          "view": "000217.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.006126526942477726,
+          "gt_psnr_float64": 22.127856522619858,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0,
+          "native_Torch_SSIM_descriptive": 0.8316521644592285,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "26966bb236cf38de1a699ccd7ebd21cb9588be78ffb70ed3804e3d4e28b4620c"
+        },
+        {
+          "arm": "teacher",
+          "view": "000121.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.004494045788043235,
+          "gt_psnr_float64": 23.473625070407856,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0,
+          "native_Torch_SSIM_descriptive": 0.8463903069496155,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "3d6a47986d58983f5b04fe8876d08f488264097f14d2fdbe422a075a20da475c"
+        },
+        {
+          "arm": "teacher",
+          "view": "000153.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.00419195909554643,
+          "gt_psnr_float64": 23.77582963778419,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0,
+          "native_Torch_SSIM_descriptive": 0.8761157393455505,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "4c0a264e8ff23f00109359eb5a29a7cb02b57e18fa505bea989a9a50a7969ea9"
+        },
+        {
+          "arm": "teacher",
+          "view": "000065.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.003915354898529328,
+          "gt_psnr_float64": 24.072288661763295,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0,
+          "native_Torch_SSIM_descriptive": 0.8748266100883484,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "0772b80fde66a1bcb81e2c11652e9bcfcfd4a3f93274dcf0546dd37d730c7046"
+        }
+      ],
+      "own_GT_tail4_mean_MSE": 0.0046819716811491805,
+      "own_GT_worst": {
+        "arm": "teacher",
+        "view": "000217.jpg",
+        "split": "test",
+        "gt_mse_float64": 0.006126526942477726,
+        "gt_psnr_float64": 22.127856522619858,
+        "zero_MSE_infinite_PSNR": false,
+        "teacher_fidelity_mse_float64": 0.0,
+        "native_Torch_SSIM_descriptive": 0.8316521644592285,
+        "SSIM_source": "original_native_Torch_CSV",
+        "RGB_array_sha256": "26966bb236cf38de1a699ccd7ebd21cb9588be78ffb70ed3804e3d4e28b4620c"
+      },
+      "mean_teacher_fidelity_MSE": 0.0,
+      "own_teacher_fidelity_tail4": [
+        {
+          "arm": "teacher",
+          "view": "000001.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.0022934181075312783,
+          "gt_psnr_float64": 26.395167628711075,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0,
+          "native_Torch_SSIM_descriptive": 0.9182805418968201,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "26941373864032ef358a109587b992fd9ebe9b7d08c7508808cf13274660c784"
+        },
+        {
+          "arm": "teacher",
+          "view": "000009.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.002330338798262774,
+          "gt_psnr_float64": 26.32580934115794,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0,
+          "native_Torch_SSIM_descriptive": 0.9119400978088379,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "865a296745673cc374a67f42d80164818ff3a9e24e2247d41dd1aae20be216b2"
+        },
+        {
+          "arm": "teacher",
+          "view": "000017.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.0027490185758153613,
+          "gt_psnr_float64": 25.608223255087136,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0,
+          "native_Torch_SSIM_descriptive": 0.8835336565971375,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "25d4d34676c2cca7da1717acec4c223d6a714a34f0f61b4261625e17a06cd9b8"
+        },
+        {
+          "arm": "teacher",
+          "view": "000025.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.0027190939810824563,
+          "gt_psnr_float64": 25.65575781467246,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0,
+          "native_Torch_SSIM_descriptive": 0.869829535484314,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "cfd2163fb53ec908997d0730afe5bf3171d9bb88bb360536eef3c7abf567c35f"
+        }
+      ],
+      "train_000016": {
+        "arm": "teacher",
+        "view": "000016.jpg",
+        "split": "train",
+        "gt_mse_float64": 0.0018114830727092544,
+        "gt_psnr_float64": 27.4196571984822,
+        "zero_MSE_infinite_PSNR": false,
+        "teacher_fidelity_mse_float64": 0.0,
+        "native_Torch_SSIM_descriptive": 0.9252682328224182,
+        "SSIM_source": "original_native_Torch_CSV",
+        "RGB_array_sha256": "9d5eca4c967cb96b434be8c4b41e23c095b7a9ad8b4bef87edbf92f42a98ebed"
+      }
+    },
+    "identity": {
+      "mean_GT_MSE_float64": 0.002947339538209086,
+      "mean_GT_PSNR": 25.4655462820807,
+      "zero_GT_MSE_views": 0,
+      "PSNR_from_mean_GT_MSE": 25.3056982985198,
+      "native_Torch_SSIM_descriptive_mean": 0.8850201182067394,
+      "own_GT_tail4": [
+        {
+          "arm": "identity",
+          "view": "000217.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.006126526576592692,
+          "gt_psnr_float64": 22.127856781986807,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 7.791569155853483e-12,
+          "native_Torch_SSIM_descriptive": 0.8316521048545837,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "bd7c9a77a26cc3fcedb5848389a9afe52a67cce5011232730aa37ed34521b34a"
+        },
+        {
+          "arm": "identity",
+          "view": "000121.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.004494047352202195,
+          "gt_psnr_float64": 23.473623558840067,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 2.8318160603398304e-11,
+          "native_Torch_SSIM_descriptive": 0.8463902473449707,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "950be1f83996f89601fa29f79e805cb8abd7a23c34a1332e9bc59bb2b77d7dc1"
+        },
+        {
+          "arm": "identity",
+          "view": "000153.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.00419195952115628,
+          "gt_psnr_float64": 23.775829196844775,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 1.0992911607043147e-11,
+          "native_Torch_SSIM_descriptive": 0.8761157393455505,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "17cddf4736abe8d177f24f6cc1ff81ab4b45e1987064c6eafff4a3ace57fd7cb"
+        },
+        {
+          "arm": "identity",
+          "view": "000065.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.003915354737288313,
+          "gt_psnr_float64": 24.0722888406132,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 4.21994658944639e-12,
+          "native_Torch_SSIM_descriptive": 0.8748266100883484,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "8ee833daf058f8ae23b2a1e74b7af204cf23e1d20e1d87bbd10da8308194077b"
+        }
+      ],
+      "own_GT_tail4_mean_MSE": 0.00468197204680987,
+      "own_GT_worst": {
+        "arm": "identity",
+        "view": "000217.jpg",
+        "split": "test",
+        "gt_mse_float64": 0.006126526576592692,
+        "gt_psnr_float64": 22.127856781986807,
+        "zero_MSE_infinite_PSNR": false,
+        "teacher_fidelity_mse_float64": 7.791569155853483e-12,
+        "native_Torch_SSIM_descriptive": 0.8316521048545837,
+        "SSIM_source": "original_native_Torch_CSV",
+        "RGB_array_sha256": "bd7c9a77a26cc3fcedb5848389a9afe52a67cce5011232730aa37ed34521b34a"
+      },
+      "mean_teacher_fidelity_MSE": 1.0406643715611503e-11,
+      "own_teacher_fidelity_tail4": [
+        {
+          "arm": "identity",
+          "view": "000201.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.0023144948791284504,
+          "gt_psnr_float64": 26.355437757663367,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 2.981717739761482e-11,
+          "native_Torch_SSIM_descriptive": 0.9024478793144226,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "1cd6e678037d5d39fa41d1559e9e32d5989d83ffad484a97cff3c08ab99033b0"
+        },
+        {
+          "arm": "identity",
+          "view": "000025.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.0027190939670081104,
+          "gt_psnr_float64": 25.655757837152045,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 2.941367513637198e-11,
+          "native_Torch_SSIM_descriptive": 0.8698295950889587,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "92a9024e19025e4a32ad567f5812cf60af5b36139eba6275a1192bd2e24df223"
+        },
+        {
+          "arm": "identity",
+          "view": "000121.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.004494047352202195,
+          "gt_psnr_float64": 23.473623558840067,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 2.8318160603398304e-11,
+          "native_Torch_SSIM_descriptive": 0.8463902473449707,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "950be1f83996f89601fa29f79e805cb8abd7a23c34a1332e9bc59bb2b77d7dc1"
+        },
+        {
+          "arm": "identity",
+          "view": "000057.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.0034038325441263628,
+          "gt_psnr_float64": 24.680318137316206,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 2.618098328877432e-11,
+          "native_Torch_SSIM_descriptive": 0.853098452091217,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "ea1cfc04c995e7faf3496b61c2cf017de7e74e7b53c5be5f8042260f0aaa8adc"
+        }
+      ],
+      "train_000016": {
+        "arm": "identity",
+        "view": "000016.jpg",
+        "split": "train",
+        "gt_mse_float64": 0.0018114820649527035,
+        "gt_psnr_float64": 27.41965961453144,
+        "zero_MSE_infinite_PSNR": false,
+        "teacher_fidelity_mse_float64": 2.376853670511753e-11,
+        "native_Torch_SSIM_descriptive": 0.9252682328224182,
+        "SSIM_source": "original_native_Torch_CSV",
+        "RGB_array_sha256": "da5a8c85214235c2486b5e461d8be8b83ef3959563cd8f9d71a3a6be8708603c"
+      }
+    },
+    "all219": {
+      "mean_GT_MSE_float64": 0.0035582968034114197,
+      "mean_GT_PSNR": 24.693815027937678,
+      "zero_GT_MSE_views": 0,
+      "PSNR_from_mean_GT_MSE": 24.48757829521415,
+      "native_Torch_SSIM_descriptive_mean": 0.8741441201418638,
+      "own_GT_tail4": [
+        {
+          "arm": "all219",
+          "view": "000017.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.006719819567852235,
+          "gt_psnr_float64": 21.72642387919113,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.004162841022656487,
+          "native_Torch_SSIM_descriptive": 0.845604419708252,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "23866ab8afe806445539fa0e19f24ecbcfc4f19ee21d93aa63ab60395a543907"
+        },
+        {
+          "arm": "all219",
+          "view": "000217.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.006257438346210889,
+          "gt_psnr_float64": 22.036034207500723,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.00015386700399994694,
+          "native_Torch_SSIM_descriptive": 0.8272956609725952,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "1ba3ae8a43b2371945fc9fa6c03c3ba40e8f82d52e07c721acad05a28afc0760"
+        },
+        {
+          "arm": "all219",
+          "view": "000097.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.005440964432431516,
+          "gt_psnr_float64": 22.643241130665665,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0025240974778089494,
+          "native_Torch_SSIM_descriptive": 0.8722913861274719,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "04228dbaf261d053f082e5e252467a35c83135694854f428d8e411a8cd947aa8"
+        },
+        {
+          "arm": "all219",
+          "view": "000121.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.005361768947254627,
+          "gt_psnr_float64": 22.70691904842952,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0013132893182725717,
+          "native_Torch_SSIM_descriptive": 0.8315978646278381,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "3eee236450d65aa8a20f257e8de9312963330c26b58163bf4c4cd6b161916667"
+        }
+      ],
+      "own_GT_tail4_mean_MSE": 0.005944997823437317,
+      "own_GT_worst": {
+        "arm": "all219",
+        "view": "000017.jpg",
+        "split": "test",
+        "gt_mse_float64": 0.006719819567852235,
+        "gt_psnr_float64": 21.72642387919113,
+        "zero_MSE_infinite_PSNR": false,
+        "teacher_fidelity_mse_float64": 0.004162841022656487,
+        "native_Torch_SSIM_descriptive": 0.845604419708252,
+        "SSIM_source": "original_native_Torch_CSV",
+        "RGB_array_sha256": "23866ab8afe806445539fa0e19f24ecbcfc4f19ee21d93aa63ab60395a543907"
+      },
+      "mean_teacher_fidelity_MSE": 0.0006992238872387842,
+      "own_teacher_fidelity_tail4": [
+        {
+          "arm": "all219",
+          "view": "000017.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.006719819567852235,
+          "gt_psnr_float64": 21.72642387919113,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.004162841022656487,
+          "native_Torch_SSIM_descriptive": 0.845604419708252,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "23866ab8afe806445539fa0e19f24ecbcfc4f19ee21d93aa63ab60395a543907"
+        },
+        {
+          "arm": "all219",
+          "view": "000097.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.005440964432431516,
+          "gt_psnr_float64": 22.643241130665665,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0025240974778089494,
+          "native_Torch_SSIM_descriptive": 0.8722913861274719,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "04228dbaf261d053f082e5e252467a35c83135694854f428d8e411a8cd947aa8"
+        },
+        {
+          "arm": "all219",
+          "view": "000113.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.0051497439366162195,
+          "gt_psnr_float64": 22.882143650713033,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0021707793787163134,
+          "native_Torch_SSIM_descriptive": 0.8508991003036499,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "db9a75d4fb16c1756d6b720c3cdca408c4eefb8acb18617d7d01422fb91f14b2"
+        },
+        {
+          "arm": "all219",
+          "view": "000105.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.0035975094021863593,
+          "gt_psnr_float64": 24.43998062349712,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0014356764474567284,
+          "native_Torch_SSIM_descriptive": 0.8893577456474304,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "764b5a4cb6fe1b71d4442b28a1229c9b7d612d048d5a8d637dfec02d96f02787"
+        }
+      ],
+      "train_000016": {
+        "arm": "all219",
+        "view": "000016.jpg",
+        "split": "train",
+        "gt_mse_float64": 0.005481971401667318,
+        "gt_psnr_float64": 22.61063234416818,
+        "zero_MSE_infinite_PSNR": false,
+        "teacher_fidelity_mse_float64": 0.0038508295000104094,
+        "native_Torch_SSIM_descriptive": 0.875684380531311,
+        "SSIM_source": "original_native_Torch_CSV",
+        "RGB_array_sha256": "210b73c8434f6906dc419fba9d1544fe898cfa5787287bb23aa3f57159e3badd"
+      }
+    },
+    "premerge": {
+      "mean_GT_MSE_float64": 0.0045049916437525,
+      "mean_GT_PSNR": 23.604264757499827,
+      "zero_GT_MSE_views": 0,
+      "PSNR_from_mean_GT_MSE": 23.463060102510767,
+      "native_Torch_SSIM_descriptive_mean": 0.8573961723595858,
+      "own_GT_tail4": [
+        {
+          "arm": "premerge",
+          "view": "000217.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.008083286412066812,
+          "gt_psnr_float64": 20.92412032734734,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0017035913995334083,
+          "native_Torch_SSIM_descriptive": 0.8039097785949707,
+          "SSIM_source": "new_same_native_Torch",
+          "RGB_array_sha256": "869c837b07635e99c5cebc88b473df64c80b1bd853ed1dc3e0d25f4acf5ab58e"
+        },
+        {
+          "arm": "premerge",
+          "view": "000121.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.006234784497078995,
+          "gt_psnr_float64": 22.05178553147249,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0017106710355064042,
+          "native_Torch_SSIM_descriptive": 0.8234137892723083,
+          "SSIM_source": "new_same_native_Torch",
+          "RGB_array_sha256": "c6f271fe3ac09cd8ad49ed9893d2655e88c559716844e28cf8507f80390cecc2"
+        },
+        {
+          "arm": "premerge",
+          "view": "000065.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.006149984963571255,
+          "gt_psnr_float64": 22.111259460532033,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0019921062540744347,
+          "native_Torch_SSIM_descriptive": 0.8450573086738586,
+          "SSIM_source": "new_same_native_Torch",
+          "RGB_array_sha256": "f09a2ed1f6f5b72cfb1763adbca28b1831b266c460b8e9ae2529953832317614"
+        },
+        {
+          "arm": "premerge",
+          "view": "000225.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.006070046528716831,
+          "gt_psnr_float64": 22.16807979915266,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0018275717937225268,
+          "native_Torch_SSIM_descriptive": 0.8491060733795166,
+          "SSIM_source": "new_same_native_Torch",
+          "RGB_array_sha256": "c13007631e333c8d80b1353d3dbf9716c68e6d71f108e7b790abd2f45b162550"
+        }
+      ],
+      "own_GT_tail4_mean_MSE": 0.006634525600358473,
+      "own_GT_worst": {
+        "arm": "premerge",
+        "view": "000217.jpg",
+        "split": "test",
+        "gt_mse_float64": 0.008083286412066812,
+        "gt_psnr_float64": 20.92412032734734,
+        "zero_MSE_infinite_PSNR": false,
+        "teacher_fidelity_mse_float64": 0.0017035913995334083,
+        "native_Torch_SSIM_descriptive": 0.8039097785949707,
+        "SSIM_source": "new_same_native_Torch",
+        "RGB_array_sha256": "869c837b07635e99c5cebc88b473df64c80b1bd853ed1dc3e0d25f4acf5ab58e"
+      },
+      "mean_teacher_fidelity_MSE": 0.0014917653703428544,
+      "own_teacher_fidelity_tail4": [
+        {
+          "arm": "premerge",
+          "view": "000033.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.0048028255615277645,
+          "gt_psnr_float64": 23.185031866364206,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.002116974933401468,
+          "native_Torch_SSIM_descriptive": 0.8460559248924255,
+          "SSIM_source": "new_same_native_Torch",
+          "RGB_array_sha256": "2af73148524d77077df6f8562cd1c2ce3517e62f3b867c00267516dcdd035e0f"
+        },
+        {
+          "arm": "premerge",
+          "view": "000233.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.005819437665067487,
+          "gt_psnr_float64": 22.351189793977554,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0020632696856164997,
+          "native_Torch_SSIM_descriptive": 0.8493841290473938,
+          "SSIM_source": "new_same_native_Torch",
+          "RGB_array_sha256": "1adeaba53302c444705fa715861deca7aad5e10c4641f127090eaefb97771212"
+        },
+        {
+          "arm": "premerge",
+          "view": "000065.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.006149984963571255,
+          "gt_psnr_float64": 22.111259460532033,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0019921062540744347,
+          "native_Torch_SSIM_descriptive": 0.8450573086738586,
+          "SSIM_source": "new_same_native_Torch",
+          "RGB_array_sha256": "f09a2ed1f6f5b72cfb1763adbca28b1831b266c460b8e9ae2529953832317614"
+        },
+        {
+          "arm": "premerge",
+          "view": "000225.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.006070046528716831,
+          "gt_psnr_float64": 22.16807979915266,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0018275717937225268,
+          "native_Torch_SSIM_descriptive": 0.8491060733795166,
+          "SSIM_source": "new_same_native_Torch",
+          "RGB_array_sha256": "c13007631e333c8d80b1353d3dbf9716c68e6d71f108e7b790abd2f45b162550"
+        }
+      ],
+      "train_000016": {
+        "arm": "premerge",
+        "view": "000016.jpg",
+        "split": "train",
+        "gt_mse_float64": 0.0038554652991603018,
+        "gt_psnr_float64": 24.139232013579324,
+        "zero_MSE_infinite_PSNR": false,
+        "teacher_fidelity_mse_float64": 0.0017465803738248335,
+        "native_Torch_SSIM_descriptive": 0.8808965682983398,
+        "SSIM_source": "new_same_native_Torch",
+        "RGB_array_sha256": "17f81400073a261651394644b748bf0ce100a78e9be3e40f111a133782bb1dca"
+      }
+    },
+    "final": {
+      "mean_GT_MSE_float64": 0.0045066047488757175,
+      "mean_GT_PSNR": 23.602472193719876,
+      "zero_GT_MSE_views": 0,
+      "PSNR_from_mean_GT_MSE": 23.461505299941496,
+      "native_Torch_SSIM_descriptive_mean": 0.8572462890297174,
+      "own_GT_tail4": [
+        {
+          "arm": "final",
+          "view": "000217.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.008088579054795798,
+          "gt_psnr_float64": 20.92127765515388,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.001707257798876003,
+          "native_Torch_SSIM_descriptive": 0.8036895990371704,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "c420560d0daadf4ff68dd5025d7c565cd893e024111858b862b55a36e9f1cb8c"
+        },
+        {
+          "arm": "final",
+          "view": "000121.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.006233656395521655,
+          "gt_psnr_float64": 22.052571400831678,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.0017111340076183756,
+          "native_Torch_SSIM_descriptive": 0.8233957886695862,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "2abc9eb9c753f50916a15a8d7497e57dfd1d411e87f5ad02ddb91601d04846e3"
+        },
+        {
+          "arm": "final",
+          "view": "000065.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.006150010364211076,
+          "gt_psnr_float64": 22.11124152335821,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.001994928427950918,
+          "native_Torch_SSIM_descriptive": 0.8448768854141235,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "9169e713063c4105b09dc64c3c572db34cb65822feb1cc1fdbd028ca3f131af3"
+        },
+        {
+          "arm": "final",
+          "view": "000225.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.006070746443641555,
+          "gt_psnr_float64": 22.167579058895186,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.001827919425428592,
+          "native_Torch_SSIM_descriptive": 0.8489170074462891,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "f2335a32992bd881f0160afce8297c5c7213390abbb6b83156e5a903d71eacdc"
+        }
+      ],
+      "own_GT_tail4_mean_MSE": 0.006635748064542521,
+      "own_GT_worst": {
+        "arm": "final",
+        "view": "000217.jpg",
+        "split": "test",
+        "gt_mse_float64": 0.008088579054795798,
+        "gt_psnr_float64": 20.92127765515388,
+        "zero_MSE_infinite_PSNR": false,
+        "teacher_fidelity_mse_float64": 0.001707257798876003,
+        "native_Torch_SSIM_descriptive": 0.8036895990371704,
+        "SSIM_source": "original_native_Torch_CSV",
+        "RGB_array_sha256": "c420560d0daadf4ff68dd5025d7c565cd893e024111858b862b55a36e9f1cb8c"
+      },
+      "mean_teacher_fidelity_MSE": 0.001493795445610257,
+      "own_teacher_fidelity_tail4": [
+        {
+          "arm": "final",
+          "view": "000033.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.004804626776757498,
+          "gt_psnr_float64": 23.18340342665592,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.002116752054803314,
+          "native_Torch_SSIM_descriptive": 0.8459489941596985,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "c9c14ec28bb25f82666cd41d68bdba53109985313a6131c75f7cbdb461827217"
+        },
+        {
+          "arm": "final",
+          "view": "000233.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.005820509381839639,
+          "gt_psnr_float64": 22.35039006408231,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.002062524768839373,
+          "native_Torch_SSIM_descriptive": 0.8492157459259033,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "5b087fdc912a7737659d51f25d67c7623bd00f206212d575d9977642507827eb"
+        },
+        {
+          "arm": "final",
+          "view": "000065.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.006150010364211076,
+          "gt_psnr_float64": 22.11124152335821,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.001994928427950918,
+          "native_Torch_SSIM_descriptive": 0.8448768854141235,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "9169e713063c4105b09dc64c3c572db34cb65822feb1cc1fdbd028ca3f131af3"
+        },
+        {
+          "arm": "final",
+          "view": "000225.jpg",
+          "split": "test",
+          "gt_mse_float64": 0.006070746443641555,
+          "gt_psnr_float64": 22.167579058895186,
+          "zero_MSE_infinite_PSNR": false,
+          "teacher_fidelity_mse_float64": 0.001827919425428592,
+          "native_Torch_SSIM_descriptive": 0.8489170074462891,
+          "SSIM_source": "original_native_Torch_CSV",
+          "RGB_array_sha256": "f2335a32992bd881f0160afce8297c5c7213390abbb6b83156e5a903d71eacdc"
+        }
+      ],
+      "train_000016": {
+        "arm": "final",
+        "view": "000016.jpg",
+        "split": "train",
+        "gt_mse_float64": 0.003862777071841911,
+        "gt_psnr_float64": 24.131003550865017,
+        "zero_MSE_infinite_PSNR": false,
+        "teacher_fidelity_mse_float64": 0.0017528158971658941,
+        "native_Torch_SSIM_descriptive": 0.8806192278862,
+        "SSIM_source": "original_native_Torch_CSV",
+        "RGB_array_sha256": "529441a95b722d5c5d0d6d40a0266e896da6bfb63c1215e98da2fb4b04e5ffb5"
+      }
+    }
+  },
+  "test32_mean_signed_decomposition": {
+    "view": "TEST32_MEAN",
+    "split": "test32_mean",
+    "E_identity": 0.002947339538209086,
+    "E_premerge": 0.0045049916437525,
+    "E_final": 0.0045066047488757175,
+    "signed_prune_delta": 0.001557652105543414,
+    "signed_merge_delta": 1.6131051232175578e-06,
+    "final_minus_identity": 0.0015592652106666315,
+    "numerical_identity_residual": 0.0
+  },
+  "camera_image_hashes_after": {
+    "000001.jpg": "debbf010cd1e51d46f3670eb715d9ca39953b8a19a8af5ed884c145a3c9eac4a",
+    "000009.jpg": "f4903f348f111237d6b4b037262a0901b7a0b1d996ff466aca5e35b8ce085a83",
+    "000017.jpg": "9515fbf9a7dd9c3feb224f1d629b1f6059c01d937619d1cdc7331cb480918e2f",
+    "000025.jpg": "b14404fd572007cb697c48ecab9719119d842465ffdc43bbaafab7ded1735ffd",
+    "000033.jpg": "69fd6e361834386d2b52702bdc3eadceaa1149092b71afd375382292ae56ff45",
+    "000041.jpg": "8e790ad84790e18667142a910a92976af5716b566decb997b368c05c4decb7ee",
+    "000049.jpg": "3f0ed2b505695633054792ae352d217458d88b46ac9176320ee8e8f88ae03e2d",
+    "000057.jpg": "84e9599302a300712cf5cdf5cf6e9169b761fef520d7e1634aa359ab27f734e2",
+    "000065.jpg": "8453476d0b17b0ad256584c44dc7513318f7cec1a82eb2c91e2555fc054d9b2d",
+    "000073.jpg": "8be69b35fa382ac059d2475e9715631d5981d41c39723667188536ae82f916b9",
+    "000081.jpg": "87cd6fccce907197e44958ee50792a70706b15938e8f21cf1091a35ed9b8dabf",
+    "000089.jpg": "9076ae961213ad8dbf8f8af13508b8bb4e71c72bb52458188e1c5ddadba415e0",
+    "000097.jpg": "dd677d2717de400e6f30dd9298049c71b965caaa8610595d27951d0cd4b6785d",
+    "000105.jpg": "cbe99c667a06c229de3c7074115b02489222d0a46168d83c12dab89d99ed7047",
+    "000113.jpg": "269917ea34a3318ef239f6458611440cd4c3a88123ec7a5eb7ea35c13cf26e06",
+    "000121.jpg": "76ad66917423fb51441c70677c51f79732486ef0b8d3ba6dad028724f6b25f50",
+    "000129.jpg": "c6ec1460ca81b50e77113077f80cea7b7be47f60a7b52ffd89e39fafbacef224",
+    "000137.jpg": "d0314e7f07c295b924439050f21f21f0b4c492f26eef67577b8c6f85079caee4",
+    "000145.jpg": "9821e4cae782dd447572c5bbba48786180680ac0d2029d97836db1d7d141a968",
+    "000153.jpg": "3ddb96c9e606e7001675a85ff5cfd4ef9ad41badce5efdb5f420983a859b05c0",
+    "000161.jpg": "cc3699ed0d5a63379b85cd5d3b20694de4d616971609eacf357a7d0699125d87",
+    "000169.jpg": "070aaf5cf36e65b86baf700a26fcb25bbb636e72c5ff5e1f1547cfcdc0cf026a",
+    "000177.jpg": "e6c255320b92b2a4c93d0922253aa20b2d5fe50b46c1bb29fd7700e73af1d6e8",
+    "000185.jpg": "481d627713c32e8ceb577182af5ee8d82461e91771f8464c72394048f10ffdae",
+    "000193.jpg": "91eb68ee2ad727f0be0cbd25c25add3e9109ad2c6efd2114eeebf894ed5e55e2",
+    "000201.jpg": "519821fb15f3f6ef5045cf81edc673abf25a117ff2139a174f01da0ca8c24d3a",
+    "000209.jpg": "82f7372591785c2a502025e39b956af8e9c7d4406b8fcaed807f34fdad51d7d0",
+    "000217.jpg": "8554cd605e1d9c5ff3ff15d18e62139e0695cdc61bf01123af562e61a3ca565d",
+    "000225.jpg": "8cc181234cef8843141953137ae96abf57aaab8821cb02e25d13141db3fa61db",
+    "000233.jpg": "2c69929fe9628a0fdf66a4da4f0a68165074934a16609fa54f224c414eb95b0e",
+    "000241.jpg": "29ff652b9a0d9b4a33ce4ca7a427df7d24f16e9a9aa7f0c6a6b4e61560e228cb",
+    "000249.jpg": "67bce008e97faaccc5738f41687822bf30577f6ca3179c94d1a791cbaaec7023",
+    "000016.jpg": "436af970073bbaf0acb94945478d4b7461fc40bd7a4474ab5570719c5276ea7d"
+  },
+  "GPU_peak_allocated_bytes": 1194421760,
+  "GPU_peak_reserved_bytes": 1614807040,
+  "integrity_errors": [],
+  "internal_wall_seconds_before_final_save": 95.64133060300003,
+  "authoritative_shared_budget_remaining": "Use launcher WATCHDOG.remaining_shared_seconds after process exit; not this internal timer"
+}

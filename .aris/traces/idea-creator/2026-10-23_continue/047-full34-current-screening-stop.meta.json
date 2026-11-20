@@ -1,0 +1,14 @@
+{
+  "call_number": 47,
+  "purpose": "full34-current-screening-stop",
+  "timestamp": "2026-10-22T20:05:22.070Z",
+  "agent_id": "01a1650c-606d-7650-b93f-2b88f877c49e",
+  "agent_path": "/root/artifact_full34_jury",
+  "model": "gpt-6-astra",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "response_recovered_verbatim": true,
+  "response_session_log": "/mnt/c/Users/Administrator/.codex/sessions/2026/10/23/rollout-2026-10-23T03-17-52-01a1650c-606d-7650-b93f-2b88f877c49e.jsonl"
+}

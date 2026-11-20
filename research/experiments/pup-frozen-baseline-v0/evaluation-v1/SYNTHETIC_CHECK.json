@@ -1,0 +1,25 @@
+{
+  "status": "SYNTHETIC_ARRAYS_ONLY_PASS",
+  "scientific_inputs_read": false,
+  "Scene_constructed": false,
+  "torch_imported": false,
+  "native_forward_calls": 0,
+  "identical": {
+    "gt_mse": 0.0,
+    "gt_psnr": null,
+    "zero_MSE_infinite_PSNR": true,
+    "gt_ssim": 1.0,
+    "teacher_mse": 0.0,
+    "teacher_max_abs_rgb": 0.0
+  },
+  "changed": {
+    "gt_mse": 0.009326800382956316,
+    "gt_psnr": 20.302673181345703,
+    "zero_MSE_infinite_PSNR": false,
+    "gt_ssim": 0.8219559015589298,
+    "teacher_mse": 0.009326800382956316,
+    "teacher_max_abs_rgb": 0.10000002384185791
+  },
+  "evaluator_sha256": "5ac3ca535bb61bf4a396f08f06c48d37ab69091648104818b40ec394310e327a",
+  "SSIM_definition": "CPU_float64_SciPy_Gaussian11_sigma1.5_constant0_population_CHWmean_C1.01sq_C2.03sq"
+}

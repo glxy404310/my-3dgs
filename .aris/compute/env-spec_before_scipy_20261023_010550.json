@@ -1,0 +1,47 @@
+{
+  "base": "Ubuntu 22.04 + CUDA 12.8 + Python 3.10.12",
+  "system_pkgs": [
+    "gcc==11.4.0",
+    "g++==11.4.0",
+    "git",
+    "screen==4.09.00"
+  ],
+  "pip_phases": [
+    [
+      "torch==2.7.1+cu128",
+      "torchvision==0.22.1"
+    ],
+    [
+      "diff-gaussian-rasterization@9c5c2028f6fbee2be239bc4c9421ff894fe4fbe0",
+      "simple-knn@86710c2d4b46680c02301765dd79e465819c8f19",
+      "fused-ssim@1272e21a282342e89537159e4bad508b19b34157"
+    ]
+  ],
+  "env": {
+    "CUDA_HOME": "/usr/local/cuda-12.8",
+    "TORCH_CUDA_ARCH_LIST": "12.0",
+    "MAX_JOBS": "2"
+  },
+  "repository": {
+    "path": "/home/administrator/projects/gaussian-splatting",
+    "commit": "54c035f7834b564019656c3e3fcc3646292f727d"
+  },
+  "venv": "/home/administrator/venvs/3dgs",
+  "smoke": {
+    "import_names": [
+      "torch",
+      "diff_gaussian_rasterization",
+      "simple_knn",
+      "fused_ssim"
+    ],
+    "gpu_tests": [
+      {
+        "cmd": "/home/administrator/venvs/3dgs/bin/python -c 'import torch; torch.manual_seed(0); x=torch.randn(8,8,device=\"cuda\"); y=x@x; print(\"WITNESS\", tuple(y.shape), torch.cuda.get_device_name(0), float(y.sum()))'",
+        "expect": "^WITNESS (8, 8) NVIDIA GeForce RTX 5070"
+      }
+    ],
+    "cli_checks": [
+      "nvidia-smi"
+    ]
+  }
+}

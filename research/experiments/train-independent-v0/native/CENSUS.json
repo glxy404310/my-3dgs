@@ -1,0 +1,1362 @@
+[
+  {
+    "iteration": 600,
+    "n_before": 182686,
+    "cloned": 882,
+    "split_parents": 296,
+    "pruned": 31,
+    "groups": [
+      {
+        "code": 0,
+        "present": 182390,
+        "pruned": 31,
+        "opacity": 31,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 882,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 592,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 183833
+  },
+  {
+    "iteration": 700,
+    "n_before": 183833,
+    "cloned": 5497,
+    "split_parents": 689,
+    "pruned": 25,
+    "groups": [
+      {
+        "code": 0,
+        "present": 183144,
+        "pruned": 25,
+        "opacity": 25,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 5497,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 1378,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 189994
+  },
+  {
+    "iteration": 800,
+    "n_before": 189994,
+    "cloned": 6468,
+    "split_parents": 985,
+    "pruned": 27,
+    "groups": [
+      {
+        "code": 0,
+        "present": 189009,
+        "pruned": 27,
+        "opacity": 27,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 6468,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 1970,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 197420
+  },
+  {
+    "iteration": 900,
+    "n_before": 197420,
+    "cloned": 7318,
+    "split_parents": 1022,
+    "pruned": 40,
+    "groups": [
+      {
+        "code": 0,
+        "present": 196398,
+        "pruned": 40,
+        "opacity": 40,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 7318,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 2044,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 205720
+  },
+  {
+    "iteration": 1000,
+    "n_before": 205720,
+    "cloned": 7476,
+    "split_parents": 1310,
+    "pruned": 46,
+    "groups": [
+      {
+        "code": 0,
+        "present": 204410,
+        "pruned": 46,
+        "opacity": 46,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 7476,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 2620,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 214460
+  },
+  {
+    "iteration": 1100,
+    "n_before": 214460,
+    "cloned": 8075,
+    "split_parents": 1614,
+    "pruned": 69,
+    "groups": [
+      {
+        "code": 0,
+        "present": 212846,
+        "pruned": 69,
+        "opacity": 69,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 8075,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 3228,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 224080
+  },
+  {
+    "iteration": 1200,
+    "n_before": 224080,
+    "cloned": 8890,
+    "split_parents": 1914,
+    "pruned": 36,
+    "groups": [
+      {
+        "code": 0,
+        "present": 222166,
+        "pruned": 36,
+        "opacity": 36,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 8890,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 3828,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 234848
+  },
+  {
+    "iteration": 1300,
+    "n_before": 234848,
+    "cloned": 9105,
+    "split_parents": 2201,
+    "pruned": 62,
+    "groups": [
+      {
+        "code": 0,
+        "present": 232647,
+        "pruned": 62,
+        "opacity": 62,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 9105,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 4402,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 246092
+  },
+  {
+    "iteration": 1400,
+    "n_before": 246092,
+    "cloned": 9431,
+    "split_parents": 2030,
+    "pruned": 51,
+    "groups": [
+      {
+        "code": 0,
+        "present": 244062,
+        "pruned": 51,
+        "opacity": 51,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 9431,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 4060,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 257502
+  },
+  {
+    "iteration": 1500,
+    "n_before": 257502,
+    "cloned": 9701,
+    "split_parents": 2538,
+    "pruned": 50,
+    "groups": [
+      {
+        "code": 0,
+        "present": 254964,
+        "pruned": 50,
+        "opacity": 50,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 9701,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 5076,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 269691
+  },
+  {
+    "iteration": 1600,
+    "n_before": 269691,
+    "cloned": 10519,
+    "split_parents": 3145,
+    "pruned": 44,
+    "groups": [
+      {
+        "code": 0,
+        "present": 266546,
+        "pruned": 44,
+        "opacity": 44,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 10519,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 6290,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 283311
+  },
+  {
+    "iteration": 1700,
+    "n_before": 283311,
+    "cloned": 10696,
+    "split_parents": 2515,
+    "pruned": 49,
+    "groups": [
+      {
+        "code": 0,
+        "present": 280796,
+        "pruned": 49,
+        "opacity": 49,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 10696,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 5030,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 296473
+  },
+  {
+    "iteration": 1800,
+    "n_before": 296473,
+    "cloned": 10396,
+    "split_parents": 3187,
+    "pruned": 38,
+    "groups": [
+      {
+        "code": 0,
+        "present": 293286,
+        "pruned": 38,
+        "opacity": 38,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 10396,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 6374,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 310018
+  },
+  {
+    "iteration": 1900,
+    "n_before": 310018,
+    "cloned": 11854,
+    "split_parents": 2828,
+    "pruned": 57,
+    "groups": [
+      {
+        "code": 0,
+        "present": 307190,
+        "pruned": 57,
+        "opacity": 57,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 11854,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 5656,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 324643
+  },
+  {
+    "iteration": 2000,
+    "n_before": 324643,
+    "cloned": 10584,
+    "split_parents": 2915,
+    "pruned": 57,
+    "groups": [
+      {
+        "code": 0,
+        "present": 321728,
+        "pruned": 57,
+        "opacity": 57,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 10584,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 5830,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 338085
+  },
+  {
+    "iteration": 2100,
+    "n_before": 338085,
+    "cloned": 10805,
+    "split_parents": 3583,
+    "pruned": 57,
+    "groups": [
+      {
+        "code": 0,
+        "present": 334502,
+        "pruned": 57,
+        "opacity": 57,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 10805,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 7166,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 352416
+  },
+  {
+    "iteration": 2200,
+    "n_before": 352416,
+    "cloned": 10491,
+    "split_parents": 2562,
+    "pruned": 64,
+    "groups": [
+      {
+        "code": 0,
+        "present": 349854,
+        "pruned": 64,
+        "opacity": 64,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 10491,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 5124,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 365405
+  },
+  {
+    "iteration": 2300,
+    "n_before": 365405,
+    "cloned": 13947,
+    "split_parents": 2966,
+    "pruned": 60,
+    "groups": [
+      {
+        "code": 0,
+        "present": 362439,
+        "pruned": 60,
+        "opacity": 60,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 13947,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 5932,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 382258
+  },
+  {
+    "iteration": 2400,
+    "n_before": 382258,
+    "cloned": 11217,
+    "split_parents": 3321,
+    "pruned": 71,
+    "groups": [
+      {
+        "code": 0,
+        "present": 378937,
+        "pruned": 71,
+        "opacity": 71,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 11217,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 6642,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 396725
+  },
+  {
+    "iteration": 2500,
+    "n_before": 396725,
+    "cloned": 11917,
+    "split_parents": 2802,
+    "pruned": 82,
+    "groups": [
+      {
+        "code": 0,
+        "present": 393923,
+        "pruned": 82,
+        "opacity": 82,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 11917,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 5604,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 411362
+  },
+  {
+    "iteration": 2600,
+    "n_before": 411362,
+    "cloned": 12593,
+    "split_parents": 2327,
+    "pruned": 81,
+    "groups": [
+      {
+        "code": 0,
+        "present": 409035,
+        "pruned": 81,
+        "opacity": 81,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 12593,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 4654,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 426201
+  },
+  {
+    "iteration": 2700,
+    "n_before": 426201,
+    "cloned": 12915,
+    "split_parents": 3861,
+    "pruned": 94,
+    "groups": [
+      {
+        "code": 0,
+        "present": 422340,
+        "pruned": 94,
+        "opacity": 94,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 12915,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 7722,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 442883
+  },
+  {
+    "iteration": 2800,
+    "n_before": 442883,
+    "cloned": 12038,
+    "split_parents": 2407,
+    "pruned": 89,
+    "groups": [
+      {
+        "code": 0,
+        "present": 440476,
+        "pruned": 89,
+        "opacity": 89,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 12038,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 4814,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 457239
+  },
+  {
+    "iteration": 2900,
+    "n_before": 457239,
+    "cloned": 11831,
+    "split_parents": 1861,
+    "pruned": 110,
+    "groups": [
+      {
+        "code": 0,
+        "present": 455378,
+        "pruned": 110,
+        "opacity": 110,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 11831,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 3722,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 470821
+  },
+  {
+    "iteration": 3000,
+    "n_before": 470821,
+    "cloned": 12151,
+    "split_parents": 2039,
+    "pruned": 100,
+    "groups": [
+      {
+        "code": 0,
+        "present": 468782,
+        "pruned": 100,
+        "opacity": 100,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 12151,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 4078,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 484911
+  },
+  {
+    "iteration": 3100,
+    "n_before": 484911,
+    "cloned": 1900,
+    "split_parents": 488,
+    "pruned": 93248,
+    "groups": [
+      {
+        "code": 0,
+        "present": 484423,
+        "pruned": 92950,
+        "opacity": 86986,
+        "world": 6514,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 1900,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 976,
+        "pruned": 298,
+        "opacity": 0,
+        "world": 298,
+        "screen": 0
+      }
+    ],
+    "n_after": 394051
+  },
+  {
+    "iteration": 3200,
+    "n_before": 394051,
+    "cloned": 8810,
+    "split_parents": 2500,
+    "pruned": 5703,
+    "groups": [
+      {
+        "code": 0,
+        "present": 391551,
+        "pruned": 5649,
+        "opacity": 5176,
+        "world": 473,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 8810,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 5000,
+        "pruned": 54,
+        "opacity": 0,
+        "world": 54,
+        "screen": 0
+      }
+    ],
+    "n_after": 399658
+  },
+  {
+    "iteration": 3300,
+    "n_before": 399658,
+    "cloned": 9976,
+    "split_parents": 2647,
+    "pruned": 2539,
+    "groups": [
+      {
+        "code": 0,
+        "present": 397011,
+        "pruned": 2533,
+        "opacity": 2257,
+        "world": 276,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 9976,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 5294,
+        "pruned": 6,
+        "opacity": 0,
+        "world": 6,
+        "screen": 0
+      }
+    ],
+    "n_after": 409742
+  },
+  {
+    "iteration": 3400,
+    "n_before": 409742,
+    "cloned": 11059,
+    "split_parents": 3133,
+    "pruned": 1772,
+    "groups": [
+      {
+        "code": 0,
+        "present": 406609,
+        "pruned": 1772,
+        "opacity": 1550,
+        "world": 222,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 11059,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 6266,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 422162
+  },
+  {
+    "iteration": 3500,
+    "n_before": 422162,
+    "cloned": 11350,
+    "split_parents": 3311,
+    "pruned": 1404,
+    "groups": [
+      {
+        "code": 0,
+        "present": 418851,
+        "pruned": 1400,
+        "opacity": 1205,
+        "world": 195,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 11350,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 6622,
+        "pruned": 4,
+        "opacity": 0,
+        "world": 4,
+        "screen": 0
+      }
+    ],
+    "n_after": 435419
+  },
+  {
+    "iteration": 3600,
+    "n_before": 435419,
+    "cloned": 12062,
+    "split_parents": 3141,
+    "pruned": 1294,
+    "groups": [
+      {
+        "code": 0,
+        "present": 432278,
+        "pruned": 1292,
+        "opacity": 1103,
+        "world": 189,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 12062,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 6282,
+        "pruned": 2,
+        "opacity": 0,
+        "world": 2,
+        "screen": 0
+      }
+    ],
+    "n_after": 449328
+  },
+  {
+    "iteration": 3700,
+    "n_before": 449328,
+    "cloned": 11574,
+    "split_parents": 2505,
+    "pruned": 1118,
+    "groups": [
+      {
+        "code": 0,
+        "present": 446823,
+        "pruned": 1118,
+        "opacity": 920,
+        "world": 198,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 11574,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 5010,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 462289
+  },
+  {
+    "iteration": 3800,
+    "n_before": 462289,
+    "cloned": 12784,
+    "split_parents": 3310,
+    "pruned": 903,
+    "groups": [
+      {
+        "code": 0,
+        "present": 458979,
+        "pruned": 903,
+        "opacity": 751,
+        "world": 152,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 12784,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 6620,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 477480
+  },
+  {
+    "iteration": 3900,
+    "n_before": 477480,
+    "cloned": 12353,
+    "split_parents": 3116,
+    "pruned": 860,
+    "groups": [
+      {
+        "code": 0,
+        "present": 474364,
+        "pruned": 858,
+        "opacity": 718,
+        "world": 140,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 12353,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 6232,
+        "pruned": 2,
+        "opacity": 0,
+        "world": 2,
+        "screen": 0
+      }
+    ],
+    "n_after": 492089
+  },
+  {
+    "iteration": 4000,
+    "n_before": 492089,
+    "cloned": 12804,
+    "split_parents": 1894,
+    "pruned": 868,
+    "groups": [
+      {
+        "code": 0,
+        "present": 490195,
+        "pruned": 868,
+        "opacity": 717,
+        "world": 151,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 12804,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 3788,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 505919
+  },
+  {
+    "iteration": 4100,
+    "n_before": 505919,
+    "cloned": 12299,
+    "split_parents": 2956,
+    "pruned": 729,
+    "groups": [
+      {
+        "code": 0,
+        "present": 502963,
+        "pruned": 729,
+        "opacity": 582,
+        "world": 147,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 12299,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 5912,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 520445
+  },
+  {
+    "iteration": 4200,
+    "n_before": 520445,
+    "cloned": 12180,
+    "split_parents": 2067,
+    "pruned": 733,
+    "groups": [
+      {
+        "code": 0,
+        "present": 518378,
+        "pruned": 733,
+        "opacity": 609,
+        "world": 124,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 12180,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 4134,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 533959
+  },
+  {
+    "iteration": 4300,
+    "n_before": 533959,
+    "cloned": 12128,
+    "split_parents": 1495,
+    "pruned": 649,
+    "groups": [
+      {
+        "code": 0,
+        "present": 532464,
+        "pruned": 649,
+        "opacity": 545,
+        "world": 104,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 12128,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 2990,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 546933
+  },
+  {
+    "iteration": 4400,
+    "n_before": 546933,
+    "cloned": 13267,
+    "split_parents": 2586,
+    "pruned": 621,
+    "groups": [
+      {
+        "code": 0,
+        "present": 544347,
+        "pruned": 619,
+        "opacity": 517,
+        "world": 102,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 13267,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 5172,
+        "pruned": 2,
+        "opacity": 0,
+        "world": 2,
+        "screen": 0
+      }
+    ],
+    "n_after": 562165
+  },
+  {
+    "iteration": 4500,
+    "n_before": 562165,
+    "cloned": 11856,
+    "split_parents": 2437,
+    "pruned": 677,
+    "groups": [
+      {
+        "code": 0,
+        "present": 559728,
+        "pruned": 677,
+        "opacity": 539,
+        "world": 138,
+        "screen": 0
+      },
+      {
+        "code": 1,
+        "present": 11856,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      },
+      {
+        "code": 2,
+        "present": 4874,
+        "pruned": 0,
+        "opacity": 0,
+        "world": 0,
+        "screen": 0
+      }
+    ],
+    "n_after": 575781
+  }
+]

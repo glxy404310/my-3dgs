@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-22",
+  "phenomenon_confirmed": true,
+  "numeric_gate": true,
+  "visual_degradation_obvious": true,
+  "requires_new_pose_search_supported": false,
+  "training_decision": "DO_NOT_START_TRAINING_ON_CURRENT_EVIDENCE",
+  "current_problem": "severe calibration-outside degradation for this fixed unrecovered contribution-pruned carrier",
+  "reasons": [
+    "Existing real training photos reveal equally severe or worse degradation",
+    "No virtual sample exceeds its endpoints' maximum by25%",
+    "Only a simplified50% pruning carrier, no complete mature compression baseline",
+    "No repair/active-vs-simple treatment tested"
+  ],
+  "original_results_preserved": true,
+  "parameter_updates": 0
+}

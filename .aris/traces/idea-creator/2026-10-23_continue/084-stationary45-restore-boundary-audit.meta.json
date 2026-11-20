@@ -1,0 +1,7 @@
+{
+  "agent_path": "/root/stationary45_restore_boundary_audit",
+  "status": "COMPLETE",
+  "public_final_count": 2,
+  "captured_at": "2026-10-23T08:23:28.287047+08:00",
+  "scope": "public final messages and tool arguments only; no hidden reasoning; same-family provisional"
+}

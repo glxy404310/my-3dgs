@@ -1,0 +1,8 @@
+{
+  "call_number": 52,
+  "purpose": "nanogs-prelaunch-retired-agent-dispatch",
+  "timestamp": "2026-10-23T04:29:03.844396+08:00",
+  "tool": "collaboration.followup_task",
+  "agent_path": "/root/shared_coord_failure_disposition",
+  "prompt": "请对**已有方法强baseline复现**做短独立prelaunch审阅，不再找newidea/任意capacity关。root已锁 research/experiments/nanogs-frozen-baseline-v0/CONTRACT.md SHA41140ba8c045b81c1ce54512bbc0bf2f671d35125578e215633c099de9a88062。NanoGS官方Pythonrepo saliteta/NanoGS commitcc64a752b5def8d17f9992216bfbb9e533f8364f；默认ratio.5/k16/mergecap.5/opacity.1/lamgeo1/lamsh1；实际src/nanogs模块，README旧root脚本路径已过时，别按它误launch。backend在sourcepin+runner准备中，会落新third_party/NanoGS/<commit>及newexperiment，仅CPU1800s/10GiB，不改算法、参数或原环境，source模型只读，单独输出PLY。官方代码按opacityprune→KNNunion16→MCcost(seed0,nmc1 default)→stable greedy disjointmerge+momentmatching；实际也按mass平均SH，非SH不变。完整32test原native比较teacher/all21950%/NanoGS50%，预定016/017/105图，非未见测试非新方法PASS，no training。请先读合同、能看到source/runner时静态检查最容易毁比较或误launch的点（尤其官方格式mapping/clamp/default/memory/while无progress/timing/pointcount），无需新科学run；source需可从primaryGitHubfetch但无需重复遍历论文。只提必须修的真实问题；资源太大未知可保留，不能为过run改作者参数。最终完整trace会保存。"
+}

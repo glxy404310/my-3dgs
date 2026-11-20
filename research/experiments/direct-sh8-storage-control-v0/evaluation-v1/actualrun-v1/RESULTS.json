@@ -1,0 +1,2195 @@
+{
+  "status": "SH8_NATIVE_STORAGE_CONTROL_EVALUATED_AUDIT_PENDING",
+  "integrity_complete": true,
+  "forward_calls": 34,
+  "teacher_parity_forward_calls": 1,
+  "codec_forward_calls": 33,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "optimizer_constructed": false,
+  "Scene_constructed": false,
+  "old_model_comparison_rerenders": 0,
+  "quality_acceptance_gate": null,
+  "independent_audit_status": "NOT_RUN",
+  "old_formal_Nano_SSIM_audit": "FAIL_UNCHANGED",
+  "SSIM_definition": "CPU_float64_SciPy_Gaussian11_sigma1.5_constant0_population_CHWmean_C1.01sq_C2.03sq",
+  "teacher_before": {
+    "sha256": "b6b71329ebaec4c88887bd2320a7b67fa9189c20af3db54bcdb7824164a3a8f0",
+    "tensor_ids": {
+      "_xyz": 130118549991920,
+      "_features_dc": 130120916109568,
+      "_features_rest": 130118548285184,
+      "_scaling": 130109662046752,
+      "_rotation": 130109662046832,
+      "_opacity": 130109662048512
+    },
+    "point_count": 2050770,
+    "active_sh_degree": 3,
+    "max_sh_degree": 3
+  },
+  "teacher_fields_before": {
+    "_xyz": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        3
+      ],
+      "sha256": "f32a30762f19d82baab55e14a30a6972477e46feb0df3c48e2f712a7d2964542"
+    },
+    "_features_dc": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        1,
+        3
+      ],
+      "sha256": "be78b1771206fed18bb7b729816727c05862f39119d6c9ff87e4572f726f529c"
+    },
+    "_features_rest": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        15,
+        3
+      ],
+      "sha256": "79873e64124948908f20bc4001762171ee8a01ab98cac07dc541cd7b958c3879"
+    },
+    "_scaling": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        3
+      ],
+      "sha256": "188eb48efb27778a429764d12786ed8b4a6154e8c7b72c8d8ff3583b155a7363"
+    },
+    "_rotation": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        4
+      ],
+      "sha256": "2e4e4ce94a9c2f99404cefdac9a9134d2a397b90d0207c984cefd09e155d094c"
+    },
+    "_opacity": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        1
+      ],
+      "sha256": "68357365792aedbc526f399fa2d76320d91471e4450b827f0661160a5cc29189"
+    }
+  },
+  "teacher_parity_max_abs_rgb": 0.0,
+  "teacher_after": {
+    "sha256": "b6b71329ebaec4c88887bd2320a7b67fa9189c20af3db54bcdb7824164a3a8f0",
+    "tensor_ids": {
+      "_xyz": 130118549991920,
+      "_features_dc": 130120916109568,
+      "_features_rest": 130118548285184,
+      "_scaling": 130109662046752,
+      "_rotation": 130109662046832,
+      "_opacity": 130109662048512
+    },
+    "point_count": 2050770,
+    "active_sh_degree": 3,
+    "max_sh_degree": 3
+  },
+  "teacher_fields_after": {
+    "_xyz": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        3
+      ],
+      "sha256": "f32a30762f19d82baab55e14a30a6972477e46feb0df3c48e2f712a7d2964542"
+    },
+    "_features_dc": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        1,
+        3
+      ],
+      "sha256": "be78b1771206fed18bb7b729816727c05862f39119d6c9ff87e4572f726f529c"
+    },
+    "_features_rest": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        15,
+        3
+      ],
+      "sha256": "79873e64124948908f20bc4001762171ee8a01ab98cac07dc541cd7b958c3879"
+    },
+    "_scaling": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        3
+      ],
+      "sha256": "188eb48efb27778a429764d12786ed8b4a6154e8c7b72c8d8ff3583b155a7363"
+    },
+    "_rotation": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        4
+      ],
+      "sha256": "2e4e4ce94a9c2f99404cefdac9a9134d2a397b90d0207c984cefd09e155d094c"
+    },
+    "_opacity": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        1
+      ],
+      "sha256": "68357365792aedbc526f399fa2d76320d91471e4450b827f0661160a5cc29189"
+    }
+  },
+  "gpu_peak_allocated_bytes": 1364574720,
+  "teacher_released_before_decoded_load": true,
+  "decoded_before": {
+    "sha256": "ce8c354b7f689b1490fc9fa3188f6df6890f0791c5e1aa60cedbce4ead8e758e",
+    "tensor_ids": {
+      "_xyz": 130109662047872,
+      "_features_dc": 130109662047952,
+      "_features_rest": 130109662043792,
+      "_scaling": 130109662047552,
+      "_rotation": 130109662047472,
+      "_opacity": 130109662047792
+    },
+    "point_count": 2050770,
+    "active_sh_degree": 3,
+    "max_sh_degree": 3
+  },
+  "decoded_fields_before": {
+    "_xyz": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        3
+      ],
+      "sha256": "f32a30762f19d82baab55e14a30a6972477e46feb0df3c48e2f712a7d2964542"
+    },
+    "_features_dc": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        1,
+        3
+      ],
+      "sha256": "be78b1771206fed18bb7b729816727c05862f39119d6c9ff87e4572f726f529c"
+    },
+    "_features_rest": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        15,
+        3
+      ],
+      "sha256": "9267efb6caabc654934dab195b4379e50eaf968b9175d196ca74606f4744450e"
+    },
+    "_scaling": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        3
+      ],
+      "sha256": "188eb48efb27778a429764d12786ed8b4a6154e8c7b72c8d8ff3583b155a7363"
+    },
+    "_rotation": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        4
+      ],
+      "sha256": "2e4e4ce94a9c2f99404cefdac9a9134d2a397b90d0207c984cefd09e155d094c"
+    },
+    "_opacity": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        1
+      ],
+      "sha256": "68357365792aedbc526f399fa2d76320d91471e4450b827f0661160a5cc29189"
+    }
+  },
+  "decoded_after": {
+    "sha256": "ce8c354b7f689b1490fc9fa3188f6df6890f0791c5e1aa60cedbce4ead8e758e",
+    "tensor_ids": {
+      "_xyz": 130109662047872,
+      "_features_dc": 130109662047952,
+      "_features_rest": 130109662043792,
+      "_scaling": 130109662047552,
+      "_rotation": 130109662047472,
+      "_opacity": 130109662047792
+    },
+    "point_count": 2050770,
+    "active_sh_degree": 3,
+    "max_sh_degree": 3
+  },
+  "decoded_fields_after": {
+    "_xyz": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        3
+      ],
+      "sha256": "f32a30762f19d82baab55e14a30a6972477e46feb0df3c48e2f712a7d2964542"
+    },
+    "_features_dc": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        1,
+        3
+      ],
+      "sha256": "be78b1771206fed18bb7b729816727c05862f39119d6c9ff87e4572f726f529c"
+    },
+    "_features_rest": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        15,
+        3
+      ],
+      "sha256": "9267efb6caabc654934dab195b4379e50eaf968b9175d196ca74606f4744450e"
+    },
+    "_scaling": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        3
+      ],
+      "sha256": "188eb48efb27778a429764d12786ed8b4a6154e8c7b72c8d8ff3583b155a7363"
+    },
+    "_rotation": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        4
+      ],
+      "sha256": "2e4e4ce94a9c2f99404cefdac9a9134d2a397b90d0207c984cefd09e155d094c"
+    },
+    "_opacity": {
+      "dtype": "float32",
+      "shape": [
+        2050770,
+        1
+      ],
+      "sha256": "68357365792aedbc526f399fa2d76320d91471e4450b827f0661160a5cc29189"
+    }
+  },
+  "summary": {
+    "teacher": {
+      "test_count": 32,
+      "mean_gt_mse": 0.0029473395778827874,
+      "mean_gt_psnr": 25.46554618148813,
+      "psnr_from_mean_gt_mse": 25.30569824006006,
+      "mean_gt_ssim": 0.8850127342077768,
+      "mean_teacher_mse": 0.0,
+      "own_GT_tail4": [
+        {
+          "arm": "teacher",
+          "split": "test",
+          "view": "000217.jpg",
+          "gt_mse": 0.006126526942477726,
+          "gt_psnr": 22.127856522619858,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.8316423532230559,
+          "teacher_mse": 0.0,
+          "teacher_max_abs_rgb": 0.0
+        },
+        {
+          "arm": "teacher",
+          "split": "test",
+          "view": "000121.jpg",
+          "gt_mse": 0.004494045788043235,
+          "gt_psnr": 23.473625070407856,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.8463819185682694,
+          "teacher_mse": 0.0,
+          "teacher_max_abs_rgb": 0.0
+        },
+        {
+          "arm": "teacher",
+          "split": "test",
+          "view": "000153.jpg",
+          "gt_mse": 0.00419195909554643,
+          "gt_psnr": 23.77582963778419,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.8761009075599991,
+          "teacher_mse": 0.0,
+          "teacher_max_abs_rgb": 0.0
+        },
+        {
+          "arm": "teacher",
+          "split": "test",
+          "view": "000065.jpg",
+          "gt_mse": 0.003915354898529328,
+          "gt_psnr": 24.072288661763295,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.8748174533194802,
+          "teacher_mse": 0.0,
+          "teacher_max_abs_rgb": 0.0
+        }
+      ],
+      "own_GT_tail4_mean_MSE": 0.00468197168114918,
+      "train_000016": {
+        "arm": "teacher",
+        "split": "train",
+        "view": "000016.jpg",
+        "gt_mse": 0.0018114830727092544,
+        "gt_psnr": 27.4196571984822,
+        "zero_MSE_infinite_PSNR": false,
+        "gt_ssim": 0.9252640188551555,
+        "teacher_mse": 0.0,
+        "teacher_max_abs_rgb": 0.0
+      }
+    },
+    "all219": {
+      "test_count": 32,
+      "mean_gt_mse": 0.0035582968034114206,
+      "mean_gt_psnr": 24.693815027937674,
+      "psnr_from_mean_gt_mse": 24.48757829521415,
+      "mean_gt_ssim": 0.8741368428007579,
+      "mean_teacher_mse": 0.0006992238872387841,
+      "own_GT_tail4": [
+        {
+          "arm": "all219",
+          "split": "test",
+          "view": "000017.jpg",
+          "gt_mse": 0.006719819567852235,
+          "gt_psnr": 21.72642387919113,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.845602026187342,
+          "teacher_mse": 0.004162841022656487,
+          "teacher_max_abs_rgb": 0.9580940641462803
+        },
+        {
+          "arm": "all219",
+          "split": "test",
+          "view": "000217.jpg",
+          "gt_mse": 0.006257438346210889,
+          "gt_psnr": 22.036034207500723,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.8272858231099233,
+          "teacher_mse": 0.00015386700399994694,
+          "teacher_max_abs_rgb": 0.7001920342445374
+        },
+        {
+          "arm": "all219",
+          "split": "test",
+          "view": "000097.jpg",
+          "gt_mse": 0.005440964432431516,
+          "gt_psnr": 22.643241130665665,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.8722849355799982,
+          "teacher_mse": 0.0025240974778089494,
+          "teacher_max_abs_rgb": 0.9040695279836655
+        },
+        {
+          "arm": "all219",
+          "split": "test",
+          "view": "000121.jpg",
+          "gt_mse": 0.005361768947254627,
+          "gt_psnr": 22.70691904842952,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.8315895886203047,
+          "teacher_mse": 0.0013132893182725717,
+          "teacher_max_abs_rgb": 0.8782790377736092
+        }
+      ],
+      "own_GT_tail4_mean_MSE": 0.005944997823437317,
+      "train_000016": {
+        "arm": "all219",
+        "split": "train",
+        "view": "000016.jpg",
+        "gt_mse": 0.005481971401667318,
+        "gt_psnr": 22.61063234416818,
+        "zero_MSE_infinite_PSNR": false,
+        "gt_ssim": 0.8756806101737118,
+        "teacher_mse": 0.0038508295000104094,
+        "teacher_max_abs_rgb": 0.9597394354641438
+      }
+    },
+    "nanogs": {
+      "test_count": 32,
+      "mean_gt_mse": 0.0045066047488757175,
+      "mean_gt_psnr": 23.60247219371988,
+      "psnr_from_mean_gt_mse": 23.461505299941496,
+      "mean_gt_ssim": 0.8572384767153783,
+      "mean_teacher_mse": 0.0014937954456102573,
+      "own_GT_tail4": [
+        {
+          "arm": "nanogs",
+          "split": "test",
+          "view": "000217.jpg",
+          "gt_mse": 0.008088579054795798,
+          "gt_psnr": 20.92127765515388,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.8036789849193743,
+          "teacher_mse": 0.001707257798876003,
+          "teacher_max_abs_rgb": 0.8177838325500488
+        },
+        {
+          "arm": "nanogs",
+          "split": "test",
+          "view": "000121.jpg",
+          "gt_mse": 0.006233656395521655,
+          "gt_psnr": 22.052571400831678,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.8233874158477363,
+          "teacher_mse": 0.0017111340076183756,
+          "teacher_max_abs_rgb": 0.7044349014759064
+        },
+        {
+          "arm": "nanogs",
+          "split": "test",
+          "view": "000065.jpg",
+          "gt_mse": 0.006150010364211076,
+          "gt_psnr": 22.11124152335821,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.844865806628798,
+          "teacher_mse": 0.001994928427950918,
+          "teacher_max_abs_rgb": 0.7131781280040741
+        },
+        {
+          "arm": "nanogs",
+          "split": "test",
+          "view": "000225.jpg",
+          "gt_mse": 0.006070746443641555,
+          "gt_psnr": 22.167579058895186,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.8489093754721241,
+          "teacher_mse": 0.001827919425428592,
+          "teacher_max_abs_rgb": 0.6009398698806763
+        }
+      ],
+      "own_GT_tail4_mean_MSE": 0.006635748064542521,
+      "train_000016": {
+        "arm": "nanogs",
+        "split": "train",
+        "view": "000016.jpg",
+        "gt_mse": 0.003862777071841911,
+        "gt_psnr": 24.131003550865017,
+        "zero_MSE_infinite_PSNR": false,
+        "gt_ssim": 0.880613738759524,
+        "teacher_mse": 0.0017528158971658941,
+        "teacher_max_abs_rgb": 0.6876360177993774
+      }
+    },
+    "pup": {
+      "test_count": 32,
+      "mean_gt_mse": 0.004712211057454505,
+      "mean_gt_psnr": 23.543284214013937,
+      "psnr_from_mean_gt_mse": 23.267752659639307,
+      "mean_gt_ssim": 0.8570088522499054,
+      "mean_teacher_mse": 0.001847679171900509,
+      "own_GT_tail4": [
+        {
+          "arm": "pup",
+          "split": "test",
+          "view": "000145.jpg",
+          "gt_mse": 0.009693875335991033,
+          "gt_psnr": 20.135025696389775,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.7871049668428004,
+          "teacher_mse": 0.00675960669145215,
+          "teacher_max_abs_rgb": 0.850235790014267
+        },
+        {
+          "arm": "pup",
+          "split": "test",
+          "view": "000065.jpg",
+          "gt_mse": 0.00691799149041451,
+          "gt_psnr": 21.600199765321655,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.8388881683162792,
+          "teacher_mse": 0.0028343883096240254,
+          "teacher_max_abs_rgb": 0.8528134971857071
+        },
+        {
+          "arm": "pup",
+          "split": "test",
+          "view": "000089.jpg",
+          "gt_mse": 0.00649548722885606,
+          "gt_psnr": 21.873882667822873,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.854126002677964,
+          "teacher_mse": 0.0033199426801354395,
+          "teacher_max_abs_rgb": 0.8460346311330795
+        },
+        {
+          "arm": "pup",
+          "split": "test",
+          "view": "000033.jpg",
+          "gt_mse": 0.006459191439935308,
+          "gt_psnr": 21.898218434835695,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.8455634452033196,
+          "teacher_mse": 0.00403820576647352,
+          "teacher_max_abs_rgb": 0.7982659935951233
+        }
+      ],
+      "own_GT_tail4_mean_MSE": 0.007391636373799228,
+      "train_000016": {
+        "arm": "pup",
+        "split": "train",
+        "view": "000016.jpg",
+        "gt_mse": 0.004293377281543789,
+        "gt_psnr": 23.67200946113353,
+        "zero_MSE_infinite_PSNR": false,
+        "gt_ssim": 0.874696176447249,
+        "teacher_mse": 0.002609077733999526,
+        "teacher_max_abs_rgb": 0.8684575334191322
+      }
+    },
+    "sh8": {
+      "test_count": 32,
+      "mean_gt_mse": 0.0029473006441028326,
+      "mean_gt_psnr": 25.465600354228705,
+      "psnr_from_mean_gt_mse": 25.30575560989149,
+      "mean_gt_ssim": 0.8850122606935388,
+      "mean_teacher_mse": 8.960204769033205e-09,
+      "own_GT_tail4": [
+        {
+          "arm": "sh8",
+          "split": "test",
+          "view": "000217.jpg",
+          "gt_mse": 0.006126357862491467,
+          "gt_psnr": 22.12797638093275,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.8316409741186116,
+          "teacher_mse": 1.1099167208211167e-08,
+          "teacher_max_abs_rgb": 0.0017379671335220337
+        },
+        {
+          "arm": "sh8",
+          "split": "test",
+          "view": "000121.jpg",
+          "gt_mse": 0.004493840785930871,
+          "gt_psnr": 23.473823184359258,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.8463807674382594,
+          "teacher_mse": 1.046408329540941e-08,
+          "teacher_max_abs_rgb": 0.0017582178115844727
+        },
+        {
+          "arm": "sh8",
+          "split": "test",
+          "view": "000153.jpg",
+          "gt_mse": 0.004192015321999405,
+          "gt_psnr": 23.77577138656097,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.8761028071373572,
+          "teacher_mse": 1.0501305055106343e-08,
+          "teacher_max_abs_rgb": 0.0016064047813415527
+        },
+        {
+          "arm": "sh8",
+          "split": "test",
+          "view": "000065.jpg",
+          "gt_mse": 0.003915559824358074,
+          "gt_psnr": 24.072061362246462,
+          "zero_MSE_infinite_PSNR": false,
+          "gt_ssim": 0.8748173978056614,
+          "teacher_mse": 7.486540950806504e-09,
+          "teacher_max_abs_rgb": 0.00208890438079834
+        }
+      ],
+      "own_GT_tail4_mean_MSE": 0.0046819434486949545,
+      "train_000016": {
+        "arm": "sh8",
+        "split": "train",
+        "view": "000016.jpg",
+        "gt_mse": 0.0018114822701964471,
+        "gt_psnr": 27.419659122469046,
+        "zero_MSE_infinite_PSNR": false,
+        "gt_ssim": 0.9252639994838026,
+        "teacher_mse": 1.019384277083574e-08,
+        "teacher_max_abs_rgb": 0.0025434494018554688
+      }
+    }
+  },
+  "signed_differences": {
+    "sh8_minus_all219": {
+      "mean_gt_mse": -0.000610996159308588,
+      "mean_gt_psnr": 0.771785326291031,
+      "psnr_from_mean_gt_mse": 0.8181773146773423,
+      "mean_gt_ssim": 0.010875417892780903,
+      "mean_teacher_mse": -0.0006992149270340151
+    },
+    "sh8_minus_pup": {
+      "mean_gt_mse": -0.001764910413351672,
+      "mean_gt_psnr": 1.9223161402147682,
+      "psnr_from_mean_gt_mse": 2.038002950252185,
+      "mean_gt_ssim": 0.02800340844363336,
+      "mean_teacher_mse": -0.00184767021169574
+    },
+    "sh8_minus_teacher": {
+      "mean_gt_mse": -3.893377995478273e-08,
+      "mean_gt_psnr": 5.4172740576063916e-05,
+      "psnr_from_mean_gt_mse": 5.736983143123098e-05,
+      "mean_gt_ssim": -4.735142380418722e-07,
+      "mean_teacher_mse": 8.960204769033205e-09
+    }
+  },
+  "per_view_signed_differences": {
+    "sh8_minus_all219": [
+      {
+        "view": "000001.jpg",
+        "gt_mse": -0.000880536458677062,
+        "gt_psnr": 1.4111277075226027,
+        "gt_ssim": 0.022254999648347096,
+        "teacher_mse": -0.001069391037309458,
+        "teacher_max_abs_rgb": -0.8623421788215637
+      },
+      {
+        "view": "000009.jpg",
+        "gt_mse": -0.001004343558955757,
+        "gt_psnr": 1.556302003011961,
+        "gt_ssim": 0.021331966036690297,
+        "teacher_mse": -0.001237336406912745,
+        "teacher_max_abs_rgb": -0.9559690393507481
+      },
+      {
+        "view": "000017.jpg",
+        "gt_mse": -0.003970805776217177,
+        "gt_psnr": 3.881806934029413,
+        "gt_ssim": 0.037927612571782676,
+        "teacher_mse": -0.004162831625858888,
+        "teacher_max_abs_rgb": -0.9550259150564671
+      },
+      {
+        "view": "000025.jpg",
+        "gt_mse": -0.00014099230066365277,
+        "gt_psnr": 0.2195587284287157,
+        "gt_ssim": 0.003465152857598297,
+        "teacher_mse": -0.00029133613819016906,
+        "teacher_max_abs_rgb": -0.6364799439907074
+      },
+      {
+        "view": "000033.jpg",
+        "gt_mse": -0.0002248154549309941,
+        "gt_psnr": 0.368252167794882,
+        "gt_ssim": 0.007091974057620298,
+        "teacher_mse": -0.0002721063278328374,
+        "teacher_max_abs_rgb": -0.5679644346237183
+      },
+      {
+        "view": "000041.jpg",
+        "gt_mse": -0.00019794365697972877,
+        "gt_psnr": 0.3311026020782464,
+        "gt_ssim": 0.007135337880385895,
+        "teacher_mse": -0.00026202091589792447,
+        "teacher_max_abs_rgb": -0.7640830725431442
+      },
+      {
+        "view": "000049.jpg",
+        "gt_mse": -0.00023361228517068027,
+        "gt_psnr": 0.36462095927669225,
+        "gt_ssim": 0.007673253899583288,
+        "teacher_mse": -0.00026589629148889997,
+        "teacher_max_abs_rgb": -0.6627062261104584
+      },
+      {
+        "view": "000057.jpg",
+        "gt_mse": -0.00011676260016281557,
+        "gt_psnr": 0.14647739656887993,
+        "gt_ssim": 0.002369694580260817,
+        "teacher_mse": -0.00022518217069640315,
+        "teacher_max_abs_rgb": -0.7897136881947517
+      },
+      {
+        "view": "000065.jpg",
+        "gt_mse": -0.0003649306360867131,
+        "gt_psnr": 0.38699669738106834,
+        "gt_ssim": 0.010325495963453779,
+        "teacher_mse": -0.0003609930315931789,
+        "teacher_max_abs_rgb": -0.8111664205789566
+      },
+      {
+        "view": "000073.jpg",
+        "gt_mse": -7.063495385518817e-05,
+        "gt_psnr": 0.16592959242684202,
+        "gt_ssim": 0.0027063976131429524,
+        "teacher_mse": -0.0001224905611985609,
+        "teacher_max_abs_rgb": -0.5627063512802124
+      },
+      {
+        "view": "000081.jpg",
+        "gt_mse": -0.00021156448700825623,
+        "gt_psnr": 0.35844959098741214,
+        "gt_ssim": 0.00568083284521248,
+        "teacher_mse": -0.0003590027665828987,
+        "teacher_max_abs_rgb": -0.8090044111013412
+      },
+      {
+        "view": "000089.jpg",
+        "gt_mse": -0.0009611852279153921,
+        "gt_psnr": 1.1928161123258363,
+        "gt_ssim": 0.012889607108238499,
+        "teacher_mse": -0.000921383150480892,
+        "teacher_max_abs_rgb": -0.8790039420127869
+      },
+      {
+        "view": "000097.jpg",
+        "gt_mse": -0.0024977858693721895,
+        "gt_psnr": 2.668592753269124,
+        "gt_ssim": 0.02562921072788249,
+        "teacher_mse": -0.0025240890567772697,
+        "teacher_max_abs_rgb": -0.9020212739706039
+      },
+      {
+        "view": "000105.jpg",
+        "gt_mse": -0.0012749685748428075,
+        "gt_psnr": 1.9003858056731282,
+        "gt_ssim": 0.023289412476725446,
+        "teacher_mse": -0.0014356672025444032,
+        "teacher_max_abs_rgb": -0.790926605463028
+      },
+      {
+        "view": "000113.jpg",
+        "gt_mse": -0.0017709365089506519,
+        "gt_psnr": 1.830221947032129,
+        "gt_ssim": 0.031464470533052236,
+        "teacher_mse": -0.002170770985954159,
+        "teacher_max_abs_rgb": -0.8960120528936386
+      },
+      {
+        "view": "000121.jpg",
+        "gt_mse": -0.000867928161323756,
+        "gt_psnr": 0.7669041359297388,
+        "gt_ssim": 0.014791178817954664,
+        "teacher_mse": -0.0013132788541892764,
+        "teacher_max_abs_rgb": -0.8765208199620247
+      },
+      {
+        "view": "000129.jpg",
+        "gt_mse": -0.00029348927434731317,
+        "gt_psnr": 0.4180775052944803,
+        "gt_ssim": 0.007740635270419016,
+        "teacher_mse": -0.0004302266846311675,
+        "teacher_max_abs_rgb": -0.7646886855363846
+      },
+      {
+        "view": "000137.jpg",
+        "gt_mse": -0.00047804561624516066,
+        "gt_psnr": 0.5889427007818462,
+        "gt_ssim": 0.01067721553817036,
+        "teacher_mse": -0.000499753356185743,
+        "teacher_max_abs_rgb": -0.7317415326833725
+      },
+      {
+        "view": "000145.jpg",
+        "gt_mse": -0.0007171897032036594,
+        "gt_psnr": 1.0087265612885012,
+        "gt_ssim": 0.014600583675660972,
+        "teacher_mse": -0.0006571358469409065,
+        "teacher_max_abs_rgb": -0.7080715894699097
+      },
+      {
+        "view": "000153.jpg",
+        "gt_mse": 2.5796214401735754e-06,
+        "gt_psnr": -0.002673320858704642,
+        "gt_ssim": 0.0014315861564372367,
+        "teacher_mse": -6.773949632617048e-05,
+        "teacher_max_abs_rgb": -0.6086454391479492
+      },
+      {
+        "view": "000161.jpg",
+        "gt_mse": -2.660565263718894e-05,
+        "gt_psnr": 0.05423117861694138,
+        "gt_ssim": 0.0014224082059597354,
+        "teacher_mse": -7.582870858764386e-05,
+        "teacher_max_abs_rgb": -0.595229297876358
+      },
+      {
+        "view": "000169.jpg",
+        "gt_mse": -0.00013258728019767407,
+        "gt_psnr": 0.1930545267301298,
+        "gt_ssim": 0.0034015645282734486,
+        "teacher_mse": -0.00016339876994769264,
+        "teacher_max_abs_rgb": -0.7170088887214661
+      },
+      {
+        "view": "000177.jpg",
+        "gt_mse": -0.0002978976051029444,
+        "gt_psnr": 0.5803358805101411,
+        "gt_ssim": 0.0076633883966809035,
+        "teacher_mse": -0.0004344075466807874,
+        "teacher_max_abs_rgb": -0.8123212456703186
+      },
+      {
+        "view": "000185.jpg",
+        "gt_mse": -0.0006549145776466095,
+        "gt_psnr": 1.3680522160330355,
+        "gt_ssim": 0.011822600824264451,
+        "teacher_mse": -0.0007893615767959447,
+        "teacher_max_abs_rgb": -0.8929938152432442
+      },
+      {
+        "view": "000193.jpg",
+        "gt_mse": -7.3013608333076e-05,
+        "gt_psnr": 0.14893365356490662,
+        "gt_ssim": 0.0033209836158339945,
+        "teacher_mse": -0.00011140456681018567,
+        "teacher_max_abs_rgb": -0.6635837107896805
+      },
+      {
+        "view": "000201.jpg",
+        "gt_mse": -0.0003611280055723677,
+        "gt_psnr": 0.6296528594835529,
+        "gt_ssim": 0.008748606234571521,
+        "teacher_mse": -0.0003542004041692208,
+        "teacher_max_abs_rgb": -0.7035879194736481
+      },
+      {
+        "view": "000209.jpg",
+        "gt_mse": -0.0002608158319298494,
+        "gt_psnr": 0.3709053405752307,
+        "gt_ssim": 0.007140621317242579,
+        "teacher_mse": -0.0002730690148413022,
+        "teacher_max_abs_rgb": -0.7082774490118027
+      },
+      {
+        "view": "000217.jpg",
+        "gt_mse": -0.00013108048371942172,
+        "gt_psnr": 0.09194217343202737,
+        "gt_ssim": 0.004355151008688329,
+        "teacher_mse": -0.00015385590483273873,
+        "teacher_max_abs_rgb": -0.6984540671110153
+      },
+      {
+        "view": "000225.jpg",
+        "gt_mse": -0.0004743408845184014,
+        "gt_psnr": 0.5439898220453685,
+        "gt_ssim": 0.013315905266661487,
+        "teacher_mse": -0.00041171749558149536,
+        "teacher_max_abs_rgb": -0.8307787925004959
+      },
+      {
+        "view": "000233.jpg",
+        "gt_mse": -0.0001322030833953887,
+        "gt_psnr": 0.1460079534733154,
+        "gt_ssim": 0.0030870087445636907,
+        "teacher_mse": -0.0001837828085913629,
+        "teacher_max_abs_rgb": -0.6109984219074249
+      },
+      {
+        "view": "000241.jpg",
+        "gt_mse": -0.00019145951983616863,
+        "gt_psnr": 0.2784709085588908,
+        "gt_ssim": 0.0036476577004453947,
+        "teacher_mse": -0.00016294892895377238,
+        "teacher_max_abs_rgb": -0.6917227357625961
+      },
+      {
+        "view": "000249.jpg",
+        "gt_mse": -0.0005399390815169405,
+        "gt_psnr": 0.7289353480466332,
+        "gt_ssim": 0.009610858467184236,
+        "teacher_mse": -0.0006122700317043846,
+        "teacher_max_abs_rgb": -0.821556493639946
+      },
+      {
+        "view": "000016.jpg",
+        "gt_mse": -0.0036704891314708705,
+        "gt_psnr": 4.809026778300865,
+        "gt_ssim": 0.049583389310090764,
+        "teacher_mse": -0.0038508193061676387,
+        "teacher_max_abs_rgb": -0.9571959860622883
+      }
+    ],
+    "sh8_minus_pup": [
+      {
+        "view": "000001.jpg",
+        "gt_mse": -0.001452304849542316,
+        "gt_psnr": 2.1304584999615486,
+        "gt_ssim": 0.04413079217129179,
+        "teacher_mse": -0.0017334655871869321,
+        "teacher_max_abs_rgb": -0.8286242336034775
+      },
+      {
+        "view": "000009.jpg",
+        "gt_mse": -0.0016583776005558563,
+        "gt_psnr": 2.334069066569718,
+        "gt_ssim": 0.03979913445911476,
+        "teacher_mse": -0.001838264887271691,
+        "teacher_max_abs_rgb": -0.9010012969374657
+      },
+      {
+        "view": "000017.jpg",
+        "gt_mse": -0.002730245155106889,
+        "gt_psnr": 2.9954490675835466,
+        "gt_ssim": 0.04856246468906977,
+        "teacher_mse": -0.0028544673577515375,
+        "teacher_max_abs_rgb": -0.914072759449482
+      },
+      {
+        "view": "000025.jpg",
+        "gt_mse": -0.0034222904033741506,
+        "gt_psnr": 3.5385287356302015,
+        "gt_ssim": 0.03670013030301977,
+        "teacher_mse": -0.004102276389632618,
+        "teacher_max_abs_rgb": -0.9010111019015312
+      },
+      {
+        "view": "000033.jpg",
+        "gt_mse": -0.003918672384245716,
+        "gt_psnr": 4.052556997421487,
+        "gt_ssim": 0.03491273503999914,
+        "teacher_mse": -0.0040381961920426795,
+        "teacher_max_abs_rgb": -0.7968660593032837
+      },
+      {
+        "view": "000041.jpg",
+        "gt_mse": -0.001282599929958197,
+        "gt_psnr": 1.7993077967687405,
+        "gt_ssim": 0.03047185815970055,
+        "teacher_mse": -0.0012866584767363604,
+        "teacher_max_abs_rgb": -0.8875031545758247
+      },
+      {
+        "view": "000049.jpg",
+        "gt_mse": -0.003192509871890383,
+        "gt_psnr": 3.4180735495731582,
+        "gt_ssim": 0.05046841511655864,
+        "teacher_mse": -0.0031369216231088887,
+        "teacher_max_abs_rgb": -0.8817357197403908
+      },
+      {
+        "view": "000057.jpg",
+        "gt_mse": -0.0017989483806578996,
+        "gt_psnr": 1.8426568785930293,
+        "gt_ssim": 0.013842385766092091,
+        "teacher_mse": -0.0020402731017328556,
+        "teacher_max_abs_rgb": -0.9376618675887585
+      },
+      {
+        "view": "000065.jpg",
+        "gt_mse": -0.0030024316660564364,
+        "gt_psnr": 2.471861596924807,
+        "gt_ssim": 0.03592922948938215,
+        "teacher_mse": -0.0028343808230830744,
+        "teacher_max_abs_rgb": -0.8507245928049088
+      },
+      {
+        "view": "000073.jpg",
+        "gt_mse": -0.00023255104200924775,
+        "gt_psnr": 0.5239439439423101,
+        "gt_ssim": 0.009761213350134468,
+        "teacher_mse": -0.00034425957059315256,
+        "teacher_max_abs_rgb": -0.7369742095470428
+      },
+      {
+        "view": "000081.jpg",
+        "gt_mse": -0.0004817077080089653,
+        "gt_psnr": 0.7769419619798228,
+        "gt_ssim": 0.01525175505961096,
+        "teacher_mse": -0.0006315247330780946,
+        "teacher_max_abs_rgb": -0.8345462381839752
+      },
+      {
+        "view": "000089.jpg",
+        "gt_mse": -0.0034545119155173576,
+        "gt_psnr": 3.295988386652592,
+        "gt_ssim": 0.03477596254821069,
+        "teacher_mse": -0.003319936205254613,
+        "teacher_max_abs_rgb": -0.8439932316541672
+      },
+      {
+        "view": "000097.jpg",
+        "gt_mse": -0.003483118049848414,
+        "gt_psnr": 3.3914415541915446,
+        "gt_ssim": 0.03810802242043343,
+        "teacher_mse": -0.0034002291577383235,
+        "teacher_max_abs_rgb": -0.918387196958065
+      },
+      {
+        "view": "000105.jpg",
+        "gt_mse": -0.002030763520515653,
+        "gt_psnr": 2.7285567349628472,
+        "gt_ssim": 0.036947558793968605,
+        "teacher_mse": -0.0021758860316977756,
+        "teacher_max_abs_rgb": -0.905242457985878
+      },
+      {
+        "view": "000113.jpg",
+        "gt_mse": -0.0021563648934501043,
+        "gt_psnr": 2.1436770566580847,
+        "gt_ssim": 0.04845458931113278,
+        "teacher_mse": -0.002599791919239979,
+        "teacher_max_abs_rgb": -0.9470728747546673
+      },
+      {
+        "view": "000121.jpg",
+        "gt_mse": -0.0019370157824552007,
+        "gt_psnr": 1.5565114177190154,
+        "gt_ssim": 0.03510054508420224,
+        "teacher_mse": -0.002270433920847245,
+        "teacher_max_abs_rgb": -0.8812614753842354
+      },
+      {
+        "view": "000129.jpg",
+        "gt_mse": -0.0013314451022021089,
+        "gt_psnr": 1.6388623222244227,
+        "gt_ssim": 0.030630066425403224,
+        "teacher_mse": -0.0014668796991996562,
+        "teacher_max_abs_rgb": -0.9346272349357605
+      },
+      {
+        "view": "000137.jpg",
+        "gt_mse": -0.0016280496559429722,
+        "gt_psnr": 1.7452920918801667,
+        "gt_ssim": 0.034503384140350035,
+        "teacher_mse": -0.0016135211515033584,
+        "teacher_max_abs_rgb": -0.8618671298027039
+      },
+      {
+        "view": "000145.jpg",
+        "gt_mse": -0.006950831281516792,
+        "gt_psnr": 5.482646477432134,
+        "gt_ssim": 0.06333950458843907,
+        "teacher_mse": -0.006759597606337904,
+        "teacher_max_abs_rgb": -0.8485740125179291
+      },
+      {
+        "view": "000153.jpg",
+        "gt_mse": -0.00035766906284485055,
+        "gt_psnr": 0.3555840901106464,
+        "gt_ssim": 0.005377603246419449,
+        "teacher_mse": -0.0004663835450225181,
+        "teacher_max_abs_rgb": -0.6801446974277496
+      },
+      {
+        "view": "000161.jpg",
+        "gt_mse": -0.0005038513014068301,
+        "gt_psnr": 0.9270730819461015,
+        "gt_ssim": 0.005087256786634131,
+        "teacher_mse": -0.000498115370627855,
+        "teacher_max_abs_rgb": -0.6518013924360275
+      },
+      {
+        "view": "000169.jpg",
+        "gt_mse": -0.0003210059460065813,
+        "gt_psnr": 0.4534306950527984,
+        "gt_ssim": 0.01005134089378501,
+        "teacher_mse": -0.00039209730236168283,
+        "teacher_max_abs_rgb": -0.8176131993532181
+      },
+      {
+        "view": "000177.jpg",
+        "gt_mse": -0.0005387214129646211,
+        "gt_psnr": 0.9986793916912227,
+        "gt_ssim": 0.015623537930073428,
+        "teacher_mse": -0.0006714633064544934,
+        "teacher_max_abs_rgb": -0.8675869703292847
+      },
+      {
+        "view": "000185.jpg",
+        "gt_mse": -0.0010559230479959163,
+        "gt_psnr": 2.033005695886697,
+        "gt_ssim": 0.026404488113615066,
+        "teacher_mse": -0.0011822816027873913,
+        "teacher_max_abs_rgb": -0.8286099284887314
+      },
+      {
+        "view": "000193.jpg",
+        "gt_mse": -0.00020875854862320922,
+        "gt_psnr": 0.4129433783524128,
+        "gt_ssim": 0.008605516424395998,
+        "teacher_mse": -0.00027077147528202614,
+        "teacher_max_abs_rgb": -0.6787864416837692
+      },
+      {
+        "view": "000201.jpg",
+        "gt_mse": -0.0014503977629721585,
+        "gt_psnr": 2.1128669151385218,
+        "gt_ssim": 0.03243326763145449,
+        "teacher_mse": -0.001450902881333388,
+        "teacher_max_abs_rgb": -0.8462770059704781
+      },
+      {
+        "view": "000209.jpg",
+        "gt_mse": -0.0015685553972728172,
+        "gt_psnr": 1.8644605842946973,
+        "gt_ssim": 0.030326281081935025,
+        "teacher_mse": -0.0015531665112160711,
+        "teacher_max_abs_rgb": -0.8881088271737099
+      },
+      {
+        "view": "000217.jpg",
+        "gt_mse": -0.0002507300482247031,
+        "gt_psnr": 0.17420042045525008,
+        "gt_ssim": 0.010726332594840238,
+        "teacher_mse": -0.000279577928282944,
+        "teacher_max_abs_rgb": -0.6887796968221664
+      },
+      {
+        "view": "000225.jpg",
+        "gt_mse": -0.0025486208355746994,
+        "gt_psnr": 2.347641753912523,
+        "gt_ssim": 0.03642732869465071,
+        "teacher_mse": -0.0023306573753955695,
+        "teacher_max_abs_rgb": -0.9175921753048897
+      },
+      {
+        "view": "000233.jpg",
+        "gt_mse": -0.0003054935782483732,
+        "gt_psnr": 0.33024846656613605,
+        "gt_ssim": 0.0058150919607599105,
+        "teacher_mse": -0.000346375229105582,
+        "teacher_max_abs_rgb": -0.7761043012142181
+      },
+      {
+        "view": "000241.jpg",
+        "gt_mse": -0.0004497943196576956,
+        "gt_psnr": 0.6279687930674811,
+        "gt_ssim": 0.01030400994166114,
+        "teacher_mse": -0.00041978312181402053,
+        "teacher_max_abs_rgb": -0.7625619173049927
+      },
+      {
+        "view": "000249.jpg",
+        "gt_mse": -0.0007728727726063929,
+        "gt_psnr": 1.009189083728831,
+        "gt_ssim": 0.017237267979928972,
+        "teacher_mse": -0.0008169066905434028,
+        "teacher_max_abs_rgb": -0.8813821226358414
+      },
+      {
+        "view": "000016.jpg",
+        "gt_mse": -0.002481895011347342,
+        "gt_psnr": 3.7476496613355152,
+        "gt_ssim": 0.050567823036553605,
+        "teacher_mse": -0.0026090675401567553,
+        "teacher_max_abs_rgb": -0.8659140840172768
+      }
+    ],
+    "sh8_minus_teacher": [
+      {
+        "view": "000001.jpg",
+        "gt_mse": 8.942633873644176e-08,
+        "gt_psnr": -0.00016933941594743374,
+        "gt_ssim": -3.7260521681403702e-06,
+        "teacher_mse": 9.385071993761092e-09,
+        "teacher_max_abs_rgb": 0.002903461456298828
+      },
+      {
+        "view": "000009.jpg",
+        "gt_mse": 9.274589030669814e-08,
+        "gt_psnr": -0.00017284279389784274,
+        "gt_ssim": -2.398511404932968e-06,
+        "teacher_mse": 1.0207300655065814e-08,
+        "teacher_max_abs_rgb": 0.002613544464111328
+      },
+      {
+        "view": "000017.jpg",
+        "gt_mse": -4.784180303654684e-09,
+        "gt_psnr": 7.558133408025469e-06,
+        "gt_ssim": -1.0776718069038793e-06,
+        "teacher_mse": 9.396797599463426e-09,
+        "teacher_max_abs_rgb": 0.0030681490898132324
+      },
+      {
+        "view": "000025.jpg",
+        "gt_mse": -1.214701945955604e-07,
+        "gt_psnr": 0.00019401688197362432,
+        "gt_ssim": -1.2821844357358003e-06,
+        "teacher_mse": 8.121052097625344e-09,
+        "teacher_max_abs_rgb": 0.0019036829471588135
+      },
+      {
+        "view": "000033.jpg",
+        "gt_mse": 8.353780340218664e-08,
+        "gt_psnr": -0.00014280783866382762,
+        "gt_ssim": 4.988865297539391e-07,
+        "teacher_mse": 9.574430840549856e-09,
+        "teacher_max_abs_rgb": 0.0013999342918395996
+      },
+      {
+        "view": "000041.jpg",
+        "gt_mse": -1.7777135841558558e-07,
+        "gt_psnr": 0.000308978066019705,
+        "gt_ssim": -8.37771717554503e-08,
+        "teacher_mse": 8.999054468484641e-09,
+        "teacher_max_abs_rgb": 0.0020197927951812744
+      },
+      {
+        "view": "000049.jpg",
+        "gt_mse": -2.909864394713517e-07,
+        "gt_psnr": 0.0004737547821100918,
+        "gt_ssim": -4.536012051525873e-07,
+        "teacher_mse": 8.888339946252792e-09,
+        "teacher_max_abs_rgb": 0.0018368959426879883
+      },
+      {
+        "view": "000057.jpg",
+        "gt_mse": 3.6545491233046234e-08,
+        "gt_psnr": -4.662807049626849e-05,
+        "gt_ssim": 4.0592444505715974e-07,
+        "teacher_mse": 8.383695938391482e-09,
+        "teacher_max_abs_rgb": 0.0015399456024169922
+      },
+      {
+        "view": "000065.jpg",
+        "gt_mse": 2.0492582874544196e-07,
+        "gt_psnr": -0.0002272995168333125,
+        "gt_ssim": -5.5513818875141396e-08,
+        "teacher_mse": 7.486540950806504e-09,
+        "teacher_max_abs_rgb": 0.00208890438079834
+      },
+      {
+        "view": "000073.jpg",
+        "gt_mse": -1.0171481197129677e-07,
+        "gt_psnr": 0.0002435561485576443,
+        "gt_ssim": 1.4865043944656264e-06,
+        "teacher_mse": 7.669244634671184e-09,
+        "teacher_max_abs_rgb": 0.0019649267196655273
+      },
+      {
+        "view": "000081.jpg",
+        "gt_mse": -9.717897053512434e-08,
+        "gt_psnr": 0.00017163062178582322,
+        "gt_ssim": 1.1820959611164028e-07,
+        "teacher_mse": 7.5182937868942e-09,
+        "teacher_max_abs_rgb": 0.0022299885749816895
+      },
+      {
+        "view": "000089.jpg",
+        "gt_mse": 2.6461118169491746e-07,
+        "gt_psnr": -0.00037791880685844603,
+        "gt_ssim": -2.0837613173840808e-06,
+        "teacher_mse": 6.474880826352382e-09,
+        "teacher_max_abs_rgb": 0.0020413994789123535
+      },
+      {
+        "view": "000097.jpg",
+        "gt_mse": 1.1037817094442653e-07,
+        "gt_psnr": -0.00016287672814740972,
+        "gt_ssim": 7.318792782928796e-08,
+        "teacher_mse": 8.421031679835226e-09,
+        "teacher_max_abs_rgb": 0.0020482540130615234
+      },
+      {
+        "view": "000105.jpg",
+        "gt_mse": -4.468735072477373e-08,
+        "gt_psnr": 8.35605682283358e-05,
+        "gt_ssim": -7.454668221607008e-07,
+        "teacher_mse": 9.244912325347565e-09,
+        "teacher_max_abs_rgb": 0.0035483241081237793
+      },
+      {
+        "view": "000113.jpg",
+        "gt_mse": -1.5726012736125283e-07,
+        "gt_psnr": 0.00020212935381636044,
+        "gt_ssim": -7.310068357302413e-07,
+        "teacher_mse": 8.39276215462796e-09,
+        "teacher_max_abs_rgb": 0.0020903348922729492
+      },
+      {
+        "view": "000121.jpg",
+        "gt_mse": -2.0500211236375299e-07,
+        "gt_psnr": 0.00019811395140223453,
+        "gt_ssim": -1.151130009979795e-06,
+        "teacher_mse": 1.046408329540941e-08,
+        "teacher_max_abs_rgb": 0.0017582178115844727
+      },
+      {
+        "view": "000129.jpg",
+        "gt_mse": 1.511631811507673e-07,
+        "gt_psnr": -0.0002260442415895625,
+        "gt_ssim": -5.072077330359193e-07,
+        "teacher_mse": 9.358899767259233e-09,
+        "teacher_max_abs_rgb": 0.001861080527305603
+      },
+      {
+        "view": "000137.jpg",
+        "gt_mse": -3.4665116929689585e-07,
+        "gt_psnr": 0.0004573549291535528,
+        "gt_ssim": -1.7572506638696694e-07,
+        "teacher_mse": 1.027090936757775e-08,
+        "teacher_max_abs_rgb": 0.001989319920539856
+      },
+      {
+        "view": "000145.jpg",
+        "gt_mse": -5.915520932039259e-09,
+        "gt_psnr": 9.36578223686979e-06,
+        "gt_ssim": 1.4199221931576744e-07,
+        "teacher_mse": 9.085114246254868e-09,
+        "teacher_max_abs_rgb": 0.0016617774963378906
+      },
+      {
+        "view": "000153.jpg",
+        "gt_mse": 5.622645297530954e-08,
+        "gt_psnr": -5.8251223222782755e-05,
+        "gt_ssim": 1.8995773580776643e-06,
+        "teacher_mse": 1.0501305055106343e-08,
+        "teacher_max_abs_rgb": 0.0016064047813415527
+      },
+      {
+        "view": "000161.jpg",
+        "gt_mse": -2.600399440820869e-07,
+        "gt_psnr": 0.000533338461575994,
+        "gt_ssim": 1.7127261264793248e-07,
+        "teacher_mse": 6.265488729348167e-09,
+        "teacher_max_abs_rgb": 0.0015988945960998535
+      },
+      {
+        "view": "000169.jpg",
+        "gt_mse": -6.223749570788764e-08,
+        "gt_psnr": 9.266464933332941e-05,
+        "gt_ssim": -1.6714155046670953e-06,
+        "teacher_mse": 9.252016334918385e-09,
+        "teacher_max_abs_rgb": 0.0026186108589172363
+      },
+      {
+        "view": "000177.jpg",
+        "gt_mse": 8.895704578515407e-08,
+        "gt_psnr": -0.0001854137334262873,
+        "gt_ssim": -1.243689967123096e-06,
+        "teacher_mse": 9.887578488939121e-09,
+        "teacher_max_abs_rgb": 0.0037709474563598633
+      },
+      {
+        "view": "000185.jpg",
+        "gt_mse": -7.763325382071154e-08,
+        "gt_psnr": 0.00019061321388846864,
+        "gt_ssim": 1.2898910377590056e-06,
+        "teacher_mse": 1.0055863404920186e-08,
+        "teacher_max_abs_rgb": 0.0020189881324768066
+      },
+      {
+        "view": "000193.jpg",
+        "gt_mse": 1.2654777639762443e-07,
+        "gt_psnr": -0.00026261809361827204,
+        "gt_ssim": -1.3046640765512763e-06,
+        "teacher_mse": 9.11407008583403e-09,
+        "teacher_max_abs_rgb": 0.0021197348833084106
+      },
+      {
+        "view": "000201.jpg",
+        "gt_mse": 1.3322106163365932e-07,
+        "gt_psnr": -0.00024997026241280196,
+        "gt_ssim": -4.084849644092614e-07,
+        "teacher_mse": 1.0324095266665779e-08,
+        "teacher_max_abs_rgb": 0.0019018948078155518
+      },
+      {
+        "view": "000209.jpg",
+        "gt_mse": -1.0316661564705593e-07,
+        "gt_psnr": 0.0001531573728854596,
+        "gt_ssim": 7.492069732384365e-07,
+        "teacher_mse": 1.002872189272962e-08,
+        "teacher_max_abs_rgb": 0.0020742863416671753
+      },
+      {
+        "view": "000217.jpg",
+        "gt_mse": -1.690799862593198e-07,
+        "gt_psnr": 0.00011985831289251792,
+        "gt_ssim": -1.3791044443101086e-06,
+        "teacher_mse": 1.1099167208211167e-08,
+        "teacher_max_abs_rgb": 0.0017379671335220337
+      },
+      {
+        "view": "000225.jpg",
+        "gt_mse": -1.2810097934062153e-07,
+        "gt_psnr": 0.00015650499652863914,
+        "gt_ssim": 9.531267676221589e-07,
+        "teacher_mse": 8.307425592454006e-09,
+        "teacher_max_abs_rgb": 0.0016434788703918457
+      },
+      {
+        "view": "000233.jpg",
+        "gt_mse": -1.974054213093289e-07,
+        "gt_psnr": 0.00022171943806625904,
+        "gt_ssim": -8.569277674119746e-07,
+        "teacher_mse": 8.340741777549548e-09,
+        "teacher_max_abs_rgb": 0.0021179914474487305
+      },
+      {
+        "view": "000241.jpg",
+        "gt_mse": -6.352231239365597e-08,
+        "gt_psnr": 9.541624825359918e-05,
+        "gt_ssim": -9.022703817418432e-07,
+        "teacher_mse": 8.764193697182205e-09,
+        "teacher_max_abs_rgb": 0.0022589564323425293
+      },
+      {
+        "view": "000249.jpg",
+        "gt_mse": -6.955893702568008e-08,
+        "gt_psnr": 0.00010224651143175834,
+        "gt_ssim": -7.02068577274062e-07,
+        "teacher_mse": 7.4434685005732466e-09,
+        "teacher_max_abs_rgb": 0.0017441511154174805
+      },
+      {
+        "view": "000016.jpg",
+        "gt_mse": -8.025128072925575e-10,
+        "gt_psnr": 1.9239868471743193e-06,
+        "gt_ssim": -1.937135296614656e-08,
+        "teacher_mse": 1.019384277083574e-08,
+        "teacher_max_abs_rgb": 0.0025434494018554688
+      }
+    ]
+  },
+  "exploratory_SH8_minus_all219_ranking32": [
+    {
+      "view": "000153.jpg",
+      "sh8_minus_all219_gt_MSE": 2.5796214401735754e-06
+    },
+    {
+      "view": "000161.jpg",
+      "sh8_minus_all219_gt_MSE": -2.660565263718894e-05
+    },
+    {
+      "view": "000073.jpg",
+      "sh8_minus_all219_gt_MSE": -7.063495385518817e-05
+    },
+    {
+      "view": "000193.jpg",
+      "sh8_minus_all219_gt_MSE": -7.3013608333076e-05
+    },
+    {
+      "view": "000057.jpg",
+      "sh8_minus_all219_gt_MSE": -0.00011676260016281557
+    },
+    {
+      "view": "000217.jpg",
+      "sh8_minus_all219_gt_MSE": -0.00013108048371942172
+    },
+    {
+      "view": "000233.jpg",
+      "sh8_minus_all219_gt_MSE": -0.0001322030833953887
+    },
+    {
+      "view": "000169.jpg",
+      "sh8_minus_all219_gt_MSE": -0.00013258728019767407
+    },
+    {
+      "view": "000025.jpg",
+      "sh8_minus_all219_gt_MSE": -0.00014099230066365277
+    },
+    {
+      "view": "000241.jpg",
+      "sh8_minus_all219_gt_MSE": -0.00019145951983616863
+    },
+    {
+      "view": "000041.jpg",
+      "sh8_minus_all219_gt_MSE": -0.00019794365697972877
+    },
+    {
+      "view": "000081.jpg",
+      "sh8_minus_all219_gt_MSE": -0.00021156448700825623
+    },
+    {
+      "view": "000033.jpg",
+      "sh8_minus_all219_gt_MSE": -0.0002248154549309941
+    },
+    {
+      "view": "000049.jpg",
+      "sh8_minus_all219_gt_MSE": -0.00023361228517068027
+    },
+    {
+      "view": "000209.jpg",
+      "sh8_minus_all219_gt_MSE": -0.0002608158319298494
+    },
+    {
+      "view": "000129.jpg",
+      "sh8_minus_all219_gt_MSE": -0.00029348927434731317
+    },
+    {
+      "view": "000177.jpg",
+      "sh8_minus_all219_gt_MSE": -0.0002978976051029444
+    },
+    {
+      "view": "000201.jpg",
+      "sh8_minus_all219_gt_MSE": -0.0003611280055723677
+    },
+    {
+      "view": "000065.jpg",
+      "sh8_minus_all219_gt_MSE": -0.0003649306360867131
+    },
+    {
+      "view": "000225.jpg",
+      "sh8_minus_all219_gt_MSE": -0.0004743408845184014
+    },
+    {
+      "view": "000137.jpg",
+      "sh8_minus_all219_gt_MSE": -0.00047804561624516066
+    },
+    {
+      "view": "000249.jpg",
+      "sh8_minus_all219_gt_MSE": -0.0005399390815169405
+    },
+    {
+      "view": "000185.jpg",
+      "sh8_minus_all219_gt_MSE": -0.0006549145776466095
+    },
+    {
+      "view": "000145.jpg",
+      "sh8_minus_all219_gt_MSE": -0.0007171897032036594
+    },
+    {
+      "view": "000121.jpg",
+      "sh8_minus_all219_gt_MSE": -0.000867928161323756
+    },
+    {
+      "view": "000001.jpg",
+      "sh8_minus_all219_gt_MSE": -0.000880536458677062
+    },
+    {
+      "view": "000089.jpg",
+      "sh8_minus_all219_gt_MSE": -0.0009611852279153921
+    },
+    {
+      "view": "000009.jpg",
+      "sh8_minus_all219_gt_MSE": -0.001004343558955757
+    },
+    {
+      "view": "000105.jpg",
+      "sh8_minus_all219_gt_MSE": -0.0012749685748428075
+    },
+    {
+      "view": "000113.jpg",
+      "sh8_minus_all219_gt_MSE": -0.0017709365089506519
+    },
+    {
+      "view": "000097.jpg",
+      "sh8_minus_all219_gt_MSE": -0.0024977858693721895
+    },
+    {
+      "view": "000017.jpg",
+      "sh8_minus_all219_gt_MSE": -0.003970805776217177
+    }
+  ],
+  "storage": {
+    "codec": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/control.dsh8",
+      "sha256": "0b6e62e28165df7e89635575906af403cc0952cc50f420d86d2e46da861a1038",
+      "bytes": 239940218,
+      "header": {
+        "sha256": "72a1fe9cea829887424995856028f4e237fc1c87e4aa21f5894b892ddeebfd37",
+        "bytes": 128,
+        "payload_sha256": "c1d5e5d2a380c56e42f1232f030f1d4c072dfee7ff3abbf24574b78ad0d3b685",
+        "source_sha256": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+        "points": 2050770,
+        "sh_degree": 3,
+        "fields": 62,
+        "stride": 117
+      }
+    },
+    "expanded_decoded_PLY": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/decoded.ply",
+      "sha256": "2de17e7d0ce7d667fb384a95b547eac2e90308762356ace3f6c5501b1b5efe1b",
+      "bytes": 508592492,
+      "point_count": 2050770
+    },
+    "old_model_files": {
+      "teacher": {
+        "path": "/home/administrator/projects/gaussian-splatting/output/truck_30000_r1/point_cloud/iteration_30000/point_cloud.ply",
+        "sha256": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+        "file_bytes": 508592492,
+        "point_count": 2050770
+      },
+      "all219": {
+        "indices_path": "/mnt/d/Documents/my 3dgs/research/experiments/truck30k-coverage-controls-v0/run/all219_indices.npy",
+        "indices_sha256": "f6c9f4da05e064db5c94134c8ee241eb2188fb83a5c3f860655d2eaf279f992f",
+        "point_count": 1025385,
+        "PLY_written": false
+      },
+      "nanogs": {
+        "path": "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/run-v1/output.ply",
+        "sha256": "383dd0268752f341612231c4206c00bc7f5c737e374ae38c75f1f22f1aeeb7b8",
+        "file_bytes": 254297012,
+        "point_count": 1025385
+      },
+      "pup": {
+        "status": "ALL62_PROPERTIES_BYTE_EXACT",
+        "point_count": 1025385,
+        "properties": {
+          "x": {
+            "dtype": "float32",
+            "sha256": "8b8533ee56363f409cfd488272313df2bef93e739c366ba41add2d3ba707b7fe",
+            "exact": true
+          },
+          "y": {
+            "dtype": "float32",
+            "sha256": "86cf11a62b2e13802819d192f28ec14e0e8ae588869dadd15c1f50c61d944b05",
+            "exact": true
+          },
+          "z": {
+            "dtype": "float32",
+            "sha256": "052ad4bc14ed480658d060d27979a1ce7e495bf9497e5c4eee5351d562341e64",
+            "exact": true
+          },
+          "nx": {
+            "dtype": "float32",
+            "sha256": "b1cca5a6b636f6da6df6a03fbf7bda716cdc184a6d8022a6e483b3c5c2dca9f8",
+            "exact": true
+          },
+          "ny": {
+            "dtype": "float32",
+            "sha256": "b1cca5a6b636f6da6df6a03fbf7bda716cdc184a6d8022a6e483b3c5c2dca9f8",
+            "exact": true
+          },
+          "nz": {
+            "dtype": "float32",
+            "sha256": "b1cca5a6b636f6da6df6a03fbf7bda716cdc184a6d8022a6e483b3c5c2dca9f8",
+            "exact": true
+          },
+          "f_dc_0": {
+            "dtype": "float32",
+            "sha256": "5f05c989f8e9f502710d9844d351dcbc31d1fd1f6d1525808b92de5f1b42d30b",
+            "exact": true
+          },
+          "f_dc_1": {
+            "dtype": "float32",
+            "sha256": "6fdf59fd25dd285b973d13282f5a2aa172f7f681fa4bb1c9c69e2a4d659e2654",
+            "exact": true
+          },
+          "f_dc_2": {
+            "dtype": "float32",
+            "sha256": "547dc1ab8b30762bb717695c9fa8560a17aeb54869147514eafb2945b77763ef",
+            "exact": true
+          },
+          "f_rest_0": {
+            "dtype": "float32",
+            "sha256": "db0951b87ce34975b4a37a6897e55e12c1c54313ff7d22cab0c349c1c636477c",
+            "exact": true
+          },
+          "f_rest_1": {
+            "dtype": "float32",
+            "sha256": "64c8dd71cc3eff98ecefcf8ef9c8d9a6a0fdedf88a9938306c7c40f284eb5125",
+            "exact": true
+          },
+          "f_rest_2": {
+            "dtype": "float32",
+            "sha256": "4de3e459370f5190ad54842fc49000708a4dcfbbb9d690c45743e2d5df81b5f0",
+            "exact": true
+          },
+          "f_rest_3": {
+            "dtype": "float32",
+            "sha256": "b1543484ccab51d2f88a92d99a5db426b716311e1bdc1cc3cad05637513e8298",
+            "exact": true
+          },
+          "f_rest_4": {
+            "dtype": "float32",
+            "sha256": "ce89c83fec17b34652db14f54cab4b817ff42e9e269c9a1f382fc33c0daa6023",
+            "exact": true
+          },
+          "f_rest_5": {
+            "dtype": "float32",
+            "sha256": "6a833af667f1d24db2300dfd869f6bf4c1431a2fcfd404f81e6dc819dec2594a",
+            "exact": true
+          },
+          "f_rest_6": {
+            "dtype": "float32",
+            "sha256": "ca519ff103392cfe70a7f960dd64b1c5086760edc8c9223ce561e749e83e1708",
+            "exact": true
+          },
+          "f_rest_7": {
+            "dtype": "float32",
+            "sha256": "5b7fed370c2c73724ed08fd776ccc14b23985ea92d1c2107794c8a20daac9353",
+            "exact": true
+          },
+          "f_rest_8": {
+            "dtype": "float32",
+            "sha256": "3d1c2f67ff8ef46e1d4b120eb8a75d9c986bbbd68efee96f7cdbe07cf1efec9b",
+            "exact": true
+          },
+          "f_rest_9": {
+            "dtype": "float32",
+            "sha256": "6eb0f420215b55b5b75b3fa8d06b7aa0d03afc0c20f4d937c2c4a538c725d773",
+            "exact": true
+          },
+          "f_rest_10": {
+            "dtype": "float32",
+            "sha256": "03c0d96fdb34fea57d355edfca97202c1a8b9751eabb303654fe0518f6b87f8b",
+            "exact": true
+          },
+          "f_rest_11": {
+            "dtype": "float32",
+            "sha256": "5f0c831583f4e59fc2551539f35565444587ef6c3670d15bf967fb44c3ac24dd",
+            "exact": true
+          },
+          "f_rest_12": {
+            "dtype": "float32",
+            "sha256": "db6047cd2dfaba84bb6452b1fac6781e15906df9a618d8dc06cddcc20da51457",
+            "exact": true
+          },
+          "f_rest_13": {
+            "dtype": "float32",
+            "sha256": "6dd04346881908f4d373204e37e742e0845bd93200794724186697245e0e7f28",
+            "exact": true
+          },
+          "f_rest_14": {
+            "dtype": "float32",
+            "sha256": "c5e588667a2e7483555cc34f99686059defb75e0f09fe8edfdcd2c92e0240bae",
+            "exact": true
+          },
+          "f_rest_15": {
+            "dtype": "float32",
+            "sha256": "53479011bd4ccb766cd1de08bd91c370b7b7b899157efddec6eb15c535b81b6d",
+            "exact": true
+          },
+          "f_rest_16": {
+            "dtype": "float32",
+            "sha256": "94b51a96b52cc0d7898f42f0de76a450f671482b70bafee7ef36d727434ca248",
+            "exact": true
+          },
+          "f_rest_17": {
+            "dtype": "float32",
+            "sha256": "71b95d9f431bf730887f6c915b2e82ab807720e8fdebb1229aa8eeed6a7c6850",
+            "exact": true
+          },
+          "f_rest_18": {
+            "dtype": "float32",
+            "sha256": "989652bf1a3b1015b715c1896ac2ff64b86c7bfffcc145953ce7db23cea30ad8",
+            "exact": true
+          },
+          "f_rest_19": {
+            "dtype": "float32",
+            "sha256": "6e7a8e2d89a5238683ee52d3cd17d0a6d70e722745390d554a0e54278426fd60",
+            "exact": true
+          },
+          "f_rest_20": {
+            "dtype": "float32",
+            "sha256": "58ebd3468a1ac805e719cba549c40c993990e4a2e56082689fa8ec17545efbcd",
+            "exact": true
+          },
+          "f_rest_21": {
+            "dtype": "float32",
+            "sha256": "ed7ae7fb35c587bf490b4ca854bd8200b7f680b2cf3c5335e35fb89e1772ab4d",
+            "exact": true
+          },
+          "f_rest_22": {
+            "dtype": "float32",
+            "sha256": "08238373d11a24e14bbc2c3f3a8a0c49acd19cc7b0ff63894c6251bc171374ae",
+            "exact": true
+          },
+          "f_rest_23": {
+            "dtype": "float32",
+            "sha256": "b002a7010b28d14c1f9512a70cebc36eb0e54fbaba5ce1b985ee51a520c9927b",
+            "exact": true
+          },
+          "f_rest_24": {
+            "dtype": "float32",
+            "sha256": "975619219fbb0bd78059b3308d72c740e8c1c0aef03378ed06096a07377f300a",
+            "exact": true
+          },
+          "f_rest_25": {
+            "dtype": "float32",
+            "sha256": "df7957bd39100ccfee630d66defe411ef63637ee89c69e6875204f61bfe5e389",
+            "exact": true
+          },
+          "f_rest_26": {
+            "dtype": "float32",
+            "sha256": "58a3554794d83c4c875d787aad538520d128afa8991fd656daac79b602c6ba13",
+            "exact": true
+          },
+          "f_rest_27": {
+            "dtype": "float32",
+            "sha256": "4296acaf32c0a99aa69a84bf1ed664d1bffa21e625606d51b99419664e4d6b9e",
+            "exact": true
+          },
+          "f_rest_28": {
+            "dtype": "float32",
+            "sha256": "01bffff7506d8f17e9fb40dd20c5cbb0fdd9cb1443cd65295e2bc3d9cff4d191",
+            "exact": true
+          },
+          "f_rest_29": {
+            "dtype": "float32",
+            "sha256": "b5e538aa13236017305bafe36293e392b250fdfee970a2b457d2fa94c6aff627",
+            "exact": true
+          },
+          "f_rest_30": {
+            "dtype": "float32",
+            "sha256": "42e7d7cec8a071ae36a12c725dc848147b49521c52d913ab953de61472d19bd0",
+            "exact": true
+          },
+          "f_rest_31": {
+            "dtype": "float32",
+            "sha256": "c793f04c0ae65c270fba727b9dd62e5c6b0b5e484b15cdcda775c9905481673d",
+            "exact": true
+          },
+          "f_rest_32": {
+            "dtype": "float32",
+            "sha256": "fa6bd4e6970a8878a1dc4082731abe3803921f7914ce635a57a9a95f2b1ed18c",
+            "exact": true
+          },
+          "f_rest_33": {
+            "dtype": "float32",
+            "sha256": "654ce0cd5098b1e6f2a0048fb98a359943a9b2e0a934b393a1bd77c5d720e4f5",
+            "exact": true
+          },
+          "f_rest_34": {
+            "dtype": "float32",
+            "sha256": "cb091595e438ea95f6ce08ca894e2c921a1d0500e477ef20cac56234447ca076",
+            "exact": true
+          },
+          "f_rest_35": {
+            "dtype": "float32",
+            "sha256": "d6023e3384273c5abc4327df01520ff6c1b95838da0ac2fad6286bb438963c6f",
+            "exact": true
+          },
+          "f_rest_36": {
+            "dtype": "float32",
+            "sha256": "aaf58bfd230098df84860f3fe02d050dcdbb96d34f87a12fc2e4b36d13f54936",
+            "exact": true
+          },
+          "f_rest_37": {
+            "dtype": "float32",
+            "sha256": "2c918caaf801d1ee10322920099a73ab915b10460ef8277419af4b4d3b841363",
+            "exact": true
+          },
+          "f_rest_38": {
+            "dtype": "float32",
+            "sha256": "929ac6b39ca22b5430b4222d5a8bd0aa38082cbcf2cb7b00a51f04f50feeeca8",
+            "exact": true
+          },
+          "f_rest_39": {
+            "dtype": "float32",
+            "sha256": "e2f02ec36a63f22fb861fd1f7c4d01a1515705be6023e2efe47730098308df24",
+            "exact": true
+          },
+          "f_rest_40": {
+            "dtype": "float32",
+            "sha256": "c0c6ee5537e61e828230cada7fb116c4c3a70458677bdf46d952541f1d7451b9",
+            "exact": true
+          },
+          "f_rest_41": {
+            "dtype": "float32",
+            "sha256": "2086f405a45d341373829faec02d87d9072cff8559b606a070470cd6dd1c1c1d",
+            "exact": true
+          },
+          "f_rest_42": {
+            "dtype": "float32",
+            "sha256": "d4ebda717d46eaf2caf70b93a17ca0a313f0addf817464974eb74bfca67e4fa0",
+            "exact": true
+          },
+          "f_rest_43": {
+            "dtype": "float32",
+            "sha256": "17950be24a1b75bf8ecaebd01b517995a22b1033945c9a905c3123dac5c84732",
+            "exact": true
+          },
+          "f_rest_44": {
+            "dtype": "float32",
+            "sha256": "8f0f16a7283ee91b6dfb234c0d887c73edf7175abe075e7014d25bb1bb58545b",
+            "exact": true
+          },
+          "opacity": {
+            "dtype": "float32",
+            "sha256": "9849f305d1f85a70009fe5ae32333546b515ba87928f27faa903b2f8dff7d00d",
+            "exact": true
+          },
+          "scale_0": {
+            "dtype": "float32",
+            "sha256": "dd3b31cc24f1dac6ebddb0f252beb528e2747ffb1ef625fb181dc2bb6f3a8801",
+            "exact": true
+          },
+          "scale_1": {
+            "dtype": "float32",
+            "sha256": "b57ca1892ddb1999412f09b7e3686be6498d1c32be90b680ee85588dbcf22731",
+            "exact": true
+          },
+          "scale_2": {
+            "dtype": "float32",
+            "sha256": "35e5182b2c1794692dd85614a5dc10660c0aec102daf557c6126b64a869cfe6a",
+            "exact": true
+          },
+          "rot_0": {
+            "dtype": "float32",
+            "sha256": "f6fbd91a2bcf62d499ee873d57eb66cf46f22ece223c78427281893fed069815",
+            "exact": true
+          },
+          "rot_1": {
+            "dtype": "float32",
+            "sha256": "7c9b0744b1451527e5cf17d85894ab9231a50f3b2c0ffe3453b0f08dd2480af8",
+            "exact": true
+          },
+          "rot_2": {
+            "dtype": "float32",
+            "sha256": "4271c754d8ea2173d848b7f2f5022779dfb6de27171ea7cacbd9a6cc17fffe2b",
+            "exact": true
+          },
+          "rot_3": {
+            "dtype": "float32",
+            "sha256": "57a5b62f56421fbebd99dbb9f7b04a7e52de6c912c55dfa8aee19f58e54262d4",
+            "exact": true
+          }
+        },
+        "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/score-v1/run-v1/point_cloud.ply",
+        "sha256": "7581b48c11ec44f8577028ee77b0bf5c3361d5370f5dee1105c27d20c718107c",
+        "bytes": 254297012
+      }
+    },
+    "all219_independent_PLY_bytes": null,
+    "all219_representation": "indices_plus_original_teacher",
+    "PUP_Nano_actual_raw_PLY_bytes": 254297012,
+    "compression_ratio_teacher_file_to_codec": 2.1196633738158894,
+    "decoded_point_count": 2050770,
+    "decoded_VRAM_or_render_work_reduction_claim": false
+  },
+  "protected_hashes_after": {
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/shared_coordinate_native_v3.py": "2a089b7d85987b571bb53f22ce9a97912fe690e01fc2d9d950dead39fd3a29a3",
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/evaluate_nanogs_frozen_baseline.py": "0c62664a1b90f6581215d2285971462175aae4c753cfe9fad5a0cd207c2525e6",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/CONFIG.json": "3b53a5c588fbd55d190dc232b61c72ce9998e0cf04d0b26393c3b32b83b368c0",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/RESULTS.json": "19f229837935d3624f2e179112d58217f479e1f2a572e23ce0cac6700c17f29c",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/CAMERAS.json": "d70b2304fee6aa90d7d5ef1748027bb250106f9311880b618a6c4227a65ffe67",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/RAW_MANIFEST.json": "82dd8bfa39548d64b0a2eb55cf3cccc9de7e08d19657dd089585dc8f9bdca0e7",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/INDEPENDENT_PIXEL_VERIFICATION.json": "2622897a668f309f61b5c49e9e015e683abf47081fbdd4e98fa836ec427d2399",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/INDEPENDENT_PIXEL_DISPOSITION.json": "5ad8eebcd43ca318de095d652816ae34f0885b54855a1bfadbc9c5f872c6e3e1",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/CONFIG.json": "6d09a450031c3f282e5758f4951878bd00462f719aea099136edcca4befbcad0",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/RESULTS.json": "291cc8b8edf622305a313366aea260eebb947e59837514aeeca656912693d75d",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/CAMERAS.json": "1dee02c8e1a7f36309a040c5413fd05676a149256c75ed53a6de756411702b55",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/RAW_MANIFEST.json": "4a7163b448de76bbcf659a0de87d65fa69c03a5311227bdc5bf6a9087903043e",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/SUPERVISOR.json": "0c4b5ad8fb5c96a58a942777c9efed18c1913d60d13e865fe932e566cecdd151",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/EXTERNAL_RUN_V2.json": "f7db20ccaedadcbe1b209a71658adab464521929f6dc9bb9262f14e535234bab",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/independent-audit-v1/audit.py": "8808b5aa1e9bc0ec9ea491decba916298b6ad5522d1b48dacf7845b9dae22f23",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/independent-audit-v1/CONTRACT.md": "1d6ff80b5ae4ce56ef31875c9d6fd94d9677c0d6d874fd889902c8e9d3628040",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/independent-audit-v1/run-v1/AUDIT.json": "47c77909c7cce34e78125e3c99a5a0e7fdc750bdc7155aaba07b907c32fcbad5",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/independent-audit-v1/run-v1/SUPERVISOR.json": "9baba0e4131eaf01da37809745dfdf07a3d065b8917fb105ca87fa3c136174ca",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/independent-audit-v1/EXTERNAL_RUN.json": "87cffeb5ad927368f9823fd0074f91f8bd14a90b6ee17fca2cd7e5bc84ec5d42",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/RESULT.json": "d332ba55864ea21ff40db0f493615f52aad28ffd4db36860764e6701c7e0a09a",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/SUPERVISOR.json": "e9932d51e7761582e899ef0c2f2d1c7a534f269317e17b2cedb8a78b095a50d3",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/EXTERNAL.json": "404175bf10ab4006a927b622086d88b555d007a91e751e87f5f825297c6249b2",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/control.dsh8": "0b6e62e28165df7e89635575906af403cc0952cc50f420d86d2e46da861a1038",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/decoded.ply": "2de17e7d0ce7d667fb384a95b547eac2e90308762356ace3f6c5501b1b5efe1b",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/evaluate.py": "f766439a639afdaea36351e5d35c0fa1a6b66d64cbe6783a9b004fb39b257b6a",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/CONTRACT.md": "0f9e2474564b1423869f82240c4178526d960920c43d034c3ffea18e1a1bbcb7",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/ASSUMPTIONS.md": "8afba4389647500bb55a7a7ee5baefead02eecc193db38c65bb92703fc241cf2",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/READONLY_PINS.json": "75dda71c84475286d857e5cfef4c97c81f162c5d0456b5912d78e386f9adf108",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/run-evaluation.sh": "7a556fbba77bd51b32bc92b41c3b55db4fbdd9b0ac5eec8477ccc4aa84e77d94",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/CONTRACT.md": "a65d991ba414f386e770a8c4fb24ee13d4935a50fd3a747180c2266b1aefbcb9",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/ASSUMPTIONS.md": "d1ba9da7de54ca7b3f28f9e1d55e50745233def685c71ea1905ae97dca236985",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/encode.py": "307ff7bb1824e61d03d3dba5b8701bddeb45f82090036632f7414840e2305379",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/decode.py": "b64a2356eb5722695f05e8ee4aad260e4d4605b94e86c36ab85234e59fb2f4b0",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/verify.py": "d3b7dabdabfcb390692e5e85405f9ae745e3b7c359ebab380f365a4bebf2329f",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run_control.py": "51f4bb68a42f9a669758d795dec873526f1e99d6cf44eb951cc1da9b2dfcf16c",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-control.sh": "62dce14a8eae3d8acf5957f17b27297746f475a9e27b8b58b126d74e0bd72e5b",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/prepare_test.py": "4f8f5cf2fa292cf4585d9235ec882787e7f3d6d8fccba680847d91a26c46bff1",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/encode.json": "78923b0fb5c4196fe7f840abb79981e7db1b886502f85a00445c3b714b3fd82d",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/decode.json": "18a23619d6ad5bf919e3903333a0f121bf6d0e401e72c07ca99b1329cf9e2bb8",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/verify.json": "071dbd92aa0aeebc3d7ac5c4c2323d04b2775d597b9812f58d1237860beda54b",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000001.jpg.npz": "75d0523ca5dd061c464fe59c43e015f3efcb9fe8de33d7ffd8a6746e0138053c",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000001.jpg.npz": "161609b6744ab5735b9cb4243bfa6909584fd8e2b7621c13f5c08360fb65564e",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000009.jpg.npz": "6ed1fcc65e247450c8aa00b8638308b6b8d93e22e715b605d48623a361948ae5",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000009.jpg.npz": "47f8cb4e52f79dd60cbfd3760a4c4fa0618dd5181364c81d3e5b21efb255dc1e",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000017.jpg.npz": "7ef26daf1a4d28fd2f53707145b56e6f47048c99965c767abcb8e411d5d8e718",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000017.jpg.npz": "a6fbce47742a603201750127a0b0a490cae991564d17aeaed4f4521faadab342",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000025.jpg.npz": "2afb731450fda68db0f9735eddfc63840c5d8db1a16ec60fbc0cacf7afbcab1b",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000025.jpg.npz": "528179c4883962f18f80fa00cbde996ee3c88e0fe4d4f5bc98e390178e7f0c19",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000033.jpg.npz": "4835c0e1047d273d5e63bbba7610c958a61e854e7e8aea2c3e7c410aacdf24d9",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000033.jpg.npz": "37e090ae0e69fe9643b28eebaabaafbf337e56cb88d4df077603ab9f34304b65",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000041.jpg.npz": "244716f92a4a69bd9eeb5b6c097cf5ae0bcf961483425de3261cd0ceb6883f8a",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000041.jpg.npz": "68cffb96cd62be43f26d5075ac2d0bdba1de8b04392e0b631295a5e185462dcc",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000049.jpg.npz": "5107c7f17f5de7d4faa0e753d1ea41eaacc020dabeac83314656243fbbe3bc8d",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000049.jpg.npz": "425e02fd3fce77dff9aa5c36f20e6b27292ec87c2ad2bc5d3ef391f37ea09b43",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000057.jpg.npz": "a7bed7d3d1806149b13a10cadfbb649ac9bc6adce38e9139b3212cd7c5797532",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000057.jpg.npz": "3c8ab6537796977bd80be4b2bf95df6e1860ba5fbdeafe6782ef13376837c3ca",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000065.jpg.npz": "a790aaaf834362e88ff6466b75ef1cd730c23cda1f55831382bf49c9d6efab32",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000065.jpg.npz": "029995c67bf2ad9fc61b60a9b2f152aca79381d5bf7061eba9269c4b666574ac",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000073.jpg.npz": "2ec05ee3e93248d84efd918eb347d4b8a7ea4cd8ec1bb554b5da76afc37a076e",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000073.jpg.npz": "ea46c057d4969c585de0b62089fcd5730c3e364b8841e921ff0bfe3d4ac2b1f1",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000081.jpg.npz": "0c454860671110b87237b8a0417371309a5c8b23d7507a4bbf7cb5ce20e1ffcf",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000081.jpg.npz": "08b1d5a8ab76e2d9685351e626e09f44f0853a1e1fb5e73d73a7d1acc1819c8e",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000089.jpg.npz": "ef70e42bdb4a10a98fbac4b1e2b52e5ebb08c162b4167ea26649f617598ab9e8",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000089.jpg.npz": "9100b83113f1b4112c1b888b826f0ed6b2394c4de9449f4bea2740f5575e2c20",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000097.jpg.npz": "2527d2413defa0226b4e293ea8cd2eb6bb8459b111f480fc4c4ef616cd7d05fb",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000097.jpg.npz": "cc6ad94b3ed61c7e8e32443bbd8dc6629dbd7000229322cd8bf46beebec6e338",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000105.jpg.npz": "4ab1abcaf0462cf335870559081b7fee2342ea8b61c4610c4f5a5332b41cb90d",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000105.jpg.npz": "608ec298932914fbc60af23d6c7285315fb305edb6e9acfacfe5d66ba139f825",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000113.jpg.npz": "5b3e2061efff1c35d2cc57b12d5d02ee8d2a5548dce47c5df4435cf9bd7bdff6",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000113.jpg.npz": "949da00c4d0706cf60cde5da5b93de63038d0ea4ef860129dd2ba6210324c59b",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000121.jpg.npz": "102154db6930008895c6ff2ffb7e00c8438c3d0714ed41053ef676fea8f2b028",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000121.jpg.npz": "b073644f65d4dda8714006e164eda61cb1af3e7875c5ac55a5924a7d18121ff3",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000129.jpg.npz": "b940c9c837dd01cd44ebf157b35172076d1b0e52d40536932ce3e42410d6eb38",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000129.jpg.npz": "3c58634bae837fb1da936cdd610e04c5c8ca426af97536a2f914c4e0e2299f32",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000137.jpg.npz": "58a969c748ab036b89579f309a4d4e386e8b60114bc94662bb0dbb51b3a197a1",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000137.jpg.npz": "43d6bbf95c052499355d30eae1c1534504cb54f4e2d2c534ba0d77abd228d576",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000145.jpg.npz": "d2c6f65c0d4868aec6e8b1b120513cae1d9b2d57770df46f792d64f35842ace4",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000145.jpg.npz": "f89cacd73d13f70e53ae0099862ec29efe3e8aba9a34103932c2f603ec371159",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000153.jpg.npz": "e95e6fc597a6d68fcc34bc089275b2f7f4a52dcfcd3226cb20198a4c002dbc78",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000153.jpg.npz": "8cb72a0d7f47d20ea6150565f1831794edd242826fc8f9f4438ca88426634d7c",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000161.jpg.npz": "c341ab5131bbbbdaabb03ba2ed6dec0d9c7c16dbb4bcfd7e90138f40b28587f5",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000161.jpg.npz": "1d508461432516124154bf8a1b480cb8d0c4d245c6e8d6cd58378d1968ab7f8b",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000169.jpg.npz": "050ce5812036a2b7435bc759a47cb11513a7a9137ebaa74fa486d349e15ca4e6",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000169.jpg.npz": "089d0efecde7206a5dd045efd0089d8ba03a791b813674b1ce22f3e6b5dd16ab",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000177.jpg.npz": "c7b890bbc0da37e50723019161412af725ddec7738bd9d8a90b43251e5b8780e",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000177.jpg.npz": "e62e73036ef01b8e524a30de02e7234126e4047cd146a25adf9e55edb0c26801",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000185.jpg.npz": "ccf507e8aa8c8307ae9fb0f4f918393681e6aab458364546619387086abd3733",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000185.jpg.npz": "3b5dbf0368b136ecf6ab9d850cf26854622ec1ad6426f62abb60387928acae39",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000193.jpg.npz": "97a3cc3b48a240d761b21522944501aab1a4356618d25348d976be8627525da4",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000193.jpg.npz": "b4d5fd202a0382425c31637914b48d8c7bed6461c6dee6f0ff17715b911134f5",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000201.jpg.npz": "308a4a7886b5dd9585bec3b0652c7bb02b60d4b328c2989666737a54b9efb182",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000201.jpg.npz": "9626d86519ea1f82370459aae1e2f94f0d2589e7c569f2191c30d4216b162fc6",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000209.jpg.npz": "dfd74a9a2497a19412ff77c65817afd2c6d84ebc6875cca647c26dde9edaff19",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000209.jpg.npz": "a335ab2a1aab5ab3b797524e605330440af571bbf2876ca7d02b643007c36725",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000217.jpg.npz": "60ddbc46a97f80502cba24d55d447e869f5042b196b4e3edd1fd919793e8f621",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000217.jpg.npz": "16b0cfbfae60677810b175ee150718fa4730386cc5f74b9036d742d0cbbbb272",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000225.jpg.npz": "e05e0c993392e1f6970ecb290f40cae1c536109f6bc121c5b22081663fc0ff05",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000225.jpg.npz": "69cb682390caec928a123343767b832904ee281a45010dc3ef9a6eebea5c35b6",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000233.jpg.npz": "b2e9eb6b3d50369a7c91a62ba79b83a52140943a8a9d30aa4b20d2272bc88e7a",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000233.jpg.npz": "a3ef509de4961047fdec7cc591ef2e9fae4756b4d216d386986d3c8328b942c8",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000241.jpg.npz": "f5124c1c33a64c4889de444ea2850edf5e22c51bfd9fe786ddb3246614e38460",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000241.jpg.npz": "2e6eb13a6a66cf70c48a81e74182b0eed3cf77237f9533902fdb55ec0cdf47a2",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000249.jpg.npz": "137ac84b685cc5e5f271f8c8e45899d340c4a25cff3b67bd9f51b0b9a8c9546c",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000249.jpg.npz": "214779fd9bab15fdb1054db7b86244a93a61b988c7c99f61f4779f973206d880",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/GT/000016.jpg.npz": "c3c10ed2dc083432419d53f2cd195849371f6062313d7a223ae946ac43ee77ff",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/teacher/000016.jpg.npz": "a8e1c292c6af398fba57feec3689e5cefba9b1912f15b3e27a6b7b1e5c589833",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000001.jpg.npz": "042719be80920c87bea2ba76061f7c64ccde70a8aca4b67bc8e5c6a6543c997c",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000009.jpg.npz": "3b075054084ed7622092aa9e83b1e0b3ebe27ae30c86f1448042731690550c37",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000017.jpg.npz": "e75f5afa3263ab781328f65ec3ed778eab2e3a6346b2bff9834da8a16b10061b",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000025.jpg.npz": "c5780334c9ccf1c0b16feb4b960dcfae791ca6d92a0e80e0e295bd6803c9aadb",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000033.jpg.npz": "8f6886cc1f067362c519cb465d0a78de65d1d5a055c72bdfbef737463841bb16",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000041.jpg.npz": "18db89b023bf4e09b153386ed37b74b62241cd6d8b8171efe6529a314e311c06",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000049.jpg.npz": "ffa341c6da4ae2e5bfc17aa0c70ca7df60c56734b9455ff1c23c79162d886357",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000057.jpg.npz": "77c4621555569ef62253ae0c49bb2e717e10dab20b0f4ccfd42e3859ce9c0104",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000065.jpg.npz": "0b5c94b858d6e0952181c60fb910722093cd02dc185606900d8f99d060426c30",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000073.jpg.npz": "fe901cc6e20379bf58be33ce78f59cd920c7fb42ea8059ff7022afd77335222e",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000081.jpg.npz": "79d6bc822044f857ce0f9474a596f53160bf930e589f55d98549e5b02e197768",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000089.jpg.npz": "b373f3fa9eeef7a9c27dcd09c4ea0c85e548de686c5d1cfcfd56158716c571f6",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000097.jpg.npz": "80693e79900c0a61780bdea4f81c4591eb2d3f143c9fa808913c0c91a000129d",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000105.jpg.npz": "1cf4197ad15532f15e5d4c4aa3086162eae9327fb624cff70a6b15589bc65e9c",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000113.jpg.npz": "bff9d9e5aa140cc6b89a15e133702cec2f0425263788645acef283d2463be187",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000121.jpg.npz": "446133021a26fb1948a92b521ac0c09a5a40e329fa60ebd54571e3976fb85438",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000129.jpg.npz": "9a6145975610704d6c0707b2a59559042c9c0f36782d6c105be5c3524c2277bc",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000137.jpg.npz": "a0d71fb3390f4a47ce96ed01c92bfe3084476f82d326a81fd1899494784e1730",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000145.jpg.npz": "1ff85dc8dfbc83e69d0e57ae4513612a5ef627c1a81a3e756a63b16c9d6f9de4",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000153.jpg.npz": "7b8783802caabcdebafc257913551df516fc2a592ade04352a1fd9fc2165142e",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000161.jpg.npz": "dd2e4d408a45ad0256c2a422f18f2052c1342e2ced027c7a61d1ad107e279cc6",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000169.jpg.npz": "7e8eeb4ecd3e8904669cfd9a6f2a924e5d37db2cbd54c63158d7b96f12eac16a",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000177.jpg.npz": "aa9cf03088cd11f19e0c9f04953021b9792747136a890e70e16b5f259e6099dc",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000185.jpg.npz": "66082ed510336e978932d6199ecfedfcdba871c3f78bcab671b0716c5a7c300e",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000193.jpg.npz": "0c549352643bbe077d2b82e0c2d4bc03b2887f3334eb9be18000ffc635caab3a",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000201.jpg.npz": "94268ba7065f76398ab5c65b65d534420fc5358bd54f2968ed0d653e537a008b",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000209.jpg.npz": "f86fe982104c7e8b5c79d15454f18720881a11f9fe0c0786b1f77448c7de3541",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000217.jpg.npz": "adf5dc3715b790e5fa1267aa9fe2e3c01d0d6b92d128114bdd9bf46abb9ad981",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000225.jpg.npz": "7bbc4a974e0b609fc0b8370bfbac09188e50b7c1f46f92d95ce8bf381cdbd631",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000233.jpg.npz": "9a7d8e0081106c077398e18210d3d348680d8bce4193d1b16370b55a07a47dd9",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000241.jpg.npz": "5e2457d7ac4391c9336a59ffa862aca6453b4e18011cf43e21b948662f550f98",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000249.jpg.npz": "49409cd585043e05010d337f330d4e95b4e6a01615b7fc3c22d28a365f377653",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/all219/000016.jpg.npz": "5fe275502fcd8a705c07fe66bac049282434850e4a9caf6039c9461bd40d976b",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000001.jpg.npz": "176c21a0cafcde4680d2725cc368bff54627ec04cbc9ca7f9f960714af0196a1",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000009.jpg.npz": "06bd87fa585ec7955c24f5e709fe9ffadf168361797c022e32a1e9db1a9257f3",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000017.jpg.npz": "c7a87ea14b105ad37699faab19b182d12fbf9972d96ee54abf0a5914b9f95209",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000025.jpg.npz": "2df5a1bbaf0a572e733f281048890c340664b2eb811872131b50383dcc7c982a",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000033.jpg.npz": "4696472f19cee855baa119c5a327c12f7c93e8d24a98e3e86b4546703551bc3a",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000041.jpg.npz": "2fd00b183bedea22a3cdf9ae4a56e54c5a6df868be4e6badd9a0fc656b7e19b5",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000049.jpg.npz": "b47491ce7cb055c0f4f94a514681fdc17a421f8887f21c04bc8646e4cec16e7e",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000057.jpg.npz": "949bc69aa7d5982ff32c2364e33eb0769bd92f66dc62214ed4a2eaf0e6d93ddd",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000065.jpg.npz": "8ab1d74bc56b3db8e2b8358b157a3770237c520daa676c3c9075be9aeada204d",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000073.jpg.npz": "8a84594827a43b1aa274de858692c4cf57ae10f3dc34cfa3e33f62d994126bc0",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000081.jpg.npz": "eee66d24cecd3194d454f4dd0301e3025e0e4d6f16f0d80a7331d9de413a5760",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000089.jpg.npz": "2ecb66fd8550213b6b0f1dbac259a740bdaa619249eaf59bbcdc9b7ee2491aba",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000097.jpg.npz": "3bdfa82db79357ae7bb9503bf0769d2a9c24331b5d49d169c5a2e44bb830f2f0",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000105.jpg.npz": "460bdae9093ff14d77c69d11320862061b1885a472e47d5c79305a7f98f70488",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000113.jpg.npz": "95575c02cc932ee94a8abe19c66d4c67767fd9df79865e817d48e34d82938882",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000121.jpg.npz": "1a009121b4ceb192f69167fd16324869bbe3b1297dad779dd2e622c5c2a526ab",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000129.jpg.npz": "7a99f97c4153c8b1af3df229f47caef539625cc64af8eda74b393e77eae54d6c",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000137.jpg.npz": "ba5fcf3fdbe7c5513f890f380f57022b19a8a6cdf067caf396e6c7b87b8c2b9a",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000145.jpg.npz": "e686489d2ace57bbdc475ac172c48b5c2ddeccb6b463c734090810c74052e442",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000153.jpg.npz": "41133341e01c22f64cf569317d95ac8bf4f7e44bdbe37fe7055317fb22fbeb1d",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000161.jpg.npz": "6d8804af2244080e9daad2946de9867cc284d58213f2a7f47e8d94f30c5ee408",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000169.jpg.npz": "6c7a9009b9d4f412a5f34f300b398c9135d5363425e5ccc36654623dfe356cde",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000177.jpg.npz": "1c24225974999c269a1222eefbe7ebc363101d115a5b69aac0d723d20100ae38",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000185.jpg.npz": "f270b7e12517716d438af0c36b5c6cc2b868ded773cb49a59a87a4226c351c41",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000193.jpg.npz": "bcd37cff244c37d51aa0fe18a5ea9979e842ce63bca2a55bd6b2a639d9b9d3ee",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000201.jpg.npz": "24f8990f8c4d2fbc29caf5933b98b24b7cc0fb064644b1392e867c26d86086cd",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000209.jpg.npz": "5bd0480ef8e8244f433f9b31f2243f791101c1039e2bb7f8bd9697609c864912",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000217.jpg.npz": "bbcccf5908d8881c2ebc2755afcb706939a370a7d8558f38e989338c1c01561a",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000225.jpg.npz": "b76a1a9e09294190b51b6dce5435d219bc156c7f824e64be64e424b160c934d9",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000233.jpg.npz": "d0529378afc3cdadca94e4d4dc9b9d690c1e6826a251ac44b2ff86d7d887e7a3",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000241.jpg.npz": "5aab7fa91d3abd600d7fa7d49da684acd9f6b6d9f93a9b2764a2e783a43b4b20",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000249.jpg.npz": "64e9f53a72c1687b98774780d7a0798c60adb43ea8efd7783e61e4a5b8561994",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/raw/nanogs/000016.jpg.npz": "6bf126bb3f27fd1a4b700224f915ac5ae3a1a5a2b0ab7a9b52a05a898b15c822",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000001.jpg.npz": "6c4594f4f27ce277a74b8869ef23b4d23bf6264f0b49abe952a86aaf0da46fa4",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000009.jpg.npz": "03244213be813f2c4f2ae20365f82f3e065d325a59c3819d7dfe5b16b3c7e48c",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000017.jpg.npz": "c6cb34bc1811ed7d3e5a2ddd362e0a3ae99f17bba26fe18fe32d270af843ceda",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000025.jpg.npz": "f7af80aca399e7180deb1a720311b13f560cc04a6412b2a1ee0da94e900df3ab",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000033.jpg.npz": "74d4c5ebc19d5f875f91a59997f5321899e6c75407f909323328ade24c624d37",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000041.jpg.npz": "f408de4a7f05a1cac0774e2549d480747f221448c9c186e9d6fdd46b8f4b3fe7",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000049.jpg.npz": "bdea0c2eb7af2a28c9320ad01785b54133ff60548037668d639143ddfce73186",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000057.jpg.npz": "91878c008dfea91b4261a87ff09d2b3da4c1984d1e52f3ed35962b4a448d310a",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000065.jpg.npz": "27d4e397cbac25a1037018a4aea3d68733b62a4e429ba17b791467463edfb56f",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000073.jpg.npz": "e263ff17d030b928ba3b3e35d238998dc08a7f844f4bf49fa28b4634626beed2",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000081.jpg.npz": "fa78825c3d2beb51baf022396948b464f70796d0b0cebb95697727f862c93928",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000089.jpg.npz": "5a57cd1b367e17cdb2c6f6ad29860fd84e4d2a6b49645a14ae6232853d45f572",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000097.jpg.npz": "ff7da1f3b7ef002f6e06bf75eb0df9938c9bb21fe670f908152cfdc2cbebdefb",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000105.jpg.npz": "46e57b40119a98f6f2ceb37810277fc4aa0751dc79d35cd4bd9deef3d46968e9",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000113.jpg.npz": "762c3e339e6a6e1e81d49fa0cc8a5b6241a215ef1dfee1d9ee762df3730e9225",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000121.jpg.npz": "5074314cdc7597cb513e281a033c1f4c194dbf8fa90ba853f869abcdb152518c",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000129.jpg.npz": "dd1a202b1bae8a29fd8cb2ee79d6172f55aca7c4d11e66b13d944354e75ff58b",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000137.jpg.npz": "de777faa3fa5e310615c84b94492468608c93ac2e5c6b5b5cf62534c8eaa5659",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000145.jpg.npz": "50aa09607c8d57b9c191bd2c43bd2adac3ca2f2a63ef9dbc4d6554412b1b64db",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000153.jpg.npz": "e89cfdcacaba46326f76efec0b3cf0659fa6abffccaf41cfd57c934c5fcfed7c",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000161.jpg.npz": "8e2f7f8144a8c934cd3acc8ee71404092db017d753b86e0eea2e033fb3d2cd3c",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000169.jpg.npz": "f393ae43c757ae00f47da69f976fa397058ab8dd7fc450cede0e936f38f38577",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000177.jpg.npz": "a138a5df1d86a26093ac2372c925825ddee1fa1c6cf204a5df22dfdfea6c2303",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000185.jpg.npz": "7451205f7bdaef3f365dd90953e6dd80ee34adc752ae47e165e4324b53d07a02",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000193.jpg.npz": "c420a99a55abebc57c94cf8c5bda5307ff1e3c479cff4e9ce5d6c9a78e373f33",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000201.jpg.npz": "4609d2ca76273c3c268959d43977633109747ee5a78260bdb3c4f6924224171f",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000209.jpg.npz": "926203e3d7ee537a3b67f9ab0cb961273a4e9762b89c98a88f07ae2cdfd34691",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000217.jpg.npz": "3981d7a40b2b453c691be1b7b00274bd9fd797918e9d13fb1657c3b70448757d",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000225.jpg.npz": "15e3be57b918a18d89a9fbd8cacac3f6bddd0d1f0e0a14bb2e4f4bacbee3d647",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000233.jpg.npz": "d0fad41af6e479e6ec578578a795af1bdc91346571164d8ab4439008658c12bb",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000241.jpg.npz": "7eac54779c018904cc31dfcff40c15721398aa6916a4889ddffd82c77deb5b77",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000249.jpg.npz": "21b450e841cf1b263a2edf7a73aef9e350a1c53c9561b679c83a959a1dbefffc",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/raw/pup/000016.jpg.npz": "0e599d3714e5c307973318a940a737d2c7944cf71c0567be412ab993de2753e7",
+    "/home/administrator/projects/gaussian-splatting/gaussian_renderer/__init__.py": "a25cf5fdb22cd8757fb2a1e37b75352042d65b16138a9fa6243f8616ca1369b8",
+    "/home/administrator/projects/gaussian-splatting/scene/__init__.py": "895d042f4dd2c6ee521dd985aea5c49d9c6f5c7379f76c4d537d8dc5468f18bf",
+    "/home/administrator/projects/gaussian-splatting/scene/gaussian_model.py": "546ba41528a879af4d83bd280a3ef3cbcca9a5e9132204185aaa8f8ee9ffa310",
+    "/home/administrator/projects/gaussian-splatting/scene/cameras.py": "7344b9a4c95e3649becab1b9e30eb0b351a15a61370f64352dcb231aed916128",
+    "/home/administrator/projects/gaussian-splatting/scene/dataset_readers.py": "b06f01648fee893c4785ed38eeb934f91b79817b9dcbb694291c9162b0b6ba94",
+    "/home/administrator/projects/gaussian-splatting/utils/camera_utils.py": "7644d89893f2481a7a9be592227bf11f3e6e5c469c9ce92c3cb25f9ff920c458",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.h": "58b97a9728e24d41602a2ac3e8eace025cfd3228de6e75033dc458d0303a46f4",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.cu": "e338380e2d4631cf842904fbf87025ddb46d49b5f1a5a22fd53bf8ada0ec1109",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/forward.cu": "4bfb6830a138bd016f39fa4558f998825d4182b12cfbda2f62bed0ab75042b54",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/config.h": "86d90fe26989e5a991104842961341d1bcb4374d5068dcb2a56d63a9017f8d65",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so": "6fb6d2d0539cfc28a0ca150a0fd5ff02a1402ef0a92f97ce05f5e72b46255b3c",
+    "/home/administrator/projects/gaussian-splatting/utils/loss_utils.py": "e4c69eca823525d3057c5441953c5b7c83ddb21d579039d7e82cdb13d35d3455",
+    "/home/administrator/projects/gaussian-splatting/utils/graphics_utils.py": "d6e75de8161e98b72c2691e8a944a842e1b6625d2306035d079c868ac632edfc",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/auxiliary.h": "5a3345d46acd23a85e44c214dac404f4be195d7c4c49c9effa280ba3bbb10a51",
+    "/home/administrator/projects/gaussian-splatting/output/truck_30000_r1/point_cloud/iteration_30000/point_cloud.ply": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000001.jpg": "38063d904ed164b1e32193ab9b087b939e0a873767582e52162672f5d25beb56",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000009.jpg": "3da0fedd20eb8df970ff7ff4596526c10f9f99c4766cfe776f6bb907c6751fbd",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000017.jpg": "9fe749fe16a046e2a85de8f5e2860cb38a4c8b96701ce83e666d4decccfdea10",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000025.jpg": "61cd0d6f35e20fb01bded585fd5fb468e38e508f76e31cb2b92e2ce7c308d49d",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000033.jpg": "e5d8c938c25daff20a8fc1f6b7bee1d2aaa48d975811136f9c7496dc5b1abf88",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000041.jpg": "8a14de1c34f7787408e8cb67c47ef310ff32a441b0e14633cce4a0349683d452",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000049.jpg": "ffd719fcf1e085636f91eb760dae03a86ea3d24c49e9ad7e5fb93ddc3d4471ad",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000057.jpg": "30893008f0b318b12fbba3572631d09cd40b1f1f1ad05d07e0a2faf4ed5370ba",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000065.jpg": "299c73f773aea9228f668f684779ff1c7e850d6d27d13198651a6190b7eb9614",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000073.jpg": "c467cb544863ec64df5a90535ebeaac6eaa38ef44b86eaf5110ae9d150e0658e",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000081.jpg": "ef045c6114ae4759dcd89bac87e36fca17cae799f917bdd688a847fc0e2bfe04",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000089.jpg": "873a1da1e1492f0cc26ce3920059899c1f1bcf7646b238b71214ed955edaa3fe",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000097.jpg": "1ad716dc79bf5bbaee50213bde7c17fe1a2496753f9e49f75906e95f83edac1e",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000105.jpg": "bd2fd2bf9cad85f61045e67d77cf4c593eb5ce6290cec1e65a91b30493b47eea",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000113.jpg": "a8879e514eb7f563de09850708ef816b6dc6fa3adc790ef7d58841b186e1b28d",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000121.jpg": "8e58b606d8c98e4a0579709cc01f84ac7e3d64e0c7c2c3fc32df58597a7e8e7c",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000129.jpg": "0e737de0d4832d4629c500b465a9c98db2138a34d62d7076c04d2de63afbb2e4",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000137.jpg": "8d02aae5a028a428db245ff397213b44cbbc52868f292aa13aea180825353b58",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000145.jpg": "d9b3e4d79c97b8839fdb7805bfef2fbc2d2d029cf03dcae64e561308bf51f2c8",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000153.jpg": "483b386ae9a4964ef0e469be89e271a79f585b53482a0ef4b9264b4ef60245c9",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000161.jpg": "e0eaf5de82298c80fdb99d788ad118a24c60d2da29221ab5334d4e277fcd1c76",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000169.jpg": "720844ff45d48b2c07febf5a713bae8aa59e139933e92a68eaa8bee492e22576",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000177.jpg": "0eaf9ea73ce530dfa4e5d07e1f1595c0639725eefce0af7d4437fae7b0061700",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000185.jpg": "6c5656edc2742b456a8f6834804b3ae29f1125b05fda53d933a76901ea4ccc1e",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000193.jpg": "fbc85566272bd79f5b19e555a54f08c2d88bd2697d54c369054d06951021c282",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000201.jpg": "f88349e603d5b4af4b152074edd588ac56851262966c1319be12dab67db7c677",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000209.jpg": "e1756da2c08718826240b07c65d7aab7ae237b2912e37fb8192d1f97a931f3e1",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000217.jpg": "9a2642a94f59cf079f7e28e68bb61cef00c41c5627157f811950011d91303aed",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000225.jpg": "2ad50783dfc39a959f0bd45cdf991230ee5d09a315ff15bb898b0b70130f4641",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000233.jpg": "26ff6940eac72aaffab7183579cbdc8bd7baef4dcdea9e76ab95fa0e2f4482a7",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000241.jpg": "53935e777eda3bfdadf40a5fe482f231ae7780c4c32ed0485f09bbcb928aa2fb",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000249.jpg": "45e06be9a7dd2416024f10b8acbdf3c886895b816ea1c3685350e59d4c9c4705",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000016.jpg": "1c6f5ffca28568c76a352f503370f53d0c72620db3b466c0fa5ac09a17877178",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/run-v1/output.ply": "383dd0268752f341612231c4206c00bc7f5c737e374ae38c75f1f22f1aeeb7b8",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/score-v1/run-v1/point_cloud.ply": "7581b48c11ec44f8577028ee77b0bf5c3361d5370f5dee1105c27d20c718107c",
+    "/mnt/d/Documents/my 3dgs/research/experiments/truck30k-coverage-controls-v0/run/all219_indices.npy": "f6c9f4da05e064db5c94134c8ee241eb2188fb83a5c3f860655d2eaf279f992f"
+  }
+}

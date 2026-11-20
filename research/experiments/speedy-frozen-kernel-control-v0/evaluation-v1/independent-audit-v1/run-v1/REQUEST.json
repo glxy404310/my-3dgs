@@ -1,0 +1,18 @@
+{
+  "pins": {
+    "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/evaluation-v1/actualrun-v1/RESULTS.json": "08ce3b0db7f505b8293410bfc88ed7d68a56e326785e31e40a0e78019c74a83c",
+    "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/evaluation-v1/actualrun-v1/SUPERVISOR.json": "ffd49ad90ce5a7629d2b39938789677044568231d1145e1c158c541893027ec2",
+    "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/evaluation-v1/actualrun-v1/RAW_MANIFEST.json": "b8c2c613c0bfeb42733323455172eb739859939ba33184faeed25bdbea4bdfb3",
+    "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/evaluation-v1/actualrun-v1/COMBINED_RAW_MANIFEST.json": "88d23439a4f5439e5b5d05f33e7d68e93085666aded0d2ea547d5dfe94de674b",
+    "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/evaluation-v1/actualrun-v1/CONFIG.json": "cc598acba60abb1e8b116f22faa669966bc13c59474728ec5bbda33a0d4ebb70",
+    "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/evaluation-v1/EXTERNAL_RUN.json": "c09226ef7d6783f1a40a918171f1f2388d64f782d35b681543dbee8eca0e3dad"
+  },
+  "attempts": 1,
+  "started_unix": 1792708918.26292,
+  "harness_pins": {
+    "audit.py": "81eee4cd5bf9c3f46ccb86c86860248ae548c6e5a010673afa60bbf3f7295ca5",
+    "CONTRACT.md": "7dd702a238cde3d6db844eef6c483d90ede3f8f9d4f9298a93fa59bb3ec83dd2",
+    "ASSUMPTIONS.md": "50cdc8ed684a1e4fd10b1a7040ae22f4a5ef99da983e1d046a2623cfaa1d8a7c",
+    "run-audit.sh": "4f4cd27c166b23144c66ba59a96042f6ec0a15d8c11cb7f2f853a77c368f64f4"
+  }
+}

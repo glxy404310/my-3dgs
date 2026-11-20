@@ -1,0 +1,27 @@
+{
+  "variant": "noop",
+  "selected_parents": 4,
+  "n_before": 1707287,
+  "n_after": 1707287,
+  "before": {
+    "l1": 0.03815057314932346,
+    "psnr": 24.135472297668457,
+    "ssim": 0.8712418377399445,
+    "render_change_l1": 0.0
+  },
+  "immediate": {
+    "l1": 0.03815057314932346,
+    "psnr": 24.135472297668457,
+    "ssim": 0.8712418377399445,
+    "render_change_l1": 0.0
+  },
+  "split_seconds": 3.2060999998861917e-05,
+  "recovery_update_seconds": 0.16154032499999715,
+  "total_seconds": 9.502554615999998,
+  "peak_allocated_bytes": 2526769152,
+  "peak_reserved_bytes": 2575302656,
+  "camera_sequence": [
+    "000128.jpg"
+  ],
+  "complete": true
+}

@@ -1,0 +1,18 @@
+{
+  "tool_session_id": 48891,
+  "terminal": true,
+  "observed_outer_exec_exit_code": 0,
+  "watchdog_stage_exit_code": 0,
+  "outer_command": ["wsl", "-d", "Ubuntu-22.04", "--", "timeout", "--signal=TERM", "--kill-after=5s", "895s", "/home/administrator/venvs/3dgs/bin/python", "-B", "-u", "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-v1/run_private_build.py"],
+  "external_watchdog_file": "WATCHDOG.json",
+  "watchdog_external_wall_seconds": 137.21370033500003,
+  "stage_wall_seconds": 136.3512318,
+  "peak_sampled_combined_RSS_bytes": 3575173120,
+  "sampling_interval_seconds": 0.25,
+  "timeout": false,
+  "memory_stop": false,
+  "training_scoring_rendering_model_load_calls": 0,
+  "cuda_initialized_after_import": false,
+  "clock_scope": "Whole watchdog phase including protected-input hashes, clone/checkouts, source verification, author build, import, source/protected hashes afterward; excludes Python interpreter startup. GNU timeout independently bounds its invocation to 895s TERM plus 5s KILL.",
+  "no_retry": true
+}

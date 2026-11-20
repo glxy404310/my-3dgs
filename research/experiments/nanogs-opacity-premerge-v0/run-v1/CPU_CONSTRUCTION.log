@@ -1,0 +1,3 @@
+Opacity Mean: 0.22804518 Median: 0.10172459
+Pruning splats with opacity below 0.1000
+Original count: 2050770, after opacity pruning: 1033349

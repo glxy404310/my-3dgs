@@ -1,0 +1,4802 @@
+[
+  {
+    "arm": "GT",
+    "view": "000019.jpg",
+    "path": "raw/GT/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "78d79dc422b4ab7070c2eab64349fa0f5466b053e08493e47e86304c766920d4",
+    "array_sha256": "5e264c4ac95a2bf9603499ebb1fa76d8cfbd1b97cb5f0e3f492890fa1cda21c0",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "source_JPEG_RGB_float32_div255"
+  },
+  {
+    "arm": "base",
+    "view": "000019.jpg",
+    "path": "raw/base/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "d600022e671cf704bd90026b86b4d1e5c440d5ec8116af22922adec94c367559",
+    "array_sha256": "f36864aecf314f359e36961cd6c38b73d1c9297b3f1629b563c7d3c1265e4b55",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "full",
+    "view": "000019.jpg",
+    "path": "raw/full/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "665aa63b4dcd5fc834b26ba997d64248b7dc46bc7e5e828362c5ff845370888f",
+    "array_sha256": "89cb8996ae40cd91f8c67b6f317ca019de249072d6f280bb89c93380f39efcda",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0",
+    "view": "000019.jpg",
+    "path": "raw/graph_g0/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "fbf0df1e67a3ee271f419bcc3a75d47b476bb30237cb280c4add1cb841835e94",
+    "array_sha256": "9b6bb72dc1e6f68c5a27418b51d35154035459d206ea188a3309dbfbe915ab89",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0_A",
+    "view": "000019.jpg",
+    "path": "raw/graph_g0_A/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "eb07ecdd0884018848348ee0b160ae1b1ccc43a4f14a017e385bac72662af9dc",
+    "array_sha256": "226090e11819af75d21388571b54f6d90e7923675f41e10ae8b3e617a0225d05",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0_B",
+    "view": "000019.jpg",
+    "path": "raw/graph_g0_B/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "3e164052e014777950bd3359f066e74927aab932bed50a69cef41cf597c44315",
+    "array_sha256": "a889b1efa25db07bfeb446d0da8b3c5a527f0f55f2f419c3b091a5936bb43214",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1",
+    "view": "000019.jpg",
+    "path": "raw/graph_g1/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "7f377b9ff13f86a6d2fc6060759cae0ad2f080c6799075ac317303eef1c9a564",
+    "array_sha256": "e7b6386a262823009f218326b9b339de7762f34a0c3ead15f7614a56d65eb164",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1_A",
+    "view": "000019.jpg",
+    "path": "raw/graph_g1_A/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "5c4f7dff4b1eef1cdacfea689d9343ce812479cee801b4bde66d2473c79ebd93",
+    "array_sha256": "70a620a83af51f6c4364edaf0b26407e2af413c186dec56e7110845bf3455a44",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1_B",
+    "view": "000019.jpg",
+    "path": "raw/graph_g1_B/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "e6c550eaf9a4eacb541d8e4fd9d5f2e06f713f246d2a4f9d3ac6248c5ed099ca",
+    "array_sha256": "798f86943e812a9c7cd85e4f0ba266824538de81dd53b4435ccc00c5477672d7",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2",
+    "view": "000019.jpg",
+    "path": "raw/graph_g2/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "212b3b2e1371b60b5183a8d434045a2e119026ec98aaa4ef4793f3d99b4177db",
+    "array_sha256": "16f242fd1f82f94361b62f55184d02a3b8a8bb0a4fb52bbf514ca772a0d0e008",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2_A",
+    "view": "000019.jpg",
+    "path": "raw/graph_g2_A/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "28ea8a55640a65ce2cfea6824f46590c2bb8b28b2c8bbde7540bb412beaf5f97",
+    "array_sha256": "786305c38247ce72aaccb3383eb59425f46d51dbd9755ce298fb1e75cf6357ba",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2_B",
+    "view": "000019.jpg",
+    "path": "raw/graph_g2_B/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "3e0cbdd8b36204de092f8e85d15fafb4f8a8858e804f15653d8f97a9dee725be",
+    "array_sha256": "26854f822bd73a3e341aacf5b2090fe44233a193d424efe86af850cbf5f513b9",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3",
+    "view": "000019.jpg",
+    "path": "raw/graph_g3/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "13ad41fa8ec70ad8c956656d7f0233b8b06f606163a56755307390c481b9db24",
+    "array_sha256": "a7c5700dce53416c64cbb62e1cf984b149803d0809486a8370f92860b7b08348",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3_A",
+    "view": "000019.jpg",
+    "path": "raw/graph_g3_A/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "4081725c0b91089f308c751a491904862d2260167d9aaaea71169db61674f5e6",
+    "array_sha256": "f28e6dff33783ce3ad1c09d9db5cac6bf8893c0b9bde4ccca600ba0668417a70",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3_B",
+    "view": "000019.jpg",
+    "path": "raw/graph_g3_B/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "2558d410667480a47183842ed8ad398d7426681fd930463af418aa5af7df4924",
+    "array_sha256": "11870bdfc78c5d95b9e505378f94513690ef9c809c671eadd1a5547db0e8602c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0",
+    "view": "000019.jpg",
+    "path": "raw/random101_g0/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "7ba3804514550894776ce560a17eba8075cb71e75fb3d7e9053d87205267e177",
+    "array_sha256": "fe13511d8ebc863e42c50c92cae019db158e1a9c9cc741ae106b5ff8d5e96331",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0_A",
+    "view": "000019.jpg",
+    "path": "raw/random101_g0_A/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "3f718a02749335da41eb8ec8baf987de86a98388b3b4da6b486fb25ecb559e87",
+    "array_sha256": "70c80e42ad3f622eef81990356bb09e24d7c7ce879eb46eb1015da841a9b6353",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0_B",
+    "view": "000019.jpg",
+    "path": "raw/random101_g0_B/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "62d4b6fe915722168036749551609d2544c2fbb0631c4b99c1c64483336f75af",
+    "array_sha256": "6e3ff9a96e1b948963ec6c61e231fa3dc45c3d851f7920f109e07c4d20d2a483",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1",
+    "view": "000019.jpg",
+    "path": "raw/random101_g1/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "93e56e3695b9a4c72baf5bd4404a1e9166d93d31d1153352b11a7cfd02e6ac52",
+    "array_sha256": "c7d0a65708c4751427b17c12520aeb0cc9aefc55dc8bf72716541361643836fb",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1_A",
+    "view": "000019.jpg",
+    "path": "raw/random101_g1_A/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "dbf81c922d86f513ee882437698cceda78e57a334164be43baf1db2181fb9b5d",
+    "array_sha256": "a021f40d20b09adbbc03a4c4f25cb1c20bb572432cff1e3ef42f551dcdb8b7ae",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1_B",
+    "view": "000019.jpg",
+    "path": "raw/random101_g1_B/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "4494d2bf30e9448cd44aa01ed1d4d9d5dfff3dc4bea41dc7c53831481853a489",
+    "array_sha256": "d3ba5c8e2b8b660173aef02414a44fca85e5f7253331e66c72e09c48d4022417",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2",
+    "view": "000019.jpg",
+    "path": "raw/random101_g2/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "095e81a0328e7470fae21c870ff199b12b2927ac071709b1262fc509cf9192e6",
+    "array_sha256": "af21563794f78999225c48416a6bdf9a9599acbcca25d35ea88102f58bf4db5e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2_A",
+    "view": "000019.jpg",
+    "path": "raw/random101_g2_A/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "e5bffaeaab5991bf37fe79c2c77d2a94491974f487104330d6302bf1361606d1",
+    "array_sha256": "36e7627c8911725cb870a227d3c8cc0da15dcb95375f33907200340755001183",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2_B",
+    "view": "000019.jpg",
+    "path": "raw/random101_g2_B/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "b61b4a6a6d7edb9438f442600a8273542783df6ea6081ce3f87ec9d6e8a5d113",
+    "array_sha256": "07da7530044a806c380b2be1fc40b65a5c25309732ec62682e823d39de1b4a8d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3",
+    "view": "000019.jpg",
+    "path": "raw/random101_g3/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "a2aad5feb577be1318c5131b7977613ca0a9186796926750b0aa810e17348442",
+    "array_sha256": "501a1857bec65469a991d07fcf3bce98180318c9a2116d7849bafb17d935200e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3_A",
+    "view": "000019.jpg",
+    "path": "raw/random101_g3_A/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "58695e9ca2f50f76b452766b9be05e26f9c9543a944f579baac73d012cd57b32",
+    "array_sha256": "8f8e2c772f93ec295cd28280f43159f280a34bc8cb6554e24e86f79cde8018e4",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3_B",
+    "view": "000019.jpg",
+    "path": "raw/random101_g3_B/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "2204d87c56f1ea6254c7eb90a07aae8998356d1a3435245018add1960d047575",
+    "array_sha256": "f445da6fac9fe31362db01bc5a934aeef742973df04a8407e244cc1685ffb8d1",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0",
+    "view": "000019.jpg",
+    "path": "raw/random202_g0/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "ce1f0dab8eae2e51a6e823edd92a7c31df0d708b4f8c96856177eed1e68e4256",
+    "array_sha256": "9d36f4c19811aaa50dfcf0be1ff9a284a2ae5ab664c4cc84079e48e4810a042b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0_A",
+    "view": "000019.jpg",
+    "path": "raw/random202_g0_A/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "c79753fa8843f0cb934a7f063e28673daf1bae9aaaa032f86b1860ec0bdf9dd7",
+    "array_sha256": "4356cf8f61e202daeafdcc4d5dd0d72e14f5a8a914866eaf9792321a8341a2da",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0_B",
+    "view": "000019.jpg",
+    "path": "raw/random202_g0_B/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "d13ed0e7d7118e9259526560eb626fb1889494abeca3709cc627e1df5509fb4b",
+    "array_sha256": "05ad50e78d1adfedfd2ee81e90a1dba5aefecc208bbd0c0ffd189ed3f1620b99",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1",
+    "view": "000019.jpg",
+    "path": "raw/random202_g1/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "bb8eb013fd5be41a8fe751ddecdf7e2730ef6cf48f53a88263c76130522222b6",
+    "array_sha256": "aea4928504f4a2c28e0064bca9b0417047902dd9d9c70752263591d97de59af7",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1_A",
+    "view": "000019.jpg",
+    "path": "raw/random202_g1_A/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "1185e708d24fa30769bf23a6f915e79b946a03d1a04f972fcab91539681294d7",
+    "array_sha256": "ec313064652f6e10b0423f9b6d96b52083a4c272344ad064d973f36c5a522ec4",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1_B",
+    "view": "000019.jpg",
+    "path": "raw/random202_g1_B/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "573dbb5615250ee8d910e7a9e02810b34ea9ced480b42c6dcfbafc943856d152",
+    "array_sha256": "d702399d2efe288ae1b6bdccddce56cf44899fb44ea34842394111de0b50f0cb",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2",
+    "view": "000019.jpg",
+    "path": "raw/random202_g2/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "56aa4fe6bc4cc4d86eb44071344693fd90d595c5d66e14d297734a7c87a391af",
+    "array_sha256": "e14156702fb3b6d0132631444839fcda2faefb20e0165fe8156f083a34923caf",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2_A",
+    "view": "000019.jpg",
+    "path": "raw/random202_g2_A/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "2773df2f863e8e52c6e4e488649f9d02ac1fd78ecd88ca808781f2200fa2f67a",
+    "array_sha256": "8a0df3505ded6c1cbde0c53be95db2c4e3ce9969aa8cfb7edb406794a51f1541",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2_B",
+    "view": "000019.jpg",
+    "path": "raw/random202_g2_B/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "4a6be805489f457875c2f0f8d196a9859fc029f6d740602e6f0083710fef50cb",
+    "array_sha256": "afff2499ed0439831a263ac48aaa86c1db4404c3838b89a7d97aeaca39833066",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3",
+    "view": "000019.jpg",
+    "path": "raw/random202_g3/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "29f7bdf75a47898bafea47ab4b449a100a5f36fa06b3a902d6911b3a64b09ee7",
+    "array_sha256": "c069794e6d76c5e02fd438074fe613ea0ccabff1fd9e41a7e4615fb4d45758b6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3_A",
+    "view": "000019.jpg",
+    "path": "raw/random202_g3_A/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "1df59e190ced4036fbce4fd48fdf2a9d5cf9f0670ea89d0755c12b9ada252e19",
+    "array_sha256": "fdaee86499030cead659bfae9c5a93addb631f11b5c3e5cb668a0d5056463087",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3_B",
+    "view": "000019.jpg",
+    "path": "raw/random202_g3_B/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "e29bfb2c0579459ee1ac5bb0fd34cb4397b31fde2535ca8fb599f72ee2713219",
+    "array_sha256": "ba6060a757eef92bebafcb6edc9999d0586780f35e245f86f88c4a51b149d65b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "base_repeat",
+    "view": "000019.jpg",
+    "path": "raw/base_repeat/000019.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "d600022e671cf704bd90026b86b4d1e5c440d5ec8116af22922adec94c367559",
+    "array_sha256": "f36864aecf314f359e36961cd6c38b73d1c9297b3f1629b563c7d3c1265e4b55",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "GT",
+    "view": "000054.jpg",
+    "path": "raw/GT/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "b5b904f6bde698678bd6a284073e89bb9f071cd1d0ffdcc708f6f3ca107c8788",
+    "array_sha256": "ee686689b27556fd54502bbe432798928bd6f0ef82f95bc1d4e92ad3439cfac6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "source_JPEG_RGB_float32_div255"
+  },
+  {
+    "arm": "base",
+    "view": "000054.jpg",
+    "path": "raw/base/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "848482be0d386f372c8b5d4cec710abce0e86df35c7d8401d02d18184cc4aa4e",
+    "array_sha256": "57b275ae6561dde5fcb4d9e3fe33b65650bd7fb6de1422d1223ce2e1f619b764",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "full",
+    "view": "000054.jpg",
+    "path": "raw/full/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "7669220218cec50d684e55e680522c11a73fe4aa4d128dec1c24c41367f07829",
+    "array_sha256": "75a53f4ce6b7416889690b2c6245fd09636f534f9f6e985f8854a67c5e4a17f3",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0",
+    "view": "000054.jpg",
+    "path": "raw/graph_g0/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "2eab46a9f293ac631a1db56f8a99a84e0e276ec4ade90f1f6d5c993c5da86263",
+    "array_sha256": "8e6ff2313cdfd2aec141a11c999048fa7bf5c09288c63d3af841e3cdf1b8dcfa",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0_A",
+    "view": "000054.jpg",
+    "path": "raw/graph_g0_A/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "84165614421a49f8c55cae98cf40d1ba2b1f2d845677170152cc2b3740d02c70",
+    "array_sha256": "298c39da4519e6b2fee58c42b8a54ed23931598d4ed769f836e55ae92ca20df6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0_B",
+    "view": "000054.jpg",
+    "path": "raw/graph_g0_B/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "99eac884be88d7d494882869329ba4a25ce110b2cf72485a5f0b5e2821f54f93",
+    "array_sha256": "968a9a7596e6bf7893783624439b287869f45480f09bbd2bdb9fe5f87c16b0d6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1",
+    "view": "000054.jpg",
+    "path": "raw/graph_g1/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "23f2c1452d098f6aaed88bae170456a27960f2da47acd7dff066e5343ff0e7ed",
+    "array_sha256": "ddc8ed196e25033d9e9d590eb07290f03740f9c2d4af236d8f3cd016fb942266",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1_A",
+    "view": "000054.jpg",
+    "path": "raw/graph_g1_A/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "278b01cd302fb36d1f1a725dad42f7e5f8a91a46df181db7d5eadb31c2aea9d4",
+    "array_sha256": "64460ba7e6289b266534cfb353df685c33c799465cef5979573bbfb7c3710cb7",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1_B",
+    "view": "000054.jpg",
+    "path": "raw/graph_g1_B/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "22af3f8eea2094bb812ef6c7263bf76152715da44522be0cc5628bc0323a3442",
+    "array_sha256": "87899ebadde683d7e252b05924205999706c241a5a92541c5ae8f871e012fd24",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2",
+    "view": "000054.jpg",
+    "path": "raw/graph_g2/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "8dbeeeae81e3873fab015e5d0619d93dd7147f2fc679deceb9f3bce5fc8212b5",
+    "array_sha256": "acc679c345a0e0ae780a65911b442a78b4c34f22089cc0a5b7c535449fbad88e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2_A",
+    "view": "000054.jpg",
+    "path": "raw/graph_g2_A/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "eea6daa97c634597bd7782b29ca5cac7cfd06cd02dd8c0a947dd542938375ecc",
+    "array_sha256": "00fef9aa09ca004cdcfecf4a5b68717955c6440cc7ff91c41d47fd805d37bf69",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2_B",
+    "view": "000054.jpg",
+    "path": "raw/graph_g2_B/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "eb804a0d41313b204afe4098fb75883d357a2ba3653330a60427f7df6c5ca20b",
+    "array_sha256": "189af5fa56c3b83f82fc794fbbbc756b0635a523827831c978c9d4eece2cac71",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3",
+    "view": "000054.jpg",
+    "path": "raw/graph_g3/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "5989970388df6f8675f4d096d39491b0eb52c776eabe0c164f4ce93978373654",
+    "array_sha256": "0b343f0824a8215d4d0e6d09cd9ad941ede212f0b7091bc72530ecf93f45b717",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3_A",
+    "view": "000054.jpg",
+    "path": "raw/graph_g3_A/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "5dfbf6e511258c451cfa433b7b268d98cb3ae486759b62119e17dfa48b6e920e",
+    "array_sha256": "c6d121d573e42d97484f026ac9e70bf273d196ba8470db82a6f90b876986f41c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3_B",
+    "view": "000054.jpg",
+    "path": "raw/graph_g3_B/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "96f50cd7865c50d2c49fa7ff01c32a2bd45e55aa6acd7d583e3c3eb3a7338792",
+    "array_sha256": "d4ccaf10e695dc05f01d96eceaa4b1718789fa02d04642450c6e52d1e79e5632",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0",
+    "view": "000054.jpg",
+    "path": "raw/random101_g0/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "59f439da5b3fd08edae87ba8a4d9a6d65a1dcfd876dc193cb0404777cb60d208",
+    "array_sha256": "52595de0e3b228702146b84af61581542ad5f48442e5b792f5e603c72d02042e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0_A",
+    "view": "000054.jpg",
+    "path": "raw/random101_g0_A/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "49bfd4ea074a92f3be0b89e29a5cf9ce8d1c77ce617ddc4047c1765990c42628",
+    "array_sha256": "c7a02f3a9ffd9ee12db204b76400e2dd330eea7268655eac2609dfdf52e4b80c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0_B",
+    "view": "000054.jpg",
+    "path": "raw/random101_g0_B/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "1c907630521891746b314d93e23f40c96d2f7e0e8e71198ae3a6bbe4fc3b9981",
+    "array_sha256": "216d13fe0ea360fc6ee831b60ccbc3ed0a1e65b3c03c7ab7a8cb80fbe2343cc1",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1",
+    "view": "000054.jpg",
+    "path": "raw/random101_g1/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "c1ab38b9bd40440a645c95605eb000167535644a784c91aa66b4140185f0cd96",
+    "array_sha256": "0e37349bf4f12b84501bb416499c1d79ac19585e0ee0f2862ad2edd69114a92c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1_A",
+    "view": "000054.jpg",
+    "path": "raw/random101_g1_A/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "895a0c11229555f904dd2efe9fd32b5615acc18dd4b5d3469bbaa4ff5d0d6f95",
+    "array_sha256": "41047ac96222e0d65681deddeb9160ea3632b3b091c11db4063a5d25134e192b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1_B",
+    "view": "000054.jpg",
+    "path": "raw/random101_g1_B/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "ce16f37fb039a934891d12fe55e2d160679df143ab26a5c4f93795a6e9381e48",
+    "array_sha256": "1559e984ffbdb808bef48da09317a54ff950ab961e2bf084b1521110e9553c78",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2",
+    "view": "000054.jpg",
+    "path": "raw/random101_g2/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "14ca97a635ae5de784f5c6e65798d42ecafb5d2ca5b4ced8f740e642905a50bd",
+    "array_sha256": "060af5ea83fae88348a1fddc24b8b7ae6a64671ebd8c4e8ebdc66bf56dd7140e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2_A",
+    "view": "000054.jpg",
+    "path": "raw/random101_g2_A/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "925ffcf70bbb62967528f436fd1e58aa19db10758fd4b29e984073db13cd40d5",
+    "array_sha256": "2e13cb272826c241f3d8ae0a2f6efbd66435590743ab3404ef967c351f34e831",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2_B",
+    "view": "000054.jpg",
+    "path": "raw/random101_g2_B/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "bd92f1d95915f709e0700ef6dbf03755952e457c04c3bdf336c3f299487c36fe",
+    "array_sha256": "c22a6d8c127f5f96bc56a38513d8fa421998c153e28a22de6b803a3246a1ef34",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3",
+    "view": "000054.jpg",
+    "path": "raw/random101_g3/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "4c3f5509c143ee12f2fe4e9978d1c7e23e81d5985876731de557e3bc3ca6e66e",
+    "array_sha256": "6be8de86f8220ef9d26e49661bff500ccb841cc3348b1364b120dd94de8cdfea",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3_A",
+    "view": "000054.jpg",
+    "path": "raw/random101_g3_A/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "e60b594d911be6554935b706aa0dc69effc5b537fb1d1df9d7541798e99df0b8",
+    "array_sha256": "d226a51b15d5a0ab9b9e7c61f38bef269615dc161bfdfab50300040b68de5e67",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3_B",
+    "view": "000054.jpg",
+    "path": "raw/random101_g3_B/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "c72d0f6828c299b59cad40c7aed63b0340e9505b54bebf4f453882d0270cb265",
+    "array_sha256": "6980b9f70ae9be64212a1e7d4863be9a770e24d9783199eb3800957227ca976a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0",
+    "view": "000054.jpg",
+    "path": "raw/random202_g0/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "0ecd7808b23140171931221a5f17570d425c0c55ac17c9a2c7946cde3d1da807",
+    "array_sha256": "5ee1ae4dfe91408b7f188a40db8ff40119e65041a4715334d0994db4f9c9d0db",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0_A",
+    "view": "000054.jpg",
+    "path": "raw/random202_g0_A/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "5977989e8c3599a72b478931e09b0c199b5af469ea1c82a661e892c43febcab5",
+    "array_sha256": "d2ffee4bc591e2164eb25664515dc65559baec70b458fe6c7b97797e19a1a788",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0_B",
+    "view": "000054.jpg",
+    "path": "raw/random202_g0_B/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "706e6e157b6ae2a7a70461dc526182786a178d9cd6f0e9b9a164f911031e7dcf",
+    "array_sha256": "d50d03756689de25cd4338f66f88d0902f91a4a5aada0923de3f9511869474e8",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1",
+    "view": "000054.jpg",
+    "path": "raw/random202_g1/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "82019a724b16c9811eb66d236512be111b25e72c82556ebfe315383b4d2bbd92",
+    "array_sha256": "a5c4959253e737a1ee53d5295b06ccc76126ae1045508a3ea2623d55d3815b17",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1_A",
+    "view": "000054.jpg",
+    "path": "raw/random202_g1_A/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "e600e325e8af5bfba37f72a0822858754da36cd78e26bfdbec691a5fc0de9dd4",
+    "array_sha256": "05bc031b88deb2903ba7a65040a9d9e59d3976aaa1ee65868d0c796cc1ccaa82",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1_B",
+    "view": "000054.jpg",
+    "path": "raw/random202_g1_B/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "c065da4b59f7583d801a9558069bb49a38179e8d8d9d8c74553f024190119d16",
+    "array_sha256": "7a07249fad503128f859957ced8ac8eadf6f43307e6a2b9f80cb2a13daf2a7ed",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2",
+    "view": "000054.jpg",
+    "path": "raw/random202_g2/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "e969eae854641759d9f418bad796b6d00bd6ac0a22e07b4e160295b106ee32d6",
+    "array_sha256": "68829475a2b883df92ea51191ecba43b7994a3a9f8d19fd0688f58b3b344f108",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2_A",
+    "view": "000054.jpg",
+    "path": "raw/random202_g2_A/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "36ff2d837bc21d43f254506ad2f4fd2eddb2afdc6d23c226d8f90f29fa18ce8f",
+    "array_sha256": "0913a747b8bbf81c8613c8c4fe3a939c575143060fb95d1842d2849bac9b6103",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2_B",
+    "view": "000054.jpg",
+    "path": "raw/random202_g2_B/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "3bd55d639eb527c9dbf67560f5ce3415586650933b501624c37957abac5b4a87",
+    "array_sha256": "80273e15518356a1f55e85f13d12f6b1f26eb21b37014916722aeb62fbdf656f",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3",
+    "view": "000054.jpg",
+    "path": "raw/random202_g3/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "ba2d0ac26edbf43efd4b5b38b7be6cd33b401125f2a17473b7220b0b26296936",
+    "array_sha256": "2aaaecf9864c2ca81107189a5a17e8c33b668919d8d322dc1fe5e109882f2a47",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3_A",
+    "view": "000054.jpg",
+    "path": "raw/random202_g3_A/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "5fa7821e43292179c411e0474a90d1dd4364a8c56dabb268f6c0ff95ab83b698",
+    "array_sha256": "348aa798bebfec593d1ab36062106c9e864649d2f0ac2a3c5489200148a0ce9e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3_B",
+    "view": "000054.jpg",
+    "path": "raw/random202_g3_B/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "9a84e1e8dbb9481462b8454f001ed2cbff59a462b8edcfd0828bdddb536cf30d",
+    "array_sha256": "b0299914cc9042ad1c06c5fc040ac6b4219f5dbfe5a58157bae96be28a2b5f5d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "base_repeat",
+    "view": "000054.jpg",
+    "path": "raw/base_repeat/000054.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "848482be0d386f372c8b5d4cec710abce0e86df35c7d8401d02d18184cc4aa4e",
+    "array_sha256": "57b275ae6561dde5fcb4d9e3fe33b65650bd7fb6de1422d1223ce2e1f619b764",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "GT",
+    "view": "000090.jpg",
+    "path": "raw/GT/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "9d4080a43fed58f87738d5ba484426db83771430328a8a9c44fd0be8b1614b62",
+    "array_sha256": "c37eaa39b794894303d6b3377519e0771b0f726a22e53628afcf30e3d598d58f",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "source_JPEG_RGB_float32_div255"
+  },
+  {
+    "arm": "base",
+    "view": "000090.jpg",
+    "path": "raw/base/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "a98cb2de79ec797e4c330d67779257805d625a6989faa1432864f87906cddd58",
+    "array_sha256": "ca0a7075737e704bb29793689ba66174430766e55f7de09cceac066991810ad9",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "full",
+    "view": "000090.jpg",
+    "path": "raw/full/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "ee842278d0d6f530e0e95ed88600bb9ca8ddedfbb8f5fdb6262f6644fc340510",
+    "array_sha256": "8261af929ea77246cf7c53f77fc007e94ad324754c81b8b69f0894ac16d37cee",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0",
+    "view": "000090.jpg",
+    "path": "raw/graph_g0/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "372d8846d4061800a6ab254686f11fa94a33fd98b76395ca8770a68ebfc8cff1",
+    "array_sha256": "6906470fe40d0b111d87c4c897077eec9c1fb54798a641cddf4957e480d01934",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0_A",
+    "view": "000090.jpg",
+    "path": "raw/graph_g0_A/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "73ae17c047b459bc14cd5679eea050dc880fbd2ce7bde1148186fafff6da3560",
+    "array_sha256": "cd40d4262360196ee426d2a90a787d6c545a544cc68eafb2ffa9829ed7a9609d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0_B",
+    "view": "000090.jpg",
+    "path": "raw/graph_g0_B/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "b8afa0a56498dfdd121e3ff0a9f63fd320a26767bee0ec16995f1e6f863ffec7",
+    "array_sha256": "f5a3791723236586a79fd477e170a360096bf84a7329b7813d1c62a221c6fe1c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1",
+    "view": "000090.jpg",
+    "path": "raw/graph_g1/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "86edd00c9d04c3c48e90e51254ea2e7eac294ff73689e47802118080f43035c2",
+    "array_sha256": "0c41f78bee3c041571da7d12d87c3a3c805c2c3b095ed8bc5f27bbeb46e22b2d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1_A",
+    "view": "000090.jpg",
+    "path": "raw/graph_g1_A/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "59268472ed0a2b5f4008819c5428218b65f6daaa53c30401d61759350dba3dcb",
+    "array_sha256": "f3f67e2b8821d33c813ae1fadfb691d5b008f3129d034e662b00a4ba68dc2ebe",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1_B",
+    "view": "000090.jpg",
+    "path": "raw/graph_g1_B/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "8b5e1fa01bec4b52632e892393e59664e9685b8bb96057165360efea9312e4ad",
+    "array_sha256": "9fb6c2bae97b6bca6e2f79a37dea9447082a9f4a6d1e0dcd4501f34c717573b8",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2",
+    "view": "000090.jpg",
+    "path": "raw/graph_g2/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "4241dde9226fba5f0f7194aa1daff895749a4e4b7f41a47d00fefac28823620c",
+    "array_sha256": "9cdc51de68e1d256834eb2d4404e4b4aae180c03f87a55414e8796e5c6073a25",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2_A",
+    "view": "000090.jpg",
+    "path": "raw/graph_g2_A/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "229b673997762f1ba9e1b322ff23092f71f414b02012d3e878f574de45e4e59d",
+    "array_sha256": "16295a43eadb914b1d4b319fb4b4fc39c3eb68cde3d9e253200a3ab7bcae11cf",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2_B",
+    "view": "000090.jpg",
+    "path": "raw/graph_g2_B/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "04ae027be9cf0acabe9ab5299a516d263809634ea9a3084bb24f53810d0cde4c",
+    "array_sha256": "06eef2eec9c8c0021cf7e09bff24347f2b6e677a74059f9a3ef8e0418283be61",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3",
+    "view": "000090.jpg",
+    "path": "raw/graph_g3/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "7d3f2982500d23f718a5dd0d9659c9e258c6fba42bf0f6903d75a7a5566afaea",
+    "array_sha256": "44c19e3714a6484c7f5f78c93458193b74e9ca69d5898d71b9d18e4d706c30eb",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3_A",
+    "view": "000090.jpg",
+    "path": "raw/graph_g3_A/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "8f82115bd7351f9a73768c8fead10cfcec0316ce222db027cda29166ef14eddf",
+    "array_sha256": "bfb956caec986605a0ec1de405a2c27963eeaaab51b36ce9565b72c566f5390e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3_B",
+    "view": "000090.jpg",
+    "path": "raw/graph_g3_B/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "0350d3496a2615666ee19237cfaf1648e2569990ac3cdc9c8fca226f83187fd1",
+    "array_sha256": "94fb8f9ccf77c68cd1e0ec3ba765915acf708d0d7fce7874cf31b6fa624666eb",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0",
+    "view": "000090.jpg",
+    "path": "raw/random101_g0/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "e197a08c5c20eee52e70b2a9c39fe0d3bfd251b1d8f88b6698fc89b3295b8fb2",
+    "array_sha256": "5c9bf5d6261b6097bdb51dbf9890542bcd1a3691045f9cd7474c2c485a9a2d04",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0_A",
+    "view": "000090.jpg",
+    "path": "raw/random101_g0_A/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "4a94fc433f4d56ba59d6db5a0ad3ecb73af743c150f5326fbf152eada2e617ca",
+    "array_sha256": "ec16df1b92ff3d9bbc57401a32c579ac813ac4f9eaabeacd17f8939cbf4dce48",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0_B",
+    "view": "000090.jpg",
+    "path": "raw/random101_g0_B/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "f2db509423baadf8791952999bcd08d54402129cafd6e32c2719252b6a34429f",
+    "array_sha256": "c89c1327c43a9e21a5a21e409498c700e1003014c7c5b936e6dcc89f96a8311e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1",
+    "view": "000090.jpg",
+    "path": "raw/random101_g1/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "624638eaffbeb2ea7a3b708b7f14e341ee20490123ed862f3560800a2c6cedc6",
+    "array_sha256": "546b357716365bce8d71892f064ef249f48af6bc8525afed6fb70bb6a7893407",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1_A",
+    "view": "000090.jpg",
+    "path": "raw/random101_g1_A/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "2541cf4e1853940985304f4845549e68c7a5b5e1b4f50b120f3dde49249cf609",
+    "array_sha256": "0d4c622f4809339aa34a4ce0651811750713f55afb4b0d60c5de4fb0a80ff357",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1_B",
+    "view": "000090.jpg",
+    "path": "raw/random101_g1_B/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "d8c3275e7c41a1cfebb415a4410651b96be46b4f06f917179fdc32316da250e6",
+    "array_sha256": "88860a0052f244525b739ed25b21af062b43bc85824b33186563c0c23c401756",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2",
+    "view": "000090.jpg",
+    "path": "raw/random101_g2/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "26182e83f4b3a09ef42d9a690bbf40e838960f11f150fa0ad2f1ddfd312a6a78",
+    "array_sha256": "2cda88ac44ec01ad6688a23e9dc3966a772d9e492ef65b2551c2628755426b68",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2_A",
+    "view": "000090.jpg",
+    "path": "raw/random101_g2_A/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "2c2a7e5900611b55327864188f55d678c220d5e3b73256ccfaaac1100add8367",
+    "array_sha256": "6e65fe27bccec28504c4cf40402a17ababd83f9344d45a917b3f7d49327508de",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2_B",
+    "view": "000090.jpg",
+    "path": "raw/random101_g2_B/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "ee319b43ab4af9041a7a09ff01586dc0dbcefab3ab0ff69cd6f0f96f51a2f4bb",
+    "array_sha256": "daadedf8a6b4dfd139c3d57e1da3a6da14a4f12fe36fae3b6224dc766f2e748d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3",
+    "view": "000090.jpg",
+    "path": "raw/random101_g3/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "60b5141a524f5e69ea7ea3dd164dc1077f89c504c466c4b44e07aeb0c73ec8e8",
+    "array_sha256": "d8494a631e034d31d584f78083ddbe6e1116b7db13021bc5ebf17d94ebedab10",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3_A",
+    "view": "000090.jpg",
+    "path": "raw/random101_g3_A/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "69d295efe264c96c86bf9de87331882708e19d02e51d93749fd0146c68dc9d38",
+    "array_sha256": "fff067ab0606564c99fa793802113decb428acfda9290fd293cc70e2c98e2061",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3_B",
+    "view": "000090.jpg",
+    "path": "raw/random101_g3_B/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "bf863dd40f1a1bf203ed7b7189d36eeb7e07d747618f740a27a43851060e720e",
+    "array_sha256": "020922b8b61afbf7088c8bc21679c8baff71da0cad261679035c51ecd5942644",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0",
+    "view": "000090.jpg",
+    "path": "raw/random202_g0/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "99d0bad3d5b92a711a636d03edd6bddea27f4b4dd1c2896e172757f688337d80",
+    "array_sha256": "6c71437ca0a4df462eebae1e23e8a3a447d7b6cf54c5790b14b4ffc797055781",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0_A",
+    "view": "000090.jpg",
+    "path": "raw/random202_g0_A/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "14bfdbe50800ef05040a3ab92c59ee4e63944fcc1ee0b0d74ea651129d1c6ef3",
+    "array_sha256": "e68d9b7746d74bf4145344ae093a311f074bd6897e15ad42401db88fefee220d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0_B",
+    "view": "000090.jpg",
+    "path": "raw/random202_g0_B/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "9982f16b32e6edb3d0331cc9fe69d2949a3121cb587085340dab9114b5dc71d2",
+    "array_sha256": "396b0128074b70db855a2fcb7726e894a42ac50d84814e5ba2af21f7b9c843a4",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1",
+    "view": "000090.jpg",
+    "path": "raw/random202_g1/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "e3ce299c924a94edd78fa4f0f94114f77e33eb99a406bc52fbb97d962d5865f6",
+    "array_sha256": "9462fd3cfaca3cfc3df4104426c22ae1ba224b445115fa5845298661b51967d0",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1_A",
+    "view": "000090.jpg",
+    "path": "raw/random202_g1_A/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "b6d1c0b6d726245ca28547e3a9a4854a08b029b106afb1bf625f0fcf77bb215b",
+    "array_sha256": "04fe2cf97c5b136f3a1c3f7a4613b055375148ee80c5ae8a25cc254e3842eccb",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1_B",
+    "view": "000090.jpg",
+    "path": "raw/random202_g1_B/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "a4089e366f85248fd02bf9dade354b449921b333dd77e8dc7caceb63b11fd19a",
+    "array_sha256": "84684115e39c90d56747e61fa25c94a6e6e3b846345a0af9dcfbe67e6761cd77",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2",
+    "view": "000090.jpg",
+    "path": "raw/random202_g2/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "979e13ad5532bdb62146ad8ffa1b689ea7b41c1fa2296350ab38b21fc17ec450",
+    "array_sha256": "cc5728fa780759f4a1ba66dfd29ca287063e04ad076544c2e3400126fc46497c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2_A",
+    "view": "000090.jpg",
+    "path": "raw/random202_g2_A/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "6dbc0629c46bc9efef73e498fcb2735b66bd9d933107da05550140bcf1ebe857",
+    "array_sha256": "56b27f87473941e7f77a9f57e53eae48ed24830bba9220be2d5990b484d8b996",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2_B",
+    "view": "000090.jpg",
+    "path": "raw/random202_g2_B/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "804cc33516de384fae6443b1d688307b817e4b8096eee812ddebddd25b670324",
+    "array_sha256": "ad9703190dceddac408ffe748559327b74b93ecdbcc1fe868a82402b5092c7bd",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3",
+    "view": "000090.jpg",
+    "path": "raw/random202_g3/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "1f72f9d5deaaf5d9be5f2ad4f00ce5a3548f8f0a8dc6addc56e96628f3a0f02c",
+    "array_sha256": "1be54b179130318c1f46a545494cb108e0ecf73901d26e446c80d1d2f85450da",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3_A",
+    "view": "000090.jpg",
+    "path": "raw/random202_g3_A/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "a000c623a6a569758edff12c3b4d8e26789411ed2de594c4d29028778fa8640b",
+    "array_sha256": "cfd35ef59218364e6f6927ba62ceb20d07fe98c62ed926f056ac567f9634ca7a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3_B",
+    "view": "000090.jpg",
+    "path": "raw/random202_g3_B/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "13c23ed1ca4ea4d5c782fb19dd3e265becc3b32890150ffd3c307c33e637f5cc",
+    "array_sha256": "dbd1e35dc5e699b8011525b4f2a2d7171eb5eb4352a4e854648051c22f172cab",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "base_repeat",
+    "view": "000090.jpg",
+    "path": "raw/base_repeat/000090.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "a98cb2de79ec797e4c330d67779257805d625a6989faa1432864f87906cddd58",
+    "array_sha256": "ca0a7075737e704bb29793689ba66174430766e55f7de09cceac066991810ad9",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "GT",
+    "view": "000125.jpg",
+    "path": "raw/GT/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "77eb2cd788ca66c79083cf00c4780b2bd53217ce502f842d47963b3e12515c35",
+    "array_sha256": "21a763df7ef871b2e10c96455283cdf2979f50cfdae693c49da9f8bb6029562d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "source_JPEG_RGB_float32_div255"
+  },
+  {
+    "arm": "base",
+    "view": "000125.jpg",
+    "path": "raw/base/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "fa68623882ce7e77e29d1b98aa0963587d8f846498bf0688b8973d71cf9786f2",
+    "array_sha256": "161089e0aa01f39de1beda647cf2de698e9fc24a0ba2b2feaaceeac98964003a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "full",
+    "view": "000125.jpg",
+    "path": "raw/full/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "2a2b742cd75365e129eba7f2c9bb04d0c2d800b07e0f366117d869d1d79d545d",
+    "array_sha256": "76b6c9d0c6de4b9a33eda4895ef6489b69eadc2c71bfd82c03b1087996d4a310",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0",
+    "view": "000125.jpg",
+    "path": "raw/graph_g0/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "83b68e83c6f8f2d59413b3277c01a65e2e8de6dd50c526e50ecf2a4d0be2c157",
+    "array_sha256": "8d408f16a379409712384857b65bcf80189fb78b3b737d5b4536abbda6f62e06",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0_A",
+    "view": "000125.jpg",
+    "path": "raw/graph_g0_A/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "cf0dbc76d8a0279d60992d7b377e360f4ebd71a91290e20258c75093786a3f3a",
+    "array_sha256": "371e28393ba90dba3b75c7d9d2e668871a6ee62c136566d1bdcdb966ea9ddcad",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0_B",
+    "view": "000125.jpg",
+    "path": "raw/graph_g0_B/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "48d709acfab2cbc7782329b8f090974564776b80195a5c51454a5ae273b1fbf5",
+    "array_sha256": "748761b453bce9f145397491bf120050540708daba3be8572992c5f507011dd7",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1",
+    "view": "000125.jpg",
+    "path": "raw/graph_g1/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "b77fe2eb7ecc6a952e12fe9fdef685512dfada5f64bce819a987a557b98c43ac",
+    "array_sha256": "5a722b0f763e32fc33b46904572212548eee0acbb42d0165ec5834724572cb63",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1_A",
+    "view": "000125.jpg",
+    "path": "raw/graph_g1_A/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "2c3ff502093a7ef7247b8a718d6f6d01ddf9a2031a4eed9c52e61c7ef3447b05",
+    "array_sha256": "02797e63c755f9faef2183d1257c67df9526e93eae9af43ea0b742e0f7dd52ed",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1_B",
+    "view": "000125.jpg",
+    "path": "raw/graph_g1_B/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "25a3dce6a6351336e9500628f082d1983dd9be670099e8cd1f4fbb26cb619b89",
+    "array_sha256": "541a51aa3338abc4dee0a9bbbcf7773383cdddfb57c3e226fc21715d8ae8a5b5",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2",
+    "view": "000125.jpg",
+    "path": "raw/graph_g2/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "1601342069f1650fb254c656849b85854b14dea169e6e7b2d7cbc764f78e7327",
+    "array_sha256": "82250f32f36b82c89937a5226b25f13592e47b38b7220d21e7ca976c6743135d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2_A",
+    "view": "000125.jpg",
+    "path": "raw/graph_g2_A/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "fbd0a34c47d754a1c9deb0139c15fc7bab5cde2a91d3f72c706538d6eac27275",
+    "array_sha256": "8f31e9a65f1ffc009e7e05e6d7d80031730b886d4b715881d182d1668fc92258",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2_B",
+    "view": "000125.jpg",
+    "path": "raw/graph_g2_B/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "a64d5f0416a711911ab154c953dd10a5c8b9d1bcb404d0f517fc14587a9a05cf",
+    "array_sha256": "80bbc5fedcb81debe69aecb64d96bb08af71507b6c93051955d4780419687d29",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3",
+    "view": "000125.jpg",
+    "path": "raw/graph_g3/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "9101d8374a2c47e050b5d3ec53cc5739cca10a63767f6523d269883e68a55501",
+    "array_sha256": "2a13dabafcee2b0c048ca96bc242e1960cefe44b65d54d1803330959b6d57574",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3_A",
+    "view": "000125.jpg",
+    "path": "raw/graph_g3_A/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "89ec3febccdaeb628600fbe8c9d92ab0000826a1b498fe14bdd5e1eaed90724c",
+    "array_sha256": "b259ce791275283a88cd89fa6b8ed34cfb4781d8918f9b665a88354ef7e574e8",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3_B",
+    "view": "000125.jpg",
+    "path": "raw/graph_g3_B/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "5f4b7d61f139444d08649546cc8530f1481a1a475b2ef5077955e2b31cdf3da9",
+    "array_sha256": "2adf1cccbae3940cf8c0fc7e8301685a17ad862c54e9f8e00ae69f839de66473",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0",
+    "view": "000125.jpg",
+    "path": "raw/random101_g0/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "d3cca4157927a1ae10df11109a0173c2a19aee8f699b28e4443864a473ba1a64",
+    "array_sha256": "e0af16d3d3d67255316b81d8f2004302768ba383fe6e724d11883da8e8420782",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0_A",
+    "view": "000125.jpg",
+    "path": "raw/random101_g0_A/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "ea207e1077544e72ab96a3afff5e02745cf94cbdde2b7ea0107bcab50e91a8e7",
+    "array_sha256": "4c71e4d44cc52ac965eb5aee5509f35c3dabfc4033666b3168732f7dcb948828",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0_B",
+    "view": "000125.jpg",
+    "path": "raw/random101_g0_B/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "3b61848051d5016b8a6a410cbea9b74aa207123360bd7d3ae818771ac8133a28",
+    "array_sha256": "603b8a194efb6c4142acfcac75e63e3c779062d643ef8f135667ea3d30d2d0d2",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1",
+    "view": "000125.jpg",
+    "path": "raw/random101_g1/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "1bd92ea69b8b8271d1374ae568f18fa0c12590e943b80a17348d38781214ae91",
+    "array_sha256": "4707a411ab107ca5f5007a7fe3ef7202155fb85bb4518ab3331ffc8cf14945da",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1_A",
+    "view": "000125.jpg",
+    "path": "raw/random101_g1_A/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "651442e46e4fb48ef429aba980f89f5b051d70b96384b2de0d45dc6b0b67281e",
+    "array_sha256": "1b5f3bae17d7a70a86712eecf56152cf3a40476289c5bf74c2b819ca014f9be2",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1_B",
+    "view": "000125.jpg",
+    "path": "raw/random101_g1_B/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "2dbcbf1e4c3ec9b798f19a4851a12f99b49ac43d50fd6113c580e6fe6773ca82",
+    "array_sha256": "0297d77fcc8ea77fe23b59dda6e87f44ba99bfc02d76d58ac53e4e51a0509a95",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2",
+    "view": "000125.jpg",
+    "path": "raw/random101_g2/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "123c9dd550ce03414fa9be87f278a91aa200243a84a7b982af92a625815de733",
+    "array_sha256": "1b784c61e53f3e00b2d95b4f0fb59469ccec5d7f837782f8d9f215a2575d09bf",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2_A",
+    "view": "000125.jpg",
+    "path": "raw/random101_g2_A/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "af2685610ab6001ff88a5bea22f5bf600278ec3ab556ea29178a1eb73ed766cf",
+    "array_sha256": "24e74018c2bc5fe49fa623248f1d5c5b25aeeb0f0b834c2af01303b30fa15c43",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2_B",
+    "view": "000125.jpg",
+    "path": "raw/random101_g2_B/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "3fac5a7471894a336d81753503c23988452034bbb4a6e82bea3c016778543262",
+    "array_sha256": "3ccb5641bc7736aca008a482138167e15b08ba1108bf302924df48438a6c2925",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3",
+    "view": "000125.jpg",
+    "path": "raw/random101_g3/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "034237a10cbcda54dbffdec219b6f0eadabebe7191f139fe3e1c740ae48bfb1b",
+    "array_sha256": "30168863d8760d1b0b1fd6f47982e6550497a517f9eb4b032b8630cfa6647bba",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3_A",
+    "view": "000125.jpg",
+    "path": "raw/random101_g3_A/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "81b090e497c1e01c3da84bc5908d747ae61ef9df235ce215f544fcf55add41d0",
+    "array_sha256": "6903e985a8cf4e9aa64cf2cc14a7a1b9efadde9f616b7d90562e81deae27aa37",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3_B",
+    "view": "000125.jpg",
+    "path": "raw/random101_g3_B/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "4f6cf2b554ed877794d8a515ed4c2529af75d85944a0ae918297fb71a5d39699",
+    "array_sha256": "05bb749a6e2a93d1f549f60634daabb3547735557eb45eda276116377e312fb6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0",
+    "view": "000125.jpg",
+    "path": "raw/random202_g0/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "938048c567a0e159240fc4b003f454f7da08b2d545522e75ed2209466c6bf89a",
+    "array_sha256": "cb4a644bbf06f7390e1730e39c463f02a04a9d492a8c96e0b4b861d139936aed",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0_A",
+    "view": "000125.jpg",
+    "path": "raw/random202_g0_A/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "7694100555fec3509f910d9eaa78df3dc5a2c65c2fe7e55bc2eea4cffb3a845b",
+    "array_sha256": "af6496bae91ba2b38dcc87bc41f780abf0c54bbb0682ec4d57cd028c7bfe003d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0_B",
+    "view": "000125.jpg",
+    "path": "raw/random202_g0_B/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "0585f58f89ae94c2917820485d3e670ae4482f1cf9459a865bfd290bd831f12b",
+    "array_sha256": "b146ab98b15d43e20edae090a123b628e0fbede0d026904de4dd6386b69fb98a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1",
+    "view": "000125.jpg",
+    "path": "raw/random202_g1/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "824bc9d53eab3923478b294ddea29b7b8f676eb7fb95221bf64b5e02eb499e86",
+    "array_sha256": "e4c1aa8e3fc1a137d866df8e60a1c59189998674c429a2809db2d2a68994d4be",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1_A",
+    "view": "000125.jpg",
+    "path": "raw/random202_g1_A/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "d643785a54859fb58e28ef2aca99526fb54f80abaff17f4e8c183a8b7168ab2a",
+    "array_sha256": "3c875b338c2f0efcbd442c4201518b923e81702f8c03cb338fc2b99d0cb195af",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1_B",
+    "view": "000125.jpg",
+    "path": "raw/random202_g1_B/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "ac2de5a0acb779a3c373b689a059a0b34222759f876e5c32c4f3e60f722d2d61",
+    "array_sha256": "92f0488a1962c1219791784f7a084587acf9f1d0c32cf5812e4a8c2f96568ec1",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2",
+    "view": "000125.jpg",
+    "path": "raw/random202_g2/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "c4ead91a53c099e9f12ce3f870235b2acce5048576154cf0f07a308507210783",
+    "array_sha256": "d8d9b1f918398348b0ce70626b7f5cce13d59278121d880ccaffe446d6f963d7",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2_A",
+    "view": "000125.jpg",
+    "path": "raw/random202_g2_A/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "a42ce5c851b47483c04755b7ce7d25d5361d6adf1fa5de394e39535ca568d4fe",
+    "array_sha256": "ab4ee5a04fd1750a2f84466eaec6b7a20156c7a79c50d6946ba5108d1876d58a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2_B",
+    "view": "000125.jpg",
+    "path": "raw/random202_g2_B/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "c598f599c29eac30eb4921ce9b09b0a52da99648747e5aa8281958a6e71eb218",
+    "array_sha256": "3d03b618dc77cc7bec1d648c42486b616fd49d56b289124d71beece5225713b5",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3",
+    "view": "000125.jpg",
+    "path": "raw/random202_g3/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "14da9ac0ad113f82fdd9961d68c7b26a5f47ac430f89b433ed33d29ad2e0ad22",
+    "array_sha256": "ccd38066133505f91809a84ad3ec950b6df03199dfd5a929c4509cfec05c930b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3_A",
+    "view": "000125.jpg",
+    "path": "raw/random202_g3_A/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "654d47548f3a889cd2fd16b3bbe6d3a4d00c940883f22a87ad81c12f4c3185a5",
+    "array_sha256": "766e062639c56f88dbbfebd1c0eb737b870a64e218364a4977bfd1bd2364d641",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3_B",
+    "view": "000125.jpg",
+    "path": "raw/random202_g3_B/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "15f0c4a5836ee51e3f3a0a1557bc264dc8f3564dfcfdca062a5f0ba3c8881cdd",
+    "array_sha256": "6f2fdd5faca7c5e4ed5e1a5595068f6e9c75bed4afe5e7dbb7a978b5a5b0bc1b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "base_repeat",
+    "view": "000125.jpg",
+    "path": "raw/base_repeat/000125.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "fa68623882ce7e77e29d1b98aa0963587d8f846498bf0688b8973d71cf9786f2",
+    "array_sha256": "161089e0aa01f39de1beda647cf2de698e9fc24a0ba2b2feaaceeac98964003a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "GT",
+    "view": "000160.jpg",
+    "path": "raw/GT/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "829902fd1cd2d5bbb1524ee1749e45e388f372b8931fbfb6119b8275ffac4697",
+    "array_sha256": "d948188b6ed78f6a8100fc15a984a7e3540408e3da945674a3fef27002bd3399",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "source_JPEG_RGB_float32_div255"
+  },
+  {
+    "arm": "base",
+    "view": "000160.jpg",
+    "path": "raw/base/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "9e65720365e038e419e0e8abc02075a83c65a2e39dfb51f6379ecb87c892fd70",
+    "array_sha256": "2db8ef0f86e01624519bfcf2c999b338ca9f4f70bab4cf87a926f57b4089a07c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "full",
+    "view": "000160.jpg",
+    "path": "raw/full/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "ed68cae6638a2d48cd8f1256d8692c1f823dab33097a9488e71957e65d9be1d5",
+    "array_sha256": "e39b40c6abc6fb98521817498f5f4017a0f9c6dc58148cc44dbf992a157740ca",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0",
+    "view": "000160.jpg",
+    "path": "raw/graph_g0/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "0a266d3c861dd123d4f5a809b18c1bfb7c54a6978d8fbe96b79ccb595d1fd3a5",
+    "array_sha256": "e3e40a398b1636f49bdc966e45a74f02429f48b35c9dcb613a7464fd8d7f4e32",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0_A",
+    "view": "000160.jpg",
+    "path": "raw/graph_g0_A/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "271327fee233b085959a3c02694d5d20a3997141f8d67e4c25df2add9ae9525e",
+    "array_sha256": "4996dae050e2058680f81c120e06e94b08c5c7c47ca854026ec4d0942a37ddd6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0_B",
+    "view": "000160.jpg",
+    "path": "raw/graph_g0_B/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "9e2f2c96c374ebe706afec954a0f24a9eb9979f2fde5489465e9e8286dc6c76f",
+    "array_sha256": "5984917a13c760907c0e5b7a87a724e19e28cc6c841064a391025c6b57c3b5f2",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1",
+    "view": "000160.jpg",
+    "path": "raw/graph_g1/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "5c71378c95b6acec0038e99ff47a2f3426442f8d2c1797d90ff40a83fbef036b",
+    "array_sha256": "c81bda884799d86d2a147413483155ac4b7454d1243026b99626e87078b672d5",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1_A",
+    "view": "000160.jpg",
+    "path": "raw/graph_g1_A/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "f96f41ae45c68f4289f107187ba42e9d8954712b70079e3d93ab787ac7b732bf",
+    "array_sha256": "7c431f7b70b1da38f903fe27a0d8d4a89c90443bbeb7f9aa7686c67c621dcd2c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1_B",
+    "view": "000160.jpg",
+    "path": "raw/graph_g1_B/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "61d7865303c2032c6796a7a6ab4dd1096a11c10b048f3dc05c53aaf7430c3f08",
+    "array_sha256": "a5d094223985e85e652423fba8a556b90910f33b405bd1226957eac8448e9427",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2",
+    "view": "000160.jpg",
+    "path": "raw/graph_g2/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "036b2fc48b91b567c35c49038488ab3e5d9c0cac8b3bc8fc3d4921f46175450c",
+    "array_sha256": "389c48cf04237b0bd1af295244b04652bb603a046afb3f41ed952f91c598373b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2_A",
+    "view": "000160.jpg",
+    "path": "raw/graph_g2_A/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "22c52f02e7bea142a2748f5452565cd72e8e093de582e2c9f8e591817404c2c5",
+    "array_sha256": "8ae6b5431ff0641f0b25234a24e4ad738c1704eb6e558fb2a7cee696b0658fc0",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2_B",
+    "view": "000160.jpg",
+    "path": "raw/graph_g2_B/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "d5397d3471c08666347048cbf99bc7613e12633c370d6124b651d2e779b8b3b8",
+    "array_sha256": "444504df743f6dd0f62550396bdc66cbc00b86bad2c509620a6829d4f26fdb9b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3",
+    "view": "000160.jpg",
+    "path": "raw/graph_g3/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "5617704cc487654ba2f80a919ca06fc81670a8a7f2b3cab5005b06f12fd6a7f0",
+    "array_sha256": "90f16f76948cf60179b4dcc9b64d089616e9fa0afca0654f334bc595cd7cbea5",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3_A",
+    "view": "000160.jpg",
+    "path": "raw/graph_g3_A/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "308f1f62e9c1c25125d48ad5e1625a20b0eafd05f6e89ea5850ac9c8215ad7b7",
+    "array_sha256": "ebcd807321389eac16d4c348b4cfde5a26900bffd3bd783719389120d86ced80",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3_B",
+    "view": "000160.jpg",
+    "path": "raw/graph_g3_B/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "3a542b1755da4809f583efdd38a6f2b68e30a20a3e20da6e89c9a127bc01f4fb",
+    "array_sha256": "6eed710f75bad7db60dfd4091fbf6e57f3c78acdd872e586788c903dd9ce5135",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0",
+    "view": "000160.jpg",
+    "path": "raw/random101_g0/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "a1b8389b63b9527b1c76ce351d978c93b937168f464bbeb079f012bdfb583dad",
+    "array_sha256": "f840310c88c8d8fae3b386a5aca5bdf5b289a4a1f54fbb4f3938cd76286bc0bf",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0_A",
+    "view": "000160.jpg",
+    "path": "raw/random101_g0_A/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "283a43d9b731ab29a589d8c3d7f635b3780cf83cdceede590642fefb0a8393a8",
+    "array_sha256": "999eda492919bdc7164b11c9bd04bda3f1cdf30025a339145e6f4c7dd9693920",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0_B",
+    "view": "000160.jpg",
+    "path": "raw/random101_g0_B/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "71409c142320e3b699a88b29dc109dc560d64dd3d0d7770468cd7c49a510c5ee",
+    "array_sha256": "898b7a18118fd0bfe137336a5e75fe71c323a2684cb16aad6fc6eae0a5879812",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1",
+    "view": "000160.jpg",
+    "path": "raw/random101_g1/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "13524b7db2777d1d1b97276beb27eeb2c29440e24d49bf2a9de1a882409081af",
+    "array_sha256": "db297d09d4cc689f7d68b27fc9adb686728b5ddda6938b2ed4298aaeaa32d4e6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1_A",
+    "view": "000160.jpg",
+    "path": "raw/random101_g1_A/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "6de36c25ed16d9aedcafedeeb7ffd7a67ed29a5e1645c439ca52b31595e26942",
+    "array_sha256": "a3600ea4121ace0e1aa8bd7139d8a69b814c96eb72be4172d6fe1d3326ca468e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1_B",
+    "view": "000160.jpg",
+    "path": "raw/random101_g1_B/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "467a3a285f8cc4c25990d9e6012d82e2c669530d3e1732d18641b9fdc2bce29d",
+    "array_sha256": "943a10961936c4f21b3bc150389f1d049e7a5f6f867068802b2e0856c111c4da",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2",
+    "view": "000160.jpg",
+    "path": "raw/random101_g2/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "4617c6f914779384285c0afce9d96ffd43c64ad53ce614d5cb3ec736f2514179",
+    "array_sha256": "2b1f1867078f6552705aae53121f9cde4b79f832c180aa8250f9de5f1bcc8779",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2_A",
+    "view": "000160.jpg",
+    "path": "raw/random101_g2_A/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "d4ace87bb7315b13db49390cf6a3b8e09552e8edabbdc6d1bbf87f62c5e22fb9",
+    "array_sha256": "f1b3439d4263ce8509f24d521f864f3732ac9e2f254817fef62b5d575423c711",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2_B",
+    "view": "000160.jpg",
+    "path": "raw/random101_g2_B/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "832eb8791fcb4cbafb9025c672405d991d9b1f9593d9bc50abeb4d6b8afc649c",
+    "array_sha256": "b7bf3d1e55ab52bd5e8824098f04919d437592aec64a7208992baeba1deaa2e4",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3",
+    "view": "000160.jpg",
+    "path": "raw/random101_g3/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "8c01a95e615c319f68f6c7bc6d7e6fd3363b834e95c515fa3314ebcb50a405b3",
+    "array_sha256": "64799e270fb40450dc039a9dbda747d50da6db2ea181cd3b4b75068eb8f445c1",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3_A",
+    "view": "000160.jpg",
+    "path": "raw/random101_g3_A/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "fef070bc22c2322ab7969ef39c99b05f21a78617827010df0ba9935c2ed53e64",
+    "array_sha256": "b571bf5f94dbf27b989a2e74c9278f7c88932bfcfe18afcafff8c44e46b83956",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3_B",
+    "view": "000160.jpg",
+    "path": "raw/random101_g3_B/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "b41a24b944d9323038f86947998159a682b4e0afc472a2001aa79c467d21e2b9",
+    "array_sha256": "78308d2ca3586c231a44938656e40882047378a8cf1e569096c528baa71e21b9",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0",
+    "view": "000160.jpg",
+    "path": "raw/random202_g0/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "9c11b8bd5b0b107c5aac3a660dbef46a0e3ef17a22966b433a2fb105dd382233",
+    "array_sha256": "a9d8ca1896ed43a2f1ec20d3c5749cdc2906232574760438748e00e9303fff1d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0_A",
+    "view": "000160.jpg",
+    "path": "raw/random202_g0_A/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "92343353a06f8f1980fcd618eff8030c6ce3a2f818f6a011e5867f095f3692d5",
+    "array_sha256": "0ec73452f256a7c8b2891906bcc828f0a5ac7951a24502acf485751edca9bcb0",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0_B",
+    "view": "000160.jpg",
+    "path": "raw/random202_g0_B/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "b8fb24fd5fa2ae7b2654a73c09846c1a51969ba782bc6c0537b2815ec6fa3df4",
+    "array_sha256": "b03d47342a3d29acf304de3fd8ebb973059711ad5938ca7dc7138424a03fac7f",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1",
+    "view": "000160.jpg",
+    "path": "raw/random202_g1/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "9a096e9464d54d14b9713bcd0de962bb661d06a2d573be15235855be3ed43a63",
+    "array_sha256": "0efe7a9ac1362cf79db5ab70bf81324c51fe81cf7338549188b439c38523f1d3",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1_A",
+    "view": "000160.jpg",
+    "path": "raw/random202_g1_A/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "b28c77cc70a2007fd41fde15673ec8a8c8f6ab3ffad033163f4e0f0473a5a02e",
+    "array_sha256": "e9e028cf9b076d8d5217f0fd097c4b5535c5d6be42065156e8538a04e1df5045",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1_B",
+    "view": "000160.jpg",
+    "path": "raw/random202_g1_B/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "92767cd028ff7db38db73aef63a703fdda79cf7c910075bbff7dc4456961be32",
+    "array_sha256": "90f306e948cf43fe792262c97bff91dcb8c65dd1ed0261518fb9054bfe6b14a2",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2",
+    "view": "000160.jpg",
+    "path": "raw/random202_g2/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "6190ba7c2786f35f3819d47c11a7fcf185c10ffb1a3010ea87b7fe5de1fd8ae5",
+    "array_sha256": "00896ab9dad866b702487f7c451ee5d9d0452e9531cb0b9e0ab4c140ef42540f",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2_A",
+    "view": "000160.jpg",
+    "path": "raw/random202_g2_A/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "e4f0b9a5362cd58276836862c8dfeb42cece089f523857d149d987ee50430720",
+    "array_sha256": "047509c3089e61eae1a15bdca288d5700623af0b7484efed76534d21555e6973",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2_B",
+    "view": "000160.jpg",
+    "path": "raw/random202_g2_B/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "aca5e81e05e483049c554b5e8831090865f5eb4285728342e33850687aa15690",
+    "array_sha256": "7af6441c1883f7b0a312800b8ec20671739bf850edfd4da25be34e5b20c01446",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3",
+    "view": "000160.jpg",
+    "path": "raw/random202_g3/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "af2daaf9fbd7787986763a3a9e404e836a32345d70357bdcef9ad7913202e571",
+    "array_sha256": "8a1f37442632158974ed41ff31da665ea8c20648206312e5815a0e4f7668f6d7",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3_A",
+    "view": "000160.jpg",
+    "path": "raw/random202_g3_A/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "38427253bb4b8d2aaa8218bd0636529049534cf54a347a7705e26cb7a508eee2",
+    "array_sha256": "6f3955bf8bfb17a4c3256a19ecd00c6715caccdecb2286f0c89e75e08b8e3e76",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3_B",
+    "view": "000160.jpg",
+    "path": "raw/random202_g3_B/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "9cfcdb708beaa45e0fe04da2fcbdc20ded02df8509f308a8cda5b1e6ca46f8e9",
+    "array_sha256": "8edc24e145893db83eaa7bfbd31c42abb4bb4775f47d09815a778a2f360602b6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "base_repeat",
+    "view": "000160.jpg",
+    "path": "raw/base_repeat/000160.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "9e65720365e038e419e0e8abc02075a83c65a2e39dfb51f6379ecb87c892fd70",
+    "array_sha256": "2db8ef0f86e01624519bfcf2c999b338ca9f4f70bab4cf87a926f57b4089a07c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "GT",
+    "view": "000196.jpg",
+    "path": "raw/GT/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "7e7d3ddba0c9c842e238a2c331f2241967d17d9cd39ba3aaec4ec721b0f68a8f",
+    "array_sha256": "ebf1b564afd54f46e092eac14914552a9d6d7d903c8cbe745a9e3faf4dbd5c96",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "source_JPEG_RGB_float32_div255"
+  },
+  {
+    "arm": "base",
+    "view": "000196.jpg",
+    "path": "raw/base/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "6399bb2b23f7e3932ac85d5b4ffbc631c162c32fd37a1da96cc12eb3c8193ac5",
+    "array_sha256": "2449caefb38cee917c25f80241130bce8ff112e42adde28375b5534ae406662a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "full",
+    "view": "000196.jpg",
+    "path": "raw/full/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "f3745b5acc5af0c84bbdb3361a93fcede20e41b2234d9b228a9df9bef8aabecf",
+    "array_sha256": "84150f3d5bdb9dc443f8b1ca80e5035bc58f3ee81bbf43b10f1da24830ca359b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0",
+    "view": "000196.jpg",
+    "path": "raw/graph_g0/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "4fd028f863ab10317d57a2cf79865f0a022525844820a8235daf03f0ed5f9a61",
+    "array_sha256": "5441100f80310584845a944fc74dcf846e973d4c168a54823884820bceeb0355",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0_A",
+    "view": "000196.jpg",
+    "path": "raw/graph_g0_A/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "9ce58a20412bcb8c7fab79a1493bd4577563d153bf284dfc14028c1ef02c8876",
+    "array_sha256": "831329ac5bd5b3de9bf934a56aa62228ab0c240a1d159d6b8a3ca7b19442faf0",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0_B",
+    "view": "000196.jpg",
+    "path": "raw/graph_g0_B/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "ec81c4fb5ff5d5ff635f4ffa489d15ff080f3456cd3dde32ebac3db087b73dad",
+    "array_sha256": "6dcd4ce953fd3aef9c152ab9b435368607e71c66b69f8bf7cb076aee03292f8f",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1",
+    "view": "000196.jpg",
+    "path": "raw/graph_g1/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "004498f321ad5e99d6bb676ecb1b436f3ce6b36e6223b9bab733a414265fae11",
+    "array_sha256": "87436deb29c7f78e41faaf6b5bf0af5636eae799f271000a0aaf0df587f3d011",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1_A",
+    "view": "000196.jpg",
+    "path": "raw/graph_g1_A/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "72892d963809a10e500baba36b7b41045c59e019dd0184335fdc8d8413940294",
+    "array_sha256": "072312837134971aa78e5706f00f5fa1f568200607f9e72272496dcd75a9c5a1",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1_B",
+    "view": "000196.jpg",
+    "path": "raw/graph_g1_B/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "1b17fc8dfcd1fb43a38c27044e1b95b2c0e17b278de97453052b0a5d8927dc06",
+    "array_sha256": "8fe924781895ee036e2cf0f5d2ff36aaf62325bc672081fd2110d5b61edf3ce7",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2",
+    "view": "000196.jpg",
+    "path": "raw/graph_g2/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "612089538bc8deee1929be4b6b1358c436e483a6ae1766055baa1eea2f13574c",
+    "array_sha256": "a885e08ab8cb92dc93c8e7954a91afc7a52627b7f627e933f5c0fb6e95cf4fcc",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2_A",
+    "view": "000196.jpg",
+    "path": "raw/graph_g2_A/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "ff7a142800fdb4de1f14850aef4b48a7cb4bdee8e861f23c50cdf000535537d6",
+    "array_sha256": "0b5fab9d10fcd988950be29b755e334d27c316f98d46f967acc4d36d6dc73117",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2_B",
+    "view": "000196.jpg",
+    "path": "raw/graph_g2_B/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "7fdcd26f393f12be90a189ea2153a847921b34c78ee5325be484b215069b718c",
+    "array_sha256": "4e2c1c991ebbd3d8e27f55749202ecd96f16133d1b5655059620e23859b1cf97",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3",
+    "view": "000196.jpg",
+    "path": "raw/graph_g3/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "ee56f89a9f9fb5f3ff6794277fdd86a2e5af212fae512816c6e121a3efb48661",
+    "array_sha256": "c305d464256b12bc535dbcf0369b05bbcb2480e70a41b69146ea086313fe5fbd",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3_A",
+    "view": "000196.jpg",
+    "path": "raw/graph_g3_A/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "13432135d93c65b89491ee8efa8bcec649252681a44677c5271cf95d82e6aaf8",
+    "array_sha256": "91ed8a7213e13e665d37d9303a8c728d8575ff8dddb1c1f06f67b3ebd606abfa",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3_B",
+    "view": "000196.jpg",
+    "path": "raw/graph_g3_B/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "ca629251cd611f4060a351398c4253f34aa6748cf86a433d764d99374b08be72",
+    "array_sha256": "5ec1333bda020ed106c3306978b067957fb7d07c1922c6e096ccd08fa28f6450",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0",
+    "view": "000196.jpg",
+    "path": "raw/random101_g0/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "48f0543a63b832dc237a7dc79cb4e3eb29b1d7975d16f0907779b9f541146b89",
+    "array_sha256": "d9a6c659a54570581e2605833c15b72e71ab228a5545b398baacc4de1d4a7e17",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0_A",
+    "view": "000196.jpg",
+    "path": "raw/random101_g0_A/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "e4bcb01ddb16cb2b8137b19820a3809f46ef9e2dbad63100a9b3eec22a274fd5",
+    "array_sha256": "e04a93c02dcb4ed86686f1cd935249aab6dcee39eacd872dd44abccf934d3211",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0_B",
+    "view": "000196.jpg",
+    "path": "raw/random101_g0_B/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "6bb86a8c765eab33c6388170855a8f8eb1946dab47795a32bd696e01da14eab8",
+    "array_sha256": "cc768cc99005674cb5d01fe9ae3be2ca193155458ffb6b6d1f95f0b47922c0a1",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1",
+    "view": "000196.jpg",
+    "path": "raw/random101_g1/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "35d1dc2876a34c645228bc6c300799e3458143afa4f0bb5e203111279f1d4f3b",
+    "array_sha256": "26a4f576e90f7f38d5f88efaaeecb9793d79d35f18fbc1ed0d5b7a083e1dd695",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1_A",
+    "view": "000196.jpg",
+    "path": "raw/random101_g1_A/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "7f81d378a64c151b3e7c6b1e79e993cb6b580874dff077c210e62bb828598b4e",
+    "array_sha256": "376bcd0505064df459de9c71b51ca7ee8e5f83b983e9ee7ec07c865edce6293d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1_B",
+    "view": "000196.jpg",
+    "path": "raw/random101_g1_B/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "8d1023deb43c6da52177c847894bafc5ab172120833a3b73e249116f725a009a",
+    "array_sha256": "1125256df6c0a5ba8c77fe4a3991f385b492b4364e9be272d8ce888ee75254e6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2",
+    "view": "000196.jpg",
+    "path": "raw/random101_g2/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "5911cb4e81bf6d681817b15a1d6a27c954b1f909fa8eba7d0eaf143c9f365f3b",
+    "array_sha256": "352d55e65b7a75a3c8fad36103e0b498b15ee207a9d39afc9cd7c7324c3ce3cd",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2_A",
+    "view": "000196.jpg",
+    "path": "raw/random101_g2_A/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "f7f7dbc53ce3411698dc7f2a7451d3580aa27b27de599bee279fd601cca42fa1",
+    "array_sha256": "cf184bd386eda35bc493c086d5b2079424e53828d567d56fa586c1397a0c0b84",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2_B",
+    "view": "000196.jpg",
+    "path": "raw/random101_g2_B/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "2fb34fec18c5ee56e99b599c7b5d0e9387ba727c874d4422887dade7a44492b0",
+    "array_sha256": "c7bee42dd67293c8f1cec87a1e1d62a6f1d0f47a41ae27e23381e7e90191a2a0",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3",
+    "view": "000196.jpg",
+    "path": "raw/random101_g3/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "4a43f15ed0b5ef8984dab6595b16efbe73888c9e80d77504473863718fdd8229",
+    "array_sha256": "47ad8a5f9a961b80f290fa89c54ef5696d29af1b63e0934aab10143907474864",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3_A",
+    "view": "000196.jpg",
+    "path": "raw/random101_g3_A/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "52dd661e07f38c214da68525ace9110f99022523500b2fc5d8be8375ee773873",
+    "array_sha256": "e4f63c1f32549ea8536b2682221f3120130f198770261af56b956995ff09f964",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3_B",
+    "view": "000196.jpg",
+    "path": "raw/random101_g3_B/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "145907bca745d0055a4d33db4f1b4ece24c138b31b7c5be3b5df7b97ff098871",
+    "array_sha256": "91efb6bce81f5e3671bab8745c18a6a9c691c55e38a9e4fa0a18de12bcddca0f",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0",
+    "view": "000196.jpg",
+    "path": "raw/random202_g0/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "277335da9fbbb3fcc560e4e237a45052d24d29f06050b76ba3db267c2337893b",
+    "array_sha256": "df2b9505151c5f3811741f92480d453064c05fb50e675aa19a590f4d25de9172",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0_A",
+    "view": "000196.jpg",
+    "path": "raw/random202_g0_A/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "b260da4b70f0ab6357f82869d9e6781039706192c7fa18a5729100b24b1372dc",
+    "array_sha256": "0622e1ca2e87e2f4f31888af972c5ce1074b9ef65200fa2ba3483b2b7c49d8b3",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0_B",
+    "view": "000196.jpg",
+    "path": "raw/random202_g0_B/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "6f6f23be56815473f0fa59eb7cf3848a75472dfcf9705bd06c46abfc519bf6e2",
+    "array_sha256": "4d3b68ae66ca8a375cb2971d2911f99509c869bc363d34511e18b3afb14ec325",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1",
+    "view": "000196.jpg",
+    "path": "raw/random202_g1/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "b9960cd12b2cb6ce062c4dbebf4e1b690201872d2452f9b9aa07640fbd98dce1",
+    "array_sha256": "0c85e0d189892f74711a4f3a57eb9af360b9f2377af2ab9d38394ce08ae32c60",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1_A",
+    "view": "000196.jpg",
+    "path": "raw/random202_g1_A/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "30d42c17e5541d0848ef1cb2b902624fb3bc19117b548ed5416d43bbc24e078e",
+    "array_sha256": "49505eb207e253bb3aabfe04f7d33fc4be8582a179cc84b355a68f3f043300e7",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1_B",
+    "view": "000196.jpg",
+    "path": "raw/random202_g1_B/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "85fbee9f688dde181645f77c603c5c7dc03111fea756daa47128df2e5ef3d444",
+    "array_sha256": "42214d5e84a219e57ca2d17b189bf1c5421a10b6ced1c11206abd8b7ce41d815",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2",
+    "view": "000196.jpg",
+    "path": "raw/random202_g2/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "0d1358b6954d2a7b3a908b55b8a400610bb641d36fc5013c38aef228da3dac36",
+    "array_sha256": "5acbfd2cc727bcf7e0a010f484d41664170cb1110305ec8aab40dc94012a5148",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2_A",
+    "view": "000196.jpg",
+    "path": "raw/random202_g2_A/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "5b262a7b99b9581696b0d19c485f73cf05a8aa242d1b84a1775cb2aa1063dfd1",
+    "array_sha256": "9bc084501453f4aa6f83ae9d1826e0986ca9fb24d4e97e85d81042b3abcdcc5e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2_B",
+    "view": "000196.jpg",
+    "path": "raw/random202_g2_B/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "bfcf2616ab4b168bb29aa750caa6373a14ad4f54dce1b7c4ef40e3b450bde530",
+    "array_sha256": "f82d95697ad15d0ab046bb186e442e38cea00120ff15a811a00509c3dc49d0c9",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3",
+    "view": "000196.jpg",
+    "path": "raw/random202_g3/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "3815a650f2fcc073f76429274c0a6fc4cb4fc20ae9c943653bb20bffa4b7c2db",
+    "array_sha256": "0bce75a0b72cc6c97dd8b0097502de6d1ab5bc98d264c720d8aebda8afffbeec",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3_A",
+    "view": "000196.jpg",
+    "path": "raw/random202_g3_A/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "cb4ea6ed48ff3add5f616aecbc85c8daa24dfb71912bb7d5d7417d6891b94f49",
+    "array_sha256": "24158d60db69bd91cc23643ad8f9d7717cd6d6f58952a9067c9184c9aae166a9",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3_B",
+    "view": "000196.jpg",
+    "path": "raw/random202_g3_B/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "69d5133b7e2eb7444a5b038a5408f5a4912f061ba9c95f58dad2ee1d7db88f49",
+    "array_sha256": "f8af3ac274b48b3aeed65e23bce75663a4ef670e05e6bf7884e703a3e7424b75",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "base_repeat",
+    "view": "000196.jpg",
+    "path": "raw/base_repeat/000196.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "6399bb2b23f7e3932ac85d5b4ffbc631c162c32fd37a1da96cc12eb3c8193ac5",
+    "array_sha256": "2449caefb38cee917c25f80241130bce8ff112e42adde28375b5534ae406662a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "GT",
+    "view": "000231.jpg",
+    "path": "raw/GT/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "0d011336fae25a9142f0a22f44de9c16aa8ee66f64153b45142f7888fcbdaaeb",
+    "array_sha256": "8d2fa85ca2ffa9f53ec426e6fecc437f3ea5511259cda8ec91ec29cf8fe972f3",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "source_JPEG_RGB_float32_div255"
+  },
+  {
+    "arm": "base",
+    "view": "000231.jpg",
+    "path": "raw/base/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "a9e24476479711d4dab78e3d79cd70fccd1e7f80c35bde8d8e18410b61208792",
+    "array_sha256": "3f9e49fca36c8e3fd2c0db345a242f931c57a70c96fbee44159f458366256219",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "full",
+    "view": "000231.jpg",
+    "path": "raw/full/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "03f6f961ea944fe987fa5236ba91edb628dd5c3d171c8287ade83c3dc86a77d7",
+    "array_sha256": "0dd2948b74dce88d68995800c4e56461ca89529f417c7ee492e08813af15b26b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0",
+    "view": "000231.jpg",
+    "path": "raw/graph_g0/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "11afef6c95a3645320fffa2d81d3a1c46525a474b5facecc3c322bd2218ab81d",
+    "array_sha256": "d3b1907f5623f553583c5fa68c40f442444c9aedbc27eab9a08e6b4767f0b4f8",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0_A",
+    "view": "000231.jpg",
+    "path": "raw/graph_g0_A/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "1fa89e5be4c344807d766eb75f2d633fb984f9ce89635b2d9e934e6e2a3e9c89",
+    "array_sha256": "02ebb223b3b91bed39068f6f57b3b69ab49285cc1dda75df732c4226cb14e439",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0_B",
+    "view": "000231.jpg",
+    "path": "raw/graph_g0_B/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "261e14422fa15bb94c084fbe458b2319b9b0e069584fa52fa48bdde81ce7389a",
+    "array_sha256": "4e04da52e087c09a8318e88e1bc5e272566ded9d89a8b8ccb1b61841531560e6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1",
+    "view": "000231.jpg",
+    "path": "raw/graph_g1/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "7c277970ead8fa05ee849e0735dd0f0d285c4c9294decb9e5810990b6790a482",
+    "array_sha256": "8082c822eb2c5b59b321e1acb98bacf85f9997636c5462e39f3f10bb1ce77886",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1_A",
+    "view": "000231.jpg",
+    "path": "raw/graph_g1_A/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "e44018a206cafae7a4c15142bd5fd53fea7cb2be08deb35189edcfe65367ca4e",
+    "array_sha256": "0479bc0891bf81219228a5989f7550bad12f63e8e49f6ad1411fa14a6103bf8c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1_B",
+    "view": "000231.jpg",
+    "path": "raw/graph_g1_B/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "c967e59b6983b74762c44cf6167ce1bb069c1dfb6fbffe662bcd360162e37eb1",
+    "array_sha256": "4ad22f7c958712770f2b6249000d695f07ad4f75b13db6bbedc55fe89752a141",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2",
+    "view": "000231.jpg",
+    "path": "raw/graph_g2/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "0a295ff61f41ef6b1a2d68a852f0d30dbc4f79b6f0ada7dde81d2ef259109b4b",
+    "array_sha256": "68075e3d9e700f614ab76bdb4eaf0899fd9a5ec12d2f3a3420aff456df28f7f1",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2_A",
+    "view": "000231.jpg",
+    "path": "raw/graph_g2_A/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "2fe907bf5b00ba4489b9a10171cc0ac4a76fe9aea75232d9a41c3fd829625780",
+    "array_sha256": "faf357eef57b948f71b259708f32748ee22d1a53f0f3a72fbf6c53fd9ced2aa2",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2_B",
+    "view": "000231.jpg",
+    "path": "raw/graph_g2_B/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "02ed9a665770c020ee507878dd258173271c1cb34faebef23066db2af787d238",
+    "array_sha256": "c82a0505277987a9bfc3f1c62b8eaa429440aef93bdc7efa7cdc04e53f063cce",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3",
+    "view": "000231.jpg",
+    "path": "raw/graph_g3/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "1683ba2769fb51141fe98014d1a5cda19ec08642c3e6848e0743d795a7a92a14",
+    "array_sha256": "95e4e5140af81fd24eca4b4f014774697a17bd82cd1e03fc13025f77d53db4fc",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3_A",
+    "view": "000231.jpg",
+    "path": "raw/graph_g3_A/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "13a6e3f71590fed775b0b7fe3dce52152b7f64bdb85280c1249786f6ff8094b2",
+    "array_sha256": "2017970bfbf9525c9819915859ff1921f0e244dd3116e72f178a67b5bcc0d51e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3_B",
+    "view": "000231.jpg",
+    "path": "raw/graph_g3_B/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "bf4646b71f4b3bfa560096b9d91966e74523008ea50d44d888f8ea39e23784fe",
+    "array_sha256": "5e7619295403b2898a02aeb4d42a5e2903d81ada958a6a02e5eb4599fb4ee493",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0",
+    "view": "000231.jpg",
+    "path": "raw/random101_g0/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "ba2277264f340f8094880eb533305838ed0d26f4ecc39e69f6700949458b8a45",
+    "array_sha256": "9c11f3238a04a1d3e809abdc913b71d4bbf319edd310301a2b8ab3eb48a6fb4c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0_A",
+    "view": "000231.jpg",
+    "path": "raw/random101_g0_A/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "c8e8bee2da117e5dc6340336158b71d9eb827cc1dfe872fdfe9685fb38d1bf3c",
+    "array_sha256": "e41fd171fed8e99032468866dd1fd26c8e2e7c54829baa81e5d56eb5326d4ccd",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0_B",
+    "view": "000231.jpg",
+    "path": "raw/random101_g0_B/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "c70838918bd1cced856cc0432bb2f407042ede207fea1604eadc90628d73b9a5",
+    "array_sha256": "f33ef33231a9e4b25d589abdfafc8defd150fa86ca68a801c4c0ac92d86dd33e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1",
+    "view": "000231.jpg",
+    "path": "raw/random101_g1/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "c34e1a2fd69412d74dea28594e2a911d09b13c58009d1894153a03ca2af52bc1",
+    "array_sha256": "6edf335ef6e7c49f0fe34c0ca27bf2973d7ac1ea95e41e6bc8ae82a98126cfb1",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1_A",
+    "view": "000231.jpg",
+    "path": "raw/random101_g1_A/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "973473e230f24840fa1038db083110236cf099909abe8fc6751182fc91815a02",
+    "array_sha256": "7e08a0ba36f63ac074d9226bf21c8d193fb3543f826b77dc53e3895c0fcbfaaf",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1_B",
+    "view": "000231.jpg",
+    "path": "raw/random101_g1_B/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "4aade1c83c169537a1785048632e64299a7041b34d69bfe12a860daf4d462149",
+    "array_sha256": "cb4549a51e133d65a3c7be73c172a1a9b69e8e1af1ecdbfead3aec9045ad2111",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2",
+    "view": "000231.jpg",
+    "path": "raw/random101_g2/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "fd98140160a22cfa8351d56a8f3c235cb335e945e130386e1eb4e3ccb5ed9504",
+    "array_sha256": "0180f50c8b585f5533dbbf719e45d437970c9961fa7e69debb937efa9bc9db4f",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2_A",
+    "view": "000231.jpg",
+    "path": "raw/random101_g2_A/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "ab65fdd6b55c832292e7f9a08d0151a0e7b8bad23ea51d44d9c14e9415e033d3",
+    "array_sha256": "cace7633be85edb2d4071b0a4e19c200cd21c21a420a5e78bea2c4400d7ec79b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2_B",
+    "view": "000231.jpg",
+    "path": "raw/random101_g2_B/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "8a6a9c9c2e916830a4013f321faa0d713c93d1590f825096a8be951e9ba9b1e5",
+    "array_sha256": "b2edce40a20c1fd4122aef471dfebf2f3d5cb1a893b200654f4c7bd34ffefa2b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3",
+    "view": "000231.jpg",
+    "path": "raw/random101_g3/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "0ce8a4c596fd345d9fa8357f795a485eb12e2cefcf27cbea329327d0dc5163b5",
+    "array_sha256": "f7e0f97e8cd37d91f9bb9326dcb4b85b00a1f5963001a65aa72a60d6c043a861",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3_A",
+    "view": "000231.jpg",
+    "path": "raw/random101_g3_A/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "c5a090126ac60df48fe964bd0aa3c48cdf052d19fe6b4f621f95f076c153eb68",
+    "array_sha256": "a336147ee1e22742c4022b4ea2ff48f0aa57e629b093a8624ce758323432d4bf",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3_B",
+    "view": "000231.jpg",
+    "path": "raw/random101_g3_B/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "c0a9cf92c9b46f970e05ae32947da1f090574b994009020f66079d5093fb925a",
+    "array_sha256": "874ef6f2c74942f6a2e0b7e0064a89740489f56822f2f4baa3f9926db17dad0b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0",
+    "view": "000231.jpg",
+    "path": "raw/random202_g0/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "afab799abb7980931b13cebce5362b906d4ba70a4bad23999037c1e24d00f52e",
+    "array_sha256": "4e8837e9034f105fa0f8c2a717f92c9df8eab64f7c4b27832614e0b1feb24b23",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0_A",
+    "view": "000231.jpg",
+    "path": "raw/random202_g0_A/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "1878d2f0e7ab1cb4f1f4af63b8c5c0fde638cb9a892a4c87353f89003aa1cf19",
+    "array_sha256": "18d04b441e704225f572607ce187c098f7acd47f6cd570bbe34e2dc86e89d169",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0_B",
+    "view": "000231.jpg",
+    "path": "raw/random202_g0_B/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "53f1df5736fdcebedf78f9a4ba2d74a581f56e03fe3a4993f03e580d238dbc2a",
+    "array_sha256": "9b48b153439a362914eb93ac6c61b4b8b286bb9a49c32211c82c24c62c1f8667",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1",
+    "view": "000231.jpg",
+    "path": "raw/random202_g1/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "7bb596324ab4b3fe0b74afab97ddc9fe1f8b7e63e5459ff91bf424fac1ec8e21",
+    "array_sha256": "73f20d6e6ece0173d2de59c5c933ee0d224a806f2abe21e256d32def670644eb",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1_A",
+    "view": "000231.jpg",
+    "path": "raw/random202_g1_A/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "1ca7559fb0e9da38d9409d78fdcab73d22b3fe8fec431f01d796abd86cbf72ff",
+    "array_sha256": "671b145d76583e2548eb48962eacc81fd0bab377247cd18150629f7d8102d273",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1_B",
+    "view": "000231.jpg",
+    "path": "raw/random202_g1_B/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "aacb89118d7333e75b23c09f84f13494fe8325ec01d88e921f470f607efa7250",
+    "array_sha256": "7b0dd7fc5cc05da958a1fc405a9da43da619b3c9840b34bcc37fe9fd250b38c3",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2",
+    "view": "000231.jpg",
+    "path": "raw/random202_g2/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "7921c371d940677a03b8b2a62a0f822811ba28bf3036fb1424d3654a1a099838",
+    "array_sha256": "cb5a58771e0be04ba9ae46f1e3f37fe3cb5473a23dd4f47c3ad4afb8e733a1c3",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2_A",
+    "view": "000231.jpg",
+    "path": "raw/random202_g2_A/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "510cb170af033cb0a6c3b20b15a49eaa9f398a836abb12d6bdd34c9c261cabcb",
+    "array_sha256": "4084cdbbf54706f4f9d4f3284b6c279dc521202d670ee32b7489f245e13851ef",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2_B",
+    "view": "000231.jpg",
+    "path": "raw/random202_g2_B/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "bda3ff2e97b1c38064d993b2cacc9a0af600ea610403c76c4d7fafeeb79b22dd",
+    "array_sha256": "ed72e54d65143c623d16e1158b5a01155d06b2b297729f3e9cb380b9fd6e9fb0",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3",
+    "view": "000231.jpg",
+    "path": "raw/random202_g3/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "2b8187bf95278225b36f9c946fa0230c623ade42e6b57cc74138cba8f9a1a029",
+    "array_sha256": "22567899e47be9bd759d504b3cad4f4cb97c494efb015585273d2725dd7456ab",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3_A",
+    "view": "000231.jpg",
+    "path": "raw/random202_g3_A/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "362cc0fc17dde051311d8318ec8a18c2a42195cbea968caa5612f97e3059ee40",
+    "array_sha256": "51b5010456f4f7a0a745f906285d5c6387081f84d3c8ac9e7c6709064568256d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3_B",
+    "view": "000231.jpg",
+    "path": "raw/random202_g3_B/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "f916625e58a4918ff472e3907c489af0de22543803d1d5d87895ec331be354be",
+    "array_sha256": "7d7fe5f9d6e7adacd95014e545cdf0880266f41d01dd2e49fe2df8e556583433",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "base_repeat",
+    "view": "000231.jpg",
+    "path": "raw/base_repeat/000231.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "a9e24476479711d4dab78e3d79cd70fccd1e7f80c35bde8d8e18410b61208792",
+    "array_sha256": "3f9e49fca36c8e3fd2c0db345a242f931c57a70c96fbee44159f458366256219",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "GT",
+    "view": "000250.jpg",
+    "path": "raw/GT/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "982085f58e9e72cb94582d967780ff232fbfca16823fe0c9320ca387995bae28",
+    "array_sha256": "23957dca26fccd88c9f0bdd37b0c046c52ce77875f56c1ba8232ca660ccae6b3",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "source_JPEG_RGB_float32_div255"
+  },
+  {
+    "arm": "base",
+    "view": "000250.jpg",
+    "path": "raw/base/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "9c4794b5fd08839002a0ae5bff8dcfdff4a94bbe7d97f9f77923804ba1ca7f53",
+    "array_sha256": "8726da9735758f548140a6833b3b7b618682b9edb37302d23d962bfb3c3edbe4",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "full",
+    "view": "000250.jpg",
+    "path": "raw/full/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "68d7cbc79519e1942659bddb5ed0b37bdbd3ec3cb89df63e8894dae519f05aa5",
+    "array_sha256": "5e7903cbbb6af1fe2075d9054ee1a9e7aab0be552a82101066ee295b0b746426",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0",
+    "view": "000250.jpg",
+    "path": "raw/graph_g0/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "c2c9271463189ad3acf4873d5640035cefe0290b96ad2e605eee2ed023f9e2fd",
+    "array_sha256": "c31c596978d5998b535568db6869ceebf234e91d1e738c897c1ee80d97afb6c4",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0_A",
+    "view": "000250.jpg",
+    "path": "raw/graph_g0_A/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "3c11e200cf01c9a906df0d498a438a5b6ac8b8e2d0e0a7d21724c82787c9db6c",
+    "array_sha256": "419144d2afb5c8373c91c688a1d4b1862be421e4aafd8269065177180eb49a19",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g0_B",
+    "view": "000250.jpg",
+    "path": "raw/graph_g0_B/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "a783505993487ae9e6b0e4dfc27f13a4089f91164f946a32adaccae694dd2d9b",
+    "array_sha256": "3f8d4e81b2ea0e17b168b6b3dc5e8cadc0955f69fc63128648c1008c2b55acf9",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1",
+    "view": "000250.jpg",
+    "path": "raw/graph_g1/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "6fa28020d6aef6684e1bb3d33268043bcfab99cf3e98f80ac97d92430201663b",
+    "array_sha256": "1b3219d1c154bdbf73079321d9287d14979520037cc8804dbf2c5fb14fafbde7",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1_A",
+    "view": "000250.jpg",
+    "path": "raw/graph_g1_A/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "279c0b97e2a94ecf2afe77b9e15eb918731f1ebeed50cf4adf1f828b23638ac0",
+    "array_sha256": "b57b73612bb2d713462d1cbc27c30edee03700d823d24eb47a9273ce37fdea58",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g1_B",
+    "view": "000250.jpg",
+    "path": "raw/graph_g1_B/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "946ad84453116c5d2be3712e69e7b00ba5002d670fbee91e934833a55a238342",
+    "array_sha256": "366b81b4ddd71aad9702ccfbd5e9e1a300be12efbf529de294acc6f9a47a48e9",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2",
+    "view": "000250.jpg",
+    "path": "raw/graph_g2/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "6aa08d1cbd8bab6cd9b5b9923d4197d652ab6eea15ec7e10eedbe812f635bf67",
+    "array_sha256": "1385c473db718565e282f864bf0a0d85aa9ac06c8a95cd481dac741973d095e2",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2_A",
+    "view": "000250.jpg",
+    "path": "raw/graph_g2_A/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "31a342041ce7df99698fdafeab88423cc11e843335caae7cee16b219f199d928",
+    "array_sha256": "da687a3ba1bb5279ff02775ae51c36ef3aec9657c8f8c09307dbea50dcf6aab5",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g2_B",
+    "view": "000250.jpg",
+    "path": "raw/graph_g2_B/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "4b57cae13e6adeada5578d05355a9406ac93b2d3873105303b776d546c12ef10",
+    "array_sha256": "6e4fc731918686890392a285f245329a40fae39a732454bfab016b9fc790b519",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3",
+    "view": "000250.jpg",
+    "path": "raw/graph_g3/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "b0bc4ce53165e46dece69fb9a7cb87f064f9c02f1103654458f79e12cf25bf2e",
+    "array_sha256": "b64cbce17bd604a5f436a0e69314c5d473be7c273891cfd71c719e082bc39f36",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3_A",
+    "view": "000250.jpg",
+    "path": "raw/graph_g3_A/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "4e045799ca9e06308dee4db51097cba490d2156f0042c2e4c9935fa2a1cf56c2",
+    "array_sha256": "21bdb8d10c05aa29fab454fa0e2772d91b773eae2a7a80305ca1f38558f77538",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "graph_g3_B",
+    "view": "000250.jpg",
+    "path": "raw/graph_g3_B/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "30c190a4ec3db9b6435a0f4fce6eaf5f1fba2f60a0267b4e8f453a061a35b42c",
+    "array_sha256": "d2220a6c1c5d30997a7434f321f47dc7e4bd5b8c9a78cfed993387d8846409d0",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0",
+    "view": "000250.jpg",
+    "path": "raw/random101_g0/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "46b80bb238318b49c0010cde660a5e2864422241a240a47e5a0c4d8e6998e242",
+    "array_sha256": "8fd1a757e047ec2f902c0e813d8ce83e64a0e2375103883567ccd0367aa33302",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0_A",
+    "view": "000250.jpg",
+    "path": "raw/random101_g0_A/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "b05f22b42f17ada5e4ca0eedaf136dcc462944806cc2755263db04ebda3393fa",
+    "array_sha256": "11df70f9917af8fe975cacc296dbbead6c2ed1d756801a1d4c52bbc22b81fe62",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g0_B",
+    "view": "000250.jpg",
+    "path": "raw/random101_g0_B/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "cfcb4880ac396bdd032232a2ae785d8c3eafbb4382530196b9fa25d937f40698",
+    "array_sha256": "42cde76e22857e7eaaeffdf96a2528b60d7a404b8cb782581b9830732d4a6fc4",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1",
+    "view": "000250.jpg",
+    "path": "raw/random101_g1/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "2242c43fcd3eb97b7837b55947df3a59c8fa79a7361b617e4084d6737aa0775f",
+    "array_sha256": "d4b41f09adf965801107b0c7a8388cb349b79a9c9fb5cbbe82dd7147c480df0d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1_A",
+    "view": "000250.jpg",
+    "path": "raw/random101_g1_A/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "20a14b786e997563b6b3e5b6759e7afb948f1f9792ffeda94ef6f2b2f6371292",
+    "array_sha256": "734e330d4bced92b807d4fc1abc2b0925ccacf12f19e707c6dffa2fb5d53febc",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g1_B",
+    "view": "000250.jpg",
+    "path": "raw/random101_g1_B/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "c1978e4d53da08807334ca069289e0acf9473ee6d2893d46a02758e53cc90317",
+    "array_sha256": "b040c48b0d2bdfa86e7f6c5a1f877dd7f39ed278864309aa5139d8434c04e290",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2",
+    "view": "000250.jpg",
+    "path": "raw/random101_g2/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "72cfeca5b48d41f2241da349fbbd836354de997c7e6e4bad0f8b1c35b3885668",
+    "array_sha256": "bdd30db8580329ff58d6cd3d5a1422e377d937d6b0f39c1e954805df6d30fa79",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2_A",
+    "view": "000250.jpg",
+    "path": "raw/random101_g2_A/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "f0ec0be5d8a572e058059951f4bf9662c96474bb409e86422656607f25dd5e74",
+    "array_sha256": "6d339ae671345af40269bb5f5884d58ec725e202a21bf657b2b9649d843f1adc",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g2_B",
+    "view": "000250.jpg",
+    "path": "raw/random101_g2_B/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "0dac9553c47ca56f9b05de0c07f86687c8b9837ffc868fac97038c2a650e4811",
+    "array_sha256": "20d41660aefdbee798ea98138410b695e3b73f3d7f867755a227680b00868d3b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3",
+    "view": "000250.jpg",
+    "path": "raw/random101_g3/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "a8f96c37731f7938c7cf95b5587b0783c78eb421cef8c956edc216eefe0c85e0",
+    "array_sha256": "9f3f257fea5c8e093610d00a646630d35324d33d01d2b3b10573032d5efd05a7",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3_A",
+    "view": "000250.jpg",
+    "path": "raw/random101_g3_A/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "58b0d602d49fd19d662521c5120361fe695f60183b4670e2c92bcd33c0c48d16",
+    "array_sha256": "3f5ec50f782fa9388f05c9bc0db6cbbbe05f852b41096fdad3698abae3df36fd",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random101_g3_B",
+    "view": "000250.jpg",
+    "path": "raw/random101_g3_B/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "c9cfd8b5b1830a080af81fcd517db9c12c01a081f90527014597d9646149b1be",
+    "array_sha256": "733696b4908bdb81f74cf175285bbcd952c0cd4f397f3b61c2293d850f42e01e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0",
+    "view": "000250.jpg",
+    "path": "raw/random202_g0/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "8ec22ba24a8bb804663047f3a67070ac9f6c25e2d4cbcf0638aec382623ecb64",
+    "array_sha256": "d1af9d3831268d5f8a5b1a970be566e8c9e0a3fcb4b4067103fb49db8e9086c1",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0_A",
+    "view": "000250.jpg",
+    "path": "raw/random202_g0_A/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "8392b04842e0ac0dd0d4c8bb07eb0f982dbf05f4dcba389fc4dc4f6922de5e05",
+    "array_sha256": "b62a75fe499a543c6a795a550f3ae15d0797893b030e0c2be90926443f2009b3",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g0_B",
+    "view": "000250.jpg",
+    "path": "raw/random202_g0_B/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "02c976f34e323b5c4444be419662fa280ede84c20859547589f44e199f2c08c4",
+    "array_sha256": "ad6fc86a98b5543eace9a58c4d7dd2db44d588398558a893ae93b069b82ae44d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1",
+    "view": "000250.jpg",
+    "path": "raw/random202_g1/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "d9d2efbbf0e53e0190e837acdc8abf15daea7d3af0c95dfa9744cd7ab871713b",
+    "array_sha256": "c682a18da3b5c5db1f231d358e45b6e640bb2530709c93eec63c528db3c9d0cb",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1_A",
+    "view": "000250.jpg",
+    "path": "raw/random202_g1_A/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "9c2596e679d24af9cfc0c1ae932917ad396d3a6b752d533ed0ad937b2d8bc7e1",
+    "array_sha256": "b9333bb2d8fcc019a0af19db15f3e96690927d1fb02faa7879b7c79c8fad5569",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g1_B",
+    "view": "000250.jpg",
+    "path": "raw/random202_g1_B/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "77e67eb7835b10ce73d7a84a5e9b24c4342af67793071c0b8818763aafedb7f9",
+    "array_sha256": "467f14de31ba1a7003d43449ffabb5f474693caeba5341165de4f2f1d000f0c5",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2",
+    "view": "000250.jpg",
+    "path": "raw/random202_g2/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "279f2576d2d0aa6cfc5fdcda7b8e8b6ddc413a46b7eb14f6d0a4df020c518973",
+    "array_sha256": "281dfea6a1aa5c686c3531a209235e14154b6beaa2b8f5a966061b5d5568e8aa",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2_A",
+    "view": "000250.jpg",
+    "path": "raw/random202_g2_A/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "d1ffa04cff0a5c39d47351dbee6b05d9f9a168d069e99228e411625819ec8b8e",
+    "array_sha256": "167c4ce9e7e8169853229841afb958d9dc2563aeffe8d04d303b3da2c8be8820",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g2_B",
+    "view": "000250.jpg",
+    "path": "raw/random202_g2_B/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "e78e6531a91d336a3a7ff50b964fd20aa8fdd5ae6bc131acc139496dbde6d4ce",
+    "array_sha256": "555476743a3e6ad0b02f541ef560ee18edd5070afe5db904c252c6244c595212",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3",
+    "view": "000250.jpg",
+    "path": "raw/random202_g3/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "10ccfc9334582451638d245c26ee6757dcc27ab378e2c2dc1df2160e674073ec",
+    "array_sha256": "287fefe8748b14f3d54324552140e5a1cb953273ca27f2f599f16760681c91c4",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3_A",
+    "view": "000250.jpg",
+    "path": "raw/random202_g3_A/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "0f43d3c2ed7124d059356194d88ff51c98639c862edd25c1f78fb95825725fa1",
+    "array_sha256": "d7a54d8ebefcb38fef4df05fbce33dd5856b144cefe063abd54898a636eaf281",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "random202_g3_B",
+    "view": "000250.jpg",
+    "path": "raw/random202_g3_B/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "5222dccbca56c1d4c00f39e4840c10abd677d7eb682e2c4821442fbea1b31069",
+    "array_sha256": "00c4cc38bee35e97919b68d918b70d5d47260e3e0f1e7a890432f9f770c923c6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  },
+  {
+    "arm": "base_repeat",
+    "view": "000250.jpg",
+    "path": "raw/base_repeat/000250.jpg.npy",
+    "bytes": 6414536,
+    "sha256": "9c4794b5fd08839002a0ae5bff8dcfdff4a94bbe7d97f9f77923804ba1ca7f53",
+    "array_sha256": "8726da9735758f548140a6833b3b7b618682b9edb37302d23d962bfb3c3edbe4",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_rasterizer_RGB_before_final_clamp"
+  }
+]

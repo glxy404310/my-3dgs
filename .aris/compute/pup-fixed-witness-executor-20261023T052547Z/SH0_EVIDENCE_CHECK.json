@@ -1,0 +1,298 @@
+{
+  "manifest_output_entries": 41,
+  "hash_mismatches": [],
+  "size_mismatches": [],
+  "input_entries": 50,
+  "input_before_after_mismatches": [],
+  "raw_RGB_files": 25,
+  "invocation1_document_verbatim": true,
+  "output_checks": [
+    {
+      "file": "ACTUAL_FISHER.npy",
+      "bytes": 416,
+      "expected_bytes": 416,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "CAMERA_AFTER.npz",
+      "bytes": 1292,
+      "expected_bytes": 1292,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "CAMERA_BEFORE.npz",
+      "bytes": 1292,
+      "expected_bytes": 1292,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "CONFIG.json",
+      "bytes": 5626,
+      "expected_bytes": 5626,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "EXPECTED_FISHER.npy",
+      "bytes": 704,
+      "expected_bytes": 704,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "FD_J.npy",
+      "bytes": 4736,
+      "expected_bytes": 4736,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "FINITE_MASKS.npz",
+      "bytes": 3158,
+      "expected_bytes": 3158,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "FIXED_BUILD_IDENTITY_USED.json",
+      "bytes": 16271,
+      "expected_bytes": 16271,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "OFFICIAL_FISHER_RENDERER.py",
+      "bytes": 3767,
+      "expected_bytes": 3767,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "OFFICIAL_POOL_HELPER.py",
+      "bytes": 6881,
+      "expected_bytes": 6881,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "OFFICIAL_PRIVATE_WRAPPER.py",
+      "bytes": 7431,
+      "expected_bytes": 7431,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "PARAMETERS_AFTER.npz",
+      "bytes": 1636,
+      "expected_bytes": 1636,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "PARAMETERS_BEFORE.npz",
+      "bytes": 1636,
+      "expected_bytes": 1636,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "TRACKED_AFTER.json",
+      "bytes": 1021545,
+      "expected_bytes": 1021545,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "TRACKED_BEFORE.json",
+      "bytes": 1021545,
+      "expected_bytes": 1021545,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "WRAPPER_SOURCE.py",
+      "bytes": 33626,
+      "expected_bytes": 33626,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/base.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g0_raw_log_sx_minus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g0_raw_log_sx_plus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g0_raw_log_sy_minus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g0_raw_log_sy_plus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g0_raw_log_sz_minus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g0_raw_log_sz_plus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g0_x_minus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g0_x_plus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g0_y_minus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g0_y_plus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g0_z_minus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g0_z_plus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g1_raw_log_sx_minus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g1_raw_log_sx_plus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g1_raw_log_sy_minus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g1_raw_log_sy_plus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g1_raw_log_sz_minus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g1_raw_log_sz_plus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g1_x_minus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g1_x_plus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g1_y_minus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g1_y_plus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g1_z_minus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "raw/g1_z_plus.npy",
+      "bytes": 320,
+      "expected_bytes": 320,
+      "hash_matches": true,
+      "bytes_match": true
+    }
+  ]
+}

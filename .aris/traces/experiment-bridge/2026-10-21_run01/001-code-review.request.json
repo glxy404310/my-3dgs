@@ -1,0 +1,14 @@
+{
+  "call_number": 1,
+  "purpose": "diagnostic-code-review",
+  "tool": "spawn_agent",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "files_referenced": [
+    "scripts/experiments/split_diagnostic.py",
+    "research/experiments/EXPERIMENT_PLAN.md",
+    "research/experiments/docs/research_contract.md"
+  ],
+  "prompt": "Follow experiment-bridge Phase 2.5 fresh code review (same-family provisional), read only. Review D:\\Documents\\my 3dgs\\scripts\\experiments\\split_diagnostic.py and D:\\Documents\\my 3dgs\\research\\experiments\\EXPERIMENT_PLAN.md plus docs/research_contract.md. Installed code is in WSL Ubuntu-22.04 /home/administrator/projects/gaussian-splatting at 54c035f..., accessible via wsl.exe with escalation; no source edits allowed. Check ground truth, train/test separation, optimizer/mutation semantics, RNG, shared parents/samples, runtime risks. Important: a 7k checkpoint post ADC has zero stats so calibration gradients are recomputed. All branches disable subsequent ADC, same checkpoint and recovery camera sequence. Compare noop vs official densify_and_split and opacity-only correction. Look for concrete blocking issues, no speculative frameworks or hashes. Do not run GPU jobs. Output BLOCKING / NON-BLOCKING with actionable fixes; say plainly if correct. Also flag scope weaknesses of thresholding pilot conclusions; do not declare novelty.",
+  "followup": "Plan clarified before data: 128-parent negative pilot cannot reject whole direction; need natural candidate scale/repeated event seeds. Opacity-only correction is a factor diagnostic, not a proxy for all geometry/density stable split methods. Main script is unchanged since initial review. Please prioritize runtime blockers so sanity can start once reviewed."
+}

@@ -1,0 +1,20 @@
+{
+  "undeclared": [],
+  "stale_rows": [],
+  "semantic_undeclared": [],
+  "resolved_findings": [
+    {
+      "finding": "Native source verification trusted mutable Git index",
+      "status": "fixed_and_statically_verified"
+    },
+    {
+      "finding": "A-001 promised witness JSON retention but discarded payloads",
+      "status": "fixed_and_statically_verified"
+    }
+  ],
+  "verdict": "STATIC_PASS",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "scientific_execution_verified": false,
+  "launch_authorized": false
+}

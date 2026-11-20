@@ -1,0 +1,14 @@
+{
+  "call_number": 27,
+  "purpose": "psf-static-heldout-check",
+  "timestamp": "2026-10-22T17:56:48.120Z",
+  "agent_id": "01a164c1-a963-7ae0-86a7-b7e1fe50e52f",
+  "agent_path": "/root/matched_geometry_cpu_verify/psf_static_check",
+  "model": "inherited-primary",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "request_recovered_verbatim": true,
+  "response_recovered_verbatim": true
+}

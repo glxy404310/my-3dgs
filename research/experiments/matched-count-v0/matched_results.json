@@ -1,0 +1,302 @@
+{
+  "integrity": "pass",
+  "scope": "Exploratory seed0 LAS diagnostic; gradient-ranked subsets, count and composition co-vary. Same per-parent initialization checked. Not a stage-causality or novel-method claim.",
+  "pairing": [
+    {
+      "window": "early",
+      "selected": 1481,
+      "same_per_parent_geometry": true,
+      "baseline": "/mnt/d/Documents/my 3dgs/research/experiments/split-diagnostic-v0/early3600_seed0/noop",
+      "full": "/mnt/d/Documents/my 3dgs/research/experiments/split-diagnostic-v0/early3600_seed0/las_split",
+      "subset": "/mnt/d/Documents/my 3dgs/research/experiments/matched-count-v0/early/las_split"
+    },
+    {
+      "window": "mid",
+      "selected": 1481,
+      "same_per_parent_geometry": true,
+      "baseline": "/mnt/d/Documents/my 3dgs/research/experiments/split-diagnostic-v0/online_seed0/noop",
+      "full": "/mnt/d/Documents/my 3dgs/research/experiments/split-diagnostic-v0/online_seed0/las_split",
+      "subset": "/mnt/d/Documents/my 3dgs/research/experiments/matched-count-v0/mid/las_split"
+    },
+    {
+      "window": "late",
+      "selected": 1481,
+      "same_per_parent_geometry": true,
+      "baseline": "/mnt/d/Documents/my 3dgs/research/experiments/split-diagnostic-v0/late11100_seed0/noop",
+      "full": "/mnt/d/Documents/my 3dgs/research/experiments/split-diagnostic-v0/late11100_seed0/las_split",
+      "subset": "/mnt/d/Documents/my 3dgs/research/experiments/split-diagnostic-v0/late11100_seed0/las_split"
+    }
+  ],
+  "results": [
+    {
+      "window": "early",
+      "selection": "full",
+      "step": 0,
+      "selected_parents": 12404,
+      "delta_psnr": -0.21943950653076172,
+      "delta_l1": 0.0010828606318682432,
+      "views_l1_worse": 30
+    },
+    {
+      "window": "early",
+      "selection": "full",
+      "step": 1,
+      "selected_parents": 12404,
+      "delta_psnr": -0.21644115447998047,
+      "delta_l1": 0.0010722593870013952,
+      "views_l1_worse": 29
+    },
+    {
+      "window": "early",
+      "selection": "full",
+      "step": 5,
+      "selected_parents": 12404,
+      "delta_psnr": -0.19105225801467896,
+      "delta_l1": 0.0009812860516831279,
+      "views_l1_worse": 29
+    },
+    {
+      "window": "early",
+      "selection": "full",
+      "step": 20,
+      "selected_parents": 12404,
+      "delta_psnr": -0.12100434303283691,
+      "delta_l1": 0.0008072454947978258,
+      "views_l1_worse": 29
+    },
+    {
+      "window": "early",
+      "selection": "full",
+      "step": 100,
+      "selected_parents": 12404,
+      "delta_psnr": -0.012531459331512451,
+      "delta_l1": 0.00012596265878528357,
+      "views_l1_worse": 20
+    },
+    {
+      "window": "early",
+      "selection": "matched1481",
+      "step": 0,
+      "selected_parents": 1481,
+      "delta_psnr": -0.06882202625274658,
+      "delta_l1": 0.0003277349751442671,
+      "views_l1_worse": 26
+    },
+    {
+      "window": "early",
+      "selection": "matched1481",
+      "step": 1,
+      "selected_parents": 1481,
+      "delta_psnr": -0.06933897733688354,
+      "delta_l1": 0.00033094012178480625,
+      "views_l1_worse": 27
+    },
+    {
+      "window": "early",
+      "selection": "matched1481",
+      "step": 5,
+      "selected_parents": 1481,
+      "delta_psnr": -0.06709259748458862,
+      "delta_l1": 0.00032930169254541397,
+      "views_l1_worse": 27
+    },
+    {
+      "window": "early",
+      "selection": "matched1481",
+      "step": 20,
+      "selected_parents": 1481,
+      "delta_psnr": -0.02985280752182007,
+      "delta_l1": 0.00017069349996745586,
+      "views_l1_worse": 28
+    },
+    {
+      "window": "early",
+      "selection": "matched1481",
+      "step": 100,
+      "selected_parents": 1481,
+      "delta_psnr": 0.014751613140106201,
+      "delta_l1": -1.1392519809305668e-05,
+      "views_l1_worse": 14
+    },
+    {
+      "window": "mid",
+      "selection": "full",
+      "step": 0,
+      "selected_parents": 2770,
+      "delta_psnr": -0.027290940284729004,
+      "delta_l1": 0.0002298568724654615,
+      "views_l1_worse": 25
+    },
+    {
+      "window": "mid",
+      "selection": "full",
+      "step": 1,
+      "selected_parents": 2770,
+      "delta_psnr": -0.02749723196029663,
+      "delta_l1": 0.00023095711367204785,
+      "views_l1_worse": 25
+    },
+    {
+      "window": "mid",
+      "selection": "full",
+      "step": 5,
+      "selected_parents": 2770,
+      "delta_psnr": -0.0315975546836853,
+      "delta_l1": 0.0002470408217050135,
+      "views_l1_worse": 24
+    },
+    {
+      "window": "mid",
+      "selection": "full",
+      "step": 20,
+      "selected_parents": 2770,
+      "delta_psnr": -0.03317910432815552,
+      "delta_l1": 0.00020075734937563539,
+      "views_l1_worse": 30
+    },
+    {
+      "window": "mid",
+      "selection": "full",
+      "step": 100,
+      "selected_parents": 2770,
+      "delta_psnr": -0.015032291412353516,
+      "delta_l1": 8.512125350534916e-05,
+      "views_l1_worse": 25
+    },
+    {
+      "window": "mid",
+      "selection": "matched1481",
+      "step": 0,
+      "selected_parents": 1481,
+      "delta_psnr": -0.009178340435028076,
+      "delta_l1": 8.291896665468812e-05,
+      "views_l1_worse": 28
+    },
+    {
+      "window": "mid",
+      "selection": "matched1481",
+      "step": 1,
+      "selected_parents": 1481,
+      "delta_psnr": -0.009212791919708252,
+      "delta_l1": 8.337723556905985e-05,
+      "views_l1_worse": 28
+    },
+    {
+      "window": "mid",
+      "selection": "matched1481",
+      "step": 5,
+      "selected_parents": 1481,
+      "delta_psnr": -0.009202778339385986,
+      "delta_l1": 7.872527930885553e-05,
+      "views_l1_worse": 28
+    },
+    {
+      "window": "mid",
+      "selection": "matched1481",
+      "step": 20,
+      "selected_parents": 1481,
+      "delta_psnr": -0.008455216884613037,
+      "delta_l1": 3.7824735045433044e-05,
+      "views_l1_worse": 26
+    },
+    {
+      "window": "mid",
+      "selection": "matched1481",
+      "step": 100,
+      "selected_parents": 1481,
+      "delta_psnr": -0.0049307942390441895,
+      "delta_l1": 1.945922849699855e-05,
+      "views_l1_worse": 22
+    },
+    {
+      "window": "late",
+      "selection": "full",
+      "step": 0,
+      "selected_parents": 1481,
+      "delta_psnr": -0.013158082962036133,
+      "delta_l1": 7.55565706640482e-05,
+      "views_l1_worse": 20
+    },
+    {
+      "window": "late",
+      "selection": "full",
+      "step": 1,
+      "selected_parents": 1481,
+      "delta_psnr": -0.014023542404174805,
+      "delta_l1": 8.59720166772604e-05,
+      "views_l1_worse": 22
+    },
+    {
+      "window": "late",
+      "selection": "full",
+      "step": 5,
+      "selected_parents": 1481,
+      "delta_psnr": -0.013878047466278076,
+      "delta_l1": 9.396817767992616e-05,
+      "views_l1_worse": 23
+    },
+    {
+      "window": "late",
+      "selection": "full",
+      "step": 20,
+      "selected_parents": 1481,
+      "delta_psnr": -0.015822529792785645,
+      "delta_l1": 0.0001061156508512795,
+      "views_l1_worse": 19
+    },
+    {
+      "window": "late",
+      "selection": "full",
+      "step": 100,
+      "selected_parents": 1481,
+      "delta_psnr": -0.010809600353240967,
+      "delta_l1": 7.925723912194371e-05,
+      "views_l1_worse": 20
+    },
+    {
+      "window": "late",
+      "selection": "matched1481",
+      "step": 0,
+      "selected_parents": 1481,
+      "delta_psnr": -0.013158082962036133,
+      "delta_l1": 7.55565706640482e-05,
+      "views_l1_worse": 20
+    },
+    {
+      "window": "late",
+      "selection": "matched1481",
+      "step": 1,
+      "selected_parents": 1481,
+      "delta_psnr": -0.014023542404174805,
+      "delta_l1": 8.59720166772604e-05,
+      "views_l1_worse": 22
+    },
+    {
+      "window": "late",
+      "selection": "matched1481",
+      "step": 5,
+      "selected_parents": 1481,
+      "delta_psnr": -0.013878047466278076,
+      "delta_l1": 9.396817767992616e-05,
+      "views_l1_worse": 23
+    },
+    {
+      "window": "late",
+      "selection": "matched1481",
+      "step": 20,
+      "selected_parents": 1481,
+      "delta_psnr": -0.015822529792785645,
+      "delta_l1": 0.0001061156508512795,
+      "views_l1_worse": 19
+    },
+    {
+      "window": "late",
+      "selection": "matched1481",
+      "step": 100,
+      "selected_parents": 1481,
+      "delta_psnr": -0.010809600353240967,
+      "delta_l1": 7.925723912194371e-05,
+      "views_l1_worse": 20
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "stationary-adc-window-v0/user-authorization-v1",
+  "recorded_at": "2026-10-23T11:42:55.353249+08:00",
+  "source": "Direct human reply to request_user_input_async",
+  "question_item_id": "[\"request_user_input_async\",\"call_cbedd74bb79c4bc7baa079470a127ff4\",0]",
+  "question": "现有零更新路线尚未建立新问题。#45 的干净诊断需要恢复 3500 步模型，执行 100 次反向、99 次场景优化器调用及 99 次曝光优化器调用，在 3600 步增密前停止。是否允许仅这一个诊断窗口？你之前要求“别先训练”，因此需要明确确认；最小方案已写在 research/experiments/stationary-adc-window-v0/PREPARATION_PLAN.md。",
+  "answer": "允许仅这一个诊断窗口",
+  "single_diagnostic_window_authorized": true,
+  "scope": {
+    "scene": "Truck",
+    "restore_iteration": 3500,
+    "first_iteration": 3501,
+    "last_iteration": 3600,
+    "forward_calls": 100,
+    "backward_calls": 100,
+    "scene_optimizer_calls": 99,
+    "exposure_optimizer_calls": 99,
+    "adc_calls": 0,
+    "opacity_reset_calls": 0,
+    "stop": "After iteration3600 statistic addition, before densification/reset/3600optimizer calls",
+    "additional_method_training_authorized": false,
+    "automatic_retry_or_parameter_tuning_authorized": false
+  },
+  "goal_status": "paused",
+  "execution_allowed_now": false,
+  "pause_reason": "User weekly remaining50% stop line still effective; no instruction to resume",
+  "quota_observed_at": "2026-10-23T11:41:24+08:00",
+  "weekly_remaining_percent": 50,
+  "repeat_confirmation_for_same_window_required": false,
+  "preparation_contract_unchanged": true,
+  "code_or_model_execution_performed": false
+}

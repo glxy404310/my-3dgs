@@ -1,0 +1,20 @@
+{
+  "call_number": 60,
+  "purpose": "pup-kernel-source-semantics",
+  "timestamp": "2026-10-22T21:05:08.318Z",
+  "timestamp_role": "Recovered assistant final event time, not dispatch time",
+  "agent_id": "01a16558-436d-7ef1-825f-517c967b935b",
+  "agent_id_provenance": "Child session-log filename; forked session_meta contains inherited parent identity and is retained separately in recovery.json",
+  "agent_path": "/root/shared_coord_native_backend/benchmark_schedule_audit",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "ultra",
+  "model_provenance": "Last turn_context model/effort preceding the recovered final",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok_static_review_only",
+  "response_recovered_verbatim": true,
+  "response_session_log": "C:\\Users\\Administrator\\.codex\\sessions\\2026\\10\\23\\rollout-2026-10-23T04-40-45-01a16558-436d-7ef1-825f-517c967b935b.jsonl",
+  "recovery_filter": "Only assistant final text matching the delivered final prefix plus session_meta/turn_context metadata were emitted; analysis/reasoning and encrypted calls were not inspected or decrypted",
+  "disposition": "Static examination of old eaef gitlink. Root subsequently verified this SH issue is the already-merged official PR1 fix f62f1cce; not a new discovery or f62 numerical certification. No GPU or science executed."
+}

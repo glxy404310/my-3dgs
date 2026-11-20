@@ -1,0 +1,172 @@
+{
+  "A": {
+    "zero_weight_points": 0,
+    "zero_weight_survivors": 0,
+    "zero_weight_deleted": 0,
+    "receivers": 1025385,
+    "donating_points": 1025385,
+    "exact_tie_queries": 0,
+    "center_distance": {
+      "0": 3.534016467711515e-05,
+      "0.25": 0.012285205092672067,
+      "0.5": 0.032455994255585,
+      "0.75": 0.0856431041068472,
+      "0.9": 0.19386645211241904,
+      "0.95": 0.31415984946222203,
+      "0.99": 0.7684769089019534,
+      "1": 40.4525739959446
+    },
+    "distance_over_sum_max_3d_scales": {
+      "0": 0.00029376016865851533,
+      "0.25": 0.16576859428899865,
+      "0.5": 0.36192835430530995,
+      "0.75": 0.7662694738219984,
+      "0.9": 1.4968787601175566,
+      "0.95": 2.2315767872354697,
+      "0.99": 4.952730951992185,
+      "1": 211.40036488651202
+    },
+    "projected_native_three_sigma_circle_overlap": {
+      "0": {
+        "view": "000002.jpg",
+        "donating_pairs": 1025385,
+        "both_visible": 299931,
+        "overlapping_pairs": 299600,
+        "fraction_all_pairs": 0.2921829361654403,
+        "fraction_both_visible": 0.9988964128416202
+      },
+      "72": {
+        "view": "000084.jpg",
+        "donating_pairs": 1025385,
+        "both_visible": 230828,
+        "overlapping_pairs": 230479,
+        "fraction_all_pairs": 0.22477313399357315,
+        "fraction_both_visible": 0.998488051709498
+      },
+      "145": {
+        "view": "000167.jpg",
+        "donating_pairs": 1025385,
+        "both_visible": 189192,
+        "overlapping_pairs": 189134,
+        "fraction_all_pairs": 0.18445169375405335,
+        "fraction_both_visible": 0.9996934331261365
+      },
+      "218": {
+        "view": "000251.jpg",
+        "donating_pairs": 1025385,
+        "both_visible": 260613,
+        "overlapping_pairs": 260296,
+        "fraction_all_pairs": 0.25385196779746144,
+        "fraction_both_visible": 0.9987836370403625
+      }
+    },
+    "proxy_conservation": {
+      "local": {
+        "expected_proxy_mass": 1064718.180574524,
+        "transferred_proxy_mass": 1064718.180574523,
+        "relative_error": 8.747127564901119e-16,
+        "rendered_float32_logit_proxy_mass": 1064718.180526898,
+        "rendered_float32_relative_error": 4.473106094139134e-11
+      },
+      "global": {
+        "expected_proxy_mass": 1064718.180574524,
+        "transferred_proxy_mass": 1064718.1805745238,
+        "relative_error": 2.1867818912252797e-16,
+        "rendered_float32_logit_proxy_mass": 1064718.1805261727,
+        "rendered_float32_relative_error": 4.541224350050801e-11
+      },
+      "shuffle": {
+        "expected_proxy_mass": 1064718.180574524,
+        "transferred_proxy_mass": 1064718.1805745233,
+        "relative_error": 6.560345673675839e-16,
+        "rendered_float32_logit_proxy_mass": 1064718.18053573,
+        "rendered_float32_relative_error": 3.643594119340649e-11
+      }
+    }
+  },
+  "B": {
+    "zero_weight_points": 226,
+    "zero_weight_survivors": 0,
+    "zero_weight_deleted": 226,
+    "receivers": 1025385,
+    "donating_points": 1025159,
+    "exact_tie_queries": 0,
+    "center_distance": {
+      "0": 3.534016467711515e-05,
+      "0.25": 0.012281634338000249,
+      "0.5": 0.03244232925707766,
+      "0.75": 0.08557930556900556,
+      "0.9": 0.19360751838617463,
+      "0.95": 0.3133946648344121,
+      "0.99": 0.7640803485207395,
+      "1": 40.4525739959446
+    },
+    "distance_over_sum_max_3d_scales": {
+      "0": 0.00029376016865851533,
+      "0.25": 0.16573714862275052,
+      "0.5": 0.36182592473134556,
+      "0.75": 0.7658081232058074,
+      "0.9": 1.4954928514921149,
+      "0.95": 2.2290358564842587,
+      "0.99": 4.948005698869058,
+      "1": 211.40036488651202
+    },
+    "projected_native_three_sigma_circle_overlap": {
+      "0": {
+        "view": "000002.jpg",
+        "donating_pairs": 1025159,
+        "both_visible": 299931,
+        "overlapping_pairs": 299600,
+        "fraction_all_pairs": 0.29224734894782173,
+        "fraction_both_visible": 0.9988964128416202
+      },
+      "72": {
+        "view": "000084.jpg",
+        "donating_pairs": 1025159,
+        "both_visible": 230828,
+        "overlapping_pairs": 230479,
+        "fraction_all_pairs": 0.22482268604187253,
+        "fraction_both_visible": 0.998488051709498
+      },
+      "145": {
+        "view": "000167.jpg",
+        "donating_pairs": 1025159,
+        "both_visible": 189192,
+        "overlapping_pairs": 189134,
+        "fraction_all_pairs": 0.18449235679538492,
+        "fraction_both_visible": 0.9996934331261365
+      },
+      "218": {
+        "view": "000251.jpg",
+        "donating_pairs": 1025159,
+        "both_visible": 260613,
+        "overlapping_pairs": 260296,
+        "fraction_all_pairs": 0.25390793037958015,
+        "fraction_both_visible": 0.9987836370403625
+      }
+    },
+    "proxy_conservation": {
+      "local": {
+        "expected_proxy_mass": 34039001.745039746,
+        "transferred_proxy_mass": 34039001.745039746,
+        "relative_error": 0.0,
+        "rendered_float32_logit_proxy_mass": 34039001.747124374,
+        "rendered_float32_relative_error": 6.124232911264747e-11
+      },
+      "global": {
+        "expected_proxy_mass": 34039001.745039746,
+        "transferred_proxy_mass": 34039001.74503973,
+        "relative_error": 4.3776727958889373e-16,
+        "rendered_float32_logit_proxy_mass": 34039001.72595505,
+        "rendered_float32_relative_error": 5.606715377516746e-10
+      },
+      "shuffle": {
+        "expected_proxy_mass": 34039001.745039746,
+        "transferred_proxy_mass": 34039001.745039724,
+        "relative_error": 6.566509193833406e-16,
+        "rendered_float32_logit_proxy_mass": 34039001.73333425,
+        "rendered_float32_relative_error": 3.4388480322645855e-10
+      }
+    }
+  }
+}

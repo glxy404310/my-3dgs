@@ -1,0 +1,22 @@
+{
+  "schema": "speedy-frozen-control/independent-supervisor-v1",
+  "status": "PASS_SAVED_ARTIFACT_CONSISTENCY",
+  "attempts": 1,
+  "automatic_retry": false,
+  "internal_limit_seconds": 94,
+  "outer_timeout_TERM_seconds": 98,
+  "outer_timeout_KILL_after_seconds": 1,
+  "external_limit_seconds": 100,
+  "combined_limit_seconds": 340,
+  "host_RSS_limit_bytes": 8589934592,
+  "peak_sampled_process_tree_RSS_bytes": 799084544,
+  "sample_interval_seconds": 0.05,
+  "CPU_only": true,
+  "view_threads": 4,
+  "child_processes_spawned": 0,
+  "timeout": false,
+  "memory_stop": false,
+  "actual_internal_wall_seconds": 24.17625653,
+  "torch_imported": false,
+  "monitor_errors": []
+}

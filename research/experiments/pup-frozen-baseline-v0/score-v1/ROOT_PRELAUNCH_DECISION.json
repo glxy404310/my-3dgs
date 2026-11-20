@@ -1,0 +1,19 @@
+{
+  "decision": "AUTHORIZE_ONE_FROZEN_SCORE_EXPORT_ATTEMPT",
+  "root_review": "Read complete script, contract, assumptions and launcher; re-read final begin_cleanup/terminate_group and CPU injected-signal test after producer freeze. Round2 original CHANGES_REQUIRED retained; final cleanup changes accepted by root, not labelled independent PASS.",
+  "script_sha256": "200bf457ba93f4cc4b32bbf9d9a61b0b78543e6e2a605d24c54c8286df92954f",
+  "launcher_sha256": "eb3ac6daae77e72e234a93efa044bfe33e8fafadadbed515ebe0ace06865c4c7",
+  "contract_sha256": "c01a18e8f412cc3bea44166d9282aa1488f1094ec425566898d0e93c117ba58b",
+  "kernel_certification_sha256": "e5885056577cf602b48a9fa8cc736bf711efb8516aed749641f107ef173dac99",
+  "parity_reference_sha256": "a8e1c292c6af398fba57feec3689e5cefba9b1912f15b3e27a6b7b1e5c589833",
+  "weekly_remaining_percent_last_observed": 73,
+  "stop_remaining_percent_lte": 50,
+  "preflight": "Native tracked checkout unchanged; only existing untracked experiment_records and simple-knn untracked files. RTX5070 graphical1700MiB, compute-apps query empty. Synthetic witnesses finished. No concurrent scientific GPU work authorized.",
+  "expected": {"Fisher_forwards": 220, "statistical_backwards": 219, "training_steps": 0},
+  "hard_wall_seconds": 900,
+  "host_RSS_limit_bytes": 10737418240,
+  "GPU_allocated_limit_bytes": 10737418240,
+  "fresh_output": "score-v1/run-v1",
+  "automatic_retries": 0,
+  "scope": "Existing official corrected PUP baseline score/export only. Completion is not GT-quality or novelty acceptance. Natural author threshold mask, actual retained count, no epsilon/ridge/top-k rescue."
+}

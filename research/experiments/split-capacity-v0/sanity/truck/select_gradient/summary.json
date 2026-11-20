@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "arm": "select_gradient",
+  "steps": 2,
+  "parent_ids": [
+    1038890,
+    1053104
+  ],
+  "n_after": 1058299,
+  "anchor_max": 0.0,
+  "camera_sequence": [
+    "000128.jpg",
+    "000109.jpg"
+  ],
+  "total_seconds": 5.457770435000015,
+  "peak_bytes": 1539540992,
+  "scope": "Isolated checkpoint-boundary split, no clone/prune/ADC/reset during recovery; single seed, screening only"
+}

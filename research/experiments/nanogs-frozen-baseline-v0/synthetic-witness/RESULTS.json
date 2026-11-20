@@ -1,0 +1,75 @@
+{
+  "mode": "synthetic",
+  "decision": "SYNTHETIC_FORMAT_WITNESS_PASS_NO_REAL_MODEL_RESULT",
+  "simplify_attempted": false,
+  "native_forward_calls": 0,
+  "training_performed": false,
+  "optimizer_created": false,
+  "backward_calls": 0,
+  "child_exit_code": null,
+  "timeout": false,
+  "memory_stop": false,
+  "integrity_complete": true,
+  "runtime": {
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "executable": "/home/administrator/venvs/3dgs/bin/python",
+    "packages": {
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "tqdm": "4.70.1",
+      "plyfile": "1.1.5"
+    },
+    "scipy_cKDTree_available": true
+  },
+  "witness": {
+    "synthetic_only": true,
+    "status": "PASS",
+    "input_rows": 2,
+    "merged_rows": 1,
+    "properties": 62,
+    "SH_fields": 48,
+    "quaternion_order": "wxyz",
+    "covariance90": [
+      [
+        4.000000953674316,
+        3.576279254957626e-07,
+        0.0
+      ],
+      [
+        3.576279254957626e-07,
+        1.000000238418579,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        9.0
+      ]
+    ],
+    "merged_covariance": [
+      [
+        1.7500003576278687,
+        0.0,
+        -8.642674629300018e-07
+      ],
+      [
+        0.0,
+        4.0,
+        0.0
+      ],
+      [
+        -8.642674629300018e-07,
+        0.0,
+        9.000001907348633
+      ]
+    ],
+    "merge_SH_max_error": 1.1920928955078125e-07,
+    "source_input_used": false,
+    "simplify_called": false,
+    "quality_assessed": false
+  },
+  "changed_or_missing_inputs": [],
+  "forbidden_modules_imported": [],
+  "runner_wall_seconds_before_final_save": 0.851681704999999,
+  "kernel_runner_maxrss_bytes": 72790016
+}

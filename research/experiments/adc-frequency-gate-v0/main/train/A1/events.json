@@ -1,0 +1,234 @@
+[
+  {
+    "iteration": 3600,
+    "n_before": 435419,
+    "n_after": 449187,
+    "cloned": 12015,
+    "split": 3024,
+    "pruned": 1271
+  },
+  {
+    "iteration": 3700,
+    "n_before": 449187,
+    "n_after": 460354,
+    "cloned": 9292,
+    "split": 3142,
+    "pruned": 1267
+  },
+  {
+    "iteration": 3800,
+    "n_before": 460354,
+    "n_after": 472504,
+    "cloned": 10528,
+    "split": 2744,
+    "pruned": 1122
+  },
+  {
+    "iteration": 3900,
+    "n_before": 472504,
+    "n_after": 483757,
+    "cloned": 9715,
+    "split": 2613,
+    "pruned": 1075
+  },
+  {
+    "iteration": 4000,
+    "n_before": 483757,
+    "n_after": 493750,
+    "cloned": 8742,
+    "split": 2229,
+    "pruned": 978
+  },
+  {
+    "iteration": 4100,
+    "n_before": 493750,
+    "n_after": 504638,
+    "cloned": 8783,
+    "split": 3041,
+    "pruned": 936
+  },
+  {
+    "iteration": 4200,
+    "n_before": 504638,
+    "n_after": 515400,
+    "cloned": 9440,
+    "split": 2217,
+    "pruned": 895
+  },
+  {
+    "iteration": 4300,
+    "n_before": 515400,
+    "n_after": 524633,
+    "cloned": 8144,
+    "split": 2061,
+    "pruned": 972
+  },
+  {
+    "iteration": 4400,
+    "n_before": 524633,
+    "n_after": 536210,
+    "cloned": 10715,
+    "split": 1787,
+    "pruned": 925
+  },
+  {
+    "iteration": 4500,
+    "n_before": 536210,
+    "n_after": 545408,
+    "cloned": 7707,
+    "split": 2461,
+    "pruned": 970
+  },
+  {
+    "iteration": 4600,
+    "n_before": 545408,
+    "n_after": 556124,
+    "cloned": 8870,
+    "split": 2805,
+    "pruned": 959
+  },
+  {
+    "iteration": 4700,
+    "n_before": 556124,
+    "n_after": 564214,
+    "cloned": 7662,
+    "split": 1401,
+    "pruned": 973
+  },
+  {
+    "iteration": 4800,
+    "n_before": 564214,
+    "n_after": 574836,
+    "cloned": 10002,
+    "split": 1580,
+    "pruned": 960
+  },
+  {
+    "iteration": 4900,
+    "n_before": 574836,
+    "n_after": 583581,
+    "cloned": 7543,
+    "split": 2194,
+    "pruned": 992
+  },
+  {
+    "iteration": 5000,
+    "n_before": 583581,
+    "n_after": 592044,
+    "cloned": 8011,
+    "split": 1468,
+    "pruned": 1016
+  },
+  {
+    "iteration": 5100,
+    "n_before": 592044,
+    "n_after": 600770,
+    "cloned": 7390,
+    "split": 2437,
+    "pruned": 1101
+  },
+  {
+    "iteration": 5200,
+    "n_before": 600770,
+    "n_after": 608339,
+    "cloned": 6910,
+    "split": 1681,
+    "pruned": 1022
+  },
+  {
+    "iteration": 5300,
+    "n_before": 608339,
+    "n_after": 617766,
+    "cloned": 8611,
+    "split": 1866,
+    "pruned": 1050
+  },
+  {
+    "iteration": 5400,
+    "n_before": 617766,
+    "n_after": 626645,
+    "cloned": 8367,
+    "split": 1758,
+    "pruned": 1246
+  },
+  {
+    "iteration": 5500,
+    "n_before": 626645,
+    "n_after": 634893,
+    "cloned": 7793,
+    "split": 1621,
+    "pruned": 1166
+  },
+  {
+    "iteration": 5600,
+    "n_before": 634893,
+    "n_after": 642568,
+    "cloned": 7758,
+    "split": 979,
+    "pruned": 1062
+  },
+  {
+    "iteration": 5700,
+    "n_before": 642568,
+    "n_after": 650069,
+    "cloned": 6950,
+    "split": 1694,
+    "pruned": 1143
+  },
+  {
+    "iteration": 5800,
+    "n_before": 650069,
+    "n_after": 658899,
+    "cloned": 8073,
+    "split": 1942,
+    "pruned": 1185
+  },
+  {
+    "iteration": 5900,
+    "n_before": 658899,
+    "n_after": 666257,
+    "cloned": 7616,
+    "split": 1032,
+    "pruned": 1290
+  },
+  {
+    "iteration": 6000,
+    "n_before": 666257,
+    "n_after": 673765,
+    "cloned": 7058,
+    "split": 1710,
+    "pruned": 1260
+  },
+  {
+    "iteration": 6100,
+    "n_before": 673765,
+    "n_after": 573190,
+    "cloned": 2240,
+    "split": 743,
+    "pruned": 103558
+  },
+  {
+    "iteration": 6200,
+    "n_before": 573190,
+    "n_after": 576979,
+    "cloned": 8954,
+    "split": 1870,
+    "pruned": 7035
+  },
+  {
+    "iteration": 6300,
+    "n_before": 576979,
+    "n_after": 583683,
+    "cloned": 8544,
+    "split": 2115,
+    "pruned": 3955
+  },
+  {
+    "iteration": 6400,
+    "n_before": 583683,
+    "n_after": 591274,
+    "cloned": 8636,
+    "split": 1878,
+    "pruned": 2923
+  }
+]

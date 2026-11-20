@@ -1,0 +1,25 @@
+{
+  "schema": "pup-frozen-score-static-checks-v1",
+  "scientific_inputs_read": false,
+  "torch_imported": false,
+  "checks": [
+    {
+      "check": "cpu_synthcheck",
+      "status": "fulfilled",
+      "exit_code": 0,
+      "output": "w\u0000s\u0000l\u0000:\u0000 \u0000�hKm0R \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006tM�n\f�FO*g\\��P0R \u0000W\u0000S\u0000L\u0000\u00020N\u0000A\u0000T\u0000 \u0000!j\u000f_\u000bN�v \u0000W\u0000S\u0000L\u0000 \u0000\rN/e\u0001c \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006t\u00020\r\u0000\n\u0000{\"status\": \"CPU_SYNTHETIC_ONLY_PASS\", \"torch_imported\": false, \"scientific_inputs_read\": false, \"actual_author_prune_cases\": 4, \"ties_preserved\": true, \"negative_infinity_preserved\": true, \"namespace_basename_checks\": true, \"interrupted_group_cleanup\": true, \"numerical_kernel_certification\": false, \"scientific_run_verified\": false}\n"
+    },
+    {
+      "check": "bash_n",
+      "status": "fulfilled",
+      "exit_code": 0,
+      "output": "w\u0000s\u0000l\u0000:\u0000 \u0000�hKm0R \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006tM�n\f�FO*g\\��P0R \u0000W\u0000S\u0000L\u0000\u00020N\u0000A\u0000T\u0000 \u0000!j\u000f_\u000bN�v \u0000W\u0000S\u0000L\u0000 \u0000\rN/e\u0001c \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006t\u00020\r\u0000\n\u0000"
+    },
+    {
+      "check": "ast_parse",
+      "status": "fulfilled",
+      "exit_code": 0,
+      "output": "w\u0000s\u0000l\u0000:\u0000 \u0000�hKm0R \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006tM�n\f�FO*g\\��P0R \u0000W\u0000S\u0000L\u0000\u00020N\u0000A\u0000T\u0000 \u0000!j\u000f_\u000bN�v \u0000W\u0000S\u0000L\u0000 \u0000\rN/e\u0001c \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006t\u00020\r\u0000\n\u0000AST_ONLY_PASS\n"
+    }
+  ]
+}

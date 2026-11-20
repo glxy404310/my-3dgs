@@ -1,0 +1,26 @@
+{
+  "status": "TINY_SYNTHETIC_PASS",
+  "real_arrays_read": false,
+  "native_forward_calls": 0,
+  "torch_imported": false,
+  "Scene_constructed": false,
+  "identity": {
+    "gt_mse": 0.0,
+    "gt_psnr": null,
+    "zero_MSE_infinite_PSNR": true,
+    "gt_ssim": 1.0,
+    "teacher_mse": 0.0,
+    "teacher_max_abs_rgb": 0.0
+  },
+  "changed": {
+    "gt_mse": 0.009326800382956316,
+    "gt_psnr": 20.302673181345703,
+    "zero_MSE_infinite_PSNR": false,
+    "gt_ssim": 0.8219559015589298,
+    "teacher_mse": 0.009326800382956316,
+    "teacher_max_abs_rgb": 0.10000002384185791
+  },
+  "independent_tiny_SSIM": 0.8657959465020366,
+  "camera_dtype_shape_hash_and_tamper_check": true,
+  "evaluator_sha256": "f766439a639afdaea36351e5d35c0fa1a6b66d64cbe6783a9b004fb39b257b6a"
+}

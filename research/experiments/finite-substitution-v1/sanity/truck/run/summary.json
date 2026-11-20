@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "cases": 1,
+  "completed_arms": 4,
+  "steps": 2,
+  "camera_indices": [
+    0,
+    1
+  ],
+  "seconds": 5.541428394999997,
+  "peak_bytes": 1313963520,
+  "scope": "Bounded full-parameter local optimization, fresh Adam, repeats measure execution variation, no necessity theorem"
+}

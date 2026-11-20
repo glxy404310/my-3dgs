@@ -1,0 +1,218 @@
+{
+  "decision": "SYNTHETIC_SH0_FISHER_WITNESS_PASS",
+  "environment_ready": false,
+  "certification_scope": "Only this fixed SH0 local synthetic kernel case; no SH3/full219 authorization",
+  "scene_instances": 0,
+  "dataset_loads": 0,
+  "teacher_loads": 0,
+  "GT_used": false,
+  "training": false,
+  "optimizer_steps": 0,
+  "expected_private_forwards": 26,
+  "expected_statistical_backwards": 1,
+  "epsilon": 0.001,
+  "call_counts": {
+    "private.rasterize_gaussians": {
+      "attempted": 26,
+      "completed": 26,
+      "failed": 0
+    },
+    "private.rasterize_gaussians_backward": {
+      "attempted": 1,
+      "completed": 1,
+      "failed": 0
+    },
+    "private.mark_visible": {
+      "attempted": 0,
+      "completed": 0,
+      "failed": 0
+    },
+    "ordinary.rasterize_gaussians": {
+      "attempted": 0,
+      "completed": 0,
+      "failed": 0
+    },
+    "ordinary.rasterize_gaussians_backward": {
+      "attempted": 0,
+      "completed": 0,
+      "failed": 0
+    },
+    "ordinary.mark_visible": {
+      "attempted": 0,
+      "completed": 0,
+      "failed": 0
+    }
+  },
+  "call_trace": [
+    {
+      "index": 0,
+      "operation": "private.rasterize_gaussians",
+      "phase": "base"
+    },
+    {
+      "index": 1,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g0_x_plus"
+    },
+    {
+      "index": 2,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g0_x_minus"
+    },
+    {
+      "index": 3,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g0_y_plus"
+    },
+    {
+      "index": 4,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g0_y_minus"
+    },
+    {
+      "index": 5,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g0_z_plus"
+    },
+    {
+      "index": 6,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g0_z_minus"
+    },
+    {
+      "index": 7,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g0_raw_log_sx_plus"
+    },
+    {
+      "index": 8,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g0_raw_log_sx_minus"
+    },
+    {
+      "index": 9,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g0_raw_log_sy_plus"
+    },
+    {
+      "index": 10,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g0_raw_log_sy_minus"
+    },
+    {
+      "index": 11,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g0_raw_log_sz_plus"
+    },
+    {
+      "index": 12,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g0_raw_log_sz_minus"
+    },
+    {
+      "index": 13,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g1_x_plus"
+    },
+    {
+      "index": 14,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g1_x_minus"
+    },
+    {
+      "index": 15,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g1_y_plus"
+    },
+    {
+      "index": 16,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g1_y_minus"
+    },
+    {
+      "index": 17,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g1_z_plus"
+    },
+    {
+      "index": 18,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g1_z_minus"
+    },
+    {
+      "index": 19,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g1_raw_log_sx_plus"
+    },
+    {
+      "index": 20,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g1_raw_log_sx_minus"
+    },
+    {
+      "index": 21,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g1_raw_log_sy_plus"
+    },
+    {
+      "index": 22,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g1_raw_log_sy_minus"
+    },
+    {
+      "index": 23,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g1_raw_log_sz_plus"
+    },
+    {
+      "index": 24,
+      "operation": "private.rasterize_gaussians",
+      "phase": "g1_raw_log_sz_minus"
+    },
+    {
+      "index": 25,
+      "operation": "private.rasterize_gaussians",
+      "phase": "original_pool_fisher_cuda_once"
+    },
+    {
+      "index": 26,
+      "operation": "private.rasterize_gaussians_backward",
+      "phase": "original_pool_fisher_cuda_once"
+    }
+  ],
+  "parameter_value_integrity": true,
+  "camera_integrity": true,
+  "file_integrity": true,
+  "tracked_integrity": true,
+  "per_block": [
+    {
+      "gaussian": 0,
+      "expected_Frobenius": 0.3036678568094302,
+      "relative_Frobenius": 0.00011698789219866518,
+      "actual_max_symmetry_difference": 0.0,
+      "expected_max_symmetry_difference": 0.0,
+      "actual_expected_max_abs_difference": 1.7861930801499337e-05
+    },
+    {
+      "gaussian": 1,
+      "expected_Frobenius": 0.2747012405824348,
+      "relative_Frobenius": 6.051842750469515e-05,
+      "actual_max_symmetry_difference": 0.0,
+      "expected_max_symmetry_difference": 0.0,
+      "actual_expected_max_abs_difference": 5.1195092147793275e-06
+    }
+  ],
+  "source_verification_complete": true,
+  "worker_wall_seconds_before_save": 6.538628639999985,
+  "parameter_value_hash_post_pool_before_cleanup": "323b4bcbc3b0a889b0ef47372566164e3951fc20743dbc16809bbe80fb455e0a",
+  "parameter_value_integrity_post_pool": true,
+  "finite": true,
+  "total_expected_nonzero": true,
+  "total_actual_nonzero": true,
+  "call_count_gate": true,
+  "parameter_value_hash_before": "323b4bcbc3b0a889b0ef47372566164e3951fc20743dbc16809bbe80fb455e0a",
+  "parameter_value_hash_after": "323b4bcbc3b0a889b0ef47372566164e3951fc20743dbc16809bbe80fb455e0a",
+  "GPU_peak_allocated_bytes": 8545280,
+  "GPU_peak_reserved_bytes": 23068672,
+  "CPU_kernel_maxrss_bytes": 1335996416
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "view": "000001.jpg",
+    "teacher_gt_mse": 0.002293418161571026,
+    "teacher_gt_psnr": 26.39516830444336,
+    "teacher_gt_ssim": 0.9182805418968201
+  },
+  {
+    "view": "000009.jpg",
+    "teacher_gt_mse": 0.002330338815227151,
+    "teacher_gt_psnr": 26.325809478759766,
+    "teacher_gt_ssim": 0.9119400978088379
+  },
+  {
+    "view": "000017.jpg",
+    "teacher_gt_mse": 0.0027490188367664814,
+    "teacher_gt_psnr": 25.60822296142578,
+    "teacher_gt_ssim": 0.8835336565971375
+  },
+  {
+    "view": "000025.jpg",
+    "teacher_gt_mse": 0.002719094045460224,
+    "teacher_gt_psnr": 25.655757904052734,
+    "teacher_gt_ssim": 0.869829535484314
+  },
+  {
+    "view": "000033.jpg",
+    "teacher_gt_mse": 0.002540435642004013,
+    "teacher_gt_psnr": 25.950918197631836,
+    "teacher_gt_ssim": 0.8804779648780823
+  },
+  {
+    "view": "000041.jpg",
+    "teacher_gt_mse": 0.002498813671991229,
+    "teacher_gt_psnr": 26.022661209106445,
+    "teacher_gt_ssim": 0.8795943260192871
+  },
+  {
+    "view": "000049.jpg",
+    "teacher_gt_mse": 0.0026676394045352936,
+    "teacher_gt_psnr": 25.738731384277344,
+    "teacher_gt_ssim": 0.89850252866745
+  },
+  {
+    "view": "000057.jpg",
+    "teacher_gt_mse": 0.0034038336016237736,
+    "teacher_gt_psnr": 24.680316925048828,
+    "teacher_gt_ssim": 0.853098452091217
+  },
+  {
+    "view": "000065.jpg",
+    "teacher_gt_mse": 0.003915354609489441,
+    "teacher_gt_psnr": 24.072288513183594,
+    "teacher_gt_ssim": 0.8748266100883484
+  },
+  {
+    "view": "000073.jpg",
+    "teacher_gt_mse": 0.0018137673614546657,
+    "teacher_gt_psnr": 27.414186477661133,
+    "teacher_gt_ssim": 0.9211648106575012
+  },
+  {
+    "view": "000081.jpg",
+    "teacher_gt_mse": 0.002459067152813077,
+    "teacher_gt_psnr": 26.092296600341797,
+    "teacher_gt_ssim": 0.8814429044723511
+  },
+  {
+    "view": "000089.jpg",
+    "teacher_gt_mse": 0.003040710696950555,
+    "teacher_gt_psnr": 25.170249938964844,
+    "teacher_gt_ssim": 0.8889172673225403
+  },
+  {
+    "view": "000097.jpg",
+    "teacher_gt_mse": 0.0029430680442601442,
+    "teacher_gt_psnr": 25.312000274658203,
+    "teacher_gt_ssim": 0.8979207873344421
+  },
+  {
+    "view": "000105.jpg",
+    "teacher_gt_mse": 0.002322585554793477,
+    "teacher_gt_psnr": 26.34028434753418,
+    "teacher_gt_ssim": 0.9126480221748352
+  },
+  {
+    "view": "000113.jpg",
+    "teacher_gt_mse": 0.00337896472774446,
+    "teacher_gt_psnr": 24.7121639251709,
+    "teacher_gt_ssim": 0.8823645114898682
+  },
+  {
+    "view": "000121.jpg",
+    "teacher_gt_mse": 0.004494045861065388,
+    "teacher_gt_psnr": 23.4736270904541,
+    "teacher_gt_ssim": 0.8463903069496155
+  },
+  {
+    "view": "000129.jpg",
+    "teacher_gt_mse": 0.0029041937086731195,
+    "teacher_gt_psnr": 25.36974334716797,
+    "teacher_gt_ssim": 0.8649271726608276
+  },
+  {
+    "view": "000137.jpg",
+    "teacher_gt_mse": 0.003291898872703314,
+    "teacher_gt_psnr": 24.825536727905273,
+    "teacher_gt_ssim": 0.8735270500183105
+  },
+  {
+    "view": "000145.jpg",
+    "teacher_gt_mse": 0.0027430502232164145,
+    "teacher_gt_psnr": 25.617664337158203,
+    "teacher_gt_ssim": 0.8504471182823181
+  },
+  {
+    "view": "000153.jpg",
+    "teacher_gt_mse": 0.004191959276795387,
+    "teacher_gt_psnr": 23.775829315185547,
+    "teacher_gt_ssim": 0.8761157393455505
+  },
+  {
+    "view": "000161.jpg",
+    "teacher_gt_mse": 0.0021176207810640335,
+    "teacher_gt_psnr": 26.741519927978516,
+    "teacher_gt_ssim": 0.8992119431495667
+  },
+  {
+    "view": "000169.jpg",
+    "teacher_gt_mse": 0.002916936529800296,
+    "teacher_gt_psnr": 25.350730895996094,
+    "teacher_gt_ssim": 0.8771791458129883
+  },
+  {
+    "view": "000177.jpg",
+    "teacher_gt_mse": 0.0020835958421230316,
+    "teacher_gt_psnr": 26.811866760253906,
+    "teacher_gt_ssim": 0.8988233208656311
+  },
+  {
+    "view": "000185.jpg",
+    "teacher_gt_mse": 0.0017688401276245713,
+    "teacher_gt_psnr": 27.523115158081055,
+    "teacher_gt_ssim": 0.907573401927948
+  },
+  {
+    "view": "000193.jpg",
+    "teacher_gt_mse": 0.0020926715806126595,
+    "teacher_gt_psnr": 26.792991638183594,
+    "teacher_gt_ssim": 0.90256667137146
+  },
+  {
+    "view": "000201.jpg",
+    "teacher_gt_mse": 0.0023144956212490797,
+    "teacher_gt_psnr": 26.355436325073242,
+    "teacher_gt_ssim": 0.9024478197097778
+  },
+  {
+    "view": "000209.jpg",
+    "teacher_gt_mse": 0.0029254539404064417,
+    "teacher_gt_psnr": 25.33806800842285,
+    "teacher_gt_ssim": 0.892170250415802
+  },
+  {
+    "view": "000217.jpg",
+    "teacher_gt_mse": 0.006126526743173599,
+    "teacher_gt_psnr": 22.127857208251953,
+    "teacher_gt_ssim": 0.8316521644592285
+  },
+  {
+    "view": "000225.jpg",
+    "teacher_gt_mse": 0.003554809605702758,
+    "teacher_gt_psnr": 24.491836547851562,
+    "teacher_gt_ssim": 0.8809013962745667
+  },
+  {
+    "view": "000233.jpg",
+    "teacher_gt_mse": 0.0038667910266667604,
+    "teacher_gt_psnr": 24.126493453979492,
+    "teacher_gt_ssim": 0.8688730001449585
+  },
+  {
+    "view": "000241.jpg",
+    "teacher_gt_mse": 0.002891299081966281,
+    "teacher_gt_psnr": 25.389070510864258,
+    "teacher_gt_ssim": 0.8959738612174988
+  },
+  {
+    "view": "000249.jpg",
+    "teacher_gt_mse": 0.002954566851258278,
+    "teacher_gt_psnr": 25.295063018798828,
+    "teacher_gt_ssim": 0.8973212838172913
+  }
+]

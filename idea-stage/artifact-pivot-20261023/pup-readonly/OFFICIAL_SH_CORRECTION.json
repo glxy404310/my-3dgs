@@ -1,0 +1,23 @@
+{
+  "observed_at_utc": "2026-10-22 21:09:41 UTC",
+  "previous_pup_main": "e971ea4802908c69eab7e8601bb1eddd2e443754",
+  "previous_fisher_gitlink": "eaef2faba21f076867c1db84c3f998e5f673762f",
+  "primary_pr": {
+    "url": "https://github.com/j-alex-hanson/rasterization_and_pup_fisher/pull/1",
+    "title": "Adds SH bugfix",
+    "merged": true,
+    "merged_at": "2024-10-18T02:09:06Z",
+    "merge_commit_sha": "f62f1cce2cc47a8609c58e4d448ca8eeb6f86e60",
+    "base_sha": "eaef2faba21f076867c1db84c3f998e5f673762f",
+    "head_sha": "f832f5933b50b86c05f7740c72b98a8dedfc838a"
+  },
+  "files": [
+    {
+      "path": "cuda_rasterizer/backward.cu",
+      "blob_sha1": "edfbb87fc8f33a577d4199b6f5f9db2b8449f1c2",
+      "patch": "@@ -654,6 +654,10 @@ renderFisherCUDA(\n         cur_dL_dscale.y *= scales[global_id].y;\n         cur_dL_dscale.z *= scales[global_id].z;\n \n+        // This ensures backprop through SHs only updates mean gradient\n+        // for the current color channel.\n+        cur_dL_dcolors[ch] = 0.0f;\n+\n         atomicAdd(&(fisher[21 * global_id + 0 ]), cur_dL_dmeans.x * cur_dL_dmeans.x);\n         atomicAdd(&(fisher[21 * global_id + 1 ]), cur_dL_dmeans.x * cur_dL_dmeans.y);\n         atomicAdd(&(fisher[21 * global_id + 2 ]), cur_dL_dmeans.x * cur_dL_dmeans.z);"
+    }
+  ],
+  "disposition": "Use a separate checkout and private build at the author's already-merged correction for any future SH3 baseline. Preserve previous gitlink build/import PASS and its sources. No new PUP scientific call has occurred. This is known prior correction, not a new research idea or our source patch.",
+  "source_scope": "Primary GitHub API PR metadata and changed-file patch were actually fetched. No general claim that all PUP results or papers are invalid."
+}

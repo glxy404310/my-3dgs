@@ -1,0 +1,24 @@
+{
+  "pins": {
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/RESULTS.json": "291cc8b8edf622305a313366aea260eebb947e59837514aeeca656912693d75d",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/SUPERVISOR.json": "0c4b5ad8fb5c96a58a942777c9efed18c1913d60d13e865fe932e566cecdd151",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/RAW_MANIFEST.json": "4a7163b448de76bbcf659a0de87d65fa69c03a5311227bdc5bf6a9087903043e",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/EXTERNAL_RUN_V2.json": "f7db20ccaedadcbe1b209a71658adab464521929f6dc9bb9262f14e535234bab",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/EXTERNAL_RUN.json": "e45ec093d97eb2a5892ce99e82b6e56bc605e30fce3b34644c27a4517d34a1f9"
+  },
+  "execution_attempt": 1,
+  "started_unix": 1792705433.199364,
+  "technical_tolerances": {
+    "mse": 1e-12,
+    "psnr": 1e-09,
+    "ssim": 1e-10,
+    "max_abs_rgb": 1e-12,
+    "pixels": 0,
+    "wall_seconds": 1e-09
+  },
+  "harness_pins": {
+    "audit.py": "8808b5aa1e9bc0ec9ea491decba916298b6ad5522d1b48dacf7845b9dae22f23",
+    "CONTRACT.md": "1d6ff80b5ae4ce56ef31875c9d6fd94d9677c0d6d874fd889902c8e9d3628040",
+    "run-audit.sh": "af304df06acc997fe6fb8508dada32e68577c8f20182ca7f279dbe9f20eaa44f"
+  }
+}

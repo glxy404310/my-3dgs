@@ -1,0 +1,401 @@
+{
+  "analysis_type": "independent CPU reconstruction from saved raw arrays; no helper/main imports, no torch, GPU, renderer, training or source edits",
+  "audit_valid": true,
+  "checks_count": 793,
+  "all_checks_passed": true,
+  "run_decision_preserved": "INCONCLUSIVE_EXCEPTION",
+  "scientific_method_verdict": "UNKNOWN; no real GT residual matching, common mask or scientific fit was reached",
+  "records": [
+    {
+      "index": 0,
+      "view": "000002.jpg",
+      "known_shift_yx": [
+        0.375,
+        -0.625
+      ],
+      "recomputed": {
+        "source_texture_count": 72,
+        "valid_count": 72,
+        "median_error_px": 0.004536517335694051,
+        "p90_error_px": 0.012956391744955009,
+        "rms_error_px": 0.008665261168031894
+      },
+      "target_reconstruction": {
+        "shape_equal": true,
+        "finite_pattern_equal": true,
+        "max_abs_error": 0.0,
+        "array_equal_nan": true
+      },
+      "target_valid_pixels": 533010,
+      "joins": {
+        "primitive_validity_all_equal": true,
+        "quadratic_coefficients_max_abs_error": 0.0,
+        "forward_feature": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 1.4693107841523556e-15,
+          "array_equal_nan": false
+        },
+        "reverse_feature": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 2.858824288409778e-15,
+          "array_equal_nan": false
+        },
+        "forward_ncc": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 6.661338147750939e-16,
+          "array_equal_nan": false
+        },
+        "reverse_ncc": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 9.992007221626409e-16,
+          "array_equal_nan": false
+        },
+        "round_trip": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 0.0,
+          "array_equal_nan": true
+        },
+        "round_trip_norm": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 0.0,
+          "array_equal_nan": true
+        },
+        "computational_valid_equal": true,
+        "accepted_equal": true,
+        "summary_valid_equal": true,
+        "summary_recovered": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 0.0,
+          "array_equal_nan": true
+        },
+        "summary_error": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 0.0,
+          "array_equal_nan": true
+        },
+        "known_shift_equal": true,
+        "results_scalar_max_abs_error": 0,
+        "source_texture_eigenvalues": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 1.3877787807814457e-17,
+          "array_equal_nan": false
+        }
+      },
+      "zero_checks": [
+        {
+          "kind": "repeat",
+          "max_rgb_difference": 0.0,
+          "rgb_mse": 0.0,
+          "feature_count": 120,
+          "feature_l2_rms": 0.0,
+          "results_scalar_max_abs_error": 0.0
+        },
+        {
+          "kind": "zero_copy",
+          "max_rgb_difference": 2.384185791015625e-07,
+          "rgb_mse": 8.294904973229789e-16,
+          "feature_count": 120,
+          "feature_l2_rms": 1.7291052036458351e-06,
+          "results_scalar_max_abs_error": 7.31095312598868e-17
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "view": "000023.jpg",
+      "known_shift_yx": [
+        -0.45,
+        0.7
+      ],
+      "recomputed": {
+        "source_texture_count": 32,
+        "valid_count": 32,
+        "median_error_px": 0.010950943114148837,
+        "p90_error_px": 0.023887691250913445,
+        "rms_error_px": 0.01972638913894921
+      },
+      "target_reconstruction": {
+        "shape_equal": true,
+        "finite_pattern_equal": true,
+        "max_abs_error": 5.960464477539063e-08,
+        "array_equal_nan": false
+      },
+      "target_valid_pixels": 533010,
+      "joins": {
+        "primitive_validity_all_equal": true,
+        "quadratic_coefficients_max_abs_error": 0.0,
+        "forward_feature": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 7.78543896018391e-15,
+          "array_equal_nan": false
+        },
+        "reverse_feature": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 2.2246093855926574e-14,
+          "array_equal_nan": false
+        },
+        "forward_ncc": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 8.881784197001252e-16,
+          "array_equal_nan": false
+        },
+        "reverse_ncc": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 7.771561172376096e-16,
+          "array_equal_nan": false
+        },
+        "round_trip": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 0.0,
+          "array_equal_nan": true
+        },
+        "round_trip_norm": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 0.0,
+          "array_equal_nan": true
+        },
+        "computational_valid_equal": true,
+        "accepted_equal": true,
+        "summary_valid_equal": true,
+        "summary_recovered": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 0.0,
+          "array_equal_nan": true
+        },
+        "summary_error": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 0.0,
+          "array_equal_nan": true
+        },
+        "known_shift_equal": true,
+        "results_scalar_max_abs_error": 0,
+        "source_texture_eigenvalues": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 1.0408340855860843e-17,
+          "array_equal_nan": false
+        }
+      },
+      "zero_checks": [
+        {
+          "kind": "repeat",
+          "max_rgb_difference": 0.0,
+          "rgb_mse": 0.0,
+          "feature_count": 120,
+          "feature_l2_rms": 0.0,
+          "results_scalar_max_abs_error": 0.0
+        },
+        {
+          "kind": "zero_copy",
+          "max_rgb_difference": 2.384185791015625e-07,
+          "rgb_mse": 5.642614092805636e-16,
+          "feature_count": 120,
+          "feature_l2_rms": 4.435373478416705e-06,
+          "results_scalar_max_abs_error": 7.816936727360509e-16
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "view": "000046.jpg",
+      "known_shift_yx": [
+        0.6,
+        0.3
+      ],
+      "recomputed": {
+        "source_texture_count": 38,
+        "valid_count": 38,
+        "median_error_px": 0.012387812394766357,
+        "p90_error_px": 0.035465289247803886,
+        "rms_error_px": 0.028741438712388517
+      },
+      "target_reconstruction": {
+        "shape_equal": true,
+        "finite_pattern_equal": true,
+        "max_abs_error": 5.960464477539063e-08,
+        "array_equal_nan": false
+      },
+      "target_valid_pixels": 533010,
+      "joins": {
+        "primitive_validity_all_equal": true,
+        "quadratic_coefficients_max_abs_error": 0.0,
+        "forward_feature": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 9.603429163007604e-15,
+          "array_equal_nan": false
+        },
+        "reverse_feature": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 2.2398749521812533e-14,
+          "array_equal_nan": false
+        },
+        "forward_ncc": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 7.771561172376096e-16,
+          "array_equal_nan": false
+        },
+        "reverse_ncc": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 8.881784197001252e-16,
+          "array_equal_nan": false
+        },
+        "round_trip": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 0.0,
+          "array_equal_nan": true
+        },
+        "round_trip_norm": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 0.0,
+          "array_equal_nan": true
+        },
+        "computational_valid_equal": true,
+        "accepted_equal": true,
+        "summary_valid_equal": true,
+        "summary_recovered": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 0.0,
+          "array_equal_nan": true
+        },
+        "summary_error": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 0.0,
+          "array_equal_nan": true
+        },
+        "known_shift_equal": true,
+        "results_scalar_max_abs_error": 0,
+        "source_texture_eigenvalues": {
+          "shape_equal": true,
+          "finite_pattern_equal": true,
+          "max_abs_error": 1.3877787807814457e-17,
+          "array_equal_nan": false
+        }
+      },
+      "zero_checks": [
+        {
+          "kind": "repeat",
+          "max_rgb_difference": 0.0,
+          "rgb_mse": 0.0,
+          "feature_count": 120,
+          "feature_l2_rms": 0.0,
+          "results_scalar_max_abs_error": 0.0
+        },
+        {
+          "kind": "zero_copy",
+          "max_rgb_difference": 2.384185791015625e-07,
+          "rgb_mse": 5.761070912162713e-16,
+          "feature_count": 120,
+          "feature_l2_rms": 4.7491900007137865e-06,
+          "results_scalar_max_abs_error": 1.1965780335977325e-16
+        }
+      ]
+    }
+  ],
+  "sigma_shift_recomputed": 0.028741438712388517,
+  "sigma_shift_recorded": 0.028741438712388517,
+  "sigma_zero_recomputed": 2.7452124496171276e-06,
+  "sigma_zero_recorded": 2.74521244944881e-06,
+  "zero_feature_patch_comparisons": 720,
+  "camera_arrays": {
+    "keys_count": 144,
+    "keys_equal": true,
+    "all_arrays_exactly_equal": true
+  },
+  "model_integrity_scope": {
+    "recorded_30k_tensor_hashes_equal": true,
+    "tensor_hashes_not_independently_recomputed": true,
+    "recorded_input_hashes_before_after_equal": true,
+    "all_run_artifacts_hashed": true,
+    "7k_not_loaded": true,
+    "no_7k_tensor_unchanged_claim": true
+  },
+  "forward_count_recorded": {
+    "core_base": 3,
+    "witness_repeat_zero": 6
+  },
+  "tools_complete_recorded": true,
+  "v3_provenance_fix": {
+    "native_v2_v3_only_idempotent_sys_path_registration": true,
+    "scientific_design_reassessment_performed": false,
+    "diff": "--- native_v2\n\n+++ native_v3\n\n@@ -177,7 +177,8 @@\n\n     source_hashes = native_source_hashes(repo)\n     for name in ('scene', 'utils', 'gaussian_renderer'):\n         _check_import_path(name, repo)\n-    sys.path.insert(0, str(repo))\n+    if str(repo) not in sys.path:\n+        sys.path.insert(0, str(repo))\n     import torch\n     from scene import Scene, GaussianModel\n "
+  },
+  "methodology": {
+    "rgb_gray_weights": [
+      0.299,
+      0.587,
+      0.114
+    ],
+    "gradients": "centered 1px dy/dx; boundaries NaN",
+    "feature": "sample 13x13 patch with independent bilinear code; concatenate all gy then gx, normalize full vector without epsilon",
+    "texture": "analytic symmetric 2x2 eigenvalues of mean raw gradient outer product; min>=1e-4 and ratio>=.05",
+    "known_shift_error": "norm(raw forward refined offset - locked shift), select independently recomputed texture and bidirectional acceptance masks",
+    "acceptance": "quadratic rank6, positive Hessian, axis refinement <=.25, true refined sampling; both NCC>=.8 and roundtrip<=.25",
+    "sigma_zero": "RMS of feature L2 differences pooled across six replay comparisons",
+    "target_reconstruction": "all full-image source pixels bilinearly sampled at p+s in float64, compare float32 target artifact; matching-reference features use reconstructed pre-save float64 target",
+    "quad_checks": "re-fit saved 9-point costs independently and verify raw primitives; no new grid search from rendered images"
+  },
+  "limitations": [
+    "Three synthetic shifts are renderer-derived tool inputs; they do not establish real shared camera-coordinate bias or clean real ground truth.",
+    "Raw image checks cover all synthesized target pixels and all refined feature arrays; complete 289-candidate pixel-derived cost grids were not recomputed.",
+    "Tensor hashes are compared as reported; this CPU audit does not independently reload Gaussian parameters or recreate native renders.",
+    "Exactly unchanged camera artifacts cover saved 12-camera numeric metadata, not a fresh live native camera inspection.",
+    "The incomplete 7k/30k scientific screen remains INCONCLUSIVE_EXCEPTION; witness PASS cannot stand in for method PASS."
+  ],
+  "input_artifact_sha256": {
+    "research/experiments/shared-coordinate-residual-v0/run-v2/CONFIG.json": "57c448cf195b761d2c4471f3b1c40b95dbe5b79181add0dbaa68ff636fdc363b",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/INPUTS_BEFORE.json": "8ecf89b2cb051eced0fb8600b0c5044ab3606b05bbac5a5b290f9bc4460f914c",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/PROGRESS.jsonl": "2b55997628b5eb8501388b844292ce6533da3f3b263c14f0742022ea75be8a02",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/RESULTS.json": "ca35cb19b2bf8f240e0137e4cdf610c5f7eae85583f4cf8a09d71e0fcef417b6",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/STATUS.json": "fe1492eb1bcd14296707cfc5f9a1414d7c0645422e217433ea8281570214a5ed",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/WITNESSES.json": "62f264868a93513dd1ac2ab6af5447ffd493805b26dfdfb3e731701f14adbbc0",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/30000_000002.jpg_base.npy": "736416b72c637a6d280c84dd48c76ad9f156e6880dc8a98bf1f81b0d48b74e25",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/30000_000023.jpg_base.npy": "3afc9c00c608fc2ac6b61fe1907f46409d945ea64bc4082cf07465537ab173a0",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/30000_000046.jpg_base.npy": "d9ecf4edafb1deec314dfe9d06dde661acf890990fb2fab1b6c1d5e46878aca1",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/LOCKED_GRID.npz": "20cde978071cbf16fca656c9c98dbd41b776d2f3d6000ed4ae9e268be022b34d",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/cameras_30000_after.npz": "835bb5cd31d88362c64b9136ef2e71cab55f8a884e71ea11597d8232df8d0262",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/cameras_30000_before.npz": "835bb5cd31d88362c64b9136ef2e71cab55f8a884e71ea11597d8232df8d0262",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/witness_0_matches.npz": "a52e4cf602b035c62f63bf18b01f7610758dfb40581dd9e0bf44db8ea4dba6be",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/witness_0_repeat.npy": "736416b72c637a6d280c84dd48c76ad9f156e6880dc8a98bf1f81b0d48b74e25",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/witness_0_shifted_target.npy": "c674120d0261281015c2c8e1e4920e3a43f19f8650179162f8763e8ff7e3f2e9",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/witness_0_summary.npz": "9f8346a6b2620042587a01dd1381c34db268419b703117688438b755546362c5",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/witness_0_zero_copy.npy": "1da8d6641e97ce86dec7a64bf187c46591a58239bdbfaedcc9a0c663fca659e9",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/witness_1_matches.npz": "80acfdbbb3e3612a60d0519c82513dcf1721e45cf5705dd6f8825f1b9ab43ab7",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/witness_1_repeat.npy": "3afc9c00c608fc2ac6b61fe1907f46409d945ea64bc4082cf07465537ab173a0",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/witness_1_shifted_target.npy": "1605d4fc47646f44b3b49f0c23eed67a0a87defa2a42356fc11e25f96221939e",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/witness_1_summary.npz": "50323a0b586915e8269d34d340f3db1f5599647daf0a46d1e108831cc64999d9",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/witness_1_zero_copy.npy": "b3a83bf85f238c6dab1a218d4e0dceceee9552a8f03635129d399c4482de2fda",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/witness_2_matches.npz": "8d6578b81bfb5c8045f2946c39aa25e399be7c1ca1251adb34ae44ed07c079c6",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/witness_2_repeat.npy": "d9ecf4edafb1deec314dfe9d06dde661acf890990fb2fab1b6c1d5e46878aca1",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/witness_2_shifted_target.npy": "2bf84dd022f23328b8d424246df69472a70d0148001152ffe3d3eac158379927",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/witness_2_summary.npz": "310dac0fc33e9a622541e5a9cb7f2d98dbfbf205711124562557ca3afdf14924",
+    "research/experiments/shared-coordinate-residual-v0/run-v2/raw/witness_2_zero_copy.npy": "7e0c453af9dd3126362bfe3e299c646d9276de50313c6a390e8d31f01dba9c16",
+    "scripts/experiments/shared_coordinate_native_v2.py": "3995ba4c807d9a20cdfd4d35416e6d9473e9986565a65b108ca0f680c37b8948",
+    "scripts/experiments/shared_coordinate_native_v3.py": "2a089b7d85987b571bb53f22ce9a97912fe690e01fc2d9d950dead39fd3a29a3"
+  },
+  "elapsed_cpu_audit_wall_seconds": 2.878237803000019
+}

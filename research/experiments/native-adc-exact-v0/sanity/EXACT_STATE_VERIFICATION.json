@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "checks": 6,
+  "metric_rows": 48,
+  "camera_count": 122,
+  "events": 1,
+  "checkpoint_iteration": 3622,
+  "exact_tensor_count_after_adc": 28,
+  "exact_tensor_count_with_live_grads": 34,
+  "original_cross_run_equivalence": "failed; this is a distinct same-state non-mutation gate"
+}

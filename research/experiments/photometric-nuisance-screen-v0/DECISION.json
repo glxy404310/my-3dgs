@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-22",
+  "candidate_key": "photometric_nuisance_tangent_projection",
+  "phenomenon_gate": false,
+  "passing_views": 0,
+  "required_views": 24,
+  "total_views": 32,
+  "decision": "STOP_CURRENT_MATURE_TRUCK_PHOTOMETRIC_TANGENT_CANDIDATE",
+  "training_performed": false,
+  "gpu_used": false,
+  "scene_parameter_updates": 0,
+  "mean_per_view_mse_reduction_fraction": 0.02361678957740001,
+  "global_mse_reduction_fraction": 0.02202204073540459,
+  "claim_scope": "within-image spatially held-out diagnostic oracle on32 existing test PNG pairs; not generalization or camera-cause evidence",
+  "threshold_changed": false
+}

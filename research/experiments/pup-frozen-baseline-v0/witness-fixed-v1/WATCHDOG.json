@@ -1,0 +1,23 @@
+{
+  "worker_command": [
+    "/home/administrator/venvs/3dgs/bin/python",
+    "-B",
+    "-u",
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/pup_fisher_kernel_witness.py",
+    "--worker",
+    "--fixed-build-record",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/FIXED_BUILD_IDENTITY.json",
+    "--fixed-build-record-sha256",
+    "5630aad4281ff1242674910393a085583f0e7f4a62d517e2bf041ad1c3bbe092"
+  ],
+  "exact_PYTHONPATH": "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10:/home/administrator/projects/pup-frozen-baseline-e971ea48",
+  "worker_exit_code": 0,
+  "supervisor_wall_seconds_before_save": 7.8646721389999925,
+  "process_tree_sampled_peak_RSS_bytes": 1371734016,
+  "CPU_RSS_limit_bytes": 4294967296,
+  "reason": null,
+  "worker_decision": "SYNTHETIC_SH0_FISHER_WITNESS_PASS",
+  "complete": true,
+  "outer_hard_limit_seconds": 120,
+  "outer_exit_and_actual_tool_wall": "Record fresh-agent external command result separately"
+}

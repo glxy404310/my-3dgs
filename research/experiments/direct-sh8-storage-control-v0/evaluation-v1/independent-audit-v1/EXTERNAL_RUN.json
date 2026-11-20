@@ -1,0 +1,12 @@
+{
+  "schema": "direct-sh8-native-evaluation-v1/audit-root-external-v1",
+  "started_UTC": "2026-10-22T22:09:02.4934822Z",
+  "finished_UTC": "2026-10-22T22:09:52.1719967Z",
+  "exit_code": 0,
+  "actual_host_wall_seconds": 49.6758769,
+  "hard_limit_seconds": 100,
+  "attempts": 1,
+  "main_actual_host_wall_seconds": 65.1725227,
+  "combined_actual_host_wall_seconds": 114.8483996,
+  "shared_main_plus_audit_limit_seconds": 300
+}

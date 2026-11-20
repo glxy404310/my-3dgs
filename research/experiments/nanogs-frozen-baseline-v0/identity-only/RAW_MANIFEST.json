@@ -1,0 +1,1190 @@
+[
+  {
+    "path": "raw/GT/000001.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "75d0523ca5dd061c464fe59c43e015f3efcb9fe8de33d7ffd8a6746e0138053c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000001.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "161609b6744ab5735b9cb4243bfa6909584fd8e2b7621c13f5c08360fb65564e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000009.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "6ed1fcc65e247450c8aa00b8638308b6b8d93e22e715b605d48623a361948ae5",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000009.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "47f8cb4e52f79dd60cbfd3760a4c4fa0618dd5181364c81d3e5b21efb255dc1e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000017.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "7ef26daf1a4d28fd2f53707145b56e6f47048c99965c767abcb8e411d5d8e718",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000017.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "a6fbce47742a603201750127a0b0a490cae991564d17aeaed4f4521faadab342",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000025.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "2afb731450fda68db0f9735eddfc63840c5d8db1a16ec60fbc0cacf7afbcab1b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000025.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "528179c4883962f18f80fa00cbde996ee3c88e0fe4d4f5bc98e390178e7f0c19",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000033.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "4835c0e1047d273d5e63bbba7610c958a61e854e7e8aea2c3e7c410aacdf24d9",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000033.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "37e090ae0e69fe9643b28eebaabaafbf337e56cb88d4df077603ab9f34304b65",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000041.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "244716f92a4a69bd9eeb5b6c097cf5ae0bcf961483425de3261cd0ceb6883f8a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000041.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "68cffb96cd62be43f26d5075ac2d0bdba1de8b04392e0b631295a5e185462dcc",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000049.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "5107c7f17f5de7d4faa0e753d1ea41eaacc020dabeac83314656243fbbe3bc8d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000049.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "425e02fd3fce77dff9aa5c36f20e6b27292ec87c2ad2bc5d3ef391f37ea09b43",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000057.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "a7bed7d3d1806149b13a10cadfbb649ac9bc6adce38e9139b3212cd7c5797532",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000057.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "3c8ab6537796977bd80be4b2bf95df6e1860ba5fbdeafe6782ef13376837c3ca",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000065.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "a790aaaf834362e88ff6466b75ef1cd730c23cda1f55831382bf49c9d6efab32",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000065.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "029995c67bf2ad9fc61b60a9b2f152aca79381d5bf7061eba9269c4b666574ac",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000073.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "2ec05ee3e93248d84efd918eb347d4b8a7ea4cd8ec1bb554b5da76afc37a076e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000073.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "ea46c057d4969c585de0b62089fcd5730c3e364b8841e921ff0bfe3d4ac2b1f1",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000081.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "0c454860671110b87237b8a0417371309a5c8b23d7507a4bbf7cb5ce20e1ffcf",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000081.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "08b1d5a8ab76e2d9685351e626e09f44f0853a1e1fb5e73d73a7d1acc1819c8e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000089.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "ef70e42bdb4a10a98fbac4b1e2b52e5ebb08c162b4167ea26649f617598ab9e8",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000089.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "9100b83113f1b4112c1b888b826f0ed6b2394c4de9449f4bea2740f5575e2c20",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000097.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "2527d2413defa0226b4e293ea8cd2eb6bb8459b111f480fc4c4ef616cd7d05fb",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000097.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "cc6ad94b3ed61c7e8e32443bbd8dc6629dbd7000229322cd8bf46beebec6e338",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000105.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "4ab1abcaf0462cf335870559081b7fee2342ea8b61c4610c4f5a5332b41cb90d",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000105.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "608ec298932914fbc60af23d6c7285315fb305edb6e9acfacfe5d66ba139f825",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000113.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "5b3e2061efff1c35d2cc57b12d5d02ee8d2a5548dce47c5df4435cf9bd7bdff6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000113.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "949da00c4d0706cf60cde5da5b93de63038d0ea4ef860129dd2ba6210324c59b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000121.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "102154db6930008895c6ff2ffb7e00c8438c3d0714ed41053ef676fea8f2b028",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000121.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "b073644f65d4dda8714006e164eda61cb1af3e7875c5ac55a5924a7d18121ff3",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000129.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "b940c9c837dd01cd44ebf157b35172076d1b0e52d40536932ce3e42410d6eb38",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000129.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "3c58634bae837fb1da936cdd610e04c5c8ca426af97536a2f914c4e0e2299f32",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000137.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "58a969c748ab036b89579f309a4d4e386e8b60114bc94662bb0dbb51b3a197a1",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000137.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "43d6bbf95c052499355d30eae1c1534504cb54f4e2d2c534ba0d77abd228d576",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000145.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "d2c6f65c0d4868aec6e8b1b120513cae1d9b2d57770df46f792d64f35842ace4",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000145.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "f89cacd73d13f70e53ae0099862ec29efe3e8aba9a34103932c2f603ec371159",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000153.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "e95e6fc597a6d68fcc34bc089275b2f7f4a52dcfcd3226cb20198a4c002dbc78",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000153.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "8cb72a0d7f47d20ea6150565f1831794edd242826fc8f9f4438ca88426634d7c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000161.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "c341ab5131bbbbdaabb03ba2ed6dec0d9c7c16dbb4bcfd7e90138f40b28587f5",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000161.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "1d508461432516124154bf8a1b480cb8d0c4d245c6e8d6cd58378d1968ab7f8b",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000169.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "050ce5812036a2b7435bc759a47cb11513a7a9137ebaa74fa486d349e15ca4e6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000169.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "089d0efecde7206a5dd045efd0089d8ba03a791b813674b1ce22f3e6b5dd16ab",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000177.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "c7b890bbc0da37e50723019161412af725ddec7738bd9d8a90b43251e5b8780e",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000177.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "e62e73036ef01b8e524a30de02e7234126e4047cd146a25adf9e55edb0c26801",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000185.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "ccf507e8aa8c8307ae9fb0f4f918393681e6aab458364546619387086abd3733",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000185.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "3b5dbf0368b136ecf6ab9d850cf26854622ec1ad6426f62abb60387928acae39",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000193.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "97a3cc3b48a240d761b21522944501aab1a4356618d25348d976be8627525da4",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000193.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "b4d5fd202a0382425c31637914b48d8c7bed6461c6dee6f0ff17715b911134f5",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000201.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "308a4a7886b5dd9585bec3b0652c7bb02b60d4b328c2989666737a54b9efb182",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000201.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "9626d86519ea1f82370459aae1e2f94f0d2589e7c569f2191c30d4216b162fc6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000209.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "dfd74a9a2497a19412ff77c65817afd2c6d84ebc6875cca647c26dde9edaff19",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000209.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "a335ab2a1aab5ab3b797524e605330440af571bbf2876ca7d02b643007c36725",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000217.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "60ddbc46a97f80502cba24d55d447e869f5042b196b4e3edd1fd919793e8f621",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000217.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "16b0cfbfae60677810b175ee150718fa4730386cc5f74b9036d742d0cbbbb272",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000225.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "e05e0c993392e1f6970ecb290f40cae1c536109f6bc121c5b22081663fc0ff05",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000225.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "69cb682390caec928a123343767b832904ee281a45010dc3ef9a6eebea5c35b6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000233.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "b2e9eb6b3d50369a7c91a62ba79b83a52140943a8a9d30aa4b20d2272bc88e7a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000233.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "a3ef509de4961047fdec7cc591ef2e9fae4756b4d216d386986d3c8328b942c8",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000241.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "f5124c1c33a64c4889de444ea2850edf5e22c51bfd9fe786ddb3246614e38460",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000241.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "2e6eb13a6a66cf70c48a81e74182b0eed3cf77237f9533902fdb55ec0cdf47a2",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000249.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "137ac84b685cc5e5f271f8c8e45899d340c4a25cff3b67bd9f51b0b9a8c9546c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000249.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "214779fd9bab15fdb1054db7b86244a93a61b988c7c99f61f4779f973206d880",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/GT/000016.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "c3c10ed2dc083432419d53f2cd195849371f6062313d7a223ae946ac43ee77ff",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/teacher/000016.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "a8e1c292c6af398fba57feec3689e5cefba9b1912f15b3e27a6b7b1e5c589833",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000001.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "e555b98735a791f67b157a40b4fedbf71bac3254d76cafcfeda45d11050d5873",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000009.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "1c734db482c85523335981061622578b619153590db991f323e7d9fb13b26a86",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000017.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "3964d8f8b45aa8edfa1ca2f585c017503b4034c9f3e852138d639d05aa48103c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000025.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "ef9e113ef3124c8fc48d560c727f73d300ece419feaaedde1a6df30b1a028192",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000033.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "903fe9be2a8ca9193cf84703f8dbdeabc47373c2c084b675a07de484069103d2",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000041.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "e46468503330128f5d37bc95f79eb280929c24eccdec7dc100476d6ad74914c0",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000049.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "6871e78e5b565c280afd2b5843be31fbfba61bcbadfec81867fbc4c82f4011ec",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000057.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "1d974abc2cf38e030ddd68d3dcdda957266405de8731533ff572018b1b6d5f89",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000065.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "10e9cca60bdfe244753fed44865ba04f6befed461008de7f4797441166d6f358",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000073.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "52237f6a7b563982892761a3ee002c816ccc1aaf68f5232ecadbc3c4ad396aea",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000081.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "0bd2c5ae6523092860dfed86af1e204b5d5bb910de11db5672bb2e46ebce2320",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000089.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "a386c6048d49bdf3ba2573652d739e49d2a9110deb9f8c4070e4570c9eb10759",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000097.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "6023dc8e66e8eaf31a7cfa684b79fdf34870180d2ad794664da823c58d458af6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000105.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "a879282d8a5d7bcecf5fdc61dec8de01f01a0a44db89ba1ac393195099f54cb6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000113.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "ebf86d91191d1638e3311ac3616111d64c46cbc125668b76b0e4557195527082",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000121.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "ebc6085bb629e77169ba1f2b2cc7353a984e0baf73936d015e357dd37c8b0cb1",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000129.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "ac4330bd4e4a1d4cfeb702605bbab8ad8a584a8218e4b5deea236029e6873d42",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000137.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "eb4be60246b1b0475a0130f5d3238ed9fd1f194ceb6ae89880e4a8a070113188",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000145.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "412e41b0bce291287cd1e24b7e3e117b9f6b2cde6c60d1b7ebdccbdcfe374b54",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000153.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "0e36c945ff68e716dea44668fb8209e23e09cc60f68a07515f8569741337b404",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000161.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "ffa40be6a8afb2971aa0003d8f25bbba4187251cafefebb19cce7e752acdf19a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000169.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "4795c2c8f0f68a91939e30669818e24ea316ab8d1863d0dd103f49ba0db24b66",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000177.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "1a61dee3a06cb6400f95ef469eff46045a49d766d2ffa8abac1026bee418c05c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000185.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "e651e7059f56ea0437bf98979d26d6f382409e85e56cbb54fcc1874130b40c21",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000193.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "1375fd8143d152f2166775f48c6472bd0530c3152fe37f4be89492a0f3fba7a0",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000201.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "df67b3d4a13bea323272343c14a2726add403e2594489f6b20f8ac24552092e1",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000209.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "bd3d06835c416b258125029e676e132bddf33af140556c0c219812a569a97876",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000217.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "4c262320f76f115f3335789ddebdd72697ad1211e65378cdfb72310e93152011",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000225.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "2159f83c0f2eb2a700b3f2e4fb03ba209d5fd102e35f64fab3f2b17e2d43bbbf",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000233.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "376a8842a18c3dfa6474c47ee9157d304f872cc0efeb74924300c9ed776dfa2c",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000241.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "0137aa9218f767db4ac253fb49c89b6b25a829333c05173a77f85ba8b70d31c6",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000249.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "b3879e43ae06af47afd91fe183d6bd8d282e97cda07bfdde58f9366936c8a88a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  },
+  {
+    "path": "raw/identity/000016.jpg.npz",
+    "bytes": 6414668,
+    "sha256": "a2a6f3de18d8f7845732c5f48a2d7d27c0f5a8e7c6fe8accc21740a0007b0b8a",
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "stage": "native_final_clamped_rgb"
+  }
+]

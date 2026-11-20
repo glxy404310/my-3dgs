@@ -1,0 +1,32 @@
+{
+  "schema": "speedy-frozen-control/supervisor-v1",
+  "status": "FROZEN_SPEEDY_CONTROL_EVALUATED_AUDIT_PENDING",
+  "attempts": 1,
+  "automatic_retry": false,
+  "host_RSS_limit_bytes": 10737418240,
+  "peak_sampled_tree_RSS_bytes": 3383984128,
+  "sample_interval_seconds": 0.05,
+  "shared_internal_deadline_seconds": 225,
+  "outer_timeout_TERM_seconds": 235,
+  "outer_timeout_KILL_after_seconds": 3,
+  "main_external_limit_seconds": 240,
+  "audit_reserved_seconds": 100,
+  "combined_external_limit_seconds": 340,
+  "worker_peak_GPU_allocated_bytes": {
+    "native": 1364574720,
+    "speedy": 1248835584
+  },
+  "sum_worker_peak_GPU_allocated_bytes": 2613410304,
+  "worker_exit_codes_before_cleanup": {
+    "native": 0,
+    "speedy": 0
+  },
+  "monitor_errors": [],
+  "worker_exit_codes_after_cleanup": {
+    "native": 0,
+    "speedy": 0
+  },
+  "all_workers_reaped": true,
+  "controller_elapsed_seconds": 47.729319405,
+  "controller_torch_imported": false
+}

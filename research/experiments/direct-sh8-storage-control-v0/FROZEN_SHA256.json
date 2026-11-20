@@ -1,0 +1,53 @@
+{
+  "schema": "direct-sh8-storage-control-v0/frozen-sha256-v1",
+  "scientific_execution": false,
+  "run_v1_absent": true,
+  "preparation_note": "8-point numerical/format witness passed. Its original tested hashes are preserved in PREPARATION_CHECKS.json. Later changes only add partial reporting and final available-file hashing in verify.py/run_control.py. No further tests ran after root freeze request.",
+  "files": [
+    {
+      "name": "CONTRACT.md",
+      "bytes": 7587,
+      "sha256": "a65d991ba414f386e770a8c4fb24ee13d4935a50fd3a747180c2266b1aefbcb9"
+    },
+    {
+      "name": "ASSUMPTIONS.md",
+      "bytes": 3617,
+      "sha256": "d1ba9da7de54ca7b3f28f9e1d55e50745233def685c71ea1905ae97dca236985"
+    },
+    {
+      "name": "encode.py",
+      "bytes": 6581,
+      "sha256": "307ff7bb1824e61d03d3dba5b8701bddeb45f82090036632f7414840e2305379"
+    },
+    {
+      "name": "decode.py",
+      "bytes": 5222,
+      "sha256": "b64a2356eb5722695f05e8ee4aad260e4d4605b94e86c36ab85234e59fb2f4b0"
+    },
+    {
+      "name": "verify.py",
+      "bytes": 10737,
+      "sha256": "d3b7dabdabfcb390692e5e85405f9ae745e3b7c359ebab380f365a4bebf2329f"
+    },
+    {
+      "name": "run_control.py",
+      "bytes": 13087,
+      "sha256": "51f4bb68a42f9a669758d795dec873526f1e99d6cf44eb951cc1da9b2dfcf16c"
+    },
+    {
+      "name": "run-control.sh",
+      "bytes": 1170,
+      "sha256": "62dce14a8eae3d8acf5957f17b27297746f475a9e27b8b58b126d74e0bd72e5b"
+    },
+    {
+      "name": "prepare_test.py",
+      "bytes": 7690,
+      "sha256": "4f8f5cf2fa292cf4585d9235ec882787e7f3d6d8fccba680847d91a26c46bff1"
+    },
+    {
+      "name": "PREPARATION_CHECKS.json",
+      "bytes": 38864,
+      "sha256": "dcb0c004fe44c20a385c92b369f700f85ba3d0f52450e29adbbbe593a91d6645"
+    }
+  ]
+}

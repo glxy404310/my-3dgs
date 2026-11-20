@@ -1,0 +1,226 @@
+CAD: Photorealistic 3D Generation via Adversarial Distillation (https://openaccess.thecvf.com/content/CVPR2024/papers/Wan_CAD_Photorealistic_3D_Generation_via_Adversarial_Distillation_CVPR_2024_paper.pdf)
+citeturn85search12 [wordlim: 200] Crawled: 5 months ago; In particular, starting from a latent code z ∈ R^d drawn from a unit Gaussian distribution, our generator network generates a triplane feature representation P as follows: ... To achieve high-quality and diversified generation, we introduce adversarial distillation shown in Fig. 2, an innovative approach for optimizing the 3D generator G(·) s.t. its sampled data match the samples from a pre-trained diffusion model, p_0(x_0 | y), as follows: ... where x is the rendered image from triplane P = G(z) under camera pose c.
+where μ(θ | y) is parametrized with a set of NeRF instances, referred to as particles. Additionally, VSD relies on a dynamically fine-tuned Low-Rank Adaptation (LoRA) [41] to capture the conditional rendering distribution across different camera poses, thus enabling a similar optimization framework under the guidance of denoising score.
+
+**3D Distribution Modeling.** Turning from single NeRF optimization to distribution modeling is a key for improved 3D synthesis. However, due to the large computation and memory requirements of VSD [117], the number of NeRF instances that VSD could jointly optimize is quite small (< 10), hence the 3D distribution modeled by [117] remains discrete and unexpressive. In practice, we observe VSD still suffers from similar issues as SDS to a certain degree.
+
+Instead, we propose to leverage a generator G(z) to capture the continuous 3D distribution. Considering the training efficiency and stability, we follow common practice [7, 13, 27] and implement our generator using a StyleGAN2 [50] backbone paired with triplane features. In particular, starting from a latent code z ∈ R^d drawn from a unit Gaussian distribution, our generator network generates a triplane feature representation P as follows:
+
+G : R^d → R^{3×N×N×C},  G(z) → P,  (4)
+
+where N, C correspond to the spatial resolution and channel size respectively. Note that using a generator to approximate the conditional distribution of the diffusion model fundamentally resolves mode-seeking issues. Additionally, instead of learning the triplane features directly from z, the generator also incorporates a non-linear mapping network, which maps z to latent vectors w ∈ W, controlling the generator through adaptive instance normalization (AdaIN) [43] at each convolution layer. The intermediate latent space W shares many desirable properties, enabling us to perform continuous 3D interpolation and single-view reconstruction by inversion.
+
+**3.2. Consistent Adversarial Distillation**
+
+**Adversarial Distillation.** It should be noted the actual optimization goal of score distillation is
+
+min_M D_KL( q^μ_t(x_0 | c) || p_0(x_0 | y) ).  (5)
+
+SDS tackles Eq. (5) by breaking it down into multiple sub-optimization problems, each associated with a unique diffused distribution indexed by t, as indicated in Eq. (1) and Eq. (3). However, doing optimization using noisy discrepancy can easily lead to noticeable quality degradation in comparison to the direct denoising sampling approach, as reported in [85, 117].
+
+To achieve high-quality and diversified generation, we introduce adversarial distillation shown in Fig. 2, an innovative approach for optimizing the 3D generator G(·) s.t. its sampled data match the samples from a pre-trained diffusion model, p_0(x_0 | y), as follows:
+
+min_G D_KL( p_G(x | z, c) || p_0(x_0 | y) ),  (6)
+
+where x is the rendered image from triplane P = G(z) under camera pose c. Instead of directly computing the KL-D, we solve Eq. (6) by learning an implicit likelihood model, namely a GAN [30]. In particular, we train our model using an adversarial objective and adopt the non-saturating GAN loss with R1 regularization [71] from [48] as follows:
+
+L_D = E_{z∼p_z, c∼p_c} [ f( D(R(G(z), c)) ) ] + E_{I∼p_0} [ f( -D(I) ) + λ||∇D(I)||^2 ]  (7)
+
+L_G = -E_{z∼p_z, c∼p_c} [ f( D(R(G(z), c)) ) ],  (8)
+
+where f(u) is defined as f(u) = -log(1 + exp(-u)), I is sampled from the diffusion model, R(·) denotes the volumetric renderer used to render the generator’s output that parametrizes the fake data distribution, D(·) denotes the discriminator and λ is a hyperparameter.
+
+To render an image, for every coordinate along the camera ray, we sample features from the triplanes P and aggregate them with summation. Next, a light-weight MLP decoder M(·) will explain the aggregated features f ∈ R^d_f into radiance c ∈ R^3 and volume density σ ∈ R^+. We follow common practice and use volumetric rendering with hierarchical sampling [73] to predict the final RGB colors for every pixel in the image. Unlike score distillation, our distillation scheme is directly based on high-quality and clean samples drawn from the diffusion model, which effectively overcomes oversaturation issues. --------------------------------------------------------------------------------
+PRADA3D: Photorealistic and real-time animatable 3D Gaussian avatar reconstruction with deformation distillation and dual rectification (https://scholars.lib.ntu.edu.tw/entities/publication/94015ca4-b964-4c41-8b35-8bc308d47c41)
+citeturn85search0 [wordlim: 200] Published: 5 months ago; Crawled: 2 weeks ago; # PRADA3D: Photorealistic and real-time animatable 3D Gaussian avatar reconstruction with deformation distillation and dual rectification ... On top of this framework, we apply knowledge distillation to transfer pose-dependent clothing deformation learned from a large teacher model, allowing our method to generalize well to occluded or unseen body regions. ... Adversarial learning
+
+# PRADA3D: Photorealistic and real-time animatable 3D Gaussian avatar reconstruction with deformation distillation and dual rectification
+
+Journal
+
+Computers and Graphics
+
+Journal Volume
+
+137
+
+Start Page
+
+104623
+
+ISSN
+
+0097-8493
+
+Date Issued
+
+2026-05-14
+
+Author(s)
+
+Chang, Tun-Chuan
+
+Liu, An-Sheng
+
+Lee, Jhe-Cyuan
+
+LI-CHEN FU  
+
+DOI
+
+10.1016/j.cag.2026.104623
+
+URI
+
+https://www.scopus.com/record/display.uri?eid=2-s2.0-105039083311&origin=resultslist
+
+https://scholars.lib.ntu.edu.tw/handle/123456789/740953
+
+Abstract
+
+We present PRADA3D, an efficient method for photorealistic and real-time animatable 3D human reconstruction using monocular video input. We begin by constructing a canonical avatar in 3D Gaussian representation using optimizable feature tensors combined with a cross-attention mechanism, enabling the resulting Gaussians to be animated in various poses. On top of this framework, we apply knowledge distillation to transfer pose-dependent clothing deformation learned from a large teacher model, allowing our method to generalize well to occluded or unseen body regions. To improve fidelity under varying poses, we propose two rectification modules. A rigid transformation refinement corrects inaccurate poses, while a non-rigid deformation refinement restores fine surface details such as wrinkles. In addition, we introduce adversarial training to promote temporal consistency across frames, reducing visual flicker and ensuring smooth animations. Our approach is evaluated on two public monocular human video datasets, along with a real-world dataset recorded by ourselves. Experimental findings indicate that our method delivers state-of-the-art results across multiple reconstruction quality metrics, outperforming prior work. Furthermore, our inference system supports real-time control and rendering of avatars, highlighting the effectiveness of our approach in practical real-world scenarios.
+
+Show more
+
+Subjects
+
+3D Gaussian splatting
+
+3D human reconstruction
+
+Adversarial learning
+
+Avatar
+
+Knowledge distillation
+
+Publisher
+
+Elsevier BV
+
+Type
+
+journal article--------------------------------------------------------------------------------
+Worst-case distance (https://en.wikipedia.org/wiki/Worst-case_distance)
+citeturn85search13 [wordlim: 200] Crawled: 1.2 years ago; Worst-case distanceView of the performance space with the performance acceptance region A and the distribution of performance (red) under statistical and operational variations, from which WCD can be calculated. ... *  T Nirmaier; J Kirscher; Z Maksut; M Harrant; M Rafaila; G Pelz (2013).
+Worst-case distance
+View of the performance space with the performance acceptance region A and the distribution of performance (red) under statistical and operational variations, from which WCD can be calculated. Note: The statistical variables themselves are often uncorrelated, but the performances are correlated (as indicated by the stretch and rotation of the ellipsoids). Specifications are often defined by upper or lower limits, represented as straight lines. In the statistical variable space, specification limits typically take nonlinear shapes. WCD incorporates both perspectives in addressing the yield problem.
+
+Worst-case distance (WCD) is a robustness metric used in electronic design for yield optimization and design centering. The metric quantifies how well electronic systems and devices can tolerate parameter variations and operating condition changes.
+
+CD extends traditional yield optimization approaches beyond simple cases involving normal distributions and single specifications. --------------------------------------------------------------------------------
+3D Gaussian Splatting Driven Multi-View Robust Physical Adversarial Camouflage Generation (https://openaccess.thecvf.com/content/ICCV2025/papers/Lou_3D_Gaussian_Splatting_Driven_Multi-View_Robust_Physical_Adversarial_Camouflage_Generation_ICCV_2025_paper.pdf)
+citeturn85search14 [wordlim: 200] Crawled: 10 months ago; 3D Gaussian Splatting Driven Multi-View Robust Physical Adversarial Camouflage Generation ... Physical adversarial attack methods expose the vulnerabilities of deep neural networks and pose a significant threat to safety-critical scenarios such as autonomous driving. ... Figure illustration of a 3D car on a grid with colorful camouflage texture, surrounded by camera icons and weather icons; below it are four red-bordered detection-result panels showing the camouflaged object under different views/conditions with labels such as “oven: 0.95”, “broccoli: 0.52”, and “couch: 0.54”.
+3D Gaussian Splatting Driven Multi-View Robust Physical Adversarial Camouflage Generation
+
+Tianrui Lou¹,²  Xiaojun Jia³  Siyuan Liang⁴  Jiawei Liang¹  Ming Zhang⁵  Yanjun Xiao⁶  Xiaochun Cao¹,²,*
+¹ Sun Yat-Sen University  ² Peng Cheng Laboratory  ³ Nanyang Technological University  ⁴ National University of Singapore
+⁵ National Key Laboratory of Science and Technology on Information System Security  ⁶ Nsfocus
+
+{loutianrui, jiaxiaojunqaq, pandaliang521}@gmail.com   liangjw57@mail2.sysu.edu.cn
+zm.stiss@163.com   xiaoyanjun@nsfocus.com   caoxiaochun@mail.sysu.edu.cn
+
+Abstract
+
+Physical adversarial attack methods expose the vulnerabilities of deep neural networks and pose a significant threat to safety-critical scenarios such as autonomous driving. Camouflage-based physical attack is a more promising approach compared to the patch-based attack, offering stronger adversarial effectiveness in complex physical environments. However, most prior work relies on mesh priors of the target object and virtual environments constructed by simulators, which are time-consuming to obtain and inevitably differ from the real world. --------------------------------------------------------------------------------
+View Selection with Geometric Uncertainty Modeling (https://arxiv.org/abs/1704.00085)
+citeturn85academia15 [wordlim: 200] Published: 9.6 years ago; Title: View Selection with Geometric Uncertainty Modeling ... Estimating positions of world points from features observed in images is a key problem in 3D reconstruction, image mosaicking,simultaneous localization and mapping and structure from motion. ... Consider a world point $g \in \mathcal{G}$ and its worst case reconstruction uncertainty $\varepsilon(g,\mathcal{S})$ obtained by merging \emph{all} possible views of $g$ chosen from $\mathcal{S}$.
+Title: View Selection with Geometric Uncertainty Modeling
+Authors: Cheng Peng, Volkan Isler
+Date: Fri Mar 31 23:33:06 2017
+
+Estimating positions of world points from features observed in images is a key problem in 3D reconstruction, image mosaicking,simultaneous localization and mapping and structure from motion. We consider a special instance in which there is a dominant ground plane $\mathcal{G}$ viewed from a parallel viewing plane $\mathcal{S}$ above it. Such instances commonly arise, for example, in aerial photography. Consider a world point $g \in \mathcal{G}$ and its worst case reconstruction uncertainty $\varepsilon(g,\mathcal{S})$ obtained by merging \emph{all} possible views of $g$ chosen from $\mathcal{S}$. We first show that one can pick two views $s_p$ and $s_q$ such that the uncertainty $\varepsilon(g,\{s_p,s_q\})$ obtained using only these two views is almost as good as (i.e. within a small constant factor of) $\varepsilon(g,\mathcal{S})$. Next, we extend the result to the entire ground plane $\mathcal{G}$ and show that one can pick a small subset of $\mathcal{S'} \subseteq \mathcal{S}$ (which grows only linearly with the area of $\mathcal{G}$) and still obtain a constant factor approximation, for every point $g \in \mathcal{G}$, to the minimum worst case estimate obtained by merging all views in $\mathcal{S}$. Finally, we present a multi-resolution view selection method which extends our techniques to non-planar scenes. We show that the method can produce rich and accurate dense reconstructions with a small number of views. Our results provide a view selection mechanism with provable performance guarantees which can drastically increase the speed of scene reconstruction algorithms. In addition to theoretical results, we demonstrate their effectiveness in an application where aerial imagery is used for monitoring farms and orchards.--------------------------------------------------------------------------------
+StableGS/README.md at main · zyl123456aB/StableGS · GitHub (https://github.com/zyl123456aB/StableGS/blob/main/README.md)
+citeturn85search1 [wordlim: 200] Crawled: 2 months ago; ### Geometric Probing for Isotropic Loss Landscapes in Sparse-View 3D Gaussian Splatting ... StableGS (Stable 3DGS) addresses the drastic quality degradation of 3D Gaussian Splatting under sparse views. ... Uses Hessian-informed sensitivity analysis (Hutchinson trace estimation) to set per-attribute probe magnitudes inversely proportional to local curvature, then perturbs each Gaussian along its vulnerable directions and minimizes the worst-case rendering loss.
+  3. Opacity instability. Under sparse views, opacity encodes view-specific visibility, yielding inconsistent transmittance and ghosting on novel views.
+
+These instabilities share one cause: steep gradients along fragile directions coexisting with flat regions elsewhere — i.e. high anisotropy `A(Θ) = λ_max(H) / λ_min(H)`.
+
+StableGS reshapes the landscape from anisotropic to isotropic via two complementary probing modules:
+
+  * Attribute-Space Probing (ASP). Uses Hessian-informed sensitivity analysis (Hutchinson trace estimation) to set per-attribute probe magnitudes inversely proportional to local curvature, then perturbs each Gaussian along its vulnerable directions and minimizes the worst-case rendering loss. Position probes are depth-biased (γ = 0.7); rotation is probed in the SO(3) tangent space, scale in log-space, opacity in logit-space, and SH coefficients with frequency-weighted noise.
+  * Viewpoint-Space Probing (VSP). Samples geometrically critical poses — occlusion-boundary rotation, viewpoint interpolation/extrapolation (Slerp), and parallax translation — and enforces rendering consistency between base and probed configurations, preventing convergence to view-specific sharp minima.
+
+The full objective is
+    
+    `L_total(Θ) = L_recon(Θ) + λ_ASP · L_ASP(Θ) + λ_VSP · L_VSP(Θ)
+    `
+
+with `λ_ASP = 1.0` and `λ_VSP = 0.5`.
+
+* * *
+
+--------------------------------------------------------------------------------
+3DGAA: Realistic and Robust 3D Gaussian-based Adversarial Attackfor Autonomous Driving (https://rt.http3.lol/index.php?q=aHR0cHM6Ly9hcnhpdi5vcmcvaHRtbC8yNTA3LjA5OTkzdjQ)
+citeturn85search2 [wordlim: 200] Published: last month; Crawled: last month; where $\mathcal{G}$ is the optimized 3DGS object, $P$ is a camera pose sampled from the viewpoint distribution $\mathcal{V}$, $R(\mathcal{G},P)$ is the differentiable rendering of $\mathcal{G}$ from pose $P$, $D$ is the target detector, and $f_{D}(\cdot)$ returns the detector confidence for the target class. ... When the adversarial objective is optimized over a pose distribution $\mathcal{V}$, the gradients from multiple views are accumulated on the same Gaussian parameters. ... Together, these results support 3DGAA as a bounded but practical pipeline for adversarial robustness and security evaluation of camera-based perception stacks in connected and autonomous vehicle scenarios. ... where $I$ is the original rendered image, $\mathcal{N}(0,\sigma^{2})$ represents zero-mean Gaussian noise, and $\sigma(d)$ is the depth-dependent standard deviation:
+--------------------------------------------------------------------------------
+Hybrid Fourier score distillation for efficient one image to 3D object generation | Visual Intelligence | Springer Nature Link (https://link.springer.com/article/10.1007/s44267-025-00089-8)
+citeturn85search3 [wordlim: 200] Published: 1.1 years ago; Crawled: last month; We first use \(\mathcal{F}(\cdot )\) to initialize 3D Gaussian ϕ. \(\mathcal{F}(\cdot )\) can be sphere initialization or large reconstruction model. ... SDS: score distillation sampling; FSD: Fourier score distillation ... Zero123 can generate novel views that are geometrically consistent with the input image, while strictly adhering to the given input camera pose.
+--------------------------------------------------------------------------------
+Gaussian splitting attack: Gaussian splatting-based multi-view 3D adversarial attack - ScienceDirect (https://www.sciencedirect.com/science/article/pii/S003132032501129X)
+citeturn85search4 [wordlim: 200] Crawled: 2 months ago; However, this approach simply adds 2D perturbations to the rendered image and fails to create explicit 3D adversarial samples due to the implicit representation of the NeRF.To address the above limitations, in this paper, we formulate the paradigm of explicit 3D adversarial samples based on 3D Gaussian Splatting (3DGS) [26], which is capable of spoofing classifiers in multiple viewpoints.
+--------------------------------------------------------------------------------
+Anchoring the Critic: Separating Optimizer Error from Prior Error in Adversarial Text-to-3D — Lacuna (https://lacuna.tiptreesystems.com/hypothesis/anchoring-the-critic-separating-optimizer-error-from-prior-error-in-adversarial-d08911f05002b5cb)
+citeturn85search5 [wordlim: 200] Crawled: 2 weeks ago; Concretely, let $\theta$ be the 3D scene parameters (a NeRF or Gaussian splats), $\phi$ the critic's low-rank adapter weights inside the diffusion model, and $L(\theta,\phi)$ the adversarial objective of Adversarial Score Distillation.
+--------------------------------------------------------------------------------
+Generative Models for Neural Fields (https://repository.kaust.edu.sa/bitstreams/5d98698b-ec27-43bb-9c66-7d662c8c5f34/download)
+citeturn85search16 [wordlim: 200] Published: 7 months ago; an image, we first sample camera parameters from a prior distribution and pass ... Our two-headed discriminator predicts adversarial scoresand image features for knowledge distillation. ... Training a 3D generator on in-the-wild datasets comes with three main chal-
+--------------------------------------------------------------------------------
+CN122574830B – Method and apparatus for physical adversarial attack in three-dimensional detection | Patsnap Eureka (https://eureka.patsnap.com/patent/CN122574830B)
+citeturn85search6 [wordlim: 200] Published: 3 weeks ago; Crawled: 2 weeks ago; [0033] Step S3: Perform differentiable Gaussian rasterization on the first three-dimensional Gaussian set, and perform α synthesis with the camera image of the scene to obtain adversarial camera observation; perform visibility perception α synthesis based on spherical projection on the second three-dimensional Gaussian set, and merge the synthesis result with the background point cloud of the scene to obtain adversarial lidar observation. ... Specifically, for each camera viewpoint, the first 3D Gaussian set of Gaussian elements is projected onto the image plane corresponding to that camera viewpoint using the camera's intrinsic parameters, and differentiable Gaussian rasterization is performed to obtain the object image; the object image is then compared with the camera image of the scene.
+--------------------------------------------------------------------------------
+REFINE: Efficient 3D Gaussian Splatting Pruning (https://www.emergentmind.com/papers/2606.09074)
+citeturn85search7 [wordlim: 200] Published: 4 months ago; Crawled: 2 months ago; The paper is explicit about where its approximations break down. ... Because post-processing pruning has no access to original multi-view images, all competing metrics rely on non-strict approximations, so this gap reflects a fundamental information limitation rather than a defect unique to REFINE.The zero-occlusion visibility model is likewise a worst-case assumption whose interaction with heavy occlusion is not separately quantified.
+--------------------------------------------------------------------------------
+[Paper Note] Geometric Probing for Isotropic Optimization Manifold in Sparse-View 3D Gaussian Splatting (https://en.papernotes.org/ECCV2026/3d_vision/geometric_probing_for_isotropic_optimization_manifold_in_sparse-view_3d_gaussian/)
+citeturn85search8 [wordlim: 200] Crawled: 2 weeks ago; Second-order sensitivity analysis isolates three primary fragility axes: first, Depth Swap, where minute position perturbations along the viewing ray \(v_{\text{cam}} = \mu_i - t_m\) flip the depth sorting order in \(\mathcal{N}(p)\), with ray-aligned gradients exceeding lateral gradients by over \(100\times\); second, Projection Ill-conditioning, where elongated or obliquely oriented Gaussians cause 2D projected covariance condition numbers \(\kappa(\boldsymbol{\Sigma}'_i) = \lambda_{\max}(\boldsymbol{\Sigma}'_i) / \lambda_{\min}(\boldsymbol{\Sigma}'_i)\) to exceed 100, causing splats to collapse into needles or explode across the screen under minor rotations; and third, Opacity Instability, where logit opacity \(\alpha_i\) acts as a degenerate visibility switch to memorize training views, corrupting transmittance products on unseen angles. ... All perturbations are consolidated into a single global configuration \(\tilde{\boldsymbol{\Theta}}\), requiring just one extra rasterization pass to minimize worst-case rendering loss \(\mathcal{L}_{\text{ASP}}(\boldsymbol{\Theta})\). ... By penalizing the discrepancy between base model renders \(\hat{\mathbf{I}}_k(\boldsymbol{\Theta})\) and perturbed model renders \(\hat{\mathbf{I}}_k(\tilde{\boldsymbol{\Theta}})\) via \(\mathcal{L}_{\text{VSP}}(\boldsymbol{\Theta})\), VSP prohibits view-specific memorization and enforces true 3D spatial coherence.
+--------------------------------------------------------------------------------
+DART-3DGS: Distance-Aware Replication and Age-Gated Densification for 3D Gaussian Splatting (https://www.mdpi.com/2313-433x/12/10/483)
+citeturn85search9 [wordlim: 200] Published: 2 weeks ago; Crawled: yesterday; School of Electronic Information and Communications, Huazhong University of Science and Technology, Wuhan 430074, China ... 3D Gaussian Splatting (3DGS) renders novel views in real time, but quality is limited by two coupled factors: a Structure-from-Motion (SfM) seed that is thin in scene peripheries and weakly textured regions, and an adaptive density-control rule that lets new Gaussians split repeatedly, inflating primitive count, memory, and training time. ... Novel view synthesis (NVS) underpins applications from immersive media and aerial imaging [1] to robotics and digital twins.3D Gaussian Splatting (3DGS) [2] has become the dominant representation for real-time, photorealistic NVS: a scene is encoded as a set of anisotropic 3D Gaussians, initialized from a sparse Structure-from-Motion (SfM) point cloud, grown by an adaptive density-control (ADC) heuristic that clones and splits Gaussians by a view-space gradient threshold, and rendered by a differentiable tile-based rasterizer.
+--------------------------------------------------------------------------------
+Instant Adversarial Purification with Adversarial Consis... (https://bytez.com/docs/cvpr/33739/paper)
+citeturn85search10 [wordlim: 200] Published: 1.8 years ago; Crawled: 3 weeks ago; where Image: xgt is groundtruth image, Image: xadv is the adversarial image, f is a model with the purification function in latent space, Image: t∗is predefined purification step, E and D are pre-trained image encoder and decoder respectively. ... To respond to the first component we defined, we propose GAND as illustrated in Fig. 2 (left) and detailed in Alg. 1, a novel adversarial distillation objective, which combines adversarial training, Latent Consistency Distillation, and learning how to remove the adversarial and Gaussian noise from the shifted standard Gaussian distribution.
+--------------------------------------------------------------------------------
+Feature Distillation: DNN-Oriented JPEG Compression Against Adversarial Examples (https://arxiv.org/abs/1803.05787)
+citeturn85academia17 [wordlim: 200] Published: 8.6 years ago; Title: Feature Distillation: DNN-Oriented JPEG Compression Against Adversarial Examples ... Image compression-based approaches for defending against the adversarial-example attacks, which threaten the safety use of deep neural networks (DNN), have been investigated recently.
+--------------------------------------------------------------------------------
+Self-Supervised Z-Slice Augmentation for 3D Bio-Imaging via Knowledge Distillation (https://pmc.ncbi.nlm.nih.gov/articles/PMC11908362/)
+citeturn85search11 [wordlim: 200] Published: 1.6 years ago; Crawled: 2 weeks ago; ZAugNet is a deep learning-based method designed for fast and accurate interpolation of contiguous focal planes in 3D biological imaging. ... To non-linearly interpolate between two contiguous focal planes, ZAugNet utilizes a Generative Adversarial Network (GAN) architecture, consisting of a Generator and a Discriminator. ... Additionally, our approach integrates a knowledge distillation framework [[ref-type: bibr] 31 [Source reference: [Source link 25]], [ref-type: bibr] 32 [Source reference: [Source link 26]]], where ZAugNet’s Generator (Student) is a smaller, optimized subset of a larger Teacher network. ... ZAugNet was initially trained on a dataset of 139 high-resolution 3D image stacks, each containing 36 z-slices, depicting an ascidian embryo at various developmental stages, acquired via fluorescence microscopy with membrane staining (see [ref-type: sec] Methods).
+--------------------------------------------------------------------------------
+Application of 3DGS for Cinematic Anatomy (https://diglib.eg.org/bitstream/handle/10.2312/vmv20241195/vmv20241195.pdf)
+citeturn85search18 [wordlim: 200] Published: 2.2 years ago; Crawled: 2.1 years ago; Figure 3: View selection strategies for a concave 2D test data set (black). ... The 2D projection of a 3D Gaussian is a 2D Gaussian with a covariance that is derived from the view transformation matrix and the Jacobian of the affine approximation of the projective transformation. ... To further reduce the memory consumption of 3DGS, we utilize the compression proposed by Niedermayr et al.
+--------------------------------------------------------------------------------
+Advanced illumination and view-selection techniques for volume rendering and its application to medical imaging (https://gilab.udg.edu/wp-content/uploads/thesis/MarcRuizPhD.pdf)
+citeturn85search19 [wordlim: 200] Published: 14.4 years ago; From a practical point of view, this means that convolving the volume with a 3D Gaussian function is equivalent to convolving the volume with a 1D Gaussian function along one axis, then convolving the result again with a 1D Gaussian function along another axis, and finally convolving this last result with a 1D Gaussian function along the other axis.
+--------------------------------------------------------------------------------
+3D Human Pose Estimation in the Wild by Adversarial Learning (https://arxiv.org/abs/1803.09722)
+citeturn85academia20 [wordlim: 200] Published: 8.6 years ago; In this paper, we propose an adversarial learning framework, which distills the 3D human pose structures learned from the fully annotated dataset to in-the-wild images with only 2D pose annotations.
+--------------------------------------------------------------------------------
+Adversarial Networks for Camera Pose Regression and Refinement (https://arxiv.org/abs/1903.06646)
+citeturn85academia21 [wordlim: 200] Published: 7.6 years ago; Title: Adversarial Networks for Camera Pose Regression and Refinement ... Despite recent advances on the topic of direct camera pose regression using neural networks, accurately estimating the camera pose of a single RGB image still remains a challenging task.
+--------------------------------------------------------------------------------
+Overfill (https://en.wikipedia.org/wiki/Overfill)
+citeturn85search22 [wordlim: 200] Crawled: 5 months ago; When a beam of light, typically a Gaussian beam from a laser source, encounters an aperture, its behavior is determined by the ratio of the beam diameter (w) to the aperture diameter (D). ... An OFL condition is often used in multi-mode fiber testing, in which all possible propagation modes within the fiber are excited, providing a "worst-case" scenario for attenuation and bandwidth measurements. ... In high-precision imaging, these rings can manifest as noise, potentially reducing the contrast of the optical system.Finally, in high-power laser applications (such as laser cutting or medical surgery), the "lost" light that strikes the aperture housing is converted into heat. ... ISBN 978-0-470-50511-3. ... Springer Science & Business Media.
+--------------------------------------------------------------------------------
+Laser beam profiler (https://en.wikipedia.org/wiki/Laser_beam_profiler)
+citeturn85search23 [wordlim: 200] Crawled: 1.4 years ago; For a diffraction-limited Gaussian beam, the beam divergence is λ/(πw_{0}), where λ is the wavelength (in the medium) and w_{0} the beam radius (radius with 1/e^{2} intensity) at the beam waist. ... It is to most laser manufacturers' advantage to present specifications in a way that shows their product in the best light, even if this involves misleading the customer. ... * Is the specification typical or worst-case performance? ... What was the laser environment (optical table, etc.)?
+--------------------------------------------------------------------------------
+Adversarial machine learning (https://en.wikipedia.org/wiki/Adversarial_machine_learning)
+citeturn85search24 [wordlim: 200] Crawled: 3 weeks ago; It was discovered when the authors designed a simple baseline to compare with a previous black-box adversarial attack algorithm based on gaussian processes, and were surprised that the baseline worked even better. ... When solved using gradient descent, this equation is able to produce stronger adversarial examples when compared to fast gradient sign method that is also able to bypass defensive distillation, a defense that was once proposed to be effective against adversarial examples. ... The attack objectives for both are as follows where ${\textstyle x}$ is the original image, ${\textstyle x^{\prime }}$ is the adversarial image, ${\textstyle d}$ is a distance function between images, ${\textstyle c^{*}}$ is the target label, and ${\textstyle C}$ is the model's classification class label function: ... "One Pixel Attack for Fooling Deep Neural Networks". ... IEEE Spectrum: Technology, Engineering, and Science News. ... Unaligned 2D to 3D Translation with Conditional Vector-Quantized Code Diffusion using Transformers.
+--------------------------------------------------------------------------------
+Multifidelity simulation (https://en.wikipedia.org/wiki/Multifidelity_simulation)
+citeturn85search25 [wordlim: 200] Crawled: 1.1 years ago; Worst-case performance | Not defined ... Multifidelity (or multi-fidelity) methods leverage both low- and high-fidelity data in order to maximize the accuracy of model estimates, while minimizing the cost associated with parametrization.
+--------------------------------------------------------------------------------
+Smoothed analysis (https://en.wikipedia.org/wiki/Smoothed_analysis)
+citeturn85search26 [wordlim: 200] Crawled: 4 months ago; Yet in the theoretical worst case it takes exponentially many steps for most successfully analyzed pivot rules. ... For the perturbation model, we assume that the input data is perturbed by noise from a Gaussian distribution.For normalization purposes, we assume the unperturbed data ${\displaystyle {\bar {\mathbf {A} }}\in \mathbb {R} ^{n\times d},{\bar {\mathbf {b} }}\in \mathbb {R} ^{n},\mathbf {c} \in \mathbb {R} ^{d}}$ satisfies ${\displaystyle \|({\bar {\mathbf {a} }}_{i},{\bar {b}}_{i})\|_{2}\leq 1}$ for all rows ${\displaystyle ({\bar {\mathbf {a} }}_{i},{\bar {b}}_{i})}$ of the matrix ${\displaystyle ({\bar {\mathbf {A} }},{\bar {\mathbf {b} }}).}
+--------------------------------------------------------------------------------
+G2ARD-GS: Geometry-Guided Anchor-Regularized Gaussian Splatting Distillation (https://arxiv.org/html/2608.05704v1)
+citeturn85view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2608.05704v1","lineno":85}); Total lines: 546
+L84: Our contributions are summarized as follows:
+L85: 
+L86:   * •
+L87: 
+L88: We formulate geometry-guided map-prior distillation, targeting not only rendering fidelity but also the geometric stability and downstream reusability of compact Gaussian maps.
+L89: 
+L90:   * •
+

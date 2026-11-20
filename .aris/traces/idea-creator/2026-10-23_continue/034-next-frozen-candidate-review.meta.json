@@ -1,0 +1,14 @@
+{
+  "call_number": 34,
+  "purpose": "next-frozen-candidate-review",
+  "timestamp": "2026-10-22T18:56:24.444Z",
+  "agent_id": "01a164f6-d3dc-78d0-ba51-578366d123fd",
+  "agent_path": "/root/next_frozen_candidate_review",
+  "model": "inherited-primary",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "response_recovered_verbatim": true,
+  "response_session_log": "/mnt/c/Users/Administrator/.codex/sessions/2026/10/23/rollout-2026-10-23T02-54-20-01a164f6-d3dc-78d0-ba51-578366d123fd.jsonl"
+}

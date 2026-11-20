@@ -1,0 +1,11 @@
+{
+  "schema": "co-ray-split-interaction-v0/external-child-v1",
+  "child_shell_wall_seconds": 74.576470589,
+  "exit_code": 0,
+  "timeout_TERM_seconds": 292,
+  "timeout_KILL_after_seconds": 3,
+  "maximum_main_seconds": 300,
+  "attempts": 1,
+  "launcher_sha256": "0c97b909e52b394ef3c19dc39da439b6236b131be08e5acbf147b321d15f61f4",
+  "root_external_wall_required": true
+}

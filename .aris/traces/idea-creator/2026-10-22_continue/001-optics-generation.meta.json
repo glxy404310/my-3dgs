@@ -1,0 +1,15 @@
+{
+  "call_number": 1,
+  "purpose": "optics-generation",
+  "agent_id": "01a16422-e6f4-7280-99f2-5bfc1c535345",
+  "agent_path": "/root/continue_optics_ideas",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "generated_count": 5,
+  "ranked_or_accepted_by_shard": false,
+  "raw_output_path": "idea-stage/continue-20261022/OPTICS_RAW.json"
+}

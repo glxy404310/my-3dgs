@@ -1,0 +1,41 @@
+{
+  "status": "COMPLETE",
+  "timestamp_utc": "2026-10-22T19:23:39.713606+00:00",
+  "CPU_only": true,
+  "model_loads": 0,
+  "native_forwards": 0,
+  "fitting_performed": false,
+  "pruning_performed": false,
+  "images_or_descriptors_read": false,
+  "GT_masks_created": false,
+  "scope": "metadata inventory, not a method pass/fail or throughput measurement",
+  "input_hashes_before": {
+    "/home/administrator/datasets/tandt_db/tandt/truck/sparse/0/points3D.bin": "6ac9db28d60a3edd5e14c34e972ad2f4486f2925b0964f19c3ddb4d4cbf2069b",
+    "/home/administrator/datasets/tandt_db/tandt/truck/sparse/0/images.bin": "437cdb07de6e45ecb4bdf986f7faa0017148879437b66497145ecdb7ec31403e",
+    "/home/administrator/datasets/tandt_db/tandt/truck/sparse/0/cameras.bin": "f183f5e1a0ddbca7bb4e1e12c74ee2939069ea69929710a5af0692d3f53e3ac5",
+    "/home/administrator/projects/gaussian-splatting/scene/colmap_loader.py": "6948ce06366e1f727ddffc39a445bf4b6873824f02abc39df63eb0c8f0fb3f36",
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/inventory_artifact_background_metadata.py": "29c0643ef7dda8ebc4962472356865ee12aa9cecae06e8a11b3bfde3de9dfc16",
+    "/mnt/d/Documents/my 3dgs/research/experiments/artifact-background-witness-capacity-v0/ASSUMPTIONS.md": "3713c6bba0931853fbda5a68ebc6f9e7c4378e7c301d1d4759ed84fe20764bed"
+  },
+  "input_hashes_after": {
+    "/home/administrator/datasets/tandt_db/tandt/truck/sparse/0/points3D.bin": "6ac9db28d60a3edd5e14c34e972ad2f4486f2925b0964f19c3ddb4d4cbf2069b",
+    "/home/administrator/datasets/tandt_db/tandt/truck/sparse/0/images.bin": "437cdb07de6e45ecb4bdf986f7faa0017148879437b66497145ecdb7ec31403e",
+    "/home/administrator/datasets/tandt_db/tandt/truck/sparse/0/cameras.bin": "f183f5e1a0ddbca7bb4e1e12c74ee2939069ea69929710a5af0692d3f53e3ac5",
+    "/home/administrator/projects/gaussian-splatting/scene/colmap_loader.py": "6948ce06366e1f727ddffc39a445bf4b6873824f02abc39df63eb0c8f0fb3f36",
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/inventory_artifact_background_metadata.py": "29c0643ef7dda8ebc4962472356865ee12aa9cecae06e8a11b3bfde3de9dfc16",
+    "/mnt/d/Documents/my 3dgs/research/experiments/artifact-background-witness-capacity-v0/ASSUMPTIONS.md": "3713c6bba0931853fbda5a68ebc6f9e7c4378e7c301d1d4759ed84fe20764bed"
+  },
+  "output_hashes": {
+    "STATS.json": "a4f6f22bdec62e1ab089c32b2673372e707b99d95a150b545bc4b3875f464cdd",
+    "POINT_TRACK_LENGTHS.npz": "ff24b968874c876d7f0ee8b27a94e27ed10cf553a5af475eb64d67afc2f878dd",
+    "TRAIN_PAIR_SHARED_TRACK_COUNTS.npz": "909e19c56065d27eac060c6df1a41381808dbba41bb1e28b0967727ab53ff88d",
+    "IMAGE_IDENTITY.csv": "b02ce7530819abf1c948e7301c86a5ec1feebb412f1caf13a40aa4e141620c5e"
+  },
+  "failure": null,
+  "script_sha256": "29c0643ef7dda8ebc4962472356865ee12aa9cecae06e8a11b3bfde3de9dfc16",
+  "all_inputs_unchanged": true,
+  "torch_imported": false,
+  "scene_imported": false,
+  "gaussian_renderer_imported": false,
+  "elapsed_before_manifest_serialization_seconds": 2.8037812990000006
+}

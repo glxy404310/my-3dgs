@@ -1,0 +1,25 @@
+{
+  "mixed_signal_claim": "no",
+  "integrity_status": "unavailable",
+  "review_independence": "same-family",
+  "counts": {
+    "unconfirmed": 4,
+    "substitutable": 1,
+    "split_advantage": 0,
+    "split_no_confirmed_benefit": 14,
+    "context_regression": 1
+  },
+  "claim_supported": "partial",
+  "safe_review": "CSV_JSON_recomputed",
+  "cases": 20,
+  "date": "2026-10-22",
+  "steps": 120,
+  "acceptance_status": "provisional",
+  "existence_claim": "yes",
+  "metric_rows": 2880,
+  "next_experiment_started": false,
+  "method_advance": false,
+  "raw_packet_review": "not_performed_auto_review_pickle_rejection",
+  "arms": 80,
+  "confidence": "medium"
+}

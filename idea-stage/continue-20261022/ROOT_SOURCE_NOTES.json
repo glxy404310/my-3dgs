@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-22",
+  "scope": "Targeted primary-source updates; generator shards search additional sources; not exhaustive novelty certification",
+  "sources": [
+    {
+      "title": "CrossFit-GS: Out-of-Fold Pose Estimation for COLMAP-Free 3D Gaussian Splatting",
+      "url": "https://arxiv.org/html/2610.28190v1",
+      "abstract_url": "https://arxiv.org/abs/2610.28190",
+      "submitted": "2026-10-20",
+      "verification": "primary arXiv abstract and full HTML opened this turn",
+      "mechanism": "Two disjoint owner submaps; refine a frame pose against the frozen opposite submap excluding that frame; discard submaps and reconstruct a final global map under fixed poses.",
+      "boundary": "Not identical to shared geometry with two cross-fitted SH heads. Nevertheless cross-fitting and avoiding same-frame map self-explanation already have a named near neighbor. No claim of first cross-fitting in3DGS is defensible.",
+      "candidate_key": "leave_view_out_appearance_geometry"
+    },
+    {
+      "title": "Compact Neural Appearance Models for Efficient Gaussian Splatting",
+      "url": "https://arxiv.org/html/2609.05255v1",
+      "verification": "primary full HTML and appendix A/B opened this turn",
+      "mechanism": "Fused comparisons propagate appearance-direction gradients into Gaussian means. Appendix records prior lobe/beta-kernel implementations without this gradient and restores it for comparability.",
+      "boundary": "Deleting this path is not a new generic decoupling principle. A local causal SH mechanism finding or demonstrated useful method remains untested.",
+      "candidate_key": "sh_direction_detach"
+    },
+    {
+      "title": "GStex: Per-Primitive Texturing of2D Gaussian Splatting for Decoupled Appearance and Geometry Modeling",
+      "url": "https://openaccess.thecvf.com/content/WACV2025/papers/Rong_GStex_Per-Primitive_Texturing_of_2D_Gaussian_Splatting_for_Decoupled_Appearance_WACV_2025_paper.pdf",
+      "supplement_url": "https://openaccess.thecvf.com/content/WACV2025/supplemental/Rong_GStex_Per-Primitive_Texturing_WACV_2025_supplemental.pdf",
+      "verification": "primary search content and supplement ablation this turn; earlier jury also verified",
+      "mechanism": "Stops gradients from interpolated textures into primitive positions; supplement contains without-stop-gradient ablation.",
+      "boundary": "Textured2D primitives differ from standard SH direction gradient, but generic appearance-to-position detachment is established.",
+      "candidate_key": "sh_direction_detach"
+    },
+    {
+      "title": "G2ARD-GS: Geometry-Guided Anchor-Regularized Gaussian Splatting Distillation",
+      "url": "https://arxiv.org/html/2608.05704v1",
+      "verification": "primary full HTML opened this turn; detailed prior-turn source map retained",
+      "boundary": "Informative-view supervision and coverage-aware compact-map distillation are close prior work; simple view coverage is a control, not a new invention.",
+      "candidate_key": "adversarial_pose_compression_witnesses"
+    }
+  ],
+  "local_library": "papers/ and literature/ absent; prior available original3DGS docs and source maps reused",
+  "previous_failures": "No original FAIL/INCONCLUSIVE or discontinued split route was reclassified"
+}

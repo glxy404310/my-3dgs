@@ -1,0 +1,36 @@
+{
+  "variant": "las_split_moments_refit_gt",
+  "selected_parents": 4,
+  "n_before": 1058297,
+  "n_after": 1058301,
+  "before": {
+    "l1": 0.04092671163380146,
+    "psnr": 23.098047256469727,
+    "ssim": 0.8342280089855194,
+    "render_change_l1": 0.0
+  },
+  "immediate": {
+    "l1": 0.04092671163380146,
+    "psnr": 23.098047256469727,
+    "ssim": 0.8342280089855194,
+    "render_change_l1": 0.0
+  },
+  "split_seconds": 0.11795385200000119,
+  "recovery_update_seconds": 0.03211228300000002,
+  "initial_split": {
+    "l1": 0.04092671163380146,
+    "psnr": 23.098047256469727,
+    "ssim": 0.8342280089855194,
+    "render_change_l1": 0.0
+  },
+  "reference_cache_seconds": 0.012116451000000694,
+  "refit_seconds": 0.37610587600000045,
+  "wallclock_observation": null,
+  "total_seconds": 9.829804682999999,
+  "peak_allocated_bytes": 1869659136,
+  "peak_reserved_bytes": 2111832064,
+  "camera_sequence": [
+    "000130.jpg"
+  ],
+  "complete": true
+}

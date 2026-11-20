@@ -1,0 +1,100 @@
+{
+  "scope": "Conditional on fixed checkpoint, selected parents, event seed and sampled cameras. Views are correlated; this is not cross-event significance.",
+  "baseline": "/mnt/d/Documents/my 3dgs/research/experiments/split-diagnostic-v0/early3600_seed0/noop",
+  "variants": [
+    "/mnt/d/Documents/my 3dgs/research/experiments/matched-count-v0/early/las_split"
+  ],
+  "subset_protocol": "Noop performs no split; reuse its measured trajectory with matching event/state/cameras and a subset of logged candidates.",
+  "comparisons": [
+    {
+      "variant": "las_split",
+      "step": 0,
+      "views": 32,
+      "delta_l1": 0.0003277349751442671,
+      "delta_psnr": -0.06882202625274658,
+      "delta_ssim": -0.0013739317655563354,
+      "fraction_views_l1_worse": 0.8125,
+      "median_delta_l1": 0.00012030079960823059,
+      "mean_delta_l1_excluding_worst_view": 0.0002489814594868691,
+      "delta_l1_view_bootstrap_ci95": [
+        0.00014446534332819284,
+        0.0005606868304312228
+      ],
+      "max_view_delta_l1": 0.0027690939605236053,
+      "min_view_delta_l1": -8.631497621536255e-05,
+      "render_change_l1": 0.0011720346860784048
+    },
+    {
+      "variant": "las_split",
+      "step": 1,
+      "views": 32,
+      "delta_l1": 0.00033094012178480625,
+      "delta_psnr": -0.06933897733688354,
+      "delta_ssim": -0.0013780947774648666,
+      "fraction_views_l1_worse": 0.84375,
+      "median_delta_l1": 0.00012048520147800446,
+      "mean_delta_l1_excluding_worst_view": 0.0002491406856044646,
+      "delta_l1_view_bootstrap_ci95": [
+        0.0001482008578022942,
+        0.0005668163532391187
+      ],
+      "max_view_delta_l1": 0.0028667226433753967,
+      "min_view_delta_l1": -8.922815322875977e-05,
+      "render_change_l1": 0.002336082832698594
+    },
+    {
+      "variant": "las_split",
+      "step": 5,
+      "views": 32,
+      "delta_l1": 0.00032930169254541397,
+      "delta_psnr": -0.06709259748458862,
+      "delta_ssim": -0.0013310480862855911,
+      "fraction_views_l1_worse": 0.84375,
+      "median_delta_l1": 8.957646787166595e-05,
+      "mean_delta_l1_excluding_worst_view": 0.00024045883647857175,
+      "delta_l1_view_bootstrap_ci95": [
+        0.000139119042432867,
+        0.0005798202590085566
+      ],
+      "max_view_delta_l1": 0.003083430230617523,
+      "min_view_delta_l1": -6.576254963874817e-05,
+      "render_change_l1": 0.0068701930504175834
+    },
+    {
+      "variant": "las_split",
+      "step": 20,
+      "views": 32,
+      "delta_l1": 0.00017069349996745586,
+      "delta_psnr": -0.02985280752182007,
+      "delta_ssim": -0.0009698793292045593,
+      "fraction_views_l1_worse": 0.875,
+      "median_delta_l1": 4.709884524345398e-05,
+      "mean_delta_l1_excluding_worst_view": 0.0001290066828650813,
+      "delta_l1_view_bootstrap_ci95": [
+        7.331267406698317e-05,
+        0.00029582541028503326
+      ],
+      "max_view_delta_l1": 0.0014629848301410675,
+      "min_view_delta_l1": -0.0001292303204536438,
+      "render_change_l1": 0.01827378326561302
+    },
+    {
+      "variant": "las_split",
+      "step": 100,
+      "views": 32,
+      "delta_l1": -1.1392519809305668e-05,
+      "delta_psnr": 0.014751613140106201,
+      "delta_ssim": -0.00023576430976390839,
+      "fraction_views_l1_worse": 0.4375,
+      "median_delta_l1": -1.1747702956199646e-05,
+      "mean_delta_l1_excluding_worst_view": -2.846566419447622e-05,
+      "delta_l1_view_bootstrap_ci95": [
+        -8.925410802476108e-05,
+        5.190589290577916e-05
+      ],
+      "max_view_delta_l1": 0.0005178749561309814,
+      "min_view_delta_l1": -0.000925358384847641,
+      "render_change_l1": 0.02329008310334757
+    }
+  ]
+}

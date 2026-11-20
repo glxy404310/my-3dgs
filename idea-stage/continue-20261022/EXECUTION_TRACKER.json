@@ -1,0 +1,602 @@
+{
+  "date": "2026-10-23",
+  "goal_status": "paused",
+  "training_performed": false,
+  "checks": [
+    {
+      "name": "coverage_controls",
+      "session_id": 86018,
+      "terminal_exit_code": 0,
+      "rows": 1580,
+      "decision": "STOP_CURRENT_ACTIVE_POSE_IMPLEMENTATION"
+    },
+    {
+      "name": "sh_direction_path",
+      "session_id": 84774,
+      "terminal_exit_code": 1,
+      "rows": 56,
+      "decision": "FAILED_PARITY_NOT_METHOD_VERDICT"
+    },
+    {
+      "name": "photometric_screen",
+      "session_id": 48676,
+      "terminal_exit_code": 0,
+      "rows": 256,
+      "decision": "STOP_CURRENT_PHOTOMETRIC_CANDIDATE"
+    },
+    {
+      "name": "low_parallax_budget",
+      "session_id": 36118,
+      "terminal_exit_code": 0,
+      "points": 2050770,
+      "decision": "STOP_CURRENT_SELECTION_NO_CAPACITY"
+    },
+    {
+      "decision": "PROCEED_TO_FULL_FROZEN_RGB",
+      "name": "joint_rounding_alpha_cpu",
+      "sample_points": 8192,
+      "session_id": 28829,
+      "terminal_exit_code": 0,
+      "cpu_seconds": 12.569143946
+    },
+    {
+      "decision": "ENCODED_NOT_YET_RGB_EVALUATED",
+      "name": "joint_rounding_full_encode",
+      "session_id": 81741,
+      "terminal_exit_code": 0,
+      "points": 2050770,
+      "cpu_seconds": 129.613532404
+    },
+    {
+      "rows": 192,
+      "name": "joint_rounding_full_rgb",
+      "session_id": 90524,
+      "decision": "STOP_CURRENT_IMPLEMENTATION",
+      "tool_valid": true,
+      "terminal_exit_code": 0
+    },
+    {
+      "name": "repeat_pose_feasibility",
+      "session_id": null,
+      "chunk_id": "cf48aa",
+      "selected_pairs": 1,
+      "terminal_exit_code": 0,
+      "decision": "INCONCLUSIVE_INSUFFICIENT_NEAR_REPEAT_OBSERVATIONS",
+      "required_pairs": 3
+    },
+    {
+      "name": "native_gradient_repeat",
+      "session_id": 64644,
+      "terminal_exit_code": 0,
+      "decision": "STOP_CURRENT_NONDETERMINISM_DRIVEN_IMPLEMENTATION",
+      "tool_valid": true,
+      "evidence": "research/experiments/native-gradient-repeat-v0/run/RESULTS.json"
+    },
+    {
+      "name": "pruned_alpha_oracle",
+      "session_id": 69631,
+      "terminal_exit_code": 0,
+      "decision": "NEEDS_PRACTICAL_REPAIR_AND_STRONGER_BASELINES",
+      "tool_valid": true,
+      "evidence": "research/experiments/pruned-alpha-oracle-v0/run/RESULTS.json"
+    },
+    {
+      "name": "ray_alpha_omission",
+      "session_id": 50664,
+      "terminal_exit_code": 0,
+      "decision": "STOP_CURRENT_CUMULATIVE_OMISSION_DRIVEN_DEPLOYMENT",
+      "tool_valid": true,
+      "evidence": "research/experiments/ray-alpha-omission-v0/run/RESULTS.json"
+    },
+    {
+      "name": "pruned_opacity_transfer",
+      "session_id": 87638,
+      "terminal_exit_code": 0,
+      "tool_valid": true,
+      "rows": 224,
+      "decision": "STOP_CURRENT_NEAREST_NEIGHBOR_PROXY_TRANSFER",
+      "main_gates_all_true": true,
+      "strong_controls_failed": true,
+      "evidence": "research/experiments/pruned-opacity-transfer-v0/run/RESULTS.json",
+      "earlier_tool_failures_preserved": true,
+      "independent_raw_pixel_check": "passed, no gate flips",
+      "raw_npz_files": 293,
+      "raw_npz_bytes": 3089871120,
+      "elapsed_seconds": 64.95719970100004,
+      "import_failure_preserved": true,
+      "invalid_internal_radii_check_failure_preserved": true
+    },
+    {
+      "name": "sorting_quantization_capacity",
+      "session_id": null,
+      "terminal_exit_code": 1,
+      "rows": 6144,
+      "decision": "SAVED_DATA_SUPPORTS_CAPACITY_AFTER_INDEPENDENT_POSTPROCESS",
+      "original_tool_state": "FAILED_TOOL_METHOD_UNKNOWN",
+      "passed_main_bits": [
+        8,
+        12
+      ],
+      "evidence": "research/experiments/sorting-quantization-capacity-v0/run/INDEPENDENT_ANALYSIS.json",
+      "original_failure_not_reclassified_as_success": true,
+      "independent_replay_outputs": 192,
+      "independent_replay_max_RGB_difference": 2.220446049250313e-16,
+      "original_process_exit_observed": 1,
+      "original_script_failure_return_intended": 2,
+      "main_capacity_pass": true,
+      "full_position_codec_claim_supported": false
+    },
+    {
+      "name": "sorting_matched_geometry",
+      "session_id": 74770,
+      "terminal_exit_code": 1,
+      "rows": 8192,
+      "native_forward_calls": 41,
+      "tool_valid": false,
+      "decision": "INCONCLUSIVE",
+      "independent_verdict": "FAILED_TOOL_METHOD_UNKNOWN",
+      "independent_rgb_outputs": 512,
+      "independent_max_rgb_error": 2.220446049250313e-16,
+      "evidence": "research/experiments/sorting-matched-geometry-v0/run/INDEPENDENT_ANALYSIS.json",
+      "original_failure_not_reclassified_as_method_failure": true
+    },
+    {
+      "name": "pooled_psf_screen",
+      "session_id": 92841,
+      "terminal_exit_code": 0,
+      "tool_valid": true,
+      "decision": "STOP_CURRENT_MATURE_TRUCK_SHARED_PSF_SCREEN",
+      "fold_rows": 448,
+      "image_arm_rows": 224,
+      "known_fits": 6,
+      "real_fits": 64,
+      "slsqp_iterations": 4550,
+      "training_3dgs_updates": 0,
+      "CPU_stage_seconds": 37.126742595999985,
+      "timing_excludes_final_own_JSON_serialization": true,
+      "independent_session_id": 28869,
+      "independent_exit_code": 0,
+      "independent_audit_valid": true,
+      "independent_direct_pixel_arm_predictions": 28672,
+      "independent_direct_RGB_error": 0,
+      "independent_translation_candidates": 5184,
+      "independent_stage_seconds": 38.963097852000004,
+      "evidence": "research/experiments/pooled-psf-screen-v0/FINDINGS.md"
+    },
+    {
+      "name": "shared_coordinate_attempt_v1",
+      "terminal_exit_code": 1,
+      "native_forward_calls": 0,
+      "decision": "INCONCLUSIVE_EXCEPTION",
+      "evidence": "research/experiments/shared-coordinate-residual-v0/run-v1/RESULTS.json"
+    },
+    {
+      "name": "shared_coordinate_attempt_v2",
+      "session_id": 34770,
+      "terminal_exit_code": 1,
+      "native_forward_calls": 9,
+      "decision": "INCONCLUSIVE_EXCEPTION",
+      "tool_witnesses_valid": true,
+      "independent_witness_checks": 793,
+      "real_science_started": false,
+      "evidence": "research/experiments/shared-coordinate-residual-v0/run-v2/RESULTS.json"
+    },
+    {
+      "name": "shared_coordinate_frozen_v3",
+      "session_id": 81415,
+      "terminal_exit_code": 1,
+      "native_forward_calls": 33,
+      "decision": "INCONCLUSIVE_MATCHING_CAPACITY",
+      "tool_witnesses_valid": true,
+      "single_checkpoint_common_superset": 8,
+      "required_count": 48,
+      "main_shared_fits": 0,
+      "independent_capacity_checks": 187,
+      "independent_audit_valid": true,
+      "external_wall_seconds": 30.948736668,
+      "evidence": "research/experiments/shared-coordinate-residual-v0/FINDINGS.md"
+    },
+    {
+      "name": "teacher_artifact_cpu_triage",
+      "terminal_exit_code": 0,
+      "image_rows": 32,
+      "whole_pairs": 8,
+      "posthoc_ROI_pairs": 4,
+      "new_native_forwards": 0,
+      "fits": 0,
+      "decision": "EXPLORATORY_IMAGES_NOT_CAUSAL_OR_NOVELTY_PROOF",
+      "evidence": "research/experiments/teacher-artifact-triage-v0/MANIFEST.json"
+    },
+    {
+      "name": "pixel_phase_primary_overlap",
+      "effect_experiment_run": false,
+      "decision": "STOP_CURRENT_CORE_AS_INDEPENDENT_INNOVATION",
+      "evidence": "idea-stage/continue-20261023/PIXEL_PHASE_PRIMARY_OVERLAP.md"
+    },
+    {
+      "name": "artifact_background_metadata_inventory",
+      "terminal_exit_code": 0,
+      "points": 136029,
+      "distinct_train_views_ge4_points": 82974,
+      "same_point_image_extra_track_entries": 15953,
+      "method_verdict": null,
+      "native_forwards": 0,
+      "evidence": "research/experiments/artifact-background-witness-capacity-v0/STATS.json"
+    },
+    {
+      "name": "teacher_artifact_discovery",
+      "session_id": 97883,
+      "terminal_exit_code": 0,
+      "new_native_forwards": 10,
+      "reused_teacher_images": 3,
+      "data_collection_status": "COLLECTED_FOR_DISCOVERY",
+      "external_wall_seconds": 16.304483652,
+      "anchor_max_RGB_error": 0,
+      "root_qualifying_regions": 0,
+      "independent_qualifying_regions": 0,
+      "required_regions": 3,
+      "evidence_status": "INCONCLUSIVE_ARTIFACT_BACKGROUND_CAPACITY",
+      "action": "STOP_CURRENT_TRUCK_ARTIFACT_BACKGROUND_CARRIER",
+      "confirmation_accessed": false,
+      "deletion_or_fitting": false,
+      "evidence": "research/experiments/teacher-artifact-discovery-v0/FINDINGS.md"
+    },
+    {
+      "name": "nanogs_official_default_cpu",
+      "session_id": 22476,
+      "terminal_exit_code": 0,
+      "points": 1025385,
+      "external_wall_seconds": 65.470253532,
+      "decision": "OFFICIAL_SIMPLIFICATION_COMPLETE_QUALITY_UNEVALUATED",
+      "evidence": "research\\experiments\\nanogs-frozen-baseline-v0\\run-v1\\RESULTS.json"
+    },
+    {
+      "name": "nanogs_native_identity",
+      "session_id": 58940,
+      "terminal_exit_code": 0,
+      "native_forward_calls": 66,
+      "external_wall_seconds": 31.035072466,
+      "decision": "IDENTITY_EVALUATED"
+    },
+    {
+      "name": "nanogs_native_complete",
+      "session_id": 97114,
+      "terminal_exit_code": 0,
+      "native_forward_calls": 99,
+      "external_wall_seconds": 49.812512511,
+      "decision": "FROZEN_BASELINE_EVALUATED",
+      "new_method_accepted": false
+    },
+    {
+      "name": "nanogs_independent_cpu_pixels_v1",
+      "session_id": 81990,
+      "terminal_exit_code": 1,
+      "child_exit_code": 2,
+      "external_wall_seconds": 40.798847231,
+      "decision": "FAIL",
+      "requested_core_failures": 1,
+      "auxiliary_auditor_definition_failures": 42,
+      "no_rerun_or_threshold_rescue": true,
+      "evidence": "research\\experiments\\nanogs-frozen-baseline-v0\\INDEPENDENT_PIXEL_VERIFICATION.json"
+    },
+    {
+      "name": "nanogs_native_latency",
+      "session_id": 87036,
+      "terminal_exit_code": 0,
+      "forward_calls": 984,
+      "parity_views": 96,
+      "parity_max_abs_RGB": 0,
+      "measured_rows": 864,
+      "external_wall_seconds": 35.402485377,
+      "decision": "BENCHMARK_COMPLETE",
+      "evidence": "profile_output/nanogs-frozen-baseline-v0/REPORT.md"
+    },
+    {
+      "name": "nanogs_latency_independent_CPU",
+      "session_id": 11683,
+      "terminal_exit_code": 0,
+      "checks": 5575,
+      "failed_checks": 0,
+      "external_wall_seconds": 18.2401446,
+      "decision": "PASS",
+      "original_SSIM_audit_FAIL_unchanged": true
+    },
+    {
+      "name": "nanogs_opacity_premerge",
+      "session_id": 72570,
+      "terminal_exit_code": 0,
+      "new_native_forward_calls": 33,
+      "external_wall_seconds": 97.906989883,
+      "decision": "PREMERGE_STAGE_DESCRIPTION_COMPLETE_INDEPENDENT4926PASS",
+      "signed_prune_delta": 0.001557652105543414,
+      "signed_merge_delta": 1.6131051232175578e-06,
+      "no_new_scientific_gate": true,
+      "evidence": "research\\experiments\\nanogs-opacity-premerge-v0\\FINDINGS.md"
+    },
+    {
+      "name": "nanogs_premerge_independent_CPU",
+      "session_id": 86915,
+      "terminal_exit_code": 0,
+      "checks": 4926,
+      "failed_checks": 0,
+      "external_wall_seconds": 41.352491687,
+      "combined_external_wall_seconds": 139.25948157,
+      "decision": "PASS",
+      "prior_SSIM_FAIL_unchanged": true
+    },
+    {
+      "name": "PUP_old_gitlink_privatebuild",
+      "session_id": 48891,
+      "terminal_exit_code": 0,
+      "external_wall_seconds": 137.213700335,
+      "decision": "PRIVATE_BUILD_IMPORT_TOOL_PASS",
+      "scientific_calls": 0,
+      "not_SH3_numerically_certified": true
+    },
+    {
+      "name": "PUP_official_fixed_privatebuild",
+      "session_id": 14856,
+      "terminal_exit_code": 0,
+      "external_wall_seconds": 126.1874355,
+      "decision": "OFFICIAL_FIXED_PRIVATE_BUILD_IMPORT_PASS",
+      "scientific_calls": 0,
+      "numerical_verified": false
+    },
+    {
+      "name": "PUP_SH0_numeric_docfollow",
+      "chunk_id": "fa56c0",
+      "terminal_exit_code": 0,
+      "external_wall_seconds": 9.7664205,
+      "decision": "SYNTHETIC_SH0_FISHER_WITNESS_PASS"
+    },
+    {
+      "name": "PUP_SH3_numeric_docfollow",
+      "chunk_id": "779c5b",
+      "terminal_exit_code": 0,
+      "external_wall_seconds": 9.9129102,
+      "decision": "SYNTHETIC_SH3_FISHER_WITNESS_PASS"
+    },
+    {
+      "name": "PUP_full219_frozen_score_export",
+      "session_id": 27976,
+      "terminal_exit_code": 0,
+      "external_wall_seconds": 79.0357449,
+      "decision": "OFFICIAL_FIXED_SCORE_EXPORT_COMPLETE_NO_QUALITY_CLAIM",
+      "forward_calls": 220,
+      "statistical_backward_calls": 219,
+      "training_steps": 0,
+      "kept_count": 1025385,
+      "evidence": "research/experiments/pup-frozen-baseline-v0/SCORE_FINDINGS.md"
+    },
+    {
+      "name": "PUP_native_v1_path_failure",
+      "session_id": 91365,
+      "terminal_exit_code": 1,
+      "forward_calls": 0,
+      "external_wall_seconds": 11.7440519,
+      "decision": "INCONCLUSIVE_TOOL_PRE_SCENE"
+    },
+    {
+      "name": "PUP_native_v2_pathonly_repair",
+      "session_id": 66077,
+      "terminal_exit_code": 0,
+      "forward_calls": 33,
+      "external_wall_seconds": 60.612248,
+      "decision": "PUP_FROZEN_NATIVE_EVALUATED_AUDIT_PENDING"
+    },
+    {
+      "name": "PUP_score_independent_CPU",
+      "session_id": 61639,
+      "terminal_exit_code": 0,
+      "external_wall_seconds": 18.5239163,
+      "decision": "AUDIT_PASS_SCOPE_LIMITED"
+    },
+    {
+      "name": "PUP_pixels_independent_CPU",
+      "session_id": 91673,
+      "terminal_exit_code": 0,
+      "external_wall_seconds": 58.0393507,
+      "checks": 6589,
+      "failed_checks": 0,
+      "combined_external_wall_seconds": 130.3956506,
+      "decision": "PASS_SAVED_ARTIFACT_CONSISTENCY"
+    },
+    {
+      "name": "SH8_actual_codec",
+      "session_id": 38715,
+      "terminal_exit_code": 0,
+      "external_wall_seconds": 29.9126482,
+      "decision": "verified",
+      "codec_bytes": 239940218,
+      "points": 2050770
+    },
+    {
+      "name": "SH8_native33",
+      "session_id": 58269,
+      "terminal_exit_code": 0,
+      "external_wall_seconds": 65.1725227,
+      "forward_calls": 34,
+      "backward_calls": 0,
+      "decision": "SH8_NATIVE_STORAGE_CONTROL_EVALUATED_AUDIT_PENDING"
+    },
+    {
+      "name": "SH8_independent_CPU",
+      "session_id": 93762,
+      "terminal_exit_code": 0,
+      "external_wall_seconds": 49.6758769,
+      "checks": 4138,
+      "failed_checks": 0,
+      "combined_external_wall_seconds": 114.8483996,
+      "decision": "PASS_SAVED_ARTIFACT_CONSISTENCY"
+    },
+    {
+      "name": "Speedy_isolated_official_build",
+      "session_id": 65834,
+      "terminal_exit_code": 0,
+      "external_wall_seconds": 72.9857417,
+      "decision": "PRIVATE_BUILD_IMPORT_PASS_ONLY"
+    },
+    {
+      "name": "Speedy_fresh_doc_synthetic_witness",
+      "chunk": "a9c20a",
+      "terminal_exit_code": 0,
+      "external_wall_seconds": 4.5387741,
+      "forward_calls": 3,
+      "backward_calls": 0,
+      "decision": "SPEEDY_SYNTHETIC_FORWARD_WITNESS_PASS"
+    },
+    {
+      "name": "Speedy_fullteacher_native_control",
+      "session_id": 64020,
+      "terminal_exit_code": 0,
+      "external_wall_seconds": 48.347527,
+      "forward_calls": 690,
+      "backward_calls": 0,
+      "wall_reduction_fraction": 0.24848831597682997,
+      "decision": "KEEP_KNOWN_ENGINEERING_CONTROL_AUDIT_PENDING"
+    },
+    {
+      "name": "Speedy_independent_CPU",
+      "session_id": 12287,
+      "terminal_exit_code": 0,
+      "external_wall_seconds": 27.5837987,
+      "checks": 27358,
+      "failed_checks": 0,
+      "combined_external_wall_seconds": 75.9313257,
+      "decision": "PASS_SAVED_ARTIFACT_CONSISTENCY"
+    },
+    {
+      "name": "co_ray_split_frozen_A",
+      "decision": "NEGATIVE_STOP_CURRENT_CARRIER",
+      "projection_session": 47100,
+      "effects_session": 10944,
+      "metrics_session": 96404,
+      "independent_audit_session": 90448,
+      "terminal_exit_codes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "forward_calls": 680,
+      "backward_calls": 0,
+      "parameter_updates": 0,
+      "external_wall_seconds": 212.4768275,
+      "artifact_audit": "SAVED_ARTIFACT_CONSISTENCY_PASS",
+      "full_integrity_status": "unavailable",
+      "scope": "unclamped native RGB, eight TRAIN views, one old event",
+      "evidence": "research/experiments/co-ray-split-interaction-v0/FINDINGS.md"
+    }
+  ],
+  "updated_at": "2026-10-23T11:42:55.353249+08:00",
+  "pending": [
+    "User resume under quota stop policy",
+    "Fixed replay/norm audit/aggregate controller and final code review incomplete; single-window update authorization already granted",
+    "No actual capture/replay/scientific outcome yet"
+  ],
+  "quota_stop_policy": ".aris/CONTINUATION_QUOTA_POLICY.json",
+  "cross_gaussian_sh_stage1": {
+    "timestamp": "2026-10-23T04:04:19.743516+08:00",
+    "decision": "INCONCLUSIVE_CROSS_VIEW_BLOCK_CAPACITY",
+    "action": "STOP_CURRENT_FIXED_CACHE_PROTOCOL",
+    "tool_valid": true,
+    "method_status": "UNKNOWN_NOT_TESTED",
+    "stage1_complete": true,
+    "selected_capacity_pass_count": 13,
+    "required_selected_block_count": 64,
+    "quantization_or_ranking_effects_run": false,
+    "original_outer_exec_exit_code": 1,
+    "launcher_child_exit_code": 2,
+    "external_wall_seconds": 10.573257680000012,
+    "independent_verification": "V2 audit_valid true; 260checks/199arrays; V1 bookkeeping failure preserved",
+    "no_threshold_sample_or_block_rescue": true,
+    "training_performed": false
+  },
+  "new_candidate_pool_count": 50,
+  "new_candidate_pool_path": "idea-stage/optimization-inverse-20261023/CANDIDATES.json",
+  "candidate43_local_rediscovery": "STOP same-core prior MODE fixed-rule failed; no retest authorized",
+  "current_next_action": "Wait for human to resume goal; do not re-ask the same single-window update permission. Upon resume recheck quota and finish preparation/review before any execution.",
+  "active_tasks": [],
+  "selected_candidate": null,
+  "training_authorized": true,
+  "new_scientific_effects_run": true,
+  "novel_method_accepted": false,
+  "latest_report": "idea-stage/IDEA_REPORT_20261023_114255.md",
+  "current_action": "Human single-window authorization recorded; explicit weekly50% pause remains effective; no execution.",
+  "active_agent": [],
+  "weekly_quota_last_observed": {
+    "used_percent": 50,
+    "remaining_percent": 50,
+    "observed_at": "2026-10-23T11:41:24+08:00"
+  },
+  "candidate44": {
+    "decision": "NEGATIVE_STOP_CURRENT_CARRIER",
+    "artifact_consistency": "PASS",
+    "full_integrity": "unavailable",
+    "training_pilot": "NOT_RUN"
+  },
+  "candidate47": {
+    "decision": "STOP_CURRENT_CARRIER_PREMISE_UNESTABLISHED",
+    "matching_costs_run": false
+  },
+  "candidate45": {
+    "status": "PROVENANCE_LIMITED_OLD_REPLAY_NOT_RUN",
+    "historical_SSIM_backend": "UNRESOLVED",
+    "stationary_replay_forwards": 0,
+    "stationary_replay_backwards": 0,
+    "stationary_replay_updates": 0,
+    "novelty": "PROCEED_WITH_CAUTION_5_OF_10_SAME_FAMILY_PROVISIONAL",
+    "closest_primary_fulltext": "retrieved; exact endpoint replay not reported within that paper",
+    "new_window": "HUMAN_AUTHORIZED_ONE_WINDOW_NOT_RUN_PAUSED_AT_QUOTA",
+    "plan": "research/experiments/stationary-adc-window-v0/PREPARATION_PLAN.md",
+    "collector": "research/experiments/stationary-adc-window-v0/collector-v1/collect.py",
+    "preparation_status": "research/experiments/stationary-adc-window-v0/collector-v1/PREPARATION_STATUS.json",
+    "static_test_groups_passed": 5,
+    "synthetic_test_groups_passed": 12,
+    "actual_new_window_forwards": 0,
+    "actual_new_window_backwards": 0,
+    "actual_new_window_updates": 0,
+    "frozen_replay_implemented": false,
+    "decision_scope": "common endpoint original-parent nomination",
+    "native_threshold_sets_required": true,
+    "scene_extent_capture_added": true,
+    "full_array_300step_lower_bound_bytes": 5079825600,
+    "producer_visibility_test_groups_passed": 8,
+    "packed_visibility_lossless": true,
+    "capture_cap_bytes": 3000000000,
+    "aggregate_cap_bytes": 4294967296,
+    "aggregate_controller_implemented": false,
+    "storage_layout": "research/experiments/stationary-adc-window-v0/collector-v1/STORAGE_LAYOUT.preparation.json",
+    "single_window_authorized": true,
+    "execution_allowed": false,
+    "authorization_record": "research/experiments/stationary-adc-window-v0/USER_AUTHORIZATION.json"
+  },
+  "pending_user_clarification": {
+    "asked": true,
+    "tool": "request_user_input_async",
+    "question": "Allow only single 3501-3600 diagnostic window? 100F/100B,99sceneoptimizer+99exposureoptimizer; stoppreADC. Earlier no-training constraint remains effective until explicit answer.",
+    "answer_received": true,
+    "scope_ready": "Bounded collector/supervisor and independent array-auditor code prepared, not runtime validated; final combined protocol/replay pending",
+    "answer": "允许仅这一个诊断窗口",
+    "answer_recorded_at": "2026-10-23T11:42:55.353249+08:00",
+    "repeat_confirmation_required": false,
+    "authorization_record": "research/experiments/stationary-adc-window-v0/USER_AUTHORIZATION.json"
+  },
+  "independent_geometry_resource": {
+    "status": "UNRESOLVED_STOP_RESOURCE_ACQUISITION_BRANCH",
+    "reference_camera_crop": "official Drive quota exceeded, no official alternate located",
+    "model_to_scan_alignment": "UNRESOLVED",
+    "large_scan_download": false,
+    "registration_run": false,
+    "prior_candidate33_STOP_unchanged": true
+  },
+  "current_stage_actual_scientific_effects_run": false,
+  "current_stage_actual_model_updates": 0,
+  "current_goal_turn": "progress: lossless visibility codec, strict decoder and budget subcaps; paused at human quota threshold; no ML",
+  "entry_previous_goal_turn_classification": "progress",
+  "pause_reason": "Explicit user conditional instruction: weekly remaining <=50%",
+  "goal_achieved": false,
+  "authorization_scope": "ONLY one Truck3501-3600 diagnostic window:100F100B/99scene99exposure,preADC stop; no other training/retry/tuning",
+  "execution_allowed": false
+}

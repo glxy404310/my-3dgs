@@ -1,0 +1,12 @@
+{
+  "status": "unavailable",
+  "searched_paths": [
+    "D:\\Documents\\my 3dgs\\tools\\evidence_check.py",
+    "C:\\Users\\Administrator\\Documents\\Codex\\2026-10-16\\https-github-com-lamda-nesy-research\\work\\ARIS-skills\\tools\\evidence_check.py"
+  ],
+  "helper_paths": [],
+  "scope": "value existence precheck only; saved-artifact CPU audit independently completed",
+  "formal_EXPERIMENT_AUDIT_status": "unavailable unless actual formal file found; do not relabel saved artifact audit",
+  "no_missing_values_assumed_verified": true,
+  "time": "2026-10-23T07:27:20.440853+08:00"
+}

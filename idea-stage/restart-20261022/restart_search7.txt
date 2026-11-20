@@ -1,0 +1,264 @@
+Revisiting Photometric Ambiguity for Accurate Gaussian-Splatting Surface Reconstruction (https://arxiv.org/abs/2605.12494)
+citeturn36academia10 [wordlim: 200] Published: 5 months ago; Title: Revisiting Photometric Ambiguity for Accurate Gaussian-Splatting Surface Reconstruction
+Title: Revisiting Photometric Ambiguity for Accurate Gaussian-Splatting Surface Reconstruction
+Authors: Jiahe Li, Jiawei Zhang, Xiao Bai, Jin Zheng, Xiaohan Yu, Lin Gu, Gim Hee Lee
+Date: Tue May 12 17:59:47 2026
+
+Surface reconstruction with differentiable rendering has achieved impressive performance in recent years, yet the pervasive photometric ambiguities have strictly bottlenecked existing approaches. This paper presents AmbiSuR, a framework that explores an intrinsic solution upon Gaussian Splatting for the photometric ambiguity-robust surface 3D reconstruction with high performance. Starting by revisiting the foundation, our investigation uncovers two built-in primitive-wise ambiguities in representation, while revealing an intrinsic potential for ambiguity self-indication in Gaussian Splatting. Stemming from these, a photometric disambiguation is first introduced, constraining ill-posed geometry solution for definite surface formation. Then, we propose an ambiguity indication module that unleashes the self-indication potential to identify and further guide correcting underconstrained reconstructions. Extensive experiments demonstrate our superior surface reconstructions compared to existing methods across various challenging scenarios, excelling in broad compatibility. Project: https://fictionarry.github.io/AmbiSuR-Proj/ .--------------------------------------------------------------------------------
+Revisiting Photometric Ambiguity for Accurate Gaussian-Splatting Surface Reconstruction (https://proceedings.mlr.press/v306/li26iz.html)
+citeturn36search0 [wordlim: 200] Published: 3 months ago; Crawled: 3 weeks ago; `%0 Conference Paper %T Revisiting Photometric Ambiguity for Accurate Gaussian-Splatting Surface Reconstruction %A Jiahe Li %A Jiawei Zhang %A Xiao Bai %A Jin Zheng %A Xiaohan Yu %A Lin Gu %A Gim Hee Lee %B Proceedings of the 43rd International Conference on Machine Learning %C Proceedings of Machine Learning Research %D 2026 %E Tong Zhang %E Miroslav Dudik %E Martin Jaggi %E Alekh Agarwal %E Sharon Li %E Dale Schuurmans %E Jerry Zhu %E Felix Berkenkamp %E Hanze Dong %E Alberto Bietti %F pmlr-v306-li26iz %I PMLR %P 72237--72259 %U https://proceedings.mlr.press/v306/li26iz.html %V 306 %X Surface reconstruction with differentiable rendering has achieved impressive performance in recent years, yet the pervasive photometric ambiguities have strictly bottlenecked existing approaches.
+Proceedings of Machine Learning Research
+
+[Input]
+
+Volume 306JMLR DMLR TMLR MLOSS FAQ Submission Format
+
+[edit]
+
+# Revisiting Photometric Ambiguity for Accurate Gaussian-Splatting Surface Reconstruction
+
+Jiahe Li, Jiawei Zhang, Xiao Bai, Jin Zheng, Xiaohan Yu, Lin Gu, Gim Hee Lee
+
+Proceedings of the 43rd International Conference on Machine Learning, PMLR 306:72237-72259, 2026.
+
+#### Abstract
+
+Surface reconstruction with differentiable rendering has achieved impressive performance in recent years, yet the pervasive photometric ambiguities have strictly bottlenecked existing approaches. This paper presents AmbiSuR, a framework that explores an intrinsic solution upon Gaussian Splatting for the photometric ambiguity-robust surface reconstruction with high performance. Started by revisiting the foundation, our investigation uncovers two built-in primitive-wise ambiguities in representation, while revealing an intrinsic potential for ambiguity self-indication in Gaussian Splatting. Stemming from these, a photometric disambiguation is first introduced, constraining ill-posed geometry solution for definite surface formation. Then, we propose an ambiguity indication module that unleashes the self-indication potential to identify and further guide correcting underconstrained reconstructions. Extensive experiments demonstrate our superior performance in surface reconstruction compared to existing methods across various challenging scenarios, while excelling in broad compatibility. Our code will be made open-source upon acceptance.
+
+#### Cite this Paper
+
+* * *
+
+BibTeX
+
+`@InProceedings{pmlr-v306-li26iz, title = {Revisiting Photometric Ambiguity for Accurate {G}aussian-Splatting Surface Reconstruction}, author = {Li, Jiahe and Zhang, Jiawei and Bai, Xiao and Zheng, Jin and Yu, Xiaohan and Gu, Lin and Lee, Gim Hee}, booktitle = {Proceedings of the 43rd International Conference on Machine Learning}, pages = {72237--72259}, year = {2026}, editor = {Zhang, Tong and Dudik, Miroslav and Jaggi, Martin and Agarwal, Alekh and Li, Sharon and Schuurmans, Dale and Zhu, Jerry and Berkenkamp, Felix and Dong, Hanze and Bietti, Alberto}, volume = {306}, series = {Proceedings of Machine Learning Research}, month = {06--11 Jul}, publisher = {PMLR}, pdf = {https://raw.githubusercontent.com/mlresearch/v306/main/assets/li26iz/li26iz.pdf}, url = {https://proceedings.mlr.press/v306/li26iz.html}, abstract = {Surface reconstruction with differentiable rendering has achieved impressive performance in recent years, yet the pervasive photometric ambiguities have strictly bottlenecked existing approaches. This paper presents AmbiSuR, a framework that explores an intrinsic solution upon Gaussian Splatting for the photometric ambiguity-robust surface reconstruction with high performance. Started by revisiting the foundation, our investigation uncovers two built-in primitive-wise ambiguities in representation, while revealing an intrinsic potential for ambiguity self-indication in Gaussian Splatting. Stemming from these, a photometric disambiguation is first introduced, constraining ill-posed geometry solution for definite surface formation. Then, we propose an ambiguity indication module that unleashes the self-indication potential to identify and further guide correcting underconstrained reconstructions. Extensive experiments demonstrate our superior performance in surface reconstruction compared to existing methods across various challenging scenarios, while excelling in broad compatibility. Our code will be made open-source upon acceptance.} } `
+
+Endnote
+
+`%0 Conference Paper %T Revisiting Photometric Ambiguity for Accurate Gaussian-Splatting Surface Reconstruction %A Jiahe Li %A Jiawei Zhang %A Xiao Bai %A Jin Zheng %A Xiaohan Yu %A Lin Gu %A Gim Hee Lee %B Proceedings of the 43rd International Conference on Machine Learning %C Proceedings of Machine Learning Research %D 2026 %E Tong Zhang %E Miroslav Dudik %E Martin Jaggi %E Alekh Agarwal %E Sharon Li %E Dale Schuurmans %E Jerry Zhu %E Felix Berkenkamp %E Hanze Dong %E Alberto Bietti %F pmlr-v306-li26iz %I PMLR %P 72237--72259 %U https://proceedings.mlr.press/v306/li26iz.html %V 306 %X Surface reconstruction with differentiable rendering has achieved impressive performance in recent years, yet the pervasive photometric ambiguities have strictly bottlenecked existing approaches. This paper presents AmbiSuR, a framework that explores an intrinsic solution upon Gaussian Splatting for the photometric ambiguity-robust surface reconstruction with high performance. Started by revisiting the foundation, our investigation uncovers two built-in primitive-wise ambiguities in representation, while revealing an intrinsic potential for ambiguity self-indication in Gaussian Splatting. Stemming from these, a photometric disambiguation is first introduced, constraining ill-posed geometry solution for definite surface formation. Then, we propose an ambiguity indication module that unleashes the self-indication potential to identify and further guide correcting underconstrained reconstructions. Extensive experiments demonstrate our superior performance in surface reconstruction compared to existing methods across various challenging scenarios, while excelling in broad compatibility. Our code will be made open-source upon acceptance. `
+
+APA
+
+`Li, J., Zhang, J., Bai, X., Zheng, J., Yu, X., Gu, L. & Lee, G.H.. (2026). Revisiting Photometric Ambiguity for Accurate Gaussian-Splatting Surface Reconstruction. Proceedings of the 43rd International Conference on Machine Learning, in Proceedings of Machine Learning Research 306:72237-72259 Available from https://proceedings.mlr.press/v306/li26iz.html. `
+
+#### Related Material
+
+  * Download PDF
+  * OpenReview
+  * Software
+
+This site last compiled Tue, 29 Sep 2026 07:02:12 +0000--------------------------------------------------------------------------------
+SGSST: Scaling Gaussian Splatting Style Transfer (https://openaccess.thecvf.com/content/CVPR2025/papers/Galerne_SGSST_Scaling_Gaussian_Splatting_Style_Transfer_CVPR_2025_paper.pdf)
+citeturn36search11 [wordlim: 200] Crawled: 10 months ago; **Reproducibility**  All our experiments have been conducted using the same SOS loss and training procedure, making our approach parameterless and fully reproducible. ... ¹ https://github.com/graphdeco-inria/gaussian-splatting; https://github.com/bgalerne/scaling-painting_style_transfer
+
+**Number of scales**  \(n_s\) is set automatically to use all available scales, the coarsest resolution having sides larger than 256 for VGG19 statistics to be reliable.
+
+**Reproducibility**  All our experiments have been conducted using the same SOS loss and training procedure, making our approach parameterless and fully reproducible. Our public PyTorch implementation is based on the public source codes¹ for 3DGS [20] training and SPST [10]. Our code and videos of our results are available online².
+
+¹ https://github.com/graphdeco-inria/gaussian-splatting; https://github.com/bgalerne/scaling-painting_style_transfer  
+² Code: https://github.com/JianlingWANG2021/SGSST; Videos: https://www.idpoisson.fr/galerne/sgsst/
+
+## 5. Experiments
+
+### 5.1. Ultra-high resolution results
+
+Our multiscale stylization algorithm is able to transfer style details at UHR for both the content image resolution and the style image resolution. This results in unprecedented rich style transfer, as illustrated by Figure 3. As can be observed, minimizing the SOS loss indeed allows to decrease the style transfer loss for all scales (Figure 3 right). --------------------------------------------------------------------------------
+Reducing Closeup Frequency Artifacts for Level-of-Detail 3D Gaussian Splatting (https://openaccess.thecvf.com/content/CVPR2026W/3DMV/papers/Zhou_Reducing_Closeup_Frequency_Artifacts_for_Level-of-Detail_3D_Gaussian_Splatting_CVPRW_2026_paper.pdf)
+citeturn36search12 [wordlim: 200] Published: 4 months ago; Thin Gaussian aliasing is ... The upper loop is the training image set, at approximately ... tance to support reproducibility and future benchmarking. ... vanilla Octree-GS (baseline) and Mip-Splatting.
+starting from a low of 15 meters up to a high of 50 meters.
+for evaluating anti-aliasing methods under realistic deploy-
+ment conditions.
+This dataset will be made publicly available upon accep-
+tance to support reproducibility and future benchmarking.
+4.2. Evaluation of Training Methods
+The design of the evaluation set allows methods to test
+close-up anti-aliasing methods along a gradient of images
+as the viewpoint moves higher and closer towards the dis-
+tribution of training views. Since all test images are ver-
+tical shots downward, this allows a direct comparison and
+illustrates the transition between eliminating thin Gaus-
+sian aliasing in close-up views and refining edges in high-
+altitude views.
+Existing datasets of large-scale scenes do not have suf-
+ficiently varied altitudes in their evaluation dataset, and in-
+stead contain mostly similarly distributed train and test im-
+ages. Hence, they are not suitable for testing close-up alias-
+ing resulting from out-of-distribution renders. In contrast,
+our new dataset provides evaluation images with varying
+altitudes, and is significantly out-of-distribution from the
+training set altitude.
+The altitude shift in our dataset is particularly challeng-
+ing because it forces extrapolation both in viewpoint and in
+effective sampling rate, unlike standard interpolation bench-
+marks where test views lie between training poses. As alti-
+tude decreases, projected Gaussian footprints increase non-
+linearly, amplifying the effects of any subpixel structures
+learned during training. This makes the dataset especially
+sensitive to thin Gaussian aliasing and therefore well-suited
+We compare our proposed minimum size regularizer against
+vanilla Octree-GS (baseline) and Mip-Splatting. We also
+evaluate our two training framework variants, two-part and
+two-phase. We train all methods on our novel dataset (4.1).
+Results from selected renders can be found in Fig. 1.
+375--------------------------------------------------------------------------------
+AnchorSplat: Feed-Forward 3D Gaussian Splatting With 3D Geometric Priors (https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_AnchorSplat_Feed-Forward_3D_Gaussian_Splatting_With_3D_Geometric_Priors_CVPR_2026_paper.pdf)
+citeturn36search13 [wordlim: 200] Published: 4 months ago; Training Objective ... train the Gaussian Decoder to predict Gaussians grown from ... models, and videos to facilitate reproducibility. ... Splatting [44], and AnySplat [14] to evaluate reconstruction
+l
+m
+j
+4
+where ˆFj := F p(j),
+p(j) =
+,
+j = 1, . . . , 4N, i.e.,
+each anchor feature Fi is shared across its four correspond-
+ing Gaussians. The ﬁnal updated Gaussian attributes are
+ˆGj = Gj + δGj.
+(12)
+3.4. Training Objective
+Our model is trained in two stages. In the ﬁrst stage, we
+train the Gaussian Decoder to predict Gaussians grown from
+the anchors provided by the Anchor Predictor module. The
+training loss is a combination of a rendering loss `I, a depth
+loss `D, and regularization terms on the Gaussian opacity
+`↵and volume `s:
+V
+X
+V
+X
+`I(ˆIi, Ii) + λD
+`1( ˆDi, Di)+
+LGSdec =λI
+i=1
+i=1
+λ↵`↵(↵j) + λs`s(sj),
+`I(ˆIi, Ii) =`1(ˆIi, Ii) + γSSIM(1 −SSIM(ˆIi, Ii))+
+γLPIPSLPIPS(ˆIi, Ii)
+4N
+X
+`↵(↵j) = 1
+(1 −↵j) ,
+4N
+with 512 channels, and a single-layer MLP to reﬁne existing
+Gaussian attributes. We will release our code, pre-trained
+models, and videos to facilitate reproducibility.
+Dataset. To evaluate our method comprehensively, we con-
+duct experiments on the ScanNet++ V2 dataset [43] for gen-
+formed in bﬂoat16 precision. The model is optimized us-
+ing AdamW [24], and training is conducted on 64 Ascend
+910B3 (64GB) NPUs. In the ﬁrst stage, the Gaussian De-
+coder with 84M parameters is trained for 5k steps, followed
+by 5k steps for the Gaussian Reﬁner with 31M parameters.
+In detail, the Spherical Harmonics degree is set to 0. The
+Gaussian Decoder consists of 16 attention blocks with 640
+channels and 2 single-layer MLP blocks to predict Gaus-
+sian attributes. The Gaussian Reﬁner comprises 1 atten-
+tion block with 512 channels, 4 serialized attention blocks
+In the following results, AnchorSplat? represents our An-
+chorSplat without using the Gaussian Reﬁner. As shown
+in Tab. 1, we compare AnchorSplat with 3DGS [17], Mip-
+Splatting [44], and AnySplat [14] to evaluate reconstruction
+performance. We choose these baselines for the following
+reasons. Many pixel-aligned feed-forward methods, as dis-
+cussed earlier, are constrained by the number and resolution
+of input views, making them less suitable for scene-level re-
+construction. We therefore adopt optimization-based meth-
+ods as baselines in this setting. Among voxel-aligned ap-
+proaches, AnySplat is one of the few open-source state-of-
+the-art methods, making it a particularly relevant compar-
+ison target. The results show that the optimization-based
+methods (3DGS and Mip-Splatting) achieve high-quality
+reconstructions on training views but generalize poorly to
+novel views, often exhibiting Gaussian artifacts, shadows,
+and ﬂoaters.
+AnySplat ﬁrst predicts pixel-aligned Gaus-
+sians and then prunes redundant ones via differentiable vox-
+elization, but it still requires a large number of Gaussians
+18928--------------------------------------------------------------------------------
+Demonstration Synthesis from a Single Scan via Gaussian Splatting for Visuomotor Policy Learning (https://arxiv.org/abs/2609.21112)
+citeturn36academia14 [wordlim: 200] Published: last month; Title: Demonstration Synthesis from a Single Scan via Gaussian Splatting for Visuomotor Policy Learning ... Training a visuomotor policy calls for abundant demonstrations that closely match the target environment, yet collecting them anew remains expensive. ... To evaluate the downstream utility of the synthesized demonstrations, we implement an end-to-end scan-to-deployment workflow in two setups: a simulated scene that stands in for the real world to enable reproducibility, and a real-world workspace with a physical UR10e robot.
+Title: Demonstration Synthesis from a Single Scan via Gaussian Splatting for Visuomotor Policy Learning
+Authors: Beichen Wang, Yuen-Hei Yeung, V. R. Sridhar Devarakonda, Xuesu Xiao
+Date: Thu Sep 17 21:52:01 2026
+
+Training a visuomotor policy calls for abundant demonstrations that closely match the target environment, yet collecting them anew remains expensive. Existing demonstration synthesis methods reduce this cost but remain constrained by high manual effort, limited visual fidelity, or heavy reliance on physics simulators. This paper introduces GaussianFactory, a high-fidelity data engine that mass-produces demonstrations with a single video scan as its only human input and no physics engine in the generation loop. Specifically, GaussianFactory reconstructs the scene as an editable 3D Gaussian Splatting (3DGS) replica and samples from the object-combination tasks the scene affords. For each task, it plans grasps and trajectories purely kinematically on the geometric reconstruction, rendering photorealistic demonstrations that visually match the target environment. Physical dynamics enter the pipeline only where contact force interactions dictate the outcome---during grasp formation, via a learned contact model pretrained once on an interaction dataset. To evaluate the downstream utility of the synthesized demonstrations, we implement an end-to-end scan-to-deployment workflow in two setups: a simulated scene that stands in for the real world to enable reproducibility, and a real-world workspace with a physical UR10e robot. In each setup, a standard diffusion policy trained solely on the synthesized demonstrations achieves 95.1% and 84.2% success rates, respectively.--------------------------------------------------------------------------------
+DepthSplat: Connecting Gaussian Splatting and Depth (https://openaccess.thecvf.com/content/CVPR2025/papers/Xu_DepthSplat_Connecting_Gaussian_Splatting_and_Depth_CVPR_2025_paper.pdf)
+citeturn36search15 [wordlim: 200] Our code and training scripts are available at github.com/cvg/depthsplat to ease reproducibility. ... In this section, we study the properties of our key components on the TartanAir dataset (for depth) and RealEstate10K dataset (for view synthesis with Gaussian splatting).
+Training Details. For depth experiments on ScanNet [14], we train our depth model on 4× GH200 GPUs for 100K iterations with a total batch size of 32. For the ablation experiments on depth task, we mainly use synthetic datasets TartanAir [58] and VKITTI2 [5] for training since they provide high-quality ground truth depths. For Gaussian splatting experiments, we consider both low-resolution and high-resolution images. In particular, for comparisons with previous methods [7, 9], we mainly use 256 × 256 resolution RealEstate10K [82] and 256 × 448 resolution DL3DV [32] datasets. We also report high-resolution (512 × 960) results on RealEstate10K and DL3DV datasets for qualitative evaluations. For experiments on the 256 × 256 RealEstate10K dataset, we train our model on 4× GH200 GPUs for 150K iterations with a total batch size of 32, which takes 1 day for the small model and 2 days for the large model. For experiments on the 256 × 448 DL3DV [32] dataset, we fine-tune our RealEstate10K pre-trained model on 4× GH200 GPUs for 100K iterations with a total batch size of 4, where the number of input views is randomly sampled from 2 to 6. We evaluate the model’s performance on different number of input views (2, 4, 6). For high-resolution results, we fine-tune our low-resolution pre-trained models on high-resolution images. More training details are provided in the appendix. Our code and training scripts are available at github.com/cvg/depthsplat to ease reproducibility.
+
+4.1. Model Variants
+
+We first study several different model variants for both depth estimation and view synthesis tasks. In particular, we explore different monocular backbones [70] (ViT-S, ViT-B, ViT-L) and different multi-view models (1-scale and 2-scale). We conduct depth experiments on the large-scale TartanAir [58] synthetic dataset, which features both indoor and outdoor scenes and has perfect ground truth depth. The Gaussian splatting experiments are conducted on the standard RealEstate10K [82] dataset. Following community standards, we report the depth evaluation metrics [20] of
+
+Table 2. Ablations. We evaluate the contribution of the monocular feature branch and the cost volume branch (1st group of experiments), as well as different monocular features (2nd group of experiments). Our results indicate that the monocular feature and cost volume are complementary, with large performance drops when removing either one. The pre-trained Depth Anything V2 model weights achieve the best view synthesis results.
+
+--------------------------------------------------------------------------------
+Faster-GS: Analyzing and Improving Gaussian Splatting Optimization (https://openaccess.thecvf.com/content/CVPR2026/supplemental/Hahlbohm_Faster-GS_Analyzing_and_CVPR_2026_supplemental.pdf)
+citeturn36search16 [wordlim: 200] Published: 7 months ago; evaluate the model at the training resolution (1×) as well as at half ... (SGLD) updates, they add noise to the Gaussian means after ... adjusted the official Mip-Splatting implementation to use ... For the sake of reproducibility, we provide the target
+These advantages
+motivate us to integrate an optimized version into our Faster-
+GS framework. Specifically, we fuse the noise injection step
+into a single CUDA kernel, as we found that it is a main
+bottleneck w.r.t. training time. In Tab. 9, we compare our op-
+timized version with the original implementation [7] on the
+nine scenes from the Mip-NeRF360 dataset [1]. Note that we
+adjusted the original implementation of 3DGS-MCMC [7] to
+use the fused SSIM implementation from Taming-3DGS [11]
+for fair comparison.
+result in more stable optimization behavior as indicated by
+the average number of Gaussians that is more similar to the
+baseline. Specifically, in the original implementation as well
+as in Faster-GS with only the 2D Mip filter enabled, we
+find that the optimization sometimes creates additional tiny
+and elongated, i.e., degenerate Gaussians, which slightly re-
+duce overall quality of the reconstruction. Most importantly,
+however, we find that our optimized implementation of the
+two extensions from Yu et al. [16] enables fully anti-aliased
+training and rendering inside our framework. Note that we
+adjusted the official Mip-Splatting implementation to use
+the fused SSIM implementation from Taming-3DGS [11]
+and the updated opacity learning rate for fair comparison
+(cf. Sec. 4.1). We further validate the effectiveness of the
+implemented anti-aliasing approach in Tab. 8 and Fig. 3.
+For the sake of reproducibility, we provide the target--------------------------------------------------------------------------------
+DSD-GS: Dynamic-Static Decomposition of Gaussian Splatting for Efficient and High-Fidelity Dynamic Scene Reconstruction (https://arxiv.org/abs/2605.30863)
+citeturn36academia17 [wordlim: 200] Published: 4 months ago; While recent decomposition-based approaches address this issue, they still struggle with degraded reconstruction quality and prolonged training time.To mitigate these limitations, we propose a novel dynamic reconstruction framework built upon an efficient static-dynamic decomposition strategy using a Feed-Forward Gaussian Splatting encoder and an optical flow model. ... Furthermore, our decomposition strategy eliminates the need for COLMAP preprocessing and enables deterministic initialization, thereby enhancing both efficiency and reproducibility.
+Title: DSD-GS: Dynamic-Static Decomposition of Gaussian Splatting for Efficient and High-Fidelity Dynamic Scene Reconstruction
+Authors: Youngtae Han, Sung-hwan Han, Youngmin Yi
+Date: Fri May 29 05:38:00 2026
+
+Dynamic scene reconstruction and novel view synthesis are fundamental to next-generation visual intelligence applications such as virtual reality, robotics, and digital twins. However, high-fidelity reconstruction of complex, time-varying scenes from arbitrary viewpoints remains a significant challenge. Existing dynamic 3DGS methods suffer from computational inefficiency, since they model all Gaussians as dynamic components. While recent decomposition-based approaches address this issue, they still struggle with degraded reconstruction quality and prolonged training time. To mitigate these limitations, we propose a novel dynamic reconstruction framework built upon an efficient static-dynamic decomposition strategy using a Feed-Forward Gaussian Splatting encoder and an optical flow model. By eliminating redundant computations on static regions, our method achieves state-of-the-art performance, outperforming existing baselines across rendering quality, training and rendering speed, and storage efficiency. Notably, on the Neural 3D dataset, our framework requires only 10 minutes for training and achieves a rendering speed of over 700 FPS on a single NVIDIA RTX 5090 GPU at resolution of 1352x1014. Furthermore, our decomposition strategy eliminates the need for COLMAP preprocessing and enables deterministic initialization, thereby enhancing both efficiency and reproducibility.--------------------------------------------------------------------------------
+ICCV 2023 Open Access Repository (https://openaccess.thecvf.com/content/ICCV2023/html/Ruan_Towards_Viewpoint-Invariant_Visual_Recognition_via_Adversarial_Training_ICCV_2023_paper.html)
+citeturn36search1 [wordlim: 200] Crawled: 4 months ago; As most models process images in the perspective view, it is challenging to impose invariance to 3D viewpoint changes based only on 2D inputs.Motivated by the success of adversarial training in promoting model robustness, we propose Viewpoint-Invariant Adversarial Training (VIAT) to improve viewpoint robustness of common image classifiers.By regarding viewpoint transformation as an attack, VIAT is formulated as a minimax optimization problem, where the inner maximization characterizes diverse adversarial viewpoints by learning a Gaussian mixture distribution based on a new attack GMVFool, while the outer minimization trains a viewpoint-invariant classifier by minimizing the expected loss over the worst-case adversarial viewpoint distributions.
+As most models process images in the perspective view, it is challenging to impose invariance to 3D viewpoint changes based only on 2D inputs. Motivated by the success of adversarial training in promoting model robustness, we propose Viewpoint-Invariant Adversarial Training (VIAT) to improve viewpoint robustness of common image classifiers. By regarding viewpoint transformation as an attack, VIAT is formulated as a minimax optimization problem, where the inner maximization characterizes diverse adversarial viewpoints by learning a Gaussian mixture distribution based on a new attack GMVFool, while the outer minimization trains a viewpoint-invariant classifier by minimizing the expected loss over the worst-case adversarial viewpoint distributions. To further improve the generalization performance, a distribution sharing strategy is introduced leveraging the transferability of adversarial viewpoints across objects. Experiments validate the effectiveness of VIAT in improving the viewpoint robustness of various image classifiers based on the diversity of adversarial viewpoints generated by GMVFool.
+
+Related Material
+    [pdf] [supp] [arXiv]
+
+[bibtex]
+
+@InProceedings{Ruan_2023_ICCV, author = {Ruan, Shouwei and Dong, Yinpeng and Su, Hang and Peng, Jianteng and Chen, Ning and Wei, Xingxing}, title = {Towards Viewpoint-Invariant Visual Recognition via Adversarial Training}, booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)}, month = {October}, year = {2023}, pages = {4709-4719} }--------------------------------------------------------------------------------
+Street Gaussians: Modeling Dynamic Urban Scenes with Gaussian Splatting (https://arxiv.org/abs/2401.01339)
+citeturn36academia18 [wordlim: 200] Published: 2.8 years ago; Title: Street Gaussians: Modeling Dynamic Urban Scenes with Gaussian Splatting ... However, significant limitations are their slow training and rendering speed. ... The code will be released to ensure reproducibility.
+--------------------------------------------------------------------------------
+ICCV 2025 Open Access Repository (https://openaccess.thecvf.com/content/ICCV2025/html/Ruan_AdvDreamer_Unveils_Are_Vision-Language_Models_Truly_Ready_for_Real-World_3D_ICCV_2025_paper.html)
+citeturn36search2 [wordlim: 200] Crawled: 4 months ago; To systematically evaluate VLMs' robustness to real-world 3D variations, we propose AdvDreamer, the first framework capable of generating physically reproducible Adversarial 3D Transformation (Adv-3DT) samples from single-view observations. ... Secondly, to ensure the visual quality of worst-case Adv-3DT samples, we propose Naturalness Reward Model that provides continuous naturalness regularization during adversarial optimization, effectively preventing convergence to hallucinated or unnatural elements.
+--------------------------------------------------------------------------------
+CVPR 2023 Open Access Repository (https://openaccess.thecvf.com/CVPR2023?day=2023-06-21)
+citeturn36search3 [wordlim: 200] Published: 3.3 years ago; Crawled: 4 months ago; @InProceedings{Huang_2023_CVPR, author = {Huang, Zhuo and Zhu, Miaoxi and Xia, Xiaobo and Shen, Li and Yu, Jun and Gong, Chen and Han, Bo and Du, Bo and Liu, Tongliang}, title = {Robust Generalization Against Photon-Limited Corruptions via Worst-Case Sharpness Minimization}, booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, month = {June}, year = {2023}, pages = {16175-16185} } ... @InProceedings{Chen_2023_CVPR, author = {Chen, Dengsheng and Hu, Jie and Tan, Vince Junkai and Wei, Xiaoming and Wu, Enhua}, title = {Elastic Aggregation for Federated Optimization}, booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, month = {June}, year = {2023}, pages = {12187-12197} }
+--------------------------------------------------------------------------------
+CVPR 2023 Open Access Repository (https://openaccess.thecvf.com/CVPR2023?day=2023-06-22)
+citeturn36search4 [wordlim: 200] Published: 3.3 years ago; Crawled: 4 months ago; @InProceedings{Wang_2023_CVPR, author = {Wang, Fan and Kong, Adams Wai-Kin}, title = {A Practical Upper Bound for the Worst-Case Attribution Deviations}, booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, month = {June}, year = {2023}, pages = {24616-24625} } ... @InProceedings{Yao_2023_CVPR, author = {Yao, Yushi and Ye, Chang and He, Junfeng and Elsayed, Gamaleldin F.}, title = {Teacher-Generated Spatial-Attention Labels Boost Robustness and Accuracy of Contrastive Models}, booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, month = {June}, year = {2023}, pages = {23282-23291} } ... @InProceedings{Lu_2023_CVPR, author = {Lu, Yifan and Ma, Jiayi and Fang, Leyuan and Tian, Xin and Jiang, Junjun}, title = {Robust and Scalable Gaussian Process Regression and Its Applications}, booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, month = {June}, year = {2023}, pages = {21950-21959} }
+--------------------------------------------------------------------------------
+CVPR 2022 Open Access Repository (https://openaccess.thecvf.com/CVPR2022?day=all)
+citeturn36search5 [wordlim: 200] Crawled: 4 months ago; Unleashing Potential of Unsupervised Pre-Training With Intra-Identity Regularization for Person Re-Identification ... Unsupervised Vision-and-Language Pre-Training via Retrieval-Based Multi-Granular Alignment
+--------------------------------------------------------------------------------
+CVPR 2023 Open Access Repository (https://openaccess.thecvf.com/CVPR2023?day=all)
+citeturn36search6 [wordlim: 200] Published: 3.4 years ago; Crawled: 4 months ago; @InProceedings{Khwanmuang_2023_CVPR, author = {Khwanmuang, Sasikarn and Phongthawee, Pakkapon and Sangkloy, Patsorn and Suwajanakorn, Supasorn}, title = {StyleGAN Salon: Multi-View Latent Optimization for Pose-Invariant Hairstyle Transfer}, booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, month = {June}, year = {2023}, pages = {8609-8618} }
+--------------------------------------------------------------------------------
+CVPR 2022 Open Access Repository (https://openaccess.thecvf.com/CVPR2022?day=2022-06-22)
+citeturn36search7 [wordlim: 200] Published: 4.3 years ago; Crawled: 4 months ago; @InProceedings{Wortsman_2022_CVPR, author = {Wortsman, Mitchell and Ilharco, Gabriel and Kim, Jong Wook and Li, Mike and Kornblith, Simon and Roelofs, Rebecca and Lopes, Raphael Gontijo and Hajishirzi, Hannaneh and Farhadi, Ali and Namkoong, Hongseok and Schmidt, Ludwig}, title = {Robust Fine-Tuning of Zero-Shot Models}, booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, month = {June}, year = {2022}, pages = {7959-7971} }
+--------------------------------------------------------------------------------
+CVPR 2020 Open Access Repository (https://openaccess.thecvf.com/CVPR2020?day=2020-06-16)
+citeturn36search8 [wordlim: 200] Published: 6.4 years ago; Crawled: 4 months ago; @InProceedings{Zheng_2020_CVPR, ... Adversarial Texture Optimization From RGB-D Scans
+

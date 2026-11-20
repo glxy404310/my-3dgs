@@ -1,0 +1,14 @@
+{
+  "call_number": 45,
+  "purpose": "cross-sh-primary-overlap",
+  "timestamp": "2026-10-22T19:55:47.930Z",
+  "agent_id": "01a16507-ae5b-7571-9db0-917fd73746eb",
+  "agent_path": "/root/artifact_posthoc_primary_overlap",
+  "model": "inherited-primary",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "response_recovered_verbatim": true,
+  "response_session_log": "/mnt/c/Users/Administrator/.codex/sessions/2026/10/23/rollout-2026-10-23T03-12-44-01a16507-ae5b-7571-9db0-917fd73746eb.jsonl"
+}

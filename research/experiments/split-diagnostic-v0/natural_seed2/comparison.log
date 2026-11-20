@@ -1,0 +1,82 @@
+[
+  {
+    "variant": "original_split",
+    "step": 0,
+    "views": 32,
+    "delta_l1": 0.0004239223198965192,
+    "delta_psnr": -0.08093529939651489,
+    "delta_ssim": -0.0021338947117328644,
+    "fraction_views_l1_worse": 0.84375,
+    "delta_l1_view_bootstrap_ci95": [
+      0.00023789760889485477,
+      0.0006271917576668783
+    ],
+    "max_view_delta_l1": 0.0022553838789463043,
+    "min_view_delta_l1": -0.0007718987762928009,
+    "render_change_l1": 0.00318001115192601
+  },
+  {
+    "variant": "original_split",
+    "step": 1,
+    "views": 32,
+    "delta_l1": 0.00040744966827332973,
+    "delta_psnr": -0.07784074544906616,
+    "delta_ssim": -0.002100268378853798,
+    "fraction_views_l1_worse": 0.84375,
+    "delta_l1_view_bootstrap_ci95": [
+      0.000225676954141818,
+      0.0006035498343408107
+    ],
+    "max_view_delta_l1": 0.0021724961698055267,
+    "min_view_delta_l1": -0.0008550398051738739,
+    "render_change_l1": 0.004003679292509332
+  },
+  {
+    "variant": "original_split",
+    "step": 5,
+    "views": 32,
+    "delta_l1": 0.00037348270416259766,
+    "delta_psnr": -0.06888234615325928,
+    "delta_ssim": -0.0018744263797998428,
+    "fraction_views_l1_worse": 0.84375,
+    "delta_l1_view_bootstrap_ci95": [
+      0.00020900414092466234,
+      0.0005445592280011623
+    ],
+    "max_view_delta_l1": 0.0018336772918701172,
+    "min_view_delta_l1": -0.0008080974221229553,
+    "render_change_l1": 0.007385050965240225
+  },
+  {
+    "variant": "original_split",
+    "step": 20,
+    "views": 32,
+    "delta_l1": 0.00044878781773149967,
+    "delta_psnr": -0.0644158124923706,
+    "delta_ssim": -0.0012255534529685974,
+    "fraction_views_l1_worse": 0.84375,
+    "delta_l1_view_bootstrap_ci95": [
+      0.00018949883233290165,
+      0.000792847416596487
+    ],
+    "max_view_delta_l1": 0.004312705248594284,
+    "min_view_delta_l1": -0.0009101554751396179,
+    "render_change_l1": 0.013046571082668379
+  },
+  {
+    "variant": "original_split",
+    "step": 100,
+    "views": 32,
+    "delta_l1": 5.2494986448436975e-05,
+    "delta_psnr": -0.018191218376159668,
+    "delta_ssim": -0.0005161017179489136,
+    "fraction_views_l1_worse": 0.59375,
+    "delta_l1_view_bootstrap_ci95": [
+      -8.936169469961896e-05,
+      0.0001770485017914325
+    ],
+    "max_view_delta_l1": 0.0006423704326152802,
+    "min_view_delta_l1": -0.0013224296271800995,
+    "render_change_l1": 0.01762282836716622
+  }
+]

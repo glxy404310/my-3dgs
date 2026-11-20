@@ -1,75 +1,64 @@
-# 3DGS 分裂机制研究项目
+# 3DGS 分裂机制研究
 
-更新日期：2026-10-21
+以官方 3D Gaussian Splatting 为基线，研究高斯分裂、增密与压缩中的质量和计算开销。
 
-## 项目目标
+## 当前状态
 
-以原始 3D Gaussian Splatting（3DGS）为开发基线，研究高斯分裂机制。当前先判断分裂是否造成可重复的真实误差和恢复负担，再决定研究“更稳定的分裂初始化”还是“分裂后的父子优化交接”。
+截至最新研究记录（2026-10-23），基线复现和多轮诊断已经完成，尚无通过验证的论文新方法。既有 FAIL / INCONCLUSIVE / STOP 结论保留。
 
-## 当前结论
+最新记录为单个 Truck 3501—3600 诊断窗口的授权与准备状态；当时研究处于暂停，窗口尚未执行。本次 2026-11-20 整理仅涉及文件和版本管理，没有启动训练或更新实验结论。
 
-现阶段最重要的事情不是继续扩展方法，而是完成一次受控分裂诊断：固定检查点、相机、父高斯与随机采样，只执行一次分裂，测量分裂前后的真值误差，以及随后固定步数内的恢复曲线。
+- [最新交接与授权范围](idea-stage/IDEA_REPORT.md)
+- [研究结果汇总](research/findings.md)
+- [历史实验计划与下一步入口](research/experiments/NEXT_EXPERIMENT.md)
+- [实验产物索引](MANIFEST.md)
+- [本次整理记录与上传范围](docs/PROJECT_CLEANUP_20261120.md)
 
-- 如果误差主要发生在分裂瞬间，优先研究分裂初始化。
-- 如果稳定初始化后仍存在明显恢复负担，再研究父子优化交接。
-- 如果没有稳定的真实误差或恢复负担，停止这两条路线，转查其他分裂问题。
+## 主要结果入口
 
-## 已有成果
-
-### 1. 基线复现已经跑通
-
-在 Windows 11 + WSL2 Ubuntu 22.04、RTX 5070 12GB 环境中完成官方 3DGS 的安装、编译、truck 训练、32 个测试视角渲染与评估。
-
-| truck 实验 | PSNR ↑ | SSIM ↑ | LPIPS ↓ |
-|---|---:|---:|---:|
-| r1，7000 次 | 23.9806 | 0.8529 | 0.1953 |
-| r1，30000 次 | 25.4636 | 0.8845 | 0.1421 |
-
-详细记录见 [第一周基线复现](experiments/baseline/3DGS_第一周实验记录_2026-09-30.md)。这些结果证明环境和基线流程曾经跑通，不代表当前 D 盘下已经具备完整可运行仓库与检查点。
-
-### 2. 文献与方向地图已经形成
-
-已将分裂研究整理为六类：分裂对象与时机、子项数量与位置、分裂初始化、父子优化交接、生长节奏、LOD。13 篇直接相关核心文献已经形成结构化索引。
-
-入口：
-
-- [分裂机制路线图](research/landscape/SPLITTING_ROADMAP.md)
-- [详细文献与验证边界](research/landscape/SPLITTING_ROADMAP_NOTES.md)
-- [结构化文献索引](research/landscape/SPLITTING_ROADMAP_SOURCES.json)
-
-### 3. 已有两个候选方向
-
-- 候选 A：减少分裂瞬间对已重建画面的破坏。
-- 候选 B：让子高斯更快接替父高斯。
-
-父子交接已有完整的机制草案、对照组和停止条件，但还没有实现或 GPU 证据。ResGS 已经做过“保留父项并增加细子项”，BOGausS 已经涉及优化状态继承，因此这些动作本身不能作为创新点。
-
-## 下一步唯一主线
-
-执行 [受控分裂诊断实验 v0](research/experiments/NEXT_EXPERIMENT.md)。用于恢复实验的 truck 7000 步 checkpoint 已于 2026-10-21 生成并通过加载校验；下一项工作是实现“只执行一次 split”的诊断入口。在它完成以前，不同时开发 LOD、新分裂网络或完整父子交接模块。
-
-## 目录说明
-
-| 目录 | 内容 |
+| 内容 | 记录 |
 |---|---|
-| `datasets/` | Windows 侧数据；当前包含 desk 原始图片 |
-| `gaussian-splatting/` | Windows 侧局部源码快照；只有部分文件，不是完整训练仓库 |
-| `experiments/baseline/` | 已完成的基线复现记录 |
-| `research/landscape/` | 当前文献地图、方向总览与结构化证据 |
-| `research/candidates/` | 尚待实验证明的候选方案 |
-| `research/experiments/` | 下一步实验计划与以后产生的结果 |
-| `research/archive/` | 时间戳副本和研究过程记录，只作追溯 |
-| `docs/papers/` | 原始 3DGS 论文、提取文本和中文翻译 |
-| `docs/learning/` | 源码学习计划 |
-| `scripts/document-generation/` | 生成学习文档和翻译文档的脚本 |
-| `.aris/` | 自动研究流程日志；其中 `MANIFEST.md` 是整理前的历史产物清单 |
+| 文献地图与分裂机制分类 | [SPLITTING_ROADMAP](research/landscape/SPLITTING_ROADMAP.md) |
+| Truck ADC 频率对照 | [FINDINGS](research/experiments/adc-frequency-gate-v0/FINDINGS.md) |
+| Train 固定参数复现 | [TRAIN_REPLICATION_FINDINGS](research/experiments/adc-frequency-gate-v0/TRAIN_REPLICATION_FINDINGS.md) |
+| 冻结模型压缩与视觉检查 | [FINDINGS](research/experiments/truck30k-frozen-compression-v0/FINDINGS.md) |
+| PUP 无恢复训练剪枝对照 | [FINDINGS](research/experiments/pup-frozen-baseline-v0/FINDINGS.md) |
+| 8-bit SH 存储控制 | [FINDINGS](research/experiments/direct-sh8-storage-control-v0/FINDINGS.md) |
+| Speedy 冻结渲染控制 | [FINDINGS](research/experiments/speedy-frozen-kernel-control-v0/FINDINGS.md) |
+| 单窗口诊断准备 | [README](research/experiments/stationary-adc-window-v0/preparation-v1/README.md) |
 
-## 当前环境边界
+上述条目包含已知方法对照和未通过的候选，具体有效范围以各自报告为准。
 
-- 实际跑通过的完整仓库记录在 WSL：`/home/administrator/projects/gaussian-splatting`，提交 `54c035f...`。
-- 该提交含后续更新，不应直接称为 2023 年原始发布版。
-- 可恢复的 truck 7000 步 checkpoint：`output/truck_diag_ckpt7000_20261021/chkpnt7000.pth`；训练与完整性记录见 [RUN.md](research/experiments/truck-diag-ckpt7000-20261021/RUN.md)。
-- 当前 Windows 项目中的 `gaussian-splatting/` 只有局部源码。
-- WSL中存在`desk_30000_r4`的7k、15k和30k模型及7k、15k checkpoint，但其数据处理过程和指标尚未在本轮核验，暂不作为主实验依据。
-- 新分裂方法尚未实现，也没有新实验结果。
+## 目录
 
+| 路径 | 内容 |
+|---|---|
+| `scripts/experiments/` | 实验、分析和完整性检查脚本 |
+| `research/experiments/` | 实验计划、配置、指标、日志、报告与可视化 |
+| `research/landscape/`、`research/candidates/` | 文献地图与候选方案 |
+| `idea-stage/`、`refine-logs/` | 选题、方案与评审记录 |
+| `profile_output/` | NanoGS 计时与核验记录 |
+| `experiments/baseline/` | 早期基线复现记录 |
+| `gaussian-splatting/` | 局部源码快照，非完整训练仓库 |
+| `third_party/` | 固定版本的第三方源码快照与许可证 |
+| `docs/` | 论文、学习材料、整理说明及本地产物清单 |
+| `research/archive/` | 历史状态和首页快照 |
+| `.aris/` | 流程清单、环境说明和审计轨迹 |
+| `datasets/` | 仅本地保存的原始数据，不纳入新提交 |
+
+## 获取与复现边界
+
+```bash
+git lfs install
+git clone https://github.com/glxy404310/my-3dgs.git
+cd my-3dgs
+git lfs pull
+```
+
+代码、Markdown / JSON / CSV 报告及实验日志使用普通 Git；报告图片、PDF 和 Word 文档使用 Git LFS。
+
+按本次上传范围，数据集、模型检查点、点云及 `.pt` / `.pth` / `.npz` / `.npy` / `.bin` / `.dsh8` 等大型产物仅保留本地。[本地产物清单](docs/LOCAL_ARTIFACTS.tsv)记录整理时的相对路径与字节大小。克隆仓库不会得到这些文件，部分核验与渲染脚本需要另行提供它们。
+
+实际完整训练环境曾位于 WSL `/home/administrator/projects/gaussian-splatting`，相关提交记录为 `54c035f7834b564019656c3e3fcc3646292f727d`；本仓库的 Windows 局部源码不能单独完成完整训练。运行条件与命令以对应实验的合同、运行记录及 `.aris/compute/` 为准。
+
+[整理前的完整首页](research/archive/2026-11-20/README_before_cleanup.md)保留了历史更新与基线指标；该快照中的原始相对链接以仓库根目录为基准。

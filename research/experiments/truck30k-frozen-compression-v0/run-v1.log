@@ -1,0 +1,183 @@
+Loading trained model at iteration 30000
+------------LLFF HOLD-------------
+Reading camera 1/251Reading camera 2/251Reading camera 3/251Reading camera 4/251Reading camera 5/251Reading camera 6/251Reading camera 7/251Reading camera 8/251Reading camera 9/251Reading camera 10/251Reading camera 11/251Reading camera 12/251Reading camera 13/251Reading camera 14/251Reading camera 15/251Reading camera 16/251Reading camera 17/251Reading camera 18/251Reading camera 19/251Reading camera 20/251Reading camera 21/251Reading camera 22/251Reading camera 23/251Reading camera 24/251Reading camera 25/251Reading camera 26/251Reading camera 27/251Reading camera 28/251Reading camera 29/251Reading camera 30/251Reading camera 31/251Reading camera 32/251Reading camera 33/251Reading camera 34/251Reading camera 35/251Reading camera 36/251Reading camera 37/251Reading camera 38/251Reading camera 39/251Reading camera 40/251Reading camera 41/251Reading camera 42/251Reading camera 43/251Reading camera 44/251Reading camera 45/251Reading camera 46/251Reading camera 47/251Reading camera 48/251Reading camera 49/251Reading camera 50/251Reading camera 51/251Reading camera 52/251Reading camera 53/251Reading camera 54/251Reading camera 55/251Reading camera 56/251Reading camera 57/251Reading camera 58/251Reading camera 59/251Reading camera 60/251Reading camera 61/251Reading camera 62/251Reading camera 63/251Reading camera 64/251Reading camera 65/251Reading camera 66/251Reading camera 67/251Reading camera 68/251Reading camera 69/251Reading camera 70/251Reading camera 71/251Reading camera 72/251Reading camera 73/251Reading camera 74/251Reading camera 75/251Reading camera 76/251Reading camera 77/251Reading camera 78/251Reading camera 79/251Reading camera 80/251Reading camera 81/251Reading camera 82/251Reading camera 83/251Reading camera 84/251Reading camera 85/251Reading camera 86/251Reading camera 87/251Reading camera 88/251Reading camera 89/251Reading camera 90/251Reading camera 91/251Reading camera 92/251Reading camera 93/251Reading camera 94/251Reading camera 95/251Reading camera 96/251Reading camera 97/251Reading camera 98/251Reading camera 99/251Reading camera 100/251Reading camera 101/251Reading camera 102/251Reading camera 103/251Reading camera 104/251Reading camera 105/251Reading camera 106/251Reading camera 107/251Reading camera 108/251Reading camera 109/251Reading camera 110/251Reading camera 111/251Reading camera 112/251Reading camera 113/251Reading camera 114/251Reading camera 115/251Reading camera 116/251Reading camera 117/251Reading camera 118/251Reading camera 119/251Reading camera 120/251Reading camera 121/251Reading camera 122/251Reading camera 123/251Reading camera 124/251Reading camera 125/251Reading camera 126/251Reading camera 127/251Reading camera 128/251Reading camera 129/251Reading camera 130/251Reading camera 131/251Reading camera 132/251Reading camera 133/251Reading camera 134/251Reading camera 135/251Reading camera 136/251Reading camera 137/251Reading camera 138/251Reading camera 139/251Reading camera 140/251Reading camera 141/251Reading camera 142/251Reading camera 143/251Reading camera 144/251Reading camera 145/251Reading camera 146/251Reading camera 147/251Reading camera 148/251Reading camera 149/251Reading camera 150/251Reading camera 151/251Reading camera 152/251Reading camera 153/251Reading camera 154/251Reading camera 155/251Reading camera 156/251Reading camera 157/251Reading camera 158/251Reading camera 159/251Reading camera 160/251Reading camera 161/251Reading camera 162/251Reading camera 163/251Reading camera 164/251Reading camera 165/251Reading camera 166/251Reading camera 167/251Reading camera 168/251Reading camera 169/251Reading camera 170/251Reading camera 171/251Reading camera 172/251Reading camera 173/251Reading camera 174/251Reading camera 175/251Reading camera 176/251Reading camera 177/251Reading camera 178/251Reading camera 179/251Reading camera 180/251Reading camera 181/251Reading camera 182/251Reading camera 183/251Reading camera 184/251Reading camera 185/251Reading camera 186/251Reading camera 187/251Reading camera 188/251Reading camera 189/251Reading camera 190/251Reading camera 191/251Reading camera 192/251Reading camera 193/251Reading camera 194/251Reading camera 195/251Reading camera 196/251Reading camera 197/251Reading camera 198/251Reading camera 199/251Reading camera 200/251Reading camera 201/251Reading camera 202/251Reading camera 203/251Reading camera 204/251Reading camera 205/251Reading camera 206/251Reading camera 207/251Reading camera 208/251Reading camera 209/251Reading camera 210/251Reading camera 211/251Reading camera 212/251Reading camera 213/251Reading camera 214/251Reading camera 215/251Reading camera 216/251Reading camera 217/251Reading camera 218/251Reading camera 219/251Reading camera 220/251Reading camera 221/251Reading camera 222/251Reading camera 223/251Reading camera 224/251Reading camera 225/251Reading camera 226/251Reading camera 227/251Reading camera 228/251Reading camera 229/251Reading camera 230/251Reading camera 231/251Reading camera 232/251Reading camera 233/251Reading camera 234/251Reading camera 235/251Reading camera 236/251Reading camera 237/251Reading camera 238/251Reading camera 239/251Reading camera 240/251Reading camera 241/251Reading camera 242/251Reading camera 243/251Reading camera 244/251Reading camera 245/251Reading camera 246/251Reading camera 247/251Reading camera 248/251Reading camera 249/251Reading camera 250/251Reading camera 251/251
+Loading Training Cameras
+Loading Test Cameras
+CONTRIBUTION 1/24 000002.jpg
+CONTRIBUTION 2/24 000082.jpg
+CONTRIBUTION 3/24 000226.jpg
+CONTRIBUTION 4/24 000112.jpg
+CONTRIBUTION 5/24 000047.jpg
+CONTRIBUTION 6/24 000068.jpg
+CONTRIBUTION 7/24 000122.jpg
+CONTRIBUTION 8/24 000176.jpg
+CONTRIBUTION 9/24 000219.jpg
+CONTRIBUTION 10/24 000028.jpg
+CONTRIBUTION 11/24 000244.jpg
+CONTRIBUTION 12/24 000208.jpg
+CONTRIBUTION 13/24 000064.jpg
+CONTRIBUTION 14/24 000192.jpg
+CONTRIBUTION 15/24 000186.jpg
+CONTRIBUTION 16/24 000098.jpg
+CONTRIBUTION 17/24 000054.jpg
+CONTRIBUTION 18/24 000180.jpg
+CONTRIBUTION 19/24 000167.jpg
+CONTRIBUTION 20/24 000204.jpg
+CONTRIBUTION 21/24 000127.jpg
+CONTRIBUTION 22/24 000143.jpg
+CONTRIBUTION 23/24 000050.jpg
+CONTRIBUTION 24/24 000236.jpg
+PRUNED 2050770 -> 1025385 without any parameter update
+EVALUATED 1/395 calibration
+EVALUATED 25/395 real_noncalibration_train
+EVALUATED 49/395 real_noncalibration_train
+EVALUATED 73/395 real_noncalibration_train
+EVALUATED 97/395 real_noncalibration_train
+EVALUATED 121/395 real_noncalibration_train
+EVALUATED 145/395 real_noncalibration_train
+EVALUATED 169/395 real_noncalibration_train
+EVALUATED 193/395 real_noncalibration_train
+EVALUATED 217/395 real_noncalibration_train
+EVALUATED 241/395 real_test
+EVALUATED 265/395 virtual_discovery
+EVALUATED 289/395 virtual_discovery
+EVALUATED 313/395 virtual_discovery
+EVALUATED 337/395 virtual_discovery
+EVALUATED 361/395 virtual_discovery
+EVALUATED 385/395 virtual_discovery
+{
+  "training_performed": false,
+  "parameter_updates": 0,
+  "teacher_points": 2050770,
+  "student_points": 1025385,
+  "teacher_ply_bytes": 508592492,
+  "student_ply_bytes": 254297012,
+  "groups": {
+    "calibration": {
+      "n": 24,
+      "mean": 0.00043393305168137886,
+      "median": 0.00018738730432232842,
+      "p90": 0.0012198370182886717,
+      "maximum": 0.0020222621969878674,
+      "worst10_mean": 0.0016779541037976742
+    },
+    "real_noncalibration_train": {
+      "n": 195,
+      "mean": 0.001372632622298671,
+      "median": 0.0005469685420393944,
+      "p90": 0.003376687318086624,
+      "maximum": 0.017623452469706535,
+      "worst10_mean": 0.006391563499346375
+    },
+    "real_test": {
+      "n": 32,
+      "mean": 0.001409734954677333,
+      "median": 0.0005642138130497187,
+      "p90": 0.002287815569434316,
+      "maximum": 0.016081690788269043,
+      "worst10_mean": 0.006682918465230614
+    },
+    "virtual_discovery": {
+      "n": 72,
+      "mean": 0.0009243555020172304,
+      "median": 0.0004909552517347038,
+      "p90": 0.002287563937716186,
+      "maximum": 0.004893337842077017,
+      "worst10_mean": 0.003238880221033469
+    },
+    "virtual_check": {
+      "n": 72,
+      "mean": 0.001464854774288445,
+      "median": 0.0004780269227921963,
+      "p90": 0.002969180070795119,
+      "maximum": 0.016404451802372932,
+      "worst10_mean": 0.0081564255815465
+    }
+  },
+  "gt_metrics": {
+    "calibration": {
+      "teacher_psnr_gt": 28.030162811279297,
+      "student_psnr_gt": 27.18139640490214,
+      "teacher_ssim_gt": 0.9172572121024132,
+      "student_ssim_gt": 0.9074834709366163,
+      "delta_psnr_gt": -0.8487664063771566,
+      "delta_ssim_gt": -0.009773741165796915
+    },
+    "real_noncalibration_train": {
+      "teacher_psnr_gt": 27.72099189758301,
+      "student_psnr_gt": 25.7967464642647,
+      "teacher_ssim_gt": 0.9162905564674965,
+      "student_ssim_gt": 0.8976081279607919,
+      "delta_psnr_gt": -1.9242454333183092,
+      "delta_ssim_gt": -0.018682428506704478
+    },
+    "real_test": {
+      "teacher_psnr_gt": 25.46554708480835,
+      "student_psnr_gt": 24.21417248249054,
+      "teacher_ssim_gt": 0.8850201144814491,
+      "student_ssim_gt": 0.8703935761004686,
+      "delta_psnr_gt": -1.25137460231781,
+      "delta_ssim_gt": -0.014626538380980492
+    }
+  },
+  "check_to_calibration_tail_ratio": 4.8609348510106765,
+  "check_fraction_above_calibration_max": 0.16666666666666666,
+  "numeric_blindspot_signal": true,
+  "perceptual_verdict": "requires image inspection; numeric gate is not perceptual certification",
+  "teacher_repeat_mse": 0.0,
+  "max_metric_replay_delta": 0.0,
+  "teacher_source_sha256": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+  "teacher_parameters_sha256": "f90a54ffe88db1b16eb78e7acc7f2ebb44556570227f21c48342e6eb819a6822",
+  "student_parameters_sha256": "2ab8bcd51bf560ef6688545a7f10a70c0a9304f9ab47799807dca2f6b790078a",
+  "optimizer_created": false,
+  "subset_parameters_exact": true,
+  "elapsed_gpu_stage_seconds": 21.4958508,
+  "peak_allocated_bytes": 1687045632,
+  "selected_panels": [
+    [
+      "virtual_check_worst1",
+      "virtual_check_e05_t75"
+    ],
+    [
+      "virtual_check_worst2",
+      "virtual_check_e05_t50"
+    ],
+    [
+      "virtual_check_worst3",
+      "virtual_check_e05_t25"
+    ],
+    [
+      "virtual_discovery_worst1",
+      "virtual_discovery_e06_t25"
+    ],
+    [
+      "virtual_discovery_worst2",
+      "virtual_discovery_e28_t75"
+    ],
+    [
+      "virtual_discovery_worst3",
+      "virtual_discovery_e28_t50"
+    ],
+    [
+      "real_test_worst1",
+      "000017.jpg"
+    ],
+    [
+      "real_test_worst2",
+      "000009.jpg"
+    ],
+    [
+      "real_test_worst3",
+      "000105.jpg"
+    ],
+    [
+      "virtual_check_median",
+      "virtual_check_e33_t75"
+    ],
+    [
+      "calibration_worst",
+      "000098.jpg"
+    ]
+  ]
+}
+FROZEN_DIAGNOSIS_COMPLETE

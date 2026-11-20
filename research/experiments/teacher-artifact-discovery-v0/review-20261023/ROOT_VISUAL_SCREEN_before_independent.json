@@ -1,0 +1,81 @@
+{
+  "scope": "Root actual visual inspection of all twelve full original teacher-left/GT-right panels",
+  "annotator": "Codex /root; not human expert labels",
+  "contract": "idea-stage/artifact-pivot-20261023/REGION_EVIDENCE_CONTRACT.md",
+  "contract_sha256": "dfb91c65ed4c5815a3bb6dcf912b2b8dd4a39ad4adeaf97eb8a7b1f3e3fecfd5",
+  "collection_status": "COLLECTED_FOR_DISCOVERY",
+  "source_run": "research/experiments/teacher-artifact-discovery-v0/run-v1",
+  "all_12_full_panels_actually_viewed": true,
+  "qualified_visual_candidate_count": 0,
+  "required_spatially_independent_regions": 3,
+  "qualified_polygons": [],
+  "views": [
+    {
+      "view": "000002.jpg",
+      "status": "no_candidate",
+      "observation": "车体与背景结构对应；主要是地面、木纹和树叶细节变软，未见明确新增遮挡。"
+    },
+    {
+      "view": "000023.jpg",
+      "status": "no_candidate",
+      "observation": "地面纹理及车厢边缘模糊；没有可独立圈定的教师新增团块。"
+    },
+    {
+      "view": "000046.jpg",
+      "status": "no_candidate",
+      "observation": "地面/木板细节变软，画面边缘椅子在GT中真实存在；不足以归为错误占据。"
+    },
+    {
+      "view": "000069.jpg",
+      "status": "abstain",
+      "observation": "挡风玻璃、灯与金属表面外观差异涉及反射/高光，按合同排除。"
+    },
+    {
+      "view": "000092.jpg",
+      "status": "abstain",
+      "observation": "挡风玻璃明显糊抹但GT存在真实反射，不能计为可删除漂浮物。"
+    },
+    {
+      "view": "000115.jpg",
+      "status": "abstain",
+      "observation": "右侧栏杆/垃圾桶附近有模糊暗形，GT同处也有真实垃圾桶及栏杆；无法区分边界模糊与新增污染。"
+    },
+    {
+      "view": "000136.jpg",
+      "status": "no_candidate",
+      "observation": "木板有方向性涂抹，仍沿真实板面，未确认新增前景占据。"
+    },
+    {
+      "view": "000159.jpg",
+      "status": "abstain",
+      "observation": "车灯、挡风玻璃及细桌腿主要为高光/反射或细节模糊，不计新增团块。"
+    },
+    {
+      "view": "000182.jpg",
+      "status": "no_candidate",
+      "observation": "车厢木纹和地面细节变软，没有明确额外遮挡。"
+    },
+    {
+      "view": "000205.jpg",
+      "status": "abstain",
+      "observation": "背景人物在GT中存在而teacher较弱/缺失；不能将静态模型未重建动态人物计为失败。红凳/栏杆细节为模糊，未见明确新团块。"
+    },
+    {
+      "view": "000228.jpg",
+      "status": "abstain",
+      "observation": "GT中可见高可见度衣服人物而teacher没有；不满足teacher新增污染。"
+    },
+    {
+      "view": "000251.jpg",
+      "status": "abstain",
+      "observation": "前景栏杆立柱外缘有较宽模糊尾部，但GT中立柱真实存在，属于边界混合/模糊疑点，按合同弃权。"
+    }
+  ],
+  "confirmation_images_outside_discovery_accessed": false,
+  "tracks_or_depth_LP_stage_run": false,
+  "Gaussian_deletion_or_fitting_performed": false,
+  "independent_visual_review_pending": true,
+  "preliminary_action": "Stop current Truck #33 carrier if independent review does not establish enough qualifying regions; no looser criteria or extra discovery images",
+  "method_effect_or_novelty_verdict": null,
+  "limitation": "A conservative visual discovery gate, not proof that mature Truck has no artifacts or that no artifact-removal method can work."
+}

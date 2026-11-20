@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-22",
+  "training_performed": false,
+  "parameter_updates": 0,
+  "phenomenon_from_previous_run_preserved": true,
+  "all219_virtual_tail_mse_reduction_fraction": 0.6976177930792726,
+  "current_candidate_decision": "STOP_CURRENT_ACTIVE_NOVEL_POSE_IMPLEMENTATION",
+  "reason": "Existing captured views reveal the strongest failures and an all-existing-view control substantially reduces them. No evidence currently establishes the need to search new continuous poses.",
+  "remaining_degradation_acknowledged": true,
+  "method_effectiveness_tested": false,
+  "claim_scope": "single frozen unrecovered50pct contribution-pruning carrier, not full mature compression",
+  "old_fail_and_inconclusive_preserved": true
+}

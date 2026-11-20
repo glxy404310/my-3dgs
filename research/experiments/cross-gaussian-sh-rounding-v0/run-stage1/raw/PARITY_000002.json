@@ -1,0 +1,26 @@
+{
+  "view": "000002.jpg",
+  "unique_id_color_error": {
+    "count": 333624,
+    "max_abs": 9.5367431640625e-07,
+    "mse": 1.2124777696111544e-15
+  },
+  "raw_negative_components": 103603,
+  "primitive_gt1_components": 153454,
+  "native_display_replay_max_error": 2.980232238769531e-07,
+  "reconstructed_display_replay_max_error": 2.980232238769531e-07,
+  "final_T_max_error": 1.4901161193847656e-07,
+  "n_contrib_mismatch_count": 0,
+  "accepted_unique_color_error": {
+    "count": 15397,
+    "max_abs": 4.76837158203125e-07,
+    "mse": 1.3078571923695832e-15
+  },
+  "alpha_eligible_unique_color_error": {
+    "count": 21700,
+    "max_abs": 4.76837158203125e-07,
+    "mse": 1.222971203740392e-15
+  },
+  "accepted_entries": 21739,
+  "native_display_clamped_components": 25
+}

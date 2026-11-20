@@ -1,0 +1,7 @@
+{
+  "true_external_wall_seconds": 46.3415995,
+  "exit_code": 0,
+  "maximum_seconds": 180,
+  "phase": "metrics",
+  "contract_sha256": "2be279ab9217d9ec253c0e66445b7720b410c33b895ca4dade408d0ed6529ff6"
+}

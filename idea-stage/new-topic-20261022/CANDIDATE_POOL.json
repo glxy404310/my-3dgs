@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-22",
+  "constraints": {
+    "gpu": "RTX5070 12GB",
+    "data": [
+      "Truck",
+      "Train"
+    ],
+    "failed_routes": [
+      "neighbor Jacobian split gate",
+      "cross-view split direction",
+      "child Adam age",
+      "world-constrained split layout"
+    ]
+  },
+  "generation": "3 read-only analytic shards; same-family provisional; second generator gpt-5.5 unavailable in exposed models",
+  "candidates": [
+    {
+      "dedup_key": "lod|offline_occlusion_compatibility_tree|external_interleaving_commutator",
+      "title": "外部遮挡交换误差约束的LOD合并树",
+      "method": "从空间近邻提出merge；用训练视图短ray-list查组成员移至统一父深度需跨过的外部项，逐次以T alpha_i alpha_e ||c_i-c_e||累加交换路径上界Q，合并代价=几何矩匹配代价+lambda Q；相同数量/微调/时间比较。仅改建树。",
+      "closest": [
+        "https://arxiv.org/html/2406.12080",
+        "https://arxiv.org/html/2505.23158v2",
+        "https://occlugaussian.github.io/",
+        "https://arxiv.org/html/2605.05876v1",
+        "https://r4dl.github.io/StopThePop/"
+      ],
+      "risk": "Q松/视角冲突/颜色或depth-span已解释/需要更多点。",
+      "pilot": "CPU交换界+合成受控raylist；Truck/Train局部冻结teacher合并；同count对照。"
+    },
+    {
+      "dedup_key": "lod|multi_slot_parent|external_occluder_signature_partition",
+      "title": "按外部遮挡签名生成双slot父项",
+      "method": "8–16子项按相对外部occluder的多视角前后符号签名二分；各组矩匹配父项，高风险节点2slot其他1slot，统一全局排序。",
+      "closest": [
+        "https://arxiv.org/html/2406.12080",
+        "https://arxiv.org/html/2605.05876v1",
+        "https://doi.org/10.1111/cgf.70014"
+      ],
+      "risk": "不如普通GMM2父；增slot抵消压缩；视角partition冲突。",
+      "pilot": "同总primitive预算的单父/几何双父/签名双父toy+实际局部。"
+    },
+    {
+      "dedup_key": "lod|runtime_cut_certificate|external_overlap_refinement",
+      "title": "跨层遮挡冲突驱动LOD cut细化",
+      "method": "保持空间树，初cut后tile深度区间相交宽相位，overlap*opacity*contrast评分，同额外primitive预算细化最大冲突父节点。",
+      "closest": [
+        "https://arxiv.org/html/2406.12080",
+        "https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_FilterGS_Traversal-Free_Parallel_Filtering_and_Adaptive_Shrinking_for_Large-Scale_LoD_CVPR_2026_paper.pdf",
+        "https://r4dl.github.io/StopThePop/"
+      ],
+      "risk": "depthinterval松/标准size规则一样好/开销。",
+      "pilot": "冻结teacher离线枚举heldoutcut，同count size/random/depthspan比较。"
+    },
+    {
+      "dedup_key": "3dgs.frame_shared_pose_marginal_likelihood.low_rank_woodbury",
+      "title": "整帧相关位姿边缘似然",
+      "method": "小位姿delta~N(0,Lambda)，渲染线性化J；C=sigma2I+J Lambda JT，用rTC^-1r+logdetC，Woodbury化6x6；Lambda固定，跨像素相关不能改成逐像素方差。",
+      "closest": [
+        "https://arxiv.org/html/2404.04211v1",
+        "https://arxiv.org/abs/2603.16538",
+        "https://arxiv.org/abs/2609.25746"
+      ],
+      "risk": "通用BA边缘化已有；等价poseMAP；J成本/错误variance来源。",
+      "pilot": "注入已知小位姿偏差，对照jointpose refinement/diagvariance/完整相关，clean heldout。"
+    },
+    {
+      "dedup_key": "3dgs.exposure_integral.visibility_event_quadrature",
+      "title": "遮挡事件驱动曝光时间积分",
+      "method": "已知短轨迹，swepttile候选，footprint进出和深度交换划分时间段，段内GaussLegendre积分，固定walltime同uniform/速度adaptive。",
+      "closest": [
+        "https://arxiv.org/abs/2608.15024",
+        "https://openaccess.thecvf.com/content/CVPR2025/papers/Wu_3DGUT_Enabling_Distorted_Cameras_and_Secondary_Rays_in_Gaussian_Splatting_CVPR_2025_paper.pdf",
+        "https://openaccess.thecvf.com/content/ICCV2025/papers/Lee_CoMoGaussian_Continuous_Motion-Aware_Gaussian_Splatting_from_Motion-Blurred_Images_ICCV_2025_paper.pdf"
+      ],
+      "risk": "事件太多/不平滑梯度/仅toy有效。",
+      "pilot": "现成GS短轨迹crop，128/256node reference，同walltime3/5/9 nodes误差。"
+    },
+    {
+      "dedup_key": "3dgs.chromatic_ray_differential.self_calibration",
+      "title": "共享几何的颜色通道差分光线校准",
+      "method": "绿色gauge，R/B各两个径向偏移系数跨帧共享，同几何opacity；训练相机含偏移canonical渲染关闭。",
+      "closest": [
+        "https://onlinelibrary.wiley.com/doi/10.1111/cgf.70148",
+        "https://arxiv.org/abs/2502.09563",
+        "https://arxiv.org/abs/2601.18336"
+      ],
+      "risk": "CGF2025强重合未获全文/传统预处理足够/真实数据缺。",
+      "pilot": "合成0.5/1/2px色偏与传统校正对照；还需真实capture。"
+    },
+    {
+      "dedup_key": "3dgs|covariance-optimization|log-spd-isotropic-moment|factorization-gauge-invariance",
+      "title": "log-SPD坐标与旋转等变形状动量",
+      "method": "Sigma=exp(A)，A对称；矩阵一阶动量，单标量Frobenius二阶EMA；其他参数与ADC固定，输出可分解标准PLY。",
+      "closest": [
+        "https://ojs.aaai.org/index.php/AAAI/article/download/33193/35348",
+        "https://arxiv.org/abs/2602.00395",
+        "https://gaozhongpai.github.io/dgs/"
+      ],
+      "risk": "通用SPD已知/Cholesky一样好/exp开销/等价编码真实作用小。",
+      "pilot": "相同Sigma合法不同factor编码，清零state，相同视图形状拟合；对照factorAdam/SGD/Cholesky/logSPDcoordinateAdam。"
+    },
+    {
+      "dedup_key": "3dgs|sorting-discontinuity|event-bracketed-step-selection|exact-alpha-compositing",
+      "title": "实际更新方向的排序事件两侧选步",
+      "method": "从重叠tile线性深度差求事件t；T alpha_i alpha_j colorcontrast筛关键事件，真实重渲t±eps和Adamendpoint选loss最低。",
+      "closest": [
+        "https://github.com/r4dl/StopThePop",
+        "https://github.com/zyl123456aB/StableGS",
+        "https://arxiv.org/abs/2602.00395"
+      ],
+      "risk": "交换少/同预算backtracking覆盖/只修vanillasort。",
+      "pilot": "64tiles 100步记录事件/gradient预测误差，500步对照等renderbudgetbacktracking+低LR。"
+    },
+    {
+      "dedup_key": "3dgs|rasterizer-cutoff-gradient|boundary-layer-gate-derivative|fixed-inference-renderer",
+      "title": "fragment截断窄边界层门导数",
+      "method": "训练alpha*h((alpha-tau)/delta)，含alpha h'且扩候选，最后delta退火0硬renderer评估；区间外保持。",
+      "closest": [
+        "https://arxiv.org/abs/2602.09999",
+        "https://arxiv.org/html/2609.03534v1",
+        "https://papers.nips.cc/paper_files/paper/2024/file/cbc80272426028bd561f3889af65c704-Paper-Conference.pdf"
+      ],
+      "risk": "标准1/255项太小/平滑前向作用/退火后无效。",
+      "pilot": "toy有限差分+shapeopacity扰动恢复；hard/softdetach/full/FasterGS/TruncGrad比较。"
+    }
+  ]
+}

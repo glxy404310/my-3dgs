@@ -1,0 +1,14 @@
+{
+  "call_number": 1,
+  "purpose": "split-pilot-claim-gate",
+  "tool": "spawn_agent",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "prompt": "RESULT-TO-CLAIM EVALUATION, read-only, same-family provisional. User goal: pursue validated entry point and useful research results for original3DGS splitting, no inflated novelty. Read D:\\Documents\\my 3dgs\\research\\experiments\\docs\\research_contract.md, EXPERIMENT_PLAN.md, split-diagnostic-v0\\EXPERIMENT_RESULTS.md, pilot_aggregate.json, integrity_checks.json, plus .aris\\evidence_precheck.json; all paths after first abbreviated under research/experiments unless .aris. Inspect original CSVs and scripts/experiments/split_diagnostic.py if useful. 16 completed runs: sanity2, cap128pair2, 3 intervention seeds x noop/original/opacity/LAS12. Single truck 7k checkpoint, same10961 parent IDs, calibrated frozen8 train views with grad>=.0002 and size threshold; 32 heldout views; recovery0/1/5/20/100 with subsequent ADC disabled. Original vs noop mean ΔPSNR at0/20/100 = -.086183/-.056048/-.018510dB; opacity = -.067651/-.040454/-.017605; LAS = -.044773/-.037683/-.023805. LAS deterministic geometry same3seeds; recovery camera sequence changes byseed but matches withinpairs. Scripts groundtruth, exactnoopstep0, net+K and actual original/opacity child geometry pairings checked pass. Authors LAS operator only (no full pipeline) from https://raw.githubusercontent.com/XiaoBin2001/Improved-GS/main/scene/gaussian_model_densification.py. Opacity-only is diagnostic correction alpha'=1-sqrt(1-alpha), not full stabilizationbaseline. Checkpoint is postADC, preADC log23.986dB shouldn't mix with checkpoint before23.825dB. Seeds are interventions/recovery orders not independent trainingseeds. Named precheck helper unresolved; runtime artifactchecks exist, do not inflate assurance. Judge: C0 recoveryburden in this setting; C1 simpleopacity notenough; C2 parentreferenceindependentvalue untested; 'stable instantaneousgeometry neednotbetter100stepoptimization' descriptivepattern. Output claim_supported yes/partial/no perclaim, what supported/unsupported, missing evidence, revisedclaim, highestpriority NEXT experiment and stop/pivot criteria, confidence. Specifically decide whether next should replay a real100step online ADC event, test knownmomentinheritance, temporaryparentteacher, or secondscene. Avoid declaring novelmethod or broadrecoverycausality from this pilot. Do not edit files or run GPU. No hash/framework requests; give concrete scientific design correction grounded in artifacts.",
+  "files_referenced": [
+    "research/experiments/docs/research_contract.md",
+    "research/experiments/split-diagnostic-v0/pilot_aggregate.json",
+    "research/experiments/split-diagnostic-v0/integrity_checks.json",
+    ".aris/evidence_precheck.json"
+  ]
+}

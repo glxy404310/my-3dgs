@@ -1,0 +1,11 @@
+{
+  "schema": "direct-sh8-native-evaluation-v1/root-external-v1",
+  "started_UTC": "2026-10-22T22:07:12.8388233Z",
+  "finished_UTC": "2026-10-22T22:08:18.0158879Z",
+  "exit_code": 0,
+  "actual_host_wall_seconds": 65.1725227,
+  "hard_limit_seconds": 200,
+  "attempts": 1,
+  "shared_main_plus_audit_limit_seconds": 300,
+  "scope": "1 teacher parity + 33 SH8 frozen native forward calls, zero training"
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "pup-frozen-score-assumption-sweep-v1",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "semantic_undeclared_count": 0,
+  "round1_public_final": "STATIC_REVIEW_ROUND1.json",
+  "round2_public_final": "STATIC_REVIEW_ROUND2.json",
+  "executor_resolution": "REVIEW_RESOLUTION.json",
+  "independent_review_rounds": 2,
+  "no_cross_family_acquittal": true,
+  "last_fixes_verified_by_executor_only": true,
+  "scientific_execution_verified": false,
+  "launch_authorized": false
+}

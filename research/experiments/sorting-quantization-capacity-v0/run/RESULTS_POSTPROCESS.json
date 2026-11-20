@@ -1,0 +1,62 @@
+{
+  "status": "POSTPROCESS_COMPLETE_PENDING_INDEPENDENT_AUDIT",
+  "original_run_status": "FAILED_TOOL_METHOD_UNKNOWN",
+  "original_error": "dict contains fields not in fieldnames: 'capacity_gate', 'qualifying_views'",
+  "original_process_exit_code": 1,
+  "original_results_preserved": true,
+  "no_rerun": true,
+  "metrics_rows": 6144,
+  "summary_rows": 27,
+  "main_capacity_gate": true,
+  "passed_main_bits": [
+    8,
+    12
+  ],
+  "gates": {
+    "8": {
+      "bit": 8,
+      "view": "ALL",
+      "pixels": 2048,
+      "exceed_count": 1816,
+      "exceed_fraction": 0.88671875,
+      "max_channel_difference": 0.7548081095500945,
+      "p99_channel_difference": 0.4552793112219687,
+      "order_mse": 0.007849091962398323,
+      "old_gt_mse": 0.0018451837905840642,
+      "new_gt_mse": 0.009377314995245519,
+      "qualifying_views": 8,
+      "capacity_gate": true
+    },
+    "12": {
+      "bit": 12,
+      "view": "ALL",
+      "pixels": 2048,
+      "exceed_count": 937,
+      "exceed_fraction": 0.45751953125,
+      "max_channel_difference": 0.2318722023487209,
+      "p99_channel_difference": 0.11185327252899045,
+      "order_mse": 0.00048506760115814355,
+      "old_gt_mse": 0.0018451837905840642,
+      "new_gt_mse": 0.002351296903991699,
+      "qualifying_views": 8,
+      "capacity_gate": true
+    },
+    "16": {
+      "bit": 16,
+      "view": "ALL",
+      "pixels": 2048,
+      "exceed_count": 129,
+      "exceed_fraction": 0.06298828125,
+      "max_channel_difference": 0.030397300936064464,
+      "p99_channel_difference": 0.012265936486443122,
+      "order_mse": 5.068398991508717e-06,
+      "old_gt_mse": 0.0018451837905840642,
+      "new_gt_mse": 0.0018393284881017846,
+      "qualifying_views": 8,
+      "capacity_gate": true
+    }
+  },
+  "metrics_sha256": "8e370762a865ab8537fe23476c136e5a97f22d7c30cb862a7c1dcbc15665acf5",
+  "source_results_sha256": "c604912e8be417e27e893f18bd68843babe2eecfe68c815e393c700c0de448a7",
+  "scope": "CSV-only recovery of failed final report serialization, not a new experiment or changed test. Original renderer/depth/zero parity passed; independent audit still required."
+}

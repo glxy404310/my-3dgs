@@ -1,0 +1,15 @@
+{
+  "call_number": 29,
+  "purpose": "shared-coordinate-design",
+  "timestamp": "2026-10-22T18:23:22.904Z",
+  "agent_id": "01a164ce-528c-7f33-a704-cfff4fada25c",
+  "agent_path": "/root/shared_coord_contract_review",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "request_recovered_verbatim": true,
+  "response_recovered_verbatim": true
+}

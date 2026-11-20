@@ -1,0 +1,12 @@
+{
+  "agent_path": "/root/new_measurement_lens",
+  "review_independence": "same-family",
+  "reviewer_family": "openai",
+  "call_number": 2,
+  "status": "ok",
+  "model": "gpt-6-astra",
+  "acceptance_status": "provisional",
+  "raw_output_path": "D:\\Documents\\my 3dgs\\idea-stage\\continue-20261023\\MEASUREMENT_RAW.json",
+  "agent_id": "01a1646d-f031-75e2-a8e7-69cf0bce1e01",
+  "purpose": "new_measurement_lens"
+}

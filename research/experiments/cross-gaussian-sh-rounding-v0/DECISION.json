@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-23T04:04:19.743516+08:00",
+  "decision": "INCONCLUSIVE_CROSS_VIEW_BLOCK_CAPACITY",
+  "action": "STOP_CURRENT_FIXED_CACHE_PROTOCOL",
+  "tool_valid": true,
+  "method_status": "UNKNOWN_NOT_TESTED",
+  "stage1_complete": true,
+  "selected_capacity_pass_count": 13,
+  "required_selected_block_count": 64,
+  "quantization_or_ranking_effects_run": false,
+  "original_outer_exec_exit_code": 1,
+  "launcher_child_exit_code": 2,
+  "external_wall_seconds": 10.573257680000012,
+  "independent_verification": "PASS: V2 audit_validtrue,260checks,full16022 capacity count59<64",
+  "no_threshold_sample_or_block_rescue": true,
+  "training_performed": false,
+  "independent_raw_file": "run-stage1/INDEPENDENT_VERIFICATION_V2.json"
+}

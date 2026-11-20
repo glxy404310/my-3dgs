@@ -1,0 +1,12 @@
+{
+  "scripts/experiments/shared_coordinate_native_v3.py": "2a089b7d85987b571bb53f22ce9a97912fe690e01fc2d9d950dead39fd3a29a3",
+  "scripts/experiments/evaluate_nanogs_frozen_baseline.py": "0c62664a1b90f6581215d2285971462175aae4c753cfe9fad5a0cd207c2525e6",
+  "research/experiments/direct-sh8-storage-control-v0/evaluation-v1/evaluate.py": "f766439a639afdaea36351e5d35c0fa1a6b66d64cbe6783a9b004fb39b257b6a",
+  "research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/CONFIG.json": "3b53a5c588fbd55d190dc232b61c72ce9998e0cf04d0b26393c3b32b83b368c0",
+  "research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/RESULTS.json": "19f229837935d3624f2e179112d58217f479e1f2a572e23ce0cac6700c17f29c",
+  "research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/CAMERAS.json": "d70b2304fee6aa90d7d5ef1748027bb250106f9311880b618a6c4227a65ffe67",
+  "research/experiments/nanogs-frozen-baseline-v0/evaluation-v1/RAW_MANIFEST.json": "82dd8bfa39548d64b0a2eb55cf3cccc9de7e08d19657dd089585dc8f9bdca0e7",
+  "research/experiments/nanogs-frozen-baseline-v0/INDEPENDENT_PIXEL_VERIFICATION.json": "2622897a668f309f61b5c49e9e015e683abf47081fbdd4e98fa836ec427d2399",
+  "research/experiments/nanogs-frozen-baseline-v0/INDEPENDENT_PIXEL_DISPOSITION.json": "5ad8eebcd43ca318de095d652816ae34f0885b54855a1bfadbc9c5f872c6e3e1",
+  "research/experiments/adc-frequency-gate-v0/main/truck/RESULTS.json": "f206728b95a7271224a19ec191ef622d777270c623ca595c15203742e74952b6"
+}

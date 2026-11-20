@@ -1,0 +1,875 @@
+{
+  "scope": "Independent read-only aggregation of 576 exported pixel-oracle rows and 64 mask rows, comparison with 64 historical carrier errors, and static mathematical review. No raw RGB/alpha/transmittance tensors are saved in the run; CSV aggregation cannot independently verify the original pixels, rasterizer behavior, or measured masks.",
+  "analysis_script_sha256": "9069c462880c322b8aa85d035b3f467996ae169b2827417f25045dd0d6e39082",
+  "failures": [],
+  "checks_passed": 1260,
+  "thresholds": {
+    "aggregation_absolute_tolerance": 1e-12,
+    "historical_carrier_MSE_absolute_tolerance": 1e-09,
+    "alpha_teacher_MSE_reduction_ge": 0.2,
+    "alpha_GT_MSE_reduction_ge": 0.05,
+    "own_tail4_GT_MSE_nonworse": true,
+    "GT_nonworse_views_ge": 24,
+    "GT_MSE_reduction_vs_every_fixed_control_ge": 0.05,
+    "CPU_seconds_lt": 15
+  },
+  "max_exported_PSNR_vs_MSE_delta_db": 3.394229075581734e-06,
+  "recomputed_summary": {
+    "original24": {
+      "base": {
+        "mean_gt_mse": 0.004255940715665929,
+        "tail4_gt_mse": 0.009348269901238382,
+        "mean_teacher_mse": 0.001409734954677333,
+        "mean_GT_PSNR_db": 24.21417248249054,
+        "own_worst4_GT_views": [
+          "000017.jpg",
+          "000009.jpg",
+          "000217.jpg",
+          "000105.jpg"
+        ],
+        "own_worst4_teacher_MSE": 0.006682918465230614
+      },
+      "alpha_oracle": {
+        "mean_gt_mse": 0.003445981306867907,
+        "tail4_gt_mse": 0.0055559491738677025,
+        "mean_teacher_mse": 0.0005750423274548666,
+        "mean_GT_PSNR_db": 24.818817973136902,
+        "own_worst4_GT_views": [
+          "000017.jpg",
+          "000217.jpg",
+          "000121.jpg",
+          "000009.jpg"
+        ],
+        "own_worst4_teacher_MSE": 0.0020956440130248666
+      },
+      "color_oracle": {
+        "mean_gt_mse": 0.0036667201566160657,
+        "tail4_gt_mse": 0.007835608907043934,
+        "mean_teacher_mse": 0.0007621253280944984,
+        "mean_GT_PSNR_db": 24.8046954870224,
+        "own_worst4_GT_views": [
+          "000017.jpg",
+          "000217.jpg",
+          "000009.jpg",
+          "000121.jpg"
+        ],
+        "own_worst4_teacher_MSE": 0.0047197686217259616
+      },
+      "gain_1.05": {
+        "mean_gt_mse": 0.004802347160875797,
+        "tail4_gt_mse": 0.009600403252989054,
+        "mean_teacher_mse": 0.001948720111613511,
+        "mean_GT_PSNR_db": 23.537539899349213,
+        "own_worst4_GT_views": [
+          "000017.jpg",
+          "000009.jpg",
+          "000217.jpg",
+          "000153.jpg"
+        ],
+        "own_worst4_teacher_MSE": 0.006771090265829116
+      },
+      "gain_1.1": {
+        "mean_gt_mse": 0.006679187499685213,
+        "tail4_gt_mse": 0.011331765446811914,
+        "mean_teacher_mse": 0.0038274708640528843,
+        "mean_GT_PSNR_db": 21.941532790660858,
+        "own_worst4_GT_views": [
+          "000017.jpg",
+          "000153.jpg",
+          "000009.jpg",
+          "000217.jpg"
+        ],
+        "own_worst4_teacher_MSE": 0.008025235845707357
+      },
+      "gain_1.25": {
+        "mean_gt_mse": 0.01826491323299706,
+        "tail4_gt_mse": 0.023367090616375208,
+        "mean_teacher_mse": 0.015458860987564549,
+        "mean_GT_PSNR_db": 17.432937264442444,
+        "own_worst4_GT_views": [
+          "000017.jpg",
+          "000153.jpg",
+          "000193.jpg",
+          "000073.jpg"
+        ],
+        "own_worst4_teacher_MSE": 0.019526884891092777
+      },
+      "opacity_1.1": {
+        "mean_gt_mse": 0.004141004035773221,
+        "tail4_gt_mse": 0.009000181686133146,
+        "mean_teacher_mse": 0.001310175942535352,
+        "mean_GT_PSNR_db": 24.306009352207184,
+        "own_worst4_GT_views": [
+          "000017.jpg",
+          "000217.jpg",
+          "000009.jpg",
+          "000121.jpg"
+        ],
+        "own_worst4_teacher_MSE": 0.006278252170886844
+      },
+      "opacity_1.25": {
+        "mean_gt_mse": 0.00417194719921099,
+        "tail4_gt_mse": 0.008760106866247952,
+        "mean_teacher_mse": 0.001374560462863883,
+        "mean_GT_PSNR_db": 24.218448400497437,
+        "own_worst4_GT_views": [
+          "000017.jpg",
+          "000217.jpg",
+          "000009.jpg",
+          "000121.jpg"
+        ],
+        "own_worst4_teacher_MSE": 0.005978542496450245
+      },
+      "opacity_1.5": {
+        "mean_gt_mse": 0.004538923712971155,
+        "tail4_gt_mse": 0.008790922700427473,
+        "mean_teacher_mse": 0.0018054554093396291,
+        "mean_GT_PSNR_db": 23.759901523590088,
+        "own_worst4_GT_views": [
+          "000017.jpg",
+          "000217.jpg",
+          "000009.jpg",
+          "000121.jpg"
+        ],
+        "own_worst4_teacher_MSE": 0.0059704778250306845
+      }
+    },
+    "all219": {
+      "base": {
+        "mean_gt_mse": 0.00355829674663255,
+        "tail4_gt_mse": 0.00594499777071178,
+        "mean_teacher_mse": 0.0006992238702423492,
+        "mean_GT_PSNR_db": 24.69381582736969,
+        "own_worst4_GT_views": [
+          "000017.jpg",
+          "000217.jpg",
+          "000097.jpg",
+          "000121.jpg"
+        ],
+        "own_worst4_teacher_MSE": 0.002573348523583263
+      },
+      "alpha_oracle": {
+        "mean_gt_mse": 0.0032321459948434494,
+        "tail4_gt_mse": 0.004885561764240265,
+        "mean_teacher_mse": 0.00034433778364473255,
+        "mean_GT_PSNR_db": 25.059686839580536,
+        "own_worst4_GT_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000113.jpg",
+          "000065.jpg"
+        ],
+        "own_worst4_teacher_MSE": 0.0010850419785128906
+      },
+      "color_oracle": {
+        "mean_gt_mse": 0.0031294514337787405,
+        "tail4_gt_mse": 0.004895230638794601,
+        "mean_teacher_mse": 0.00021779168883995226,
+        "mean_GT_PSNR_db": 25.216673970222473,
+        "own_worst4_GT_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000017.jpg",
+          "000153.jpg"
+        ],
+        "own_worst4_teacher_MSE": 0.001019396266201511
+      },
+      "gain_1.05": {
+        "mean_gt_mse": 0.004118906806979794,
+        "tail4_gt_mse": 0.006205980898812413,
+        "mean_teacher_mse": 0.0012526389127742732,
+        "mean_GT_PSNR_db": 23.980770647525787,
+        "own_worst4_GT_views": [
+          "000017.jpg",
+          "000217.jpg",
+          "000153.jpg",
+          "000097.jpg"
+        ],
+        "own_worst4_teacher_MSE": 0.002720487129408866
+      },
+      "gain_1.1": {
+        "mean_gt_mse": 0.00601188356813509,
+        "tail4_gt_mse": 0.0079816032666713,
+        "mean_teacher_mse": 0.003147898802126292,
+        "mean_GT_PSNR_db": 22.28186047077179,
+        "own_worst4_GT_views": [
+          "000153.jpg",
+          "000017.jpg",
+          "000217.jpg",
+          "000121.jpg"
+        ],
+        "own_worst4_teacher_MSE": 0.004089520021807402
+      },
+      "gain_1.25": {
+        "mean_gt_mse": 0.01765403416357003,
+        "tail4_gt_mse": 0.02169511141255498,
+        "mean_teacher_mse": 0.014837768889265135,
+        "mean_GT_PSNR_db": 17.57227712869644,
+        "own_worst4_GT_views": [
+          "000153.jpg",
+          "000193.jpg",
+          "000073.jpg",
+          "000081.jpg"
+        ],
+        "own_worst4_teacher_MSE": 0.01758107403293252
+      },
+      "opacity_1.1": {
+        "mean_gt_mse": 0.00347305070317816,
+        "tail4_gt_mse": 0.005687371012754738,
+        "mean_teacher_mse": 0.0006296937895058363,
+        "mean_GT_PSNR_db": 24.78081703186035,
+        "own_worst4_GT_views": [
+          "000017.jpg",
+          "000217.jpg",
+          "000121.jpg",
+          "000097.jpg"
+        ],
+        "own_worst4_teacher_MSE": 0.002280765475006774
+      },
+      "opacity_1.25": {
+        "mean_gt_mse": 0.0035444110544631258,
+        "tail4_gt_mse": 0.005576257826760411,
+        "mean_teacher_mse": 0.0007354435028901207,
+        "mean_GT_PSNR_db": 24.66554033756256,
+        "own_worst4_GT_views": [
+          "000217.jpg",
+          "000017.jpg",
+          "000121.jpg",
+          "000097.jpg"
+        ],
+        "own_worst4_teacher_MSE": 0.002158112998586148
+      },
+      "opacity_1.5": {
+        "mean_gt_mse": 0.0039713073638267815,
+        "tail4_gt_mse": 0.005826795822940767,
+        "mean_teacher_mse": 0.001228031309437938,
+        "mean_GT_PSNR_db": 24.13772976398468,
+        "own_worst4_GT_views": [
+          "000217.jpg",
+          "000017.jpg",
+          "000121.jpg",
+          "000153.jpg"
+        ],
+        "own_worst4_teacher_MSE": 0.002468439663061872
+      }
+    }
+  },
+  "nonworse_GT_views_vs_own_base": {
+    "original24": {
+      "base": {
+        "count": 32,
+        "worsened_views": []
+      },
+      "alpha_oracle": {
+        "count": 31,
+        "worsened_views": [
+          "000153.jpg"
+        ]
+      },
+      "color_oracle": {
+        "count": 32,
+        "worsened_views": []
+      },
+      "gain_1.05": {
+        "count": 2,
+        "worsened_views": [
+          "000001.jpg",
+          "000009.jpg",
+          "000017.jpg",
+          "000025.jpg",
+          "000033.jpg",
+          "000041.jpg",
+          "000049.jpg",
+          "000057.jpg",
+          "000065.jpg",
+          "000073.jpg",
+          "000081.jpg",
+          "000089.jpg",
+          "000097.jpg",
+          "000105.jpg",
+          "000113.jpg",
+          "000121.jpg",
+          "000129.jpg",
+          "000145.jpg",
+          "000153.jpg",
+          "000161.jpg",
+          "000169.jpg",
+          "000177.jpg",
+          "000185.jpg",
+          "000193.jpg",
+          "000209.jpg",
+          "000217.jpg",
+          "000225.jpg",
+          "000233.jpg",
+          "000241.jpg",
+          "000249.jpg"
+        ]
+      },
+      "gain_1.1": {
+        "count": 0,
+        "worsened_views": [
+          "000001.jpg",
+          "000009.jpg",
+          "000017.jpg",
+          "000025.jpg",
+          "000033.jpg",
+          "000041.jpg",
+          "000049.jpg",
+          "000057.jpg",
+          "000065.jpg",
+          "000073.jpg",
+          "000081.jpg",
+          "000089.jpg",
+          "000097.jpg",
+          "000105.jpg",
+          "000113.jpg",
+          "000121.jpg",
+          "000129.jpg",
+          "000137.jpg",
+          "000145.jpg",
+          "000153.jpg",
+          "000161.jpg",
+          "000169.jpg",
+          "000177.jpg",
+          "000185.jpg",
+          "000193.jpg",
+          "000201.jpg",
+          "000209.jpg",
+          "000217.jpg",
+          "000225.jpg",
+          "000233.jpg",
+          "000241.jpg",
+          "000249.jpg"
+        ]
+      },
+      "gain_1.25": {
+        "count": 0,
+        "worsened_views": [
+          "000001.jpg",
+          "000009.jpg",
+          "000017.jpg",
+          "000025.jpg",
+          "000033.jpg",
+          "000041.jpg",
+          "000049.jpg",
+          "000057.jpg",
+          "000065.jpg",
+          "000073.jpg",
+          "000081.jpg",
+          "000089.jpg",
+          "000097.jpg",
+          "000105.jpg",
+          "000113.jpg",
+          "000121.jpg",
+          "000129.jpg",
+          "000137.jpg",
+          "000145.jpg",
+          "000153.jpg",
+          "000161.jpg",
+          "000169.jpg",
+          "000177.jpg",
+          "000185.jpg",
+          "000193.jpg",
+          "000201.jpg",
+          "000209.jpg",
+          "000217.jpg",
+          "000225.jpg",
+          "000233.jpg",
+          "000241.jpg",
+          "000249.jpg"
+        ]
+      },
+      "opacity_1.1": {
+        "count": 25,
+        "worsened_views": [
+          "000049.jpg",
+          "000073.jpg",
+          "000081.jpg",
+          "000153.jpg",
+          "000161.jpg",
+          "000193.jpg",
+          "000249.jpg"
+        ]
+      },
+      "opacity_1.25": {
+        "count": 17,
+        "worsened_views": [
+          "000025.jpg",
+          "000033.jpg",
+          "000049.jpg",
+          "000057.jpg",
+          "000073.jpg",
+          "000081.jpg",
+          "000153.jpg",
+          "000161.jpg",
+          "000169.jpg",
+          "000177.jpg",
+          "000185.jpg",
+          "000193.jpg",
+          "000233.jpg",
+          "000241.jpg",
+          "000249.jpg"
+        ]
+      },
+      "opacity_1.5": {
+        "count": 7,
+        "worsened_views": [
+          "000025.jpg",
+          "000033.jpg",
+          "000041.jpg",
+          "000049.jpg",
+          "000057.jpg",
+          "000065.jpg",
+          "000073.jpg",
+          "000081.jpg",
+          "000089.jpg",
+          "000113.jpg",
+          "000121.jpg",
+          "000129.jpg",
+          "000145.jpg",
+          "000153.jpg",
+          "000161.jpg",
+          "000169.jpg",
+          "000177.jpg",
+          "000185.jpg",
+          "000193.jpg",
+          "000201.jpg",
+          "000209.jpg",
+          "000217.jpg",
+          "000233.jpg",
+          "000241.jpg",
+          "000249.jpg"
+        ]
+      }
+    },
+    "all219": {
+      "base": {
+        "count": 32,
+        "worsened_views": []
+      },
+      "alpha_oracle": {
+        "count": 31,
+        "worsened_views": [
+          "000153.jpg"
+        ]
+      },
+      "color_oracle": {
+        "count": 32,
+        "worsened_views": []
+      },
+      "gain_1.05": {
+        "count": 2,
+        "worsened_views": [
+          "000001.jpg",
+          "000009.jpg",
+          "000017.jpg",
+          "000025.jpg",
+          "000033.jpg",
+          "000041.jpg",
+          "000049.jpg",
+          "000057.jpg",
+          "000065.jpg",
+          "000073.jpg",
+          "000081.jpg",
+          "000089.jpg",
+          "000097.jpg",
+          "000105.jpg",
+          "000113.jpg",
+          "000121.jpg",
+          "000129.jpg",
+          "000145.jpg",
+          "000153.jpg",
+          "000161.jpg",
+          "000169.jpg",
+          "000177.jpg",
+          "000185.jpg",
+          "000193.jpg",
+          "000209.jpg",
+          "000217.jpg",
+          "000225.jpg",
+          "000233.jpg",
+          "000241.jpg",
+          "000249.jpg"
+        ]
+      },
+      "gain_1.1": {
+        "count": 0,
+        "worsened_views": [
+          "000001.jpg",
+          "000009.jpg",
+          "000017.jpg",
+          "000025.jpg",
+          "000033.jpg",
+          "000041.jpg",
+          "000049.jpg",
+          "000057.jpg",
+          "000065.jpg",
+          "000073.jpg",
+          "000081.jpg",
+          "000089.jpg",
+          "000097.jpg",
+          "000105.jpg",
+          "000113.jpg",
+          "000121.jpg",
+          "000129.jpg",
+          "000137.jpg",
+          "000145.jpg",
+          "000153.jpg",
+          "000161.jpg",
+          "000169.jpg",
+          "000177.jpg",
+          "000185.jpg",
+          "000193.jpg",
+          "000201.jpg",
+          "000209.jpg",
+          "000217.jpg",
+          "000225.jpg",
+          "000233.jpg",
+          "000241.jpg",
+          "000249.jpg"
+        ]
+      },
+      "gain_1.25": {
+        "count": 0,
+        "worsened_views": [
+          "000001.jpg",
+          "000009.jpg",
+          "000017.jpg",
+          "000025.jpg",
+          "000033.jpg",
+          "000041.jpg",
+          "000049.jpg",
+          "000057.jpg",
+          "000065.jpg",
+          "000073.jpg",
+          "000081.jpg",
+          "000089.jpg",
+          "000097.jpg",
+          "000105.jpg",
+          "000113.jpg",
+          "000121.jpg",
+          "000129.jpg",
+          "000137.jpg",
+          "000145.jpg",
+          "000153.jpg",
+          "000161.jpg",
+          "000169.jpg",
+          "000177.jpg",
+          "000185.jpg",
+          "000193.jpg",
+          "000201.jpg",
+          "000209.jpg",
+          "000217.jpg",
+          "000225.jpg",
+          "000233.jpg",
+          "000241.jpg",
+          "000249.jpg"
+        ]
+      },
+      "opacity_1.1": {
+        "count": 25,
+        "worsened_views": [
+          "000049.jpg",
+          "000073.jpg",
+          "000081.jpg",
+          "000153.jpg",
+          "000161.jpg",
+          "000193.jpg",
+          "000249.jpg"
+        ]
+      },
+      "opacity_1.25": {
+        "count": 14,
+        "worsened_views": [
+          "000033.jpg",
+          "000041.jpg",
+          "000049.jpg",
+          "000057.jpg",
+          "000065.jpg",
+          "000073.jpg",
+          "000081.jpg",
+          "000129.jpg",
+          "000153.jpg",
+          "000161.jpg",
+          "000169.jpg",
+          "000177.jpg",
+          "000193.jpg",
+          "000201.jpg",
+          "000217.jpg",
+          "000233.jpg",
+          "000241.jpg",
+          "000249.jpg"
+        ]
+      },
+      "opacity_1.5": {
+        "count": 3,
+        "worsened_views": [
+          "000001.jpg",
+          "000009.jpg",
+          "000025.jpg",
+          "000033.jpg",
+          "000041.jpg",
+          "000049.jpg",
+          "000057.jpg",
+          "000065.jpg",
+          "000073.jpg",
+          "000081.jpg",
+          "000089.jpg",
+          "000105.jpg",
+          "000121.jpg",
+          "000129.jpg",
+          "000137.jpg",
+          "000145.jpg",
+          "000153.jpg",
+          "000161.jpg",
+          "000169.jpg",
+          "000177.jpg",
+          "000185.jpg",
+          "000193.jpg",
+          "000201.jpg",
+          "000209.jpg",
+          "000217.jpg",
+          "000225.jpg",
+          "000233.jpg",
+          "000241.jpg",
+          "000249.jpg"
+        ]
+      }
+    }
+  },
+  "relative_improvements_vs_own_base": {
+    "original24": {
+      "base": {
+        "GT_MSE_reduction_percent": 0.0,
+        "teacher_MSE_reduction_percent": 0.0,
+        "own_tail4_GT_MSE_reduction_percent": 0.0
+      },
+      "alpha_oracle": {
+        "GT_MSE_reduction_percent": 19.031266244301705,
+        "teacher_MSE_reduction_percent": 59.209188539523375,
+        "own_tail4_GT_MSE_reduction_percent": 40.56708639604323
+      },
+      "color_oracle": {
+        "GT_MSE_reduction_percent": 13.844660873234648,
+        "teacher_MSE_reduction_percent": 45.938396039208854,
+        "own_tail4_GT_MSE_reduction_percent": 16.181186574363494
+      },
+      "gain_1.05": {
+        "GT_MSE_reduction_percent": -12.838676140355298,
+        "teacher_MSE_reduction_percent": -38.23308453464173,
+        "own_tail4_GT_MSE_reduction_percent": -2.6971124541159464
+      },
+      "gain_1.1": {
+        "GT_MSE_reduction_percent": -56.93798259687735,
+        "teacher_MSE_reduction_percent": -171.50287019228622,
+        "own_tail4_GT_MSE_reduction_percent": -21.21778218353296
+      },
+      "gain_1.25": {
+        "GT_MSE_reduction_percent": -329.1627739494754,
+        "teacher_MSE_reduction_percent": -996.5792496152476,
+        "own_tail4_GT_MSE_reduction_percent": -149.9616598925939
+      },
+      "opacity_1.1": {
+        "GT_MSE_reduction_percent": 2.7006175031910273,
+        "teacher_MSE_reduction_percent": 7.062250376331802,
+        "own_tail4_GT_MSE_reduction_percent": 3.7235576077999655
+      },
+      "opacity_1.25": {
+        "GT_MSE_reduction_percent": 1.973559362463917,
+        "teacher_MSE_reduction_percent": 2.4951138295000175,
+        "own_tail4_GT_MSE_reduction_percent": 6.291677938315788
+      },
+      "opacity_1.5": {
+        "GT_MSE_reduction_percent": -6.649129210460525,
+        "teacher_MSE_reduction_percent": -28.07055704686492,
+        "own_tail4_GT_MSE_reduction_percent": 5.9620358280100145
+      }
+    },
+    "all219": {
+      "base": {
+        "GT_MSE_reduction_percent": 0.0,
+        "teacher_MSE_reduction_percent": 0.0,
+        "own_tail4_GT_MSE_reduction_percent": 0.0
+      },
+      "alpha_oracle": {
+        "GT_MSE_reduction_percent": 9.165923333902892,
+        "teacher_MSE_reduction_percent": 50.75428653123842,
+        "own_tail4_GT_MSE_reduction_percent": 17.8206291630732
+      },
+      "color_oracle": {
+        "GT_MSE_reduction_percent": 12.051982827448382,
+        "teacher_MSE_reduction_percent": 68.85236644388782,
+        "own_tail4_GT_MSE_reduction_percent": 17.65799033750508
+      },
+      "gain_1.05": {
+        "GT_MSE_reduction_percent": -15.755011463779311,
+        "teacher_MSE_reduction_percent": -79.1470466161448,
+        "own_tail4_GT_MSE_reduction_percent": -4.389961748789473
+      },
+      "gain_1.1": {
+        "GT_MSE_reduction_percent": -68.9539686037858,
+        "teacher_MSE_reduction_percent": -350.19899006526174,
+        "own_tail4_GT_MSE_reduction_percent": -34.25746441811841
+      },
+      "gain_1.25": {
+        "GT_MSE_reduction_percent": -396.1372089125845,
+        "teacher_MSE_reduction_percent": -2022.0340896145894,
+        "own_tail4_GT_MSE_reduction_percent": -264.9305222524495
+      },
+      "opacity_1.1": {
+        "GT_MSE_reduction_percent": 2.395697984859302,
+        "teacher_MSE_reduction_percent": 9.94389403674305,
+        "own_tail4_GT_MSE_reduction_percent": 4.333504702495395
+      },
+      "opacity_1.25": {
+        "GT_MSE_reduction_percent": 0.3902342372812284,
+        "teacher_MSE_reduction_percent": -5.179976569623945,
+        "own_tail4_GT_MSE_reduction_percent": 6.202524511749652
+      },
+      "opacity_1.5": {
+        "GT_MSE_reduction_percent": -11.606975095179761,
+        "teacher_MSE_reduction_percent": -75.6277726920715,
+        "own_tail4_GT_MSE_reduction_percent": 1.9882589082428015
+      }
+    }
+  },
+  "maximum_published_summary_absolute_delta": 0.0,
+  "historical_carrier_replay": {
+    "comparisons": 64,
+    "maximum_absolute_MSE_delta": 0.0,
+    "source_sha256": "d823761df0b57c5db883cd175f5943fed3474dbb45d141a7f81887eafe19ca4a"
+  },
+  "reported_mask_summary": {
+    "original24": {
+      "student_near_zero_fraction": {
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "teacher_near_zero_fraction": {
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "student_near_zero_teacher_difference_energy_fraction": {
+        "mean": 0.0,
+        "max": 0.0
+      }
+    },
+    "all219": {
+      "student_near_zero_fraction": {
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "teacher_near_zero_fraction": {
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "student_near_zero_teacher_difference_energy_fraction": {
+        "mean": 0.0,
+        "max": 0.0
+      }
+    }
+  },
+  "recomputed_gates": {
+    "alpha_items": {
+      "teacher_MSE_at_least_20pct_lower": true,
+      "GT_MSE_at_least_5pct_lower": true,
+      "own_tail4_GT_MSE_nonworse": true,
+      "at_least_24_nonworse_GT_views": true
+    },
+    "alpha_room_gate": true,
+    "controls": {
+      "gain_1.05": {
+        "mean_gt_5pct_better": true,
+        "tail4_nonworse": true
+      },
+      "gain_1.1": {
+        "mean_gt_5pct_better": true,
+        "tail4_nonworse": true
+      },
+      "gain_1.25": {
+        "mean_gt_5pct_better": true,
+        "tail4_nonworse": true
+      },
+      "opacity_1.1": {
+        "mean_gt_5pct_better": true,
+        "tail4_nonworse": true
+      },
+      "opacity_1.25": {
+        "mean_gt_5pct_better": true,
+        "tail4_nonworse": true
+      },
+      "opacity_1.5": {
+        "mean_gt_5pct_better": true,
+        "tail4_nonworse": true
+      }
+    },
+    "independent_room_gate": true,
+    "decision": "NEEDS_PRACTICAL_REPAIR_AND_STRONGER_BASELINES"
+  },
+  "alpha_margins_vs_each_fixed_control": {
+    "gain_1.05": {
+      "alpha_GT_mean_MSE_reduction_percent": 21.529033155925315,
+      "alpha_own_tail4_GT_MSE_reduction_percent": 21.27655814771886
+    },
+    "gain_1.1": {
+      "alpha_GT_mean_MSE_reduction_percent": 46.23738204154753,
+      "alpha_own_tail4_GT_MSE_reduction_percent": 38.78971929560999
+    },
+    "gain_1.25": {
+      "alpha_GT_mean_MSE_reduction_percent": 81.69174272069132,
+      "alpha_own_tail4_GT_MSE_reduction_percent": 77.4808173540285
+    },
+    "opacity_1.1": {
+      "alpha_GT_mean_MSE_reduction_percent": 6.936400557419464,
+      "alpha_own_tail4_GT_MSE_reduction_percent": 14.098064759909313
+    },
+    "opacity_1.25": {
+      "alpha_GT_mean_MSE_reduction_percent": 8.810069002196341,
+      "alpha_own_tail4_GT_MSE_reduction_percent": 12.386372437900949
+    },
+    "opacity_1.5": {
+      "alpha_GT_mean_MSE_reduction_percent": 18.612544969852717,
+      "alpha_own_tail4_GT_MSE_reduction_percent": 16.153544543207687
+    }
+  },
+  "color_vs_alpha_all219": {
+    "color_GT_mean_MSE_reduction_percent": 3.1772872026371135,
+    "color_teacher_MSE_reduction_percent": 36.75056900968588,
+    "color_own_tail4_GT_MSE_increase_percent": 0.19790711940450567
+  },
+  "static_mathematical_review": {
+    "black_white_extraction": "Rasterizer.forward is wrapped to capture its raw RGB output, and raw() asserts renderer display equals raw.clamp(0,1). For background-independent compositing Cwhite=Cblack+T, hence A=1-mean_channels(Cwhite-Cblack). The source checks channel-T agreement <=2e-5, alpha range within 2e-5, and logs any range correction. This review cannot verify rasterizer pixels without raw tensors.",
+    "alpha_substitution": "Where As>1e-4, output=At*(Cs/As); otherwise output=Cs. No teacher color fills student holes. This swaps ray-total alpha while retaining student conditional RGB. It is a teacher-assisted pixel factor substitution, not an error-minimizing oracle or a deployable Gaussian repair.",
+    "color_substitution": "Where At>1e-4, output=As*(Ct/At); otherwise output=Cs. Uses teacher conditional RGB and student ray-total alpha. It does not isolate a material parameter or prove additive error decomposition.",
+    "metric_semantics": "All base, oracle, gain, and rerendered-opacity outputs pass through output.float().clamp(0,1), followed by whole-image GT and clamped-teacher MSE. Masked pixels are not excluded from metrics; tail4 uses each variant's own largest four image GT errors. GT is used for reporting/gates only, with all six fixed controls reported.",
+    "opacity_control_freezing": "Each control starts from the same saved base _opacity: sigmoid(base)*fixed_multiplier, clipped to [0,1], converted to a non-gradient Parameter via logit, rerendered, then the exact original Parameter object is restored. Endpoints can produce infinite logits but sigmoid endpoints are legal and rendered RGB is checked finite. Final full-parameter hashes and optimizer-is-None are asserted.",
+    "teacher_and_training": "Teacher and exact-subset student parameters have requires_grad=False; renders use no_grad; no optimizer constructor, backward, optimizer step, or training setup occurs. Imported model_hash hashes all six Gaussian parameter fields. Teacher hash, student before/after hashes, source hashes, and optimizer absence are checked by the source.",
+    "mask_reporting_limit": "MASKS.csv reports both near-zero area fractions and student-near-zero raw teacher/student difference-energy fraction. A separate teacher-near-zero difference-energy fraction is not stored; every recorded near-zero area is zero, so that omitted statistic is zero for these exported masks and does not alter this run's gates.",
+    "evidence_limit": "Run contains CSV/JSON only, no full raw Cblack/Cwhite/alpha or oracle images. Aggregation and static code consistency are independently verified; original pixel correctness and reported zero masks cannot be independently reconstructed from these files.",
+    "scientific_limit": "Both oracles use uncompressed teacher information for each held-out pixel. Passing the frozen gates supports measuring practical repair space only. all219 color substitution is stronger on mean GT and teacher MSE; alpha is slightly stronger on its own tail4. This does not establish alpha dominance, deployability, innovation, or applicability to mature compression methods."
+  },
+  "logged_validity_conditions": {
+    "no_training_or_optimizer_reported": true,
+    "teacher_parameters_unchanged": true,
+    "student_states_restored": true,
+    "sources_unchanged": true,
+    "T_channel_delta_within_tolerance": true,
+    "time_and_memory_within_budget": true
+  },
+  "reported_alpha_roundoff_pixels": 0,
+  "reported_max_background_T_channel_delta": 2.384185791015625e-07,
+  "raw_pixel_independently_verified": false,
+  "blocking_aggregation_or_static_math_issues": [],
+  "pixel_evidence_limitation_is_explicit": true,
+  "source_hashes_read": {
+    "/mnt/d/Documents/my 3dgs/research/experiments/pruned-alpha-oracle-v0/CONTRACT.md": "9945e48c38e3866566f946a64051e155cdd76c0b704bf7b1072fdcd8bfd22523",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pruned-alpha-oracle-v0/run/CONFIG.json": "b844191cf9e6bab46194968ea83fbd87ddeb9bda444eb27bd37fd8a152fe5eb8",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pruned-alpha-oracle-v0/run/RESULTS.json": "1eca067b5177a2a6707b0bad84735cca28f00033821173604c327b254c70c621",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pruned-alpha-oracle-v0/run/METRICS.csv": "de65e533436cd4c073ce35e0eb12c4c5dc58bbc8b0f345f097c9a14c30dcf6c8",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pruned-alpha-oracle-v0/run/MASKS.csv": "d1e8677fc140aa33ae34e724f0d0ad3334757fe7dba6fa553cd46da6bf793646",
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/diagnose_pruned_alpha_oracle.py": "7ddebd3ab7c392eaefc318282ac0d995bd8165fd2646f45b38acaf5dd028617f"
+  },
+  "elapsed_CPU_seconds": 0.022696747000000003,
+  "elapsed_wall_seconds": 0.07932487799999999,
+  "audit_passed_with_pixel_evidence_limit": true
+}

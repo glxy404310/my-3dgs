@@ -1,0 +1,15 @@
+{
+  "process_timeout_exit_code": 0,
+  "tee_exit_code": 0,
+  "external_process_pipe_wall_seconds": 16.304483652,
+  "wall_scope": "before timeout launch through Python/timeout/tee return; excludes sidecar write",
+  "term_deadline_seconds": 295,
+  "kill_grace_seconds": 5,
+  "hard_budget_seconds": 300,
+  "within_300_seconds": true,
+  "external_completion_confirmed": true,
+  "automatic_retry_permitted": false,
+  "planned_new_native_forwards": 10,
+  "planned_reused_teacher_views": 3,
+  "partial_results_path": "run-v1/RESULTS.json"
+}

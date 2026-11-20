@@ -1,0 +1,148 @@
+{
+  "schema": "co-ray-split-interaction-v0/graph-contract-v1",
+  "frozen_by_root": true,
+  "reviewed_full_code": true,
+  "reviewed_code_sha256": {
+    "ASSUMPTIONS.md": "e3de2d0cea654e5c6dc17c74e2afab31d0f5d3cf38ac96697b17f66317fc2e50",
+    "build_graph.py": "c806bed8f7726b5c7537f311847730f999c2048b16ce033b48ce2221662d68ce",
+    "metrics.py": "ac5cc9d2bc06e7c6688791de99548c3741a898d22c843d42157d151f477c4a8d",
+    "PREPARATION.md": "2c8d260b6b1097e9d4a4078a8797504b80ec4fc5ce7c4aa93334d8219f0160cc",
+    "GRAPH_CONTRACT.template.json": "ab325c95a47ab82c91ad6371922c16b48a5320c73265298fc83098da03c88f10",
+    "METRICS_CONTRACT.template.json": "613c3306ce1fbfc19037a84a9869f368e9c4c4c3a1ccbcc1a934deff251fcaf3"
+  },
+  "fixed": {
+    "width": 979,
+    "height": 546,
+    "grid_width": 128,
+    "grid_height": 72,
+    "grid_rule": "floor((2*i+1)*raw_dimension/(2*grid_dimension))",
+    "capacities": [
+      371,
+      370,
+      370,
+      370
+    ],
+    "random_seeds": [
+      101,
+      202
+    ],
+    "calibration_train_ranks": [
+      0,
+      31,
+      62,
+      93,
+      124,
+      155,
+      186,
+      218
+    ],
+    "evaluation_train_ranks": [
+      15,
+      46,
+      77,
+      108,
+      139,
+      170,
+      201,
+      217
+    ],
+    "wall_seconds": 180,
+    "address_space_bytes": 2147483648,
+    "max_samples_nnz": 8000000
+  },
+  "include_base_repeat": true,
+  "cameras": {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/CAMERAS.json",
+    "sha256": "1dee02c8e1a7f36309a040c5413fd05676a149256c75ed53a6de756411702b55"
+  },
+  "selection": {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/matched-count-v0/early/las_split/selection.json",
+    "sha256": "c0fc4b67b007cf4331c1880d4928d20e5ed792f6e9a1bbf9b5d8d9eecb0661d6"
+  },
+  "native_sources": {
+    "auxiliary.h": {
+      "path": "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/auxiliary.h",
+      "sha256": "5a3345d46acd23a85e44c214dac404f4be195d7c4c49c9effa280ba3bbb10a51"
+    },
+    "forward.cu": {
+      "path": "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/forward.cu",
+      "sha256": "4bfb6830a138bd016f39fa4558f998825d4182b12cfbda2f62bed0ab75042b54"
+    }
+  },
+  "additional_source_pins": [
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/ROOT_PROTOCOL.md",
+      "sha256": "6843f9c6b5c11269e21edb58a35896c1a7c4cc7cb04d7d4f2dbcb0e908d64a46"
+    },
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/ROOT_INPUT_PINS.json",
+      "sha256": "7ff5ebbe6ba914655ae602226db3176491a01b776328af77c19dedaf7f380e85"
+    },
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-projection-v1/RESULTS.json",
+      "sha256": "79a999259b5f8f303e91a8c05d56eb71e501ab26c8b5aeeb345921f1f435bda2"
+    },
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-projection-v1/SUPERVISOR.json",
+      "sha256": "4fa6106dcbcdd50d91f7250e22256e89e5d5dc83a2eed73967180a90cb6d8398"
+    },
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-projection-v1/EXTERNAL_ROOT.json",
+      "sha256": "0be7fa86a07ed53924e4235e2969e57797c144b4860d28a52c91c36f28848ae3"
+    },
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-projection-v1/RAW_MANIFEST.json",
+      "sha256": "481552789707a34d09e6ecd300b3ee8f3f9e7a236831cd0da5edc93af59c2496"
+    }
+  ],
+  "projections": [
+    {
+      "train_rank": 0,
+      "image_name": "000002.jpg",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-projection-v1/raw/projection/000002.jpg.npz",
+      "sha256": "cb23529cc0a97c4adb0b0f1213f7e2ad4512e158cf350e5e2827f75f463a6439"
+    },
+    {
+      "train_rank": 31,
+      "image_name": "000037.jpg",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-projection-v1/raw/projection/000037.jpg.npz",
+      "sha256": "61c457d14d94b0837f734f93b3877206e473e4e6abb1225f73d0db7665be7594"
+    },
+    {
+      "train_rank": 62,
+      "image_name": "000072.jpg",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-projection-v1/raw/projection/000072.jpg.npz",
+      "sha256": "8fe71bea48076bc6e4ade395b6b0a6a845db0a8439c33f10ebe759851f13c726"
+    },
+    {
+      "train_rank": 93,
+      "image_name": "000108.jpg",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-projection-v1/raw/projection/000108.jpg.npz",
+      "sha256": "adb2d054a75e6011a13067bb2088e8daf7ccebddf98c527ec9aa31b62bbc19b9"
+    },
+    {
+      "train_rank": 124,
+      "image_name": "000143.jpg",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-projection-v1/raw/projection/000143.jpg.npz",
+      "sha256": "c58d539b7938ad9f01da931cc21ce23c1d37af6af86139d8d1ed0dc6ae3906bd"
+    },
+    {
+      "train_rank": 155,
+      "image_name": "000179.jpg",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-projection-v1/raw/projection/000179.jpg.npz",
+      "sha256": "0f7870c5509364fd029b04bf75a9e2a1d2039b2b77c43a073fa17f58ba93fe7c"
+    },
+    {
+      "train_rank": 186,
+      "image_name": "000214.jpg",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-projection-v1/raw/projection/000214.jpg.npz",
+      "sha256": "791f9721436164023a6c7b594bf315e9d8d12e454fc2904352f5821dedfd4ebf"
+    },
+    {
+      "train_rank": 218,
+      "image_name": "000251.jpg",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-projection-v1/raw/projection/000251.jpg.npz",
+      "sha256": "0e06df6ba5a71ccc044947cd7e91249584ab3629762b4162264d7ed526f4fa3c"
+    }
+  ]
+}

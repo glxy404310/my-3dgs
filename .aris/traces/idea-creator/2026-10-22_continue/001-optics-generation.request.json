@@ -1,0 +1,14 @@
+{
+  "purpose": "optics-generation",
+  "agent_id": "/root/continue_optics_ideas",
+  "prompt": "You are a read-only idea-generation shard (not jury). Research static per-scene 3DGS, Windows workspace D:/Documents/my 3dgs, RTX5070 12GB, existing mature Truck30k ~2.05M gaussians, early Truck/Train checkpoints. User goal: continue current idea, stop promptly if hopeless, broadly propose AND cheaply try alternatives. Current no-training constraint remains: propose frozen diagnostics first. Read idea-stage/restart-20261022/BRIEF.md, CANDIDATES.json and SOURCES.json; research/experiments/truck30k-frozen-compression-v0/FINDINGS.md; idea-stage/IDEA_REPORT.md. Prior 12 include SH position direction detach; premultiplied opacity radiance; cross-fold appearance geometry; pixel phase; per-image PSF; linear compositing capacity; cross-view scheduling; SH nullspace; order-aware quant; adversarial compression pose; surface evidence balance; observed-anchor convex appearance. Old split routes failed, ADC100/200 known FAIL/INCONCLUSIVE. Latest frozen50%prune has obvious off-calibration holes but real existing views find worse than virtual. Do not repackage these as new. Lens: image formation, appearance identifiability, data/model mismatch, calibration-free or no-training diagnostics. Generate 5-7 additional concrete ideas, possibly bold, each one central mechanism and cheapest decisively informative check using existing model/data (ideally frozen <10minGPU). Browse primary papers recent 2025-2026 using tools; local library first (existing sources acceptable). No ranking, acceptance, novelty verdict, or writes. Return JSON {shard_id,candidates:[{dedup_key,payload:{title,method_steps,hypothesis,first_frozen_diagnostic,advance_stop_null_rules,strong_simple_controls,closest_sources:[{title,url,overlap,delta_unknown}],so_what,risk,estimated_gpu_hours}}]}. Clearly separate verified sources and speculation. Do not create agents or run GPU. Reply Chinese.",
+  "tool": "spawn_agent",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "files_referenced": [
+    "idea-stage/restart-20261022/BRIEF.md",
+    "idea-stage/restart-20261022/CANDIDATES.json",
+    "idea-stage/restart-20261022/SOURCES.json",
+    "research/experiments/truck30k-frozen-compression-v0/FINDINGS.md"
+  ]
+}

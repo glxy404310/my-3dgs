@@ -1,0 +1,12 @@
+{
+  "call_number": 1,
+  "purpose": "split-pilot-claim-gate",
+  "agent_id": "/root/split_pilot_claim_gate",
+  "model": "gpt-6-astra",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "overall_verdict": "partial",
+  "routing_action": "online_derived_split_event_before_mechanism"
+}

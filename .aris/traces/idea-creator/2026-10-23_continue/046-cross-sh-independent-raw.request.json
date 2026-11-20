@@ -1,0 +1,10 @@
+{
+  "call_number": 46,
+  "purpose": "cross-sh-independent-raw",
+  "timestamp": "2026-10-22T20:06:09.793Z",
+  "tool": "collaboration.followup_task",
+  "agent_path": "/root/shared_coord_failure_disposition",
+  "model": "inherited-primary",
+  "prompt": "#27 stage1已实际terminal：session43945 outerexit1（launcher child_exit_code2），非timeout，external10.57325768s；toolvalidtrue/完整性true，8图全部primitive/fullRGB/T通过、ncontrib全exact；原top64只有13满足全部跨折capacity，正式INCONCLUSIVE_CROSS_VIEW_BLOCK_CAPACITY。请独立CPU从原8cache、原PLY xyz、COLMAP/原SH复核，不importproducer实现、不GPU/量化/拟合。重点2048原候选序列重构accepted IDs/alpha/T/w/C0、ncontrib；全2mMorton floor21/allbbox/stableties、16022block scores/support、top64 selection13/64及失败分布。颜色可独立官方SH公式NumPy评估8allunique与原nativeRGB，记录精度；若范围过多至少明确缺项不可喊全通过。核输入/输出hash与合同3387c350，无门槛改动。可新建独立verify脚本+INDEPENDENT_VERIFICATION.json，不改原代码/结果/合同，保存实际exit/wall。结论仅验证容量停止，不能从13子集挑选进stage2。请启动一次有外部<=300s watchdog的CPU复核（已授权），不要只代码review。run-dir research/experiments/cross-gaussian-sh-rounding-v0/run-stage1，原diag脚本 scripts/experiments/diagnose_cross_gaussian_sh_rounding.py，ASSUMPTIONS明确CPUcamera近似。反馈原始证据和不可验证边界。",
+  "prompt_provenance": "Exact readable call text this root turn; encrypted arguments not decrypted"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "TINY_SYNTHETIC_PASS_ONLY",
+  "actual_audit_executed": false,
+  "scientific_arrays_read": false,
+  "checks": [
+    "float64_identity_MSE_PSNR_SSIM",
+    "direct_11x11_Gaussian_reference",
+    "generated_2point_62field_PLY_SH_transpose",
+    "640_AB_BA_protocol",
+    "malformed_timing_rejected",
+    "signed_negative_ranking",
+    "three_column_pixel_crop"
+  ],
+  "Python_AST": true,
+  "stdlib_only_at_import": true,
+  "no_producer_import": true,
+  "actual_audit_output_absent": true
+}

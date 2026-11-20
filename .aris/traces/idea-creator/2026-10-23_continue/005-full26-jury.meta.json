@@ -1,0 +1,13 @@
+{
+  "missing_keys": [],
+  "status": "ok",
+  "agent_path": "/root/full26_jury",
+  "all_keys": 26,
+  "model": "gpt-6-astra",
+  "acceptance_status": "provisional",
+  "agent_id": "01a16477-e128-7b12-b10d-2cff0cfcac20",
+  "purpose": "full26-jury",
+  "reviewer_family": "openai",
+  "call_number": 5,
+  "review_independence": "same-family"
+}

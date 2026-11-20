@@ -1,0 +1,16 @@
+{"stage": "verify_old_cache_and_sources", "elapsed_before_progress_write_seconds": 0.0950196510000012}
+{"stage": "load_only_frozen_30k_teacher", "elapsed_before_progress_write_seconds": 2.759830402999995}
+{"stage": "single_anchor", "elapsed_before_progress_write_seconds": 10.368644859, "view": "000002.jpg"}
+{"stage": "collect_fixed_discovery_view", "elapsed_before_progress_write_seconds": 10.547630145, "selected_index": 0, "view": "000002.jpg", "reused": true}
+{"stage": "collect_fixed_discovery_view", "elapsed_before_progress_write_seconds": 10.882746424999993, "selected_index": 1, "view": "000023.jpg", "reused": true}
+{"stage": "collect_fixed_discovery_view", "elapsed_before_progress_write_seconds": 11.181928626000001, "selected_index": 2, "view": "000046.jpg", "reused": true}
+{"stage": "collect_fixed_discovery_view", "elapsed_before_progress_write_seconds": 11.490785949, "selected_index": 3, "view": "000069.jpg", "reused": false}
+{"stage": "collect_fixed_discovery_view", "elapsed_before_progress_write_seconds": 11.730450156000003, "selected_index": 4, "view": "000092.jpg", "reused": false}
+{"stage": "collect_fixed_discovery_view", "elapsed_before_progress_write_seconds": 11.967069961999997, "selected_index": 5, "view": "000115.jpg", "reused": false}
+{"stage": "collect_fixed_discovery_view", "elapsed_before_progress_write_seconds": 12.198924062999993, "selected_index": 6, "view": "000136.jpg", "reused": false}
+{"stage": "collect_fixed_discovery_view", "elapsed_before_progress_write_seconds": 12.45381150499999, "selected_index": 7, "view": "000159.jpg", "reused": false}
+{"stage": "collect_fixed_discovery_view", "elapsed_before_progress_write_seconds": 12.725888183999999, "selected_index": 8, "view": "000182.jpg", "reused": false}
+{"stage": "collect_fixed_discovery_view", "elapsed_before_progress_write_seconds": 12.974581548999993, "selected_index": 9, "view": "000205.jpg", "reused": false}
+{"stage": "collect_fixed_discovery_view", "elapsed_before_progress_write_seconds": 13.204968827000002, "selected_index": 10, "view": "000228.jpg", "reused": false}
+{"stage": "collect_fixed_discovery_view", "elapsed_before_progress_write_seconds": 13.440571359000003, "selected_index": 11, "view": "000251.jpg", "reused": false}
+{"stage": "collection_complete_pending_final_integrity", "elapsed_before_progress_write_seconds": 13.67265137199999, "new_forwards": 10, "reused_teacher_views": 3}

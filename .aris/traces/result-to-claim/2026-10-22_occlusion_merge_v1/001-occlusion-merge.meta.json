@@ -1,0 +1,16 @@
+{
+  "call_number": 1,
+  "purpose": "occlusion-merge-results",
+  "timestamp": "2026-10-22",
+  "agent_id": "/root/occlusion_merge_claim_gate",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "claim_supported": "no",
+  "claim_scope": "base_q stable improvement and proceed full LOD; not claim Q has zero information",
+  "integrity_status": "unavailable",
+  "confidence": "high scoped stop decision"
+}

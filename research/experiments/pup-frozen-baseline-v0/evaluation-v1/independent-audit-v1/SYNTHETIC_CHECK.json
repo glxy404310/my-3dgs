@@ -1,0 +1,29 @@
+{
+  "status": "SYNTHETIC_ARRAYS_ONLY_PASS",
+  "real_arrays_read": false,
+  "tolerances": {
+    "mse": 1e-12,
+    "psnr": 1e-09,
+    "ssim": 1e-10,
+    "max_abs_rgb": 1e-12,
+    "pixels": 0,
+    "wall_seconds": 1e-09
+  },
+  "identical": {
+    "gt_mse": 0.0,
+    "gt_psnr": null,
+    "zero_MSE_infinite_PSNR": true,
+    "gt_ssim": 1.0,
+    "teacher_mse": 0.0,
+    "teacher_max_abs_rgb": 0.0
+  },
+  "changed": {
+    "gt_mse": 0.009326800336425304,
+    "gt_psnr": 20.30267320301247,
+    "zero_MSE_infinite_PSNR": false,
+    "gt_ssim": 0.8219559031818415,
+    "teacher_mse": 0.009326800336425304,
+    "teacher_max_abs_rgb": 0.10000002384185791
+  },
+  "script_sha256": "8808b5aa1e9bc0ec9ea491decba916298b6ad5522d1b48dacf7845b9dae22f23"
+}

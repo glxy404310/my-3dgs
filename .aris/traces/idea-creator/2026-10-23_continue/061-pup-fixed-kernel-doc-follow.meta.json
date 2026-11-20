@@ -1,0 +1,13 @@
+{
+  "call_number": 61,
+  "purpose": "pup-fixed-kernel-doc-follow",
+  "timestamp": "2026-10-22T21:31:15.086645+00:00",
+  "agent_path": "/root/pup_fixed_doc_witness_executor",
+  "model": "parent-inherited; exact runtime metadata not separately queried",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok_actual_doc_follow_and_numeric_witnesses",
+  "evidence_trace": ".aris\\compute\\pup-fixed-witness-executor-20261023T052547Z\\TRACE_INDEX.json",
+  "scope": "Synthetic numerical tool verification only. Both actual cases PASS; no scientific Truck model or training. Root independently recomputed all raw FD/Gram before separate certification."
+}

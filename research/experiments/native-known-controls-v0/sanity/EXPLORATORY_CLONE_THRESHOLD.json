@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "exploratory": true,
+  "records": [
+    {
+      "seed": 0,
+      "method": "native",
+      "event": 3600,
+      "cloned_families": 23202,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1383,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected",
+      "event": 3600,
+      "cloned_families": 23204,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1382,
+      "exploratory": true
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected_las",
+      "event": 3600,
+      "cloned_families": 23204,
+      "both_below_opacity_threshold": 0,
+      "prior_alpha_above_threshold_but_pair_members_below": 0,
+      "all_final_pruned_points": 1391,
+      "exploratory": true
+    }
+  ],
+  "scope": "Post-hoc mathematical threshold counts from actual post-clone alpha witnesses. No saved final prune membership mask or counterfactual quality intervention. Do not claim this accounts for observed PSNR loss, novel mechanism, or effectiveness."
+}

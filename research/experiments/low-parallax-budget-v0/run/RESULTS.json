@@ -1,0 +1,184 @@
+{
+  "gpu_used": false,
+  "training_performed": false,
+  "parameter_updates": 0,
+  "teacher_sha256_before": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+  "teacher_sha256_after": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+  "script_sha256": "1118a886a95fc632b60a7d4afd1f0892888b0152a7c7ae96b0231b247bb5218b",
+  "cameras_sha256": "4ceb5372614821a2c7b6097ea1f92e6b4135b0e1a41e3610bb5a3676a115f6bb",
+  "scores_sha256": "f873c5f648c40a65222b35400d9a5390d7756eb46f260b69d7feb89774149770",
+  "point_count": 2050770,
+  "eligible_count": 0,
+  "eligible_original_attribute_fraction": 0.0,
+  "eligible_aggregate_contribution_fraction": 0.0,
+  "count_with_positive_aggregate_contribution": 2004000,
+  "fraction_required": 0.1,
+  "budget_gate": false,
+  "reference_center": [
+    0.08619995827423381,
+    -0.007175731297368587,
+    0.15169579028601274
+  ],
+  "resolution": [
+    979,
+    546
+  ],
+  "selected_camera_stats": [
+    {
+      "view": "000002.jpg",
+      "center_in_frame": 899514,
+      "lambda2_within_025px": 49,
+      "lambda8_within_025px": 6
+    },
+    {
+      "view": "000028.jpg",
+      "center_in_frame": 520093,
+      "lambda2_within_025px": 89,
+      "lambda8_within_025px": 29
+    },
+    {
+      "view": "000047.jpg",
+      "center_in_frame": 577702,
+      "lambda2_within_025px": 2,
+      "lambda8_within_025px": 0
+    },
+    {
+      "view": "000050.jpg",
+      "center_in_frame": 723407,
+      "lambda2_within_025px": 7,
+      "lambda8_within_025px": 0
+    },
+    {
+      "view": "000054.jpg",
+      "center_in_frame": 849896,
+      "lambda2_within_025px": 0,
+      "lambda8_within_025px": 0
+    },
+    {
+      "view": "000064.jpg",
+      "center_in_frame": 893444,
+      "lambda2_within_025px": 4,
+      "lambda8_within_025px": 1
+    },
+    {
+      "view": "000068.jpg",
+      "center_in_frame": 788797,
+      "lambda2_within_025px": 5,
+      "lambda8_within_025px": 0
+    },
+    {
+      "view": "000082.jpg",
+      "center_in_frame": 695859,
+      "lambda2_within_025px": 55,
+      "lambda8_within_025px": 18
+    },
+    {
+      "view": "000098.jpg",
+      "center_in_frame": 841075,
+      "lambda2_within_025px": 48,
+      "lambda8_within_025px": 15
+    },
+    {
+      "view": "000112.jpg",
+      "center_in_frame": 900200,
+      "lambda2_within_025px": 145,
+      "lambda8_within_025px": 30
+    },
+    {
+      "view": "000122.jpg",
+      "center_in_frame": 866592,
+      "lambda2_within_025px": 6,
+      "lambda8_within_025px": 2
+    },
+    {
+      "view": "000127.jpg",
+      "center_in_frame": 809282,
+      "lambda2_within_025px": 53,
+      "lambda8_within_025px": 15
+    },
+    {
+      "view": "000143.jpg",
+      "center_in_frame": 633113,
+      "lambda2_within_025px": 1,
+      "lambda8_within_025px": 0
+    },
+    {
+      "view": "000167.jpg",
+      "center_in_frame": 590058,
+      "lambda2_within_025px": 21,
+      "lambda8_within_025px": 6
+    },
+    {
+      "view": "000176.jpg",
+      "center_in_frame": 718402,
+      "lambda2_within_025px": 2,
+      "lambda8_within_025px": 0
+    },
+    {
+      "view": "000180.jpg",
+      "center_in_frame": 737162,
+      "lambda2_within_025px": 133,
+      "lambda8_within_025px": 31
+    },
+    {
+      "view": "000186.jpg",
+      "center_in_frame": 710816,
+      "lambda2_within_025px": 64,
+      "lambda8_within_025px": 20
+    },
+    {
+      "view": "000192.jpg",
+      "center_in_frame": 606347,
+      "lambda2_within_025px": 124,
+      "lambda8_within_025px": 49
+    },
+    {
+      "view": "000204.jpg",
+      "center_in_frame": 460770,
+      "lambda2_within_025px": 0,
+      "lambda8_within_025px": 0
+    },
+    {
+      "view": "000208.jpg",
+      "center_in_frame": 615114,
+      "lambda2_within_025px": 5,
+      "lambda8_within_025px": 2
+    },
+    {
+      "view": "000219.jpg",
+      "center_in_frame": 472424,
+      "lambda2_within_025px": 0,
+      "lambda8_within_025px": 0
+    },
+    {
+      "view": "000226.jpg",
+      "center_in_frame": 919993,
+      "lambda2_within_025px": 24,
+      "lambda8_within_025px": 6
+    },
+    {
+      "view": "000236.jpg",
+      "center_in_frame": 479969,
+      "lambda2_within_025px": 5,
+      "lambda8_within_025px": 1
+    },
+    {
+      "view": "000244.jpg",
+      "center_in_frame": 697229,
+      "lambda2_within_025px": 28,
+      "lambda8_within_025px": 10
+    }
+  ],
+  "center_motion_threshold_pixels": 0.25,
+  "lambdas": [
+    2,
+    8
+  ],
+  "minimum_center_support": 3,
+  "selection_is_per_camera_contribution": false,
+  "covariance_checked": false,
+  "rgb_checked": false,
+  "decision": "STOP_INSUFFICIENT_CAPACITY_UNDER_DECLARED_RULE",
+  "elapsed_cpu_seconds": 14.529838858000002,
+  "scope": "Upper capacity before covariance/occlusion/RGB checks under the declared center-support rule, not maximum possible benefit of all far-background methods"
+}

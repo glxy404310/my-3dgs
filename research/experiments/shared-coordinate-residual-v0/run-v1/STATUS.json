@@ -1,0 +1,12 @@
+{
+  "stage": "TERMINATED",
+  "decision": "INCONCLUSIVE_EXCEPTION",
+  "original_failure": {
+    "code": "INCONCLUSIVE_EXCEPTION",
+    "message": "utils is already imported from another repository",
+    "type": "RuntimeError",
+    "traceback": "Traceback (most recent call last):\n  File \"/mnt/d/Documents/my 3dgs/scripts/experiments/diagnose_shared_coordinate_residual.py\", line 1042, in main\n    bundle30, cameras30 = load_checkpoint(30000, args)\n  File \"/mnt/d/Documents/my 3dgs/scripts/experiments/diagnose_shared_coordinate_residual.py\", line 276, in load_checkpoint\n    bundle = native.load_truck_checkpoint(iteration, repo=args.repo, source=args.source,\n  File \"/mnt/d/Documents/my 3dgs/scripts/experiments/shared_coordinate_native.py\", line 141, in load_truck_checkpoint\n    _check_import_path('utils', repo)\n  File \"/mnt/d/Documents/my 3dgs/scripts/experiments/shared_coordinate_native.py\", line 109, in _check_import_path\n    raise RuntimeError(f'{module_name} is already imported from another repository')\nRuntimeError: utils is already imported from another repository\n",
+    "elapsed_before_failure_save_seconds": 4.160598233
+  },
+  "integrity_complete": true
+}

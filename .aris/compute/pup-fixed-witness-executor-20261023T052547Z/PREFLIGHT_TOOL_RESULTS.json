@@ -1,0 +1,16 @@
+{
+  "gpu": {
+    "chunk_id": "d15ebb",
+    "wall_time_seconds": 0.2451846,
+    "exit_code": 0,
+    "original_token_count": 456,
+    "output": "w\u0000s\u0000l\u0000:\u0000 \u0000�hKm0R \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006tM�n\f�FO*g\\��P0R \u0000W\u0000S\u0000L\u0000\u00020N\u0000A\u0000T\u0000 \u0000!j\u000f_\u000bN�v \u0000W\u0000S\u0000L\u0000 \u0000\rN/e\u0001c \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006t\u00020\r\u0000\n\u0000Fri Oct 23 05:25:47 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 610.43.02              KMD Version: 610.62        CUDA UMD Version: 13.3     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 5070        On  |   00000000:01:00.0  On |                  N/A |\n|  0%   52C    P8             12W /  250W |    1700MiB /  12227MiB |      2%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n"
+  },
+  "paths": {
+    "chunk_id": "56ff5c",
+    "wall_time_seconds": 0.1274732,
+    "exit_code": 0,
+    "original_token_count": 54,
+    "output": "{\r\n  \"sh0_output_exists\": false,\r\n  \"sh3_output_exists\": false,\r\n  \"sh0_external_log_exists\": false,\r\n  \"sh0_external_run_exists\": false,\r\n  \"sh3_external_log_exists\": false,\r\n  \"sh3_external_run_exists\": false\r\n}\r\n"
+  }
+}

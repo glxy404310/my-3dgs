@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-10-23T02:06:14.738695+08:00",
+  "source": "/home/administrator/datasets/tandt_db/tandt/truck/sparse/0/cameras.bin",
+  "sha256": "f183f5e1a0ddbca7bb4e1e12c74ee2939069ea69929710a5af0692d3f53e3ac5",
+  "camera_count": 1,
+  "camera_id": 1,
+  "model": "PINHOLE",
+  "metadata_width": 1957,
+  "metadata_height": 1091,
+  "fx": 1163.2547280302354,
+  "fy": 1156.280404988286,
+  "cx": 978.5,
+  "cy": 545.5,
+  "actual_JPEG_dimensions_previously_verified": [
+    979,
+    546
+  ],
+  "distortion_parameters_in_this_record": false,
+  "claim_limit": "No distortion parameters does not prove no residual distortion; current source-camera metadata is not evidence that a future shared residual is physical lens error.",
+  "new_rendering_or_training": false
+}

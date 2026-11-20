@@ -1,0 +1,31 @@
+# Reproducible Python / editor caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+Desktop.ini
+~$*
+
+# Local credentials and machine settings
+.env
+.env.*
+!.env.example
+
+# Raw datasets, model checkpoints, point clouds and numerical arrays stay local.
+# Reports, JSON/CSV metrics, logs and visual comparisons remain versioned.
+/datasets/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.ply
+*.npz
+*.npy
+*.bin
+*.dsh8

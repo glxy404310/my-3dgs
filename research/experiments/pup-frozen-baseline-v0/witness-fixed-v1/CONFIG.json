@@ -1,0 +1,249 @@
+{
+  "seed": 0,
+  "schedule": [
+    {
+      "kind": "baseline"
+    },
+    {
+      "kind": "FD",
+      "gaussian": 0,
+      "dimension": 0,
+      "name": "x",
+      "sign": 1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 0,
+      "dimension": 0,
+      "name": "x",
+      "sign": -1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 0,
+      "dimension": 1,
+      "name": "y",
+      "sign": 1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 0,
+      "dimension": 1,
+      "name": "y",
+      "sign": -1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 0,
+      "dimension": 2,
+      "name": "z",
+      "sign": 1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 0,
+      "dimension": 2,
+      "name": "z",
+      "sign": -1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 0,
+      "dimension": 3,
+      "name": "raw_log_sx",
+      "sign": 1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 0,
+      "dimension": 3,
+      "name": "raw_log_sx",
+      "sign": -1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 0,
+      "dimension": 4,
+      "name": "raw_log_sy",
+      "sign": 1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 0,
+      "dimension": 4,
+      "name": "raw_log_sy",
+      "sign": -1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 0,
+      "dimension": 5,
+      "name": "raw_log_sz",
+      "sign": 1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 0,
+      "dimension": 5,
+      "name": "raw_log_sz",
+      "sign": -1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 1,
+      "dimension": 0,
+      "name": "x",
+      "sign": 1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 1,
+      "dimension": 0,
+      "name": "x",
+      "sign": -1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 1,
+      "dimension": 1,
+      "name": "y",
+      "sign": 1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 1,
+      "dimension": 1,
+      "name": "y",
+      "sign": -1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 1,
+      "dimension": 2,
+      "name": "z",
+      "sign": 1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 1,
+      "dimension": 2,
+      "name": "z",
+      "sign": -1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 1,
+      "dimension": 3,
+      "name": "raw_log_sx",
+      "sign": 1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 1,
+      "dimension": 3,
+      "name": "raw_log_sx",
+      "sign": -1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 1,
+      "dimension": 4,
+      "name": "raw_log_sy",
+      "sign": 1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 1,
+      "dimension": 4,
+      "name": "raw_log_sy",
+      "sign": -1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 1,
+      "dimension": 5,
+      "name": "raw_log_sz",
+      "sign": 1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "FD",
+      "gaussian": 1,
+      "dimension": 5,
+      "name": "raw_log_sz",
+      "sign": -1,
+      "epsilon": 0.001
+    },
+    {
+      "kind": "official_pool",
+      "forward": 1,
+      "statistical_backward": 1,
+      "resolution": 1
+    }
+  ],
+  "PYTHONPATH": "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10:/home/administrator/projects/pup-frozen-baseline-e971ea48",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "torch_version": "2.7.1+cu128",
+  "CUDA_build": "12.8",
+  "GPU": "NVIDIA GeForce RTX 5070",
+  "driver": "NVIDIA GeForce RTX 5070, 610.62, 12227 MiB",
+  "private_paths": {
+    "python": "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/__init__.py",
+    "extension": "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/_C.cpython-310-x86_64-linux-gnu.so"
+  },
+  "private_hash": {
+    "python": "1d4fc43bb67c4552193d340e2d6894ad7ec3c0d04a620fd7655c89ccf855df5b",
+    "extension": "ca99d74bf9d880585b64f75444339bf739276883c8c0f4a85b926fb6e15c9219"
+  },
+  "raw_RGB_shape": [
+    3,
+    4,
+    4
+  ],
+  "dimensions": [
+    "x",
+    "y",
+    "z",
+    "raw_log_sx",
+    "raw_log_sy",
+    "raw_log_sz"
+  ],
+  "epsilon": 0.001,
+  "CPU_aggregation_dtype": "float64",
+  "pool_resolution": 1,
+  "official_module_origins": {
+    "scene.gaussian_model": "/home/administrator/projects/pup-frozen-baseline-e971ea48/scene/gaussian_model.py",
+    "utils.graphics_utils": "/home/administrator/projects/pup-frozen-baseline-e971ea48/utils/graphics_utils.py",
+    "utils.sh_utils": "/home/administrator/projects/pup-frozen-baseline-e971ea48/utils/sh_utils.py",
+    "fisher_renderer": "/home/administrator/projects/pup-frozen-baseline-e971ea48/fisher_renderer/__init__.py",
+    "fisher_pool_xyz_scaling": "/home/administrator/projects/pup-frozen-baseline-e971ea48/fisher_pool_xyz_scaling.py"
+  },
+  "display_clamp": false,
+  "GT": false,
+  "main_commit": "e971ea4802908c69eab7e8601bb1eddd2e443754",
+  "fixed_commit": "f62f1cce2cc47a8609c58e4d448ca8eeb6f86e60",
+  "no_scene_instance": true,
+  "observational_C_wrappers": "Unchanged args/return; each captured original called once; restored in finally"
+}

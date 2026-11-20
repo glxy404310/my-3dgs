@@ -1,0 +1,172 @@
+[
+  {
+    "path": "panels/000016.jpg.fixed.full.png",
+    "sha256": "9f0e218b0cb43033ced3521b9b3e52028608caa250c1a8557a9736ccb0df0cb6",
+    "bytes": 1906264,
+    "view": "000016.jpg",
+    "height": 546,
+    "width": 2937,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "Speedy"
+    ],
+    "tag": "fixed.full",
+    "image_source": "actual_saved_pixels",
+    "AI_generated": false
+  },
+  {
+    "path": "panels/000016.jpg.fixed.top220.png",
+    "sha256": "25e6d07a233dad51d85a8d21ccd646dc309930f9ccc4b0f7f29df7463035d331",
+    "bytes": 937826,
+    "view": "000016.jpg",
+    "height": 220,
+    "width": 2937,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "Speedy"
+    ],
+    "tag": "fixed.top220",
+    "image_source": "actual_saved_pixels",
+    "AI_generated": false
+  },
+  {
+    "path": "panels/000017.jpg.fixed.full.png",
+    "sha256": "00b5444ddbb7559bb22641fd1013010e4e9070e18b831c51157569e1895b9413",
+    "bytes": 1822660,
+    "view": "000017.jpg",
+    "height": 546,
+    "width": 2937,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "Speedy"
+    ],
+    "tag": "fixed.full",
+    "image_source": "actual_saved_pixels",
+    "AI_generated": false
+  },
+  {
+    "path": "panels/000017.jpg.fixed.top220.png",
+    "sha256": "61d1b4b2cc02ef2acbc6b1a1dc983865e4a57225c0e3fa91a2ae9aff50dbbe2a",
+    "bytes": 879367,
+    "view": "000017.jpg",
+    "height": 220,
+    "width": 2937,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "Speedy"
+    ],
+    "tag": "fixed.top220",
+    "image_source": "actual_saved_pixels",
+    "AI_generated": false
+  },
+  {
+    "path": "panels/000105.jpg.fixed.full.png",
+    "sha256": "467fe18f469f5aee65966df6e6c9fb7bd1762977845fae16e51fca0eb37901f3",
+    "bytes": 1665896,
+    "view": "000105.jpg",
+    "height": 546,
+    "width": 2937,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "Speedy"
+    ],
+    "tag": "fixed.full",
+    "image_source": "actual_saved_pixels",
+    "AI_generated": false
+  },
+  {
+    "path": "panels/000105.jpg.fixed.top220.png",
+    "sha256": "76873453ddd64c16dd79326a7f5bdd3ce8d56098e4a7481ebd5e8d4d55598153",
+    "bytes": 734593,
+    "view": "000105.jpg",
+    "height": 220,
+    "width": 2937,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "Speedy"
+    ],
+    "tag": "fixed.top220",
+    "image_source": "actual_saved_pixels",
+    "AI_generated": false
+  },
+  {
+    "path": "panels/000185.jpg.exploratory_SSIM_loss_rank1.full.png",
+    "sha256": "7443d96e578455fb2b683625856d9fce2c5529681ae40954522ff0f00d796629",
+    "bytes": 1609688,
+    "view": "000185.jpg",
+    "height": 546,
+    "width": 2937,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "Speedy"
+    ],
+    "tag": "exploratory_SSIM_loss_rank1.full",
+    "image_source": "actual_saved_pixels",
+    "AI_generated": false
+  },
+  {
+    "path": "panels/000009.jpg.exploratory_SSIM_loss_rank2.full.png",
+    "sha256": "ddc3efbbd9996720c3af85de24442291030c46cd2894f6f74b3e3696b40f3b00",
+    "bytes": 1845564,
+    "view": "000009.jpg",
+    "height": 546,
+    "width": 2937,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "Speedy"
+    ],
+    "tag": "exploratory_SSIM_loss_rank2.full",
+    "image_source": "actual_saved_pixels",
+    "AI_generated": false
+  },
+  {
+    "path": "panels/000049.jpg.exploratory_SSIM_loss_rank3.full.png",
+    "sha256": "7cd0ccc64ccc3c1b34934185b5ae4fb3ef4840dbe069bd268ac2ce833c181917",
+    "bytes": 1660212,
+    "view": "000049.jpg",
+    "height": 546,
+    "width": 2937,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "Speedy"
+    ],
+    "tag": "exploratory_SSIM_loss_rank3.full",
+    "image_source": "actual_saved_pixels",
+    "AI_generated": false
+  },
+  {
+    "path": "panels/000113.jpg.exploratory_SSIM_loss_rank4.full.png",
+    "sha256": "316d0e48f86036faeb7b679a955758945fc1b167e9e7f1d0c4d2d061af0c4907",
+    "bytes": 1736718,
+    "view": "000113.jpg",
+    "height": 546,
+    "width": 2937,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "Speedy"
+    ],
+    "tag": "exploratory_SSIM_loss_rank4.full",
+    "image_source": "actual_saved_pixels",
+    "AI_generated": false
+  }
+]

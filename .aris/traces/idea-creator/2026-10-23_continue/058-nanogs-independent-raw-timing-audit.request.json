@@ -1,0 +1,11 @@
+{
+  "call_number": 58,
+  "purpose": "nanogs-independent-raw-timing-audit",
+  "timestamp": "2026-10-23T04:56:30.038990+08:00",
+  "tool": "collaboration.followup_task",
+  "agent_path": "/root/problem_reanchor_compression",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "prompt": "你的下一项premerge分解已采用，backend写新代码root审后才跑。请先独立CPU核对**实际帧时测量**：profile_output/nanogs-frozen-baseline-v0/{CONTRACT.md,run-v1/,WATCHDOG_v1.json}，script scripts/experiments/benchmark_nanogs_native.py只可读取定义不import聚合。真实root session87036已terminal exit0/984forward/35.402485377s，96parity max0、24warmups、864timed、10GiB内peak1857111040，decisionBENCHMARK_COMPLETE。请写新独立CPU verifyscript+INDEPENDENT_TIMING_VERIFICATION.json（不改原任何输入），实际一次run、最多120sec外部watchdog，可启动这次纯CPU审计。按合同独立重建864顺序/每arm288/每view9/repeat9/armposition各3/方向5:4；rawtimes.csv全保留、没有剔慢；重算96viewmedian/27repeat和FPS/246ratios及RESULTS完整summary分布mean/min/max/p05/25/50/75/95/sample_sd，使用自己实现不importproducer聚合；预锁tol time stats1e-9ms、ratio/FPS1e-9、integer/order必须exact，超过保留FAIL不救。核96PARITY refs/filehash/arrayhash存在且allpass，完整source/input/model/camera beforeafter表和manifestoutputs hash，camera-before-after文件实际相同；原modellive无法重观测须限定，不重render不GPU不训练。检查CUDAevent均值稍比hostwall大约.04-.085ms，报告两个时钟结果而非擅自调整/删除、若原因未知标未知，不用这个新现象临时发明否决阈值。给真实actualsession/exit/wall/watchdog/限制、所有三臂关键均值及speedratio的独立结果。此为独立stats/provenance审核不是newscience，保留原SSIMauditFAIL，质量排序不要混入计时PASS。完成后停止编辑。",
+  "prompt_provenance": "Readable root call transcribed from conversation; encrypted logs not decrypted"
+}

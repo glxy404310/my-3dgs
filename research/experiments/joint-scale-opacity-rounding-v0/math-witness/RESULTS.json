@@ -1,0 +1,181 @@
+{
+  "scope": "Synthetic CPU witness for continuous, untruncated, same-center 2D Gaussian alpha fields; not native cap/skip or rendered-image optimality.",
+  "script_sha256": "685451262630896e24e91fb062a7d1cda5846afb8298b62c459b354542946e4d",
+  "numpy_version": "2.2.6",
+  "seed": 20261023,
+  "thresholds": {
+    "integral_relative_error_lt": 1e-06,
+    "enumeration_relative_tie_tolerance": 1e-12,
+    "cpu_seconds_lt": 30.0
+  },
+  "grid": {
+    "points_per_axis": 1201,
+    "radius": 10.0,
+    "coordinates": "x=chol(S+S0)u",
+    "quadrature": "tensor-product trapezoid"
+  },
+  "successes": [
+    "integral:moderate_correlated",
+    "integral:different_area",
+    "integral:rotated_anisotropic",
+    "1000_spd_opacity_enumerations",
+    "endpoint_or_tie:zero",
+    "endpoint_or_tie:upper_clip",
+    "endpoint_or_tie:halfway_even_round",
+    "sum_before_normalization_differs_from_per_view_normalization",
+    "cpu_budget"
+  ],
+  "failures": [],
+  "integrals": [
+    {
+      "name": "moderate_correlated",
+      "S": [
+        [
+          1.3,
+          0.2
+        ],
+        [
+          0.2,
+          0.7
+        ]
+      ],
+      "S0": [
+        [
+          0.8,
+          -0.15
+        ],
+        [
+          -0.15,
+          1.7
+        ]
+      ],
+      "opacity": 0.3,
+      "teacher_opacity": 0.65,
+      "closed_form_sse": 0.621054963235727,
+      "grid_sse": 0.6210549632357274,
+      "relative_error": 7.150562126358928e-16,
+      "passed": true
+    },
+    {
+      "name": "different_area",
+      "S": [
+        [
+          9.0,
+          2.2
+        ],
+        [
+          2.2,
+          1.2
+        ]
+      ],
+      "S0": [
+        [
+          0.15,
+          -0.04
+        ],
+        [
+          -0.04,
+          0.5
+        ]
+      ],
+      "opacity": 0.97,
+      "teacher_opacity": 0.14,
+      "closed_form_sse": 6.89097214123506,
+      "grid_sse": 6.890972141235058,
+      "relative_error": 2.5778029616034356e-16,
+      "passed": true
+    },
+    {
+      "name": "rotated_anisotropic",
+      "S": [
+        [
+          1.3365905899981032,
+          -1.8221364130659277
+        ],
+        [
+          -1.8221364130659277,
+          2.753409410001897
+        ]
+      ],
+      "S0": [
+        [
+          0.35960169961573935,
+          0.5667113118106231
+        ],
+        [
+          0.566711311810623,
+          1.4603983003842607
+        ]
+      ],
+      "opacity": 0.41,
+      "teacher_opacity": 0.83,
+      "closed_form_sse": 0.8033969063000131,
+      "grid_sse": 0.803396906300013,
+      "relative_error": 1.381911003041086e-16,
+      "passed": true
+    }
+  ],
+  "enumeration": {
+    "cases": 1000,
+    "minimum_spd_eigenvalue": 0.04985348528453515,
+    "upper_clipped_cases": 98,
+    "mismatches": [],
+    "maximum_objective_gap": 0.0,
+    "passed": true
+  },
+  "boundary_and_tie": [
+    {
+      "name": "zero",
+      "rounded_code": 0,
+      "enum_code": 0,
+      "objective_gap": 0.0,
+      "passed": true
+    },
+    {
+      "name": "upper_clip",
+      "rounded_code": 255,
+      "enum_code": 255,
+      "objective_gap": 0.0,
+      "passed": true
+    },
+    {
+      "name": "halfway_even_round",
+      "rounded_code": 128,
+      "enum_code": 127,
+      "objective_gap": 0.0,
+      "passed": true
+    }
+  ],
+  "normalization_witness": {
+    "view_coefficients_A_B_C": [
+      [
+        12.56637061435917,
+        3.015928947446201,
+        1.1309733552923256
+      ],
+      [
+        78.53981633974482,
+        75.39822368615503,
+        113.09733552923261
+      ]
+    ],
+    "sum_before_normalization": {
+      "continuous_opacity": 0.8606896551724139,
+      "code": 219,
+      "enumeration_best_code": 219
+    },
+    "per_view_normalization": {
+      "continuous_opacity": 0.2823529411764706,
+      "code": 72,
+      "enumeration_best_code": 72
+    },
+    "summed_normalized_sse_at_sum_code": 0.40916631455533103,
+    "summed_normalized_sse_at_per_view_code": 0.6759327143787045,
+    "mean_per_view_sse_at_sum_code": 2.491013071895424,
+    "mean_per_view_sse_at_per_view_code": 0.5294117647058825,
+    "passed": true
+  },
+  "elapsed_cpu_seconds": 0.07403303700000001,
+  "elapsed_wall_seconds": 0.08375823900000023,
+  "passed": true
+}

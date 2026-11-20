@@ -1,0 +1,11 @@
+{
+  "status": "STDLIB_STATIC_PASS",
+  "readonly_pins_checked": 19,
+  "all_readonly_pins_unchanged": true,
+  "stdlib_import_only": true,
+  "torch_imported": false,
+  "Scene_constructed": false,
+  "actualrun_v1_absent": true,
+  "native_forward_calls": 0,
+  "evaluator_sha256": "f766439a639afdaea36351e5d35c0fa1a6b66d64cbe6783a9b004fb39b257b6a"
+}

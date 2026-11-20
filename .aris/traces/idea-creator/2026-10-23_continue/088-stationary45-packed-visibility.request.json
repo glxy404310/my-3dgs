@@ -1,0 +1,8 @@
+{
+  "tool": "followup_task",
+  "arguments": {
+    "target": "/root/stationary45_preparation_tests",
+    "message": "有界存储准备，禁止Torch/模型/真实数组/worker/训练/子进程。当前周剩51%，勿展开框架。Root准备将每步 visibility_filter 的原生排序 int64(K,1) 改为**无损** bitpack编码（原数组未实测）。物理NPY uint8[ceil(N/8)]，编码record字段 encoding='packbits-little-sorted-indices-v1', logical_dtype='int64', logical_shape=[K,1], logical_sha256=原始native int64连续字节SHA；物理dtype/shape/bytes/sha字段照旧。producer必须用原生实际索引构造boolmask、验证flatnonzero(mask)==原索引才保存np.packbits(mask,bitorder='little')，不假定排序来掩盖异常。请只改你自己的audit_arrays.py/test_audit_arrays.py/ARRAY_AUDITOR_INTERFACE.md，适配这个严格编码并独立分块decode检查实际半径>0匹配、逻辑原索引SHA/计数、末字节padding为0，不接受模糊旧格式。原7组unit报告先原样归档 before-packed-visibility。新增N非8倍数/空可见/全可见/padding坏/逻辑sha坏的合成验证，可运行这一个有新代码必要性的CPU小fixture测试套件，实际ML永远0。不要改collect.py/contract/STATIC_TEST_RESULTS，root负责。目标是保留完全相同可见索引信息和审计范围，不减少证据，不放宽cap。完成给出精确新hash和实际测试范围。约5分钟内完成；触达50%会通知停止。"
+  },
+  "source": "visible current-turn tool invocation; persisted public message payload encrypted, not exported"
+}

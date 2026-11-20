@@ -1,0 +1,77 @@
+{
+  "status": "pass",
+  "policy": "legacy",
+  "parent_actual_steps": {
+    "xyz": 3569,
+    "f_dc": 3569,
+    "f_rest": 3569,
+    "opacity": 3569,
+    "scaling": 3569,
+    "rotation": 3569
+  },
+  "legacy_max_abs_error": 0.0,
+  "update_stats": [
+    {
+      "step": 1,
+      "groups": [
+        {
+          "group": "xyz",
+          "nominal_lr": 0.000538337063014659,
+          "common_age": 3570,
+          "difference_age": 3570,
+          "common_update_rms": 0.0,
+          "difference_update_rms": 0.0,
+          "child_update_rms": 0.0
+        },
+        {
+          "group": "f_dc",
+          "nominal_lr": 0.0025,
+          "common_age": 3570,
+          "difference_age": 3570,
+          "common_update_rms": 0.0,
+          "difference_update_rms": 0.0,
+          "child_update_rms": 0.0
+        },
+        {
+          "group": "f_rest",
+          "nominal_lr": 0.000125,
+          "common_age": 3570,
+          "difference_age": 3570,
+          "common_update_rms": 0.0,
+          "difference_update_rms": 0.0,
+          "child_update_rms": 0.0
+        },
+        {
+          "group": "opacity",
+          "nominal_lr": 0.025,
+          "common_age": 3570,
+          "difference_age": 3570,
+          "common_update_rms": 0.0,
+          "difference_update_rms": 0.0,
+          "child_update_rms": 0.0
+        },
+        {
+          "group": "scaling",
+          "nominal_lr": 0.005,
+          "common_age": 3570,
+          "difference_age": 3570,
+          "common_update_rms": 0.0,
+          "difference_update_rms": 0.0,
+          "child_update_rms": 0.0
+        },
+        {
+          "group": "rotation",
+          "nominal_lr": 0.001,
+          "common_age": 3570,
+          "difference_age": 3570,
+          "common_update_rms": 0.0,
+          "difference_update_rms": 0.0,
+          "child_update_rms": 0.0
+        }
+      ]
+    }
+  ],
+  "proposal_does_not_mutate_outer": true,
+  "child_only_override": true,
+  "scope": "Isolated 500-step sibling pairing only; native child state computed but ignored; no full-ADC handoff"
+}

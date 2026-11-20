@@ -1,0 +1,23 @@
+{
+  "AST_and_compile": "PASS",
+  "stdlib_only_help": "PASS",
+  "bash_syntax": "PASS",
+  "synthetic_arrays_only": "SYNTHETIC_ARRAYS_ONLY_PASS",
+  "real_image_arrays_read": false,
+  "audit_launched": false,
+  "frozen_files": {
+    "audit.py": {
+      "sha256": "8808b5aa1e9bc0ec9ea491decba916298b6ad5522d1b48dacf7845b9dae22f23",
+      "bytes": 35038
+    },
+    "CONTRACT.md": {
+      "sha256": "1d6ff80b5ae4ce56ef31875c9d6fd94d9677c0d6d874fd889902c8e9d3628040",
+      "bytes": 4197
+    },
+    "run-audit.sh": {
+      "sha256": "af304df06acc997fe6fb8508dada32e68577c8f20182ca7f279dbe9f20eaa44f",
+      "bytes": 1345
+    }
+  },
+  "schema_binding": "Actual run-v2 JSON keys and resource metadata only; no metric values or real image arrays read."
+}

@@ -1,0 +1,850 @@
+{
+  "schema": "stationary-adc-window-v0/collector-v1",
+  "training_authorized": false,
+  "root_review_complete": false,
+  "approval_evidence": {
+    "user_message": "",
+    "recorded_at": ""
+  },
+  "repo": "/home/administrator/projects/gaussian-splatting",
+  "runtime_python": "/home/administrator/venvs/3dgs/bin/python",
+  "native_commit": "54c035f7834b564019656c3e3fcc3646292f727d",
+  "resume_package": "/mnt/d/Documents/my 3dgs/research/experiments/native-known-controls-v0/main/packages/seed0.pth",
+  "pins": [
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/utils/general_utils.py",
+      "sha256": "97553507caa4f3e6849919d9658b0b0da064e6c8f19142045da79072171ffa51",
+      "bytes": 3971
+    },
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/utils/sh_utils.py",
+      "sha256": "7d1ff267546390635e6d1f68c4f88c4a8b052482d5c9be1d32f06bc69e9a96e7",
+      "bytes": 4371
+    },
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/rasterize_points.cu",
+      "sha256": "462bb16c83f41e3d029cab20d46a951ddd4db10931da5fc6595537268babbd32",
+      "bytes": 7797
+    },
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/ext.cpp",
+      "sha256": "102d6ca2a07cf57717e5828c49a7100841cc0147f7373de768070f06bc4909ef",
+      "bytes": 571
+    },
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/gaussian_renderer/__init__.py",
+      "sha256": "a25cf5fdb22cd8757fb2a1e37b75352042d65b16138a9fa6243f8616ca1369b8",
+      "bytes": 4763
+    },
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/scene/__init__.py",
+      "sha256": "895d042f4dd2c6ee521dd985aea5c49d9c6f5c7379f76c4d537d8dc5468f18bf",
+      "bytes": 4550
+    },
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/scene/gaussian_model.py",
+      "sha256": "546ba41528a879af4d83bd280a3ef3cbcca9a5e9132204185aaa8f8ee9ffa310",
+      "bytes": 22740
+    },
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/scene/cameras.py",
+      "sha256": "7344b9a4c95e3649becab1b9e30eb0b351a15a61370f64352dcb231aed916128",
+      "bytes": 4151
+    },
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/scene/dataset_readers.py",
+      "sha256": "b06f01648fee893c4785ed38eeb934f91b79817b9dcbb694291c9162b0b6ba94",
+      "bytes": 12521
+    },
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/utils/camera_utils.py",
+      "sha256": "7644d89893f2481a7a9be592227bf11f3e6e5c469c9ce92c3cb25f9ff920c458",
+      "bytes": 3651
+    },
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.h",
+      "sha256": "58b97a9728e24d41602a2ac3e8eace025cfd3228de6e75033dc458d0303a46f4",
+      "bytes": 1596
+    },
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.cu",
+      "sha256": "e338380e2d4631cf842904fbf87025ddb46d49b5f1a5a22fd53bf8ada0ec1109",
+      "bytes": 12652
+    },
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/forward.cu",
+      "sha256": "4bfb6830a138bd016f39fa4558f998825d4182b12cfbda2f62bed0ab75042b54",
+      "bytes": 14478
+    },
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/config.h",
+      "sha256": "86d90fe26989e5a991104842961341d1bcb4374d5068dcb2a56d63a9017f8d65",
+      "bytes": 468
+    },
+    {
+      "path": "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py",
+      "sha256": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+      "bytes": 6497
+    },
+    {
+      "path": "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "6fb6d2d0539cfc28a0ca150a0fd5ff02a1402ef0a92f97ce05f5e72b46255b3c",
+      "bytes": 12122416
+    },
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/utils/loss_utils.py",
+      "sha256": "e4c69eca823525d3057c5441953c5b7c83ddb21d579039d7e82cdb13d35d3455",
+      "bytes": 2925
+    },
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/utils/graphics_utils.py",
+      "sha256": "d6e75de8161e98b72c2691e8a944a842e1b6625d2306035d079c868ac632edfc",
+      "bytes": 2052
+    },
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/auxiliary.h",
+      "sha256": "5a3345d46acd23a85e44c214dac404f4be195d7c4c49c9effa280ba3bbb10a51",
+      "bytes": 5943
+    },
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/train.py",
+      "bytes": 13404,
+      "sha256": "0fc5d65b0c789b250b6e770757925909f5ea94cdc7c5e977eaaec99ddc03e92c"
+    },
+    {
+      "path": "/home/administrator/projects/gaussian-splatting/arguments/__init__.py",
+      "bytes": 4199,
+      "sha256": "36265b385d6cd3115e0a5f302acbcc4c4efba3fcb385070857d26cc2a173f951"
+    },
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/native-adc-exact-v0/sanity/summary.json",
+      "bytes": 5655,
+      "sha256": "1238395382248f9b1a458eca1b585f014699ab532a0382e237f5feb1dda71da1"
+    },
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/native-known-controls-v0/main/seed0/native/summary.json",
+      "bytes": 35839,
+      "sha256": "273dd5123774cf93a1301f4ca606448774237df57ce5764c9beac64143790a38"
+    },
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/native-known-controls-v0/main/packages/seed0.pth",
+      "bytes": 762015873,
+      "sha256": "c623984054328d47557b6cf2d344852408587f4b4425f7699f652ade3eafc4c1"
+    },
+    {
+      "path": "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/fused_ssim/__init__.py",
+      "bytes": 1359,
+      "sha256": "c4a9caf98599b378050d1aa258a0b5d8b5817635bc5aefa29ab6893f442490bf"
+    },
+    {
+      "path": "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/fused_ssim_cuda.cpython-310-x86_64-linux-gnu.so",
+      "bytes": 10490888,
+      "sha256": "ee304f201a8f07fb3e783ee78e50165de3ec0aa9b3ff40a3d0f059c008001bc0"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000052.jpg",
+      "bytes": 433210,
+      "sha256": "7531ea443155d22ff4dc1db57dfdd3892e6c2567846f64631923529b4163288c"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000055.jpg",
+      "bytes": 448068,
+      "sha256": "6df74985b165baa7536d9ecaa938001fc0c333998e23a2826bd1c8035f97834d"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000221.jpg",
+      "bytes": 435760,
+      "sha256": "565c0037d588a9c704158dc0d62c0589da6884893c15cb60b45bb1a279891d6b"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000190.jpg",
+      "bytes": 420121,
+      "sha256": "f208b721f092114a26e6bc60553025d84a263179fc5b97211244013a5831ba24"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000183.jpg",
+      "bytes": 435755,
+      "sha256": "77e8e4ce5a66bc152c14a119084ee8283e09b77e09d434d9c71b052f0481042b"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000151.jpg",
+      "bytes": 414666,
+      "sha256": "6a2151d3753163c6ddb25ceacbed01173efdadd887a5462dcce0005fded2a351"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000125.jpg",
+      "bytes": 438723,
+      "sha256": "8d9c24be0b2e152269d088b41016791ac4106e2674c8896068d96131228c6628"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000160.jpg",
+      "bytes": 423926,
+      "sha256": "10e30ce6a6b702485114513e27c692f3d7739f77bdf703d1ab8fee08ab05757c"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000150.jpg",
+      "bytes": 417879,
+      "sha256": "338acb202a72adba1e1f259bb6de70671528d8a1bb882517ab14b44518f5c7c2"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000191.jpg",
+      "bytes": 416975,
+      "sha256": "837ec27132a586c78d33491f696955b54e231f1ac811de5b7db268c6b88397b1"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000058.jpg",
+      "bytes": 441894,
+      "sha256": "ed13c487b3856be90c6a22845392144669e4fb16b2f5a548129b60d74dfc7005"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000144.jpg",
+      "bytes": 440419,
+      "sha256": "0de63048602353998e8819c09b158d680c208ecc72fcd2a158d0a8f8f0f96267"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000208.jpg",
+      "bytes": 445269,
+      "sha256": "2468e02846b31b72b5647bb6516b9e4acada6d0554179b0ea48777df7b011bf7"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000231.jpg",
+      "bytes": 439847,
+      "sha256": "919f2e8b793d0426e36de130eaa332a39200821591833ca34f004d26434fd72c"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000227.jpg",
+      "bytes": 438821,
+      "sha256": "b8bf5e956f29d945083952fed804f9716ba39e2d943808093e1e6bd01ce3645e"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000126.jpg",
+      "bytes": 442059,
+      "sha256": "5c5ee00a98d2d67950aa1d48d9c2e9ee4deda4434fa884675d8bae6e519b69ef"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000068.jpg",
+      "bytes": 442803,
+      "sha256": "3efb194021459025e1f426fbf35d6150f3c2b4fbde7ae387a0eaa4fe06734440"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000109.jpg",
+      "bytes": 445171,
+      "sha256": "d600f94fcf6347fee7fb87f6fac6a3375798b9cecf2b56e34086f5e7f209bd5c"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000060.jpg",
+      "bytes": 434371,
+      "sha256": "b7e96a284669d255c0fff581ed97cae2b43e16c685b38370da14c6cc0dcbdebb"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000072.jpg",
+      "bytes": 412802,
+      "sha256": "948efc8f634ddc76ccc00ca688ffda0599c7fa9334d0559ace230b5bff856af2"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000192.jpg",
+      "bytes": 416053,
+      "sha256": "2eed89d1bede9a1f14efbbb9ad92e02b051954e40a2ff13a8a69a70f590e717f"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000063.jpg",
+      "bytes": 433189,
+      "sha256": "38354571dae50ce09125ccc72b38d9fb475745aeef99c7d7d1fbe142a9be6f95"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000207.jpg",
+      "bytes": 425749,
+      "sha256": "de208e7fee406277f9d034b3297ecdda401f0673106ab2ae1ff9cde711006e9e"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000219.jpg",
+      "bytes": 434652,
+      "sha256": "5200cc11f70788cdc1748efad06511b3149d6d9994458974581bf54c3555a442"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000179.jpg",
+      "bytes": 432725,
+      "sha256": "5f31efd8d4dbd00b79efd3ea7580a14b9e9b1cca44f07c69918d28efe883e5c8"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000038.jpg",
+      "bytes": 452280,
+      "sha256": "eb255cdf25ae07d756029ae9d4142cc93286a129db1ee87e398c9d61036d413a"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000210.jpg",
+      "bytes": 450948,
+      "sha256": "953d87a0f52b94b64428c93f9b2d9e6e5c1f02c8f02813549786d1a9ff72eea4"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000243.jpg",
+      "bytes": 432301,
+      "sha256": "4920c52da0f82cb18cecaaffc0598a61d4a59ceea1bbdbae1f31c412e9b20712"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000101.jpg",
+      "bytes": 443479,
+      "sha256": "3a827553b9121e46a3ac081ff8ce9369fbbe0b6d27ce1fb8987a226a9620e62a"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000044.jpg",
+      "bytes": 423982,
+      "sha256": "2a3e51f7cb4ea430f1d33e6d7a0b045606c53d0f2c8ac0c139d554fe7af7e77d"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000064.jpg",
+      "bytes": 437947,
+      "sha256": "f423e416e1b7e6dff4ef5138109c24968d4645a349f785fe9538ddcd361adcc1"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000106.jpg",
+      "bytes": 432669,
+      "sha256": "3d507603e75fa5da7e9754d07d11c34a35856b0a65e995e501510866c6a532f2"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000148.jpg",
+      "bytes": 400472,
+      "sha256": "51729ca9626c265e91ba292a70eca8fb6fe9173b1af49ba0216ae3e1722a774b"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000116.jpg",
+      "bytes": 455155,
+      "sha256": "0566c0fcbb396616ae543f5a1f97d4e5953ac23fbe8b10fa8b34d049e58999c4"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000043.jpg",
+      "bytes": 441578,
+      "sha256": "16e70aaa115fc82c4c41c17cc5140b7ab5b46a8de57dbce90e5f822fbf397b37"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000114.jpg",
+      "bytes": 455944,
+      "sha256": "90d47239514ff244f62c6aa43a3faa9d2481001be18d4ebb99d5f03d7e728ed0"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000168.jpg",
+      "bytes": 414566,
+      "sha256": "5617985e77d6004ce00ce8c48618272fb5aaad3d6f1ca53def585655c6f683d8"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000053.jpg",
+      "bytes": 437923,
+      "sha256": "f2e36d89329ed70a597c554a188ae0f7af5c650165b711ab758d027b692cf98c"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000162.jpg",
+      "bytes": 413740,
+      "sha256": "d3d2e79de8ca7c1e485ddb4b561a3bab6f917b7d872e5a8e61cf2daa251dc510"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000008.jpg",
+      "bytes": 469781,
+      "sha256": "77f4dbbd97f9bddac3f9d2b94f7521889fed6a26e620045136313962f2c2f5f1"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000247.jpg",
+      "bytes": 437609,
+      "sha256": "1ca359dfe19c631638c1f020e7e72750a9057ab259ff8008f311645de9afc57d"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000152.jpg",
+      "bytes": 412084,
+      "sha256": "0716f68e59c29eed86a7bab30cd15db5b90281c977dccbbccdbb43a5c78f1d85"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000159.jpg",
+      "bytes": 426166,
+      "sha256": "0800510e10d4247d0abd2c0d968cfcd19482b91a589ee2304c15554623a96eb0"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000077.jpg",
+      "bytes": 420944,
+      "sha256": "6d159597ce7684fb440febbcaae60599fd8d3a1ea85c6949f9782af25769a27f"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000244.jpg",
+      "bytes": 431798,
+      "sha256": "54e6a1d12a8e83edb0d4c8dc44807fdb9b526288e1912dafabfe741b0bf9dcf3"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000007.jpg",
+      "bytes": 468990,
+      "sha256": "23c0c0eb2c1b6d786186ba3591dca963b75e77d73483a8936c37b461acd42051"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000229.jpg",
+      "bytes": 435181,
+      "sha256": "1d025f4e84d55b0fee9f2c49646c34cc0a1c0dd740e3c69dad876806fe351b11"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000088.jpg",
+      "bytes": 415291,
+      "sha256": "68b7db69f9aae0226e815a52ed7800d0dc20cf4b3f0d4f6132d9520c971168fa"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000131.jpg",
+      "bytes": 454214,
+      "sha256": "66bd99a0a5b11d876ce13a40aad07cb3e8da1fac4209a7f0f365d499d0035f3e"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000124.jpg",
+      "bytes": 437817,
+      "sha256": "8fca7ed7082d5c8dd3627cdf65bcaf555f0e93e40a677baf1673c72c18ffcd1c"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000245.jpg",
+      "bytes": 432672,
+      "sha256": "03c450eb453d4e0e6fd9d4d838214c0c1ea18f98f00252ceb2df7efa37b3d3f9"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000083.jpg",
+      "bytes": 426673,
+      "sha256": "14d28d47de9d1152681d5b1d967a28d9ff09ddd6b5e4d049339e56af84e361ea"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000205.jpg",
+      "bytes": 427335,
+      "sha256": "cb7bad9f0e23e1a9fc58661e72c79d84b937772b86f80610f0f4a6c5647ab96c"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000234.jpg",
+      "bytes": 452525,
+      "sha256": "233b383ab558388cb507744ceb16196569b4a3a6a371ddde20b73bed09a1e8a8"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000082.jpg",
+      "bytes": 428278,
+      "sha256": "5da059fcc506b6b1eeb9dc571d10f1d0c468e6ebc4aaa7d705061375900b354e"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000197.jpg",
+      "bytes": 444505,
+      "sha256": "80ae873f6acec8eb9bc7fd63dbf1d8e9539f876a802ceb3700fe37504a909b2c"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000037.jpg",
+      "bytes": 445615,
+      "sha256": "b382608a6cfbf1106723f6f27546d22e51dde59b5ea65bd61e91fb8cfe014370"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000189.jpg",
+      "bytes": 429926,
+      "sha256": "9815d2149bd67e03f6877beab80b559ea2ffc8df59a98e5f2e12edc4fd02f6ae"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000086.jpg",
+      "bytes": 421981,
+      "sha256": "8360b24f2da76b3e6cd53fcdc4218b06ec10df8c386251ee1dc8a9a09d72feaa"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000238.jpg",
+      "bytes": 423939,
+      "sha256": "b73f7a369defff35c458ce5fcff0fa4de9ad2fb4c2f0d9aaedee647bc2df9095"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000023.jpg",
+      "bytes": 411825,
+      "sha256": "56073d92efb2e4f04cb54bfcfd6ac5046aa3e944aa6e0cdb889c0755ffb59220"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000186.jpg",
+      "bytes": 437821,
+      "sha256": "f4f570f964687904c29d972605b7e3a8e49321b9f1f5b84c4b018bf3c5a82118"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000235.jpg",
+      "bytes": 437591,
+      "sha256": "514faff56f70752e03f7b1e712be1a5dae0d90f4657237a7ebbf7be5e7fa5754"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000039.jpg",
+      "bytes": 457044,
+      "sha256": "ffdf8cc82ebd9f704659060db295b555a5d92eb09ec4ec799e39c6e82f82adae"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000026.jpg",
+      "bytes": 411135,
+      "sha256": "82a62aaac7ec860335330c54ce339ea1afe6bc49ebbe370a9f1fcb50c7d8ec66"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000016.jpg",
+      "bytes": 481732,
+      "sha256": "1c6f5ffca28568c76a352f503370f53d0c72620db3b466c0fa5ac09a17877178"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000204.jpg",
+      "bytes": 425232,
+      "sha256": "c5ab7e184458ab0856a39eeb6020da3ed58e965960eba631a950906b05c31fd4"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000122.jpg",
+      "bytes": 447888,
+      "sha256": "97a4b9cc01d1196ed7fd0191cf631a31651f638dab6c6ea1d5ed2b9458f6d612"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000056.jpg",
+      "bytes": 451570,
+      "sha256": "5e279f8eec2723f6ac0d0f6c36875a02425681f3e3e64b2b030104a4272ed999"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000092.jpg",
+      "bytes": 438876,
+      "sha256": "06e7ee15a9551f6ecfced7e943399e6e8eabbdfa37fe477fab74159e884cf653"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000087.jpg",
+      "bytes": 413688,
+      "sha256": "289fb09a9bd486dc3f76ab755b906ecb5f87d73b5ded31b88c7e0c7bc20cd870"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000128.jpg",
+      "bytes": 447697,
+      "sha256": "2026e6afd53780e482adf468aad1f6675a5a6b82fb706e7e954e7896bb36cfb9"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000166.jpg",
+      "bytes": 409300,
+      "sha256": "7b3b48042ad720cdec2f234e86d2baa0eb5dda727cc468c5d60df024e2f1a66b"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000014.jpg",
+      "bytes": 477987,
+      "sha256": "897297ebe51119ec77cbcdad57ee4c611279a6411fbb328e0bb5fa51f8c19abf"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000200.jpg",
+      "bytes": 451214,
+      "sha256": "bbee5c2ab139b1debcc46ed37dcada514eacbf21e98b037f5891c653cf17d894"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000079.jpg",
+      "bytes": 424260,
+      "sha256": "feeae49a7fc5c4b21cf476c2345cf1ecead2bfd1cd7b4d813e0f1b425195cdc4"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000237.jpg",
+      "bytes": 430276,
+      "sha256": "b7146930d8549783c683f5d212bbfa3d28c1adcdc91d1c7734f8a4d665baab3d"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000054.jpg",
+      "bytes": 442844,
+      "sha256": "70c38163d5584005d318453be6235315c553d2bcc5eea7e984226685adc1851a"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000076.jpg",
+      "bytes": 420556,
+      "sha256": "41d84f2390acac277e16b1752d1e0d553c0166c3960a1e25fb232267ead3369d"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000196.jpg",
+      "bytes": 439642,
+      "sha256": "85a249635a87757d5781e36388899ed6912d45bb64189259a28052b5b901d554"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000172.jpg",
+      "bytes": 437514,
+      "sha256": "bce460962da063928568dd79c77773a4b222fe67f2223790242278a1d63f04c7"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000165.jpg",
+      "bytes": 402815,
+      "sha256": "3a056ef44c4a366045f1a5a3ac3f375adc02696b70af81d7a31482285e8732a0"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000075.jpg",
+      "bytes": 418910,
+      "sha256": "a6709d4890bf57969746d77ab831d9b268171c7a8ea1ea95a601869e304ca395"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000222.jpg",
+      "bytes": 448485,
+      "sha256": "f83985fe31c321309e44fa538310c4947350206ee5f31a827b524c17ff9c3018"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000202.jpg",
+      "bytes": 439645,
+      "sha256": "18c4e142a4771ff33ef2b3ce245b597054c3a4e3244f0fbea1100322f0516c29"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000123.jpg",
+      "bytes": 440717,
+      "sha256": "686ea2bf806e0856592f0a14a4bbdf83d1c93b5513881a3f82bfc2a4626f6d81"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000130.jpg",
+      "bytes": 454573,
+      "sha256": "d43a6a8def34807da65aa8ef3f68697568996451ca9ce806bd5e5b706f0e5bca"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000138.jpg",
+      "bytes": 461122,
+      "sha256": "b20b352497199e4e00193c6550682a74628b589cfc40eb5306eb9a025f4fd549"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000135.jpg",
+      "bytes": 444495,
+      "sha256": "5ca43a764ecb6b174fc9575963b3a5779bd92dc3a4ea748b59b58edcf3e77dff"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000042.jpg",
+      "bytes": 449077,
+      "sha256": "fff8d141dc391e3f55962219fbfcf9d38edff576769cd5941dd66c80649f8058"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000003.jpg",
+      "bytes": 464570,
+      "sha256": "5ba4b6f363e1a3f36c4c8acccb4080b3fc0ea2d4411f808a37a6e44c8f9f516e"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000118.jpg",
+      "bytes": 458302,
+      "sha256": "6eb27ae6c4b0fc4ac121df4bc6311f697ddd00124c419942718f49f073956557"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000036.jpg",
+      "bytes": 440266,
+      "sha256": "918cb9a496374fcdc8a15b1837216738241885e3a551f8aca56731e26cb33315"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000142.jpg",
+      "bytes": 438937,
+      "sha256": "babff5fed202265f4b9401a076957a3db7a438fe95ef9e45fe9cb4a1182a7e39"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000027.jpg",
+      "bytes": 409736,
+      "sha256": "0320a593e344fd310fab8bcbd1ae7bda0fc8904748a34cc7ef2f6f0e1e9ea05d"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000173.jpg",
+      "bytes": 431030,
+      "sha256": "4533ddc8d52f2d2dc7d6d24e476ad95c4baf09a80caccf88e3e9114f84f164f3"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000171.jpg",
+      "bytes": 432942,
+      "sha256": "b0ef4745d28f8e5ec4fb33899434c8fec8a2d2a84762b750e3ce3866fdb7bf5b"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000216.jpg",
+      "bytes": 435151,
+      "sha256": "280e876288c0f4adc17d3e6cff1b16a3c7d7ac2b3b2cde16c30dbbbbcd65ca40"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000093.jpg",
+      "bytes": 429369,
+      "sha256": "ac5b7b570abada9bddd9fc020a7e9a30987d72a3c3e6e53bcce7c812b4ee686b"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000066.jpg",
+      "bytes": 442762,
+      "sha256": "9ab1c60a4e466d578bccd43a97a743c0f2583eb6f69422de1345069500fe3e9a"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/sparse/0/cameras.bin",
+      "bytes": 64,
+      "sha256": "f183f5e1a0ddbca7bb4e1e12c74ee2939069ea69929710a5af0692d3f53e3ac5"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/sparse/0/points3D.ply",
+      "bytes": 3673017,
+      "sha256": "3c6194b82d1459541477b5fdd887fe5ccaf5af57426116c77172f72a814093fe"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/sparse/0/project.ini",
+      "bytes": 4964,
+      "sha256": "8feceff72e7a4a62e46f8716c9cb8f7b54ab00192208ed13c113f254653da813"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/sparse/0/images.bin",
+      "bytes": 62106537,
+      "sha256": "437cdb07de6e45ecb4bdf986f7faa0017148879437b66497145ecdb7ec31403e"
+    },
+    {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/sparse/0/points3D.bin",
+      "bytes": 15602063,
+      "sha256": "6ac9db28d60a3edd5e14c34e972ad2f4486f2925b0964f19c3ddb4d4cbf2069b"
+    }
+  ],
+  "expected_contract": {
+    "dataset": {
+      "sh_degree": 3,
+      "source_path": "/home/administrator/datasets/tandt_db/tandt/truck",
+      "images": "images",
+      "depths": "",
+      "resolution": 1,
+      "white_background": false,
+      "train_test_exp": false,
+      "data_device": "cpu",
+      "eval": true
+    },
+    "optimization": {
+      "iterations": 4500,
+      "position_lr_init": 0.00016,
+      "position_lr_final": 1.6e-06,
+      "position_lr_delay_mult": 0.01,
+      "position_lr_max_steps": 30000,
+      "feature_lr": 0.0025,
+      "opacity_lr": 0.025,
+      "scaling_lr": 0.005,
+      "rotation_lr": 0.001,
+      "exposure_lr_init": 0.01,
+      "exposure_lr_final": 0.001,
+      "exposure_lr_delay_steps": 0,
+      "exposure_lr_delay_mult": 0.0,
+      "percent_dense": 0.01,
+      "lambda_dssim": 0.2,
+      "densification_interval": 100,
+      "opacity_reset_interval": 3000,
+      "densify_from_iter": 500,
+      "densify_until_iter": 15000,
+      "densify_grad_threshold": 0.0002,
+      "depth_l1_weight_init": 1.0,
+      "depth_l1_weight_final": 0.01,
+      "random_background": false,
+      "optimizer_type": "default"
+    },
+    "pipeline": {
+      "convert_SHs_python": false,
+      "compute_cov3D_python": false,
+      "debug": false,
+      "antialiasing": false
+    },
+    "source_checkpoint": "/home/administrator/projects/gaussian-splatting/output/truck_windows_3500_11000_20261021/chkpnt3500.pth",
+    "seed": 0
+  },
+  "expected_camera_sequence": [
+    "000234.jpg",
+    "000160.jpg",
+    "000082.jpg",
+    "000128.jpg",
+    "000205.jpg",
+    "000125.jpg",
+    "000197.jpg",
+    "000229.jpg",
+    "000162.jpg",
+    "000014.jpg",
+    "000036.jpg",
+    "000044.jpg",
+    "000219.jpg",
+    "000043.jpg",
+    "000247.jpg",
+    "000173.jpg",
+    "000123.jpg",
+    "000075.jpg",
+    "000056.jpg",
+    "000183.jpg",
+    "000114.jpg",
+    "000202.jpg",
+    "000042.jpg",
+    "000237.jpg",
+    "000192.jpg",
+    "000171.jpg",
+    "000058.jpg",
+    "000148.jpg",
+    "000106.jpg",
+    "000016.jpg",
+    "000179.jpg",
+    "000066.jpg",
+    "000086.jpg",
+    "000118.jpg",
+    "000093.jpg",
+    "000068.jpg",
+    "000235.jpg",
+    "000244.jpg",
+    "000151.jpg",
+    "000243.jpg",
+    "000037.jpg",
+    "000054.jpg",
+    "000227.jpg",
+    "000083.jpg",
+    "000238.jpg",
+    "000172.jpg",
+    "000221.jpg",
+    "000060.jpg",
+    "000109.jpg",
+    "000055.jpg",
+    "000200.jpg",
+    "000168.jpg",
+    "000079.jpg",
+    "000063.jpg",
+    "000126.jpg",
+    "000190.jpg",
+    "000165.jpg",
+    "000150.jpg",
+    "000135.jpg",
+    "000216.jpg",
+    "000231.jpg",
+    "000124.jpg",
+    "000026.jpg",
+    "000101.jpg",
+    "000138.jpg",
+    "000088.jpg",
+    "000008.jpg",
+    "000131.jpg",
+    "000144.jpg",
+    "000027.jpg",
+    "000189.jpg",
+    "000210.jpg",
+    "000245.jpg",
+    "000003.jpg",
+    "000087.jpg",
+    "000122.jpg",
+    "000064.jpg",
+    "000204.jpg",
+    "000166.jpg",
+    "000007.jpg",
+    "000130.jpg",
+    "000191.jpg",
+    "000038.jpg",
+    "000052.jpg",
+    "000053.jpg",
+    "000023.jpg",
+    "000159.jpg",
+    "000072.jpg",
+    "000142.jpg",
+    "000077.jpg",
+    "000222.jpg",
+    "000092.jpg",
+    "000186.jpg",
+    "000207.jpg",
+    "000039.jpg",
+    "000076.jpg",
+    "000152.jpg",
+    "000208.jpg",
+    "000196.jpg",
+    "000116.jpg"
+  ],
+  "limits": {
+    "external_seconds": 300,
+    "rss_bytes": 8589934592,
+    "torch_allocated_bytes": 4294967296,
+    "torch_reserved_bytes": 4294967296,
+    "raw_bytes": 3000000000
+  },
+  "expected_counts": {
+    "forward": 100,
+    "backward": 100,
+    "scene_optimizer": 99,
+    "exposure_optimizer": 99,
+    "adc": 0,
+    "opacity_reset": 0
+  },
+  "reviewed_code_sha256": {
+    "collect.py": "22dd9d28b11b00a30b6e37e6374a0fac715788b112580cecd2cdce7beaf618cb",
+    "supervise.py": "e2c24ae55b957e26d146ca22b3a55badfe2eff491e2596696f51dac74807590c"
+  },
+  "scope": "restored native prefix, not original uninterrupted history; collection only, no scientific efficacy verdict",
+  "preparation_only": true,
+  "worker_sha256": "22dd9d28b11b00a30b6e37e6374a0fac715788b112580cecd2cdce7beaf618cb",
+  "output_budget_scope": "All worker-created output, measured before supervisor EXTERNAL_ROOT.json; supervisor report and external host log excluded",
+  "readiness_status": "PREPARATION_UNAUTHORIZED; static review/tests only; full package contract/runtime and independent artifact audit unverified",
+  "storage_layout": {
+    "expected_points": 1058297,
+    "visibility_encoding": "packbits-little-sorted-indices-v1",
+    "capture_raw_max_bytes": 3000000000,
+    "endpoint_max_bytes": 1200000000,
+    "aggregate_raw_max_bytes": 4294967296
+  }
+}

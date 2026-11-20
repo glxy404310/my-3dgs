@@ -1,0 +1,856 @@
+{
+  "scope": "Independent CSV aggregation of all 192 frozen official-test RGB rows and actual stat of common/header/six payload files. No new rendering, GPU, training, or image-metric estimation from PNG. Logged execution-validity conditions are checked for consistency, not reenacted.",
+  "script_sha256": "e5d35b12159a3fbed05173f930035de757ff4f653fc080c9d72b2bdfac120273",
+  "failures": [],
+  "checks_passed": 1041,
+  "thresholds": {
+    "both_configs_required": true,
+    "C_relative_mean_GT_MSE_reduction_vs_A_and_B_ge": 0.05,
+    "each_arm_worst_4_GT_MSE_nonworse_required": true,
+    "aggregation_absolute_tolerance": 1e-12,
+    "audit_cpu_seconds_lt": 15
+  },
+  "arm_summaries": {
+    "8x8_A_independent": {
+      "teacher_student_mse": {
+        "n": 32,
+        "mean": 5.526491378304854e-06,
+        "median": 5.176346803636989e-06,
+        "minimum": 3.552533144102199e-06,
+        "maximum": 8.777667972026393e-06,
+        "worst10_count": 4,
+        "worst10_mean": 8.25317511043977e-06,
+        "worst10_direction": "highest",
+        "worst10_views": [
+          "000233.jpg",
+          "000001.jpg",
+          "000201.jpg",
+          "000009.jpg"
+        ]
+      },
+      "student_gt_mse": {
+        "n": 32,
+        "mean": 0.0029484798469638918,
+        "median": 0.0028141291113570333,
+        "minimum": 0.0017710936954244971,
+        "maximum": 0.006131146568804979,
+        "worst10_count": 4,
+        "worst10_mean": 0.004682489670813084,
+        "worst10_direction": "highest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "student_gt_psnr": {
+        "n": 32,
+        "mean": 25.465389609336853,
+        "median": 25.507610321044922,
+        "minimum": 22.124584197998047,
+        "maximum": 27.5175838470459,
+        "worst10_count": 4,
+        "worst10_mean": 23.362238883972168,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "student_gt_ssim": {
+        "n": 32,
+        "mean": 0.8848896268755198,
+        "median": 0.8828412592411041,
+        "minimum": 0.8314999341964722,
+        "maximum": 0.9211241006851196,
+        "worst10_count": 4,
+        "worst10_mean": 0.8452582359313965,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000145.jpg",
+          "000057.jpg"
+        ]
+      },
+      "teacher_gt_mse": {
+        "n": 32,
+        "mean": 0.0029473395625245757,
+        "median": 0.002820158959366381,
+        "minimum": 0.0017688401276245713,
+        "maximum": 0.006126526743173599,
+        "worst10_count": 4,
+        "worst10_mean": 0.004681971622630954,
+        "worst10_direction": "highest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "teacher_gt_psnr": {
+        "n": 32,
+        "mean": 25.46554708480835,
+        "median": 25.49864673614502,
+        "minimum": 22.127857208251953,
+        "maximum": 27.523115158081055,
+        "worst10_count": 4,
+        "worst10_mean": 23.3624005317688,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "teacher_gt_ssim": {
+        "n": 32,
+        "mean": 0.8850201144814491,
+        "median": 0.8829490840435028,
+        "minimum": 0.8316521644592285,
+        "maximum": 0.9211648106575012,
+        "worst10_count": 4,
+        "worst10_mean": 0.8453970104455948,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000145.jpg",
+          "000057.jpg"
+        ]
+      }
+    },
+    "8x8_B_opacity_only": {
+      "teacher_student_mse": {
+        "n": 32,
+        "mean": 4.3337326260939335e-06,
+        "median": 4.044752813570085e-06,
+        "minimum": 2.780259819701314e-06,
+        "maximum": 7.004896815487882e-06,
+        "worst10_count": 4,
+        "worst10_mean": 6.555216373271833e-06,
+        "worst10_direction": "highest",
+        "worst10_views": [
+          "000233.jpg",
+          "000001.jpg",
+          "000009.jpg",
+          "000201.jpg"
+        ]
+      },
+      "student_gt_mse": {
+        "n": 32,
+        "mean": 0.0029492075336747803,
+        "median": 0.0028149880236014724,
+        "minimum": 0.001771598239429295,
+        "maximum": 0.006124922074377537,
+        "worst10_count": 4,
+        "worst10_mean": 0.004682073602452874,
+        "worst10_direction": "highest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "student_gt_psnr": {
+        "n": 32,
+        "mean": 25.463919520378113,
+        "median": 25.506314277648926,
+        "minimum": 22.12899398803711,
+        "maximum": 27.516347885131836,
+        "worst10_count": 4,
+        "worst10_mean": 23.362164974212646,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "student_gt_ssim": {
+        "n": 32,
+        "mean": 0.8849104233086109,
+        "median": 0.8828287124633789,
+        "minimum": 0.8315355181694031,
+        "maximum": 0.9210838079452515,
+        "worst10_count": 4,
+        "worst10_mean": 0.8452758193016052,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000145.jpg",
+          "000057.jpg"
+        ]
+      },
+      "teacher_gt_mse": {
+        "n": 32,
+        "mean": 0.0029473395625245757,
+        "median": 0.002820158959366381,
+        "minimum": 0.0017688401276245713,
+        "maximum": 0.006126526743173599,
+        "worst10_count": 4,
+        "worst10_mean": 0.004681971622630954,
+        "worst10_direction": "highest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "teacher_gt_psnr": {
+        "n": 32,
+        "mean": 25.46554708480835,
+        "median": 25.49864673614502,
+        "minimum": 22.127857208251953,
+        "maximum": 27.523115158081055,
+        "worst10_count": 4,
+        "worst10_mean": 23.3624005317688,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "teacher_gt_ssim": {
+        "n": 32,
+        "mean": 0.8850201144814491,
+        "median": 0.8829490840435028,
+        "minimum": 0.8316521644592285,
+        "maximum": 0.9211648106575012,
+        "worst10_count": 4,
+        "worst10_mean": 0.8453970104455948,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000145.jpg",
+          "000057.jpg"
+        ]
+      }
+    },
+    "8x8_C_joint27": {
+      "teacher_student_mse": {
+        "n": 32,
+        "mean": 4.092936841004757e-06,
+        "median": 3.9001047298370395e-06,
+        "minimum": 2.775773282337468e-06,
+        "maximum": 6.576387477252865e-06,
+        "worst10_count": 4,
+        "worst10_mean": 6.182707465995918e-06,
+        "worst10_direction": "highest",
+        "worst10_views": [
+          "000001.jpg",
+          "000233.jpg",
+          "000201.jpg",
+          "000009.jpg"
+        ]
+      },
+      "student_gt_mse": {
+        "n": 32,
+        "mean": 0.0029495452508854214,
+        "median": 0.002814966719597578,
+        "minimum": 0.0017727356171235442,
+        "maximum": 0.0061318702064454556,
+        "worst10_count": 4,
+        "worst10_mean": 0.004685369320213795,
+        "worst10_direction": "highest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "student_gt_psnr": {
+        "n": 32,
+        "mean": 25.46301805973053,
+        "median": 25.506503105163574,
+        "minimum": 22.12407112121582,
+        "maximum": 27.513561248779297,
+        "worst10_count": 4,
+        "worst10_mean": 23.35927104949951,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "student_gt_ssim": {
+        "n": 32,
+        "mean": 0.8849186226725578,
+        "median": 0.8828705549240112,
+        "minimum": 0.8315333127975464,
+        "maximum": 0.9210851192474365,
+        "worst10_count": 4,
+        "worst10_mean": 0.8452689051628113,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000145.jpg",
+          "000057.jpg"
+        ]
+      },
+      "teacher_gt_mse": {
+        "n": 32,
+        "mean": 0.0029473395625245757,
+        "median": 0.002820158959366381,
+        "minimum": 0.0017688401276245713,
+        "maximum": 0.006126526743173599,
+        "worst10_count": 4,
+        "worst10_mean": 0.004681971622630954,
+        "worst10_direction": "highest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "teacher_gt_psnr": {
+        "n": 32,
+        "mean": 25.46554708480835,
+        "median": 25.49864673614502,
+        "minimum": 22.127857208251953,
+        "maximum": 27.523115158081055,
+        "worst10_count": 4,
+        "worst10_mean": 23.3624005317688,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "teacher_gt_ssim": {
+        "n": 32,
+        "mean": 0.8850201144814491,
+        "median": 0.8829490840435028,
+        "minimum": 0.8316521644592285,
+        "maximum": 0.9211648106575012,
+        "worst10_count": 4,
+        "worst10_mean": 0.8453970104455948,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000145.jpg",
+          "000057.jpg"
+        ]
+      }
+    },
+    "10x8_A_independent": {
+      "teacher_student_mse": {
+        "n": 32,
+        "mean": 1.172964251949793e-06,
+        "median": 1.1281039746791066e-06,
+        "minimum": 6.275755595197552e-07,
+        "maximum": 2.063830152110313e-06,
+        "worst10_count": 4,
+        "worst10_mean": 1.6685752370904083e-06,
+        "worst10_direction": "highest",
+        "worst10_views": [
+          "000009.jpg",
+          "000097.jpg",
+          "000233.jpg",
+          "000113.jpg"
+        ]
+      },
+      "student_gt_mse": {
+        "n": 32,
+        "mean": 0.002946572636574274,
+        "median": 0.0028193325269967318,
+        "minimum": 0.0017686564242467284,
+        "maximum": 0.006126249674707651,
+        "worst10_count": 4,
+        "worst10_mean": 0.00468119652941823,
+        "worst10_direction": "highest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "student_gt_psnr": {
+        "n": 32,
+        "mean": 25.46711266040802,
+        "median": 25.499860763549805,
+        "minimum": 22.1280517578125,
+        "maximum": 27.5235652923584,
+        "worst10_count": 4,
+        "worst10_mean": 23.363277912139893,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "student_gt_ssim": {
+        "n": 32,
+        "mean": 0.8850149139761925,
+        "median": 0.8829176127910614,
+        "minimum": 0.8317179679870605,
+        "maximum": 0.9212095737457275,
+        "worst10_count": 4,
+        "worst10_mean": 0.8454072922468185,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000145.jpg",
+          "000057.jpg"
+        ]
+      },
+      "teacher_gt_mse": {
+        "n": 32,
+        "mean": 0.0029473395625245757,
+        "median": 0.002820158959366381,
+        "minimum": 0.0017688401276245713,
+        "maximum": 0.006126526743173599,
+        "worst10_count": 4,
+        "worst10_mean": 0.004681971622630954,
+        "worst10_direction": "highest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "teacher_gt_psnr": {
+        "n": 32,
+        "mean": 25.46554708480835,
+        "median": 25.49864673614502,
+        "minimum": 22.127857208251953,
+        "maximum": 27.523115158081055,
+        "worst10_count": 4,
+        "worst10_mean": 23.3624005317688,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "teacher_gt_ssim": {
+        "n": 32,
+        "mean": 0.8850201144814491,
+        "median": 0.8829490840435028,
+        "minimum": 0.8316521644592285,
+        "maximum": 0.9211648106575012,
+        "worst10_count": 4,
+        "worst10_mean": 0.8453970104455948,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000145.jpg",
+          "000057.jpg"
+        ]
+      }
+    },
+    "10x8_B_opacity_only": {
+      "teacher_student_mse": {
+        "n": 32,
+        "mean": 1.095611477097691e-06,
+        "median": 1.057252916325524e-06,
+        "minimum": 5.58863007427135e-07,
+        "maximum": 1.947396185641992e-06,
+        "worst10_count": 4,
+        "worst10_mean": 1.5727567301837553e-06,
+        "worst10_direction": "highest",
+        "worst10_views": [
+          "000009.jpg",
+          "000097.jpg",
+          "000201.jpg",
+          "000113.jpg"
+        ]
+      },
+      "student_gt_mse": {
+        "n": 32,
+        "mean": 0.0029472220194293186,
+        "median": 0.002819634974002838,
+        "minimum": 0.0017685462953522801,
+        "maximum": 0.0061281826347112656,
+        "worst10_count": 4,
+        "worst10_mean": 0.004682764294557273,
+        "worst10_direction": "highest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "student_gt_psnr": {
+        "n": 32,
+        "mean": 25.46623593568802,
+        "median": 25.49941921234131,
+        "minimum": 22.126684188842773,
+        "maximum": 27.52383804321289,
+        "worst10_count": 4,
+        "worst10_mean": 23.361804008483887,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "student_gt_ssim": {
+        "n": 32,
+        "mean": 0.8850135058164597,
+        "median": 0.8829280436038971,
+        "minimum": 0.8317176103591919,
+        "maximum": 0.9212220907211304,
+        "worst10_count": 4,
+        "worst10_mean": 0.8453961610794067,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000145.jpg",
+          "000057.jpg"
+        ]
+      },
+      "teacher_gt_mse": {
+        "n": 32,
+        "mean": 0.0029473395625245757,
+        "median": 0.002820158959366381,
+        "minimum": 0.0017688401276245713,
+        "maximum": 0.006126526743173599,
+        "worst10_count": 4,
+        "worst10_mean": 0.004681971622630954,
+        "worst10_direction": "highest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "teacher_gt_psnr": {
+        "n": 32,
+        "mean": 25.46554708480835,
+        "median": 25.49864673614502,
+        "minimum": 22.127857208251953,
+        "maximum": 27.523115158081055,
+        "worst10_count": 4,
+        "worst10_mean": 23.3624005317688,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "teacher_gt_ssim": {
+        "n": 32,
+        "mean": 0.8850201144814491,
+        "median": 0.8829490840435028,
+        "minimum": 0.8316521644592285,
+        "maximum": 0.9211648106575012,
+        "worst10_count": 4,
+        "worst10_mean": 0.8453970104455948,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000145.jpg",
+          "000057.jpg"
+        ]
+      }
+    },
+    "10x8_C_joint27": {
+      "teacher_student_mse": {
+        "n": 32,
+        "mean": 8.410614888987311e-07,
+        "median": 8.070888952715904e-07,
+        "minimum": 5.348343279365508e-07,
+        "maximum": 1.5354288507296587e-06,
+        "worst10_count": 4,
+        "worst10_mean": 1.200343206164689e-06,
+        "worst10_direction": "highest",
+        "worst10_views": [
+          "000009.jpg",
+          "000201.jpg",
+          "000001.jpg",
+          "000233.jpg"
+        ]
+      },
+      "student_gt_mse": {
+        "n": 32,
+        "mean": 0.0029473438153218012,
+        "median": 0.0028186007402837276,
+        "minimum": 0.0017682750476524234,
+        "maximum": 0.0061254785396158695,
+        "worst10_count": 4,
+        "worst10_mean": 0.00468244927469641,
+        "worst10_direction": "highest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "student_gt_psnr": {
+        "n": 32,
+        "mean": 25.46574330329895,
+        "median": 25.50098991394043,
+        "minimum": 22.128599166870117,
+        "maximum": 27.52450180053711,
+        "worst10_count": 4,
+        "worst10_mean": 23.36184549331665,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "student_gt_ssim": {
+        "n": 32,
+        "mean": 0.8850109800696373,
+        "median": 0.8829198777675629,
+        "minimum": 0.8316711783409119,
+        "maximum": 0.9212029576301575,
+        "worst10_count": 4,
+        "worst10_mean": 0.8453956842422485,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000145.jpg",
+          "000057.jpg"
+        ]
+      },
+      "teacher_gt_mse": {
+        "n": 32,
+        "mean": 0.0029473395625245757,
+        "median": 0.002820158959366381,
+        "minimum": 0.0017688401276245713,
+        "maximum": 0.006126526743173599,
+        "worst10_count": 4,
+        "worst10_mean": 0.004681971622630954,
+        "worst10_direction": "highest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "teacher_gt_psnr": {
+        "n": 32,
+        "mean": 25.46554708480835,
+        "median": 25.49864673614502,
+        "minimum": 22.127857208251953,
+        "maximum": 27.523115158081055,
+        "worst10_count": 4,
+        "worst10_mean": 23.3624005317688,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ]
+      },
+      "teacher_gt_ssim": {
+        "n": 32,
+        "mean": 0.8850201144814491,
+        "median": 0.8829490840435028,
+        "minimum": 0.8316521644592285,
+        "maximum": 0.9211648106575012,
+        "worst10_count": 4,
+        "worst10_mean": 0.8453970104455948,
+        "worst10_direction": "lowest",
+        "worst10_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000145.jpg",
+          "000057.jpg"
+        ]
+      }
+    }
+  },
+  "C_vs_baseline_changes": {
+    "8x8": {
+      "A_independent": {
+        "relative_mean_gt_mse_reduction": -0.00036134007245358646,
+        "GT_MSE_mean_increase_percent": 0.036134007245358646,
+        "GT_MSE_own_worst4_increase_percent": 0.06149825420140864,
+        "teacher_student_MSE_mean_reduction_percent": 25.93968648766466,
+        "teacher_student_MSE_own_worst4_reduction_percent": 25.08692250846386,
+        "GT_PSNR_mean_delta_db": -0.002371549606323242,
+        "GT_SSIM_mean_delta": 2.8995797038078308e-05,
+        "mean_gt_mse_reduction_at_least_5pct": false,
+        "worst10_gt_mse_nonworse": false,
+        "passed": false
+      },
+      "B_opacity_only": {
+        "relative_mean_gt_mse_reduction": -0.00011451117182659232,
+        "GT_MSE_mean_increase_percent": 0.011451117182659232,
+        "GT_MSE_own_worst4_increase_percent": 0.07039013139806816,
+        "teacher_student_MSE_mean_reduction_percent": 5.556313826084136,
+        "teacher_student_MSE_own_worst4_reduction_percent": 5.6826332811038665,
+        "GT_PSNR_mean_delta_db": -0.0009014606475830078,
+        "GT_SSIM_mean_delta": 8.199363946914673e-06,
+        "mean_gt_mse_reduction_at_least_5pct": false,
+        "worst10_gt_mse_nonworse": false,
+        "passed": false
+      }
+    },
+    "10x8": {
+      "A_independent": {
+        "relative_mean_gt_mse_reduction": -0.00026172059631424105,
+        "GT_MSE_mean_increase_percent": 0.026172059631424105,
+        "GT_MSE_own_worst4_increase_percent": 0.026761219493920407,
+        "teacher_student_MSE_mean_reduction_percent": 28.296068059989643,
+        "teacher_student_MSE_own_worst4_reduction_percent": 28.061787117385418,
+        "GT_PSNR_mean_delta_db": -0.0013693571090698242,
+        "GT_SSIM_mean_delta": -3.933906555175781e-06,
+        "mean_gt_mse_reduction_at_least_5pct": false,
+        "worst10_gt_mse_nonworse": false,
+        "passed": false
+      },
+      "B_opacity_only": {
+        "relative_mean_gt_mse_reduction": -4.1325659105417856e-05,
+        "GT_MSE_mean_increase_percent": 0.004132565910541786,
+        "GT_MSE_own_worst4_increase_percent": -0.006727220100100073,
+        "teacher_student_MSE_mean_reduction_percent": 23.233600005110453,
+        "teacher_student_MSE_own_worst4_reduction_percent": 23.679029113139116,
+        "GT_PSNR_mean_delta_db": -0.0004926323890686035,
+        "GT_SSIM_mean_delta": -2.5257468223571777e-06,
+        "mean_gt_mse_reduction_at_least_5pct": false,
+        "worst10_gt_mse_nonworse": true,
+        "passed": false
+      }
+    }
+  },
+  "recomputed_GT_primary_gate": {
+    "configs": {
+      "8x8": false,
+      "10x8": false
+    },
+    "both_configs_pass": false
+  },
+  "actual_file_stats": {
+    "COMMON.bin": 451169400,
+    "HEADER.json": 1659,
+    "arms": {
+      "8x8_A_independent": {
+        "payload_bytes": 8203080,
+        "expected_payload_bytes": 8203080,
+        "common_bytes": 451169400,
+        "header_bytes": 1659,
+        "full_model_codec_bytes": 459374139,
+        "full_model_bits_per_point": 1792.006471715502,
+        "teacher_ply_bytes": 508592492,
+        "teacher_ply_to_codec_container_ratio": 1.1071421937402532
+      },
+      "8x8_B_opacity_only": {
+        "payload_bytes": 8203080,
+        "expected_payload_bytes": 8203080,
+        "common_bytes": 451169400,
+        "header_bytes": 1659,
+        "full_model_codec_bytes": 459374139,
+        "full_model_bits_per_point": 1792.006471715502,
+        "teacher_ply_bytes": 508592492,
+        "teacher_ply_to_codec_container_ratio": 1.1071421937402532
+      },
+      "8x8_C_joint27": {
+        "payload_bytes": 8203080,
+        "expected_payload_bytes": 8203080,
+        "common_bytes": 451169400,
+        "header_bytes": 1659,
+        "full_model_codec_bytes": 459374139,
+        "full_model_bits_per_point": 1792.006471715502,
+        "teacher_ply_bytes": 508592492,
+        "teacher_ply_to_codec_container_ratio": 1.1071421937402532
+      },
+      "10x8_A_independent": {
+        "payload_bytes": 9741158,
+        "expected_payload_bytes": 9741158,
+        "common_bytes": 451169400,
+        "header_bytes": 1659,
+        "full_model_codec_bytes": 460912217,
+        "full_model_bits_per_point": 1798.0064736659888,
+        "teacher_ply_bytes": 508592492,
+        "teacher_ply_to_codec_container_ratio": 1.1034476267744493
+      },
+      "10x8_B_opacity_only": {
+        "payload_bytes": 9741158,
+        "expected_payload_bytes": 9741158,
+        "common_bytes": 451169400,
+        "header_bytes": 1659,
+        "full_model_codec_bytes": 460912217,
+        "full_model_bits_per_point": 1798.0064736659888,
+        "teacher_ply_bytes": 508592492,
+        "teacher_ply_to_codec_container_ratio": 1.1034476267744493
+      },
+      "10x8_C_joint27": {
+        "payload_bytes": 9741158,
+        "expected_payload_bytes": 9741158,
+        "common_bytes": 451169400,
+        "header_bytes": 1659,
+        "full_model_codec_bytes": 460912217,
+        "full_model_bits_per_point": 1798.0064736659888,
+        "teacher_ply_bytes": 508592492,
+        "teacher_ply_to_codec_container_ratio": 1.1034476267744493
+      }
+    },
+    "teacher_ply_bytes": 508592492
+  },
+  "logged_tool_conditions_consistent": {
+    "teacher_repeat_before_zero": true,
+    "teacher_repeat_after_zero": true,
+    "common_exact_reported": true,
+    "teacher_parameters_unchanged_reported": true,
+    "source_hashes_unchanged_reported": true,
+    "no_training_reported": true,
+    "each_arm_parameters_unchanged_reported": true,
+    "cpu_encoding_budget_reported": true,
+    "GPU_stage_budget_reported": true,
+    "8192_pilot_codes_reproduced_reported": true
+  },
+  "recomputed_decision": "STOP_CURRENT_IMPLEMENTATION",
+  "interpretation": "C reduces teacher-student compression distortion in both bit configurations, but increases mean error against real GT versus both A and B. Neither bit configuration passes the 5% GT improvement requirement; the required stop is reproduced.",
+  "maximum_numeric_recomputation_delta": 9.967206096930803e-17,
+  "maximum_numeric_recomputation_delta_at": "gate_relative_mean:10x8B_opacity_only",
+  "numeric_values_compared": 625,
+  "original_files_unchanged": true,
+  "read_source_hashes": {
+    "full-rgb/METRICS.csv": "0671ccfc98f27a9e48978185d6b175672f4b7c45bd40bcb59cd6072cf223e1a7",
+    "full-rgb/RESULTS.json": "6d031fcd6981a751730cab2cd5510f41e73ce2baad650889bfd7139e91ba2590",
+    "full-rgb/CONFIG.json": "7a7bba7ae3be2dec4ea27dd4a849ec6eb8ddf96fbb48e07b4f68c399cd58c03e",
+    "FULL_CONTRACT.md": "d7eaa756cbcd214a30476cb5d24631810d6ac216f978612dd7058727057d7f77",
+    "full-codec/HEADER.json": "c70ffb303aa369aaf6b203c1d83cc19e97dec2b73de387f87c3c38c6ef8bc2e0",
+    "full-codec/ENCODING_RESULTS.json": "5ddc0b5ff3f3ad74d5f8ae2c0256cd23c5957874956faad05d47342dbe217b0b"
+  },
+  "elapsed_cpu_seconds": 0.015364838000000002,
+  "elapsed_wall_seconds": 0.08577287499999642,
+  "audit_passed": true
+}

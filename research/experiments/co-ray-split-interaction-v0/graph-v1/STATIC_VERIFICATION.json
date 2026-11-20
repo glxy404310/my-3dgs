@@ -1,0 +1,14 @@
+{
+  "build_graph.py:ast": "PASS",
+  "metrics.py:ast": "PASS",
+  "GRAPH_CONTRACT.template.json:json": "PASS",
+  "METRICS_CONTRACT.template.json:json": "PASS",
+  "build_graph.py:help": 0,
+  "metrics.py:help": 0,
+  "numpy_imported": false,
+  "torch_imported": false,
+  "scientific_arrays_read": false,
+  "numerical_simulations": false,
+  "verification_scope": "stdlib_AST_JSON_and_help_only",
+  "revision": "root_signed_aggregates_before_effects"
+}

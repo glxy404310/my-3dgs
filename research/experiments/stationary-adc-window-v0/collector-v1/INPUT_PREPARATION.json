@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-10-23T00:05:21.106858+00:00",
+  "mode": "stdlib-only configuration extraction and byte hashing",
+  "torch_imported": false,
+  "model_loaded": false,
+  "new_forwards": 0,
+  "new_backwards": 0,
+  "new_optimizer_calls": 0,
+  "pin_count": 131,
+  "camera_count": 100,
+  "fused_candidates": [
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/fused_ssim/__init__.py",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/fused_ssim_cuda.cpython-310-x86_64-linux-gnu.so"
+  ],
+  "package_hash_source": "root previous read-only byte hash; runtime must rehash before work",
+  "full_package_contract_verified": false
+}

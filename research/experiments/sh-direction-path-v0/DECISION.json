@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-22",
+  "diagnostic_status": "FAILED_PARITY_GATE",
+  "method_decision": "UNDETERMINED",
+  "training_performed": false,
+  "parameter_updates": 0,
+  "expected_rows": 64,
+  "actual_rows": 56,
+  "failure_view": "000108.jpg",
+  "failure_iteration": 30000,
+  "failure_loss": "training",
+  "native_python_relative_gradient_difference": 0.001823092927224934,
+  "locked_limit": 0.001,
+  "threshold_changed": false,
+  "automatic_retry": false,
+  "next_action": "PIVOT_OTHER_CANDIDATES_WITHOUT_TRAINING"
+}

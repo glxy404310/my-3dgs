@@ -1,0 +1,40 @@
+{
+  "schema": "co-ray-split-interaction-v0/preparation-status-v1",
+  "status": "PREPARED_NOT_REVIEWED_OR_RUN",
+  "date": "2026-10-23",
+  "model_loads": 0,
+  "Torch_imports": 0,
+  "forward_calls": 0,
+  "backward_calls": 0,
+  "optimizer_instances": 0,
+  "optimizer_updates": 0,
+  "checks": [
+    "Python stdlib AST parse and compile",
+    "JSON parse",
+    "Executor help: torch/numpy/scene absent from sys.modules",
+    "CPU helper help: torch/numpy/scene absent from sys.modules",
+    "Bash -n",
+    "PowerShell AST parse",
+    "Bash LF bytes"
+  ],
+  "code_sha256": {
+    "execute.py": "81836c1d4bfae10d93dedcf32ec557aa441643961b65bf9405eec26c2a777dbc",
+    "cpu_metrics.py": "3e3033905509ef2d560536e61a1942acfd9aace6d65447cde832857229fa6c09",
+    "run-diagnostic.sh": "0c97b909e52b394ef3c19dc39da439b6236b131be08e5acbf147b321d15f61f4",
+    "launch.ps1": "857a9c746ab3f99c680f0153f160674992aceecfd2b4a6034c85141d94e0a809",
+    "ASSUMPTIONS.md": "daa462e282c277d703596826d2dd99dc2a91c784903a979d8663ffe1205ed4b8",
+    "PREPARATION.md": "365f3696023ab66a4588570e08d84aedabf447966aaad624f4fdf9e397210a70",
+    "CONTRACT.template.json": "671c1ff0903b159fe969f212477be6c86ee336ee57e4507ee1829d2323a91e14",
+    "ARMS.template.json": "1e1ef2537cdcd5834a437573404f7c9a78f1de197d8435837d7c69d82be8aa7e",
+    "READONLY_PINS.json": "40bd06441240570d123697fd58efc34f459577bdca47809334d030680070f878",
+    "ROOT_PROTOCOL.md": "409d9a52c0d022360512844c463574baf68c63668c2c9b0dcac0be63b90b7117",
+    "ROOT_INPUT_PINS.json": "7ff5ebbe6ba914655ae602226db3176491a01b776328af77c19dedaf7f380e85"
+  },
+  "unresolved": [
+    "Root full code review and actual contract/arms hashes",
+    "Source JPEG pins for frozen effects views",
+    "Actual CUDA birth witness exactness and native representation gates",
+    "Independent saved-artifact audit and scientific gates remain unrun",
+    "Full-process GPU memory may remain unmeasured under WSL; allocator limit is separately enforced"
+  ]
+}

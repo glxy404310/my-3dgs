@@ -1,0 +1,142 @@
+{
+  "integrity": "pass",
+  "ranking_reproduced": false,
+  "scope": "Single event, same K, deterministic initialization and 500-camera recovery. ADC disabled. Not full training or policy superiority evidence.",
+  "results": [
+    {
+      "group": "gradient",
+      "step": 0,
+      "psnr": 22.341983318328857,
+      "l1": 0.046489433385431767,
+      "delta_psnr": -0.08940130472183228,
+      "delta_l1": 0.00041455531027168036,
+      "views_l1_improved": 2
+    },
+    {
+      "group": "gradient",
+      "step": 20,
+      "psnr": 22.409063398838043,
+      "l1": 0.046520874137058854,
+      "delta_psnr": -0.023098111152648926,
+      "delta_l1": 0.0001532980240881443,
+      "views_l1_improved": 3
+    },
+    {
+      "group": "gradient",
+      "step": 100,
+      "psnr": 22.86170881986618,
+      "l1": 0.04385178431402892,
+      "delta_psnr": 0.014637291431427002,
+      "delta_l1": -2.5427434593439102e-05,
+      "views_l1_improved": 17
+    },
+    {
+      "group": "gradient",
+      "step": 200,
+      "psnr": 22.821129202842712,
+      "l1": 0.04403763706795871,
+      "delta_psnr": 0.00957179069519043,
+      "delta_l1": -9.357347153127193e-06,
+      "views_l1_improved": 17
+    },
+    {
+      "group": "gradient",
+      "step": 500,
+      "psnr": 23.253105342388153,
+      "l1": 0.04170311312191188,
+      "delta_psnr": 0.028275251388549805,
+      "delta_l1": -6.636267062276602e-05,
+      "views_l1_improved": 23
+    },
+    {
+      "group": "random101",
+      "step": 0,
+      "psnr": 22.41842406988144,
+      "l1": 0.04607623512856662,
+      "delta_psnr": -0.012960553169250488,
+      "delta_l1": 1.3570534065365791e-06,
+      "views_l1_improved": 10
+    },
+    {
+      "group": "random101",
+      "step": 20,
+      "psnr": 22.42880666255951,
+      "l1": 0.04634960286784917,
+      "delta_psnr": -0.0033548474311828613,
+      "delta_l1": -1.797324512153864e-05,
+      "views_l1_improved": 11
+    },
+    {
+      "group": "random101",
+      "step": 100,
+      "psnr": 22.854410707950592,
+      "l1": 0.04380335926543921,
+      "delta_psnr": 0.007339179515838623,
+      "delta_l1": -7.385248318314552e-05,
+      "views_l1_improved": 19
+    },
+    {
+      "group": "random101",
+      "step": 200,
+      "psnr": 22.819446325302124,
+      "l1": 0.04399270296562463,
+      "delta_psnr": 0.00788891315460205,
+      "delta_l1": -5.429144948720932e-05,
+      "views_l1_improved": 19
+    },
+    {
+      "group": "random101",
+      "step": 500,
+      "psnr": 23.237240314483643,
+      "l1": 0.04172155901324004,
+      "delta_psnr": 0.012410223484039307,
+      "delta_l1": -4.7916779294610023e-05,
+      "views_l1_improved": 22
+    },
+    {
+      "group": "random202",
+      "step": 0,
+      "psnr": 22.425929844379425,
+      "l1": 0.04599221237003803,
+      "delta_psnr": -0.0054547786712646484,
+      "delta_l1": -8.266570512205362e-05,
+      "views_l1_improved": 10
+    },
+    {
+      "group": "random202",
+      "step": 20,
+      "psnr": 22.43370497226715,
+      "l1": 0.0462798090884462,
+      "delta_psnr": 0.0015434622764587402,
+      "delta_l1": -8.77670245245099e-05,
+      "views_l1_improved": 11
+    },
+    {
+      "group": "random202",
+      "step": 100,
+      "psnr": 22.845110177993774,
+      "l1": 0.04386300302576274,
+      "delta_psnr": -0.001961350440979004,
+      "delta_l1": -1.4208722859621048e-05,
+      "views_l1_improved": 15
+    },
+    {
+      "group": "random202",
+      "step": 200,
+      "psnr": 22.818974018096924,
+      "l1": 0.04401450010482222,
+      "delta_psnr": 0.0074166059494018555,
+      "delta_l1": -3.249431028962135e-05,
+      "views_l1_improved": 16
+    },
+    {
+      "group": "random202",
+      "step": 500,
+      "psnr": 23.23435801267624,
+      "l1": 0.04169472574722022,
+      "delta_psnr": 0.009527921676635742,
+      "delta_l1": -7.475004531443119e-05,
+      "views_l1_improved": 21
+    }
+  ]
+}

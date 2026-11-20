@@ -1,0 +1,44 @@
+{
+  "base": {
+    "fraction_opacity_ge_0_99": 0.04175504669547081,
+    "fraction_float32_sigmoid_eq_1": 4.973741670255549e-05,
+    "minimum_logit": -5.523505687713623,
+    "maximum_logit": 17.319034576416016
+  },
+  "A_local": {
+    "fraction_opacity_ge_0_99": 0.055044688284397125,
+    "fraction_float32_sigmoid_eq_1": 0.002271341858431697,
+    "minimum_logit": -5.523505687713623,
+    "maximum_logit": 297.1252136230469
+  },
+  "A_global": {
+    "fraction_opacity_ge_0_99": 0.057560816407203674,
+    "fraction_float32_sigmoid_eq_1": 0.0002106525789713487,
+    "minimum_logit": -5.310510635375977,
+    "maximum_logit": 21.420087814331055
+  },
+  "A_shuffle": {
+    "fraction_opacity_ge_0_99": 0.054237186908721924,
+    "fraction_float32_sigmoid_eq_1": 0.0017096017254516482,
+    "minimum_logit": -5.523505687713623,
+    "maximum_logit": 297.00433349609375
+  },
+  "B_local": {
+    "fraction_opacity_ge_0_99": 0.04997050017118454,
+    "fraction_float32_sigmoid_eq_1": 0.0010659410618245602,
+    "minimum_logit": -5.523505687713623,
+    "maximum_logit": 124.43311309814453
+  },
+  "B_global": {
+    "fraction_opacity_ge_0_99": 0.04228460416197777,
+    "fraction_float32_sigmoid_eq_1": 4.973741670255549e-05,
+    "minimum_logit": -5.516040325164795,
+    "maximum_logit": 17.44855499267578
+  },
+  "B_shuffle": {
+    "fraction_opacity_ge_0_99": 0.048466674983501434,
+    "fraction_float32_sigmoid_eq_1": 0.0014969987096264958,
+    "minimum_logit": -5.523505687713623,
+    "maximum_logit": 5494.5498046875
+  }
+}

@@ -1,0 +1,8 @@
+$pupWitnessStartedUTC = [DateTime]::UtcNow.ToString('o')
+$pupWitnessTimer = [System.Diagnostics.Stopwatch]::StartNew()
+& wsl.exe -d Ubuntu-22.04 --exec /usr/bin/env 'PYTHONPATH=/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10:/home/administrator/projects/pup-frozen-baseline-e971ea48' 'OMP_NUM_THREADS=1' 'MKL_NUM_THREADS=1' 'OPENBLAS_NUM_THREADS=1' /usr/bin/timeout --signal=TERM --kill-after=5s 115s /home/administrator/venvs/3dgs/bin/python -B -u '/mnt/d/Documents/my 3dgs/scripts/experiments/pup_fisher_kernel_witness.py' --run-once --fixed-build-record '/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/FIXED_BUILD_IDENTITY.json' --fixed-build-record-sha256 5630aad4281ff1242674910393a085583f0e7f4a62d517e2bf041ad1c3bbe092 2>&1 | Tee-Object -FilePath 'D:\Documents\my 3dgs\research\experiments\pup-frozen-baseline-v0\witness-fixed-v1.EXTERNAL.log'
+$pupWitnessExit = $LASTEXITCODE
+$pupWitnessTimer.Stop()
+$pupWitnessExternal = [ordered]@{started_UTC=$pupWitnessStartedUTC; finished_UTC=[DateTime]::UtcNow.ToString('o'); exit_code=$pupWitnessExit; actual_host_wall_seconds=$pupWitnessTimer.Elapsed.TotalSeconds; hard_limit_seconds=120; within_120_seconds=($pupWitnessTimer.Elapsed.TotalSeconds -le 120); attempts=1; scientific_scope='Fixed 2G/4x4 SH0 kernel tool witness only'}
+$pupWitnessExternal | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath 'D:\Documents\my 3dgs\research\experiments\pup-frozen-baseline-v0\witness-fixed-v1.EXTERNAL_RUN.json' -Encoding utf8
+if (($pupWitnessExit -ne 0) -or ($pupWitnessTimer.Elapsed.TotalSeconds -gt 120)) { throw 'PUP witness nonzero or outer budget exceeded; preserve original evidence, no retry' }

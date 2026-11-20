@@ -1,0 +1,428 @@
+{
+  "schema": "speedy-private-extension/witness-v1",
+  "status": "SPEEDY_SYNTHETIC_FORWARD_WITNESS_PASS",
+  "seed": 0,
+  "forward_calls": 3,
+  "backward_calls": 0,
+  "optimizer_updates": 0,
+  "model_loads": 0,
+  "scene_instances": 0,
+  "GT_used": false,
+  "environment_ready": false,
+  "scope": "This fixed synthetic forward interface/dispatch only; no full-model quality or latency certification",
+  "raw": [
+    {
+      "name": "input_means3D_before",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_means3D_before.npy",
+      "sha256": "60163533b49b1fe9a8a6c6a924f912c547cbe90bf4845a1d7ed9044dfbd6965c",
+      "dtype": "float32",
+      "shape": [
+        2,
+        3
+      ],
+      "bytes": 152
+    },
+    {
+      "name": "input_means2D_before",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_means2D_before.npy",
+      "sha256": "00b39439fa243da6f1285804fa5c660d41a849f70ecdfe98caaf587ca7e041dd",
+      "dtype": "float32",
+      "shape": [
+        2,
+        3
+      ],
+      "bytes": 152
+    },
+    {
+      "name": "input_scales_before",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_scales_before.npy",
+      "sha256": "49bda7b1ffcc507dbf3de5b1a90fc0f358201c664bee7959fda216263ca31b7e",
+      "dtype": "float32",
+      "shape": [
+        2,
+        3
+      ],
+      "bytes": 152
+    },
+    {
+      "name": "input_rotations_before",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_rotations_before.npy",
+      "sha256": "bbe82ab557281ce1e5566ba5e176a0dea27abfd62b51b3cf8b4fc7d5db01fbdc",
+      "dtype": "float32",
+      "shape": [
+        2,
+        4
+      ],
+      "bytes": 160
+    },
+    {
+      "name": "input_opacities_before",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_opacities_before.npy",
+      "sha256": "968c00a1b52e1d7242134f7aad68b9f49fc2bd4a33678e20cffac286e0f00237",
+      "dtype": "float32",
+      "shape": [
+        2,
+        1
+      ],
+      "bytes": 136
+    },
+    {
+      "name": "input_scores_before",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_scores_before.npy",
+      "sha256": "ecc83f43137a617bf0bab806c484d31ebc7b7f023ac0adbb65d9be924faf01d4",
+      "dtype": "float32",
+      "shape": [
+        2,
+        1
+      ],
+      "bytes": 136
+    },
+    {
+      "name": "input_shs_before",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_shs_before.npy",
+      "sha256": "61f578eb20133aae46efb89e6a03cf5bf89f444ac845525f04a26fbeeae1e4db",
+      "dtype": "float32",
+      "shape": [
+        2,
+        16,
+        3
+      ],
+      "bytes": 512
+    },
+    {
+      "name": "input_bg_before",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_bg_before.npy",
+      "sha256": "e456d73f4f6b0ad10e5679164a7b2480deed1ab85b26ab696ad027ceb155b3ac",
+      "dtype": "float32",
+      "shape": [
+        3
+      ],
+      "bytes": 140
+    },
+    {
+      "name": "input_viewmatrix_before",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_viewmatrix_before.npy",
+      "sha256": "0fc3297aac0a8334613330a2b91a6ab8a3d22368c09b2e3c7351e8c843e69269",
+      "dtype": "float32",
+      "shape": [
+        4,
+        4
+      ],
+      "bytes": 192
+    },
+    {
+      "name": "input_projmatrix_before",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_projmatrix_before.npy",
+      "sha256": "91cb340f4f45f364164792172b3fe13c19e118fe16ff953c2613e88b70ac6e54",
+      "dtype": "float32",
+      "shape": [
+        4,
+        4
+      ],
+      "bytes": 192
+    },
+    {
+      "name": "input_campos_before",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_campos_before.npy",
+      "sha256": "e456d73f4f6b0ad10e5679164a7b2480deed1ab85b26ab696ad027ceb155b3ac",
+      "dtype": "float32",
+      "shape": [
+        3
+      ],
+      "bytes": 140
+    },
+    {
+      "name": "input_dc_only_before",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_dc_only_before.npy",
+      "sha256": "b93396ad48a24072d779c17b547f1cfa9bbd7d2fdfa4d7ac136a42d035081225",
+      "dtype": "float32",
+      "shape": [
+        2,
+        16,
+        3
+      ],
+      "bytes": 512
+    },
+    {
+      "name": "base_rgb",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/base_rgb.npy",
+      "sha256": "fbd495f92c0815c649e25d2aa72623b525f08e99a0ff229d834f58610385a3f7",
+      "dtype": "float32",
+      "shape": [
+        3,
+        4,
+        4
+      ],
+      "bytes": 320
+    },
+    {
+      "name": "base_radii",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/base_radii.npy",
+      "sha256": "97a4bfa8cd37d60bb02c0908382f75a170b986a7f48d19b9c141ea3a2060158b",
+      "dtype": "int32",
+      "shape": [
+        2
+      ],
+      "bytes": 136
+    },
+    {
+      "name": "base_kernel_times",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/base_kernel_times.npy",
+      "sha256": "9435da7484268085eb78fcc18f38c34809b477482ba1b6e678fb88c5a49243ae",
+      "dtype": "float32",
+      "shape": [
+        1
+      ],
+      "bytes": 132
+    },
+    {
+      "name": "repeat_rgb",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/repeat_rgb.npy",
+      "sha256": "fbd495f92c0815c649e25d2aa72623b525f08e99a0ff229d834f58610385a3f7",
+      "dtype": "float32",
+      "shape": [
+        3,
+        4,
+        4
+      ],
+      "bytes": 320
+    },
+    {
+      "name": "repeat_radii",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/repeat_radii.npy",
+      "sha256": "97a4bfa8cd37d60bb02c0908382f75a170b986a7f48d19b9c141ea3a2060158b",
+      "dtype": "int32",
+      "shape": [
+        2
+      ],
+      "bytes": 136
+    },
+    {
+      "name": "repeat_kernel_times",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/repeat_kernel_times.npy",
+      "sha256": "ad5b171fedc3dc2cdcb2e25d13f491fafb080ee6b135e4c5bcf2142e21add053",
+      "dtype": "float32",
+      "shape": [
+        1
+      ],
+      "bytes": 132
+    },
+    {
+      "name": "dc_only_rgb",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/dc_only_rgb.npy",
+      "sha256": "d6a02a5c16709dbc2966c5537d7b3d50474cac73881854d18e49174a004deb9b",
+      "dtype": "float32",
+      "shape": [
+        3,
+        4,
+        4
+      ],
+      "bytes": 320
+    },
+    {
+      "name": "dc_only_radii",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/dc_only_radii.npy",
+      "sha256": "97a4bfa8cd37d60bb02c0908382f75a170b986a7f48d19b9c141ea3a2060158b",
+      "dtype": "int32",
+      "shape": [
+        2
+      ],
+      "bytes": 136
+    },
+    {
+      "name": "dc_only_kernel_times",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/dc_only_kernel_times.npy",
+      "sha256": "996af30d7fcf2928f80df91777bec59afc33aaaae3176e0ab173c2e4e8776ab7",
+      "dtype": "float32",
+      "shape": [
+        1
+      ],
+      "bytes": 132
+    },
+    {
+      "name": "input_means3D_after",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_means3D_after.npy",
+      "sha256": "60163533b49b1fe9a8a6c6a924f912c547cbe90bf4845a1d7ed9044dfbd6965c",
+      "dtype": "float32",
+      "shape": [
+        2,
+        3
+      ],
+      "bytes": 152
+    },
+    {
+      "name": "input_means2D_after",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_means2D_after.npy",
+      "sha256": "00b39439fa243da6f1285804fa5c660d41a849f70ecdfe98caaf587ca7e041dd",
+      "dtype": "float32",
+      "shape": [
+        2,
+        3
+      ],
+      "bytes": 152
+    },
+    {
+      "name": "input_scales_after",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_scales_after.npy",
+      "sha256": "49bda7b1ffcc507dbf3de5b1a90fc0f358201c664bee7959fda216263ca31b7e",
+      "dtype": "float32",
+      "shape": [
+        2,
+        3
+      ],
+      "bytes": 152
+    },
+    {
+      "name": "input_rotations_after",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_rotations_after.npy",
+      "sha256": "bbe82ab557281ce1e5566ba5e176a0dea27abfd62b51b3cf8b4fc7d5db01fbdc",
+      "dtype": "float32",
+      "shape": [
+        2,
+        4
+      ],
+      "bytes": 160
+    },
+    {
+      "name": "input_opacities_after",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_opacities_after.npy",
+      "sha256": "968c00a1b52e1d7242134f7aad68b9f49fc2bd4a33678e20cffac286e0f00237",
+      "dtype": "float32",
+      "shape": [
+        2,
+        1
+      ],
+      "bytes": 136
+    },
+    {
+      "name": "input_scores_after",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_scores_after.npy",
+      "sha256": "ecc83f43137a617bf0bab806c484d31ebc7b7f023ac0adbb65d9be924faf01d4",
+      "dtype": "float32",
+      "shape": [
+        2,
+        1
+      ],
+      "bytes": 136
+    },
+    {
+      "name": "input_shs_after",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_shs_after.npy",
+      "sha256": "61f578eb20133aae46efb89e6a03cf5bf89f444ac845525f04a26fbeeae1e4db",
+      "dtype": "float32",
+      "shape": [
+        2,
+        16,
+        3
+      ],
+      "bytes": 512
+    },
+    {
+      "name": "input_bg_after",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_bg_after.npy",
+      "sha256": "e456d73f4f6b0ad10e5679164a7b2480deed1ab85b26ab696ad027ceb155b3ac",
+      "dtype": "float32",
+      "shape": [
+        3
+      ],
+      "bytes": 140
+    },
+    {
+      "name": "input_viewmatrix_after",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_viewmatrix_after.npy",
+      "sha256": "0fc3297aac0a8334613330a2b91a6ab8a3d22368c09b2e3c7351e8c843e69269",
+      "dtype": "float32",
+      "shape": [
+        4,
+        4
+      ],
+      "bytes": 192
+    },
+    {
+      "name": "input_projmatrix_after",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_projmatrix_after.npy",
+      "sha256": "91cb340f4f45f364164792172b3fe13c19e118fe16ff953c2613e88b70ac6e54",
+      "dtype": "float32",
+      "shape": [
+        4,
+        4
+      ],
+      "bytes": 192
+    },
+    {
+      "name": "input_campos_after",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_campos_after.npy",
+      "sha256": "e456d73f4f6b0ad10e5679164a7b2480deed1ab85b26ab696ad027ceb155b3ac",
+      "dtype": "float32",
+      "shape": [
+        3
+      ],
+      "bytes": 140
+    },
+    {
+      "name": "input_dc_only_after",
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/witness-v1/raw/input_dc_only_after.npy",
+      "sha256": "b93396ad48a24072d779c17b547f1cfa9bbd7d2fdfa4d7ac136a42d035081225",
+      "dtype": "float32",
+      "shape": [
+        2,
+        16,
+        3
+      ],
+      "bytes": 512
+    }
+  ],
+  "config": {
+    "seed": 0,
+    "image_height": 4,
+    "image_width": 4,
+    "sh_degree": 3,
+    "tanfovx": 0.5773502691896257,
+    "tanfovy": 0.5773502691896257,
+    "scale_modifier": 1.0,
+    "prefiltered": false,
+    "debug": false,
+    "loaded_wrapper": "/home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/lib.linux-x86_64-3.10/diff_gaussian_rasterization/__init__.py",
+    "loaded_extension": "/home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/lib.linux-x86_64-3.10/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so",
+    "device": "NVIDIA GeForce RTX 5070",
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]"
+  },
+  "build_records": {
+    "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/actualrun-v1/BUILD_RESULT.json": "cea80ccd4a289b14bc05e4566e6c63b959fcea4aa552daa137cd14281dfeb204",
+    "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/actualrun-v1/SUPERVISOR.json": "5a177f61312bedbcb6db5b98ebe4f178e56ac54077efd815138f520c4207eac1",
+    "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/actualrun-v1/HOST_EXTERNAL_RUN.json": "1cb8ac08094241a5d6a508489477701dce1bd13866a8a4c52e46919d7f7fb8ca"
+  },
+  "repeat_max_abs": 0.0,
+  "repeat_tolerance": 1e-06,
+  "sh_response_max_abs": 0.06629714369773865,
+  "sh_response_minimum": 1e-06,
+  "c_call_counts": {
+    "forward_attempted": 3,
+    "forward_completed": 3,
+    "backward_attempted": 0,
+    "mark_visible_attempted": 0
+  },
+  "peak_gpu_allocated_bytes": 11776,
+  "peak_gpu_reserved_bytes": 2097152,
+  "synthetic_inputs_unchanged": true,
+  "numerical_verified_local_case": true,
+  "source_sha256_before": "b9eecdef3daf1272681f79f0a0a34d51d5cb1b2f7739e60bf906a0d9b9ee6677",
+  "source_sha256_after": "b9eecdef3daf1272681f79f0a0a34d51d5cb1b2f7739e60bf906a0d9b9ee6677",
+  "tracked_sources_unchanged": true,
+  "protected_before": {
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so": "6fb6d2d0539cfc28a0ca150a0fd5ff02a1402ef0a92f97ce05f5e72b46255b3c",
+    "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/__init__.py": "1d4fc43bb67c4552193d340e2d6894ad7ec3c0d04a620fd7655c89ccf855df5b",
+    "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/_C.cpython-310-x86_64-linux-gnu.so": "ca99d74bf9d880585b64f75444339bf739276883c8c0f4a85b926fb6e15c9219"
+  },
+  "protected_after": {
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so": "6fb6d2d0539cfc28a0ca150a0fd5ff02a1402ef0a92f97ce05f5e72b46255b3c",
+    "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/__init__.py": "1d4fc43bb67c4552193d340e2d6894ad7ec3c0d04a620fd7655c89ccf855df5b",
+    "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/_C.cpython-310-x86_64-linux-gnu.so": "ca99d74bf9d880585b64f75444339bf739276883c8c0f4a85b926fb6e15c9219"
+  },
+  "protected_unchanged": true,
+  "elapsed_seconds": 3.161224995999987
+}

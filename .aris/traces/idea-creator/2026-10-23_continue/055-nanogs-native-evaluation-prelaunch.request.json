@@ -1,0 +1,13 @@
+{
+  "call_number": 55,
+  "purpose": "nanogs-native-evaluation-prelaunch",
+  "timestamp": "2026-10-23T04:42:47.705310+08:00",
+  "tool": "collaboration.followup_task + send_message",
+  "agent_path": "/root/problem_reanchor_artifacts",
+  "model": "inherited-primary",
+  "prompt": "官方CPU已terminalsession22476 exit0，output1025385 hash383dd0268752f341612231c4206c00bc7f5c737e374ae38c75f1f22f1aeeb7b8，full65.4703s/author54.7384s/runner64.4721，peak~2GB，source/teacherhashunchanged。请现在只审**原nativeGPU评价**脚本 scripts/experiments/evaluate_nanogs_frozen_baseline.py 与 EVALUATION_ASSUMPTIONS.md；producer /root/problem_reanchor_compression 正做最后预算patch，不运行GPU。root已读所有，historypaths/keys/indices sort均核对匹配旧opacitytransfer。2modeidentity-only(teacher+authorread/store rawconversion33图)与complete(teacher+all219+NanoGS33图)，identity maxRGB只描述不设不变门，历史teacher/base maxRGB2e-5/GTmse1e-9/PSNR2e-4/SSIM2e-5为工具replaygate且预先写assumptions。全32test+已看过train016，旧GT不称unseen；main三臂全部GT/fidelitySSIM、fixed016/017/105full/top220band。GPU总budget300s（complete会扣identity实际stagewall，pendingpatch），10GiBallocated，no_grad/nooptimizer/source+param+camera hashes。只找真正能毁比较或造成伪通过的codebug；不要新metric/gate/trait统计。不launch，producer交付冻结hash后给可运行/阻断结论。外部launcherroot后写。",
+  "followups": [
+    "producer已final冻结hash完全与你读到一致0c62664a…/7cce4a6d…；root外部launcher scripts/experiments/launch_nanogs_evaluation.py已写，会用identity-only输出identity-only、complete输出evaluation-v1（args允许，非算法变），sum2mode外部300sec比internal按stagewall稍严格。请可给prelaunchfinal，无须重新review作者论文或全pool。GPU当前1758/12227MiB used、util1%，无当前科学process；CPUofficialterminal。"
+  ],
+  "prompt_provenance": "Readable root calls transcribed from conversation; encrypted logs not decrypted"
+}

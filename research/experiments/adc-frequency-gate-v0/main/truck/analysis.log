@@ -1,0 +1,96 @@
+{
+  "status": "FAIL",
+  "repeat_guard": {
+    "psnr_absolute_difference": 0.015285253524780273,
+    "time_relative_difference": 0.02106100076248607,
+    "pass_checks": true
+  },
+  "pairs": [
+    {
+      "seed": 0,
+      "a_quality": {
+        "psnr": 24.085559904575348,
+        "l1": 0.03803342650644481,
+        "ssim": 0.8555391374975443,
+        "lpips": 0.19488158030435443
+      },
+      "b_quality": {
+        "psnr": 24.07957297563553,
+        "l1": 0.037786045169923455,
+        "ssim": 0.8542099241167307,
+        "lpips": 0.19775749649852514
+      },
+      "delta": {
+        "psnr": -0.005986928939819336,
+        "l1": -0.0002473813365213573,
+        "ssim": -0.0013292133808135986,
+        "lpips": 0.0028759161941707134
+      },
+      "recovery_psnr_delta": {
+        "6500": -0.01042264699935913,
+        "6750": 0.019496619701385498,
+        "7000": -0.005986928939819336
+      },
+      "a_seconds": 125.96918902000002,
+      "b_seconds": 112.49419732000007,
+      "saving": 0.10697053624645103,
+      "a_points": 1382988,
+      "b_points": 1222478,
+      "a_peak_bytes": 2607209472,
+      "b_peak_bytes": 2311011840,
+      "checks": {
+        "final_psnr": true,
+        "final_l1": true,
+        "final_ssim": false,
+        "final_lpips": true,
+        "recovery_6500": true,
+        "recovery_6750": true,
+        "training_saving": true
+      },
+      "pair_pass": false
+    },
+    {
+      "seed": 1,
+      "a_quality": {
+        "psnr": 24.143252849578857,
+        "l1": 0.03768230671994388,
+        "ssim": 0.8568445164710283,
+        "lpips": 0.1945913191884756
+      },
+      "b_quality": {
+        "psnr": 24.120034396648407,
+        "l1": 0.037647158838808537,
+        "ssim": 0.8552689123898745,
+        "lpips": 0.19761536037549376
+      },
+      "delta": {
+        "psnr": -0.02321845293045044,
+        "l1": -3.5147881135344505e-05,
+        "ssim": -0.0015756040811538696,
+        "lpips": 0.003024041187018156
+      },
+      "recovery_psnr_delta": {
+        "6500": -0.07340389490127563,
+        "6750": -0.06362569332122803,
+        "7000": -0.02321845293045044
+      },
+      "a_seconds": 122.24871916299992,
+      "b_seconds": 112.37326631399975,
+      "saving": 0.08078164676582633,
+      "a_points": 1386672,
+      "b_points": 1225994,
+      "a_peak_bytes": 2598536704,
+      "b_peak_bytes": 2314121728,
+      "checks": {
+        "final_psnr": true,
+        "final_l1": true,
+        "final_ssim": false,
+        "final_lpips": true,
+        "recovery_6500": false,
+        "recovery_6750": false,
+        "training_saving": false
+      },
+      "pair_pass": false
+    }
+  ]
+}

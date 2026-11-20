@@ -1,0 +1,25 @@
+{
+  "pins": {
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/RESULTS.json": "e60bfd9e47b76024309b3b2cff3443af2d26abda9232bbea0d98e6aad82cf141",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/SUPERVISOR.json": "6855357294f08ffc7e33630917207de13ac853fa8300769f11b9376c6f94786c",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/RAW_MANIFEST.json": "dbdbbb029cff70d83ce1588ee62cc6572351a89b5865538b134534e772c96550",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/COMBINED_RAW_MANIFEST.json": "7b64a8bfc10ae36e725295057791e1c7051b6d59905bf4f6132d3d6255c9e2f6",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/actualrun-v1/CONFIG.json": "6e427c276bba9e1bd537a312541d18b1b9cd45c1edb4fe052e2836aec751abbe",
+    "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/evaluation-v1/EXTERNAL_RUN.json": "d40753dfbf62233491d8ab6828fe18f703f874bcbed49c455a35b7c9f7b5718a"
+  },
+  "execution_attempt": 1,
+  "started_unix": 1792706944.6204453,
+  "technical_tolerances": {
+    "mse": 1e-12,
+    "psnr": 1e-09,
+    "ssim": 1e-10,
+    "max_abs_rgb": 1e-12,
+    "pixels": 0,
+    "wall_seconds": 1e-09
+  },
+  "harness_pins": {
+    "audit.py": "b7f26d2b28c0787cc26385990e2d79cb0bfd67f3663fe6efcdc5d1aec40a24c3",
+    "CONTRACT.md": "d6e34a2a05aa4123dee521c7bbfaf5b631a9eb3fc5687a7833eb9b24178dca3d",
+    "run-audit.sh": "289486289b57e22ea24421c32a7462add94946f678ad87d3e138d6d20fba707d"
+  }
+}

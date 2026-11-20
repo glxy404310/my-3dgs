@@ -1,0 +1,12 @@
+{
+  "purpose": "native-repeat-csv-check",
+  "model": "inherited-primary",
+  "files_referenced": [
+    "idea-stage/continue-20261022/CANDIDATES.json",
+    "research/experiments/native-gradient-repeat-v0/"
+  ],
+  "tool": "followup_task",
+  "prompt": "请做一项有明确范围的只读复核，视为same-family/provisional而非正式审计。Root新运行native-gradient-repeat-v0 session64644已exit0，RESULTS tool_valid true/decision STOP_CURRENT_NONDETERMINISM_DRIVEN_IMPLEMENTATION。读其CONTRACT.md、scripts/experiments/diagnose_native_gradient_repeat.py、run/{RESULTS.json,CONFIG.json,SUMMARY.csv,REPEATS.csv,CONTRIBUTION.csv}，独立从672重复行复算96条加权RMS指标和24分组门槛；可用只读CPU但别改文件。检查是否有逻辑bug能使小噪声结论无效、前向精确/模型hash/无更新证据范围，是否越界把repeatability当accuracy/κ/实际optimizer影响。不要新web查询、GPU、训练或另派agent。输出<=1000中文字符，给最大数值复算差和明确限制。",
+  "call_number": 4,
+  "reasoning_effort": "inherited"
+}

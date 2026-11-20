@@ -1,0 +1,108 @@
+{
+  "source_hashes": {
+    "teacher": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+    "scores": "f873c5f648c40a65222b35400d9a5390d7756eb46f260b69d7feb89774149770",
+    "cameras": "4ceb5372614821a2c7b6097ea1f92e6b4135b0e1a41e3610bb5a3676a115f6bb",
+    "contract": "e7b863631efb2041d79c82df9549d52f562f958608e25e6d9742e60e255bf3d0",
+    "script": "723a6cf3de8fea9a7369a8dfd2bc788706afaee178f3a318f0d9dd2eb832a4ec"
+  },
+  "sample": {
+    "n": 8192,
+    "eligible_count": 1537768,
+    "teacher_count": 2050770,
+    "aggregate_contribution_fraction": 0.004700013416631216,
+    "size_proxy_quantiles": [
+      0.012507682771883542,
+      1.2920878883477003,
+      2.4627466112354774,
+      5.106945149251762,
+      146.54510310276083
+    ],
+    "sample_is_population_unbiased_estimator": false
+  },
+  "fit_cameras": [
+    "000002.jpg",
+    "000028.jpg",
+    "000047.jpg",
+    "000050.jpg",
+    "000054.jpg",
+    "000064.jpg",
+    "000068.jpg",
+    "000082.jpg",
+    "000098.jpg",
+    "000112.jpg",
+    "000122.jpg",
+    "000127.jpg",
+    "000143.jpg",
+    "000167.jpg",
+    "000176.jpg",
+    "000180.jpg",
+    "000186.jpg",
+    "000192.jpg",
+    "000204.jpg",
+    "000208.jpg",
+    "000219.jpg",
+    "000226.jpg",
+    "000236.jpg",
+    "000244.jpg"
+  ],
+  "validation_cameras": [
+    "000001.jpg",
+    "000009.jpg",
+    "000017.jpg",
+    "000025.jpg",
+    "000033.jpg",
+    "000041.jpg",
+    "000049.jpg",
+    "000057.jpg",
+    "000065.jpg",
+    "000073.jpg",
+    "000081.jpg",
+    "000089.jpg",
+    "000097.jpg",
+    "000105.jpg",
+    "000113.jpg",
+    "000121.jpg",
+    "000129.jpg",
+    "000137.jpg",
+    "000145.jpg",
+    "000153.jpg",
+    "000161.jpg",
+    "000169.jpg",
+    "000177.jpg",
+    "000185.jpg",
+    "000193.jpg",
+    "000201.jpg",
+    "000209.jpg",
+    "000217.jpg",
+    "000225.jpg",
+    "000233.jpg",
+    "000241.jpg",
+    "000249.jpg"
+  ],
+  "scale_min": [
+    -20.06151008605957,
+    -17.699012756347656,
+    -21.217260360717773
+  ],
+  "scale_max": [
+    1.9669873714447021,
+    2.4966704845428467,
+    1.662045955657959
+  ],
+  "bit_configs": [
+    [
+      8,
+      8
+    ],
+    [
+      10,
+      8
+    ]
+  ],
+  "opacity_grid": "post-sigmoid j/255, j=0..255",
+  "filter": 0.3,
+  "selection_uses_test_pose_or_gt": false,
+  "GT_images_read": false,
+  "camera_masks": "teacher geometric center-in-frame, z>.2; not per-camera visibility"
+}

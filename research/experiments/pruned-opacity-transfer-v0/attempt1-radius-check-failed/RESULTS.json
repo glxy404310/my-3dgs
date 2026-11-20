@@ -1,0 +1,16 @@
+{
+  "decision": "TOOL_FAILED",
+  "tool_valid": false,
+  "phase": "219-native-area-forwards",
+  "training_performed": false,
+  "optimizer_created": false,
+  "optimizer_updates": 0,
+  "backward_calls": 0,
+  "native_forward_calls": 1,
+  "completed_train_views": 0,
+  "completed_eval_rows": 0,
+  "fixed_parameter_interventions": true,
+  "teacher_parameters_before": "f90a54ffe88db1b16eb78e7acc7f2ebb44556570227f21c48342e6eb819a6822",
+  "tool_failure": "RuntimeError: Native radius ABI mismatch",
+  "elapsed_seconds": 12.40320084900003
+}

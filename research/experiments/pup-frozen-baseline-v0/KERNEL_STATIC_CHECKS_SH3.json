@@ -1,0 +1,62 @@
+{
+  "status": "PREPARATION_PASS_NO_NUMERICAL_EFFECTS",
+  "py_compile": "PASS",
+  "CPU_synthcheck": {
+    "status": "PASS",
+    "CPU_only": true,
+    "plan_forwards": 28,
+    "FD_forwards": 24,
+    "baseline_forwards": 1,
+    "pool_forwards": 2,
+    "permutation_forwards": 1,
+    "statistical_backwards": 2,
+    "algebra_shape": [
+      48,
+      6
+    ],
+    "scientific_inputs_read": false,
+    "torch_imported": false
+  },
+  "actual_fixed_identity_metadata_preflight": "PASS_33_BOUND_FILES_AND_TRACKED_MATCH",
+  "SH0_frozen_files_unchanged": true,
+  "SH0_and_SH3_actual_output_absent": true,
+  "scientific_calls": 0,
+  "GPU_calls": 0,
+  "torch_imported": false,
+  "scene_imported": false,
+  "SH0_runtime": {
+    "forward_budget": 26,
+    "statistical_backward_budget": 1,
+    "independent_max_seconds": 120
+  },
+  "SH3_runtime": {
+    "forward_budget": 28,
+    "statistical_backward_budget": 2,
+    "independent_max_seconds": 120
+  },
+  "numerical_verified": false,
+  "environment_ready": false,
+  "new_files": {
+    "scripts/experiments/pup_fisher_kernel_witness_sh3.py": {
+      "sha256": "a6867c2de17af4b3d6b9501b32b1ec72de2f9a0e1e881be96fb32ae7baaeaef5",
+      "bytes": 40225
+    },
+    "research/experiments/pup-frozen-baseline-v0/KERNEL_CONTRACT_SH3.md": {
+      "sha256": "079a078fd57ea6a57ba7fb711b0f112396ddff40c17af2e89f97c13f9d1e1c6f",
+      "bytes": 7103
+    },
+    ".aris/compute/pup-private-extension-sh3.md": {
+      "sha256": "dbb452ae3c90fb33a8d2b2265f209a4a85025da95e93610c3e904f047c679c82",
+      "bytes": 8338
+    },
+    "research/experiments/pup-frozen-baseline-v0/KERNEL_SH3_WRAPPER.diff": {
+      "sha256": "21cb676bcab54c5b3e5027e0798199c304f9b68a1a02b91f529999f1929d4d42",
+      "bytes": 19597
+    }
+  },
+  "frozen_SH0_files": {
+    "scripts/experiments/pup_fisher_kernel_witness.py": "5e0694ff2f738177f7d66e6f187042a401993549e0b0b4fdc4871a14023771c7",
+    "research/experiments/pup-frozen-baseline-v0/KERNEL_CONTRACT.md": "b7563ff129d970d334bf05c5411b404afe5cdb2d38910346535a7a5c4dbd9495",
+    ".aris/compute/pup-private-extension.md": "049d0f566b1a441401c915544820351d1b389683acc93a14c91a7c02dd41f0af"
+  }
+}

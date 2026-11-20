@@ -1,0 +1,281 @@
+{
+  "integrity": "pass",
+  "scope": "Same canonical event, K1481, deterministic LAS and recovery cameras. Random seeds change only subset composition. Attributes are descriptive, not causal or a validated new policy.",
+  "results": [
+    {
+      "group": "gradient_top1481",
+      "step": 0,
+      "delta_psnr": -0.06882202625274658,
+      "delta_l1": 0.0003277349751442671,
+      "views_l1_worse": 26
+    },
+    {
+      "group": "gradient_top1481",
+      "step": 1,
+      "delta_psnr": -0.06933897733688354,
+      "delta_l1": 0.00033094012178480625,
+      "views_l1_worse": 27
+    },
+    {
+      "group": "gradient_top1481",
+      "step": 5,
+      "delta_psnr": -0.06709259748458862,
+      "delta_l1": 0.00032930169254541397,
+      "views_l1_worse": 27
+    },
+    {
+      "group": "gradient_top1481",
+      "step": 20,
+      "delta_psnr": -0.02985280752182007,
+      "delta_l1": 0.00017069349996745586,
+      "views_l1_worse": 28
+    },
+    {
+      "group": "gradient_top1481",
+      "step": 100,
+      "delta_psnr": 0.014751613140106201,
+      "delta_l1": -1.1392519809305668e-05,
+      "views_l1_worse": 14
+    },
+    {
+      "group": "random_101",
+      "step": 0,
+      "delta_psnr": -0.012172698974609375,
+      "delta_l1": 7.598334923386574e-05,
+      "views_l1_worse": 26
+    },
+    {
+      "group": "random_101",
+      "step": 1,
+      "delta_psnr": -0.01232212781906128,
+      "delta_l1": 7.54247885197401e-05,
+      "views_l1_worse": 26
+    },
+    {
+      "group": "random_101",
+      "step": 5,
+      "delta_psnr": -0.011626064777374268,
+      "delta_l1": 6.544159259647131e-05,
+      "views_l1_worse": 27
+    },
+    {
+      "group": "random_101",
+      "step": 20,
+      "delta_psnr": -0.0047643184661865234,
+      "delta_l1": 3.721192479133606e-05,
+      "views_l1_worse": 25
+    },
+    {
+      "group": "random_101",
+      "step": 100,
+      "delta_psnr": 0.010189473628997803,
+      "delta_l1": -4.687788896262646e-05,
+      "views_l1_worse": 14
+    },
+    {
+      "group": "random_202",
+      "step": 0,
+      "delta_psnr": -0.009016036987304688,
+      "delta_l1": 4.793866537511349e-06,
+      "views_l1_worse": 25
+    },
+    {
+      "group": "random_202",
+      "step": 1,
+      "delta_psnr": -0.00853961706161499,
+      "delta_l1": -6.402842700481415e-08,
+      "views_l1_worse": 23
+    },
+    {
+      "group": "random_202",
+      "step": 5,
+      "delta_psnr": -0.006935536861419678,
+      "delta_l1": -8.08213371783495e-06,
+      "views_l1_worse": 21
+    },
+    {
+      "group": "random_202",
+      "step": 20,
+      "delta_psnr": 0.0009452700614929199,
+      "delta_l1": 9.900657460093498e-06,
+      "views_l1_worse": 23
+    },
+    {
+      "group": "random_202",
+      "step": 100,
+      "delta_psnr": 0.010312378406524658,
+      "delta_l1": 1.6515725292265415e-05,
+      "views_l1_worse": 17
+    }
+  ],
+  "attributes": [
+    {
+      "group": "gradient_top1481",
+      "attribute": "opacity",
+      "mean": 0.7404242753982544,
+      "median": 0.8206559419631958,
+      "p10": 0.33726513385772705,
+      "p90": 0.9965627789497375
+    },
+    {
+      "group": "gradient_top1481",
+      "attribute": "max_scale",
+      "mean": 0.23043404519557953,
+      "median": 0.17347747087478638,
+      "p10": 0.0652184784412384,
+      "p90": 0.4902054965496063
+    },
+    {
+      "group": "gradient_top1481",
+      "attribute": "min_scale",
+      "mean": 0.05582895129919052,
+      "median": 0.028947247192263603,
+      "p10": 0.00025516757159493864,
+      "p90": 0.1466929167509079
+    },
+    {
+      "group": "gradient_top1481",
+      "attribute": "anisotropy",
+      "mean": 2400.870361328125,
+      "median": 6.525820732116699,
+      "p10": 1.901075005531311,
+      "p90": 308.8377990722656
+    },
+    {
+      "group": "gradient_top1481",
+      "attribute": "volume_proxy",
+      "mean": 0.0065103680826723576,
+      "median": 0.00036616335273720324,
+      "p10": 1.4639212508882338e-08,
+      "p90": 0.01574237272143364
+    },
+    {
+      "group": "gradient_top1481",
+      "attribute": "visible_camera_count",
+      "mean": 16.864280700683594,
+      "median": 13.0,
+      "p10": 4.0,
+      "p90": 33.0
+    },
+    {
+      "group": "gradient_top1481",
+      "attribute": "gradient_score",
+      "mean": 0.0008809641585685313,
+      "median": 0.0006832320359535515,
+      "p10": 0.0005320279742591083,
+      "p90": 0.0013676582602784038
+    },
+    {
+      "group": "random_101",
+      "attribute": "opacity",
+      "mean": 0.5954940915107727,
+      "median": 0.589996337890625,
+      "p10": 0.23978404700756073,
+      "p90": 0.9627392292022705
+    },
+    {
+      "group": "random_101",
+      "attribute": "max_scale",
+      "mean": 0.18279017508029938,
+      "median": 0.12622083723545074,
+      "p10": 0.06368960440158844,
+      "p90": 0.3809879422187805
+    },
+    {
+      "group": "random_101",
+      "attribute": "min_scale",
+      "mean": 0.04049253836274147,
+      "median": 0.018234379589557648,
+      "p10": 0.0013198168016970158,
+      "p90": 0.1144057959318161
+    },
+    {
+      "group": "random_101",
+      "attribute": "anisotropy",
+      "mean": 704.856201171875,
+      "median": 7.485594272613525,
+      "p10": 2.099353075027466,
+      "p90": 74.68509674072266
+    },
+    {
+      "group": "random_101",
+      "attribute": "volume_proxy",
+      "mean": 0.0032141387928277254,
+      "median": 9.876018157228827e-05,
+      "p10": 4.187986064607685e-07,
+      "p90": 0.007499621715396643
+    },
+    {
+      "group": "random_101",
+      "attribute": "visible_camera_count",
+      "mean": 17.881160736083984,
+      "median": 17.0,
+      "p10": 5.0,
+      "p90": 33.0
+    },
+    {
+      "group": "random_101",
+      "attribute": "gradient_score",
+      "mean": 0.0003707150463014841,
+      "median": 0.0002688256208784878,
+      "p10": 0.00021020199346821755,
+      "p90": 0.0005572098307311535
+    },
+    {
+      "group": "random_202",
+      "attribute": "opacity",
+      "mean": 0.5892202258110046,
+      "median": 0.5990592241287231,
+      "p10": 0.23267847299575806,
+      "p90": 0.9551429748535156
+    },
+    {
+      "group": "random_202",
+      "attribute": "max_scale",
+      "mean": 0.17641572654247284,
+      "median": 0.12563607096672058,
+      "p10": 0.06254735589027405,
+      "p90": 0.36360839009284973
+    },
+    {
+      "group": "random_202",
+      "attribute": "min_scale",
+      "mean": 0.03899727016687393,
+      "median": 0.017684435471892357,
+      "p10": 0.001430112635716796,
+      "p90": 0.1048155352473259
+    },
+    {
+      "group": "random_202",
+      "attribute": "anisotropy",
+      "mean": 759.0804443359375,
+      "median": 7.2994489669799805,
+      "p10": 2.1426353454589844,
+      "p90": 72.18451690673828
+    },
+    {
+      "group": "random_202",
+      "attribute": "volume_proxy",
+      "mean": 0.0029259920120239258,
+      "median": 9.223581582773477e-05,
+      "p10": 4.2695461388575495e-07,
+      "p90": 0.005557892378419638
+    },
+    {
+      "group": "random_202",
+      "attribute": "visible_camera_count",
+      "mean": 18.64618492126465,
+      "median": 17.0,
+      "p10": 4.0,
+      "p90": 33.0
+    },
+    {
+      "group": "random_202",
+      "attribute": "gradient_score",
+      "mean": 0.00035584831493906677,
+      "median": 0.0002733854344114661,
+      "p10": 0.00021001366258133203,
+      "p90": 0.0005528533947654068
+    }
+  ]
+}

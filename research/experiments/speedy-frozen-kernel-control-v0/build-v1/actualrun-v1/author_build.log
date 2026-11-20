@@ -1,0 +1,253 @@
+running build
+running build_py
+creating /home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1
+creating /home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/lib.linux-x86_64-3.10
+creating /home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/lib.linux-x86_64-3.10/diff_gaussian_rasterization
+copying diff_gaussian_rasterization/__init__.py -> /home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/lib.linux-x86_64-3.10/diff_gaussian_rasterization
+warning: build_py: byte-compiling is disabled, skipping.
+
+running build_ext
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/utils/cpp_extension.py:576: UserWarning: Attempted to use ninja as the BuildExtension backend but we could not find ninja.. Falling back to using the slow distutils backend.
+  warnings.warn(msg.format('we could not find ninja.'))
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/utils/cpp_extension.py:490: UserWarning: There are no x86_64-linux-gnu-g++ version bounds defined for CUDA version 12.8
+  warnings.warn(f'There are no {compiler_name} version bounds defined for CUDA version {cuda_str_version}')
+building 'diff_gaussian_rasterization._C' extension
+creating /home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/temp.linux-x86_64-3.10
+creating /home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/temp.linux-x86_64-3.10/cuda_rasterizer
+/usr/local/cuda-12.8/bin/nvcc -I/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include -I/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/administrator/venvs/3dgs/include -I/usr/include/python3.10 -c cuda_rasterizer/backward.cu -o /home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/temp.linux-x86_64-3.10/cuda_rasterizer/backward.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options '-fPIC' -I/home/administrator/projects/speedy-frozen-rasterizer-b38abb6d/third_party/glm/ -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE="_gcc" -DPYBIND11_STDLIB="_libstdcpp" -DPYBIND11_BUILD_ABI="_cxxabi1016" -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -gencode=arch=compute_120,code=sm_120 -std=c++17
+cuda_rasterizer/auxiliary.h(139): warning #177-D: variable "p_proj" was declared but never referenced
+   float3 p_proj = { p_hom.x * p_w, p_hom.y * p_w, p_hom.z * p_w };
+          ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/usr/local/cuda-12.8/bin/nvcc -I/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include -I/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/administrator/venvs/3dgs/include -I/usr/include/python3.10 -c cuda_rasterizer/forward.cu -o /home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/temp.linux-x86_64-3.10/cuda_rasterizer/forward.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options '-fPIC' -I/home/administrator/projects/speedy-frozen-rasterizer-b38abb6d/third_party/glm/ -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE="_gcc" -DPYBIND11_STDLIB="_libstdcpp" -DPYBIND11_BUILD_ABI="_cxxabi1016" -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -gencode=arch=compute_120,code=sm_120 -std=c++17
+cuda_rasterizer/auxiliary.h(139): warning #177-D: variable "p_proj" was declared but never referenced
+   float3 p_proj = { p_hom.x * p_w, p_hom.y * p_w, p_hom.z * p_w };
+          ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/usr/local/cuda-12.8/bin/nvcc -I/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include -I/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/administrator/venvs/3dgs/include -I/usr/include/python3.10 -c cuda_rasterizer/rasterizer_impl.cu -o /home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/temp.linux-x86_64-3.10/cuda_rasterizer/rasterizer_impl.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options '-fPIC' -I/home/administrator/projects/speedy-frozen-rasterizer-b38abb6d/third_party/glm/ -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE="_gcc" -DPYBIND11_STDLIB="_libstdcpp" -DPYBIND11_BUILD_ABI="_cxxabi1016" -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -gencode=arch=compute_120,code=sm_120 -std=c++17
+cuda_rasterizer/auxiliary.h(139): warning #177-D: variable "p_proj" was declared but never referenced
+   float3 p_proj = { p_hom.x * p_w, p_hom.y * p_w, p_hom.z * p_w };
+          ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+x86_64-linux-gnu-gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include -I/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/administrator/venvs/3dgs/include -I/usr/include/python3.10 -c ext.cpp -o /home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/temp.linux-x86_64-3.10/ext.o -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE="_gcc" -DPYBIND11_STDLIB="_libstdcpp" -DPYBIND11_BUILD_ABI="_cxxabi1016" -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++17
+/usr/local/cuda-12.8/bin/nvcc -I/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include -I/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/administrator/venvs/3dgs/include -I/usr/include/python3.10 -c rasterize_points.cu -o /home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/temp.linux-x86_64-3.10/rasterize_points.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options '-fPIC' -I/home/administrator/projects/speedy-frozen-rasterizer-b38abb6d/third_party/glm/ -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE="_gcc" -DPYBIND11_STDLIB="_libstdcpp" -DPYBIND11_BUILD_ABI="_cxxabi1016" -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -gencode=arch=compute_120,code=sm_120 -std=c++17
+rasterize_points.cu: In function ‘std::tuple<int, at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor> RasterizeGaussiansCUDA(const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, float, const at::Tensor&, const at::Tensor&, const at::Tensor&, float, float, int, int, const at::Tensor&, int, const at::Tensor&, bool, bool)’:
+rasterize_points.cu:91:140: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   91 |           rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                            ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:91:186: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   91 |           rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                          ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:91:264: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   91 |           rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                                                                                                        ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:91:304: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   91 |           rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                                                                                                                                                ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:91:455: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   91 |           rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:91:498: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   91 |           rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:91:541: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   91 |           rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:91:580: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   91 |           rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:91:658: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   91 |           rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:91:700: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   91 |           rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:91:736: warning: ‘T* at::Tensor::data() const [with T = int]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   91 |           rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu: In function ‘std::tuple<at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor> RasterizeGaussiansBackwardCUDA(const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, float, const at::Tensor&, const at::Tensor&, const at::Tensor&, float, float, const at::Tensor&, const at::Tensor&, int, const at::Tensor&, const at::Tensor&, int, const at::Tensor&, const at::Tensor&, bool)’:
+rasterize_points.cu:167:101: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                              ~~                                     ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:147: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                   ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:182: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                      ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:221: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                             ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:342: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                      ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:385: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                 ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:428: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                            ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:467: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:523: warning: ‘T* at::Tensor::data() const [with T = int]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:768: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:812: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:854: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:898: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:941: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:985: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:1027: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:1066: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:1109: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:1155: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:167:1194: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  167 |           CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu: In function ‘at::Tensor markVisible(at::Tensor&, at::Tensor&, at::Tensor&)’:
+rasterize_points.cu:214:87: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  214 |         CudaRasterizer::Rasterizer::markVisible(P,
+      |                                                                                       ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:214:130: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  214 |         CudaRasterizer::Rasterizer::markVisible(P,
+      |                                                                                                                                  ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:214:173: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  214 |         CudaRasterizer::Rasterizer::markVisible(P,
+      |                                                                                                                                                                             ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+rasterize_points.cu:214:212: warning: ‘T* at::Tensor::data() const [with T = bool]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  214 |         CudaRasterizer::Rasterizer::markVisible(P,
+      |                                                                                                                                                                                                                    ^ 
+/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   T * data() const {
+      | ^ ~~
+x86_64-linux-gnu-g++ -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 -Wl,-Bsymbolic-functions -g -fwrapv -O2 -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 /home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/temp.linux-x86_64-3.10/cuda_rasterizer/backward.o /home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/temp.linux-x86_64-3.10/cuda_rasterizer/forward.o /home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/temp.linux-x86_64-3.10/cuda_rasterizer/rasterizer_impl.o /home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/temp.linux-x86_64-3.10/ext.o /home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/temp.linux-x86_64-3.10/rasterize_points.o -L/home/administrator/venvs/3dgs/lib/python3.10/site-packages/torch/lib -L/usr/local/cuda-12.8/lib64 -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda -o /home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1/lib.linux-x86_64-3.10/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so

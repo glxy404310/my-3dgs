@@ -1,0 +1,55 @@
+{
+  "schema": "stationary-adc-window-v0/storage-layout-preparation-v1",
+  "status": "DESIGNED_NOT_FULLY_IMPLEMENTED_NOT_AUTHORIZED_NOT_RUN",
+  "at": "2026-10-23T08:50:08.927490+08:00",
+  "expected_points_from_pinned_historical_resume_summary": 1058297,
+  "runtime_point_count_verified": false,
+  "aggregate_retained_worker_output_cap_bytes": 4294967296,
+  "phase_allocation_bytes": {
+    "capture": 3000000000,
+    "fixed_replay_1": 500000000,
+    "fixed_replay_2": 500000000,
+    "decision_and_audit_outputs": 150000000
+  },
+  "allocated_total_bytes": 4150000000,
+  "unallocated_bytes": 144967296,
+  "endpoint_file_max_bytes_within_capture": 1200000000,
+  "moving_per_step_payload": {
+    "screen_gradient": "float32[N,3], unchanged",
+    "radii": "int32[N], unchanged",
+    "visibility": "uint8[ceil(N/8)] packbits-little-sorted-indices-v1 with actual int64 logical SHA/count"
+  },
+  "fixed_per_step_proposal": {
+    "gradient_norm": "native 2-D gradient norm as float32[N], original planned statistic; no quantization",
+    "visibility": "same lossless packed actual indices",
+    "implementation_status": "NOT_IMPLEMENTED",
+    "audit_scope": "Independently sum saved norm values and visible counts; cannot recompute norm from discarded screen XY or independently certify CUDA/autograd. Moving capture still retains all full XYZ gradients/radii for CPU norm reconstruction."
+  },
+  "payload_byte_arithmetic": {
+    "packed_visibility_per_occurrence": 132288,
+    "moving100_full_gradient_radius_and_packed_indices": 1706504000,
+    "fixed200_norm_and_packed_indices": 873095200,
+    "capture_final3_float32_arrays": 12699564,
+    "fixed_final3_float32_arrays_each_reserved": 12699564,
+    "npy_headers_manifests_and_other_outputs": "charged inside phase allocations; not zero"
+  },
+  "implemented": {
+    "capture_lossless_visibility_codec": true,
+    "capture_raw_cap_3GB": true,
+    "endpoint_cap_1_2GB": true,
+    "restored_N_must_match": true,
+    "moving_independent_array_decoder": true,
+    "fixed_replay_workers": false,
+    "fixed_norm_auditor": false,
+    "aggregate_controller": false
+  },
+  "compute_budget": "Shared300sec over capture+two fixed workers including preflights/import/copy/sync/write, next stage gets only remaining wall budget; CPU audit120sec and all stages600sec; controllers not yet implemented",
+  "output_cap_exclusions": "Only final external supervisor report and external host log; every worker file and preserved raw statistic counts",
+  "actual_models_loaded": 0,
+  "actual_forward": 0,
+  "actual_backward": 0,
+  "actual_parameter_updates": 0,
+  "actual_worker_subprocesses": 0,
+  "runtime_resource_fit_verified": false,
+  "cannot_claim": "Packing correctness and arithmetic do not establish real fit, efficacy, speedup, novel research or GPU execution integrity"
+}

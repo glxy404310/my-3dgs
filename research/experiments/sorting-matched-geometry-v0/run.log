@@ -1,0 +1,5 @@
+{"mode": "base_float32", "rows": 2048, "encoded_position_bytes": 24609323, "exceed_fraction": 0.0, "qualifying_views": 0, "C_gt_mse": 0.0018451837905840642, "D_gt_mse": 0.0018451837905840642, "elapsed_seconds": 22.368}
+{"mode": "local_tau025", "rows": 4096, "encoded_position_bytes": 20429369, "exceed_fraction": 0.001953125, "qualifying_views": 0, "C_gt_mse": 0.0018448026498291124, "D_gt_mse": 0.0018438399129050796, "elapsed_seconds": 35.392}
+{"mode": "global_tau025", "rows": 6144, "encoded_position_bytes": 16406291, "exceed_fraction": 0.0009765625, "qualifying_views": 0, "C_gt_mse": 0.0018449077439746996, "D_gt_mse": 0.001844243271124479, "elapsed_seconds": 46.625}
+{"mode": "local_tau0125", "rows": 8192, "encoded_position_bytes": 21220426, "exceed_fraction": 0.00048828125, "qualifying_views": 0, "C_gt_mse": 0.0018455330278902568, "D_gt_mse": 0.0018452024541263919, "elapsed_seconds": 60.101}
+{"decision": "INCONCLUSIVE", "tool_valid": false, "integrity_complete": false, "native_forward_calls": 41, "elapsed_stage_seconds": 61.94716470100002, "tool_failure": "RuntimeError: Original native depth probe does not cover every Q candidate"}

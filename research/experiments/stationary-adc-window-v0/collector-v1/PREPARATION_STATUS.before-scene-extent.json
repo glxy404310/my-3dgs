@@ -1,0 +1,47 @@
+{
+  "schema": "stationary-adc-window-v0/preparation-status-v1",
+  "status": "PREPARED_UNAUTHORIZED_NOT_RUN",
+  "at": "2026-10-23T08:24:10.171961+08:00",
+  "training_authorized": false,
+  "root_review_complete": false,
+  "actual_models_loaded": 0,
+  "actual_forward": 0,
+  "actual_backward": 0,
+  "actual_parameter_updates": 0,
+  "actual_optimizer_instances": 0,
+  "actual_worker_subprocesses": 0,
+  "static_safety_test_groups_passed": 5,
+  "synthetic_numpy_test_groups_passed": 7,
+  "synthetic_tests_are_scientific_evidence": false,
+  "runtime_restore_verified": false,
+  "actual_resource_fit_verified": false,
+  "real_array_audit_performed": false,
+  "full_integrity_audit_performed": false,
+  "no_method_accepted": true,
+  "input_pins": 131,
+  "source_and_code_sha256": {
+    "collect.py": "f313683cd8f72e5db98658a8a01018c38a3b760ec6336268a6293b0a0eb97e92",
+    "supervise.py": "e2c24ae55b957e26d146ca22b3a55badfe2eff491e2596696f51dac74807590c",
+    "audit_arrays.py": "862c509e74fa396a03d91cb56d15775136e891de408cf439ed35e85e71d0d3f8",
+    "test_preparation.py": "0c587c476415c27e33c6d5d7ab6a1549cf03f7e96616459df93b19b1365f016b",
+    "test_audit_arrays.py": "104489036ab64924b7b55a3235cce164b018d58e08018576d92e00a5a7778381",
+    "CONTRACT.preparation.json": "e657b94820dc57200829289506813100e6de1df444d0aefbbe64a71788fcc9f3",
+    "STATIC_TEST_RESULTS.json": "798044abe051cf47fc395b16f5e166f694cd6fdde1e0d71cef2c336be1bf254f",
+    "STATIC_TEST_RESULTS.before-array-export.json": "ed1ac279f5cff85e4ee9403913e3a2679f7fa1686269692c75ffe2b0f50f0eed",
+    "ARRAY_AUDITOR_UNIT_RESULTS.json": "5ddb9872b7ff8709fa5b77d246a3ea246bfac0ea12a8fa9666ee6d9f7512a9f4",
+    "ARRAY_AUDITOR_UNIT_RESULTS.before-status-check.json": "22ba9e949a60e8b12824ca0f000a5371963b939a504afc0f3dd284d615f9c407"
+  },
+  "legacy_hashes_unchanged": {
+    "research/experiments/adc-frequency-gate-v0/main/truck/RESULTS.json": "f206728b95a7271224a19ec191ef622d777270c623ca595c15203742e74952b6",
+    "research/experiments/co-ray-split-interaction-v0/ROOT_PROTOCOL.md": "6843f9c6b5c11269e21edb58a35896c1a7c4cc7cb04d7d4f2dbcb0e908d64a46",
+    "research/experiments/co-ray-split-interaction-v0/run-effects-v1/RESULTS.json": "8dd01bef56111b6521240b02f20a01628c207ff132a46502848de385a0bd771b"
+  },
+  "review_scope": "root complete initial code plus corrections; fresh same-family static reviews; no independent GPU execution",
+  "required_before_any_interpretation": [
+    "Explicit human answer to prior no-training constraint",
+    "Finalize frozen replay implementation and combined stage budgets/protocol",
+    "Actual trusted-package restore/config/source/camera assertions under supervision",
+    "Separate saved-array consistency audit and repeated fixed-endpoint measurement"
+  ],
+  "stopping_policy": "Stop launching work at actual weekly remaining <=50%, preserve state, pause goal under human conditional instruction"
+}

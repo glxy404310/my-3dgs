@@ -1,0 +1,16 @@
+{
+  "call_number": 24,
+  "purpose": "frozen-images-readonly-recheck",
+  "timestamp": "2026-10-22T17:47:56.655Z",
+  "agent_id": "01a164b7-e909-7b91-a0aa-39d7ed26b767",
+  "agent_path": "/root/truck_frozen_readonly_recheck",
+  "model": "inherited-primary",
+  "reasoning_effort": "inherited-primary",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "request_recovered_verbatim": true,
+  "response_recovered_verbatim": true,
+  "response_scope": "selected actual final answer; inherited transcript answers excluded"
+}

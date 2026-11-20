@@ -1,0 +1,43 @@
+{
+  "status": "ROOT_FULL_CODE_REVIEWED_PROJECTION_FROZEN_NOT_RUN",
+  "time": "2026-10-23T07:15:53.820768+08:00",
+  "reviewed_code_sha256": {
+    "execute.py": "81836c1d4bfae10d93dedcf32ec557aa441643961b65bf9405eec26c2a777dbc",
+    "cpu_metrics.py": "3e3033905509ef2d560536e61a1942acfd9aace6d65447cde832857229fa6c09",
+    "run-diagnostic.sh": "0c97b909e52b394ef3c19dc39da439b6236b131be08e5acbf147b321d15f61f4",
+    "launch.ps1": "857a9c746ab3f99c680f0153f160674992aceecfd2b4a6034c85141d94e0a809",
+    "ASSUMPTIONS.md": "daa462e282c277d703596826d2dd99dc2a91c784903a979d8663ffe1205ed4b8",
+    "PREPARATION.md": "365f3696023ab66a4588570e08d84aedabf447966aaad624f4fdf9e397210a70",
+    "CONTRACT.template.json": "671c1ff0903b159fe969f212477be6c86ee336ee57e4507ee1829d2323a91e14",
+    "ARMS.template.json": "1e1ef2537cdcd5834a437573404f7c9a78f1de197d8435837d7c69d82be8aa7e",
+    "READONLY_PINS.json": "40bd06441240570d123697fd58efc34f459577bdca47809334d030680070f878",
+    "ROOT_PROTOCOL.md": "6843f9c6b5c11269e21edb58a35896c1a7c4cc7cb04d7d4f2dbcb0e908d64a46",
+    "ROOT_INPUT_PINS.json": "7ff5ebbe6ba914655ae602226db3176491a01b776328af77c19dedaf7f380e85"
+  },
+  "notes": [
+    "Read all executor lines/helpers/scripts/assumptions/templates/protected paths; GPU monitor changed before any launch to allocator hard bound and explicit best-effort process telemetry.",
+    "Scientific source/gates fixed before effects; no model work authorized by this record beyond frozen projection."
+  ],
+  "contract_sha256": "f75a65b066a065f647adb5e1a66a0e63fde21d0b489c9944c5d36919a82d6b71",
+  "arms_sha256": "844ef4b4a5881a44053b692936dda831be9b807fb848785ab3b4c443082e7317",
+  "calibration_views": [
+    "000002.jpg",
+    "000037.jpg",
+    "000072.jpg",
+    "000108.jpg",
+    "000143.jpg",
+    "000179.jpg",
+    "000214.jpg",
+    "000251.jpg"
+  ],
+  "evaluation_views": [
+    "000019.jpg",
+    "000054.jpg",
+    "000090.jpg",
+    "000125.jpg",
+    "000160.jpg",
+    "000196.jpg",
+    "000231.jpg",
+    "000250.jpg"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "call_number": 13,
+  "purpose": "transfer-static-check",
+  "timestamp": "2026-10-23T01:10:02.612455+08:00",
+  "agent_id": "01a16491-02c2-71e0-a790-148ab41004fe",
+  "agent_path": "/root/transfer_static_check",
+  "model": "inherited-primary",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "request_recovered_verbatim": true,
+  "response_recovered_verbatim": true
+}

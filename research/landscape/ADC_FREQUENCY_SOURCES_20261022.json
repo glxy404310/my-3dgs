@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-22",
+  "scope": "Fixed full-ADC interval100 versus200, existing clone correction plus isolatedLAS; engineering replication versus research novelty",
+  "recent_window": [
+    "2026-04-22",
+    "2026-10-22"
+  ],
+  "sources": [
+    {
+      "id": "official3dgs",
+      "title": "3D Gaussian Splatting official implementation README",
+      "url": "https://github.com/graphdeco-inria/gaussian-splatting",
+      "location": "densification_interval option and FAQ on limited VRAM",
+      "verified": "Default100 and user-adjustable interval; FAQ explicitly recommends increasing interval to reduce resource usage, warning quality changes",
+      "overlap": "The control itself and resource-quality tradeoff are already documented",
+      "not_established": "Does not reproduce our exact8% fixed-window result or isolate training recovery costs"
+    },
+    {
+      "id": "vr_splatting",
+      "title": "VR-Splatting: Foveated Radiance Field Rendering via 3D Gaussian Splatting and Neural Points",
+      "url": "https://arxiv.org/html/2410.17932v2",
+      "doi": "10.1145/3728302",
+      "status": "PACMCGIT8(1),18,2025; authorfulltextv2 dated2025-04-15",
+      "location": "Section4 Training; Section5.4.2",
+      "verified": "Uses interval200, combined with hybrid foveated/neuralpoint rendering and other training changes",
+      "overlap": "Existing use of exact200 setting",
+      "not_established": "Not an isolated100-versus200 test of our operators; cannot transfer its VR/perceptual results"
+    },
+    {
+      "id": "fastgs",
+      "title": "FastGS: Training 3D Gaussian Splatting in 100 Seconds",
+      "url": "https://arxiv.org/html/2511.04283v3",
+      "latest_version_checked": "v3,2025-12-06",
+      "location": "Section5.1 ImplementationDetails; supplementary9.1",
+      "verified": "Base cadence500; FastGS-Big cadence100 for speed-quality/size configurations; also changes densification/pruning mechanism",
+      "overlap": "Direct precedent for less-frequent densification as speed-quality lever",
+      "not_established": "Not our exact operator combination, interval200, common cutoff or measured percentages"
+    },
+    {
+      "id": "dashgaussian",
+      "title": "DashGaussian: Optimizing 3D Gaussian Splatting in 200 Seconds",
+      "url": "https://arxiv.org/html/2503.18402v1",
+      "official_project": "https://dashgaussian.github.io/",
+      "status": "CVPR2025",
+      "location": "Sections4-5; Table3 primitive-scheduler ablation",
+      "verified": "Joint rendering-resolution/primitive-growth scheduling with adaptive momentum-based budget; primitive-only ablation",
+      "overlap": "Training computation and growth scheduling",
+      "not_established": "Not a constant cadence modification; published acceleration numbers are not directly comparable to our window"
+    },
+    {
+      "id": "improvedgs",
+      "title": "Improving Densification in 3D Gaussian Splatting for High-Fidelity Rendering",
+      "url": "https://arxiv.org/html/2508.12313v1",
+      "location": "LAS/RAP/MU/GC sections, especially GrowthControl",
+      "verified": "LAS reduces split distortion; GrowthControl suppresses premature Gaussian growth; MU changes optimizer-update cadence after densification",
+      "overlap": "OurLAS is reused; growth/overhead motivation already exists",
+      "not_established": "MU interval is not ADC interval; our localbaseline is not fullImproved-GS"
+    },
+    {
+      "id": "decomposing",
+      "title": "Decomposing Densification in Gaussian Splatting for Faster 3D Scene Reconstruction",
+      "url": "https://arxiv.org/html/2507.20239v1",
+      "status": "2025preprint; no conference acceptance inferred",
+      "location": "Global-to-local framework and coarse-to-fine densification sections",
+      "verified": "Early split-only then split-plus-clone; energy-guided multiresolution and adaptive opacitypruning",
+      "overlap": "Reducing early redundant growth and scheduled densification",
+      "not_established": "Not the same100-to200 intervention"
+    },
+    {
+      "id": "adpsplit",
+      "title": "AdpSplit: Error-Driven Adaptive Splitting for Faster Geometry Discovery in 3D Gaussian Splatting",
+      "url": "https://arxiv.org/html/2605.06876v1",
+      "status": "2026-05-07preprint",
+      "location": "Section4, full/shortened variants and Implementation",
+      "verified": "Variablechildren split and shortened densification-duration baselines; ADCinterval100 for3DGS/Mini/Dash/Speedy,500 forFastGS",
+      "overlap": "Fewer densification rounds and training/quality tradeoffs",
+      "not_established": "Shorter densification duration is different from larger interval at fixed duration"
+    },
+    {
+      "id": "sig",
+      "title": "Signal Structure-Aware Gaussian Splatting for Large-Scale Scene Reconstruction",
+      "url": "https://arxiv.org/html/2607.01698v2",
+      "official_venue": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/f67449c7ab72f441d3a713b046c6818c-Abstract-Conference.html",
+      "status": "ICLR2026; latest v2 2026-07-06 verified by fresh reviewer and local executor",
+      "location": "Frequency-aligned resolution/densification scheduler",
+      "verified": "Uses scene-frequency convergence to regulate supervision resolution and densification",
+      "overlap": "Broad adaptive scheduling direction already has mechanisms",
+      "not_established": "No exact match to constantinterval200; proximity does not kill all future scheduling research"
+    },
+    {
+      "id": "tpc",
+      "title": "Smart Target Point Control for Gaussian Splatting Methods",
+      "url": "https://arxiv.org/html/2605.16158v1",
+      "status": "2026-05-15preprint",
+      "location": "Sections3-4",
+      "verified": "Preserves densification cadence and window, changes thresholds to track target counts; addresses capacity-matched evaluation",
+      "overlap": "Capacity and schedule confounds matter to interpreting our speed/quality difference",
+      "not_established": "Not a cadence-changing method and not evidence our comparison is invalid"
+    }
+  ],
+  "limitations": [
+    "Undermind connector reportsUSER_NOT_LOGGED_IN; web/authorfulltext fallback used",
+    "ACM DOI page403 but matching arXiv authorfulltext and journalmetadata obtained",
+    "DART-3DGS publisherfulltext429; treated only as unconfirmed lead, not decisive",
+    "An initially guessedDashGaussian URL2503.18447 resolved to unrelatedthermoelectricpaper and was excluded; correct verifiedID2503.18402 used",
+    "RecentarXiv web queries are not exhaustive enumeration; no global absence claim"
+  ]
+}

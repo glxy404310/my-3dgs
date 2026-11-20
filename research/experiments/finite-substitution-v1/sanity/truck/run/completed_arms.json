@@ -1,0 +1,74 @@
+[
+  {
+    "case": 0,
+    "arm": "existing",
+    "repeat": 0,
+    "anchor_max": 0.0,
+    "witness": {
+      "max_position_units": 0.499013751745224,
+      "max_scale_log_change": 0.008581161499023438,
+      "max_opacity_logit_change": 0.0427851676940918,
+      "max_dc_change": 0.0046367645263671875,
+      "max_sh_change": 0.00024769362062215805,
+      "max_rotation_change": 0.0037731591146439314
+    },
+    "position_corrections": {
+      "reprojected_entities": 9,
+      "fallback_entities": 1
+    }
+  },
+  {
+    "case": 0,
+    "arm": "existing",
+    "repeat": 1,
+    "anchor_max": 0.0,
+    "witness": {
+      "max_position_units": 0.499013751745224,
+      "max_scale_log_change": 0.008581161499023438,
+      "max_opacity_logit_change": 0.0427851676940918,
+      "max_dc_change": 0.0046367645263671875,
+      "max_sh_change": 0.00024769362062215805,
+      "max_rotation_change": 0.0037731591146439314
+    },
+    "position_corrections": {
+      "reprojected_entities": 9,
+      "fallback_entities": 1
+    }
+  },
+  {
+    "case": 0,
+    "arm": "split",
+    "repeat": 0,
+    "anchor_max": 0.0,
+    "witness": {
+      "max_position_units": 0.49314025044441223,
+      "max_scale_log_change": 0.008342742919921875,
+      "max_opacity_logit_change": 0.04180192947387695,
+      "max_dc_change": 0.004738926887512207,
+      "max_sh_change": 0.00025015557184815407,
+      "max_rotation_change": 0.0037006090860813856
+    },
+    "position_corrections": {
+      "reprojected_entities": 17,
+      "fallback_entities": 2
+    }
+  },
+  {
+    "case": 0,
+    "arm": "split",
+    "repeat": 1,
+    "anchor_max": 0.0,
+    "witness": {
+      "max_position_units": 0.49314025044441223,
+      "max_scale_log_change": 0.008342742919921875,
+      "max_opacity_logit_change": 0.04180192947387695,
+      "max_dc_change": 0.004738926887512207,
+      "max_sh_change": 0.00025015557184815407,
+      "max_rotation_change": 0.0037006090860813856
+    },
+    "position_corrections": {
+      "reprojected_entities": 17,
+      "fallback_entities": 2
+    }
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "skill": "novelty-check",
+  "run_id": "2026-10-22_run_reassessment",
+  "started_at": "2026-10-22",
+  "executor": "codex",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "project_dir": "D:\\Documents\\my 3dgs"
+}

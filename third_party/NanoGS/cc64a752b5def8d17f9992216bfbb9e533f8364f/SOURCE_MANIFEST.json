@@ -1,0 +1,118 @@
+{
+  "repository": "saliteta/NanoGS",
+  "commit": "cc64a752b5def8d17f9992216bfbb9e533f8364f",
+  "fetch_method": "GitHub connector commit-specific contents and recursive git-tree; original UTF-8 bytes verified against Git blob SHA1",
+  "downloaded_author_files": [
+    {
+      "path": ".gitignore",
+      "bytes": 19,
+      "github_blob_sha1": "2cc73b8b1f79129bbbcd03bd359beee1fb47a030",
+      "actual_blob_sha1": "2cc73b8b1f79129bbbcd03bd359beee1fb47a030",
+      "sha256": "452f80b3a9fc1e55486c4d890fd141632977851b767e7e8d24b0c106946f6b0b",
+      "exact": true
+    },
+    {
+      "path": "CITATION.bib",
+      "bytes": 359,
+      "github_blob_sha1": "4603cf6bffddf7ee0fb66e58dbcefe346ae77901",
+      "actual_blob_sha1": "4603cf6bffddf7ee0fb66e58dbcefe346ae77901",
+      "sha256": "94206aa092a93d12d26f181ec45caff9eaf765838d37e01cec9de1a93ea01743",
+      "exact": true
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 19346,
+      "github_blob_sha1": "c657cab45c850057a63b3605897f5195f3c4ac02",
+      "actual_blob_sha1": "c657cab45c850057a63b3605897f5195f3c4ac02",
+      "sha256": "3711f963c05d0be80d53e5923308a6dee31b203da23435c9cfb7c7b6e4dd5e19",
+      "exact": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 3322,
+      "github_blob_sha1": "50aad124e290032c493875fb944ac075df59ba6a",
+      "actual_blob_sha1": "50aad124e290032c493875fb944ac075df59ba6a",
+      "sha256": "ad4636ad794969c32eafa9be4cf5d2c3bb336e82d84ce70eefb8bbefe1cfda3a",
+      "exact": true
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 255,
+      "github_blob_sha1": "1b55386afe0cb255a4e6cbf58184d7aa4073dd45",
+      "actual_blob_sha1": "1b55386afe0cb255a4e6cbf58184d7aa4073dd45",
+      "sha256": "bc657ca642fdb35491906ffa6faa39e007694a407401f62703ca77b72ca4b006",
+      "exact": true
+    },
+    {
+      "path": "src/nanogs/__init__.py",
+      "bytes": 91,
+      "github_blob_sha1": "4bbb422cf33a7c43d7f1f1ea7528550c644f2347",
+      "actual_blob_sha1": "4bbb422cf33a7c43d7f1f1ea7528550c644f2347",
+      "sha256": "62596b9cba9c3d296dfec27411c9b268df58ab57a5091b15bb5a70da32bfcf7b",
+      "exact": true
+    },
+    {
+      "path": "src/nanogs/py.typed",
+      "bytes": 0,
+      "github_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "actual_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exact": true
+    },
+    {
+      "path": "src/nanogs/simplification.py",
+      "bytes": 7282,
+      "github_blob_sha1": "a052a7def4cb26fd7b1da74228290fa346404454",
+      "actual_blob_sha1": "a052a7def4cb26fd7b1da74228290fa346404454",
+      "sha256": "8e13e21720dd5be5bbe8da2dbb1d4aa33277cd7ef783920607086b93f36d66f5",
+      "exact": true
+    },
+    {
+      "path": "src/nanogs/utils/cost.py",
+      "bytes": 7937,
+      "github_blob_sha1": "b2a0dfd6c6196a981a50386a37b272d58663a646",
+      "actual_blob_sha1": "b2a0dfd6c6196a981a50386a37b272d58663a646",
+      "sha256": "75a23902cccd21755fce049fe34816251830401d9817a693a420afbc7c3324b3",
+      "exact": true
+    },
+    {
+      "path": "src/nanogs/utils/merge.py",
+      "bytes": 3093,
+      "github_blob_sha1": "947d9360a6b9030d1584bb9f81eeaa566b22883c",
+      "actual_blob_sha1": "947d9360a6b9030d1584bb9f81eeaa566b22883c",
+      "sha256": "e8cd9b8ab6c5988587bcd6e5b799091b73a6250792ff6d10fd982dc5f44e4d5c",
+      "exact": true
+    },
+    {
+      "path": "src/nanogs/utils/params.py",
+      "bytes": 219,
+      "github_blob_sha1": "bc7735fb3af5809e6a4afe4a811cb06475494290",
+      "actual_blob_sha1": "bc7735fb3af5809e6a4afe4a811cb06475494290",
+      "sha256": "ca0773dd4bc2e03afac5cc5c4c67d81760116fd7c42783f4412174d44d040ece",
+      "exact": true
+    },
+    {
+      "path": "src/nanogs/utils/ply_utils.py",
+      "bytes": 10142,
+      "github_blob_sha1": "299d2e9b25cc8bcf3441374e8e36a94da98d4892",
+      "actual_blob_sha1": "299d2e9b25cc8bcf3441374e8e36a94da98d4892",
+      "sha256": "bb5ce26467bec8c9839379d9118c663008c75f64dc0f632a8719f1ca9223d28e",
+      "exact": true
+    },
+    {
+      "path": "src/nanogs/utils/splat_utils.py",
+      "bytes": 5074,
+      "github_blob_sha1": "5cdf2e60dcf2ae56870009e5746d8499b7f25aa6",
+      "actual_blob_sha1": "5cdf2e60dcf2ae56870009e5746d8499b7f25aa6",
+      "sha256": "b372b4c52912dbc7f15ccbe3a8167058f097a19c5d8cc130bddf449018c79a64",
+      "exact": true
+    }
+  ],
+  "python_file_count": 7,
+  "excluded": [
+    {
+      "path": "teaser.png",
+      "reason": "unneeded binary illustration; no algorithm dependency"
+    }
+  ]
+}

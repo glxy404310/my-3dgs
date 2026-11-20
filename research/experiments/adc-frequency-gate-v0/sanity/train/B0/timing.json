@@ -1,0 +1,20 @@
+[
+  {
+    "first": 3501,
+    "last": 3600,
+    "seconds": 2.527078797999998,
+    "cumulative_seconds": 2.527078797999998,
+    "n_gaussians": 450513,
+    "allocated": 643080704,
+    "reserved": 1556086784
+  },
+  {
+    "first": 3601,
+    "last": 3622,
+    "seconds": 0.5560287480000028,
+    "cumulative_seconds": 3.083107546000001,
+    "n_gaussians": 450513,
+    "allocated": 440169472,
+    "reserved": 1558183936
+  }
+]

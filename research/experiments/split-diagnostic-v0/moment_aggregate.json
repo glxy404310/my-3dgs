@@ -1,0 +1,246 @@
+{
+  "scope": "Inherited .2m/.04v minus reset with same child parameters, not full BOGausS and not a novel method.",
+  "pairing_checks": "pass",
+  "per_event": [
+    {
+      "event": "early3600_seed0",
+      "variant": "original_split",
+      "step": 0,
+      "delta_psnr": 0.0,
+      "delta_l1": 0.0,
+      "views_l1_improved": 0
+    },
+    {
+      "event": "early3600_seed0",
+      "variant": "original_split",
+      "step": 1,
+      "delta_psnr": 0.0001550912857055664,
+      "delta_l1": 1.1000782251358032e-05,
+      "views_l1_improved": 14
+    },
+    {
+      "event": "early3600_seed0",
+      "variant": "original_split",
+      "step": 5,
+      "delta_psnr": -0.0063057541847229,
+      "delta_l1": 5.0358125008642673e-05,
+      "views_l1_improved": 15
+    },
+    {
+      "event": "early3600_seed0",
+      "variant": "original_split",
+      "step": 20,
+      "delta_psnr": 0.023001015186309814,
+      "delta_l1": -0.00014769774861633778,
+      "views_l1_improved": 23
+    },
+    {
+      "event": "early3600_seed0",
+      "variant": "original_split",
+      "step": 100,
+      "delta_psnr": -0.005692660808563232,
+      "delta_l1": 1.1970754712820053e-05,
+      "views_l1_improved": 16
+    },
+    {
+      "event": "early3600_seed0",
+      "variant": "las_split",
+      "step": 0,
+      "delta_psnr": 0.0,
+      "delta_l1": 0.0,
+      "views_l1_improved": 0
+    },
+    {
+      "event": "early3600_seed0",
+      "variant": "las_split",
+      "step": 1,
+      "delta_psnr": 0.0007649660110473633,
+      "delta_l1": -9.997747838497162e-07,
+      "views_l1_improved": 16
+    },
+    {
+      "event": "early3600_seed0",
+      "variant": "las_split",
+      "step": 5,
+      "delta_psnr": -0.004342913627624512,
+      "delta_l1": 2.104847226291895e-05,
+      "views_l1_improved": 14
+    },
+    {
+      "event": "early3600_seed0",
+      "variant": "las_split",
+      "step": 20,
+      "delta_psnr": 0.02537292242050171,
+      "delta_l1": -0.00020385649986565113,
+      "views_l1_improved": 25
+    },
+    {
+      "event": "early3600_seed0",
+      "variant": "las_split",
+      "step": 100,
+      "delta_psnr": 0.0035856962203979492,
+      "delta_l1": -3.310898318886757e-05,
+      "views_l1_improved": 16
+    },
+    {
+      "event": "early3600_seed1",
+      "variant": "original_split",
+      "step": 0,
+      "delta_psnr": 0.0,
+      "delta_l1": 0.0,
+      "views_l1_improved": 0
+    },
+    {
+      "event": "early3600_seed1",
+      "variant": "original_split",
+      "step": 1,
+      "delta_psnr": 0.007159292697906494,
+      "delta_l1": -4.2473780922591686e-05,
+      "views_l1_improved": 18
+    },
+    {
+      "event": "early3600_seed1",
+      "variant": "original_split",
+      "step": 5,
+      "delta_psnr": 0.0013631582260131836,
+      "delta_l1": 1.4732941053807735e-05,
+      "views_l1_improved": 16
+    },
+    {
+      "event": "early3600_seed1",
+      "variant": "original_split",
+      "step": 20,
+      "delta_psnr": 0.0056871771812438965,
+      "delta_l1": -1.1421041563153267e-05,
+      "views_l1_improved": 17
+    },
+    {
+      "event": "early3600_seed1",
+      "variant": "original_split",
+      "step": 100,
+      "delta_psnr": -0.006799101829528809,
+      "delta_l1": 2.3527536541223526e-05,
+      "views_l1_improved": 16
+    },
+    {
+      "event": "early3600_seed1",
+      "variant": "las_split",
+      "step": 0,
+      "delta_psnr": 0.0,
+      "delta_l1": 0.0,
+      "views_l1_improved": 0
+    },
+    {
+      "event": "early3600_seed1",
+      "variant": "las_split",
+      "step": 1,
+      "delta_psnr": -0.0036220550537109375,
+      "delta_l1": 2.2715306840837002e-05,
+      "views_l1_improved": 12
+    },
+    {
+      "event": "early3600_seed1",
+      "variant": "las_split",
+      "step": 5,
+      "delta_psnr": -0.013546288013458252,
+      "delta_l1": 7.981760427355766e-05,
+      "views_l1_improved": 13
+    },
+    {
+      "event": "early3600_seed1",
+      "variant": "las_split",
+      "step": 20,
+      "delta_psnr": 0.014249861240386963,
+      "delta_l1": -5.688739474862814e-05,
+      "views_l1_improved": 21
+    },
+    {
+      "event": "early3600_seed1",
+      "variant": "las_split",
+      "step": 100,
+      "delta_psnr": -0.007366061210632324,
+      "delta_l1": 3.6299810744822025e-05,
+      "views_l1_improved": 13
+    },
+    {
+      "event": "early3600_seed2",
+      "variant": "original_split",
+      "step": 0,
+      "delta_psnr": 0.0,
+      "delta_l1": 0.0,
+      "views_l1_improved": 0
+    },
+    {
+      "event": "early3600_seed2",
+      "variant": "original_split",
+      "step": 1,
+      "delta_psnr": -0.004469096660614014,
+      "delta_l1": 4.79875598102808e-05,
+      "views_l1_improved": 12
+    },
+    {
+      "event": "early3600_seed2",
+      "variant": "original_split",
+      "step": 5,
+      "delta_psnr": -0.005788266658782959,
+      "delta_l1": 0.00012771051842719316,
+      "views_l1_improved": 15
+    },
+    {
+      "event": "early3600_seed2",
+      "variant": "original_split",
+      "step": 20,
+      "delta_psnr": 0.016407132148742676,
+      "delta_l1": -7.189798634499311e-05,
+      "views_l1_improved": 20
+    },
+    {
+      "event": "early3600_seed2",
+      "variant": "original_split",
+      "step": 100,
+      "delta_psnr": -0.0002250075340270996,
+      "delta_l1": -4.9230875447392464e-05,
+      "views_l1_improved": 18
+    },
+    {
+      "event": "early3600_seed2",
+      "variant": "las_split",
+      "step": 0,
+      "delta_psnr": 0.0,
+      "delta_l1": 0.0,
+      "views_l1_improved": 0
+    },
+    {
+      "event": "early3600_seed2",
+      "variant": "las_split",
+      "step": 1,
+      "delta_psnr": 0.0018836259841918945,
+      "delta_l1": -8.60891304910183e-07,
+      "views_l1_improved": 14
+    },
+    {
+      "event": "early3600_seed2",
+      "variant": "las_split",
+      "step": 5,
+      "delta_psnr": -0.004811704158782959,
+      "delta_l1": 8.709635585546494e-05,
+      "views_l1_improved": 13
+    },
+    {
+      "event": "early3600_seed2",
+      "variant": "las_split",
+      "step": 20,
+      "delta_psnr": 0.007138431072235107,
+      "delta_l1": 9.608024265617132e-05,
+      "views_l1_improved": 15
+    },
+    {
+      "event": "early3600_seed2",
+      "variant": "las_split",
+      "step": 100,
+      "delta_psnr": 0.0033401846885681152,
+      "delta_l1": -5.0880713388323784e-05,
+      "views_l1_improved": 17
+    }
+  ]
+}

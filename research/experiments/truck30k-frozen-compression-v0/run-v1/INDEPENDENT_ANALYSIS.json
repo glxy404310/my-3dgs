@@ -1,0 +1,1728 @@
+{
+  "csv_rows": 395,
+  "groups_independently_match": true,
+  "recomputed": {
+    "calibration": {
+      "n": 24,
+      "mean": 0.00043393305168137886,
+      "median": 0.00018738730432232842,
+      "p90": 0.0012198370182886717,
+      "maximum": 0.0020222621969878674,
+      "worst10_mean": 0.0016779541037976742
+    },
+    "real_noncalibration_train": {
+      "n": 195,
+      "mean": 0.001372632622298671,
+      "median": 0.0005469685420393944,
+      "p90": 0.003376687318086624,
+      "maximum": 0.017623452469706535,
+      "worst10_mean": 0.006391563499346375
+    },
+    "real_test": {
+      "n": 32,
+      "mean": 0.001409734954677333,
+      "median": 0.0005642138130497187,
+      "p90": 0.002287815569434316,
+      "maximum": 0.016081690788269043,
+      "worst10_mean": 0.006682918465230614
+    },
+    "virtual_check": {
+      "n": 72,
+      "mean": 0.001464854774288445,
+      "median": 0.0004780269227921963,
+      "p90": 0.002969180070795119,
+      "maximum": 0.016404451802372932,
+      "worst10_mean": 0.0081564255815465
+    },
+    "virtual_discovery": {
+      "n": 72,
+      "mean": 0.0009243555020172304,
+      "median": 0.0004909552517347038,
+      "p90": 0.002287563937716186,
+      "maximum": 0.004893337842077017,
+      "worst10_mean": 0.003238880221033469
+    }
+  },
+  "cheap_existing_view_coverage_max_mse": {
+    "calibration24": 0.0020222621969878674,
+    "uniform_index24": 0.004903704859316349,
+    "random24_seed20261022": 0.013024698942899704,
+    "all_existing_train219": 0.017623452469706535
+  },
+  "coverage_controls_status": "posthoc descriptive using frozen CSV; no new compression or selection tuning",
+  "uniform_views": [
+    "000002.jpg",
+    "000012.jpg",
+    "000022.jpg",
+    "000034.jpg",
+    "000044.jpg",
+    "000055.jpg",
+    "000066.jpg",
+    "000077.jpg",
+    "000087.jpg",
+    "000099.jpg",
+    "000109.jpg",
+    "000120.jpg",
+    "000131.jpg",
+    "000142.jpg",
+    "000152.jpg",
+    "000164.jpg",
+    "000174.jpg",
+    "000186.jpg",
+    "000196.jpg",
+    "000207.jpg",
+    "000218.jpg",
+    "000229.jpg",
+    "000239.jpg",
+    "000251.jpg"
+  ],
+  "random_views": [
+    "000002.jpg",
+    "000194.jpg",
+    "000149.jpg",
+    "000183.jpg",
+    "000087.jpg",
+    "000098.jpg",
+    "000020.jpg",
+    "000035.jpg",
+    "000067.jpg",
+    "000018.jpg",
+    "000031.jpg",
+    "000034.jpg",
+    "000244.jpg",
+    "000159.jpg",
+    "000039.jpg",
+    "000162.jpg",
+    "000074.jpg",
+    "000003.jpg",
+    "000245.jpg",
+    "000179.jpg",
+    "000111.jpg",
+    "000196.jpg",
+    "000188.jpg",
+    "000061.jpg"
+  ],
+  "virtual_endpoint_comparisons": [
+    {
+      "view": "virtual_discovery_e00_t25",
+      "group": "virtual_discovery",
+      "mse": 0.0017565516754984856,
+      "endpoints": [
+        "000002.jpg",
+        "000003.jpg"
+      ],
+      "endpoint_max": 0.002508007688447833,
+      "ratio_to_endpoint_max": 0.7003773088852004
+    },
+    {
+      "view": "virtual_discovery_e00_t50",
+      "group": "virtual_discovery",
+      "mse": 0.0019674967043101788,
+      "endpoints": [
+        "000002.jpg",
+        "000003.jpg"
+      ],
+      "endpoint_max": 0.002508007688447833,
+      "ratio_to_endpoint_max": 0.7844859142069982
+    },
+    {
+      "view": "virtual_discovery_e00_t75",
+      "group": "virtual_discovery",
+      "mse": 0.0022510529961436987,
+      "endpoints": [
+        "000002.jpg",
+        "000003.jpg"
+      ],
+      "endpoint_max": 0.002508007688447833,
+      "ratio_to_endpoint_max": 0.8975462900342385
+    },
+    {
+      "view": "virtual_check_e01_t25",
+      "group": "virtual_check",
+      "mse": 0.0022910195402801037,
+      "endpoints": [
+        "000003.jpg",
+        "000006.jpg"
+      ],
+      "endpoint_max": 0.002508007688447833,
+      "ratio_to_endpoint_max": 0.913481864841483
+    },
+    {
+      "view": "virtual_check_e01_t50",
+      "group": "virtual_check",
+      "mse": 0.002081639366224408,
+      "endpoints": [
+        "000003.jpg",
+        "000006.jpg"
+      ],
+      "endpoint_max": 0.002508007688447833,
+      "ratio_to_endpoint_max": 0.8299972028844547
+    },
+    {
+      "view": "virtual_check_e01_t75",
+      "group": "virtual_check",
+      "mse": 0.001968271331861615,
+      "endpoints": [
+        "000003.jpg",
+        "000006.jpg"
+      ],
+      "endpoint_max": 0.002508007688447833,
+      "ratio_to_endpoint_max": 0.7847947759202236
+    },
+    {
+      "view": "virtual_discovery_e02_t25",
+      "group": "virtual_discovery",
+      "mse": 0.0019013681448996067,
+      "endpoints": [
+        "000006.jpg",
+        "000132.jpg"
+      ],
+      "endpoint_max": 0.002046645153313875,
+      "ratio_to_endpoint_max": 0.9290170022003865
+    },
+    {
+      "view": "virtual_discovery_e02_t50",
+      "group": "virtual_discovery",
+      "mse": 0.0017441328382119536,
+      "endpoints": [
+        "000006.jpg",
+        "000132.jpg"
+      ],
+      "endpoint_max": 0.002046645153313875,
+      "ratio_to_endpoint_max": 0.8521911262379307
+    },
+    {
+      "view": "virtual_discovery_e02_t75",
+      "group": "virtual_discovery",
+      "mse": 0.001573238056153059,
+      "endpoints": [
+        "000006.jpg",
+        "000132.jpg"
+      ],
+      "endpoint_max": 0.002046645153313875,
+      "ratio_to_endpoint_max": 0.7686911693537654
+    },
+    {
+      "view": "virtual_check_e03_t25",
+      "group": "virtual_check",
+      "mse": 0.002259249798953533,
+      "endpoints": [
+        "000008.jpg",
+        "000134.jpg"
+      ],
+      "endpoint_max": 0.0034795249812304974,
+      "ratio_to_endpoint_max": 0.6492983413369756
+    },
+    {
+      "view": "virtual_check_e03_t50",
+      "group": "virtual_check",
+      "mse": 0.001973990350961685,
+      "endpoints": [
+        "000008.jpg",
+        "000134.jpg"
+      ],
+      "endpoint_max": 0.0034795249812304974,
+      "ratio_to_endpoint_max": 0.5673160450377351
+    },
+    {
+      "view": "virtual_check_e03_t75",
+      "group": "virtual_check",
+      "mse": 0.0017037329962477088,
+      "endpoints": [
+        "000008.jpg",
+        "000134.jpg"
+      ],
+      "endpoint_max": 0.0034795249812304974,
+      "ratio_to_endpoint_max": 0.48964528360569537
+    },
+    {
+      "view": "virtual_discovery_e04_t25",
+      "group": "virtual_discovery",
+      "mse": 0.0029391234274953604,
+      "endpoints": [
+        "000011.jpg",
+        "000136.jpg"
+      ],
+      "endpoint_max": 0.0048249815590679646,
+      "ratio_to_endpoint_max": 0.6091470799451318
+    },
+    {
+      "view": "virtual_discovery_e04_t50",
+      "group": "virtual_discovery",
+      "mse": 0.002291620709002018,
+      "endpoints": [
+        "000011.jpg",
+        "000136.jpg"
+      ],
+      "endpoint_max": 0.0048249815590679646,
+      "ratio_to_endpoint_max": 0.47494911243654314
+    },
+    {
+      "view": "virtual_discovery_e04_t75",
+      "group": "virtual_discovery",
+      "mse": 0.0019691321067512035,
+      "endpoints": [
+        "000011.jpg",
+        "000136.jpg"
+      ],
+      "endpoint_max": 0.0048249815590679646,
+      "ratio_to_endpoint_max": 0.40811184097697945
+    },
+    {
+      "view": "virtual_check_e05_t25",
+      "group": "virtual_check",
+      "mse": 0.01418294943869114,
+      "endpoints": [
+        "000015.jpg",
+        "000016.jpg"
+      ],
+      "endpoint_max": 0.017623452469706535,
+      "ratio_to_endpoint_max": 0.8047770130779212
+    },
+    {
+      "view": "virtual_check_e05_t50",
+      "group": "virtual_check",
+      "mse": 0.015204825438559055,
+      "endpoints": [
+        "000015.jpg",
+        "000016.jpg"
+      ],
+      "endpoint_max": 0.017623452469706535,
+      "ratio_to_endpoint_max": 0.8627608843780793
+    },
+    {
+      "view": "virtual_check_e05_t75",
+      "group": "virtual_check",
+      "mse": 0.016404451802372932,
+      "endpoints": [
+        "000015.jpg",
+        "000016.jpg"
+      ],
+      "endpoint_max": 0.017623452469706535,
+      "ratio_to_endpoint_max": 0.930830768294182
+    },
+    {
+      "view": "virtual_discovery_e06_t25",
+      "group": "virtual_discovery",
+      "mse": 0.004893337842077017,
+      "endpoints": [
+        "000019.jpg",
+        "000021.jpg"
+      ],
+      "endpoint_max": 0.010447530075907707,
+      "ratio_to_endpoint_max": 0.4683726973288346
+    },
+    {
+      "view": "virtual_discovery_e06_t50",
+      "group": "virtual_discovery",
+      "mse": 0.0015199050540104508,
+      "endpoints": [
+        "000019.jpg",
+        "000021.jpg"
+      ],
+      "endpoint_max": 0.010447530075907707,
+      "ratio_to_endpoint_max": 0.14547984480230344
+    },
+    {
+      "view": "virtual_discovery_e06_t75",
+      "group": "virtual_discovery",
+      "mse": 0.0004492516163736582,
+      "endpoints": [
+        "000019.jpg",
+        "000021.jpg"
+      ],
+      "endpoint_max": 0.010447530075907707,
+      "ratio_to_endpoint_max": 0.043000748799914425
+    },
+    {
+      "view": "virtual_check_e07_t25",
+      "group": "virtual_check",
+      "mse": 0.00017633760580793023,
+      "endpoints": [
+        "000027.jpg",
+        "000028.jpg"
+      ],
+      "endpoint_max": 0.00018001713033299893,
+      "ratio_to_endpoint_max": 0.9795601423138884
+    },
+    {
+      "view": "virtual_check_e07_t50",
+      "group": "virtual_check",
+      "mse": 0.0001695681712590158,
+      "endpoints": [
+        "000027.jpg",
+        "000028.jpg"
+      ],
+      "endpoint_max": 0.00018001713033299893,
+      "ratio_to_endpoint_max": 0.9419557513518049
+    },
+    {
+      "view": "virtual_check_e07_t75",
+      "group": "virtual_check",
+      "mse": 0.0001621097035240382,
+      "endpoints": [
+        "000027.jpg",
+        "000028.jpg"
+      ],
+      "endpoint_max": 0.00018001713033299893,
+      "ratio_to_endpoint_max": 0.9005237625117385
+    },
+    {
+      "view": "virtual_discovery_e08_t25",
+      "group": "virtual_discovery",
+      "mse": 0.0003443558525759727,
+      "endpoints": [
+        "000029.jpg",
+        "000030.jpg"
+      ],
+      "endpoint_max": 0.0003542727790772915,
+      "ratio_to_endpoint_max": 0.972007653178583
+    },
+    {
+      "view": "virtual_discovery_e08_t50",
+      "group": "virtual_discovery",
+      "mse": 0.0003318539238534868,
+      "endpoints": [
+        "000029.jpg",
+        "000030.jpg"
+      ],
+      "endpoint_max": 0.0003542727790772915,
+      "ratio_to_endpoint_max": 0.9367186627146603
+    },
+    {
+      "view": "virtual_discovery_e08_t75",
+      "group": "virtual_discovery",
+      "mse": 0.00033788185101002455,
+      "endpoints": [
+        "000029.jpg",
+        "000030.jpg"
+      ],
+      "endpoint_max": 0.0003542727790772915,
+      "ratio_to_endpoint_max": 0.953733594463686
+    },
+    {
+      "view": "virtual_check_e09_t25",
+      "group": "virtual_check",
+      "mse": 0.0003382197464816272,
+      "endpoints": [
+        "000030.jpg",
+        "000148.jpg"
+      ],
+      "endpoint_max": 0.0003542727790772915,
+      "ratio_to_endpoint_max": 0.9546873665047746
+    },
+    {
+      "view": "virtual_check_e09_t50",
+      "group": "virtual_check",
+      "mse": 0.0003200035425834358,
+      "endpoints": [
+        "000030.jpg",
+        "000148.jpg"
+      ],
+      "endpoint_max": 0.0003542727790772915,
+      "ratio_to_endpoint_max": 0.9032687846266076
+    },
+    {
+      "view": "virtual_check_e09_t75",
+      "group": "virtual_check",
+      "mse": 0.00029866991098970175,
+      "endpoints": [
+        "000030.jpg",
+        "000148.jpg"
+      ],
+      "endpoint_max": 0.0003542727790772915,
+      "ratio_to_endpoint_max": 0.8430506903962303
+    },
+    {
+      "view": "virtual_discovery_e10_t25",
+      "group": "virtual_discovery",
+      "mse": 0.0004164336423855275,
+      "endpoints": [
+        "000032.jpg",
+        "000150.jpg"
+      ],
+      "endpoint_max": 0.000537662417627871,
+      "ratio_to_endpoint_max": 0.7745262245086862
+    },
+    {
+      "view": "virtual_discovery_e10_t50",
+      "group": "virtual_discovery",
+      "mse": 0.00032419126364402473,
+      "endpoints": [
+        "000032.jpg",
+        "000150.jpg"
+      ],
+      "endpoint_max": 0.000537662417627871,
+      "ratio_to_endpoint_max": 0.6029643378727007
+    },
+    {
+      "view": "virtual_discovery_e10_t75",
+      "group": "virtual_discovery",
+      "mse": 0.00024145263887476176,
+      "endpoints": [
+        "000032.jpg",
+        "000150.jpg"
+      ],
+      "endpoint_max": 0.000537662417627871,
+      "ratio_to_endpoint_max": 0.4490785127590541
+    },
+    {
+      "view": "virtual_check_e11_t25",
+      "group": "virtual_check",
+      "mse": 0.0002940825361292809,
+      "endpoints": [
+        "000036.jpg",
+        "000051.jpg"
+      ],
+      "endpoint_max": 0.00036748929414898157,
+      "ratio_to_endpoint_max": 0.800247900582537
+    },
+    {
+      "view": "virtual_check_e11_t50",
+      "group": "virtual_check",
+      "mse": 0.00024886277969926596,
+      "endpoints": [
+        "000036.jpg",
+        "000051.jpg"
+      ],
+      "endpoint_max": 0.00036748929414898157,
+      "ratio_to_endpoint_max": 0.6771973596552612
+    },
+    {
+      "view": "virtual_check_e11_t75",
+      "group": "virtual_check",
+      "mse": 0.00020966904412489384,
+      "endpoints": [
+        "000036.jpg",
+        "000051.jpg"
+      ],
+      "endpoint_max": 0.00036748929414898157,
+      "ratio_to_endpoint_max": 0.5705446320836035
+    },
+    {
+      "view": "virtual_discovery_e12_t25",
+      "group": "virtual_discovery",
+      "mse": 0.000570091768167913,
+      "endpoints": [
+        "000038.jpg",
+        "000214.jpg"
+      ],
+      "endpoint_max": 0.001412264653481543,
+      "ratio_to_endpoint_max": 0.4036720502510003
+    },
+    {
+      "view": "virtual_discovery_e12_t50",
+      "group": "virtual_discovery",
+      "mse": 0.0006074939738027751,
+      "endpoints": [
+        "000038.jpg",
+        "000214.jpg"
+      ],
+      "endpoint_max": 0.001412264653481543,
+      "ratio_to_endpoint_max": 0.4301559005283952
+    },
+    {
+      "view": "virtual_discovery_e12_t75",
+      "group": "virtual_discovery",
+      "mse": 0.000886160705704242,
+      "endpoints": [
+        "000038.jpg",
+        "000214.jpg"
+      ],
+      "endpoint_max": 0.001412264653481543,
+      "ratio_to_endpoint_max": 0.6274749591159567
+    },
+    {
+      "view": "virtual_check_e13_t25",
+      "group": "virtual_check",
+      "mse": 0.0005263725761324167,
+      "endpoints": [
+        "000042.jpg",
+        "000043.jpg"
+      ],
+      "endpoint_max": 0.0005469685420393944,
+      "ratio_to_endpoint_max": 0.9623452459803543
+    },
+    {
+      "view": "virtual_check_e13_t50",
+      "group": "virtual_check",
+      "mse": 0.0005163244786672294,
+      "endpoints": [
+        "000042.jpg",
+        "000043.jpg"
+      ],
+      "endpoint_max": 0.0005469685420393944,
+      "ratio_to_endpoint_max": 0.9439747242905281
+    },
+    {
+      "view": "virtual_check_e13_t75",
+      "group": "virtual_check",
+      "mse": 0.0004809610836673528,
+      "endpoints": [
+        "000042.jpg",
+        "000043.jpg"
+      ],
+      "endpoint_max": 0.0005469685420393944,
+      "ratio_to_endpoint_max": 0.8793212894366281
+    },
+    {
+      "view": "virtual_discovery_e14_t25",
+      "group": "virtual_discovery",
+      "mse": 0.0001328179205302149,
+      "endpoints": [
+        "000047.jpg",
+        "000048.jpg"
+      ],
+      "endpoint_max": 0.00016167551802936941,
+      "ratio_to_endpoint_max": 0.8215091694098525
+    },
+    {
+      "view": "virtual_discovery_e14_t50",
+      "group": "virtual_discovery",
+      "mse": 0.00013518810737878084,
+      "endpoints": [
+        "000047.jpg",
+        "000048.jpg"
+      ],
+      "endpoint_max": 0.00016167551802936941,
+      "ratio_to_endpoint_max": 0.8361693163353467
+    },
+    {
+      "view": "virtual_discovery_e14_t75",
+      "group": "virtual_discovery",
+      "mse": 0.0001450280105927959,
+      "endpoints": [
+        "000047.jpg",
+        "000048.jpg"
+      ],
+      "endpoint_max": 0.00016167551802936941,
+      "ratio_to_endpoint_max": 0.8970313648010122
+    },
+    {
+      "view": "virtual_check_e15_t25",
+      "group": "virtual_check",
+      "mse": 0.0004362114705145359,
+      "endpoints": [
+        "000054.jpg",
+        "000222.jpg"
+      ],
+      "endpoint_max": 0.002094301860779524,
+      "ratio_to_endpoint_max": 0.20828490805626887
+    },
+    {
+      "view": "virtual_check_e15_t50",
+      "group": "virtual_check",
+      "mse": 0.0006235534092411399,
+      "endpoints": [
+        "000054.jpg",
+        "000222.jpg"
+      ],
+      "endpoint_max": 0.002094301860779524,
+      "ratio_to_endpoint_max": 0.2977380772650634
+    },
+    {
+      "view": "virtual_check_e15_t75",
+      "group": "virtual_check",
+      "mse": 0.0007768975337967277,
+      "endpoints": [
+        "000054.jpg",
+        "000222.jpg"
+      ],
+      "endpoint_max": 0.002094301860779524,
+      "ratio_to_endpoint_max": 0.37095776322691
+    },
+    {
+      "view": "virtual_discovery_e16_t25",
+      "group": "virtual_discovery",
+      "mse": 0.000492780061904341,
+      "endpoints": [
+        "000056.jpg",
+        "000224.jpg"
+      ],
+      "endpoint_max": 0.0010078232735395432,
+      "ratio_to_endpoint_max": 0.4889548344856775
+    },
+    {
+      "view": "virtual_discovery_e16_t50",
+      "group": "virtual_discovery",
+      "mse": 0.0006257299683056772,
+      "endpoints": [
+        "000056.jpg",
+        "000224.jpg"
+      ],
+      "endpoint_max": 0.0010078232735395432,
+      "ratio_to_endpoint_max": 0.6208727112523126
+    },
+    {
+      "view": "virtual_discovery_e16_t75",
+      "group": "virtual_discovery",
+      "mse": 0.0007722311420366168,
+      "endpoints": [
+        "000056.jpg",
+        "000224.jpg"
+      ],
+      "endpoint_max": 0.0010078232735395432,
+      "ratio_to_endpoint_max": 0.7662366630257397
+    },
+    {
+      "view": "virtual_check_e17_t25",
+      "group": "virtual_check",
+      "mse": 0.00035545663558878005,
+      "endpoints": [
+        "000059.jpg",
+        "000060.jpg"
+      ],
+      "endpoint_max": 0.00039989722426980734,
+      "ratio_to_endpoint_max": 0.8888699746236708
+    },
+    {
+      "view": "virtual_check_e17_t50",
+      "group": "virtual_check",
+      "mse": 0.0003737580555025488,
+      "endpoints": [
+        "000059.jpg",
+        "000060.jpg"
+      ],
+      "endpoint_max": 0.00039989722426980734,
+      "ratio_to_endpoint_max": 0.9346352833156385
+    },
+    {
+      "view": "virtual_check_e17_t75",
+      "group": "virtual_check",
+      "mse": 0.00039173095137812197,
+      "endpoints": [
+        "000059.jpg",
+        "000060.jpg"
+      ],
+      "endpoint_max": 0.00039989722426980734,
+      "ratio_to_endpoint_max": 0.9795790708310202
+    },
+    {
+      "view": "virtual_discovery_e18_t25",
+      "group": "virtual_discovery",
+      "mse": 0.00047813935088925064,
+      "endpoints": [
+        "000060.jpg",
+        "000062.jpg"
+      ],
+      "endpoint_max": 0.0005586181068792939,
+      "ratio_to_endpoint_max": 0.8559324250342764
+    },
+    {
+      "view": "virtual_discovery_e18_t50",
+      "group": "virtual_discovery",
+      "mse": 0.0004982427344657481,
+      "endpoints": [
+        "000060.jpg",
+        "000062.jpg"
+      ],
+      "endpoint_max": 0.0005586181068792939,
+      "ratio_to_endpoint_max": 0.8919201299241241
+    },
+    {
+      "view": "virtual_discovery_e18_t75",
+      "group": "virtual_discovery",
+      "mse": 0.0005342150689102709,
+      "endpoints": [
+        "000060.jpg",
+        "000062.jpg"
+      ],
+      "endpoint_max": 0.0005586181068792939,
+      "ratio_to_endpoint_max": 0.9563153473392584
+    },
+    {
+      "view": "virtual_check_e19_t25",
+      "group": "virtual_check",
+      "mse": 0.000488690915517509,
+      "endpoints": [
+        "000063.jpg",
+        "000230.jpg"
+      ],
+      "endpoint_max": 0.00048102744040079415,
+      "ratio_to_endpoint_max": 1.0159314718310657
+    },
+    {
+      "view": "virtual_check_e19_t50",
+      "group": "virtual_check",
+      "mse": 0.00041555624920874834,
+      "endpoints": [
+        "000063.jpg",
+        "000230.jpg"
+      ],
+      "endpoint_max": 0.00048102744040079415,
+      "ratio_to_endpoint_max": 0.8638930221163788
+    },
+    {
+      "view": "virtual_check_e19_t75",
+      "group": "virtual_check",
+      "mse": 0.00039033120265230536,
+      "endpoints": [
+        "000063.jpg",
+        "000230.jpg"
+      ],
+      "endpoint_max": 0.00048102744040079415,
+      "ratio_to_endpoint_max": 0.8114530895099866
+    },
+    {
+      "view": "virtual_discovery_e20_t25",
+      "group": "virtual_discovery",
+      "mse": 0.0002431014145258814,
+      "endpoints": [
+        "000067.jpg",
+        "000068.jpg"
+      ],
+      "endpoint_max": 0.00032913510221987963,
+      "ratio_to_endpoint_max": 0.738606769336553
+    },
+    {
+      "view": "virtual_discovery_e20_t50",
+      "group": "virtual_discovery",
+      "mse": 0.00017596034740563482,
+      "endpoints": [
+        "000067.jpg",
+        "000068.jpg"
+      ],
+      "endpoint_max": 0.00032913510221987963,
+      "ratio_to_endpoint_max": 0.5346143459596236
+    },
+    {
+      "view": "virtual_discovery_e20_t75",
+      "group": "virtual_discovery",
+      "mse": 0.00014337986067403108,
+      "endpoints": [
+        "000067.jpg",
+        "000068.jpg"
+      ],
+      "endpoint_max": 0.00032913510221987963,
+      "ratio_to_endpoint_max": 0.43562615991729065
+    },
+    {
+      "view": "virtual_check_e21_t25",
+      "group": "virtual_check",
+      "mse": 0.00014708959497511387,
+      "endpoints": [
+        "000070.jpg",
+        "000240.jpg"
+      ],
+      "endpoint_max": 0.0001672587386565283,
+      "ratio_to_endpoint_max": 0.8794135131986588
+    },
+    {
+      "view": "virtual_check_e21_t50",
+      "group": "virtual_check",
+      "mse": 0.00015402129793073982,
+      "endpoints": [
+        "000070.jpg",
+        "000240.jpg"
+      ],
+      "endpoint_max": 0.0001672587386565283,
+      "ratio_to_endpoint_max": 0.9208565075157477
+    },
+    {
+      "view": "virtual_check_e21_t75",
+      "group": "virtual_check",
+      "mse": 0.00016044227231759578,
+      "endpoints": [
+        "000070.jpg",
+        "000240.jpg"
+      ],
+      "endpoint_max": 0.0001672587386565283,
+      "ratio_to_endpoint_max": 0.9592459778563177
+    },
+    {
+      "view": "virtual_discovery_e22_t25",
+      "group": "virtual_discovery",
+      "mse": 0.00023228145437315106,
+      "endpoints": [
+        "000075.jpg",
+        "000245.jpg"
+      ],
+      "endpoint_max": 0.00023994340153876692,
+      "ratio_to_endpoint_max": 0.96806768964481
+    },
+    {
+      "view": "virtual_discovery_e22_t50",
+      "group": "virtual_discovery",
+      "mse": 0.00023198533745016903,
+      "endpoints": [
+        "000075.jpg",
+        "000245.jpg"
+      ],
+      "endpoint_max": 0.00023994340153876692,
+      "ratio_to_endpoint_max": 0.9668335780956572
+    },
+    {
+      "view": "virtual_discovery_e22_t75",
+      "group": "virtual_discovery",
+      "mse": 0.0002459008537698537,
+      "endpoints": [
+        "000075.jpg",
+        "000245.jpg"
+      ],
+      "endpoint_max": 0.00023994340153876692,
+      "ratio_to_endpoint_max": 1.0248285728754423
+    },
+    {
+      "view": "virtual_check_e23_t25",
+      "group": "virtual_check",
+      "mse": 0.00022841320605948567,
+      "endpoints": [
+        "000077.jpg",
+        "000084.jpg"
+      ],
+      "endpoint_max": 0.0016019504982978106,
+      "ratio_to_endpoint_max": 0.14258443460156314
+    },
+    {
+      "view": "virtual_check_e23_t50",
+      "group": "virtual_check",
+      "mse": 0.0004653681244235486,
+      "endpoints": [
+        "000077.jpg",
+        "000084.jpg"
+      ],
+      "endpoint_max": 0.0016019504982978106,
+      "ratio_to_endpoint_max": 0.29050093927249077
+    },
+    {
+      "view": "virtual_check_e23_t75",
+      "group": "virtual_check",
+      "mse": 0.0008960922714322805,
+      "endpoints": [
+        "000077.jpg",
+        "000084.jpg"
+      ],
+      "endpoint_max": 0.0016019504982978106,
+      "ratio_to_endpoint_max": 0.5593757562324454
+    },
+    {
+      "view": "virtual_discovery_e24_t25",
+      "group": "virtual_discovery",
+      "mse": 0.0001923943927977234,
+      "endpoints": [
+        "000079.jpg",
+        "000083.jpg"
+      ],
+      "endpoint_max": 0.0009893432725220919,
+      "ratio_to_endpoint_max": 0.1944667721924872
+    },
+    {
+      "view": "virtual_discovery_e24_t50",
+      "group": "virtual_discovery",
+      "mse": 0.00036035451921634376,
+      "endpoints": [
+        "000079.jpg",
+        "000083.jpg"
+      ],
+      "endpoint_max": 0.0009893432725220919,
+      "ratio_to_endpoint_max": 0.3642360839000875
+    },
+    {
+      "view": "virtual_discovery_e24_t75",
+      "group": "virtual_discovery",
+      "mse": 0.0005886118160560727,
+      "endpoints": [
+        "000079.jpg",
+        "000083.jpg"
+      ],
+      "endpoint_max": 0.0009893432725220919,
+      "ratio_to_endpoint_max": 0.5949520580006058
+    },
+    {
+      "view": "virtual_check_e25_t25",
+      "group": "virtual_check",
+      "mse": 0.0008556462125852704,
+      "endpoints": [
+        "000091.jpg",
+        "000092.jpg"
+      ],
+      "endpoint_max": 0.0008444298291578889,
+      "ratio_to_endpoint_max": 1.0132827892147855
+    },
+    {
+      "view": "virtual_check_e25_t50",
+      "group": "virtual_check",
+      "mse": 0.00082064961316064,
+      "endpoints": [
+        "000091.jpg",
+        "000092.jpg"
+      ],
+      "endpoint_max": 0.0008444298291578889,
+      "ratio_to_endpoint_max": 0.9718387304946773
+    },
+    {
+      "view": "virtual_check_e25_t75",
+      "group": "virtual_check",
+      "mse": 0.0008250605897046626,
+      "endpoints": [
+        "000091.jpg",
+        "000092.jpg"
+      ],
+      "endpoint_max": 0.0008444298291578889,
+      "ratio_to_endpoint_max": 0.97706234575756
+    },
+    {
+      "view": "virtual_discovery_e26_t25",
+      "group": "virtual_discovery",
+      "mse": 0.0003798461693804711,
+      "endpoints": [
+        "000095.jpg",
+        "000170.jpg"
+      ],
+      "endpoint_max": 0.00040997876203618944,
+      "ratio_to_endpoint_max": 0.9265020643848413
+    },
+    {
+      "view": "virtual_discovery_e26_t50",
+      "group": "virtual_discovery",
+      "mse": 0.0003559557080734521,
+      "endpoints": [
+        "000095.jpg",
+        "000170.jpg"
+      ],
+      "endpoint_max": 0.00040997876203618944,
+      "ratio_to_endpoint_max": 0.8682296280557854
+    },
+    {
+      "view": "virtual_discovery_e26_t75",
+      "group": "virtual_discovery",
+      "mse": 0.0003785779990721494,
+      "endpoints": [
+        "000095.jpg",
+        "000170.jpg"
+      ],
+      "endpoint_max": 0.00040997876203618944,
+      "ratio_to_endpoint_max": 0.923408805841342
+    },
+    {
+      "view": "virtual_check_e27_t25",
+      "group": "virtual_check",
+      "mse": 0.004710775334388018,
+      "endpoints": [
+        "000101.jpg",
+        "000102.jpg"
+      ],
+      "endpoint_max": 0.004957478493452072,
+      "ratio_to_endpoint_max": 0.9502361615103516
+    },
+    {
+      "view": "virtual_check_e27_t50",
+      "group": "virtual_check",
+      "mse": 0.004508952610194683,
+      "endpoints": [
+        "000101.jpg",
+        "000102.jpg"
+      ],
+      "endpoint_max": 0.004957478493452072,
+      "ratio_to_endpoint_max": 0.9095254000900236
+    },
+    {
+      "view": "virtual_check_e27_t75",
+      "group": "virtual_check",
+      "mse": 0.004272678401321173,
+      "endpoints": [
+        "000101.jpg",
+        "000102.jpg"
+      ],
+      "endpoint_max": 0.004957478493452072,
+      "ratio_to_endpoint_max": 0.8618652419702081
+    },
+    {
+      "view": "virtual_discovery_e28_t25",
+      "group": "virtual_discovery",
+      "mse": 0.003347995923832059,
+      "endpoints": [
+        "000108.jpg",
+        "000109.jpg"
+      ],
+      "endpoint_max": 0.004165829159319401,
+      "ratio_to_endpoint_max": 0.8036805629300082
+    },
+    {
+      "view": "virtual_discovery_e28_t50",
+      "group": "virtual_discovery",
+      "mse": 0.003538749413564801,
+      "endpoints": [
+        "000108.jpg",
+        "000109.jpg"
+      ],
+      "endpoint_max": 0.004165829159319401,
+      "ratio_to_endpoint_max": 0.8494706043449344
+    },
+    {
+      "view": "virtual_discovery_e28_t75",
+      "group": "virtual_discovery",
+      "mse": 0.0037581315264105797,
+      "endpoints": [
+        "000108.jpg",
+        "000109.jpg"
+      ],
+      "endpoint_max": 0.004165829159319401,
+      "ratio_to_endpoint_max": 0.9021328966415345
+    },
+    {
+      "view": "virtual_check_e29_t25",
+      "group": "virtual_check",
+      "mse": 0.0029567189048975706,
+      "endpoints": [
+        "000116.jpg",
+        "000117.jpg"
+      ],
+      "endpoint_max": 0.0029940647073090076,
+      "ratio_to_endpoint_max": 0.9875267216769665
+    },
+    {
+      "view": "virtual_check_e29_t50",
+      "group": "virtual_check",
+      "mse": 0.0029705646447837353,
+      "endpoints": [
+        "000116.jpg",
+        "000117.jpg"
+      ],
+      "endpoint_max": 0.0029940647073090076,
+      "ratio_to_endpoint_max": 0.9921511173529735
+    },
+    {
+      "view": "virtual_check_e29_t75",
+      "group": "virtual_check",
+      "mse": 0.002996206982061267,
+      "endpoints": [
+        "000116.jpg",
+        "000117.jpg"
+      ],
+      "endpoint_max": 0.0029940647073090076,
+      "ratio_to_endpoint_max": 1.0007155071655698
+    },
+    {
+      "view": "virtual_discovery_e30_t25",
+      "group": "virtual_discovery",
+      "mse": 0.002776405308395624,
+      "endpoints": [
+        "000119.jpg",
+        "000120.jpg"
+      ],
+      "endpoint_max": 0.003145760390907526,
+      "ratio_to_endpoint_max": 0.8825863903749688
+    },
+    {
+      "view": "virtual_discovery_e30_t50",
+      "group": "virtual_discovery",
+      "mse": 0.0023656776174902916,
+      "endpoints": [
+        "000119.jpg",
+        "000120.jpg"
+      ],
+      "endpoint_max": 0.003145760390907526,
+      "ratio_to_endpoint_max": 0.7520209181627509
+    },
+    {
+      "view": "virtual_discovery_e30_t75",
+      "group": "virtual_discovery",
+      "mse": 0.0020297158043831587,
+      "endpoints": [
+        "000119.jpg",
+        "000120.jpg"
+      ],
+      "endpoint_max": 0.003145760390907526,
+      "ratio_to_endpoint_max": 0.6452226336913099
+    },
+    {
+      "view": "virtual_check_e31_t25",
+      "group": "virtual_check",
+      "mse": 0.0005028651212342083,
+      "endpoints": [
+        "000126.jpg",
+        "000127.jpg"
+      ],
+      "endpoint_max": 0.0005337338661774993,
+      "ratio_to_endpoint_max": 0.9421645376105379
+    },
+    {
+      "view": "virtual_check_e31_t50",
+      "group": "virtual_check",
+      "mse": 0.000477918132673949,
+      "endpoints": [
+        "000126.jpg",
+        "000127.jpg"
+      ],
+      "endpoint_max": 0.0005337338661774993,
+      "ratio_to_endpoint_max": 0.8954240361337908
+    },
+    {
+      "view": "virtual_check_e31_t75",
+      "group": "virtual_check",
+      "mse": 0.0004469572741072625,
+      "endpoints": [
+        "000126.jpg",
+        "000127.jpg"
+      ],
+      "endpoint_max": 0.0005337338661774993,
+      "ratio_to_endpoint_max": 0.8374159903104627
+    },
+    {
+      "view": "virtual_discovery_e32_t25",
+      "group": "virtual_discovery",
+      "mse": 0.001413735211826861,
+      "endpoints": [
+        "000133.jpg",
+        "000200.jpg"
+      ],
+      "endpoint_max": 0.0014417630154639482,
+      "ratio_to_endpoint_max": 0.9805600481240891
+    },
+    {
+      "view": "virtual_discovery_e32_t50",
+      "group": "virtual_discovery",
+      "mse": 0.0013523699017241597,
+      "endpoints": [
+        "000133.jpg",
+        "000200.jpg"
+      ],
+      "endpoint_max": 0.0014417630154639482,
+      "ratio_to_endpoint_max": 0.9379973596347091
+    },
+    {
+      "view": "virtual_discovery_e32_t75",
+      "group": "virtual_discovery",
+      "mse": 0.0013297069817781448,
+      "endpoints": [
+        "000133.jpg",
+        "000200.jpg"
+      ],
+      "endpoint_max": 0.0014417630154639482,
+      "ratio_to_endpoint_max": 0.9222784656813071
+    },
+    {
+      "view": "virtual_check_e33_t25",
+      "group": "virtual_check",
+      "mse": 0.0006118841702118516,
+      "endpoints": [
+        "000146.jpg",
+        "000147.jpg"
+      ],
+      "endpoint_max": 0.0006629710551351309,
+      "ratio_to_endpoint_max": 0.9229425107965439
+    },
+    {
+      "view": "virtual_check_e33_t50",
+      "group": "virtual_check",
+      "mse": 0.0005333554581739008,
+      "endpoints": [
+        "000146.jpg",
+        "000147.jpg"
+      ],
+      "endpoint_max": 0.0006629710551351309,
+      "ratio_to_endpoint_max": 0.8044928267120033
+    },
+    {
+      "view": "virtual_check_e33_t75",
+      "group": "virtual_check",
+      "mse": 0.00047813571291044354,
+      "endpoints": [
+        "000146.jpg",
+        "000147.jpg"
+      ],
+      "endpoint_max": 0.0006629710551351309,
+      "ratio_to_endpoint_max": 0.7212014901811769
+    },
+    {
+      "view": "virtual_discovery_e34_t25",
+      "group": "virtual_discovery",
+      "mse": 0.0001914264285005629,
+      "endpoints": [
+        "000155.jpg",
+        "000156.jpg"
+      ],
+      "endpoint_max": 0.00018849826301448047,
+      "ratio_to_endpoint_max": 1.0155341775529119
+    },
+    {
+      "view": "virtual_discovery_e34_t50",
+      "group": "virtual_discovery",
+      "mse": 0.00019854723359458148,
+      "endpoints": [
+        "000155.jpg",
+        "000156.jpg"
+      ],
+      "endpoint_max": 0.00018849826301448047,
+      "ratio_to_endpoint_max": 1.053310679999895
+    },
+    {
+      "view": "virtual_discovery_e34_t75",
+      "group": "virtual_discovery",
+      "mse": 0.00019337749108672142,
+      "endpoints": [
+        "000155.jpg",
+        "000156.jpg"
+      ],
+      "endpoint_max": 0.00018849826301448047,
+      "ratio_to_endpoint_max": 1.0258847375790732
+    },
+    {
+      "view": "virtual_check_e35_t25",
+      "group": "virtual_check",
+      "mse": 0.00019771006191149354,
+      "endpoints": [
+        "000159.jpg",
+        "000231.jpg"
+      ],
+      "endpoint_max": 0.00031435885466635227,
+      "ratio_to_endpoint_max": 0.6289311052533735
+    },
+    {
+      "view": "virtual_check_e35_t50",
+      "group": "virtual_check",
+      "mse": 0.0002325189852854237,
+      "endpoints": [
+        "000159.jpg",
+        "000231.jpg"
+      ],
+      "endpoint_max": 0.00031435885466635227,
+      "ratio_to_endpoint_max": 0.7396610015398164
+    },
+    {
+      "view": "virtual_check_e35_t75",
+      "group": "virtual_check",
+      "mse": 0.0002637666475493461,
+      "endpoints": [
+        "000159.jpg",
+        "000231.jpg"
+      ],
+      "endpoint_max": 0.00031435885466635227,
+      "ratio_to_endpoint_max": 0.8390622488725419
+    },
+    {
+      "view": "virtual_discovery_e36_t25",
+      "group": "virtual_discovery",
+      "mse": 7.914991147117689e-05,
+      "endpoints": [
+        "000163.jpg",
+        "000239.jpg"
+      ],
+      "endpoint_max": 0.00014824254321865737,
+      "ratio_to_endpoint_max": 0.5339217052855804
+    },
+    {
+      "view": "virtual_discovery_e36_t50",
+      "group": "virtual_discovery",
+      "mse": 0.00011321459169266745,
+      "endpoints": [
+        "000163.jpg",
+        "000239.jpg"
+      ],
+      "endpoint_max": 0.00014824254321865737,
+      "ratio_to_endpoint_max": 0.7637118821260117
+    },
+    {
+      "view": "virtual_discovery_e36_t75",
+      "group": "virtual_discovery",
+      "mse": 0.00012461963342502713,
+      "endpoints": [
+        "000163.jpg",
+        "000239.jpg"
+      ],
+      "endpoint_max": 0.00014824254321865737,
+      "ratio_to_endpoint_max": 0.8406468933902024
+    },
+    {
+      "view": "virtual_check_e37_t25",
+      "group": "virtual_check",
+      "mse": 0.00014678352454211563,
+      "endpoints": [
+        "000166.jpg",
+        "000167.jpg"
+      ],
+      "endpoint_max": 0.00017302499327342957,
+      "ratio_to_endpoint_max": 0.8483371203497473
+    },
+    {
+      "view": "virtual_check_e37_t50",
+      "group": "virtual_check",
+      "mse": 0.00012427834735717624,
+      "endpoints": [
+        "000166.jpg",
+        "000167.jpg"
+      ],
+      "endpoint_max": 0.00017302499327342957,
+      "ratio_to_endpoint_max": 0.7182681819890637
+    },
+    {
+      "view": "virtual_check_e37_t75",
+      "group": "virtual_check",
+      "mse": 0.00012272184540051967,
+      "endpoints": [
+        "000166.jpg",
+        "000167.jpg"
+      ],
+      "endpoint_max": 0.00017302499327342957,
+      "ratio_to_endpoint_max": 0.7092723604767528
+    },
+    {
+      "view": "virtual_discovery_e38_t25",
+      "group": "virtual_discovery",
+      "mse": 0.0005810290458612144,
+      "endpoints": [
+        "000174.jpg",
+        "000175.jpg"
+      ],
+      "endpoint_max": 0.0006064193439669907,
+      "ratio_to_endpoint_max": 0.958130791244749
+    },
+    {
+      "view": "virtual_discovery_e38_t50",
+      "group": "virtual_discovery",
+      "mse": 0.0005776297766715288,
+      "endpoints": [
+        "000174.jpg",
+        "000175.jpg"
+      ],
+      "endpoint_max": 0.0006064193439669907,
+      "ratio_to_endpoint_max": 0.9525253150614718
+    },
+    {
+      "view": "virtual_discovery_e38_t75",
+      "group": "virtual_discovery",
+      "mse": 0.0005649853264912963,
+      "endpoints": [
+        "000174.jpg",
+        "000175.jpg"
+      ],
+      "endpoint_max": 0.0006064193439669907,
+      "ratio_to_endpoint_max": 0.9316743143372587
+    },
+    {
+      "view": "virtual_check_e39_t25",
+      "group": "virtual_check",
+      "mse": 0.00048440907266922295,
+      "endpoints": [
+        "000181.jpg",
+        "000182.jpg"
+      ],
+      "endpoint_max": 0.0004909408744424582,
+      "ratio_to_endpoint_max": 0.9866953392694118
+    },
+    {
+      "view": "virtual_check_e39_t50",
+      "group": "virtual_check",
+      "mse": 0.0004712159279733896,
+      "endpoints": [
+        "000181.jpg",
+        "000182.jpg"
+      ],
+      "endpoint_max": 0.0004909408744424582,
+      "ratio_to_endpoint_max": 0.9598221547727731
+    },
+    {
+      "view": "virtual_check_e39_t75",
+      "group": "virtual_check",
+      "mse": 0.0004523250099737197,
+      "endpoints": [
+        "000181.jpg",
+        "000182.jpg"
+      ],
+      "endpoint_max": 0.0004909408744424582,
+      "ratio_to_endpoint_max": 0.92134314643776
+    },
+    {
+      "view": "virtual_discovery_e40_t25",
+      "group": "virtual_discovery",
+      "mse": 0.0005586921470239758,
+      "endpoints": [
+        "000188.jpg",
+        "000189.jpg"
+      ],
+      "endpoint_max": 0.0006032424862496555,
+      "ratio_to_endpoint_max": 0.9261485385377146
+    },
+    {
+      "view": "virtual_discovery_e40_t50",
+      "group": "virtual_discovery",
+      "mse": 0.0004891304415650666,
+      "endpoints": [
+        "000188.jpg",
+        "000189.jpg"
+      ],
+      "endpoint_max": 0.0006032424862496555,
+      "ratio_to_endpoint_max": 0.8108355308426287
+    },
+    {
+      "view": "virtual_discovery_e40_t75",
+      "group": "virtual_discovery",
+      "mse": 0.000432521163020283,
+      "endpoints": [
+        "000188.jpg",
+        "000189.jpg"
+      ],
+      "endpoint_max": 0.0006032424862496555,
+      "ratio_to_endpoint_max": 0.716993867108494
+    },
+    {
+      "view": "virtual_check_e41_t25",
+      "group": "virtual_check",
+      "mse": 0.000674043782055378,
+      "endpoints": [
+        "000195.jpg",
+        "000196.jpg"
+      ],
+      "endpoint_max": 0.0011537803802639246,
+      "ratio_to_endpoint_max": 0.5842045796455578
+    },
+    {
+      "view": "virtual_check_e41_t50",
+      "group": "virtual_check",
+      "mse": 0.0008432436152361333,
+      "endpoints": [
+        "000195.jpg",
+        "000196.jpg"
+      ],
+      "endpoint_max": 0.0011537803802639246,
+      "ratio_to_endpoint_max": 0.7308527945701793
+    },
+    {
+      "view": "virtual_check_e41_t75",
+      "group": "virtual_check",
+      "mse": 0.0010120648657903075,
+      "endpoints": [
+        "000195.jpg",
+        "000196.jpg"
+      ],
+      "endpoint_max": 0.0011537803802639246,
+      "ratio_to_endpoint_max": 0.8771728858474782
+    },
+    {
+      "view": "virtual_discovery_e42_t25",
+      "group": "virtual_discovery",
+      "mse": 0.0011900423560291529,
+      "endpoints": [
+        "000202.jpg",
+        "000203.jpg"
+      ],
+      "endpoint_max": 0.0012942006578668952,
+      "ratio_to_endpoint_max": 0.9195192019069004
+    },
+    {
+      "view": "virtual_discovery_e42_t50",
+      "group": "virtual_discovery",
+      "mse": 0.0006104710628278553,
+      "endpoints": [
+        "000202.jpg",
+        "000203.jpg"
+      ],
+      "endpoint_max": 0.0012942006578668952,
+      "ratio_to_endpoint_max": 0.4716973825635627
+    },
+    {
+      "view": "virtual_discovery_e42_t75",
+      "group": "virtual_discovery",
+      "mse": 0.0002873585617635399,
+      "endpoints": [
+        "000202.jpg",
+        "000203.jpg"
+      ],
+      "endpoint_max": 0.0012942006578668952,
+      "ratio_to_endpoint_max": 0.2220355553188831
+    },
+    {
+      "view": "virtual_check_e43_t25",
+      "group": "virtual_check",
+      "mse": 0.0003441450244281441,
+      "endpoints": [
+        "000218.jpg",
+        "000219.jpg"
+      ],
+      "endpoint_max": 0.0003805602027568966,
+      "ratio_to_endpoint_max": 0.9043116488141701
+    },
+    {
+      "view": "virtual_check_e43_t50",
+      "group": "virtual_check",
+      "mse": 0.00024535314878448844,
+      "endpoints": [
+        "000218.jpg",
+        "000219.jpg"
+      ],
+      "endpoint_max": 0.0003805602027568966,
+      "ratio_to_endpoint_max": 0.6447157296193187
+    },
+    {
+      "view": "virtual_check_e43_t75",
+      "group": "virtual_check",
+      "mse": 0.00017755215230863541,
+      "endpoints": [
+        "000218.jpg",
+        "000219.jpg"
+      ],
+      "endpoint_max": 0.0003805602027568966,
+      "ratio_to_endpoint_max": 0.4665547028364825
+    },
+    {
+      "view": "virtual_discovery_e44_t25",
+      "group": "virtual_discovery",
+      "mse": 0.00032097441726364195,
+      "endpoints": [
+        "000226.jpg",
+        "000227.jpg"
+      ],
+      "endpoint_max": 0.0007467042887583375,
+      "ratio_to_endpoint_max": 0.42985479271503385
+    },
+    {
+      "view": "virtual_discovery_e44_t50",
+      "group": "virtual_discovery",
+      "mse": 0.00045615306589752436,
+      "endpoints": [
+        "000226.jpg",
+        "000227.jpg"
+      ],
+      "endpoint_max": 0.0007467042887583375,
+      "ratio_to_endpoint_max": 0.6108885040101238
+    },
+    {
+      "view": "virtual_discovery_e44_t75",
+      "group": "virtual_discovery",
+      "mse": 0.0005993907689116895,
+      "endpoints": [
+        "000226.jpg",
+        "000227.jpg"
+      ],
+      "endpoint_max": 0.0007467042887583375,
+      "ratio_to_endpoint_max": 0.8027150478918378
+    },
+    {
+      "view": "virtual_check_e45_t25",
+      "group": "virtual_check",
+      "mse": 0.00034313133801333606,
+      "endpoints": [
+        "000231.jpg",
+        "000232.jpg"
+      ],
+      "endpoint_max": 0.00031435885466635227,
+      "ratio_to_endpoint_max": 1.091527510422831
+    },
+    {
+      "view": "virtual_check_e45_t50",
+      "group": "virtual_check",
+      "mse": 0.00032578950049355626,
+      "endpoints": [
+        "000231.jpg",
+        "000232.jpg"
+      ],
+      "endpoint_max": 0.00031435885466635227,
+      "ratio_to_endpoint_max": 1.036361774632803
+    },
+    {
+      "view": "virtual_check_e45_t75",
+      "group": "virtual_check",
+      "mse": 0.0003160092746838927,
+      "endpoints": [
+        "000231.jpg",
+        "000232.jpg"
+      ],
+      "endpoint_max": 0.00031435885466635227,
+      "ratio_to_endpoint_max": 1.0052501146159607
+    },
+    {
+      "view": "virtual_discovery_e46_t25",
+      "group": "virtual_discovery",
+      "mse": 0.00013021893391851336,
+      "endpoints": [
+        "000236.jpg",
+        "000237.jpg"
+      ],
+      "endpoint_max": 0.00015013726078905165,
+      "ratio_to_endpoint_max": 0.8673325544514611
+    },
+    {
+      "view": "virtual_discovery_e46_t50",
+      "group": "virtual_discovery",
+      "mse": 0.00013308080087881535,
+      "endpoints": [
+        "000236.jpg",
+        "000237.jpg"
+      ],
+      "endpoint_max": 0.00015013726078905165,
+      "ratio_to_endpoint_max": 0.8863942247207957
+    },
+    {
+      "view": "virtual_discovery_e46_t75",
+      "group": "virtual_discovery",
+      "mse": 0.00015024626918602735,
+      "endpoints": [
+        "000236.jpg",
+        "000237.jpg"
+      ],
+      "endpoint_max": 0.00015013726078905165,
+      "ratio_to_endpoint_max": 1.0007260582509818
+    },
+    {
+      "view": "virtual_check_e47_t25",
+      "group": "virtual_check",
+      "mse": 0.0008217472932301462,
+      "endpoints": [
+        "000250.jpg",
+        "000251.jpg"
+      ],
+      "endpoint_max": 0.0010176836512982845,
+      "ratio_to_endpoint_max": 0.8074683052850683
+    },
+    {
+      "view": "virtual_check_e47_t50",
+      "group": "virtual_check",
+      "mse": 0.000852485653012991,
+      "endpoints": [
+        "000250.jpg",
+        "000251.jpg"
+      ],
+      "endpoint_max": 0.0010176836512982845,
+      "ratio_to_endpoint_max": 0.8376725438454805
+    },
+    {
+      "view": "virtual_check_e47_t75",
+      "group": "virtual_check",
+      "mse": 0.0009349550819024444,
+      "endpoints": [
+        "000250.jpg",
+        "000251.jpg"
+      ],
+      "endpoint_max": 0.0010176836512982845,
+      "ratio_to_endpoint_max": 0.9187089531306696
+    }
+  ],
+  "virtual_views_exceeding_both_endpoints_25pct": 0,
+  "virtual_max_exceeds_all_existing_train_max": false,
+  "old_saved_png_anchors": [
+    {
+      "view": "000009.jpg",
+      "old_index": 1,
+      "max_abs_uint8": 1,
+      "mean_abs_uint8": 4.988769033712854e-06
+    },
+    {
+      "view": "000017.jpg",
+      "old_index": 2,
+      "max_abs_uint8": 1,
+      "mean_abs_uint8": 4.3651729044987475e-06
+    },
+    {
+      "view": "000105.jpg",
+      "old_index": 13,
+      "max_abs_uint8": 1,
+      "mean_abs_uint8": 3.1179806460705336e-06
+    }
+  ],
+  "historical_png_metrics": {
+    "SSIM": 0.8845078945159912,
+    "PSNR": 25.463558197021484,
+    "LPIPS": 0.1421365737915039
+  },
+  "current_float_metrics": {
+    "teacher_psnr_gt": 25.46554708480835,
+    "student_psnr_gt": 24.21417248249054,
+    "teacher_ssim_gt": 0.8850201144814491,
+    "student_ssim_gt": 0.8703935761004686,
+    "delta_psnr_gt": -1.25137460231781,
+    "delta_ssim_gt": -0.014626538380980492
+  },
+  "new_training_or_rendering": false,
+  "interpretation_limit": "Endpoint and coverage checks describe already measured views, not a calibrated-recovery treatment or a proof of no future adaptive benefit."
+}

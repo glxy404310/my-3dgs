@@ -1,0 +1,6 @@
+{
+  "random_trials": 500,
+  "max_exchange_score_error": 1.6653345369377348e-16,
+  "max_rotation_error": 9.992007221626409e-16,
+  "passed": true
+}

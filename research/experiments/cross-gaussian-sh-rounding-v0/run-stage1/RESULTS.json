@@ -1,0 +1,297 @@
+{
+  "decision": "INCONCLUSIVE_CROSS_VIEW_BLOCK_CAPACITY",
+  "mode": "stage1",
+  "tool_valid": true,
+  "integrity_complete": true,
+  "native_forward_calls": 0,
+  "model_loads": 0,
+  "training_performed": false,
+  "backward_calls": 0,
+  "optimizer_created": false,
+  "parameter_updates": 0,
+  "quantization_errors_generated": false,
+  "stage1_complete": true,
+  "input_provenance_complete": true,
+  "per_view": [
+    {
+      "view": "000002.jpg",
+      "unique_id_color_error": {
+        "count": 333624,
+        "max_abs": 9.5367431640625e-07,
+        "mse": 1.2124777696111544e-15
+      },
+      "raw_negative_components": 103603,
+      "primitive_gt1_components": 153454,
+      "native_display_replay_max_error": 2.980232238769531e-07,
+      "reconstructed_display_replay_max_error": 2.980232238769531e-07,
+      "final_T_max_error": 1.4901161193847656e-07,
+      "n_contrib_mismatch_count": 0,
+      "accepted_unique_color_error": {
+        "count": 15397,
+        "max_abs": 4.76837158203125e-07,
+        "mse": 1.3078571923695832e-15
+      },
+      "alpha_eligible_unique_color_error": {
+        "count": 21700,
+        "max_abs": 4.76837158203125e-07,
+        "mse": 1.222971203740392e-15
+      },
+      "accepted_entries": 21739,
+      "native_display_clamped_components": 25
+    },
+    {
+      "view": "000037.jpg",
+      "unique_id_color_error": {
+        "count": 364330,
+        "max_abs": 4.76837158203125e-07,
+        "mse": 4.415319151933903e-16
+      },
+      "raw_negative_components": 101999,
+      "primitive_gt1_components": 163784,
+      "native_display_replay_max_error": 2.980232238769531e-07,
+      "reconstructed_display_replay_max_error": 2.980232238769531e-07,
+      "final_T_max_error": 5.960464477539063e-08,
+      "n_contrib_mismatch_count": 0,
+      "accepted_unique_color_error": {
+        "count": 15593,
+        "max_abs": 2.384185791015625e-07,
+        "mse": 4.260043866438297e-16
+      },
+      "alpha_eligible_unique_color_error": {
+        "count": 23905,
+        "max_abs": 2.384185791015625e-07,
+        "mse": 3.928221866561887e-16
+      },
+      "accepted_entries": 21728,
+      "native_display_clamped_components": 0
+    },
+    {
+      "view": "000072.jpg",
+      "unique_id_color_error": {
+        "count": 284947,
+        "max_abs": 7.152557373046875e-07,
+        "mse": 1.0374315769168974e-15
+      },
+      "raw_negative_components": 105628,
+      "primitive_gt1_components": 109967,
+      "native_display_replay_max_error": 2.980232238769531e-07,
+      "reconstructed_display_replay_max_error": 2.980232238769531e-07,
+      "final_T_max_error": 5.960464477539063e-08,
+      "n_contrib_mismatch_count": 0,
+      "accepted_unique_color_error": {
+        "count": 12183,
+        "max_abs": 7.152557373046875e-07,
+        "mse": 1.0795004448799957e-15
+      },
+      "alpha_eligible_unique_color_error": {
+        "count": 23197,
+        "max_abs": 7.152557373046875e-07,
+        "mse": 1.033049354763799e-15
+      },
+      "accepted_entries": 19980,
+      "native_display_clamped_components": 14
+    },
+    {
+      "view": "000108.jpg",
+      "unique_id_color_error": {
+        "count": 345242,
+        "max_abs": 9.5367431640625e-07,
+        "mse": 9.770883616678937e-16
+      },
+      "raw_negative_components": 101652,
+      "primitive_gt1_components": 177816,
+      "native_display_replay_max_error": 2.384185791015625e-07,
+      "reconstructed_display_replay_max_error": 2.384185791015625e-07,
+      "final_T_max_error": 1.0561197996139526e-06,
+      "n_contrib_mismatch_count": 0,
+      "accepted_unique_color_error": {
+        "count": 13417,
+        "max_abs": 4.76837158203125e-07,
+        "mse": 1.0269956028342955e-15
+      },
+      "alpha_eligible_unique_color_error": {
+        "count": 22347,
+        "max_abs": 4.76837158203125e-07,
+        "mse": 9.867191796191231e-16
+      },
+      "accepted_entries": 18909,
+      "native_display_clamped_components": 71
+    },
+    {
+      "view": "000143.jpg",
+      "unique_id_color_error": {
+        "count": 314785,
+        "max_abs": 4.76837158203125e-07,
+        "mse": 5.358536799301826e-16
+      },
+      "raw_negative_components": 88652,
+      "primitive_gt1_components": 132407,
+      "native_display_replay_max_error": 7.152557373046875e-07,
+      "reconstructed_display_replay_max_error": 7.152557373046875e-07,
+      "final_T_max_error": 3.725290298461914e-07,
+      "n_contrib_mismatch_count": 0,
+      "accepted_unique_color_error": {
+        "count": 16244,
+        "max_abs": 3.5762786865234375e-07,
+        "mse": 4.840583322830096e-16
+      },
+      "alpha_eligible_unique_color_error": {
+        "count": 24308,
+        "max_abs": 3.5762786865234375e-07,
+        "mse": 4.665482220535489e-16
+      },
+      "accepted_entries": 21086,
+      "native_display_clamped_components": 2
+    },
+    {
+      "view": "000179.jpg",
+      "unique_id_color_error": {
+        "count": 320964,
+        "max_abs": 9.5367431640625e-07,
+        "mse": 1.0233848527784397e-15
+      },
+      "raw_negative_components": 94424,
+      "primitive_gt1_components": 146246,
+      "native_display_replay_max_error": 2.980232238769531e-07,
+      "reconstructed_display_replay_max_error": 2.384185791015625e-07,
+      "final_T_max_error": 5.960464477539063e-08,
+      "n_contrib_mismatch_count": 0,
+      "accepted_unique_color_error": {
+        "count": 12970,
+        "max_abs": 7.152557373046875e-07,
+        "mse": 1.052620396968686e-15
+      },
+      "alpha_eligible_unique_color_error": {
+        "count": 23527,
+        "max_abs": 9.5367431640625e-07,
+        "mse": 1.0022129734656222e-15
+      },
+      "accepted_entries": 19030,
+      "native_display_clamped_components": 33
+    },
+    {
+      "view": "000214.jpg",
+      "unique_id_color_error": {
+        "count": 350999,
+        "max_abs": 7.152557373046875e-07,
+        "mse": 6.5547248033596e-16
+      },
+      "raw_negative_components": 109145,
+      "primitive_gt1_components": 145121,
+      "native_display_replay_max_error": 3.5762786865234375e-07,
+      "reconstructed_display_replay_max_error": 3.5762786865234375e-07,
+      "final_T_max_error": 1.1920928955078125e-07,
+      "n_contrib_mismatch_count": 0,
+      "accepted_unique_color_error": {
+        "count": 15380,
+        "max_abs": 4.76837158203125e-07,
+        "mse": 6.364508688891469e-16
+      },
+      "alpha_eligible_unique_color_error": {
+        "count": 24725,
+        "max_abs": 4.76837158203125e-07,
+        "mse": 5.838208993504416e-16
+      },
+      "accepted_entries": 20789,
+      "native_display_clamped_components": 6
+    },
+    {
+      "view": "000251.jpg",
+      "unique_id_color_error": {
+        "count": 288255,
+        "max_abs": 9.5367431640625e-07,
+        "mse": 8.840013061109763e-16
+      },
+      "raw_negative_components": 89945,
+      "primitive_gt1_components": 148107,
+      "native_display_replay_max_error": 6.556510925292969e-07,
+      "reconstructed_display_replay_max_error": 7.152557373046875e-07,
+      "final_T_max_error": 8.940696716308594e-08,
+      "n_contrib_mismatch_count": 0,
+      "accepted_unique_color_error": {
+        "count": 12434,
+        "max_abs": 4.76837158203125e-07,
+        "mse": 1.0561375257149418e-15
+      },
+      "alpha_eligible_unique_color_error": {
+        "count": 18881,
+        "max_abs": 4.76837158203125e-07,
+        "mse": 9.43169181451592e-16
+      },
+      "accepted_entries": 18706,
+      "native_display_clamped_components": 62
+    }
+  ],
+  "output_wall_seconds_before_final_save": 10.34259072799999,
+  "selected_block_count": 64,
+  "selected_capacity_pass_count": 13,
+  "selected_block_indices": [
+    14833,
+    13440,
+    14647,
+    14871,
+    14794,
+    14610,
+    13679,
+    7230,
+    14032,
+    12633,
+    12705,
+    13620,
+    6989,
+    7134,
+    14849,
+    14891,
+    13251,
+    7032,
+    7692,
+    14894,
+    6614,
+    7820,
+    14893,
+    14810,
+    12463,
+    14033,
+    5249,
+    14806,
+    7505,
+    5756,
+    14792,
+    9445,
+    13631,
+    7606,
+    7461,
+    8947,
+    13859,
+    7676,
+    7514,
+    13847,
+    7811,
+    12156,
+    12950,
+    12689,
+    13043,
+    14256,
+    13150,
+    6988,
+    5303,
+    12978,
+    7447,
+    5714,
+    10045,
+    9951,
+    13969,
+    4017,
+    13638,
+    13373,
+    12646,
+    7445,
+    12306,
+    7381,
+    7547,
+    14166
+  ],
+  "all_block_count": 16022,
+  "input_hash_mismatches_or_missing": [],
+  "forbidden_modules_imported": []
+}

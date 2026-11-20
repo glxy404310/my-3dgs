@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic unit fixtures only; no real experimental arrays read",
+  "tests": {
+    "known_3_4_5_norms_empty_visibility_z_ignored_chunk_tail": {
+      "status": "PASS",
+      "report": {
+        "schema": "stationary-adc-window-v0/collector-v1/numpy-array-audit-v1",
+        "status": "SYNTHETIC_FIXTURE_PASS",
+        "scope": "Saved-array consistency conditional on producer's asserted zero initial statistics; not GPU execution certification",
+        "tolerances": {
+          "gradient_rtol": 3e-05,
+          "gradient_atol": 1e-12,
+          "denom": "bit-exact",
+          "max_radii": "bit-exact",
+          "visibility": "exact ordered indices"
+        },
+        "chunk_points": 2,
+        "actual_forward": 0,
+        "actual_backward": 0,
+        "actual_parameter_updates": 0,
+        "torch_imported": false,
+        "contract_sha256": "0a50082687e8cb5fecf6b46b2fec1917ae6a0468742fa1e0bdc1c422410b2ba4",
+        "initial_statistics_independently_verified": false,
+        "GPU_execution_independently_certified": false,
+        "synthetic_unit_fixture": true,
+        "n_points": 5,
+        "steps": 100,
+        "checked_points": 5,
+        "files_hashed": 303,
+        "max_gradient_absolute_error": 0.0,
+        "max_gradient_tolerance_ratio": 0.0,
+        "manifest_sha256": {
+          "CAMERA_HISTORY.json": "55f25ce88a69113514e0ff2976a58b8497e2bfd0c35aa84159814cf28b049b7d",
+          "RESULTS.json": "a84f6413946f3647780022ec432b9fada05e4ab25fe6da8e3d4e854f5c97a427",
+          "FINAL_ARRAYS.json": "e388841f61edc8e3d85f3bb4d897025958115ef23a4bb995778cf49d62d982ca"
+        },
+        "elapsed_seconds": 12.554669332999993
+      }
+    },
+    "missing_visibility_is_incomplete": {
+      "status": "PASS",
+      "caught": "Actual per-step visibility_filter export absent; radii-derived mask alone is not independent verification"
+    },
+    "raw_checksum_corruption": {
+      "status": "PASS",
+      "caught": "Array byte count/hash mismatch: PER_STEP/3502-radii.npy"
+    },
+    "correctly_hashed_wrong_native_denom": {
+      "status": "PASS",
+      "caught": "Native denominator differs exactly"
+    },
+    "correctly_hashed_wrong_native_gradient": {
+      "status": "PASS",
+      "caught": "Reconstructed accumulated gradient exceeds predeclared tolerance"
+    }
+  },
+  "actual_forward": 0,
+  "actual_backward": 0,
+  "actual_parameter_updates": 0,
+  "actual_models_loaded": 0,
+  "actual_subprocesses": 0,
+  "torch_imported": false,
+  "auditor_sha256": "303eb905383364805034085203a53336000a031b291b10d35f9e4f6fde91c948",
+  "test_sha256": "3fd4123a4617f0a7ad1f1d5b4486e413d2c165db6f2fc90181c8d36457b26641",
+  "elapsed_seconds": 39.072700600000005
+}

@@ -1,0 +1,10 @@
+{
+  "skill": "result-to-claim",
+  "run_id": "2026-10-22_occlusion_merge_v1",
+  "timestamp": "2026-10-22",
+  "executor": "codex",
+  "project_dir": "D:\\Documents\\my 3dgs",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "integrity_status": "unavailable"
+}

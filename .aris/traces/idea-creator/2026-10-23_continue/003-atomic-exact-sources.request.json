@@ -1,0 +1,12 @@
+{
+  "purpose": "atomic-exact-sources",
+  "model": "inherited-primary",
+  "files_referenced": [
+    "idea-stage/continue-20261022/CANDIDATES.json",
+    "research/experiments/native-gradient-repeat-v0/"
+  ],
+  "tool": "spawn_agent",
+  "prompt": "只读定向核查候选cancellation_conditioned_gradient_accumulation的近邻机制，不写文件、不跑GPU、不派agent。工作区D:/Documents/my 3dgs，候选23在idea-stage/continue-20261022/CANDIDATES.json。Root将测原生同输入梯度重复误差，0参数更新，不重跑已FAILED的SH Python/native诊断。最多3个web查询、只用原始论文/官方作者代码：核Faster-GS https://fhahlbohm.github.io/faster-gaussian-splatting/assets/hahlbohm2026fastergs.pdf 的bucket/reduction是否仅性能/透射率稳定，还是已针对有符号相消条件数自适应精度；另外查是否已有3DGS梯度补偿/确定性/条件数选择累积等价操作。不要用没有找到就宣布新颖。输出<=1200中文字符，逐条准确来源URL/章节及已知/未知边界、冻结重复性诊断能或不能支持什么。",
+  "call_number": 3,
+  "reasoning_effort": "inherited"
+}

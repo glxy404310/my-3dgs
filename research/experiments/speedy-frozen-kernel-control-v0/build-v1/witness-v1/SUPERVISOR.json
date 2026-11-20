@@ -1,0 +1,38 @@
+{
+  "schema": "speedy-private-extension/supervisor-v1",
+  "kind": "witness",
+  "status": "SUPERVISOR_PASS",
+  "attempts": 1,
+  "automatic_retry": false,
+  "hard_seconds": 60,
+  "active_seconds": 45,
+  "rss_limit_bytes": 4294967296,
+  "peak_sampled_process_tree_rss_bytes": 769748992,
+  "sample_interval_seconds": 0.1,
+  "environment_ready": false,
+  "cuda_dispatch_by_supervisor": false,
+  "argv": [
+    "/home/administrator/venvs/3dgs/bin/python",
+    "-B",
+    "-u",
+    "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/tiny_forward_witness.py",
+    "--worker",
+    "--preparation-manifest-sha256",
+    "c4f8684236b8390d8a8be22ed95990d776b4f6ea2044a72cff4d50c74bcaa2ee",
+    "--build-result-sha256",
+    "cea80ccd4a289b14bc05e4566e6c63b959fcea4aa552daa137cd14281dfeb204",
+    "--build-supervisor-sha256",
+    "5a177f61312bedbcb6db5b98ebe4f178e56ac54077efd815138f520c4207eac1",
+    "--build-external-sha256",
+    "1cb8ac08094241a5d6a508489477701dce1bd13866a8a4c52e46919d7f7fb8ca"
+  ],
+  "pid": 383,
+  "pgid": 383,
+  "sid": 383,
+  "worker_exit_code": 0,
+  "cleanup": {
+    "live_before_cleanup": [],
+    "live_after_cleanup": []
+  },
+  "elapsed_seconds": 4.24713152599999
+}

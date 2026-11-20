@@ -1,0 +1,176 @@
+{
+  "pool": [
+    1038890,
+    1049987,
+    1033749,
+    1052672,
+    1003156,
+    1057460,
+    1047963,
+    1034116,
+    1005435,
+    1039707,
+    1034850,
+    1036185,
+    1049025,
+    1034811,
+    1043356,
+    976563,
+    1056266,
+    1052327,
+    992491,
+    1042052,
+    1033779,
+    1041255,
+    1055164,
+    869804
+  ],
+  "scanned": [
+    {
+      "parent": 1038890,
+      "train_visible": 7,
+      "test_visible": 4,
+      "accepted": false
+    },
+    {
+      "parent": 1049987,
+      "train_visible": 7,
+      "test_visible": 4,
+      "accepted": false
+    },
+    {
+      "parent": 1033749,
+      "train_visible": 7,
+      "test_visible": 4,
+      "accepted": false
+    },
+    {
+      "parent": 1052672,
+      "train_visible": 6,
+      "test_visible": 4,
+      "accepted": false
+    },
+    {
+      "parent": 1003156,
+      "train_visible": 6,
+      "test_visible": 3,
+      "accepted": false
+    },
+    {
+      "parent": 1057460,
+      "train_visible": 5,
+      "test_visible": 2,
+      "accepted": false
+    },
+    {
+      "parent": 1047963,
+      "train_visible": 6,
+      "test_visible": 4,
+      "accepted": false
+    },
+    {
+      "parent": 1034116,
+      "train_visible": 7,
+      "test_visible": 6,
+      "accepted": false
+    },
+    {
+      "parent": 1005435,
+      "train_visible": 6,
+      "test_visible": 4,
+      "accepted": false
+    },
+    {
+      "parent": 1039707,
+      "train_visible": 6,
+      "test_visible": 3,
+      "accepted": false
+    },
+    {
+      "parent": 1034850,
+      "train_visible": 7,
+      "test_visible": 4,
+      "accepted": false
+    },
+    {
+      "parent": 1036185,
+      "train_visible": 5,
+      "test_visible": 4,
+      "accepted": false
+    },
+    {
+      "parent": 1049025,
+      "train_visible": 7,
+      "test_visible": 3,
+      "accepted": false
+    },
+    {
+      "parent": 1034811,
+      "train_visible": 7,
+      "test_visible": 3,
+      "accepted": false
+    },
+    {
+      "parent": 1043356,
+      "train_visible": 7,
+      "test_visible": 5,
+      "accepted": false
+    },
+    {
+      "parent": 976563,
+      "train_visible": 5,
+      "test_visible": 3,
+      "accepted": false
+    },
+    {
+      "parent": 1056266,
+      "train_visible": 5,
+      "test_visible": 4,
+      "accepted": false
+    },
+    {
+      "parent": 1052327,
+      "train_visible": 7,
+      "test_visible": 4,
+      "accepted": false
+    },
+    {
+      "parent": 992491,
+      "train_visible": 5,
+      "test_visible": 5,
+      "accepted": false
+    },
+    {
+      "parent": 1042052,
+      "train_visible": 7,
+      "test_visible": 5,
+      "accepted": false
+    },
+    {
+      "parent": 1033779,
+      "train_visible": 7,
+      "test_visible": 4,
+      "accepted": false
+    },
+    {
+      "parent": 1041255,
+      "train_visible": 4,
+      "test_visible": 3,
+      "accepted": false
+    },
+    {
+      "parent": 1055164,
+      "train_visible": 3,
+      "test_visible": 3,
+      "accepted": false
+    },
+    {
+      "parent": 869804,
+      "train_visible": 5,
+      "test_visible": 4,
+      "accepted": false
+    }
+  ],
+  "accepted": 0,
+  "requested": 1
+}

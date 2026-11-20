@@ -1,0 +1,18 @@
+{
+  "checkpoint": "/mnt/d/Documents/my 3dgs/research/experiments/train-independent-v0/native/chkpnt3500.pth",
+  "iteration": 3500,
+  "source": "/home/administrator/datasets/tandt_db/tandt/train",
+  "n": 435419,
+  "cases": 1,
+  "steps": 2,
+  "prior_packet": "/mnt/d/Documents/my 3dgs/research/experiments/split-capacity-v0/main/train/packet.pth",
+  "learning_rates": {
+    "xyz": 0.0006966999187655804,
+    "f_dc": 0.0025,
+    "f_rest": 0.000125,
+    "opacity": 0.025,
+    "scaling": 0.005,
+    "rotation": 0.001
+  },
+  "train_pool": 48
+}

@@ -1,0 +1,74 @@
+{
+  "pool": [
+    413050,
+    432158,
+    273181,
+    350709,
+    414007,
+    428923,
+    430556,
+    31801,
+    385655,
+    312197,
+    431665,
+    197199,
+    435074,
+    416910,
+    433276,
+    434398,
+    387999,
+    429889,
+    431379,
+    84275,
+    434523,
+    435390,
+    434681,
+    416616
+  ],
+  "scanned": [
+    {
+      "parent": 413050,
+      "train_visible": 8,
+      "test_visible": 2,
+      "accepted": false
+    },
+    {
+      "parent": 432158,
+      "train_visible": 4,
+      "test_visible": 1,
+      "accepted": false
+    },
+    {
+      "parent": 273181,
+      "train_visible": 6,
+      "test_visible": 2,
+      "accepted": false
+    },
+    {
+      "parent": 350709,
+      "train_visible": 7,
+      "test_visible": 2,
+      "accepted": false
+    },
+    {
+      "parent": 414007,
+      "train_visible": 7,
+      "test_visible": 1,
+      "accepted": false
+    },
+    {
+      "parent": 428923,
+      "train_visible": 9,
+      "test_visible": 1,
+      "accepted": false
+    },
+    {
+      "parent": 430556,
+      "train_visible": 10,
+      "test_visible": 4,
+      "accepted": true
+    }
+  ],
+  "accepted": 1,
+  "requested": 1
+}

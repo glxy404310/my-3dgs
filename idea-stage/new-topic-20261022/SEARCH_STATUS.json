@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-22",
+  "arxiv_api": {
+    "query": "all:\"Gaussian splatting\" AND (all:\"level of detail\" OR all:hierarchy OR all:merging OR all:simplification) AND submittedDate:[202604220000 TO 202610222359]",
+    "max_results": 25,
+    "status": "unavailable",
+    "attempts": [
+      "sandbox WinError10013",
+      "escalated official API timeout"
+    ],
+    "results_count": null
+  },
+  "other_sources": {
+    "undermind": "not connected after authentication retry",
+    "web": "primary arXiv HTML, CVF PDF, author papers/code inspected"
+  },
+  "core_full_text_verified": [
+    "arxiv:2603.16103v3",
+    "arxiv:2609.08730v1",
+    "arxiv:2406.12080v1",
+    "arxiv:2506.09534v2",
+    "CVPR2026:Pan_Learning_Differentiable_Hierarchies",
+    "arxiv:2605.05876v1",
+    "arxiv:2607.18067v1"
+  ],
+  "known_limits": "scoped search, not exhaustive proof of novelty; other candidate nearest-work checks vary in full-text access"
+}

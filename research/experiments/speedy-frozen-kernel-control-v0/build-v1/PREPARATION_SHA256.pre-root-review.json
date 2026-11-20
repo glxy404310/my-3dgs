@@ -1,0 +1,132 @@
+{
+  "schema": "speedy-private-extension/preparation-manifest-v1",
+  "canonical_spec_sha256": "5d2d53f39bae50eb363a2d6e3501ecd8561d02ab58ad5347505ab5267cae9275",
+  "files": [
+    {
+      "name": "ASSUMPTIONS.md",
+      "bytes": 1087,
+      "sha256": "6c75a626fe830ea0e669db15ce6d3b1af50b3195d3a424c358e0ca7ff33e7873"
+    },
+    {
+      "name": "BUILD_NOTE.md",
+      "bytes": 2684,
+      "sha256": "49752bb17eb6ba61ca89dfb75380348b0b22d70c529ec8330ac3014671e29713"
+    },
+    {
+      "name": "CONTRACT.md",
+      "bytes": 4661,
+      "sha256": "21376cdfcc4f6951fb7d4d619d8425e58025919d17ea0fe8bb273f64b6f6686a"
+    },
+    {
+      "name": "OFFICIAL_RASTERIZE_POINTS_EVIDENCE.json",
+      "bytes": 8021,
+      "sha256": "0d48fbc41ee231d78bde4f09a9b18e42ebf2e0df9a7969cb93b54d1f7347cfa5"
+    },
+    {
+      "name": "OFFICIAL_SOURCE_EVIDENCE.json",
+      "bytes": 25589,
+      "sha256": "ce7fa590b52179ab53c0a234738041389da2d740a23e24a220464a0f94984e98"
+    },
+    {
+      "name": "POWERSHELL_STATIC.json",
+      "bytes": 307,
+      "sha256": "2da433b7d80361e321d116213b14500bea482b3fbd88b870c9c3097cf7f2ff2c"
+    },
+    {
+      "name": "SOURCE_FETCH.json",
+      "bytes": 2545,
+      "sha256": "89d994e7c347a1cd3a76c2c816f27beb9090c65bd05896b3b1b49a790e3f1b3a"
+    },
+    {
+      "name": "SOURCE_FETCH_STARTED.json",
+      "bytes": 39,
+      "sha256": "6556392b9343db6c2bc8e990023f40767bd9698631ee4c03fb699fa5e03474cc"
+    },
+    {
+      "name": "SOURCE_MANIFEST.json",
+      "bytes": 416130,
+      "sha256": "fe2868c40914c6951eca9b7de2428dc9ea498c4904c78a2c257eb210beab847e"
+    },
+    {
+      "name": "STATIC_VERIFICATION.json",
+      "bytes": 1966,
+      "sha256": "549439bd12cce0e50178d5f706ab2560dc85596ccb247505f5938d6bc0838717"
+    },
+    {
+      "name": "common.py",
+      "bytes": 7661,
+      "sha256": "f8f5d1b8daa32f40c8ff8121eb572a91049f9b3bce15a9cc7e9fd198f0e00238"
+    },
+    {
+      "name": "env-spec.json",
+      "bytes": 3257,
+      "sha256": "5c8be6c9cec6c5e8aa941b1906cec7541f14eace2bdba02c156f0a691b7ca4c9"
+    },
+    {
+      "name": "freeze_preparation.py",
+      "bytes": 1052,
+      "sha256": "b8a0d45b4d36fa39aaac8ba13b20622cbe49a18124357f715f9e62de7cad6c1d"
+    },
+    {
+      "name": "import_only.py",
+      "bytes": 1904,
+      "sha256": "10dfce5fcdca758ae17bb52176015e4dcc1d4f90f1fbdc0718f73854f56232a1"
+    },
+    {
+      "name": "prepare_sources.py",
+      "bytes": 5084,
+      "sha256": "7a31c0d53892aa9f2e05157260fd170d9175902afa7a1e0cf2f9c5a8065bec05"
+    },
+    {
+      "name": "prepare_test.py",
+      "bytes": 1629,
+      "sha256": "6eaf8db2aa7759fa7f64eff72141ebacae097575e335977345d5da7782816b9e"
+    },
+    {
+      "name": "run-build.ps1",
+      "bytes": 1780,
+      "sha256": "3e93f551d2440c6c6c40b328bc20b4383d9996a8d4b362da365ee7d779c5e523"
+    },
+    {
+      "name": "run-witness.ps1",
+      "bytes": 2311,
+      "sha256": "db830b10b6ad4469fe2cf3498c073ecf916212368c75cabdce53b05d8cc1edff"
+    },
+    {
+      "name": "run_private_build.py",
+      "bytes": 4448,
+      "sha256": "5ec7b8835d7bd5cd9628b97ad17d456e8846f6b4bb5dcb65adb5e71474ae7843"
+    },
+    {
+      "name": "source-fetch-00.log",
+      "bytes": 75,
+      "sha256": "e6d29244f4acb37ae5a041874ac704bbee9ec5e03931189889565180d299c2fb"
+    },
+    {
+      "name": "source-fetch-01.log",
+      "bytes": 62,
+      "sha256": "18e1d3124a694516a09e166a8eeba86dc892ba8816d5f3e7f0ec1f2b67071519"
+    },
+    {
+      "name": "source-fetch-02.log",
+      "bytes": 81,
+      "sha256": "b2cfa761cb31db20c3fd0ad0b3045dff609b3a7ff0419fe91fba6fa561220536"
+    },
+    {
+      "name": "source-fetch-03.log",
+      "bytes": 43,
+      "sha256": "d3677e95d84e85334cf55513119807c668f0fcea9c4a7e5e57844ba3f6193a16"
+    },
+    {
+      "name": "source-fetch-04.log",
+      "bytes": 399,
+      "sha256": "f6bb8431bee5c458103de29c50f551c177c0a1434bc0ef477082e0e8d1a59ee0"
+    },
+    {
+      "name": "tiny_forward_witness.py",
+      "bytes": 12621,
+      "sha256": "3dca23cfac6b38b4366bfae4a4196cc6b1a1b1a1c93075d196d282ecc8451447"
+    }
+  ],
+  "scope": "Frozen preparation only; source fetched and static checked, build and CUDA not executed"
+}

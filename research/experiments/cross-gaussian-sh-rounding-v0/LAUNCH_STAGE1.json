@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/home/administrator/venvs/3dgs/bin/python",
+    "-B",
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/diagnose_cross_gaussian_sh_rounding.py",
+    "--mode",
+    "stage1",
+    "--contract",
+    "/mnt/d/Documents/my 3dgs/research/experiments/cross-gaussian-sh-rounding-v0/CONTRACT_STAGE1.md",
+    "--contract-sha256",
+    "3387c3502a613ced7c04e1e7e16c6cf2d0707d35cc9fe9e296992ac0e5a0f97c",
+    "--output",
+    "/mnt/d/Documents/my 3dgs/research/experiments/cross-gaussian-sh-rounding-v0/run-stage1"
+  ],
+  "script_sha256_before": "d0723049962407098a4da40510d613c91594d7624dd4f0e6e1ac6a640cd57873",
+  "launcher_sha256": "8efb73602db6a0880084f059d4ce957dc27459096086ed2cfae7535315abaf8f",
+  "contract_sha256": "3387c3502a613ced7c04e1e7e16c6cf2d0707d35cc9fe9e296992ac0e5a0f97c",
+  "external_timeout_seconds": 1800,
+  "timeout": false,
+  "CPU_only": true,
+  "child_exit_code": 2,
+  "external_wall_seconds": 10.573257680000012,
+  "script_sha256_after": "d0723049962407098a4da40510d613c91594d7624dd4f0e6e1ac6a640cd57873",
+  "script_unchanged": true
+}

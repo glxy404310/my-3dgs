@@ -1,0 +1,46 @@
+{
+  "schema": "speedy-frozen-control/independent-preparation-manifest-v1",
+  "status": "PREPARED_NOT_EXECUTED",
+  "files": [
+    {
+      "name": "ASSUMPTIONS.md",
+      "bytes": 1196,
+      "sha256": "50cdc8ed684a1e4fd10b1a7040ae22f4a5ef99da983e1d046a2623cfaa1d8a7c"
+    },
+    {
+      "name": "audit.py",
+      "bytes": 52932,
+      "sha256": "81eee4cd5bf9c3f46ccb86c86860248ae548c6e5a010673afa60bbf3f7295ca5"
+    },
+    {
+      "name": "BUILD_NOTE.md",
+      "bytes": 3336,
+      "sha256": "498078f586c6d2cf735d76409cb568f5c42150c23fe2245427b802c7b9101f7d"
+    },
+    {
+      "name": "CONTRACT.md",
+      "bytes": 4949,
+      "sha256": "7dd702a238cde3d6db844eef6c483d90ede3f8f9d4f9298a93fa59bb3ec83dd2"
+    },
+    {
+      "name": "prepare_test.py",
+      "bytes": 1680,
+      "sha256": "801f14ad0f37a8750533d443048a9cec63a7670f5bcbb2ec1f9ddc315e4a4167"
+    },
+    {
+      "name": "run-audit.sh",
+      "bytes": 1598,
+      "sha256": "4f4cd27c166b23144c66ba59a96042f6ec0a15d8c11cb7f2f853a77c368f64f4"
+    },
+    {
+      "name": "STATIC_VERIFICATION.json",
+      "bytes": 572,
+      "sha256": "c3a0933bc58f60abebd8642f38fa82926b6c97f7aba211324491b1631bfb97a6"
+    },
+    {
+      "name": "SYNTHETIC_CHECK.json",
+      "bytes": 500,
+      "sha256": "6a2284fc73f9663a3123d48d6eb5f545c032b58fcc36cad4f27c6d96e5936935"
+    }
+  ]
+}

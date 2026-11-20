@@ -1,0 +1,7 @@
+{
+  "fold_rows": 256,
+  "per_view_rows": 128,
+  "max_weighted_fold_error": 5.204170427930421E-18,
+  "independent_passing_count": 0,
+  "phenomenon_gate": false
+}

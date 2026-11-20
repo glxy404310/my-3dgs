@@ -1,0 +1,14 @@
+{
+  "call_number": 44,
+  "purpose": "cross-sh-pre-effect-contract-review",
+  "timestamp": "2026-10-22T19:52:03.116Z",
+  "agent_id": "01a164f6-abe5-7712-a0a9-ce0bbb545fa2",
+  "agent_path": "/root/shared_coord_failure_disposition",
+  "model": "inherited-primary",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "response_recovered_verbatim": true,
+  "response_session_log": "/mnt/c/Users/Administrator/.codex/sessions/2026/10/23/rollout-2026-10-23T02-54-10-01a164f6-abe5-7712-a0a9-ce0bbb545fa2.jsonl"
+}

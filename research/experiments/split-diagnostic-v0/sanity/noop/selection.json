@@ -1,0 +1,25 @@
+{
+  "checkpoint": "/home/administrator/projects/gaussian-splatting/output/truck_diag_ckpt7000_20261021/chkpnt7000.pth",
+  "iteration": 7000,
+  "n_before": 1707287,
+  "eligible_count": 5288,
+  "size_eligible_count": 326888,
+  "parent_ids": [
+    757029,
+    1681104,
+    1705814,
+    1706995
+  ],
+  "parent_scores": [
+    0.0022378196008503437,
+    0.001989851240068674,
+    0.00245109386742115,
+    0.0029096875805407763
+  ],
+  "scene_extent": 5.847915172576904,
+  "grad_threshold": 0.0002,
+  "calib_names": [
+    "000002.jpg"
+  ],
+  "split_seed": 10000
+}

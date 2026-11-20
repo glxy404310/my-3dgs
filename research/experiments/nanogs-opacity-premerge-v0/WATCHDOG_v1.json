@@ -1,0 +1,9 @@
+{
+  "process_exit_code": 0,
+  "tee_exit_code": 0,
+  "actual_process_and_pipe_wall_seconds": 97.906989883,
+  "within_300_seconds": true,
+  "remaining_shared_seconds": 202.093010117,
+  "shared_budget_definition": "main external wall plus subsequent root independent audit external wall <=300; CPU child already included",
+  "complete": true
+}

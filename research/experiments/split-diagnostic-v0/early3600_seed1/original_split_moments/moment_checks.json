@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "first_moment_factor": 0.2,
+  "second_moment_factor": 0.04,
+  "scalar_step_unchanged": true,
+  "survivors_unchanged": true,
+  "groups": [
+    {
+      "group": "xyz",
+      "step": 3569.0
+    },
+    {
+      "group": "f_dc",
+      "step": 3569.0
+    },
+    {
+      "group": "f_rest",
+      "step": 3569.0
+    },
+    {
+      "group": "opacity",
+      "step": 3569.0
+    },
+    {
+      "group": "scaling",
+      "step": 3569.0
+    },
+    {
+      "group": "rotation",
+      "step": 3569.0
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/mnt/d/Documents/my 3dgs/scripts/experiments/occlusion_merge_real.py", line 19, in <module>
+    from scipy.spatial import cKDTree
+ModuleNotFoundError: No module named 'scipy'

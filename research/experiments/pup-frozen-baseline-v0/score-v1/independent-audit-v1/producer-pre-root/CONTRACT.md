@@ -1,0 +1,21 @@
+# Independent saved-score / export integrity audit v1
+
+The original run is complete. This audit never changes its status, counters, result files, or scientific artifacts. Original session 27976 returned exit 0 in 79.0357449 s; the frozen original claims are 220 forwards (219 pool + 1 parity), 219 statistical backwards, zero parameter updates, parity max-absolute RGB difference 0, and 1,025,385 natural survivors. These are historical observations/records, not calls replayed by this audit.
+
+## Fixed scope and acceptance
+
+- Verify actual SHA256 and size of every original run-v1 file and EXTERNAL_RUN.json, before and after this audit. SCORE_RESULT, SUPERVISOR and exported PLY must match the root-provided immutable SHA256 pins. Verify every INPUTS_BEFORE path against its recorded hash on the actual readable WSL filesystem, before and after; separately verify recorded Git HEADs.
+- Check the recorded six raw fields agree across canonical/before/after/final records. Reconstruct all six raw arrays independently from the original teacher PLY and exported PLY and hash their exact contiguous float32 bytes. Check 219 camera identities, stored camera-value hashes/dtypes/shapes, photo bindings, scoring order, recorded counters, external budget, zero retries and recorded no-residual process claims. Historical counter truth and historical process absence cannot be retroactively re-observed.
+- CPU-load five saved tensors only with torch.load(map_location='cpu', weights_only=True). CUDA must remain uninitialized before and after. Full-array, chunked checks cover fixed shapes/dtypes, saved summaries, Fisher finiteness, exact numerical symmetry and nonnegative diagonal, singular-value finiteness/nonnegativity/descending order, and score NaN/+inf absence. Fisher off-diagonals may be negative. This does not prove positive semidefiniteness or the correctness of the saved SVD.
+- Independently use the saved scores, sort ascending, index int(0.5*(N-1)), prune score <= threshold, retain the complement. Full bool mask and ascending survivor indices must exactly equal the saved artifacts. No replacement tie handling or count forcing. The teacher subset and actual export must be byte-identical for each of all 62 PLY properties, with exact dtype/schema/row counts.
+- Independently recompute log(saved singular_values).sum(axis=1) on CPU float32. Negative-infinity positions must match exactly. For finite scores only, prelocked acceptance is abs(cpu-saved) <= 1e-4 + 1e-6*abs(saved). Report actual max/RMS error and mismatch counts. This is an arithmetic consistency check, not a byte/hash tolerance and never affects mask/export acceptance. No eps, ridge, clipping, SVD fallback or replacement scores.
+
+## Execution and preservation
+
+One execution only, no automatic retry. Total supervisor wall limit is 120 s and combined sampled host RSS limit is 8 GiB; the worker also receives an 8 GiB address-space hard cap before importing scientific libraries. A runtime import/allocation failure under that stricter cap is inconclusive, with no cap adjustment or retry. The launcher hides CUDA, fixes CPU thread counts to one, clears PYTHONPATH and uses the existing /home/administrator/venvs/3dgs/bin/python. No download, installation, model/Scene/renderer import, GPU, render, training, new scientific tensor output, or production-code edit is authorized. No full or sampled SVD/eigendecomposition is run.
+
+Only a new independent-audit-v1/run-v1 directory may be created at execution; it must be absent. On failure or budget exhaustion preserve partial JSON/logs, kill/reap the audit worker group, report inconclusive/failure with the original exception, and do not tune tolerances or rerun. Only these new audit files may be written. Root must review the complete contract, script, launcher and identity manifest and explicitly authorize the single --run call before execution.
+
+## Limits of any PASS
+
+A PASS certifies the saved-score-to-mask/index/export relationship and current input/artifact integrity within the checks above. It does not independently regenerate the 219-view Fisher, certify all saved singular values against the Fisher, rerun parity, establish real-scene accuracy, certify training quality, or establish novelty. Raw hashes/data equality and numerical-difference tests remain separate evidence.

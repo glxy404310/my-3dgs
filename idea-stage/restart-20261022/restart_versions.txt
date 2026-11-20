@@ -1,0 +1,565 @@
+[2602.00395] 3DGS$^2$-TR: Scalable Second-Order Trust-Region Method for 3D Gaussian Splatting (https://arxiv.org/abs/2602.00395)
+citeturn40view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/abs/2602.00395","lineno":null}); Total lines: 168
+L0: 【0†Search】 【1†Submit】 【2†Donate†info.arxiv.org】 【3†Log in】
+L1: 
+L2: Search arXiv [Input: Search papers by title, author, abstract, or ID...] [Input] [Input]
+L3: 
+L4: Press Enter to search · 【4†Advanced search】
+L5: 
+L6: # Computer Science > Computer Vision and Pattern Recognition
+L7: 
+L8: [Submitted on 30 Jan 2026]
+L9: # Title:3DGS$^2$-TR: Scalable Second-Order Trust-Region Method for 3D Gaussian Splatting
+L10: 
+L11: Authors:【5†Roger Hsiao】, 【6†Yuchen Fang】, 【7†Xiangru Huang】, 【8†Ruilong Li】, 【9†Hesam Rabeti】, 【10†Zan Gojcic】, 【11†Javad Lavaei】, 【12†James Demmel】, 【13†Sophia Shao】
+L12: 
+L13: View a PDF of the paper titled 3DGS$^2$-TR: Scalable Second-Order Trust-Region Method for 3D Gaussian Splatting, by Roger Hsiao and 8 other authors
+L14: 
+L15: 【14†View PDF】 【15†HTML (experimental)】
+L16: > Abstract:We propose 3DGS$^2$-TR,a second-order optimizer for accelerating the scene training problem in 3D Gaussian Splatting (3DGS). Unlike existing second-order approaches that rely on explicit or dense curvature representations, such as 3DGS-LM (Höllein et al., 2025) or 3DGS2 (Lan et al., 2025), our method approximates curvature using only the diagonal of the Hessian matrix, efficiently via Hutchinson's method.
+L17: Our approach is fully matrix-free and has the same complexity as ADAM (Kingma, 2024), $O(n)$ in both computation and memory costs. To ensure stable optimization in the presence of strong nonlinearity in the 3DGS rasterization process, we introduce a parameter-wise trust-region technique based on the squared Hellinger distance, regularizing updates to Gaussian parameters.
+L18: Under identical parameter initialization and without densification, 3DGS$^2$-TR is able to achieve better reconstruction quality on standard datasets, using 50% fewer training iterations compared to ADAM, while incurring less than 1GB of peak GPU memory overhead (17% more than ADAM and 85% less than 3DGS-LM), enabling scalability to very large scenes and potentially to distributed training settings.
+L19: Subjects:  | Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG); Optimization and Control (math.OC)
+L20: Cite as:  | 【16†arXiv:2602.00395】 [cs.CV]
+L21:    | (or 【17†arXiv:2602.00395v1】 [cs.CV] for this version)
+L22:    | 【18†https://doi.org/10.48550/arXiv.2602.00395†doi.org】 arXiv-issued DOI via DataCite
+L23: ## Submission history
+L24: 
+L25: From: Yuchen Fang [【19†view email】]
+L26: [v1] Fri, 30 Jan 2026 23:14:09 UTC (33,728 KB)
+L27: 
+L28: Full-text links:
+L29: 
+L30: ## Access Paper:
+L31: 
+L32: View a PDF of the paper titled 3DGS$^2$-TR: Scalable Second-Order Trust-Region Method for 3D Gaussian Splatting, by Roger Hsiao and 8 other authors
+L33: 
+L34:   * 【14†View PDF】
+L35:   * 【15†HTML (experimental)】
+L36:   * 【20†TeX Source】
+L37: 
+L38: 【21†view license†creativecommons.org】
+L39: 
+L40: ### Additional Features
+L41: 
+L42:   * 【22†Audio Summary】
+L43: ### Current browse context:
+L44: 
+L45: cs.CV
+L46: 
+L47: 【23†< prev】   |   【24†next >】
+L48: 
+L49: 【25†new】 | 【26†recent】 | 【27†2026-02】
+L50: 
+L51: Change to browse by:
+L52: 
+L53: 【28†cs】
+L54: 【29†cs.LG】
+L55: 【30†math】
+L56: 【31†math.OC】
+L57: 
+L58: ### References & Citations
+L59: 
+L60:   * 【32†SciX†scixplorer.org】
+L61:   * 【33†Google Scholar†scholar.google.com】
+L62:   * 【34†Semantic Scholar†api.semanticscholar.org】
+L63: 
+L64: [Button: export BibTeX citation] Loading...
+L65: 
+L66: ## BibTeX formatted citation
+L67: 
+L68: [Button: ×]
+L69: 
+L70: loading...
+L71: 
+L72: Data provided by:
+L73: 
+L74: ### Bookmark
+L75: 
+L76: [Input] Bibliographic Tools
+L77: # Bibliographic and Citation Tools
+L78: 
+L79: [Input] Bibliographic Explorer Toggle
+L80: 
+L81: Bibliographic Explorer (【35†What is the Explorer?†info.arxiv.org】)
+L82: 
+L83: [Input] Connected Papers Toggle
+L84: 
+L85: Connected Papers (【36†What is Connected Papers?†www.connectedpapers.com】)
+L86: 
+L87: [Input] Litmaps Toggle
+L88: 
+--------------------------------------------------------------------------------
+[2605.12494] Revisiting Photometric Ambiguity for Accurate Gaussian-Splatting Surface Reconstruction (https://arxiv.org/abs/2605.12494)
+citeturn40view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/abs/2605.12494","lineno":null}); Total lines: 166
+L0: 【0†Search】 【1†Submit】 【2†Donate†info.arxiv.org】 【3†Log in】
+L1: 
+L2: Search arXiv [Input: Search papers by title, author, abstract, or ID...] [Input] [Input]
+L3: 
+L4: Press Enter to search · 【4†Advanced search】
+L5: 
+L6: # Computer Science > Computer Vision and Pattern Recognition
+L7: 
+L8: [Submitted on 12 May 2026]
+L9: # Title:Revisiting Photometric Ambiguity for Accurate Gaussian-Splatting Surface Reconstruction
+L10: 
+L11: Authors:【5†Jiahe Li】, 【6†Jiawei Zhang】, 【7†Xiao Bai】, 【8†Jin Zheng】, 【9†Xiaohan Yu】, 【10†Lin Gu】, 【11†Gim Hee Lee】
+L12: 
+L13: View a PDF of the paper titled Revisiting Photometric Ambiguity for Accurate Gaussian-Splatting Surface Reconstruction, by Jiahe Li and 6 other authors
+L14: 
+L15: 【12†View PDF】 【13†HTML (experimental)】
+L16: > Abstract:Surface reconstruction with differentiable rendering has achieved impressive performance in recent years, yet the pervasive photometric ambiguities have strictly bottlenecked existing approaches. This paper presents AmbiSuR, a framework that explores an intrinsic solution upon Gaussian Splatting for the photometric ambiguity-robust surface 3D reconstruction with high performance.
+L17: Starting by revisiting the foundation, our investigation uncovers two built-in primitive-wise ambiguities in representation, while revealing an intrinsic potential for ambiguity self-indication in Gaussian Splatting. Stemming from these, a photometric disambiguation is first introduced, constraining ill-posed geometry solution for definite surface formation.
+L18: Then, we propose an ambiguity indication module that unleashes the self-indication potential to identify and further guide correcting underconstrained reconstructions. Extensive experiments demonstrate our superior surface reconstructions compared to existing methods across various challenging scenarios, excelling in broad compatibility. Project: 【14†this https URL†fictionarry.github.io】 .
+L19: Comments:  | Accepted at ICML 2026. Project page: 【14†this https URL†fictionarry.github.io】
+L20: Subjects:  | Computer Vision and Pattern Recognition (cs.CV)
+L21: Cite as:  | 【15†arXiv:2605.12494】 [cs.CV]
+L22:    | (or 【16†arXiv:2605.12494v1】 [cs.CV] for this version)
+L23:    | 【17†https://doi.org/10.48550/arXiv.2605.12494†doi.org】 arXiv-issued DOI via DataCite
+L24: ## Submission history
+L25: 
+L26: From: Jiahe Li [【18†view email】]
+L27: [v1] Tue, 12 May 2026 17:59:47 UTC (14,439 KB)
+L28: 
+L29: Full-text links:
+L30: 
+L31: ## Access Paper:
+L32: 
+L33: View a PDF of the paper titled Revisiting Photometric Ambiguity for Accurate Gaussian-Splatting Surface Reconstruction, by Jiahe Li and 6 other authors
+L34: 
+L35:   * 【12†View PDF】
+L36:   * 【13†HTML (experimental)】
+L37:   * 【19†TeX Source】
+L38: 
+L39: 【20†view license】
+L40: 
+L41: ### Additional Features
+L42: 
+L43:   * 【21†Audio Summary】
+L44: ### Current browse context:
+L45: 
+L46: cs.CV
+L47: 
+L48: 【22†< prev】   |   【23†next >】
+L49: 
+L50: 【24†new】 | 【25†recent】 | 【26†2026-05】
+L51: 
+L52: Change to browse by:
+L53: 
+L54: 【27†cs】
+L55: 
+L56: ### References & Citations
+L57: 
+L58:   * 【28†SciX†scixplorer.org】
+L59:   * 【29†Google Scholar†scholar.google.com】
+L60:   * 【30†Semantic Scholar†api.semanticscholar.org】
+L61: 
+L62: [Button: export BibTeX citation] Loading...
+L63: 
+L64: ## BibTeX formatted citation
+L65: 
+L66: [Button: ×]
+L67: 
+L68: loading...
+L69: 
+L70: Data provided by:
+L71: 
+L72: ### Bookmark
+L73: 
+L74: [Input] Bibliographic Tools
+L75: # Bibliographic and Citation Tools
+L76: 
+L77: [Input] Bibliographic Explorer Toggle
+L78: 
+L79: Bibliographic Explorer (【31†What is the Explorer?†info.arxiv.org】)
+L80: 
+L81: [Input] Connected Papers Toggle
+L82: 
+L83: Connected Papers (【32†What is Connected Papers?†www.connectedpapers.com】)
+L84: 
+L85: [Input] Litmaps Toggle
+L86: 
+L87: Litmaps (【33†What is Litmaps?†www.litmaps.co】)
+L88: 
+L89: [Input] scite.ai Toggle
+L90: 
+L91: scite Smart Citations (【34†What are Smart Citations?†www.scite.ai】)
+L92: 
+L93: [Input] Code, Data, Media
+--------------------------------------------------------------------------------
+[2609.03534] TruncGradGS: Improved 3D Gaussian Splatting via Truncated Gradient Updates (https://arxiv.org/abs/2609.03534)
+citeturn40view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/abs/2609.03534","lineno":null}); Total lines: 168
+L0: 【0†Search】 【1†Submit】 【2†Donate†info.arxiv.org】 【3†Log in】
+L1: 
+L2: Search arXiv [Input: Search papers by title, author, abstract, or ID...] [Input] [Input]
+L3: 
+L4: Press Enter to search · 【4†Advanced search】
+L5: 
+L6: # Computer Science > Computer Vision and Pattern Recognition
+L7: 
+L8: [Submitted on 3 Sep 2026]
+L9: # Title:TruncGradGS: Improved 3D Gaussian Splatting via Truncated Gradient Updates
+L10: 
+L11: Authors:【5†Theo Morales】, 【6†Nhat-Quynh Le-Pham】, 【7†Robin Atkins】, 【8†Binh-Son Hua】
+L12: 
+L13: View a PDF of the paper titled TruncGradGS: Improved 3D Gaussian Splatting via Truncated Gradient Updates, by Theo Morales and 3 other authors
+L14: 
+L15: 【9†View PDF】 【10†HTML (experimental)】
+L16: > Abstract:3D Gaussian Splatting has become a de facto scene representation for novel view synthesis, yet robustly learning 3D Gaussian primitives from visual input remains challenging. Standard optimization relies on gradient-based updates, but a common issue is the gradient vanishing phenomenon: a pixel far from a Gaussian primitive often has diminishing gradient magnitudes to influence primitive attributes, resulting in suboptimal scene reconstruction.
+L17: In this paper, we propose a method to address gradient vanishing with a piecewise truncated gradient formulation that improves the optimization stability and robustness to initializations. We show that our method consistently improves 3D Gaussian Splatting with random and COLMAP initializations while being generalizable across static and dynamic Gaussian Splatting.
+L18: As a by-product, we also examine the limitations of current benchmarks for dynamic scenes, and introduce a novel dataset for benchmarking dynamic Gaussian Splatting using synthetic 3D scenes. We demonstrate the effectiveness of our method in both static and dynamic settings for the public benchmarks and our proposed dataset.
+L19: Comments:  | Accepted at Pacific Graphics 2026
+L20: Subjects:  | Computer Vision and Pattern Recognition (cs.CV); Artificial Intelligence (cs.AI); Graphics (cs.GR)
+L21: Cite as:  | 【11†arXiv:2609.03534】 [cs.CV]
+L22:    | (or 【12†arXiv:2609.03534v1】 [cs.CV] for this version)
+L23:    | 【13†https://doi.org/10.48550/arXiv.2609.03534†doi.org】 arXiv-issued DOI via DataCite
+L24: ## Submission history
+L25: 
+L26: From: Nhat-Quynh Le-Pham [【14†view email】]
+L27: [v1] Thu, 3 Sep 2026 08:34:27 UTC (25,401 KB)
+L28: 
+L29: Full-text links:
+L30: 
+L31: ## Access Paper:
+L32: 
+L33: View a PDF of the paper titled TruncGradGS: Improved 3D Gaussian Splatting via Truncated Gradient Updates, by Theo Morales and 3 other authors
+L34: 
+L35:   * 【9†View PDF】
+L36:   * 【10†HTML (experimental)】
+L37:   * 【15†TeX Source】
+L38: 
+L39: 【16†view license†creativecommons.org】
+L40: 
+L41: ### Additional Features
+L42: 
+L43:   * 【17†Audio Summary】
+L44: ### Current browse context:
+L45: 
+L46: cs.CV
+L47: 
+L48: 【18†< prev】   |   【19†next >】
+L49: 
+L50: 【20†new】 | 【21†recent】 | 【22†2026-09】
+L51: 
+L52: Change to browse by:
+L53: 
+L54: 【23†cs】
+L55: 【24†cs.AI】
+L56: 【25†cs.GR】
+L57: 
+L58: ### References & Citations
+L59: 
+L60:   * 【26†SciX†scixplorer.org】
+L61:   * 【27†Google Scholar†scholar.google.com】
+L62:   * 【28†Semantic Scholar†api.semanticscholar.org】
+L63: 
+L64: [Button: export BibTeX citation] Loading...
+L65: 
+L66: ## BibTeX formatted citation
+L67: 
+L68: [Button: ×]
+L69: 
+L70: loading...
+L71: 
+L72: Data provided by:
+L73: 
+L74: ### Bookmark
+L75: 
+L76: [Input] Bibliographic Tools
+L77: # Bibliographic and Citation Tools
+L78: 
+L79: [Input] Bibliographic Explorer Toggle
+L80: 
+L81: Bibliographic Explorer (【29†What is the Explorer?†info.arxiv.org】)
+L82: 
+L83: [Input] Connected Papers Toggle
+L84: 
+L85: Connected Papers (【30†What is Connected Papers?†www.connectedpapers.com】)
+L86: 
+L87: [Input] Litmaps Toggle
+L88: 
+L89: Litmaps (【31†What is Litmaps?†www.litmaps.co】)
+L90: 
+L91: [Input] scite.ai Toggle
+L92: 
+L93: scite Smart Citations (【32†What are Smart Citations?†www.scite.ai】)
+L94: 
+L95: [Input] Code, Data, Media
+--------------------------------------------------------------------------------
+[2606.05124] Geometry Gaussians: Decoupling Appearance and Geometry in Gaussian Splatting (https://arxiv.org/abs/2606.05124)
+citeturn40view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/abs/2606.05124","lineno":null}); Total lines: 167
+L0: 【0†Search】 【1†Submit】 【2†Donate†info.arxiv.org】 【3†Log in】
+L1: 
+L2: Search arXiv [Input: Search papers by title, author, abstract, or ID...] [Input] [Input]
+L3: 
+L4: Press Enter to search · 【4†Advanced search】
+L5: 
+L6: # Computer Science > Graphics
+L7: 
+L8: [Submitted on 3 Jun 2026]
+L9: # Title:Geometry Gaussians: Decoupling Appearance and Geometry in Gaussian Splatting
+L10: 
+L11: Authors:【5†Hongyu Zhou】, 【6†Zorah Lähner】
+L12: 
+L13: View a PDF of the paper titled Geometry Gaussians: Decoupling Appearance and Geometry in Gaussian Splatting, by Hongyu Zhou and 1 other authors
+L14: 
+L15: 【7†View PDF】 【8†HTML (experimental)】
+L16: > Abstract:After the success of 3D Gaussian Splatting (3DGS) for novel view synthesis, many works have explored how to also use it for geometric surface representation. However, extracting accurate geometric information directly from 3DGS remains challenging and can often reduce the appearance rendering quality.
+L17: In this work, we show that 3DGS in its default form is inheritedly unsuited to represent texture and geometry at the same time, by training with complete ground-truth texture and geometry information. We also propose a simple solution by applying a single additional geometry opacity parameter to each splat, together with an optional transparency-curated optimization pipeline.
+L18: Our experiments, both with ground-truth and vision foundation model geometric input, show that this change leads to improved rendering and geometry performance on a wide variety of dataset, and especially complex scenes with transparent objects benefit significantly from our method.
+L19: Subjects:  | Graphics (cs.GR); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG)
+L20: Cite as:  | 【9†arXiv:2606.05124】 [cs.GR]
+L21:    | (or 【10†arXiv:2606.05124v1】 [cs.GR] for this version)
+L22:    | 【11†https://doi.org/10.48550/arXiv.2606.05124†doi.org】 arXiv-issued DOI via DataCite
+L23: ## Submission history
+L24: 
+L25: From: Hongyu Zhou [【12†view email】]
+L26: [v1] Wed, 3 Jun 2026 17:29:36 UTC (16,082 KB)
+L27: 
+L28: Full-text links:
+L29: 
+L30: ## Access Paper:
+L31: 
+L32: View a PDF of the paper titled Geometry Gaussians: Decoupling Appearance and Geometry in Gaussian Splatting, by Hongyu Zhou and 1 other authors
+L33: 
+L34:   * 【7†View PDF】
+L35:   * 【8†HTML (experimental)】
+L36:   * 【13†TeX Source】
+L37: 
+L38: 【14†view license†creativecommons.org】
+L39: 
+L40: ### Additional Features
+L41: 
+L42:   * 【15†Audio Summary】
+L43: ### Current browse context:
+L44: 
+L45: cs.GR
+L46: 
+L47: 【16†< prev】   |   【17†next >】
+L48: 
+L49: 【18†new】 | 【19†recent】 | 【20†2026-06】
+L50: 
+L51: Change to browse by:
+L52: 
+L53: 【21†cs】
+L54: 【22†cs.CV】
+L55: 【23†cs.LG】
+L56: 
+L57: ### References & Citations
+L58: 
+L59:   * 【24†SciX†scixplorer.org】
+L60:   * 【25†Google Scholar†scholar.google.com】
+L61:   * 【26†Semantic Scholar†api.semanticscholar.org】
+L62: 
+L63: [Button: export BibTeX citation] Loading...
+L64: 
+L65: ## BibTeX formatted citation
+L66: 
+L67: [Button: ×]
+L68: 
+L69: loading...
+L70: 
+L71: Data provided by:
+L72: 
+L73: ### Bookmark
+L74: 
+L75: [Input] Bibliographic Tools
+L76: # Bibliographic and Citation Tools
+L77: 
+L78: [Input] Bibliographic Explorer Toggle
+L79: 
+L80: Bibliographic Explorer (【27†What is the Explorer?†info.arxiv.org】)
+L81: 
+L82: [Input] Connected Papers Toggle
+L83: 
+L84: Connected Papers (【28†What is Connected Papers?†www.connectedpapers.com】)
+L85: 
+L86: [Input] Litmaps Toggle
+L87: 
+L88: Litmaps (【29†What is Litmaps?†www.litmaps.co】)
+L89: 
+L90: [Input] scite.ai Toggle
+L91: 
+L92: scite Smart Citations (【30†What are Smart Citations?†www.scite.ai】)
+L93: 
+L94: [Input] Code, Data, Media
+--------------------------------------------------------------------------------
+[2505.18764] Efficient Differentiable Hardware Rasterization for 3D Gaussian Splatting (https://arxiv.org/abs/2505.18764)
+citeturn40view4 [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/abs/2505.18764","lineno":null}); Total lines: 170
+L0: 【0†Search】 【1†Submit】 【2†Donate†info.arxiv.org】 【3†Log in】
+L1: 
+L2: Search arXiv [Input: Search papers by title, author, abstract, or ID...] [Input] [Input]
+L3: 
+L4: Press Enter to search · 【4†Advanced search】
+L5: 
+L6: # Computer Science > Graphics
+L7: 
+L8: [Submitted on 24 May 2025 (【5†v1】), last revised 13 Aug 2025 (this version, v2)]
+L9: # Title:Efficient Differentiable Hardware Rasterization for 3D Gaussian Splatting
+L10: 
+L11: Authors:【6†Yitian Yuan】, 【7†Qianyue He】
+L12: 
+L13: View a PDF of the paper titled Efficient Differentiable Hardware Rasterization for 3D Gaussian Splatting, by Yitian Yuan and 1 other authors
+L14: 
+L15: 【8†View PDF】 【9†HTML (experimental)】
+L16: > Abstract:Recent works demonstrate the advantages of hardware rasterization for 3D Gaussian Splatting (3DGS) in forward-pass rendering through fast GPU-optimized graphics and fixed memory footprint. However, extending these benefits to backward-pass gradient computation remains challenging due to graphics pipeline constraints. We present a differentiable hardware rasterizer for 3DGS that overcomes the memory and performance limitations of tile-based software rasterization.
+L17: Our solution employs programmable blending for per-pixel gradient computation combined with a hybrid gradient reduction strategy (quad-level + subgroup) in fragment shaders, achieving over 10x faster backward rasterization versus naive atomic operations and 3x speedup over the canonical tile-based rasterizer.
+L18: Systematic evaluation reveals 16-bit render targets (float16 and unorm16) as the optimal accuracy-efficiency trade-off, achieving higher gradient accuracy among mixed-precision rendering formats with execution speeds second only to unorm8, while float32 texture incurs severe forward pass performance degradation due to suboptimal hardware optimizations.
+L19: Our method with float16 formats demonstrates 3.07x acceleration in full pipeline execution (forward + backward passes) on RTX4080 GPUs with the MipNeRF 360 dataset, outperforming the baseline tile-based renderer while preserving hardware rasterization's memory efficiency advantages -- incurring merely 2.67% of the memory overhead required for splat sorting operations.
+L20: This work presents a unified differentiable hardware rasterization method that simultaneously optimizes runtime and memory usage for 3DGS, making it particularly suitable for resource-constrained devices with limited memory capacity.
+L21: Comments:  | 8 pages,2 figures
+L22: Subjects:  | Graphics (cs.GR)
+L23: ACM (Association of Computing Machinery Classification) classes:  | I.3.7; I.3.1
+L24: Cite as:  | 【10†arXiv:2505.18764】 [cs.GR]
+L25:    | (or 【11†arXiv:2505.18764v2】 [cs.GR] for this version)
+L26:    | 【12†https://doi.org/10.48550/arXiv.2505.18764†doi.org】 arXiv-issued DOI via DataCite
+L27: ## Submission history
+L28: 
+L29: From: Qianyue He [【13†view email】]
+L30: 【5†[v1]】 Sat, 24 May 2025 16:07:33 UTC (26,602 KB)
+L31: [v2] Wed, 13 Aug 2025 03:09:42 UTC (26,641 KB)
+L32: 
+L33: Full-text links:
+L34: 
+L35: ## Access Paper:
+L36: 
+L37: View a PDF of the paper titled Efficient Differentiable Hardware Rasterization for 3D Gaussian Splatting, by Yitian Yuan and 1 other authors
+L38: 
+L39:   * 【8†View PDF】
+L40:   * 【9†HTML (experimental)】
+L41:   * 【14†TeX Source】
+L42: 
+L43: 【15†view license】
+L44: 
+L45: ### Additional Features
+L46: 
+L47:   * 【16†Audio Summary】
+L48: ### Current browse context:
+L49: 
+L50: cs.GR
+L51: 
+L52: 【17†< prev】   |   【18†next >】
+L53: 
+L54: 【19†new】 | 【20†recent】 | 【21†2025-05】
+L55: 
+L56: Change to browse by:
+L57: 
+L58: 【22†cs】
+L59: 
+L60: ### References & Citations
+L61: 
+L62:   * 【23†SciX†scixplorer.org】
+L63:   * 【24†Google Scholar†scholar.google.com】
+L64:   * 【25†Semantic Scholar†api.semanticscholar.org】
+L65: 
+L66: [Button: export BibTeX citation] Loading...
+L67: 
+L68: ## BibTeX formatted citation
+L69: 
+L70: [Button: ×]
+L71: 
+L72: loading...
+L73: 
+L74: Data provided by:
+L75: 
+L76: ### Bookmark
+L77: 
+L78: [Input] Bibliographic Tools
+--------------------------------------------------------------------------------
+[2503.24366] StochasticSplats: Stochastic Rasterization for Sorting-Free 3D Gaussian Splatting (https://arxiv.org/abs/2503.24366)
+citeturn40view5 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/abs/2503.24366","lineno":null}); Total lines: 166
+L0: 【0†Search】 【1†Submit】 【2†Donate†info.arxiv.org】 【3†Log in】
+L1: 
+L2: Search arXiv [Input: Search papers by title, author, abstract, or ID...] [Input] [Input]
+L3: 
+L4: Press Enter to search · 【4†Advanced search】
+L5: 
+L6: # Computer Science > Computer Vision and Pattern Recognition
+L7: 
+L8: [Submitted on 31 Mar 2025]
+L9: # Title:StochasticSplats: Stochastic Rasterization for Sorting-Free 3D Gaussian Splatting
+L10: 
+L11: Authors:【5†Shakiba Kheradmand】, 【6†Delio Vicini】, 【7†George Kopanas】, 【8†Dmitry Lagun】, 【9†Kwang Moo Yi】, 【10†Mark Matthews】, 【11†Andrea Tagliasacchi】
+L12: 
+L13: View a PDF of the paper titled StochasticSplats: Stochastic Rasterization for Sorting-Free 3D Gaussian Splatting, by Shakiba Kheradmand and 6 other authors
+L14: 
+L15: 【12†View PDF】 【13†HTML (experimental)】
+L16: > Abstract:3D Gaussian splatting (3DGS) is a popular radiance field method, with many application-specific extensions. Most variants rely on the same core algorithm: depth-sorting of Gaussian splats then rasterizing in primitive order. This ensures correct alpha compositing, but can cause rendering artifacts due to built-in approximations. Moreover, for a fixed representation, sorted rendering offers little control over render cost and visual fidelity.
+L17: For example, and counter-intuitively, rendering a lower-resolution image is not necessarily faster. In this work, we address the above limitations by combining 3D Gaussian splatting with stochastic rasterization. Concretely, we leverage an unbiased Monte Carlo estimator of the volume rendering equation. This removes the need for sorting, and allows for accurate 3D blending of overlapping Gaussians. The number of Monte Carlo samples further imbues 3DGS with a way to trade off computation time and quality.
+L18: We implement our method using OpenGL shaders, enabling efficient rendering on modern GPU hardware. At a reasonable visual quality, our method renders more than four times faster than sorted rasterization.
+L19: Subjects:  | Computer Vision and Pattern Recognition (cs.CV); Graphics (cs.GR)
+L20: Cite as:  | 【14†arXiv:2503.24366】 [cs.CV]
+L21:    | (or 【15†arXiv:2503.24366v1】 [cs.CV] for this version)
+L22:    | 【16†https://doi.org/10.48550/arXiv.2503.24366†doi.org】 arXiv-issued DOI via DataCite
+L23: ## Submission history
+L24: 
+L25: From: Shakiba Kheradmand [【17†view email】]
+L26: [v1] Mon, 31 Mar 2025 17:46:18 UTC (22,438 KB)
+L27: 
+L28: Full-text links:
+L29: 
+L30: ## Access Paper:
+L31: 
+L32: View a PDF of the paper titled StochasticSplats: Stochastic Rasterization for Sorting-Free 3D Gaussian Splatting, by Shakiba Kheradmand and 6 other authors
+L33: 
+L34:   * 【12†View PDF】
+L35:   * 【13†HTML (experimental)】
+L36:   * 【18†TeX Source】
+L37: 
+L38: 【19†view license†creativecommons.org】
+L39: 
+L40: ### Additional Features
+L41: 
+L42:   * 【20†Audio Summary】
+L43: ### Current browse context:
+L44: 
+L45: cs.CV
+L46: 
+L47: 【21†< prev】   |   【22†next >】
+L48: 
+L49: 【23†new】 | 【24†recent】 | 【25†2025-03】
+L50: 
+L51: Change to browse by:
+L52: 
+L53: 【26†cs】
+L54: 【27†cs.GR】
+L55: 
+L56: ### References & Citations
+L57: 
+L58:   * 【28†SciX†scixplorer.org】
+L59:   * 【29†Google Scholar†scholar.google.com】
+L60:   * 【30†Semantic Scholar†api.semanticscholar.org】
+L61: 
+L62: [Button: export BibTeX citation] Loading...
+L63: 
+L64: ## BibTeX formatted citation
+L65: 
+L66: [Button: ×]
+L67: 
+L68: loading...
+L69: 
+L70: Data provided by:
+L71: 
+L72: ### Bookmark
+L73: 
+L74: [Input] Bibliographic Tools
+L75: # Bibliographic and Citation Tools
+L76: 
+L77: [Input] Bibliographic Explorer Toggle
+L78: 
+L79: Bibliographic Explorer (【31†What is the Explorer?†info.arxiv.org】)
+L80: 
+L81: [Input] Connected Papers Toggle
+L82: 
+L83: Connected Papers (【32†What is Connected Papers?†www.connectedpapers.com】)
+L84: 
+L85: [Input] Litmaps Toggle
+L86: 
+L87: Litmaps (【33†What is Litmaps?†www.litmaps.co】)
+L88: 
+L89: [Input] scite.ai Toggle
+L90: 
+L91: scite Smart Citations (【34†What are Smart Citations?†www.scite.ai】)
+L92: 
+L93: [Input] Code, Data, Media
+

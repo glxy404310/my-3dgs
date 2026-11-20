@@ -1,0 +1,115 @@
+{
+  "kind": "analytic_alpha_compositing_counterexample",
+  "status": "CPU_formula_only_not_real_scene_codec_result",
+  "pixel": "both Gaussian centers project to same pixel; effective alpha .5, fixed red/blue, black background; no alpha clamp or early termination active",
+  "claim": "Independent primitive parameter errors tending to zero do not imply continuous composed RGB when depth ordering flips near a tie.",
+  "does_not_show": [
+    "Any actual codec produces the perturbations",
+    "Frequency or importance in Truck/Train",
+    "Novelty of order discontinuity or alpha exchange formula",
+    "Order preservation globally feasible or rate-efficient",
+    "Improved GT reconstruction"
+  ],
+  "rows": [
+    {
+      "epsilon": 0.01,
+      "original_depths": [
+        1,
+        1.01
+      ],
+      "perturbed_depths": [
+        1.01,
+        1
+      ],
+      "max_center_displacement": 0.01,
+      "screen_center_displacement": 0,
+      "original_rgb": [
+        0.5,
+        0,
+        0.25
+      ],
+      "perturbed_rgb": [
+        0.25,
+        0,
+        0.5
+      ],
+      "rgb_linf": 0.25,
+      "rgb_mse": 0.041666666666666664
+    },
+    {
+      "epsilon": 0.0001,
+      "original_depths": [
+        1,
+        1.0001
+      ],
+      "perturbed_depths": [
+        1.0001,
+        1
+      ],
+      "max_center_displacement": 0.0001,
+      "screen_center_displacement": 0,
+      "original_rgb": [
+        0.5,
+        0,
+        0.25
+      ],
+      "perturbed_rgb": [
+        0.25,
+        0,
+        0.5
+      ],
+      "rgb_linf": 0.25,
+      "rgb_mse": 0.041666666666666664
+    },
+    {
+      "epsilon": 0.000001,
+      "original_depths": [
+        1,
+        1.000001
+      ],
+      "perturbed_depths": [
+        1.000001,
+        1
+      ],
+      "max_center_displacement": 0.000001,
+      "screen_center_displacement": 0,
+      "original_rgb": [
+        0.5,
+        0,
+        0.25
+      ],
+      "perturbed_rgb": [
+        0.25,
+        0,
+        0.5
+      ],
+      "rgb_linf": 0.25,
+      "rgb_mse": 0.041666666666666664
+    },
+    {
+      "epsilon": 1e-8,
+      "original_depths": [
+        1,
+        1.00000001
+      ],
+      "perturbed_depths": [
+        1.00000001,
+        1
+      ],
+      "max_center_displacement": 1e-8,
+      "screen_center_displacement": 0,
+      "original_rgb": [
+        0.5,
+        0,
+        0.25
+      ],
+      "perturbed_rgb": [
+        0.25,
+        0,
+        0.5
+      ],
+      "rgb_linf": 0.25,
+      "rgb_mse": 0.041666666666666664
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "speedy-frozen-control/audit-host-external-v1",
+  "started_UTC": "2026-10-22T22:41:54.6798756Z",
+  "finished_UTC": "2026-10-22T22:42:22.2664912Z",
+  "exit_code": 0,
+  "actual_host_wall_seconds": 27.5837987,
+  "hard_limit_seconds": 100,
+  "attempts": 1,
+  "main_actual_host_wall_seconds": 48.347527,
+  "combined_actual_host_wall_seconds": 75.9313257,
+  "shared_main_plus_audit_limit_seconds": 340
+}

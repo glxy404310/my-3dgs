@@ -1,0 +1,14 @@
+{
+  "purpose": "geometry-generation",
+  "agent_id": "/root/continue_geometry_ideas",
+  "prompt": "You are a read-only idea-generation shard, not ranking jury. Scope static per-scene3DGS with existing Truck30k ~2.05M Gaussian teacher, Truck/Train earlycheckpoints, singleRTX5070 12GB. Workspace D:/Documents/my 3dgs. Read idea-stage/restart-20261022/BRIEF.md, CANDIDATES.json,SOURCES.json and research/experiments/truck30k-frozen-compression-v0/FINDINGS.md plus old REIDEATION_OVERLAP_NOTES if useful. User wants broad inventive candidates + cheap attempts, stopping weak routes promptly; no new training yet. Avoid reviving failed split parent target/common-differenceAdam/simplex/worldbound/Qmerge etc under new names; ADCinterval known engineering. Latest active pose compression motivation weak: existing real photos show worse failures than virtual, no novel narrow interior peak. Lens: representation/occlusion, optimization geometry, resource allocation, numerical or hidden implementation assumptions; seek central meaningful problems beyond split tricks, single mechanism. Generate5-7 candidates beyond prior12 unless a clearlynew finding transforms one. Broad primary-source browse2025-2026 (recent6mo), don't assume no literature. No ranking, rejection, acceptance, novelty verdict, writes or GPU. JSON {shard_id,candidates:[{dedup_key,payload:{title,method_steps,hypothesis,first_frozen_diagnostic,advance_stop_null_rules,strong_simple_controls,closest_sources:[{title,url,overlap,delta_unknown}],so_what,risk,estimated_gpu_hours}}]}. Frozendiagnostics preferably<10minGPU or cheapCPU, no expensive implementation as prerequisite. Reply Chinese, sources verified vs speculative separated. Do not spawn agents.",
+  "tool": "spawn_agent",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "files_referenced": [
+    "idea-stage/restart-20261022/BRIEF.md",
+    "idea-stage/restart-20261022/CANDIDATES.json",
+    "idea-stage/restart-20261022/SOURCES.json",
+    "research/experiments/truck30k-frozen-compression-v0/FINDINGS.md"
+  ]
+}

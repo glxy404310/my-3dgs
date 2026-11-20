@@ -1,0 +1,12 @@
+{
+  "agent_id": "/root/newtopic_candidate_jury",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok_after_capacity_retry",
+  "main": "external occlusion exchange cost for group-to-parent merging",
+  "verdict": "PROCEED",
+  "backup": "visibility-event exposure integration",
+  "cpu_diagnostic": "formula and bound only, no real scene performance tested"
+}

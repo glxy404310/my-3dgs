@@ -1,0 +1,272 @@
+{
+  "input_hashes_before": {
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/FIXED_BUILD_IDENTITY.json": "5630aad4281ff1242674910393a085583f0e7f4a62d517e2bf041ad1c3bbe092",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/00_git_clone.log": "6f5158e0a14aef20228f01716d9e71f866c973acf2732cece38faab78da49dbb",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/01_checkout_official_fixed.log": "3d63f33a72d5c3ab0c1436ee95ed6874dc2b6e315a672e44bc84a3d958fb718f",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/02_glm_init.log": "20880d62e063f3b0a15dc61b084b74167c520a077b4a6c96a4edd7765ffdfcf3",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/03_pin_main.log": "5377a62e5ffc48ad5b3a6aa639bad083bf16839a6b4461d23a89b1e8e99f58a5",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/04_pin_fisher.log": "aeb224329965547b618480a7c3bce016e71de83de10e30e9732fa952dde5bc62",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/05_pin_glm.log": "a8068258859561e1e63db3c5c115150aa6e7c0981e5b5e73ab48a20043b6270b",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/06_pin_old_fisher.log": "2f8d8a927ca9801f6161d0cdfb5d3a2412b5ad95a57d3f39ef5a4e955aaebbb7",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/07_pin_old_glm.log": "a8068258859561e1e63db3c5c115150aa6e7c0981e5b5e73ab48a20043b6270b",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/08_verify_merge_parent.log": "2f8d8a927ca9801f6161d0cdfb5d3a2412b5ad95a57d3f39ef5a4e955aaebbb7",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/09_verify_unique_change.log": "8046d011dc58fe226511273cd0d089002f2ff7e5954a9ee1b1a54c43d5492ff6",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/10_verify_official_patch.log": "e21e7d28c0c32920c340096c51974fd495177a2ef9832a2eb257e1340adfb026",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/11_hardware_readonly.log": "12ee9bf26778b30aa42f873446faf0f6f3f3accbde33295d6c005ba1c5a005f5",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/12_nvcc_readonly.log": "68f8b0a1301428031e307cf5260142a517bff25cc232a09eae2734be475d721f",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/13_gxx_readonly.log": "9eaf9b7f4b11c2e84e2478c2ceb0e4f48f4ba88565bcfc832b3bce49847dda6d",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/14_author_build.log": "df628a168ea90f7206974da39e717ea12247414c9c3a7984d1157cb4abfeb03d",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/15_private_import_only.log": "bd8ee0c6f9406295d4d8eb3051c0e79322218e98220f03a285b12d3f9af2b39d",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/ATTEMPT_STARTED.json": "fa35cabf55a418ff1332c6ef27628a337851934b293c03bafa4edd27e43b8342",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/BUILD_CONTRACT.md": "ce775249b1b4edb495d573d30221cfe364b7409d2cdc240eaae63bdd91706488",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/EXTERNAL_RUN.json": "2d12eb02178f46347e72d2662635cdba8cf4ad0b00587a12949510f963feb877",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/EXTERNAL_RUN.log": "12e511dd06dd984ee0a6afaab37eda5c2160186e1d3348871b23d4571756edeb",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/FULL_STAGE.log": "2beeecfe3c2cd45a74b082fdc96573bc7641e3e1a65d13cf1f98a18982642527",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/IMPORT_RESULT.json": "79515da3aeca2a55c748e9eb3d80be0ce48025fa665ee4bf3e2941d0bf40616b",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/OFFICIAL_SOURCE_EVIDENCE.json": "10e5f6528a05bd599e50642c0e1a3f76ee396dace3261379b6067d3c1e90a8c6",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/OLD_ARTIFACTS_AFTER.json": "61a393957ebb0f001db6141cb56b49e949ef4822f1a6e7d003a7c34acbbcb75e",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/OLD_ARTIFACTS_BEFORE.json": "61a393957ebb0f001db6141cb56b49e949ef4822f1a6e7d003a7c34acbbcb75e",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/STAGE_RESULTS.json": "df42250b638bb09014804fb810e553d5063154d5c685feb8b5de4f974f34ca54",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/TOOL_SESSION.json": "1d5040c1e20acfd132e6bc4c595eeccbd37b568ec29d42e48869aa2ded34df63",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/TRACKED_AFTER.json": "3b011a303b085172a416b8b7c2085ded2462455ed8f47386d64524a5de0c3205",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/TRACKED_BEFORE.json": "3b011a303b085172a416b8b7c2085ded2462455ed8f47386d64524a5de0c3205",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/WATCHDOG.json": "7eeca0fd6d5da1e19f796fb16a8f49044d085d79c25712225bd1f40f0b652ab1",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/finalize_identity.py": "fa9c6861be311de362a42fe7744aaa432f72667137e215892377f110fcdc95b2",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/import_smoke.py": "1d23d0cc8024dca0316e6d1d907070cc686c0b8f42b51b013c8ba5ad12120833",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/run_private_build.py": "4e50956a6ed2af5b4a077973ae2a21d9b2767657657530fc919d1a35908cbe74",
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/pup_fisher_kernel_witness.py": "5e0694ff2f738177f7d66e6f187042a401993549e0b0b4fdc4871a14023771c7",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/KERNEL_CONTRACT.md": "b7563ff129d970d334bf05c5411b404afe5cdb2d38910346535a7a5c4dbd9495",
+    "/mnt/d/Documents/my 3dgs/.aris/compute/pup-private-extension.md": "049d0f566b1a441401c915544820351d1b389683acc93a14c91a7c02dd41f0af",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-v1/TRACKED_BEFORE.json": "c6f09bf58f3d4521cfbcff53670fb0cdf9eb441bcc464f3186a40f7ed623d10b",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so": "6fb6d2d0539cfc28a0ca150a0fd5ff02a1402ef0a92f97ce05f5e72b46255b3c",
+    "/home/administrator/projects/gaussian-splatting/output/truck_30000_r1/point_cloud/iteration_30000/point_cloud.ply": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+    "/home/administrator/projects/gaussian-splatting/scene/__init__.py": "895d042f4dd2c6ee521dd985aea5c49d9c6f5c7379f76c4d537d8dc5468f18bf",
+    "/home/administrator/projects/gaussian-splatting/scene/gaussian_model.py": "546ba41528a879af4d83bd280a3ef3cbcca9a5e9132204185aaa8f8ee9ffa310",
+    "/home/administrator/projects/gaussian-splatting/scene/cameras.py": "7344b9a4c95e3649becab1b9e30eb0b351a15a61370f64352dcb231aed916128",
+    "/home/administrator/projects/gaussian-splatting/scene/dataset_readers.py": "b06f01648fee893c4785ed38eeb934f91b79817b9dcbb694291c9162b0b6ba94",
+    "/home/administrator/projects/gaussian-splatting/gaussian_renderer/__init__.py": "a25cf5fdb22cd8757fb2a1e37b75352042d65b16138a9fa6243f8616ca1369b8",
+    "/home/administrator/projects/gaussian-splatting/utils/graphics_utils.py": "d6e75de8161e98b72c2691e8a944a842e1b6625d2306035d079c868ac632edfc",
+    "/home/administrator/projects/gaussian-splatting/utils/camera_utils.py": "7644d89893f2481a7a9be592227bf11f3e6e5c469c9ce92c3cb25f9ff920c458",
+    "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/__init__.py": "1d4fc43bb67c4552193d340e2d6894ad7ec3c0d04a620fd7655c89ccf855df5b",
+    "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/_C.cpython-310-x86_64-linux-gnu.so": "ca99d74bf9d880585b64f75444339bf739276883c8c0f4a85b926fb6e15c9219"
+  },
+  "input_hashes_after": {
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/FIXED_BUILD_IDENTITY.json": "5630aad4281ff1242674910393a085583f0e7f4a62d517e2bf041ad1c3bbe092",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/00_git_clone.log": "6f5158e0a14aef20228f01716d9e71f866c973acf2732cece38faab78da49dbb",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/01_checkout_official_fixed.log": "3d63f33a72d5c3ab0c1436ee95ed6874dc2b6e315a672e44bc84a3d958fb718f",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/02_glm_init.log": "20880d62e063f3b0a15dc61b084b74167c520a077b4a6c96a4edd7765ffdfcf3",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/03_pin_main.log": "5377a62e5ffc48ad5b3a6aa639bad083bf16839a6b4461d23a89b1e8e99f58a5",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/04_pin_fisher.log": "aeb224329965547b618480a7c3bce016e71de83de10e30e9732fa952dde5bc62",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/05_pin_glm.log": "a8068258859561e1e63db3c5c115150aa6e7c0981e5b5e73ab48a20043b6270b",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/06_pin_old_fisher.log": "2f8d8a927ca9801f6161d0cdfb5d3a2412b5ad95a57d3f39ef5a4e955aaebbb7",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/07_pin_old_glm.log": "a8068258859561e1e63db3c5c115150aa6e7c0981e5b5e73ab48a20043b6270b",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/08_verify_merge_parent.log": "2f8d8a927ca9801f6161d0cdfb5d3a2412b5ad95a57d3f39ef5a4e955aaebbb7",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/09_verify_unique_change.log": "8046d011dc58fe226511273cd0d089002f2ff7e5954a9ee1b1a54c43d5492ff6",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/10_verify_official_patch.log": "e21e7d28c0c32920c340096c51974fd495177a2ef9832a2eb257e1340adfb026",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/11_hardware_readonly.log": "12ee9bf26778b30aa42f873446faf0f6f3f3accbde33295d6c005ba1c5a005f5",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/12_nvcc_readonly.log": "68f8b0a1301428031e307cf5260142a517bff25cc232a09eae2734be475d721f",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/13_gxx_readonly.log": "9eaf9b7f4b11c2e84e2478c2ceb0e4f48f4ba88565bcfc832b3bce49847dda6d",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/14_author_build.log": "df628a168ea90f7206974da39e717ea12247414c9c3a7984d1157cb4abfeb03d",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/15_private_import_only.log": "bd8ee0c6f9406295d4d8eb3051c0e79322218e98220f03a285b12d3f9af2b39d",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/ATTEMPT_STARTED.json": "fa35cabf55a418ff1332c6ef27628a337851934b293c03bafa4edd27e43b8342",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/BUILD_CONTRACT.md": "ce775249b1b4edb495d573d30221cfe364b7409d2cdc240eaae63bdd91706488",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/EXTERNAL_RUN.json": "2d12eb02178f46347e72d2662635cdba8cf4ad0b00587a12949510f963feb877",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/EXTERNAL_RUN.log": "12e511dd06dd984ee0a6afaab37eda5c2160186e1d3348871b23d4571756edeb",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/FULL_STAGE.log": "2beeecfe3c2cd45a74b082fdc96573bc7641e3e1a65d13cf1f98a18982642527",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/IMPORT_RESULT.json": "79515da3aeca2a55c748e9eb3d80be0ce48025fa665ee4bf3e2941d0bf40616b",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/OFFICIAL_SOURCE_EVIDENCE.json": "10e5f6528a05bd599e50642c0e1a3f76ee396dace3261379b6067d3c1e90a8c6",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/OLD_ARTIFACTS_AFTER.json": "61a393957ebb0f001db6141cb56b49e949ef4822f1a6e7d003a7c34acbbcb75e",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/OLD_ARTIFACTS_BEFORE.json": "61a393957ebb0f001db6141cb56b49e949ef4822f1a6e7d003a7c34acbbcb75e",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/STAGE_RESULTS.json": "df42250b638bb09014804fb810e553d5063154d5c685feb8b5de4f974f34ca54",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/TOOL_SESSION.json": "1d5040c1e20acfd132e6bc4c595eeccbd37b568ec29d42e48869aa2ded34df63",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/TRACKED_AFTER.json": "3b011a303b085172a416b8b7c2085ded2462455ed8f47386d64524a5de0c3205",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/TRACKED_BEFORE.json": "3b011a303b085172a416b8b7c2085ded2462455ed8f47386d64524a5de0c3205",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/WATCHDOG.json": "7eeca0fd6d5da1e19f796fb16a8f49044d085d79c25712225bd1f40f0b652ab1",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/finalize_identity.py": "fa9c6861be311de362a42fe7744aaa432f72667137e215892377f110fcdc95b2",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/import_smoke.py": "1d23d0cc8024dca0316e6d1d907070cc686c0b8f42b51b013c8ba5ad12120833",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/run_private_build.py": "4e50956a6ed2af5b4a077973ae2a21d9b2767657657530fc919d1a35908cbe74",
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/pup_fisher_kernel_witness.py": "5e0694ff2f738177f7d66e6f187042a401993549e0b0b4fdc4871a14023771c7",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/KERNEL_CONTRACT.md": "b7563ff129d970d334bf05c5411b404afe5cdb2d38910346535a7a5c4dbd9495",
+    "/mnt/d/Documents/my 3dgs/.aris/compute/pup-private-extension.md": "049d0f566b1a441401c915544820351d1b389683acc93a14c91a7c02dd41f0af",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-v1/TRACKED_BEFORE.json": "c6f09bf58f3d4521cfbcff53670fb0cdf9eb441bcc464f3186a40f7ed623d10b",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so": "6fb6d2d0539cfc28a0ca150a0fd5ff02a1402ef0a92f97ce05f5e72b46255b3c",
+    "/home/administrator/projects/gaussian-splatting/output/truck_30000_r1/point_cloud/iteration_30000/point_cloud.ply": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+    "/home/administrator/projects/gaussian-splatting/scene/__init__.py": "895d042f4dd2c6ee521dd985aea5c49d9c6f5c7379f76c4d537d8dc5468f18bf",
+    "/home/administrator/projects/gaussian-splatting/scene/gaussian_model.py": "546ba41528a879af4d83bd280a3ef3cbcca9a5e9132204185aaa8f8ee9ffa310",
+    "/home/administrator/projects/gaussian-splatting/scene/cameras.py": "7344b9a4c95e3649becab1b9e30eb0b351a15a61370f64352dcb231aed916128",
+    "/home/administrator/projects/gaussian-splatting/scene/dataset_readers.py": "b06f01648fee893c4785ed38eeb934f91b79817b9dcbb694291c9162b0b6ba94",
+    "/home/administrator/projects/gaussian-splatting/gaussian_renderer/__init__.py": "a25cf5fdb22cd8757fb2a1e37b75352042d65b16138a9fa6243f8616ca1369b8",
+    "/home/administrator/projects/gaussian-splatting/utils/graphics_utils.py": "d6e75de8161e98b72c2691e8a944a842e1b6625d2306035d079c868ac632edfc",
+    "/home/administrator/projects/gaussian-splatting/utils/camera_utils.py": "7644d89893f2481a7a9be592227bf11f3e6e5c469c9ce92c3cb25f9ff920c458",
+    "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/__init__.py": "1d4fc43bb67c4552193d340e2d6894ad7ec3c0d04a620fd7655c89ccf855df5b",
+    "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/_C.cpython-310-x86_64-linux-gnu.so": "ca99d74bf9d880585b64f75444339bf739276883c8c0f4a85b926fb6e15c9219"
+  },
+  "output_hashes": {
+    "ACTUAL_FISHER.npy": {
+      "bytes": 416,
+      "sha256": "a2af084bba451181c7dff7ca96c13c22cc249727d5f5f98ea6f42cd0f426f401"
+    },
+    "CAMERA_AFTER.npz": {
+      "bytes": 1292,
+      "sha256": "1be18511fd5b7fbd445c0b92850270d506bfae9df032c9aa9a8b735aebc090de"
+    },
+    "CAMERA_BEFORE.npz": {
+      "bytes": 1292,
+      "sha256": "1be18511fd5b7fbd445c0b92850270d506bfae9df032c9aa9a8b735aebc090de"
+    },
+    "CONFIG.json": {
+      "bytes": 5626,
+      "sha256": "fe97ab0732c52d44c113ef953ee508e777cfada701df9407f53f95ac17a90d39"
+    },
+    "EXPECTED_FISHER.npy": {
+      "bytes": 704,
+      "sha256": "85aecd344a65403800df5f6674d67c098909aafb94be00c49f99fc893788d0ed"
+    },
+    "FD_J.npy": {
+      "bytes": 4736,
+      "sha256": "639863faa1f514604a787fb356bbeb407f1087e9a5cb456c593c5cdd3b8145ce"
+    },
+    "FINITE_MASKS.npz": {
+      "bytes": 3158,
+      "sha256": "87402736075bab59f05d9af08fcfc7e98b63855cfdff19f62e1d47141dff41ce"
+    },
+    "FIXED_BUILD_IDENTITY_USED.json": {
+      "bytes": 16271,
+      "sha256": "5630aad4281ff1242674910393a085583f0e7f4a62d517e2bf041ad1c3bbe092"
+    },
+    "OFFICIAL_FISHER_RENDERER.py": {
+      "bytes": 3767,
+      "sha256": "47d703a97a33abc11dbae9002e955d4d9c6ed5fff2a2a5f07c0dbc07a2e73f02"
+    },
+    "OFFICIAL_POOL_HELPER.py": {
+      "bytes": 6881,
+      "sha256": "d9a65b31a0739f6b13251697d543914704b34abe9c8ebafa50576a1dbcad262d"
+    },
+    "OFFICIAL_PRIVATE_WRAPPER.py": {
+      "bytes": 7431,
+      "sha256": "1d4fc43bb67c4552193d340e2d6894ad7ec3c0d04a620fd7655c89ccf855df5b"
+    },
+    "PARAMETERS_AFTER.npz": {
+      "bytes": 1636,
+      "sha256": "badaa1049d5dbefe539baa9ad11c6b3c64a389483c9dada8081ede36ea40f5d8"
+    },
+    "PARAMETERS_BEFORE.npz": {
+      "bytes": 1636,
+      "sha256": "badaa1049d5dbefe539baa9ad11c6b3c64a389483c9dada8081ede36ea40f5d8"
+    },
+    "TRACKED_AFTER.json": {
+      "bytes": 1021545,
+      "sha256": "3b011a303b085172a416b8b7c2085ded2462455ed8f47386d64524a5de0c3205"
+    },
+    "TRACKED_BEFORE.json": {
+      "bytes": 1021545,
+      "sha256": "3b011a303b085172a416b8b7c2085ded2462455ed8f47386d64524a5de0c3205"
+    },
+    "WRAPPER_SOURCE.py": {
+      "bytes": 33626,
+      "sha256": "5e0694ff2f738177f7d66e6f187042a401993549e0b0b4fdc4871a14023771c7"
+    },
+    "raw/base.npy": {
+      "bytes": 320,
+      "sha256": "d6a02a5c16709dbc2966c5537d7b3d50474cac73881854d18e49174a004deb9b"
+    },
+    "raw/g0_raw_log_sx_minus.npy": {
+      "bytes": 320,
+      "sha256": "2c7ece3d37c7055ed36a523683471c0d461d9a4202b070a480c0dbb2fb08404f"
+    },
+    "raw/g0_raw_log_sx_plus.npy": {
+      "bytes": 320,
+      "sha256": "faaacea727c2398b8f5a8e2c5105de013c0115f104d7d849c3b9ffc5965227a7"
+    },
+    "raw/g0_raw_log_sy_minus.npy": {
+      "bytes": 320,
+      "sha256": "4dd08991390eadeca491e7fe6ab64dc579ace63079cf565178d86c32a2bfdebb"
+    },
+    "raw/g0_raw_log_sy_plus.npy": {
+      "bytes": 320,
+      "sha256": "d72a5b11cfd5fcd6beaac756bac0a00b013c5b27ab0008d9a870b06cb47ee574"
+    },
+    "raw/g0_raw_log_sz_minus.npy": {
+      "bytes": 320,
+      "sha256": "d4665d39aeb3f3383fa7624795678ec2c6144d607b073cd7ca2a5ef45f49bbd7"
+    },
+    "raw/g0_raw_log_sz_plus.npy": {
+      "bytes": 320,
+      "sha256": "bb03195711252bbe5ae01dbdc99652858dfbb2a39d45e46a1b4fb05db6ea6cc0"
+    },
+    "raw/g0_x_minus.npy": {
+      "bytes": 320,
+      "sha256": "13fbd1f5fe6bf7a0504fda84f95dcbd99273a77e11f6cb6c9751598b664656ce"
+    },
+    "raw/g0_x_plus.npy": {
+      "bytes": 320,
+      "sha256": "f25e8c8ec754698a3291613e11a12f736979bec1d661105e669c7079e5d1f956"
+    },
+    "raw/g0_y_minus.npy": {
+      "bytes": 320,
+      "sha256": "867344c3605a6ba1313023a92efd12e5d25bfde901e4174e7188d10da7e4195c"
+    },
+    "raw/g0_y_plus.npy": {
+      "bytes": 320,
+      "sha256": "e3f5dcf5de7972be5be2f411f99891eb12ae528979d9d2e30da11d92f977f56a"
+    },
+    "raw/g0_z_minus.npy": {
+      "bytes": 320,
+      "sha256": "725e0a5bc5f134a03a815ea8048ee316e03c01de4e6e497c273f571562d2a4e2"
+    },
+    "raw/g0_z_plus.npy": {
+      "bytes": 320,
+      "sha256": "70fb38a063b2ce2024246118563a29c9de76753e2e57397dba3af2d1fa187968"
+    },
+    "raw/g1_raw_log_sx_minus.npy": {
+      "bytes": 320,
+      "sha256": "930278083e0e64f020424ef853d7c6cd95ef1946f2f8f8f94983336a49e6bd36"
+    },
+    "raw/g1_raw_log_sx_plus.npy": {
+      "bytes": 320,
+      "sha256": "a98ec1c837739c9a590db3664192fdfd68743912ad41d9018c090c13c8808f32"
+    },
+    "raw/g1_raw_log_sy_minus.npy": {
+      "bytes": 320,
+      "sha256": "040db1613888b5895c1bad800e8c4e52991c9a41bf3f630d9fbb4e22b22d868a"
+    },
+    "raw/g1_raw_log_sy_plus.npy": {
+      "bytes": 320,
+      "sha256": "83a03307b807407db9eea3e9ef88d9cdd3be22fd04d050e52edc48e1ac1d7595"
+    },
+    "raw/g1_raw_log_sz_minus.npy": {
+      "bytes": 320,
+      "sha256": "209ad48d230f772351b20afde5e1706fa8e9bb62b4db232fcb86d2537eae57a9"
+    },
+    "raw/g1_raw_log_sz_plus.npy": {
+      "bytes": 320,
+      "sha256": "2c9569340916bb90f14b21517fd8787c6d3cef27fbce87342e925b914e6c42f6"
+    },
+    "raw/g1_x_minus.npy": {
+      "bytes": 320,
+      "sha256": "a76a99a634a126601ad4ee99afaca1ac2ab502a1e28e6b122bfe50c9ee1e46df"
+    },
+    "raw/g1_x_plus.npy": {
+      "bytes": 320,
+      "sha256": "5ea93a5e3c575d118f194b3f8cce48302638fe3248d40966c537f2b92e13ba5f"
+    },
+    "raw/g1_y_minus.npy": {
+      "bytes": 320,
+      "sha256": "1a1c89ba9cd8cc0d23d39eea25b0227b09d0b5b88186e3f5566889075f53bbd5"
+    },
+    "raw/g1_y_plus.npy": {
+      "bytes": 320,
+      "sha256": "b6aae8671622e810c48612fcbf16463d5d7105747f1031eefd801e464bf6aefe"
+    },
+    "raw/g1_z_minus.npy": {
+      "bytes": 320,
+      "sha256": "916ac3ec8c08c75c1f5a4b9b7ce9102e8526ca7b36e1051842326443ccd203f3"
+    },
+    "raw/g1_z_plus.npy": {
+      "bytes": 320,
+      "sha256": "b8c7b4d58c2ee2d98f7ea2bfa824fb51a3138f8af87acaa5213b347e0f2b24aa"
+    }
+  }
+}

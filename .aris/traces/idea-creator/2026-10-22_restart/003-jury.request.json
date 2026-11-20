@@ -1,0 +1,473 @@
+{
+  "call_number": 3,
+  "purpose": "fresh-full-pool-novelty-and-priority-jury",
+  "tool": "collaboration.spawn_agent+send_message+followup_task",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "agent_id": "/root/restart_jury",
+  "files_referenced": [
+    "idea-stage/restart-20261022/BRIEF.md",
+    "idea-stage/restart-20261022/CANDIDATES.json"
+  ],
+  "initial_prompt": "You are the SINGLE fresh jury for idea-creator and novelty-check, same-family provisional, never accepted. Read BRIEF.md. Candidate generators are still finishing, root will send full mechanically deduplicated pool; do not generate or pre-rank ideas yourself. Independently inspect primary sources, then judge ALL candidates, select <=2 or0 based on explicit delta/problem significance/testability; strongest objections and cheap falsification. Do not rewrite candidates by stacking modules. Read-only, no GPU. Do not final until fullpool supplied.",
+  "full_pool_delivered": {
+    "date": "2026-10-22",
+    "generated_count": 12,
+    "unique_count": 12,
+    "mechanical_dedup": "exact dedup_key only; all feasible candidates passed to jury",
+    "rejected_for_budget": [],
+    "pilots_run": 0,
+    "candidates": [
+      {
+        "dedup_key": "sh_direction_detach",
+        "payload": {
+          "title": "阻断位置经 SH 观察方向改变颜色的梯度",
+          "method_steps": [
+            "保持现有前向渲染，仅在计算 SH 观察方向 normalize(x-camera) 时对位置 x 停止求导；继续更新 SH，并保留位置经投影、协方差和合成产生的梯度。",
+            "从相同早期 checkpoint 比较原梯度与该更新，先固定点集，再检查正常增密下是否仍有收益。"
+          ],
+          "hypothesis": "位置通过改变 SH 观察方向降低颜色误差的路径，可能与恢复投影几何所需的更新冲突；去掉这一条路径可能改善未见视角。",
+          "local_problem_evidence_or_missing": "官方实现明确存在这一梯度路径；尚未核验本地实现是否相同，也没有 Truck/Train 上该路径有害或足够大的证据。",
+          "closest_sources": [
+            {
+              "title": "3DGS 官方 rasterizer backward.cu",
+              "url": "https://github.com/graphdeco-inria/diff-gaussian-rasterization/blob/main/cuda_rasterizer/backward.cu",
+              "overlap": "computeColorFromSH 将观察方向引起的均值梯度累加到位置梯度。",
+              "claimed_delta_to_verify": "仅移除该导数项的优化干预；是否已有等价实现尚待核验。"
+            },
+            {
+              "title": "AmbiSuR, 2026-05",
+              "url": "https://arxiv.org/html/2605.12494v1",
+              "overlap": "讨论 SH 与几何歧义，其 ray-color consistency 对颜色以外的变量停止求导。",
+              "claimed_delta_to_verify": "本项改动原 photometric loss 的位置梯度路径，未增加 ray-color 正则；实际区别及价值待验证。"
+            }
+          ],
+          "minimal_falsification": "先在两个 checkpoint、若干训练视角记录 SH 路径与其余位置梯度的范数和夹角。若该项几乎为零则停止；否则做短程配对续训。正结果要求未见视角收益超过重复运行差异；负结果为持续变差；训练误差改善而测试不变记为空结果。",
+          "strong_simple_controls": [
+            "降低位置学习率，并匹配位置更新范数。",
+            "冻结高阶 SH 或使用较低 SH degree。",
+            "同 checkpoint、视角顺序、点集和实际训练时间。"
+          ],
+          "compute_estimate_and_unknowns": "未执行。诊断预计少于 0.1 GPU-hour，两个场景的短程对照约 0.5–1.5 GPU-hours；RTX5070 实际速度、CUDA 修改成本和显存峰值未知。",
+          "risk": "HIGH：该导数是正确梯度，删除后可能损害拟合；其贡献也可能本来就很小。",
+          "so_what": "辨别常见的外观/几何冲突是否有一个可定位、无需新表示的梯度来源。",
+          "contribution_type": "机制诊断与候选优化方法；不作新颖性判断"
+        }
+      },
+      {
+        "dedup_key": "premultiplied_radiance_coordinates",
+        "payload": {
+          "title": "用预乘透明度的辐射系数优化颜色",
+          "method_steps": [
+            "将每个 Gaussian 的优化变量由 opacity o 与颜色 SH 系数改为 o 与 q=o·SH；将实现中的固定颜色偏置并入 DC 系数，保证初始化前向等价。",
+            "渲染时恢复原颜色与合成规则，优化 q 和 o，在固定点集下测量颜色—透明度耦合和达到同等测试误差的时间。"
+          ],
+          "hypothesis": "独立优化颜色与 opacity 会沿乘积近似不变的方向反复补偿；直接优化预乘辐射可能改善这些方向的条件数。",
+          "local_problem_evidence_or_missing": "尚未测量 Truck/Train 的颜色—opacity 参数相关性，也未确认这种耦合限制实际收敛。",
+          "closest_sources": [
+            {
+              "title": "3D Gaussian Splatting",
+              "url": "https://arxiv.org/abs/2308.04079",
+              "overlap": "前向贡献包含颜色与 opacity 的乘积。",
+              "claimed_delta_to_verify": "改变优化坐标而保持表示族与前向模型；预乘颜色本身是已有概念，不能作为创新声明。"
+            },
+            {
+              "title": "ReorgGS, 2026-05",
+              "url": "https://arxiv.org/html/2605.08739v1",
+              "overlap": "分析透明度遮挡及重叠造成的优化退化，并重建参数分布。",
+              "claimed_delta_to_verify": "本项保持中心、拓扑和渲染模型，仅改变外观坐标；需核验其是否只是常规预条件的等价形式。"
+            }
+          ],
+          "minimal_falsification": "先验证完整颜色 clamp、alpha cap 路径下前向一致，再用固定点集短程续训。如果更新尺度匹配后收益消失，则不支持独立机制；如果低 opacity 导致数值不稳则停止该实现。",
+          "strong_simple_controls": [
+            "原坐标的颜色和 opacity 学习率小网格。",
+            "同等开销的 opacity/DC 小块预条件。",
+            "相同初始化图像、参数数量、损失和时间预算。"
+          ],
+          "compute_estimate_and_unknowns": "未执行。预计 0.5–1.5 GPU-hours 的局部与续训对照；q/o 的稳定处理、optimizer state 转换、实际显存未知，需先标定。",
+          "risk": "HIGH：o 接近零时恢复颜色不稳定；改善可能完全由有效学习率解释。",
+          "so_what": "测试一个显式双线性耦合是否构成实际瓶颈，或是否已被 Adam 基本处理。",
+          "contribution_type": "优化坐标实验与机制诊断；不把重参数化本身认定为创新"
+        }
+      },
+      {
+        "dedup_key": "leave_view_out_appearance_geometry",
+        "payload": {
+          "title": "用未参与颜色拟合的视角更新几何",
+          "method_steps": [
+            "将训练视角分为 A/B 两组，共享几何但保留两套从固定灰色初始化的 SH：分别只用 A 或 B 拟合外观。",
+            "用 A 拟合的外观在 B 上更新几何，反向亦然；最后冻结几何，用所有训练视角拟合一套导出 SH，并计入总成本。"
+          ],
+          "hypothesis": "同一视角同时修正外观和几何容易形成局部补偿；交叉拟合外观后，跨视角残差可能对几何提出更有效的约束。",
+          "local_problem_evidence_or_missing": "未测量本地 checkpoint 是否存在明显的同视角外观补偿；需检查每组视角对各 Gaussian 的可见覆盖。",
+          "closest_sources": [
+            {
+              "title": "AmbiSuR, 2026-05",
+              "url": "https://arxiv.org/html/2605.12494v1",
+              "overlap": "处理光度和 SH 歧义，约束错误的颜色混合。",
+              "claimed_delta_to_verify": "通过外观拟合视角和几何监督视角分离产生约束；不是增加其颜色一致性正则。"
+            },
+            {
+              "title": "OGC 作者仓库",
+              "url": "https://github.com/moholo-founder/ogc-3dgs",
+              "overlap": "按实际观察方向及贡献构造 SH 拟合度量，并进行闭式降阶拟合。",
+              "claimed_delta_to_verify": "本项目标是训练期间的跨视角几何更新，而非 SH 压缩；等价 cross-fitting 或双层方法仍待搜索核验。"
+            }
+          ],
+          "minimal_falsification": "在固定点集、充分共享可见性的两个相邻视角组做短程测试。若交叉残差主要来自不可见区域或 SH 外推，而几何更新不能改善额外验证视角，则停止；只降低训练误差不算支持。",
+          "strong_simple_controls": [
+            "相同两套 SH 与交替更新次数，但外观和几何使用相同视角组。",
+            "普通 geometry/appearance 交替冻结。",
+            "相同总 render/backward 次数与导出 SH 拟合时间。"
+          ],
+          "compute_estimate_and_unknowns": "未执行。预计小规模配对测试 1–2 GPU-hours；两套 SH 及优化器额外内存可能限制 12GB，实际点数与可用显存未知。",
+          "risk": "HIGH：错误可能源于 SH 外推而非几何；分组降低观察覆盖；颜色重拟合可能抵消收益。",
+          "so_what": "检验训练视角上的外观拟合与几何监督共用数据，是否造成可避免的自我补偿。",
+          "contribution_type": "候选训练目标与跨视角诊断；未判定新颖性"
+        }
+      },
+      {
+        "dedup_key": "pixel_phase_marginalization",
+        "payload": {
+          "title": "对像素采样相位求平均的训练目标",
+          "method_steps": [
+            "对目标图像作预先规定的带限亚像素平移，同时一致地平移相机主点，使监督与渲染对应同一采样网格。",
+            "训练时轮换采样相位，优化相位平均的光度误差；测试原图、不同分辨率和连续相机路径。"
+          ],
+          "hypothesis": "固定训练像素网格可能让部分 Gaussian 配置利用采样相位降低误差，却在轻微视点变化时产生不稳定细节；相位平均可能抑制该现象。",
+          "local_problem_evidence_or_missing": "本地尚无采样相位锁定的证据；必须先区分真实视差、排序变化和插值导致的差异。",
+          "closest_sources": [
+            {
+              "title": "Mip-Splatting",
+              "url": "https://arxiv.org/abs/2311.16493",
+              "overlap": "通过 3D 平滑及 2D Mip 滤波处理采样频率与 aliasing。",
+              "claimed_delta_to_verify": "本项改变训练损失的采样相位分布；是否只是其滤波目标的低效近似需要验证。"
+            },
+            {
+              "title": "SAD-GS, 2026-04",
+              "url": "https://arxiv.org/html/2604.28016v1",
+              "overlap": "使用局部频率分析指导增密，并在 footprint 内随机采样。",
+              "claimed_delta_to_verify": "本项不改变增密评分，直接训练相位平均的成像误差；随机采样与已有抗锯齿训练的重叠尚未穷尽核验。"
+            }
+          ],
+          "minimal_falsification": "先以冻结 checkpoint 测量多个相位下的误差变化，再短程训练。若简单目标预滤波或 Mip-Splatting 已解释全部改进，或仅因平滑使画面更模糊，则不支持独立机制。",
+          "strong_simple_controls": [
+            "Mip-Splatting。",
+            "相同目标低通程度但不随机平移。",
+            "相同 render 数量的固定相位训练与 supersampling。",
+            "同时报告原分辨率细节、跨尺度误差和时间。"
+          ],
+          "compute_estimate_and_unknowns": "未执行。诊断约 0.1 GPU-hour，短程对照约 0.5–1.5 GPU-hours；目标重采样缓存和多相位评估成本需实测。",
+          "risk": "HIGH：原图已经经过像素积分和 ISP，平移插值不能产生真实的新亚像素观测；收益可能仅来自模糊。",
+          "so_what": "检验静态重建的部分不稳定细节是否来自训练网格依赖，而非点数不足。",
+          "contribution_type": "采样机制诊断与候选损失；不宣称随机平移是新方法"
+        }
+      },
+      {
+        "dedup_key": "pooled_image_psf",
+        "payload": {
+          "title": "让整幅图像共享的模糊核承担采集模糊",
+          "method_steps": [
+            "每个训练图像只增加一个小型、归一化的各向异性模糊核，对完整合成后的渲染图像卷积，再计算光度损失。",
+            "联合优化 Gaussian 与模糊核，固定一个经核验的清晰参考图像为单位核；测试时输出卷积前的场景渲染。"
+          ],
+          "hypothesis": "轻微采集模糊若由每个 Gaussian 的协方差承担，会把相机成像误差写入三维形状；共享图像核可能减少这种补偿。",
+          "local_problem_evidence_or_missing": "未确认 Truck/Train 是否有足够明显的视角间模糊差异，也未确定清晰参考图像。",
+          "closest_sources": [
+            {
+              "title": "CoMoGaussian",
+              "url": "https://arxiv.org/abs/2503.05332",
+              "overlap": "联合建模曝光内相机运动和 Gaussian 场景，解决模糊输入重建。",
+              "claimed_delta_to_verify": "仅用每图共享的低维图像核近似轻微模糊；这可能只是已有模型的简化情形，需评审其独立价值。"
+            },
+            {
+              "title": "MotionGS-SLAM, 2026-08",
+              "url": "https://arxiv.org/abs/2608.15024",
+              "overlap": "将模糊形成过程加入 Gaussian 渲染及优化。",
+              "claimed_delta_to_verify": "本项只处理已有静态 RGB 图像，无 event 数据或轨迹模型；不声称首次显式建模模糊。"
+            }
+          ],
+          "minimal_falsification": "先从已有清晰图像构造已知微弱模糊，比较能否恢复核并保留未模糊验证图像质量。若已知核测试失败则停止；随后只有发现真实数据模糊证据才测试 Truck/Train 原图。",
+          "strong_simple_controls": [
+            "固定已知核作为 oracle。",
+            "预先反卷积后训练。",
+            "统一目标低通或降低图像分辨率。",
+            "同预算的现有模糊建模方法简化实现。"
+          ],
+          "compute_estimate_and_unknowns": "未执行。小规模合成干预和续训预计 1–2 GPU-hours；卷积成本、核尺寸、清晰参考是否存在未知。",
+          "risk": "HIGH：空间不变核无法描述深度相关运动模糊；场景锐度与核存在歧义，可能过度锐化。",
+          "so_what": "判断普通静态重建中的部分形状膨胀是否实际源自采集模糊。",
+          "contribution_type": "简化成像模型实验与归因诊断；无新颖性结论"
+        }
+      },
+      {
+        "dedup_key": "linear_compositing_capacity_audit",
+        "payload": {
+          "title": "检验非线性颜色合成是否消耗额外几何容量",
+          "method_steps": [
+            "构造严格配对的渲染方式：一组直接合成编码颜色，另一组在线性辐射空间合成后使用固定 sRGB 编码；两组均使用相同显示域损失。",
+            "从已知成像过程的小型合成干预开始，再以相同 Gaussian 预算比较 Truck/Train，记录测试误差、边界半透明层和增加点数带来的收益。"
+          ],
+          "hypothesis": "颜色编码与 alpha 合成的顺序误差可能被更多半透明 Gaussian 补偿，形成看似需要增密的残差。",
+          "local_problem_evidence_or_missing": "本地尚未证明该误差占有实质比例；Truck/Train 的真实 CRF、ISP 与颜色空间元数据未知，不能假定固定 sRGB 就是真实成像模型。",
+          "closest_sources": [
+            {
+              "title": "PPISP, CVPR2026",
+              "url": "https://research.nvidia.com/labs/sil/projects/ppisp/",
+              "overlap": "显式建模曝光、暗角、颜色校正及非线性相机响应，并讨论光度变化被写入几何。",
+              "claimed_delta_to_verify": "这里拟研究固定编码下合成顺序对容量需求的因果影响，不提出新的 ISP 校准模块；该具体归因是否已有系统分析待核验。"
+            },
+            {
+              "title": "Geometry Gaussians, 2026-06",
+              "url": "https://arxiv.org/html/2606.05124v1",
+              "overlap": "指出外观与几何表示的冲突，并采用独立几何 opacity。",
+              "claimed_delta_to_verify": "检验其中一类冲突能否由颜色合成域解释，不增加几何 opacity；不能用本实验替代其完整表示分析。"
+            }
+          ],
+          "minimal_falsification": "先在已知线性成像且边界有混合像素的场景上做固定容量实验。若效果只来自损失重加权，或在真实数据上消失，则限制结论；如果不改变所需点数和透明层，则不支持容量假说。",
+          "strong_simple_controls": [
+            "将两种渲染都放在相同显示域计算损失。",
+            "单独比较损失域变化，排除亮暗像素权重变化。",
+            "相同点数、相同时间及颜色优化收敛程度。",
+            "PPISP 或简单曝光校正控制。"
+          ],
+          "compute_estimate_and_unknowns": "未执行。配对小型干预与短程续训预计 1–2 GPU-hours；完整容量曲线超过该初筛预算，真实相机响应未知。",
+          "risk": "HIGH：固定 sRGB 不一定匹配数据；已有 HDR/ISP 工作可能已覆盖核心观察。",
+          "so_what": "若成立，可解释为何增加几何容量会改善本应由成像模型承担的误差；若不成立，则排除一个简单的残差来源。",
+          "contribution_type": "因果归因与容量诊断；明确不把线性颜色合成本身当创新"
+        }
+      },
+      {
+        "dedup_key": "fixed_view_cross_transfer",
+        "payload": {
+          "title": "按跨真实视角收益选择下一张训练图",
+          "method_steps": [
+            "把已有训练相机分成空间方向块；周期性计算少量候选图像梯度与其他块参考梯度，用实际优化器预条件后的梯度内积预测跨块损失下降。",
+            "按预测跨块收益除以完整评分及训练耗时，安排后续训练视图；全部图像来自已有训练集，最终测试图不参与评分。"
+          ],
+          "hypothesis": "高训练残差未必意味着对其他视角有帮助；跨块更新收益可能比原图残差更有效地改善较差视角。",
+          "local_problem_evidence_or_missing": "Truck/Train 检查点可用；尚无本地证据证明跨视角收益存在可利用的不均衡。",
+          "closest_sources": [
+            {
+              "title": "LiTe-GS, 2026-09-24",
+              "url": "https://arxiv.org/abs/2609.30393",
+              "overlap": "信息驱动的视角选择，并计入评分查询成本。",
+              "claimed_delta_to_verify": "本项重新调度固定已有图像，以真实跨图像优化收益评分；LiTe-GS研究新增观测选择。"
+            },
+            {
+              "title": "Two-View Accumulation as the Primary Training Lever, 2026-04",
+              "url": "https://arxiv.org/html/2605.00052v1",
+              "overlap": "跨相机组梯度分析；随机双视图累积是强基线。",
+              "claimed_delta_to_verify": "不做梯度手术，测试候选更新的跨块迁移能否提供超出随机累积的收益。"
+            }
+          ],
+          "minimal_falsification": "从早期检查点抽取32次候选更新，检验预测排序与其他真实训练块实际下降是否相关；若不优于原图损失或随机排序，停止调度实验。",
+          "strong_simple_controls": [
+            "均匀随机",
+            "原图损失采样",
+            "几何分层采样",
+            "随机双视图累积",
+            "完整墙钟匹配且计入评分"
+          ],
+          "compute_estimate_and_unknowns": "未来小试估计0.5–2 GPU小时；需先标定梯度评分成本及12GB内存峰值。本轮未运行。",
+          "risk": "评分噪声和额外反传可能吞掉收益；已有重要性采样工作可能覆盖该规则。",
+          "so_what": "判断有限训练预算应分配给自身难拟合的图像，还是能改善其他视角的图像。",
+          "contribution_type": "训练调度方法候选与机制诊断"
+        }
+      },
+      {
+        "dedup_key": "sh_nullspace_path_canonicalization",
+        "payload": {
+          "title": "保持观测颜色的SH路径平滑解",
+          "method_steps": [
+            "冻结几何和透明度，建立每个高斯在真实训练方向上的SH观测约束。",
+            "在保持这些方向颜色误差低于固定容差的可行空间内，求最小相机路径角向变化能量的同阶SH系数；不降低SH阶数。"
+          ],
+          "hypothesis": "有限观测留下的外观自由度，可能产生训练图像难以发现的视角间颜色波动。",
+          "local_problem_evidence_or_missing": "没有本地角向病态或颜色波动证据；如果有效观测矩阵满秩且条件良好，可行变化可能接近零。",
+          "closest_sources": [
+            {
+              "title": "Observation-Gram Compaction作者仓库",
+              "url": "https://github.com/moholo-founder/ogc-3dgs",
+              "overlap": "已实现观测Gram、正则最小二乘降阶、阶数分配和Gram度量量化。",
+              "claimed_delta_to_verify": "仅待核验同阶、观测保持约束下的路径变化最小化；Gram本身及外观压缩均不是增量。"
+            },
+            {
+              "title": "Compact Neural Appearance Models, 2026-09-04",
+              "url": "https://arxiv.org/abs/2609.05255",
+              "overlap": "比较外观表达，并分析表达对几何与优化的影响。",
+              "claimed_delta_to_verify": "本项保持表达及几何，隔离观测不确定自由度对路径表现的作用。"
+            }
+          ],
+          "minimal_falsification": "先在Truck旧30k模型抽样高斯求解，测训练渲染保持程度、真实留出图质量和路径变化；若只有路径变平滑而真实图变差，不支持可靠性假设。",
+          "strong_simple_controls": [
+            "不修改",
+            "SH降阶",
+            "系数L2收缩",
+            "OGC正则最小二乘",
+            "同训练误差容差匹配"
+          ],
+          "compute_estimate_and_unknowns": "未来离线小试估计0.25–1 GPU小时；完整逐高斯观测统计可能昂贵，需分块，尚未标定。",
+          "risk": "与正则化SH拟合高度接近；平滑可能抹去真实反射。插值路径没有GT，不能用平滑指标代替正确性。",
+          "so_what": "判断模型是否能在几乎不改变已观察图像的情况下，显著改变未观察方向的外观。",
+          "contribution_type": "后处理方法候选与可辨识性诊断"
+        }
+      },
+      {
+        "dedup_key": "sorting_margin_quantization",
+        "payload": {
+          "title": "保持深度排序裕量的位置量化",
+          "method_steps": [
+            "在声明相机域的探针视角中，记录投影重叠且深度接近的高斯对及原始深度次序。",
+            "量化位置时检查次序符号，逐步提高违反约束的坐标精度，直到探针约束满足；输出实际码率及独立路径上的排序变化。"
+          ],
+          "hypothesis": "小位置误差可能通过改变合成次序造成不成比例的局部误差；排序约束可能比统一提高精度更节省字节。",
+          "local_problem_evidence_or_missing": "Truck旧30k模型可直接做离线量化；尚未测得量化诱发的排序翻转或闪变。",
+          "closest_sources": [
+            {
+              "title": "PLEDGE, 2026-10-13",
+              "url": "https://arxiv.org/html/2610.17605v1",
+              "overlap": "在声明相机域内把位置、足迹、颜色和透明度容差转换成逐高斯量化界。",
+              "claimed_delta_to_verify": "高斯对排序约束是否超出其逐属性保证；全文等价覆盖仍需查验。"
+            },
+            {
+              "title": "StopThePop",
+              "url": "https://arxiv.org/abs/2402.00525",
+              "overlap": "直接处理深度排序造成的popping和视角不一致。",
+              "claimed_delta_to_verify": "本项控制压缩新增的排序变化；不是替代排序渲染器，也不是旧遮挡交换合并评分。"
+            }
+          ],
+          "minimal_falsification": "对同一模型做8/12/16位位置扫描，统计排序翻转能否解释压缩残差尖峰；若关联弱，或匹配字节的统一量化已消除问题，停止。",
+          "strong_simple_controls": [
+            "统一位置精度",
+            "位置误差自适应量化",
+            "PLEDGE式位置容差",
+            "StopThePop渲染",
+            "匹配实际文件字节"
+          ],
+          "compute_estimate_and_unknowns": "未来离线小试估计0.25–1 GPU小时；重叠对数量、CPU缓存和编码实现成本未知。",
+          "risk": "近零裕量可能要求几乎无损位置；探针约束不构成连续相机域保证；位置只占总存储的一部分。",
+          "so_what": "检查平均图像误差或逐属性误差能否漏掉压缩引入的合成不连续。",
+          "contribution_type": "量化方法候选与误差机制诊断"
+        }
+      },
+      {
+        "dedup_key": "adversarial_pose_compression_witnesses",
+        "payload": {
+          "title": "用最坏相机位姿补充压缩校准视图",
+          "method_steps": [
+            "固定原模型为教师、固定压缩点数或字节预算，在允许相机域中搜索教师与压缩模型渲染差异最大的位姿。",
+            "把该位姿加入校准集并短暂拟合压缩模型，重复少数轮；最终用独立真实留出照片检查准确性。"
+          ],
+          "hypothesis": "训练相机上的压缩校准可能遗漏狭窄视角区间中的严重退化；少数主动找到的失效位姿可能比随机虚拟视图有效。",
+          "local_problem_evidence_or_missing": "已有模型可作教师；尚未证明压缩误差在相机域中高度集中。",
+          "closest_sources": [
+            {
+              "title": "LightGaussian",
+              "url": "https://arxiv.org/abs/2311.17245",
+              "overlap": "已有剪枝恢复、教师蒸馏及伪视图增强。",
+              "claimed_delta_to_verify": "仅待验证依据当前压缩差异寻找最坏位姿的约束生成，不能把虚拟视图蒸馏当新方法。"
+            },
+            {
+              "title": "SplatQ, 2026-10-09",
+              "url": "https://arxiv.org/abs/2610.13503",
+              "overlap": "固定预算下协调区域保留数量与联合删除效应，关注空间质量平衡。",
+              "claimed_delta_to_verify": "本项搜索相机域中的失败约束，不提出新的高斯交互删除评分。"
+            }
+          ],
+          "minimal_falsification": "先对固定压缩模型比较等次数位姿搜索与均匀随机搜索；若找不到显著更坏且可重复的视角，停止后续蒸馏。",
+          "strong_simple_controls": [
+            "训练视图校准",
+            "等数量随机伪视图",
+            "几何均匀伪视图",
+            "相同校准渲染次数及总墙钟",
+            "真实留出照片"
+          ],
+          "compute_estimate_and_unknowns": "未来小试估计0.5–2 GPU小时，含位姿搜索；位姿梯度实现和教师/学生同时驻留12GB是否可行未知。",
+          "risk": "教师在新视角本身可能错误；搜索可能找到域边界或数值异常，不能把教师一致性称为真实重建质量。",
+          "so_what": "测试压缩应只匹配代表性视图，还是需要主动发现少量严重失败视角。",
+          "contribution_type": "压缩校准方法候选"
+        }
+      },
+      {
+        "dedup_key": "surface_evidence_balanced_loss",
+        "payload": {
+          "title": "按表面区域的独立观测数归一化训练损失",
+          "method_steps": [
+            "利用固定检查点建立粗表面区域及观察方向分箱，统计每个区域—方向箱被多少已有训练相机重复观察；冻结该映射。",
+            "按重复观测数的倒数给对应像素损失加权，使重复拍摄同一区域的近似视图不重复增加该区域在目标中的总权重。"
+          ],
+          "hypothesis": "相机采集密度会改变有限容量模型的拟合目标；少数区域可能由于被重复拍摄而占用过多优化预算。",
+          "local_problem_evidence_or_missing": "本地尚无采集密度导致尾部视角退化的因果证据；需先做重复图像干预。",
+          "closest_sources": [
+            {
+              "title": "Two-View Accumulation as the Primary Training Lever, 2026-04",
+              "url": "https://arxiv.org/html/2605.00052v1",
+              "overlap": "分析混合采集条件下的组间训练差异，并发现简单累积基线很强。",
+              "claimed_delta_to_verify": "本项改变区域证据计数对应的目标函数，而不是相机配对规则；一般重要性加权本身不作创新主张。"
+            },
+            {
+              "title": "CoverPruneGS, ICML 2026",
+              "url": "https://proceedings.mlr.press/v306/xiao26u.html",
+              "overlap": "指出相关伪视图和重复合并产生结构冗余，并采用覆盖保持剪枝。",
+              "claimed_delta_to_verify": "本项研究已有真实图像的重复监督权重，保持点数和拓扑以隔离训练目标效应。"
+            }
+          ],
+          "minimal_falsification": "复制一个已有相机簇的图像而不增加视觉信息，在相同渲染预算下检查模型是否偏移；若均匀基线对该干预已稳定，缺少继续依据。",
+          "strong_simple_controls": [
+            "图像去重",
+            "全局相机方向均衡",
+            "随机双视图累积",
+            "相同像素预算",
+            "固定拓扑"
+          ],
+          "compute_estimate_and_unknowns": "未来小试估计0.5–2 GPU小时；映射构建成本和深度错误比例未知，需先小图标定。",
+          "risk": "粗几何会误判共视关系；常规去重可能解释全部收益。本项明确包含经验诊断，不把普通加权包装成新算法。",
+          "so_what": "判断增加重复拍摄是否会在固定预算下伤害其他视角，以及这种效应是否需要表面级处理。",
+          "contribution_type": "因果经验研究与简单目标修正候选"
+        }
+      },
+      {
+        "dedup_key": "support_convex_angular_appearance",
+        "payload": {
+          "title": "把外观插值锚点固定在实际观察方向",
+          "method_steps": [
+            "为每个高斯从真实可见训练方向中选取4个覆盖锚点，固定锚点方向，仅学习RGB值。",
+            "在锚点方向包围的范围内使用非负和为一的插值，范围外使用最近边界延拓；以同字节预算替换SH外观并拟合真实训练图像。"
+          ],
+          "hypothesis": "把角向外观自由度限制在实际观测支持上，可能减少未支持方向的异常颜色，而保留足够的插值能力。",
+          "local_problem_evidence_or_missing": "尚无本地证据说明SH异常外推是Truck/Train主要误差；锚点分布是否退化未知。",
+          "closest_sources": [
+            {
+              "title": "Compact Neural Appearance Models, 2026-09-04，含Spherical Voronoi原方法说明",
+              "url": "https://arxiv.org/html/2609.05255v1",
+              "overlap": "§3.2/A.2已有球面站点RGB的softmax凸插值，可学习方向与温度，并比较优化稳定性。",
+              "claimed_delta_to_verify": "凸插值已存在；唯一待核验差别是固定在实际观测方向、显式支持边界及其外部延拓。"
+            }
+          ],
+          "minimal_falsification": "冻结Truck旧30k几何，只拟合外观；按相机方向留出整块真实图像，比较相同总字节下的误差。若只有平均颜色变平而尾部真实图像无改善，不支持假设。",
+          "strong_simple_controls": [
+            "SH0/SH1/SH3",
+            "同字节Spherical Voronoi",
+            "固定均匀球面锚点",
+            "球面高斯外观",
+            "全部方向和插值元数据计入字节"
+          ],
+          "compute_estimate_and_unknowns": "未来小试估计0.5–2 GPU小时；不规则插值CUDA实现、锚点存储及渲染吞吐未知。",
+          "risk": "与Spherical Voronoi很近；支持边界可能引入导数不连续，固定锚点可能损害高光表达，4锚点只是试验配置而非创新。",
+          "so_what": "判断更自由的角向表达是否值得，还是观测支持限制更有利于有限数据下的真实留出视角。",
+          "contribution_type": "外观表示方法候选与支持范围诊断"
+        }
+      }
+    ]
+  },
+  "novelty_verdict_limits_verbatim": "=== NOVELTY VERDICT LIMITS (these bound how you judge, never how widely you search) ===\nSearch exhaustively; judge calibrated. Two failures waste months equally:\npassing an idea a published paper already contains, and killing a viable idea\nbecause the territory has neighbors.\n1. Proximity is information, not a verdict. Someone working nearby goes in the\n   report; it is not by itself a reason to reject.\n2. ABANDON has exactly one qualification: a specific published paper already\n   contains this result — name that paper. No named paper, no ABANDON.\n3. Crowded-but-deltaed is PROCEED: state the delta in one sentence a reviewer\n   could verify. Thin or contested delta is PROCEED WITH CAUTION — say what\n   would make it carry, not why it should die. CAUTION is not a safe middle:\n   if you cannot name the specific thing that makes the delta thin, the\n   verdict is PROCEED.\n4. Concurrent or competing work is not a veto. That is a race — report it and\n   let the user decide whether to run it.\n5. A direct attack on a central problem is legitimate novelty when nobody has\n   executed it well. \"This area is hot\" does not mean \"this area is taken.\"\n6. This check is an early gate, never the last one — more triage, pilots, or\n   external review still stand between any idea and a paper, whatever order\n   this run uses. A wrongly passed idea dies cheaply at one of them; a wrongly\n   killed idea is never seen again. When torn between two verdicts, choose the\n   more permissive one.\nSay plainly when an idea clears the check. Do not manufacture overlap.",
+  "substantive_followups": [
+    "Current3DGS²TRcode supports densification; avoid obsolete gap.",
+    "OGC authorrepo+latestpreprint; CompactNeuralAppearanceModels covers omittedappearancepositiongradients andconvexRGB.",
+    "All12mechanisms consideredcomplete; twoSHsets for A3 and onlyprobeviewconstraints for B3 clarified.",
+    "Fullpoolprimaryneighbors sentincludingPLEDGE,RoofGS,Mobile4D; globalsequencecertificate not automaticallysavedpositionquantizationnovelty.",
+    "Interrupt afterretrieval; finalizefromcurrentevidence without newsearch; <=2or0. Recordunresolvedsources."
+  ],
+  "qualification": "The main substantive briefing and final candidate set are reproduced; operational interim messages summarized in followups."
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "variant": "original_split",
+    "step": 0,
+    "views": 32,
+    "delta_l1": 0.00043425685726106167,
+    "delta_psnr": -0.08569860458374023,
+    "delta_ssim": -0.002195160835981369,
+    "fraction_views_l1_worse": 0.84375,
+    "delta_l1_view_bootstrap_ci95": [
+      0.00025123839877778665,
+      0.0006350393217871897
+    ],
+    "max_view_delta_l1": 0.0021829716861248016,
+    "min_view_delta_l1": -0.0008186809718608856,
+    "render_change_l1": 0.0033171697323268745
+  },
+  {
+    "variant": "original_split",
+    "step": 1,
+    "views": 32,
+    "delta_l1": 0.00042387720895931125,
+    "delta_psnr": -0.08148664236068726,
+    "delta_ssim": -0.002137264236807823,
+    "fraction_views_l1_worse": 0.84375,
+    "delta_l1_view_bootstrap_ci95": [
+      0.0002403725520707667,
+      0.0006217655260115861
+    ],
+    "max_view_delta_l1": 0.0021069012582302094,
+    "min_view_delta_l1": -0.0007256530225276947,
+    "render_change_l1": 0.004112847935175523
+  },
+  {
+    "variant": "original_split",
+    "step": 5,
+    "views": 32,
+    "delta_l1": 0.0003893273533321917,
+    "delta_psnr": -0.06927371025085449,
+    "delta_ssim": -0.0018539950251579285,
+    "fraction_views_l1_worse": 0.84375,
+    "delta_l1_view_bootstrap_ci95": [
+      0.00023266976786544548,
+      0.0005618364390102215
+    ],
+    "max_view_delta_l1": 0.001710265874862671,
+    "min_view_delta_l1": -0.000487741082906723,
+    "render_change_l1": 0.007570531059172936
+  },
+  {
+    "variant": "original_split",
+    "step": 20,
+    "views": 32,
+    "delta_l1": 0.00024377793306484818,
+    "delta_psnr": -0.04267317056655884,
+    "delta_ssim": -0.0013806503266096115,
+    "fraction_views_l1_worse": 0.8125,
+    "delta_l1_view_bootstrap_ci95": [
+      0.00010552841413300485,
+      0.0003771992473048158
+    ],
+    "max_view_delta_l1": 0.0011366084218025208,
+    "min_view_delta_l1": -0.0010942108929157257,
+    "render_change_l1": 0.014686135400552303
+  },
+  {
+    "variant": "original_split",
+    "step": 100,
+    "views": 32,
+    "delta_l1": 8.118717232719064e-05,
+    "delta_psnr": -0.014386594295501709,
+    "delta_ssim": -0.0004643108695745468,
+    "fraction_views_l1_worse": 0.71875,
+    "delta_l1_view_bootstrap_ci95": [
+      -0.00011856916244141757,
+      0.0002517597589758224
+    ],
+    "max_view_delta_l1": 0.0011540595442056656,
+    "min_view_delta_l1": -0.0017733126878738403,
+    "render_change_l1": 0.017047189234290272
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-22",
+  "candidate_key": "parallax_tested_directional_layer",
+  "budget_gate": false,
+  "eligible_count": 0,
+  "point_count": 2050770,
+  "eligible_original_attribute_fraction": 0.0,
+  "required_original_attribute_fraction": 0.1,
+  "decision": "STOP_CURRENT_DECLARED_LOW_PARALLAX_SELECTION",
+  "training_performed": false,
+  "gpu_used": false,
+  "parameter_updates": 0,
+  "threshold_changed": false,
+  "covariance_checked": false,
+  "rgb_checked": false,
+  "claim_scope": "CurrentTruck30k and declared conservative24-camera center-support radial-intervention rule only"
+}

@@ -1,0 +1,13 @@
+{
+  "call_number": 44,
+  "purpose": "cross-sh-pre-effect-contract-review",
+  "timestamp": "2026-10-22T19:52:03.116Z",
+  "tool": "collaboration.followup_task + send_message",
+  "agent_path": "/root/shared_coord_failure_disposition",
+  "model": "inherited-primary",
+  "prompt": "请独立只读评估#27新固定cache诊断合同，快速找可执行性/科学gate混杂，不跑effects不改文件。现有8cache research/experiments/ray-alpha-omission-v0/run/CACHE_{000,031,062,093,124,155,186,218}.npz，每256rays，原nativeclampedRGB。方案完整模型Morton128块，发现前4图实际sum_i<j wi wj选top64；每块每折>=16有效rays且>=2cam；replay maxRGB2e-5先过；后8bit按SH band×RGB minmax,nearest+7合法stochasticround固定seed。真实SH primitiveclamp + finaldisplayclamp，fullerr vs exactsum||wi deltaRGBi||²独立项，8码全部28pairs，跨折>=10%margin排序反转>=16/64且full发现预测confirmfull排序正确率相对diag+15pp；剔除nearest后7码也过。是否有不应该启动的逻辑缺陷（例如未量化Gs背景如何保持、只量化block vs全模型、nearzero pair相对margin/ties、block跨折物理支持、SH native/Pythonparity怎样独立验）？区分必须在effects前固定细节与正常实现选择。不改threshold、不额外新idea，不将现存SH失败视为passed。反馈精确必要修正。",
+  "followup_messages": [
+    "收到必要修正，已通知实现agent。当前先只跑独立stage1 replay+原coeffnativeSHcolorparity+Morton/supportcapacity，科学quantizationeffects不开始；stage2你提背景/C0/clamp修正锁前不执行。请完成review，细化stage1有效rays=该block至少2个nativeaccepted positivew（Sg>0）是否合理；容量每折16rays/2cams且所有64满足。无实际effect数据前固定ties/numericalnoise规则可等stage1通过后再锁stage2，否则不浪费stage2。"
+  ],
+  "prompt_provenance": "Exact readable calls this root turn, manually serialized; encrypted logs not decrypted"
+}

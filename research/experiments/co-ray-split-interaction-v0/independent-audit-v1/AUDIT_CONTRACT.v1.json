@@ -1,0 +1,221 @@
+{
+  "schema": "co-ray-split-interaction-v0/independent-audit-contract-v1",
+  "frozen_by_root": true,
+  "reviewed_full_code": true,
+  "reviewed_code_sha256": {
+    "audit.py": "47e86e2219b79c1273c9b05941e9043aef706371c995036dce082cc8313e4d07",
+    "run-audit.py": "bfdf7b3e71411c772f8f3482d324f07520e1757dc93cb7ddaeb16c78739e3a26",
+    "AUDIT_CONTRACT.template.json": "88ce4f0f3c53ac4c66b8e09c478addaf2421b72caeddd0edc802eb050960668c",
+    "PREPARATION.md": "5f83b8d4ac82a1376e7f24530967af2641a9cd54c69c6b38207173b0e83cfb71"
+  },
+  "training_authorized": false,
+  "limits": {
+    "wall_seconds": 120,
+    "tree_RSS_bytes": 8589934592,
+    "cpu_threads": 1,
+    "cumulative_phase_seconds": 600
+  },
+  "tolerances": {
+    "child_xyz": {
+      "atol": 2e-05,
+      "rtol": 2e-06
+    },
+    "activated_scaling": {
+      "atol": 1e-07,
+      "rtol": 2e-06
+    },
+    "child_raw_opacity": {
+      "atol": 2e-06,
+      "rtol": 2e-06
+    },
+    "child_activated_opacity": {
+      "atol": 1e-07,
+      "rtol": 2e-06
+    },
+    "support_graph": {
+      "atol": 1e-12,
+      "rtol": 1e-12
+    }
+  },
+  "root_protocol": {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/ROOT_PROTOCOL.md",
+    "sha256": "6843f9c6b5c11269e21edb58a35896c1a7c4cc7cb04d7d4f2dbcb0e908d64a46"
+  },
+  "root_input_pins": {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/ROOT_INPUT_PINS.json",
+    "sha256": "7ff5ebbe6ba914655ae602226db3176491a01b776328af77c19dedaf7f380e85"
+  },
+  "full50_trace070_final": {
+    "path": "/mnt/d/Documents/my 3dgs/.aris/traces/idea-creator/2026-10-23_continue/070-full50-optimization-inverse-jury.response.md",
+    "sha256": "49151bc27b6f48d3cc8b7676510b2f9788ecb2efd72b610094b08fd22a7e253c"
+  },
+  "event_source_path": "/home/administrator/datasets/tandt_db/tandt/truck",
+  "inputs": {
+    "event": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/split-diagnostic-v0/early3600_seed0/event_state.pth",
+      "sha256": "72f3a02b3bc126bf69a71a573162d97b022304ff4f4c354e54dd19e2ca454ed1"
+    },
+    "selection": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/matched-count-v0/early/las_split/selection.json",
+      "sha256": "c0fc4b67b007cf4331c1880d4928d20e5ed792f6e9a1bbf9b5d8d9eecb0661d6"
+    },
+    "witness": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/matched-count-v0/early/las_split/split_children.pt",
+      "sha256": "8a0580500b050bf82793ccd0ce8bef136654eddef44ebd8e1994f9a0c0468f46"
+    },
+    "cameras": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/CAMERAS.json",
+      "sha256": "1dee02c8e1a7f36309a040c5413fd05676a149256c75ed53a6de756411702b55"
+    },
+    "graph_manifest": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/graph-v1/run-v1/GRAPH_MANIFEST.json",
+      "sha256": "5ec7bbc0ca3f05a882dda8a4c53ee5be2e13fb1575a6cd4917a165eda6465442"
+    },
+    "graph_arms": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/graph-v1/run-v1/ARMS.json",
+      "sha256": "f0e12b40c16b4832a381fef9a3d1329be9a1200a364fce9311d8f442637c25dd"
+    },
+    "graph_samples": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/graph-v1/run-v1/ALPHA_SAMPLES.npz",
+      "sha256": "f4b39bd55aa7ad451a3b922e4a29bc85cbe27642ec0e4ca35afdc6f4baa4c36e"
+    },
+    "graph_weights": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/graph-v1/run-v1/W_RAW.npz",
+      "sha256": "21c87eeca121a9347d44818e28a9d93003cc71582027fa79d6fac8c00e4532e5"
+    },
+    "graph_grid": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/graph-v1/run-v1/GRID.npz",
+      "sha256": "783bd1423ae9701d893123697c39a7fd739cd560774564cf21d3cdf5925220e4"
+    },
+    "birth_manifest": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-effects-v1/BIRTH_MANIFEST.json",
+      "sha256": "41c01a12bca2f4210cd9fc32a4f7c026333a90f1daef939e6fefedb79e02ed39"
+    },
+    "preflight_manifest": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-effects-v1/PREFLIGHT_MANIFEST.json",
+      "sha256": "653c1de777738750d4c697f9dda1b89063495fa896143d9b1bd7bf36ed8d50e3"
+    },
+    "descriptive_metrics": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/graph-v1/metrics-v1/METRICS.json",
+      "sha256": "d3848c847d5f339674cc32ca3d02aea5d15a36a955150523edcf25abbc8721d8"
+    },
+    "projection_config": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-projection-v1/CONFIG.json",
+      "sha256": "c67d4603fd17bc004a54cd9033ed2ebe49bb00305b0621a4a99276aa5a18fb74"
+    },
+    "projection_result": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-projection-v1/RESULTS.json",
+      "sha256": "79a999259b5f8f303e91a8c05d56eb71e501ab26c8b5aeeb345921f1f435bda2"
+    },
+    "projection_manifest": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-projection-v1/RAW_MANIFEST.json",
+      "sha256": "481552789707a34d09e6ecd300b3ee8f3f9e7a236831cd0da5edc93af59c2496"
+    },
+    "projection_supervisor": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-projection-v1/SUPERVISOR.json",
+      "sha256": "4fa6106dcbcdd50d91f7250e22256e89e5d5dc83a2eed73967180a90cb6d8398"
+    },
+    "effects_config": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-effects-v1/CONFIG.json",
+      "sha256": "2c64c9e6b634aa1446912c98234285ffc7c0ff85734a6b46ee4bb71612558265"
+    },
+    "effects_result": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-effects-v1/RESULTS.json",
+      "sha256": "8dd01bef56111b6521240b02f20a01628c207ff132a46502848de385a0bd771b"
+    },
+    "effects_manifest": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-effects-v1/RAW_MANIFEST.json",
+      "sha256": "3b6a61668800906de6a49ec8c0876773237f0f4a8e5d04d43830d7a7a695be9d"
+    },
+    "effects_supervisor": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-effects-v1/SUPERVISOR.json",
+      "sha256": "2b1812dead6d66473264f5990cdc6a3b76699698f2821cf749b8e2c633a7f112"
+    }
+  },
+  "source_JPEG": {
+    "000019.jpg": {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000019.jpg",
+      "sha256": "4682436344a8bdb2bc88acc598503102f8084ff0ef671e1ded10536d00223c08"
+    },
+    "000054.jpg": {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000054.jpg",
+      "sha256": "70c38163d5584005d318453be6235315c553d2bcc5eea7e984226685adc1851a"
+    },
+    "000090.jpg": {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000090.jpg",
+      "sha256": "d2a938b446add830ea89177857a51859818e23a8db0c5048a5ff2e419dba4c7c"
+    },
+    "000125.jpg": {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000125.jpg",
+      "sha256": "8d9c24be0b2e152269d088b41016791ac4106e2674c8896068d96131228c6628"
+    },
+    "000160.jpg": {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000160.jpg",
+      "sha256": "10e30ce6a6b702485114513e27c692f3d7739f77bdf703d1ab8fee08ab05757c"
+    },
+    "000196.jpg": {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000196.jpg",
+      "sha256": "85a249635a87757d5781e36388899ed6912d45bb64189259a28052b5b901d554"
+    },
+    "000231.jpg": {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000231.jpg",
+      "sha256": "919f2e8b793d0426e36de130eaa332a39200821591833ca34f004d26434fd72c"
+    },
+    "000250.jpg": {
+      "path": "/home/administrator/datasets/tandt_db/tandt/truck/images/000250.jpg",
+      "sha256": "cc2765e65d5cb1859e05981f773f203da20a15dd5acd1126a2e3ee393df3f6e0"
+    }
+  },
+  "external_host_record_keys": {
+    "phase": null,
+    "complete": null,
+    "exit_code": "exit_code",
+    "wall_seconds": "true_external_wall_seconds",
+    "peak_tree_RSS_bytes": null
+  },
+  "external_host_records": [
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-projection-v1/EXTERNAL_ROOT.json",
+      "sha256": "0be7fa86a07ed53924e4235e2969e57797c144b4860d28a52c91c36f28848ae3",
+      "phase": "projection",
+      "binding": {
+        "contract_sha256": {
+          "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/CONTRACT.projection.v1.json",
+          "sha256": "f75a65b066a065f647adb5e1a66a0e63fde21d0b489c9944c5d36919a82d6b71"
+        },
+        "arms_sha256": {
+          "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/ARMS.projection.v1.json",
+          "sha256": "844ef4b4a5881a44053b692936dda831be9b807fb848785ab3b4c443082e7317"
+        }
+      }
+    },
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/graph-v1/run-v1/ROOT_GRAPH_EXTERNAL.json",
+      "sha256": "8c695e72e5fdbd79ff54a193d58e59a6c4399a50e899efbc5f56a94c495b595c",
+      "phase": "graph"
+    },
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/run-effects-v1/EXTERNAL_ROOT.json",
+      "sha256": "e9562c39200515836dc7da8e78dd3887c6da5a500aa1f42caf71bc7cfc300842",
+      "phase": "effects",
+      "binding": {
+        "contract_sha256": {
+          "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/CONTRACT.effects.v1.json",
+          "sha256": "dec210a7767adbe64e259fb0d62102f1cbdbc084f7ad56b3b50c5b0a0edb91d4"
+        },
+        "arms_sha256": {
+          "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/graph-v1/run-v1/ARMS.json",
+          "sha256": "f0e12b40c16b4832a381fef9a3d1329be9a1200a364fce9311d8f442637c25dd"
+        }
+      }
+    }
+  ],
+  "additional_external_host_records": [
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/co-ray-split-interaction-v0/graph-v1/metrics-v1/ROOT_METRICS_EXTERNAL.json",
+      "sha256": "673dd78b7486f3bfb7677b2577e151bf53b2fa48d99378269a3ef4b3a9146842",
+      "phase": "metrics"
+    }
+  ],
+  "presentation_artifacts": []
+}

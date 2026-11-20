@@ -1,0 +1,69 @@
+{
+  "status": "PREPARATION_STATIC_AND_CPU_CHECK_PASS_NOT_NUMERICAL_CERTIFICATION",
+  "py_compile": "PASS",
+  "runtime": "Python 3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "cpu_synthcheck": {
+    "status": "PASS",
+    "CPU_only": true,
+    "plan_forwards": 26,
+    "FD_forwards": 24,
+    "baseline_forwards": 1,
+    "pool_forwards": 1,
+    "statistical_backwards": 1,
+    "algebra_shape": [
+      48,
+      6
+    ],
+    "scientific_inputs_read": false,
+    "torch_imported": false
+  },
+  "metadata_only_preflight": {
+    "fixed_record_SHA": "5630aad4281ff1242674910393a085583f0e7f4a62d517e2bf041ad1c3bbe092",
+    "bound_artifacts": 33,
+    "tracked_matches_build": true,
+    "old_tracked_identity": true
+  },
+  "scientific_calls": 0,
+  "GPU_calls": 0,
+  "torch_imported": false,
+  "scene_imported": false,
+  "witness_output_absent": true,
+  "numerical_verified": false,
+  "environment_ready": false,
+  "files": {
+    "scripts/experiments/pup_fisher_kernel_witness.py": {
+      "sha256": "5e0694ff2f738177f7d66e6f187042a401993549e0b0b4fdc4871a14023771c7",
+      "bytes": 33626
+    },
+    ".aris/compute/pup-private-extension.md": {
+      "sha256": "049d0f566b1a441401c915544820351d1b389683acc93a14c91a7c02dd41f0af",
+      "bytes": 9026
+    },
+    "research/experiments/pup-frozen-baseline-v0/KERNEL_CONTRACT.md": {
+      "sha256": "b7563ff129d970d334bf05c5411b404afe5cdb2d38910346535a7a5c4dbd9495",
+      "bytes": 8627
+    }
+  },
+  "trace_files": {
+    ".aris/traces/idea-creator/2026-10-23_continue/060-pup-kernel-source-semantics.events.jsonl": {
+      "sha256": "15a7c8e052da99cc718ba1c93425f7faa97ec06bafaef6db3510a1c77218cb04",
+      "bytes": 1022
+    },
+    ".aris/traces/idea-creator/2026-10-23_continue/060-pup-kernel-source-semantics.meta.json": {
+      "sha256": "a275ad624e53a33e16a59b5ccc2fe0df0bcbb26b3dab5132f28d137ddb84eed3",
+      "bytes": 1404
+    },
+    ".aris/traces/idea-creator/2026-10-23_continue/060-pup-kernel-source-semantics.recovery.json": {
+      "sha256": "94bee121e41fcf99e0a21a3333f246ab44475a3cef82535da51714d45df77b62",
+      "bytes": 887
+    },
+    ".aris/traces/idea-creator/2026-10-23_continue/060-pup-kernel-source-semantics.request.json": {
+      "sha256": "678494b8b04f5ec7b1b30eccbd9754caaa3e2e9f0c0510a7475c7fafbc20fca7",
+      "bytes": 1226
+    },
+    ".aris/traces/idea-creator/2026-10-23_continue/060-pup-kernel-source-semantics.response.md": {
+      "sha256": "897859a19eb53bcf75c92d56480852a3d35b822adb1626416dabe4099f75e54a",
+      "bytes": 2783
+    }
+  }
+}

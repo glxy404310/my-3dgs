@@ -1,0 +1,26 @@
+{
+  "tool_valid": false,
+  "tool_status": "AUDIT_TOOL_FAILED",
+  "method_passed": null,
+  "decision": "TOOL_FAILED",
+  "phase": "initializing",
+  "cpu_only": true,
+  "training_performed": false,
+  "optimizer_created": false,
+  "optimizer_updates": 0,
+  "backward_calls": 0,
+  "audit_budget_seconds": 60,
+  "mse_absolute_tolerance": 5e-09,
+  "psnr_absolute_tolerance": 0.0002,
+  "main_state": "B_local",
+  "scope": "Known nearest-neighbor opacity proxy transfer; no novelty claim or independent rendering.",
+  "limitations": [
+    "White-background RGB was not saved: measured alpha cannot be independently reconstructed; only its saved dtype, dimensions, finiteness, range and manifest hash are checked.",
+    "All 219 native conic arrays were not saved: B weights are checked as fixed artifacts and against AREA aggregate/projection support, without independently rerendering native areas.",
+    "Nearest-neighbor optimality and minimum-original-ID exact-tie selection are checked on 64 fixed donors per arm, not on every pair.",
+    "Historical controls reuse their hashed original CSV, not independently rerendered pixels.",
+    "Saved geometry/restoration records are checked against PLY-derived byte hashes; past GPU memory contents cannot be independently observed."
+  ],
+  "tool_failure": "FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/my 3dgs/research/experiments/coverage-controls-v0/run/all219_indices.npy'",
+  "elapsed_seconds": 0.6363046140000037
+}

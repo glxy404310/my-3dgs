@@ -1,0 +1,13 @@
+{
+  "call_number": 35,
+  "purpose": "pixel-phase-primary-overlap",
+  "timestamp": "2026-10-22T18:56:50.513Z",
+  "tool": "followup_task",
+  "model": "inherited-primary",
+  "prompt": "继续只读推进：针对你提出的 #4 原 pixel_phase_marginalization 做定向 primary-source 查新（2025–2026及原Mip-Splatting/SAD-GS）；必须实际浏览官方论文/代码，不能凭记忆。核心要区别：训练目标对像素采样相位求期望/随机主点抖动 vs 既有3D/2D滤波、supersampling、stochastic rasterization/MonteCarlo pixel sampling。若已直接等价实现，指出具体公式/代码位置；如没有覆盖，明确实际剩余增量。给6篇以内最接近primarysources、精确支持、最便宜能推翻独立机制必要性的控制。不要编辑/运行实验、不要把no-match当novelty证明。",
+  "supplementary_messages": [
+    "请优先把Mip-Splatting官方直接实现固定到commit及train.py具体行号/函数，区分CLI默认是否启用（含ray_jitter/resample_gt_image默认值）以及论文正文/补充是否讨论；不能把代码支持选项说成论文正式默认。这项强重合已足够决定不先跑#4独立创新载体，勿耗时做大综述。完成6篇以内即可，root会保存完整trace。"
+  ],
+  "prompt_source": "exact executor invocation text; on-disk argument encrypted",
+  "stored_call_arguments_sha256": "30dce5c6ad8d9be86e7a71e03e8a459ca3675382af00d7775bd9ef8fa2856ad7"
+}

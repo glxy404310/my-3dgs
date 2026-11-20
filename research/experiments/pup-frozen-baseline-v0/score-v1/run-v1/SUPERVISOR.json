@@ -1,0 +1,50 @@
+{
+  "status": "OFFICIAL_FIXED_SCORE_EXPORT_COMPLETE_NO_QUALITY_CLAIM",
+  "hard_wall_seconds": 900,
+  "stages": [
+    {
+      "stage": "A",
+      "command": [
+        "/home/administrator/venvs/3dgs/bin/python",
+        "-B",
+        "-u",
+        "/mnt/d/Documents/my 3dgs/scripts/experiments/run_pup_frozen_score.py",
+        "--internal-stage",
+        "A"
+      ],
+      "PYTHONPATH": "/home/administrator/projects/gaussian-splatting",
+      "started_seconds": 2.065517925999984,
+      "pid": 389,
+      "pgid": 389,
+      "exit_code": 0,
+      "ended_seconds": 15.298565813999971,
+      "remaining_live_group_pids": []
+    },
+    {
+      "stage": "B",
+      "command": [
+        "/home/administrator/venvs/3dgs/bin/python",
+        "-B",
+        "-u",
+        "/mnt/d/Documents/my 3dgs/scripts/experiments/run_pup_frozen_score.py",
+        "--internal-stage",
+        "B"
+      ],
+      "PYTHONPATH": "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10:/home/administrator/projects/pup-frozen-baseline-e971ea48",
+      "started_seconds": 15.385401063000018,
+      "pid": 415,
+      "pgid": 415,
+      "exit_code": 0,
+      "ended_seconds": 75.59486392399998,
+      "remaining_live_group_pids": []
+    }
+  ],
+  "automatic_retries": 0,
+  "supervisor_torch_imported": false,
+  "input_integrity": true,
+  "preflight_complete": true,
+  "wall_seconds": 76.13169334000003,
+  "peak_sampled_combined_host_RSS_bytes": 7707295744,
+  "host_RSS_limit_bytes": 10737418240,
+  "within_900_seconds": true
+}

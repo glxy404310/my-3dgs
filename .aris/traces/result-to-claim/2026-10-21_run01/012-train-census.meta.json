@@ -1,0 +1,19 @@
+{
+  "reviewer": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "claim_supported": "partial",
+  "existence": "yes",
+  "quality_harm": "not_tested",
+  "candidate_efficacy": "not_supported",
+  "integrity_status": "unavailable",
+  "confidence": "high_for_local_statistics",
+  "route": "known-rule frozen controls only; keep candidate FAIL/held",
+  "artifacts": [
+    "research/experiments/train-independent-v0/native/summary.json",
+    "research/experiments/train-independent-v0/CENSUS_SUMMARY.json",
+    "research/experiments/train-independent-v0/SCENE_EXTENT_CHECK.json",
+    "research/experiments/train-independent-v0/FROZEN_EXTENT_MASKS.json"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "started_UTC": "2026-10-22T21:37:07.5354377Z",
+  "finished_UTC": "2026-10-22T21:37:19.2841340Z",
+  "exit_code": 1,
+  "actual_host_wall_seconds": 11.7440519,
+  "hard_limit_seconds": 200,
+  "within_200_seconds": true,
+  "attempts": 1,
+  "shared_main_plus_audit_limit_seconds": 300,
+  "scope": "One native PUP33 evaluation; zero parameter updates"
+}

@@ -1,0 +1,1218 @@
+[
+  {
+    "parent": 1038890,
+    "gradient": 0.007089707534760237,
+    "raw": 7.325761663956598e-10,
+    "projected": 9.549093693507135e-16,
+    "validation_raw": 0.0,
+    "rank": 8,
+    "delta_norm": 0.0006208252743817866,
+    "unexplained_fraction": 1.3884076679460122e-06,
+    "finite_relative_error": 0.27831098437309265,
+    "max_linear_coefficient": 314.849365234375,
+    "neighbors": [
+      1053104,
+      879834,
+      983060,
+      759247
+    ],
+    "seconds": 1.4919341789999976
+  },
+  {
+    "parent": 1053104,
+    "gradient": 0.00706196203827858,
+    "raw": 7.128478363149782e-10,
+    "projected": 9.570389160592292e-16,
+    "validation_raw": 0.0,
+    "rank": 8,
+    "delta_norm": 0.0006040197913534939,
+    "unexplained_fraction": 9.635434707888635e-07,
+    "finite_relative_error": 0.2768394947052002,
+    "max_linear_coefficient": 306.3167724609375,
+    "neighbors": [
+      1038890,
+      879834,
+      759247,
+      983060
+    ],
+    "seconds": 1.3269713669999987
+  },
+  {
+    "parent": 1049987,
+    "gradient": 0.006973177194595337,
+    "raw": -1.264633731068443e-09,
+    "projected": -5.335035746512062e-10,
+    "validation_raw": 0.0,
+    "rank": 11,
+    "delta_norm": 0.001879372401162982,
+    "unexplained_fraction": 0.1346084028482437,
+    "finite_relative_error": 0.2861568331718445,
+    "max_linear_coefficient": 1270.3228759765625,
+    "neighbors": [
+      791830,
+      849314,
+      987414,
+      878531
+    ],
+    "seconds": 1.3214058840000007
+  },
+  {
+    "parent": 1057570,
+    "gradient": 0.006653511431068182,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": 3.212124738638522e-06,
+    "rank": 6,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      1054003,
+      1039789,
+      1043356,
+      1042131
+    ],
+    "seconds": 1.3251455509999914
+  },
+  {
+    "parent": 1056235,
+    "gradient": 0.006489253137260675,
+    "raw": -1.929529425126475e-08,
+    "projected": 1.4815756518220084e-14,
+    "validation_raw": 0.0,
+    "rank": 21,
+    "delta_norm": 0.012014154344797134,
+    "unexplained_fraction": 3.890278094331734e-06,
+    "finite_relative_error": 4.174954414367676,
+    "max_linear_coefficient": 3666.518798828125,
+    "neighbors": [
+      1042021,
+      1024475,
+      948050,
+      795951
+    ],
+    "seconds": 1.3652502560000244
+  },
+  {
+    "parent": 1033749,
+    "gradient": 0.006000451743602753,
+    "raw": -1.895281975805574e-08,
+    "projected": -1.64222358178508e-14,
+    "validation_raw": 0.0,
+    "rank": 12,
+    "delta_norm": 0.016762273386120796,
+    "unexplained_fraction": 1.6748854250181466e-06,
+    "finite_relative_error": 0.8141080737113953,
+    "max_linear_coefficient": 39206.95703125,
+    "neighbors": [
+      1056225,
+      95379,
+      998750,
+      785319
+    ],
+    "seconds": 1.3481371820000163
+  },
+  {
+    "parent": 1042021,
+    "gradient": 0.00568113848567009,
+    "raw": -3.8760667564474716e-08,
+    "projected": -2.0405187684934684e-13,
+    "validation_raw": 0.0,
+    "rank": 21,
+    "delta_norm": 0.018814701586961746,
+    "unexplained_fraction": 4.798788722837344e-06,
+    "finite_relative_error": 2.913278818130493,
+    "max_linear_coefficient": 5817.2841796875,
+    "neighbors": [
+      795951,
+      1056235,
+      880667,
+      948050
+    ],
+    "seconds": 1.3553649129999599
+  },
+  {
+    "parent": 1055566,
+    "gradient": 0.004372217692434788,
+    "raw": -4.870673309120832e-11,
+    "projected": -2.8625537744765388e-15,
+    "validation_raw": 0.0,
+    "rank": 12,
+    "delta_norm": 0.004056010395288467,
+    "unexplained_fraction": 3.3421822536183754e-06,
+    "finite_relative_error": 1.6204191446304321,
+    "max_linear_coefficient": 7857.09716796875,
+    "neighbors": [
+      1036153,
+      950197,
+      987865,
+      1027968
+    ],
+    "seconds": 1.3465894750000302
+  },
+  {
+    "parent": 1052672,
+    "gradient": 0.004274163860827684,
+    "raw": -6.734460544777221e-09,
+    "projected": 2.2735392735118154e-10,
+    "validation_raw": 0.0,
+    "rank": 10,
+    "delta_norm": 0.007750653196126223,
+    "unexplained_fraction": 0.013887600041925907,
+    "finite_relative_error": 1.2971398830413818,
+    "max_linear_coefficient": 6368.52392578125,
+    "neighbors": [
+      888882,
+      1044001,
+      1043235,
+      1005153
+    ],
+    "seconds": 1.3520251780000194
+  },
+  {
+    "parent": 1035565,
+    "gradient": 0.003847461426630616,
+    "raw": -3.5445848478588005e-09,
+    "projected": -2.772376317571241e-15,
+    "validation_raw": 0.0,
+    "rank": 6,
+    "delta_norm": 0.005974032450467348,
+    "unexplained_fraction": 1.9179758510290412e-06,
+    "finite_relative_error": 0.16650260984897614,
+    "max_linear_coefficient": 384.38385009765625,
+    "neighbors": [
+      982547,
+      1050319,
+      989121,
+      1000443
+    ],
+    "seconds": 1.3565833159999556
+  },
+  {
+    "parent": 1003156,
+    "gradient": 0.003820080077275634,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": -8.27299459160713e-07,
+    "rank": 0,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      1005713,
+      1006598,
+      759962,
+      999290
+    ],
+    "seconds": 1.3728131029999986
+  },
+  {
+    "parent": 1035773,
+    "gradient": 0.0037793151568621397,
+    "raw": -8.739244883315678e-09,
+    "projected": -3.3353274162721894e-14,
+    "validation_raw": 0.0,
+    "rank": 9,
+    "delta_norm": 0.003438487881794572,
+    "unexplained_fraction": 3.4055458399961935e-06,
+    "finite_relative_error": 0.15136419236660004,
+    "max_linear_coefficient": 140.36058044433594,
+    "neighbors": [
+      1053055,
+      1033753,
+      728409,
+      1002668
+    ],
+    "seconds": 1.4311700829999836
+  },
+  {
+    "parent": 1053603,
+    "gradient": 0.0033744589891284704,
+    "raw": -9.634716358064566e-10,
+    "projected": -1.5820085519369087e-10,
+    "validation_raw": -5.895326466998085e-06,
+    "rank": 8,
+    "delta_norm": 0.00013762341404799372,
+    "unexplained_fraction": 0.463972806930542,
+    "finite_relative_error": 3.773291826248169,
+    "max_linear_coefficient": 205.05372619628906,
+    "neighbors": [
+      1052823,
+      1038207,
+      1052421,
+      1042161
+    ],
+    "seconds": 1.3804744650000202
+  },
+  {
+    "parent": 1057460,
+    "gradient": 0.0033691783901304007,
+    "raw": 1.664977156146108e-09,
+    "projected": -1.903585102047689e-11,
+    "validation_raw": -1.0021960861195112e-06,
+    "rank": 24,
+    "delta_norm": 0.0018734898185357451,
+    "unexplained_fraction": 0.0021208166144788265,
+    "finite_relative_error": 0.23645943403244019,
+    "max_linear_coefficient": 73.04824829101562,
+    "neighbors": [
+      1039690,
+      1053904,
+      1043246,
+      1038471
+    ],
+    "seconds": 1.3757924569999886
+  },
+  {
+    "parent": 1049779,
+    "gradient": 0.0032313719857484102,
+    "raw": -6.790308315629545e-10,
+    "projected": 1.2198483325884246e-12,
+    "validation_raw": 0.0,
+    "rank": 4,
+    "delta_norm": 0.000880671723280102,
+    "unexplained_fraction": 0.003932803403586149,
+    "finite_relative_error": 0.2594473361968994,
+    "max_linear_coefficient": 8.913186073303223,
+    "neighbors": [
+      982898,
+      982908,
+      983926,
+      829192
+    ],
+    "seconds": 1.3899740670000256
+  },
+  {
+    "parent": 1034860,
+    "gradient": 0.003201085841283202,
+    "raw": -4.828981103877084e-10,
+    "projected": -1.752270292874772e-17,
+    "validation_raw": 0.0,
+    "rank": 6,
+    "delta_norm": 0.0004789407248608768,
+    "unexplained_fraction": 8.037132488425414e-07,
+    "finite_relative_error": 1.0516204833984375,
+    "max_linear_coefficient": 5542.1201171875,
+    "neighbors": [
+      916790,
+      854869,
+      916440,
+      925293
+    ],
+    "seconds": 1.38370825100003
+  },
+  {
+    "parent": 1047963,
+    "gradient": 0.0030908596236258745,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": 0.0,
+    "rank": 12,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      794991,
+      1042011,
+      784847,
+      1047385
+    ],
+    "seconds": 1.3431145010000023
+  },
+  {
+    "parent": 1047967,
+    "gradient": 0.003088610479608178,
+    "raw": -1.0123692995023248e-08,
+    "projected": 3.975703447012258e-12,
+    "validation_raw": 0.0,
+    "rank": 9,
+    "delta_norm": 0.004300132393836975,
+    "unexplained_fraction": 0.008250041864812374,
+    "finite_relative_error": 3.095695972442627,
+    "max_linear_coefficient": 19516.763671875,
+    "neighbors": [
+      1038841,
+      1049572,
+      1003360,
+      1039657
+    ],
+    "seconds": 1.314273663999984
+  },
+  {
+    "parent": 1049074,
+    "gradient": 0.0030723761301487684,
+    "raw": 3.420921323993298e-10,
+    "projected": -3.0747044522424886e-16,
+    "validation_raw": 0.0,
+    "rank": 6,
+    "delta_norm": 0.00034472488914616406,
+    "unexplained_fraction": 4.928957650918164e-07,
+    "finite_relative_error": 0.4821459949016571,
+    "max_linear_coefficient": 218.275146484375,
+    "neighbors": [
+      925293,
+      916440,
+      1042907,
+      1041283
+    ],
+    "seconds": 1.3455419069999834
+  },
+  {
+    "parent": 1034116,
+    "gradient": 0.0029004979878664017,
+    "raw": -7.757638975647296e-09,
+    "projected": 5.437187922119335e-10,
+    "validation_raw": 1.8076092089813756e-07,
+    "rank": 21,
+    "delta_norm": 0.010382347740232944,
+    "unexplained_fraction": 0.06696941703557968,
+    "finite_relative_error": 6.566683292388916,
+    "max_linear_coefficient": 2677.835205078125,
+    "neighbors": [
+      958156,
+      14417,
+      916456,
+      603119
+    ],
+    "seconds": 1.3269946080000068
+  },
+  {
+    "parent": 1004324,
+    "gradient": 0.0028682241681963205,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": -4.141764748055721e-06,
+    "rank": 0,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      654895,
+      169759,
+      624217,
+      945730
+    ],
+    "seconds": 1.3237948430000301
+  },
+  {
+    "parent": 1005435,
+    "gradient": 0.0028451411053538322,
+    "raw": 3.202629828003012e-11,
+    "projected": -3.2705565686241833e-12,
+    "validation_raw": -1.0262158866680693e-05,
+    "rank": 18,
+    "delta_norm": 0.0002092134382110089,
+    "unexplained_fraction": 0.030554553493857384,
+    "finite_relative_error": 0.3297085464000702,
+    "max_linear_coefficient": 32.57860565185547,
+    "neighbors": [
+      1038998,
+      266985,
+      274048,
+      948758
+    ],
+    "seconds": 1.310489184000005
+  },
+  {
+    "parent": 1033753,
+    "gradient": 0.0027622946072369814,
+    "raw": -1.1356980245125214e-08,
+    "projected": -3.448790867688692e-14,
+    "validation_raw": 0.0,
+    "rank": 9,
+    "delta_norm": 0.004633180797100067,
+    "unexplained_fraction": 3.4766160297294846e-06,
+    "finite_relative_error": 0.13671576976776123,
+    "max_linear_coefficient": 934.6546630859375,
+    "neighbors": [
+      720136,
+      1035358,
+      1053055,
+      1035773
+    ],
+    "seconds": 1.3852473640000085
+  },
+  {
+    "parent": 1038998,
+    "gradient": 0.0024812316987663507,
+    "raw": 1.4938478232195962e-09,
+    "projected": 3.733059434490871e-12,
+    "validation_raw": -2.7303724436933408e-06,
+    "rank": 18,
+    "delta_norm": 0.001339869573712349,
+    "unexplained_fraction": 0.0803174078464508,
+    "finite_relative_error": 0.46970710158348083,
+    "max_linear_coefficient": 4538.0185546875,
+    "neighbors": [
+      146499,
+      994848,
+      170464,
+      473072
+    ],
+    "seconds": 1.3608791270000324
+  },
+  {
+    "parent": 1039707,
+    "gradient": 0.002404984785243869,
+    "raw": 1.2913013991422417e-09,
+    "projected": 1.087479766474905e-14,
+    "validation_raw": 0.0,
+    "rank": 9,
+    "delta_norm": 0.02329147420823574,
+    "unexplained_fraction": 1.1166995363964816e-06,
+    "finite_relative_error": 0.3170742392539978,
+    "max_linear_coefficient": 13722.16015625,
+    "neighbors": [
+      1048044,
+      950449,
+      991460,
+      1035794
+    ],
+    "seconds": 1.3387044199999991
+  },
+  {
+    "parent": 1058209,
+    "gradient": 0.002393819158896804,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": 0.0,
+    "rank": 0,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      950475,
+      994689,
+      925187,
+      1005999
+    ],
+    "seconds": 1.3483077960000287
+  },
+  {
+    "parent": 1052315,
+    "gradient": 0.002377384575083852,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": 0.0,
+    "rank": 6,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      1038101,
+      1057069,
+      1041670,
+      1029913
+    ],
+    "seconds": 1.3453935520000186
+  },
+  {
+    "parent": 1034850,
+    "gradient": 0.0023582589346915483,
+    "raw": 2.830679857179774e-10,
+    "projected": 2.427567839468855e-15,
+    "validation_raw": 0.0,
+    "rank": 12,
+    "delta_norm": 0.00027208603569306433,
+    "unexplained_fraction": 8.409889233007561e-06,
+    "finite_relative_error": 0.916790783405304,
+    "max_linear_coefficient": 161.93125915527344,
+    "neighbors": [
+      1033577,
+      908027,
+      1002661,
+      892218
+    ],
+    "seconds": 1.3442864890000124
+  },
+  {
+    "parent": 1042563,
+    "gradient": 0.002322704531252384,
+    "raw": 5.532084790260683e-10,
+    "projected": -1.398859977505551e-12,
+    "validation_raw": 1.456924792364589e-06,
+    "rank": 12,
+    "delta_norm": 0.000633069546893239,
+    "unexplained_fraction": 0.019491801038384438,
+    "finite_relative_error": 0.25793033838272095,
+    "max_linear_coefficient": 593.7757568359375,
+    "neighbors": [
+      235380,
+      262862,
+      1056777,
+      228836
+    ],
+    "seconds": 1.3458311099999491
+  },
+  {
+    "parent": 1049256,
+    "gradient": 0.00221910048276186,
+    "raw": -8.578785681834233e-09,
+    "projected": 1.788811400098441e-15,
+    "validation_raw": 0.0,
+    "rank": 3,
+    "delta_norm": 0.004829186014831066,
+    "unexplained_fraction": 1.6138619685079902e-07,
+    "finite_relative_error": 0.33987653255462646,
+    "max_linear_coefficient": 545.4185180664062,
+    "neighbors": [
+      844063,
+      430603,
+      882322,
+      382795
+    ],
+    "seconds": 1.3316906940000308
+  },
+  {
+    "parent": 1036185,
+    "gradient": 0.0022049376275390387,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": 0.0,
+    "rank": 3,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      1050399,
+      1033944,
+      1048158,
+      1048136
+    ],
+    "seconds": 1.3253928060000248
+  },
+  {
+    "parent": 1050845,
+    "gradient": 0.0021828559692949057,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": 0.0,
+    "rank": 6,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      957145,
+      825304,
+      824802,
+      1035251
+    ],
+    "seconds": 1.3329447219999793
+  },
+  {
+    "parent": 1049025,
+    "gradient": 0.0021462056320160627,
+    "raw": 8.938765005961358e-11,
+    "projected": 1.6656358622912756e-17,
+    "validation_raw": 0.0,
+    "rank": 6,
+    "delta_norm": 0.0001506479602539912,
+    "unexplained_fraction": 3.067866600758862e-07,
+    "finite_relative_error": 0.008383510634303093,
+    "max_linear_coefficient": 1.8516573905944824,
+    "neighbors": [
+      1048707,
+      1034493,
+      952359,
+      984106
+    ],
+    "seconds": 1.3294681710000305
+  },
+  {
+    "parent": 1039683,
+    "gradient": 0.0020994041115045547,
+    "raw": 1.7855986689241377e-09,
+    "projected": 1.7940699923932324e-14,
+    "validation_raw": 0.0,
+    "rank": 12,
+    "delta_norm": 0.007711232174187899,
+    "unexplained_fraction": 4.312497367209289e-06,
+    "finite_relative_error": 3.6334128379821777,
+    "max_linear_coefficient": 26921.1875,
+    "neighbors": [
+      983060,
+      1049980,
+      994589,
+      1038458
+    ],
+    "seconds": 1.3245228800000177
+  },
+  {
+    "parent": 1034493,
+    "gradient": 0.002080494537949562,
+    "raw": 2.493565076644444e-10,
+    "projected": 3.937819908187188e-16,
+    "validation_raw": 0.0,
+    "rank": 9,
+    "delta_norm": 0.00042186270002275705,
+    "unexplained_fraction": 2.0455431695154402e-06,
+    "finite_relative_error": 0.029282012954354286,
+    "max_linear_coefficient": 5.18513822555542,
+    "neighbors": [
+      1049025,
+      984106,
+      1048707,
+      1036596
+    ],
+    "seconds": 1.3392660429999523
+  },
+  {
+    "parent": 1034811,
+    "gradient": 0.0020611179061233997,
+    "raw": -1.394011239774784e-09,
+    "projected": -3.128541601672176e-15,
+    "validation_raw": 0.0,
+    "rank": 9,
+    "delta_norm": 0.0028222803957760334,
+    "unexplained_fraction": 3.3514863844175125e-06,
+    "finite_relative_error": 0.45759016275405884,
+    "max_linear_coefficient": 251.4673309326172,
+    "neighbors": [
+      1024588,
+      950322,
+      1050810,
+      952359
+    ],
+    "seconds": 1.3524602570000184
+  },
+  {
+    "parent": 1050399,
+    "gradient": 0.0020329970866441727,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": 0.0,
+    "rank": 0,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      1036185,
+      1033944,
+      1048158,
+      948216
+    ],
+    "seconds": 1.3431193380000082
+  },
+  {
+    "parent": 1048707,
+    "gradient": 0.0019755098037421703,
+    "raw": -5.143262482576461e-10,
+    "projected": 2.78511076971894e-16,
+    "validation_raw": 0.0,
+    "rank": 6,
+    "delta_norm": 0.0008526651654392481,
+    "unexplained_fraction": 6.16500756223104e-07,
+    "finite_relative_error": 0.06537892669439316,
+    "max_linear_coefficient": 10.418198585510254,
+    "neighbors": [
+      1049025,
+      952359,
+      1034493,
+      1050810
+    ],
+    "seconds": 1.35563079100001
+  },
+  {
+    "parent": 1043356,
+    "gradient": 0.0019602880347520113,
+    "raw": 3.5345668059072466e-10,
+    "projected": 2.1753937220385725e-14,
+    "validation_raw": 1.5653032505724696e-06,
+    "rank": 18,
+    "delta_norm": 0.0004308152128942311,
+    "unexplained_fraction": 0.0008935701334849,
+    "finite_relative_error": 0.2446810007095337,
+    "max_linear_coefficient": 478.1371154785156,
+    "neighbors": [
+      1042986,
+      1054003,
+      1042131,
+      1042563
+    ],
+    "seconds": 1.3451374610000357
+  },
+  {
+    "parent": 1053921,
+    "gradient": 0.0019601488020271063,
+    "raw": 1.7044626821061115e-09,
+    "projected": -9.067308764647178e-16,
+    "validation_raw": 0.0,
+    "rank": 12,
+    "delta_norm": 0.005028456915169954,
+    "unexplained_fraction": 1.4920809690011083e-06,
+    "finite_relative_error": 0.3626745939254761,
+    "max_linear_coefficient": 13629.9921875,
+    "neighbors": [
+      879263,
+      1025053,
+      960288,
+      941884
+    ],
+    "seconds": 1.3474154749999911
+  },
+  {
+    "parent": 1050611,
+    "gradient": 0.0019016698934137821,
+    "raw": 7.395207224369926e-10,
+    "projected": 9.265124223389876e-10,
+    "validation_raw": 0.0,
+    "rank": 3,
+    "delta_norm": 0.0005230952519923449,
+    "unexplained_fraction": 0.8541938066482544,
+    "finite_relative_error": 0.811927318572998,
+    "max_linear_coefficient": 519.2450561523438,
+    "neighbors": [
+      1036397,
+      1048015,
+      999147,
+      1033801
+    ],
+    "seconds": 1.3476821739999991
+  },
+  {
+    "parent": 976563,
+    "gradient": 0.0018826954765245318,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": 0.0,
+    "rank": 5,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      652747,
+      1028037,
+      988273,
+      584281
+    ],
+    "seconds": 1.333425912999985
+  },
+  {
+    "parent": 1045098,
+    "gradient": 0.001822771388106048,
+    "raw": -3.075775367733513e-08,
+    "projected": -3.1210974017932547e-13,
+    "validation_raw": 7.541334667848787e-08,
+    "rank": 9,
+    "delta_norm": 0.00706163514405489,
+    "unexplained_fraction": 0.00013488190597854555,
+    "finite_relative_error": 0.31701385974884033,
+    "max_linear_coefficient": 5903.60205078125,
+    "neighbors": [
+      950533,
+      994710,
+      960458,
+      983941
+    ],
+    "seconds": 1.3393576510000003
+  },
+  {
+    "parent": 1056266,
+    "gradient": 0.0018125897040590644,
+    "raw": -6.08072792118719e-09,
+    "projected": -1.5766557777776614e-14,
+    "validation_raw": 0.0,
+    "rank": 12,
+    "delta_norm": 0.0033785791601985693,
+    "unexplained_fraction": 4.384060957818292e-06,
+    "finite_relative_error": 1.4038941860198975,
+    "max_linear_coefficient": 183.92645263671875,
+    "neighbors": [
+      1038501,
+      1029177,
+      999638,
+      1052715
+    ],
+    "seconds": 1.3373793920000026
+  },
+  {
+    "parent": 1044760,
+    "gradient": 0.0018061780137941241,
+    "raw": -2.7305571137503648e-08,
+    "projected": 1.7228607429586873e-10,
+    "validation_raw": -3.6780906498279364e-07,
+    "rank": 6,
+    "delta_norm": 0.024511368945240974,
+    "unexplained_fraction": 0.22225499153137207,
+    "finite_relative_error": 0.21700352430343628,
+    "max_linear_coefficient": 65.05728149414062,
+    "neighbors": [
+      673976,
+      892753,
+      943878,
+      719158
+    ],
+    "seconds": 1.334883853000008
+  },
+  {
+    "parent": 887056,
+    "gradient": 0.00180059892591089,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": -8.291747732869226e-09,
+    "rank": 0,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      20001,
+      958122,
+      855539,
+      1035369
+    ],
+    "seconds": 1.3385442310000144
+  },
+  {
+    "parent": 1052327,
+    "gradient": 0.0017662033205851912,
+    "raw": 1.4372766088399658e-08,
+    "projected": 1.5974826238847502e-14,
+    "validation_raw": 0.0,
+    "rank": 12,
+    "delta_norm": 0.008361990563571453,
+    "unexplained_fraction": 1.1943169511141605e-06,
+    "finite_relative_error": 0.6302976012229919,
+    "max_linear_coefficient": 151.56771850585938,
+    "neighbors": [
+      924303,
+      1035275,
+      1049489,
+      983586
+    ],
+    "seconds": 1.3317238640000255
+  },
+  {
+    "parent": 1043714,
+    "gradient": 0.0017476716311648488,
+    "raw": 4.636769700833154e-12,
+    "projected": 4.2999100374058186e-13,
+    "validation_raw": 2.970667196677823e-07,
+    "rank": 3,
+    "delta_norm": 1.0654069910742692e-06,
+    "unexplained_fraction": 0.3936109244823456,
+    "finite_relative_error": 0.3936109244823456,
+    "max_linear_coefficient": 28.00001335144043,
+    "neighbors": [
+      646700,
+      611327,
+      719052,
+      542104
+    ],
+    "seconds": 1.3142205460000014
+  },
+  {
+    "parent": 1039789,
+    "gradient": 0.0017433756729587913,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": 7.874104994698428e-07,
+    "rank": 0,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      1054003,
+      1057570,
+      1042131,
+      1039011
+    ],
+    "seconds": 1.3199975480000035
+  },
+  {
+    "parent": 992491,
+    "gradient": 0.0017402301309630275,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": 3.8643289457240826e-08,
+    "rank": 0,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      1003817,
+      961331,
+      949419,
+      197856
+    ],
+    "seconds": 1.3142611260000194
+  },
+  {
+    "parent": 1047993,
+    "gradient": 0.0017396529437974095,
+    "raw": 5.552849291490247e-10,
+    "projected": 1.1640412746322082e-15,
+    "validation_raw": 0.0,
+    "rank": 15,
+    "delta_norm": 0.0007594994967803359,
+    "unexplained_fraction": 1.3870275097360718e-06,
+    "finite_relative_error": 4.012823104858398,
+    "max_linear_coefficient": 3018.060546875,
+    "neighbors": [
+      1051743,
+      886727,
+      923975,
+      886289
+    ],
+    "seconds": 1.3200835189999793
+  },
+  {
+    "parent": 1046675,
+    "gradient": 0.00173397664912045,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": 0.0,
+    "rank": 0,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      1032461,
+      791501,
+      309976,
+      623644
+    ],
+    "seconds": 1.328458228000045
+  },
+  {
+    "parent": 1042052,
+    "gradient": 0.0017282523913308978,
+    "raw": -7.357189857337687e-10,
+    "projected": -7.844594894187203e-15,
+    "validation_raw": 0.0,
+    "rank": 9,
+    "delta_norm": 0.003431861288845539,
+    "unexplained_fraction": 5.038398285250878e-06,
+    "finite_relative_error": 1.430639624595642,
+    "max_linear_coefficient": 1046.2353515625,
+    "neighbors": [
+      979424,
+      1026879,
+      941687,
+      981998
+    ],
+    "seconds": 1.3636657779999837
+  },
+  {
+    "parent": 1032461,
+    "gradient": 0.0017169114435091615,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": 0.0,
+    "rank": 0,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      309976,
+      1046675,
+      791501,
+      53433
+    ],
+    "seconds": 1.4773590309999918
+  },
+  {
+    "parent": 1033779,
+    "gradient": 0.0017061239341273904,
+    "raw": -4.2456791554679185e-11,
+    "projected": 1.0313547942895736e-16,
+    "validation_raw": 0.0,
+    "rank": 6,
+    "delta_norm": 0.00010448813554830849,
+    "unexplained_fraction": 3.067541001655627e-06,
+    "finite_relative_error": 0.4561922252178192,
+    "max_linear_coefficient": 394.78228759765625,
+    "neighbors": [
+      1051996,
+      1036186,
+      1051203,
+      1037782
+    ],
+    "seconds": 1.3549136319999775
+  },
+  {
+    "parent": 1048158,
+    "gradient": 0.0016957373591139913,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": 0.0,
+    "rank": 9,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      1033944,
+      1036185,
+      1048136,
+      889779
+    ],
+    "seconds": 1.3556081560000166
+  },
+  {
+    "parent": 1048728,
+    "gradient": 0.0016713031800463796,
+    "raw": -2.0423167157446187e-08,
+    "projected": -1.1798205370571607e-13,
+    "validation_raw": 0.0,
+    "rank": 11,
+    "delta_norm": 0.011997739784419537,
+    "unexplained_fraction": 2.774621498247143e-05,
+    "finite_relative_error": 0.3232404887676239,
+    "max_linear_coefficient": 5503.0361328125,
+    "neighbors": [
+      1034514,
+      941860,
+      924526,
+      915565
+    ],
+    "seconds": 1.3701383110000052
+  },
+  {
+    "parent": 1041255,
+    "gradient": 0.0016582888783887029,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": 0.0,
+    "rank": 0,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      1036838,
+      1028133,
+      989029,
+      990389
+    ],
+    "seconds": 1.3478298549999863
+  },
+  {
+    "parent": 1035940,
+    "gradient": 0.0016349804354831576,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": 0.0,
+    "rank": 0,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      1005643,
+      507422,
+      945330,
+      1056460
+    ],
+    "seconds": 1.3542081929999767
+  },
+  {
+    "parent": 1050852,
+    "gradient": 0.0016310267383232713,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": 1.640433566763022e-08,
+    "rank": 11,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      916626,
+      1006064,
+      994751,
+      1028733
+    ],
+    "seconds": 1.3415727369999786
+  },
+  {
+    "parent": 1055164,
+    "gradient": 0.0016252286732196808,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": 0.0,
+    "rank": 0,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      456760,
+      417913,
+      475515,
+      470499
+    ],
+    "seconds": 1.338383895999982
+  },
+  {
+    "parent": 1038113,
+    "gradient": 0.0016112420707941055,
+    "raw": -8.139815932395322e-09,
+    "projected": 7.935532786440547e-11,
+    "validation_raw": 0.0,
+    "rank": 20,
+    "delta_norm": 0.009278049692511559,
+    "unexplained_fraction": 0.009548393078148365,
+    "finite_relative_error": 1.1588548421859741,
+    "max_linear_coefficient": 232.28065490722656,
+    "neighbors": [
+      1001791,
+      995379,
+      915389,
+      924303
+    ],
+    "seconds": 1.3574930260000428
+  },
+  {
+    "parent": 1042538,
+    "gradient": 0.001607799786143005,
+    "raw": 0.0,
+    "projected": 0.0,
+    "validation_raw": 9.279636969949934e-07,
+    "rank": 0,
+    "delta_norm": 0.0,
+    "unexplained_fraction": 0.0,
+    "finite_relative_error": 0.0,
+    "max_linear_coefficient": 0.0,
+    "neighbors": [
+      225975,
+      433885,
+      1054444,
+      1001100
+    ],
+    "seconds": 1.3315254269999741
+  },
+  {
+    "parent": 869804,
+    "gradient": 0.0016001987969502807,
+    "raw": 6.853843714793584e-09,
+    "projected": -7.276474649870694e-15,
+    "validation_raw": 0.0,
+    "rank": 12,
+    "delta_norm": 0.004123211372643709,
+    "unexplained_fraction": 2.142628545698244e-06,
+    "finite_relative_error": 0.5082788467407227,
+    "max_linear_coefficient": 950.5032958984375,
+    "neighbors": [
+      987744,
+      1054271,
+      416698,
+      330562
+    ],
+    "seconds": 1.3520554230000243
+  }
+]

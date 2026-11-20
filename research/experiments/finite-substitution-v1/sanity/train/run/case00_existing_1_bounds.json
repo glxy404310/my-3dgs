@@ -1,0 +1,8 @@
+{
+  "max_position_units": 0.025904638692736626,
+  "max_scale_log_change": 0.009909629821777344,
+  "max_opacity_logit_change": 0.04555964469909668,
+  "max_dc_change": 0.004826545715332031,
+  "max_sh_change": 0.00024324143305420876,
+  "max_rotation_change": 0.0039519015699625015
+}

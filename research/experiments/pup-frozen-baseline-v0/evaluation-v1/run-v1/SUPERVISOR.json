@@ -1,0 +1,20 @@
+{
+  "status": "INCONCLUSIVE",
+  "automatic_retries": 0,
+  "main_limit_seconds": 200,
+  "audit_reserved_external_seconds": 100,
+  "combined_external_limit_seconds": 300,
+  "host_RSS_limit_bytes": 8589934592,
+  "gpu_allocated_limit_bytes": 4294967296,
+  "independent_audit_status": "NOT_RUN",
+  "supervisor_torch_imported": false,
+  "worker_exit_code": 1,
+  "original_exception": {
+    "type": "RuntimeError",
+    "message": "Worker failed; original log/result retained",
+    "traceback": "Traceback (most recent call last):\n  File \"/mnt/d/Documents/my 3dgs/scripts/experiments/evaluate_pup_frozen_baseline.py\", line 423, in supervise\n    need(active.returncode == 0, 'Worker failed; original log/result retained')\n  File \"/mnt/d/Documents/my 3dgs/scripts/experiments/evaluate_pup_frozen_baseline.py\", line 44, in need\n    raise RuntimeError(message)\nRuntimeError: Worker failed; original log/result retained\n"
+  },
+  "main_internal_wall_seconds": 11.517054704000003,
+  "peak_sampled_combined_host_RSS_bytes": 750862336,
+  "within_200_seconds": true
+}

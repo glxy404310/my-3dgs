@@ -1,0 +1,13 @@
+{
+  "tool": "exec_command",
+  "mode": "non-PTY",
+  "session_id": null,
+  "initial_call_result": {
+    "chunk_id": "779c5b",
+    "wall_time_seconds": 9.9948977,
+    "exit_code": 0,
+    "original_token_count": 82,
+    "output": "w\u0000s\u0000l\u0000:\u0000 \u0000�hKm0R \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006tM�n\f�FO*g\\��P0R \u0000W\u0000S\u0000L\u0000\u00020N\u0000A\u0000T\u0000 \u0000!j\u000f_\u000bN�v \u0000W\u0000S\u0000L\u0000 \u0000\r\nN/e\u0001c \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006t\u00020\r\n\u0000\r\n{\"complete\": true, \"worker_exit_code\": 0, \"reason\": null, \"supervisor_wall_seconds_before_save\": 7.7603953710000155, \"worker_decision\": \"SYNTHETIC_SH3_FISHER_WITNESS_PASS\"}\r\n\u0000\r\n"
+  },
+  "note": "Completed in the initial exec_command call; no ongoing session ID was issued."
+}

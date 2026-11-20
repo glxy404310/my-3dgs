@@ -1,0 +1,16 @@
+{
+  "schema": "pup-frozen-score-actual-root-cert-interface-check-v1",
+  "status": "ACTUAL_CERT_INTERFACE_PASS",
+  "certificate_path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/FIXED_KERNEL_CERTIFICATION.json",
+  "certificate_sha256": "e5885056577cf602b48a9fa8cc736bf711efb8516aed749641f107ef173dac99",
+  "witness_cases": ["SH0", "SH3"],
+  "hash_binding_verified": true,
+  "distinct_witness_records": true,
+  "torch_imported": false,
+  "scene_imported": false,
+  "scientific_launch": false,
+  "run_v1_exists": false,
+  "numerical_witness_independently_recomputed_by_this_agent": false,
+  "root_supplied_parity_npz_sha256": "a8e1c292c6af398fba57feec3689e5cefba9b1912f15b3e27a6b7b1e5c589833",
+  "parity_rgb_contents_read_by_this_agent": false
+}

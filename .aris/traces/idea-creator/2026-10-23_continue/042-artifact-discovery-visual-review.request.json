@@ -1,0 +1,10 @@
+{
+  "call_number": 42,
+  "purpose": "artifact-discovery-visual-review",
+  "tool": "spawn_agent",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "fork_turns": "none",
+  "prompt": "独立视觉复核，不修改文件、不训练/渲染/拟合/删除，不看12之外任何确认照片。工作区D:\\Documents\\my 3dgs。读 idea-stage/artifact-pivot-20261023/REGION_EVIDENCE_CONTRACT.md 和 research/experiments/teacher-artifact-discovery-v0/run-v1/IMAGE_INDEX.json，必须实际view_image查看全部12张teacher-left/GT-right完整PNG（root也并行自己看），可直接view raw数组导出已有PNG，不能生成修复图。对每张只回答：是否存在明确teacher新增半透明遮挡/团块/重影，且GT同位置看到刚体静态不透明背景；普通模糊、树叶、反射/玻璃、GT有人而teacher无、像素小误差不充数。给每张具体可见差异、合格/弃权/无候选及理由。若合格指出原native979x546大概区域，必须保守，不随意精确到像素；没有看到就说没有。多视角同一空间区域不算独立案例。锁定推进线是最多6候选中至少3空间独立明确异常，后续还有内部轨迹/两张预锁确认照片/几何包络；此次仅视觉初筛，不叫方法FAIL/PASS，不因希望继续而放松。root未提供候选答案，请不要读取未来annotation或root视觉笔记；只读合同和12原图。这是same-family provisional视觉意见。",
+  "request_source": "exact executor invocation text; stored session arguments encrypted"
+}

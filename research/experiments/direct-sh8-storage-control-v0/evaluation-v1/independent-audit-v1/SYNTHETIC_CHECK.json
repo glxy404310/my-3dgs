@@ -1,0 +1,34 @@
+{
+  "status": "SYNTHETIC_ARRAYS_ONLY_PASS",
+  "real_arrays_read": false,
+  "real_codec_payload_read": false,
+  "tolerances": {
+    "mse": 1e-12,
+    "psnr": 1e-09,
+    "ssim": 1e-10,
+    "max_abs_rgb": 1e-12,
+    "pixels": 0,
+    "wall_seconds": 1e-09
+  },
+  "direct2D_SSIM_checked": true,
+  "six_column_pixels_checked": true,
+  "synthetic_codec_and_native_hashes_checked": true,
+  "synthetic_source_q_tamper_rejected": true,
+  "identical": {
+    "gt_mse": 0.0,
+    "gt_psnr": null,
+    "zero_MSE_infinite_PSNR": true,
+    "gt_ssim": 1.0,
+    "teacher_mse": 0.0,
+    "teacher_max_abs_rgb": 0.0
+  },
+  "changed": {
+    "gt_mse": 0.009326800336425304,
+    "gt_psnr": 20.30267320301247,
+    "zero_MSE_infinite_PSNR": false,
+    "gt_ssim": 0.8219559031818415,
+    "teacher_mse": 0.009326800336425304,
+    "teacher_max_abs_rgb": 0.10000002384185791
+  },
+  "script_sha256": "b7f26d2b28c0787cc26385990e2d79cb0bfd67f3663fe6efcdc5d1aec40a24c3"
+}

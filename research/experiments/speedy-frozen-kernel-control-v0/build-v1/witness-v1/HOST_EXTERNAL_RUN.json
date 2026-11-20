@@ -1,0 +1,16 @@
+{
+  "schema": "speedy-private-extension/host-external-v1",
+  "scope": "Fixed seed0 2G/4x4 SH3 forward-only witness",
+  "started_UTC": "2026-10-22T22:28:53.8276475Z",
+  "finished_UTC": "2026-10-22T22:28:58.3709581Z",
+  "exit_code": 0,
+  "actual_host_wall_seconds": 4.5387741,
+  "hard_limit_seconds": 60,
+  "within_limit": true,
+  "attempts": 1,
+  "automatic_retry": false,
+  "preparation_manifest_sha256": "c4f8684236b8390d8a8be22ed95990d776b4f6ea2044a72cff4d50c74bcaa2ee",
+  "build_result_sha256": "cea80ccd4a289b14bc05e4566e6c63b959fcea4aa552daa137cd14281dfeb204",
+  "build_supervisor_sha256": "5a177f61312bedbcb6db5b98ebe4f178e56ac54077efd815138f520c4207eac1",
+  "build_external_sha256": "1cb8ac08094241a5d6a508489477701dce1bd13866a8a4c52e46919d7f7fb8ca"
+}

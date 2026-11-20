@@ -1,0 +1,10 @@
+{
+  "started_UTC": "2026-10-22T21:41:53.1970030Z",
+  "finished_UTC": "2026-10-22T21:42:11.7268551Z",
+  "exit_code": 0,
+  "actual_host_wall_seconds": 18.5239163,
+  "hard_limit_seconds": 120,
+  "within_120_seconds": true,
+  "attempts": 1,
+  "scope": "Independent CPU savedscore-mask-export integrity; no Fisher regeneration/SVD/native render"
+}

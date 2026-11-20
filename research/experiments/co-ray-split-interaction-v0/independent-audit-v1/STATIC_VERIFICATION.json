@@ -1,0 +1,17 @@
+{
+  "status": "PREPARATION_STATIC_ONLY",
+  "lexical_compile": true,
+  "json_parse": true,
+  "stdlib_help": {
+    "audit.py": {
+      "exit_code": 0,
+      "stdout_sha256": "5fd80780a43aaa2bcdff2125505ab186a788b944a8878a3e801bb53727b0f974"
+    },
+    "run-audit.py": {
+      "exit_code": 0,
+      "stdout_sha256": "10dc4d09974ec26a9d66f0e38ded9e39a21a260fb47c931a6692d8c3210f31cd"
+    }
+  },
+  "experimental_arrays_loaded": false,
+  "Torch_or_GPU_computation": false
+}

@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "event": 3700,
+  "n_before": 1125039,
+  "n_after": 1123624,
+  "capture_full_state_and_rng_unchanged": true,
+  "actual_post_prune_raw_parameters_exact_subset": true,
+  "scope": "Same-run capture nonmutation and actual row-order subset; rendering snapshot only."
+}

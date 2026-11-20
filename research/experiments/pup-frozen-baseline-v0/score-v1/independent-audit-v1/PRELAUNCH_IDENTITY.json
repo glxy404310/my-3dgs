@@ -1,0 +1,68 @@
+{
+  "schema": "pup-independent-audit-prelaunch-v1",
+  "status": "PREPARED_AWAITING_ROOT_REVIEW_NOT_EXECUTED",
+  "static_checks": {
+    "python_ast": "PASS_NO_IMPORT",
+    "scientific_tensors_loaded": false,
+    "bash_syntax": "PASS_NO_EXECUTION"
+  },
+  "files": {
+    "CONTRACT.md": {
+      "sha256": "1967d6c8736ede87c718ca9968c4db5b00842f00eb1a549cce7f5491f9d3b6e4",
+      "bytes": 4707
+    },
+    "audit.py": {
+      "sha256": "0995a29ddb6b216146eb73362d583db8c8ae92cf957c13a9e6f237aff617d110",
+      "bytes": 24671
+    },
+    "run-audit.sh": {
+      "sha256": "8c3398a5ad42778660f5cdaeae363d0808945675409ccb5fe592c3ba68a6a1b8",
+      "bytes": 458
+    }
+  },
+  "original_records": {
+    "ATTEMPT_STARTED.json": {
+      "bytes": 72,
+      "sha256": "981f492ab085c3ce86b6e02cd15899607d9c13bdf9cbc55b8b3ac67e0f9096cb"
+    },
+    "CANONICAL_NATIVE.json": {
+      "bytes": 867714,
+      "sha256": "96bb8f763625a6f8512cda0950d0e3e22356b6ebd7afdccb28045e167afcbf1c"
+    },
+    "INPUTS_BEFORE.json": {
+      "bytes": 678763,
+      "sha256": "35624d5efb937208f843a2d44c8bfa27241d950a33be8bf120448ecd6f934895"
+    },
+    "PUP_CAMERAS.json": {
+      "bytes": 868622,
+      "sha256": "f5b06165ce5ffdd966ea6e86f4b49a2fd1487fff7f47505933c9e62f23a84680"
+    },
+    "SCORE_RESULT.json": {
+      "bytes": 22608,
+      "sha256": "3775aa13372c4af264e384f3996424b94ac64362df3044160358f1f5d05fad68"
+    },
+    "STAGE_A.log": {
+      "bytes": 5788,
+      "sha256": "d2bfc813d646c7048ae2e3960b23c5bbdfc10cd6bfbe5260866beb22753fbccc"
+    },
+    "STAGE_B.log": {
+      "bytes": 5753,
+      "sha256": "e423c9caa7d40de6af6fd1aa2bb6077d773bc41f68db56469ab368a0581d7e6f"
+    },
+    "SUPERVISOR.json": {
+      "bytes": 1540,
+      "sha256": "fb5bfcb5cd09d4aac53e0571b4726467a0346d0b6b97dfc24db51a047395327a"
+    },
+    "../EXTERNAL_RUN.json": {
+      "bytes": 336,
+      "sha256": "81ec1d44ff857ec5ebcba221f6c8643b66bf9382e441910a4555b2c61d3007a2"
+    }
+  },
+  "source_text": {
+    "/mnt/d/Documents/my 3dgs/idea-stage/artifact-pivot-20261023/pup-readonly/sourceTEXT/main/scene/gaussian_model.py.txt": {
+      "bytes": 19987,
+      "sha256": "4194473a769d4c2f437ef5dfb443bef0f749c8742c308a99d0dc21644e7fd6ed"
+    }
+  },
+  "root_pre_effect_review": "Unrequested AS cap removed; original RSS8GiB and numeric gates unchanged; internal110/outer115+5 enforce original120s total. Original preparation archived, no audit execution before review."
+}

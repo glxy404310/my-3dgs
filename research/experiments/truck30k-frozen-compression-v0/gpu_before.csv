@@ -1,0 +1,2 @@
+timestamp, name, memory.used [MiB], memory.total [MiB]
+2026/10/22 21:03:23.347, NVIDIA GeForce RTX 5070, 2525 MiB, 12227 MiB

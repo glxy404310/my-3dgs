@@ -1,0 +1,135 @@
+{
+  "training_performed": false,
+  "parameter_updates": 0,
+  "teacher_points": 2050770,
+  "student_points": 1025385,
+  "teacher_ply_bytes": 508592492,
+  "student_ply_bytes": 254297012,
+  "groups": {
+    "calibration": {
+      "n": 24,
+      "mean": 0.00043393305168137886,
+      "median": 0.00018738730432232842,
+      "p90": 0.0012198370182886717,
+      "maximum": 0.0020222621969878674,
+      "worst10_mean": 0.0016779541037976742
+    },
+    "real_noncalibration_train": {
+      "n": 195,
+      "mean": 0.001372632622298671,
+      "median": 0.0005469685420393944,
+      "p90": 0.003376687318086624,
+      "maximum": 0.017623452469706535,
+      "worst10_mean": 0.006391563499346375
+    },
+    "real_test": {
+      "n": 32,
+      "mean": 0.001409734954677333,
+      "median": 0.0005642138130497187,
+      "p90": 0.002287815569434316,
+      "maximum": 0.016081690788269043,
+      "worst10_mean": 0.006682918465230614
+    },
+    "virtual_discovery": {
+      "n": 72,
+      "mean": 0.0009243555020172304,
+      "median": 0.0004909552517347038,
+      "p90": 0.002287563937716186,
+      "maximum": 0.004893337842077017,
+      "worst10_mean": 0.003238880221033469
+    },
+    "virtual_check": {
+      "n": 72,
+      "mean": 0.001464854774288445,
+      "median": 0.0004780269227921963,
+      "p90": 0.002969180070795119,
+      "maximum": 0.016404451802372932,
+      "worst10_mean": 0.0081564255815465
+    }
+  },
+  "gt_metrics": {
+    "calibration": {
+      "teacher_psnr_gt": 28.030162811279297,
+      "student_psnr_gt": 27.18139640490214,
+      "teacher_ssim_gt": 0.9172572121024132,
+      "student_ssim_gt": 0.9074834709366163,
+      "delta_psnr_gt": -0.8487664063771566,
+      "delta_ssim_gt": -0.009773741165796915
+    },
+    "real_noncalibration_train": {
+      "teacher_psnr_gt": 27.72099189758301,
+      "student_psnr_gt": 25.7967464642647,
+      "teacher_ssim_gt": 0.9162905564674965,
+      "student_ssim_gt": 0.8976081279607919,
+      "delta_psnr_gt": -1.9242454333183092,
+      "delta_ssim_gt": -0.018682428506704478
+    },
+    "real_test": {
+      "teacher_psnr_gt": 25.46554708480835,
+      "student_psnr_gt": 24.21417248249054,
+      "teacher_ssim_gt": 0.8850201144814491,
+      "student_ssim_gt": 0.8703935761004686,
+      "delta_psnr_gt": -1.25137460231781,
+      "delta_ssim_gt": -0.014626538380980492
+    }
+  },
+  "check_to_calibration_tail_ratio": 4.8609348510106765,
+  "check_fraction_above_calibration_max": 0.16666666666666666,
+  "numeric_blindspot_signal": true,
+  "perceptual_verdict": "requires image inspection; numeric gate is not perceptual certification",
+  "teacher_repeat_mse": 0.0,
+  "max_metric_replay_delta": 0.0,
+  "teacher_source_sha256": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+  "teacher_parameters_sha256": "f90a54ffe88db1b16eb78e7acc7f2ebb44556570227f21c48342e6eb819a6822",
+  "student_parameters_sha256": "2ab8bcd51bf560ef6688545a7f10a70c0a9304f9ab47799807dca2f6b790078a",
+  "optimizer_created": false,
+  "subset_parameters_exact": true,
+  "elapsed_gpu_stage_seconds": 21.4958508,
+  "peak_allocated_bytes": 1687045632,
+  "selected_panels": [
+    [
+      "virtual_check_worst1",
+      "virtual_check_e05_t75"
+    ],
+    [
+      "virtual_check_worst2",
+      "virtual_check_e05_t50"
+    ],
+    [
+      "virtual_check_worst3",
+      "virtual_check_e05_t25"
+    ],
+    [
+      "virtual_discovery_worst1",
+      "virtual_discovery_e06_t25"
+    ],
+    [
+      "virtual_discovery_worst2",
+      "virtual_discovery_e28_t75"
+    ],
+    [
+      "virtual_discovery_worst3",
+      "virtual_discovery_e28_t50"
+    ],
+    [
+      "real_test_worst1",
+      "000017.jpg"
+    ],
+    [
+      "real_test_worst2",
+      "000009.jpg"
+    ],
+    [
+      "real_test_worst3",
+      "000105.jpg"
+    ],
+    [
+      "virtual_check_median",
+      "virtual_check_e33_t75"
+    ],
+    [
+      "calibration_worst",
+      "000098.jpg"
+    ]
+  ]
+}

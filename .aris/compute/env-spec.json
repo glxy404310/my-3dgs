@@ -15,6 +15,10 @@
       "diff-gaussian-rasterization@9c5c2028f6fbee2be239bc4c9421ff894fe4fbe0",
       "simple-knn@86710c2d4b46680c02301765dd79e465819c8f19",
       "fused-ssim@1272e21a282342e89537159e4bad508b19b34157"
+    ],
+    [
+      "numpy==2.2.6",
+      "scipy==1.15.3"
     ]
   ],
   "env": {
@@ -32,7 +36,8 @@
       "torch",
       "diff_gaussian_rasterization",
       "simple_knn",
-      "fused_ssim"
+      "fused_ssim",
+      "scipy"
     ],
     "gpu_tests": [
       {
@@ -42,6 +47,12 @@
     ],
     "cli_checks": [
       "nvidia-smi"
+    ],
+    "cpu_tests": [
+      {
+        "cmd": "/home/administrator/venvs/3dgs/bin/python /mnt/d/Documents/my\\ 3dgs/scripts/experiments/witness_transfer_environment.py",
+        "expect": "^TRANSFER_ENV_WITNESS 1.15.3"
+      }
     ]
   }
 }

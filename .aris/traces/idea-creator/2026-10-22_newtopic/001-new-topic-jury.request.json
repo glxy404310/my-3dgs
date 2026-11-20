@@ -1,0 +1,34 @@
+{
+  "call_number": 1,
+  "purpose": "new-topic-jury",
+  "tool": "spawn_agent",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "timestamp": "2026-10-22",
+  "files_referenced": [
+    "CANDIDATE_POOL.json"
+  ],
+  "prompt": "独立3DGS选题评审/novelty-check，用户要求先查最接近工作再给明确机制、能落地验证方向，别再只提问题。请读C:\\Users\\Administrator\\Documents\\my 3dgs\\_bridge_staging\\newtopic-20261022\\CANDIDATE_POOL.json。9候选均需考虑，不按主观复杂性提前删除。2026-10-22，单5070 12GB，已有Truck/Train/原3DGS工具；旧neighborJacobian投影split/跨视角split方向/Adamage/world布局失败。请primary核验closest；挑选1–2最有验证价值具体算法，明确novelty difference及strongestcounterargument，给其余候选短评。特别核查LOD的external interleaving commutator tree是否只是已有depth/color clustering的等价包装；pose低秩似然是否只是标准BA Schur消元/MAP。可选高风险但有明确算法与停止条件，不能要求立项前先证明最终效果。只读不写/不GPU。给出可核验引用、按信息价值排名但不加模块改写候选。gpt5.5未在可用模型中，不能冒称跨模型生成。\n=== NOVELTY VERDICT LIMITS (these bound how you judge, never how widely you search) ===\nSearch exhaustively; judge calibrated. Two failures waste months equally:\npassing an idea a published paper already contains, and killing a viable idea\nbecause the territory has neighbors.\n1. Proximity is information, not a verdict. Someone working nearby goes in the\n   report; it is not by itself a reason to reject.\n2. ABANDON has exactly one qualification: a specific published paper already\n   contains this result — name that paper. No named paper, no ABANDON.\n3. Crowded-but-deltaed is PROCEED: state the delta in one sentence a reviewer\n   could verify. Thin or contested delta is PROCEED WITH CAUTION — say what\n   would make it carry, not why it should die. CAUTION is not a safe middle:\n   if you cannot name the specific thing that makes the delta thin, the\n   verdict is PROCEED.\n4. Concurrent or competing work is not a veto. That is a race — report it and\n   let the user decide whether to run it.\n5. A direct attack on a central problem is legitimate novelty when nobody has\n   executed it well. \"This area is hot\" does not mean \"this area is taken.\"\n6. This check is an early gate, never the last one — more triage, pilots, or\n   external review still stand between any idea and a paper, whatever order\n   this run uses. A wrongly passed idea dies cheaply at one of them; a wrongly\n   killed idea is never seen again. When torn between two verdicts, choose the\n   more permissive one.\nSay plainly when an idea clears the check. Do not manufacture overlap.",
+  "followups": [
+    {
+      "tool": "send_message",
+      "prompt": "已实现CPU精确alpha合成diagnostic（同目录occlusion_merge_diagnostic.py/CPU_DIAGNOSTIC.json），2000随机ray交换恒等式误差3.56e-16、triangle界0违例；同depthspan下同颜色/透明外部项Q=0，contrast非零。仅证明固定alphacolor下排序搬移项，理想逐ray聚合block而非一个3DGaussian，绝不证明画质/效率。另发现必须补查CVPR2026《Learning Differentiable Hierarchies in 3D Gaussian Splatting》的学习合并是否已隐式或显式处理外部遮挡；已让检索shard继续读primary。"
+    },
+    {
+      "tool": "send_message",
+      "prompt": "新增直接closest NanoGS Training-Free Gaussian Splat Simplification arxiv2603.16103（需primary核）：KNN图+geometryIdivergence+SHdist+massmoment/unionopacity progressiveedgecollapse，viewless。主候选若成立应以NanoGS mergegraph改外部交换项而非只H3DGS；请纳入最强重合风险。"
+    },
+    {
+      "tool": "send_message",
+      "prompt": "shard primary核实新增CVT-GS arxiv2609.08730 Sep8：CVT组生成 sum alpha||mu-centroid||²，MergeNet teacher只render原cell Eq9–11，不含外部context。这是最直接的最新learnedmerge邻居，正在补公式。建议比较 full-scene rendererror/teacher-distillation surrogate baseline，而不只H3/NanoGS。并须说明新增scoring需traincamera，不能称NanoGS同样viewless。"
+    },
+    {
+      "tool": "followup_task",
+      "prompt": "继续完成此前9候选和新NanoGS/CVT-GS近邻的最终评审。保留你已核实的LOD externalcontext和poseSchur结论；不需重新广搜，给主要推荐/备选、clear delta、阻断风险、最小验证。第一次模型容量错误记录保留。"
+    },
+    {
+      "tool": "followup_task",
+      "prompt": "重要补证：通过Python urllib直接从CVF已成功取Pan CVPR2026官方PDF并提文本，存 C:\\Users\\Administrator\\Documents\\my 3dgs\\_bridge_staging\\newtopic-20261022\\Pan_CVPR2026.txt。请只读§3核查是否改变主推荐：其Hfeat→Hexp，DDSF opacity modulation Eq2，损失full+subset+balance，输出按Hexp排序子集，无parent merge。确实显式上下文梯度，不能说它不考虑遮挡；要区分subsetranking vs组替换。给短补充结论，不重做9项。"
+    }
+  ]
+}

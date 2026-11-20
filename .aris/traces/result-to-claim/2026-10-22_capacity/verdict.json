@@ -1,0 +1,16 @@
+{
+  "claim_supported": {
+    "C1": "no",
+    "C2": "no"
+  },
+  "metric_rows": 2800,
+  "next_experiment_started": false,
+  "acceptance_status": "provisional",
+  "formal_branches": 20,
+  "steps_each": 500,
+  "date": "2026-10-22",
+  "current_configurations": "stop_expansion",
+  "review_independence": "same-family",
+  "integrity_status": "unavailable",
+  "exit_code": 0
+}

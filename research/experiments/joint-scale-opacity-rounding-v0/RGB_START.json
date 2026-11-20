@@ -1,0 +1,8 @@
+{
+  "training": false,
+  "started_at": "2026-10-23T00:15:09.3348703+08:00",
+  "script_sha256": "184608C651A8F080B192F741267FE221DFD404BE13C67DAFED26F92E5EC2B06E",
+  "CPU_encoding_exit": 0,
+  "contract_sha256": "D7EAA756CBCD214A30476CB5D24631810D6AC216F978612DD7058727057D7F77",
+  "gpu_preflight": "RTX5070 2078/12227MiB used; no compute processes"
+}

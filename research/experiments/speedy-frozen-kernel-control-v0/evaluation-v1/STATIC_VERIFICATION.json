@@ -1,0 +1,18 @@
+{
+  "status": "PREPARATION_ONLY_STATIC_PASS",
+  "Python_AST": true,
+  "Bash_syntax": true,
+  "Bash_LF_and_frozen_hashes": true,
+  "PowerShell_AST": true,
+  "Windows_stdlib_synthetic_check": true,
+  "WSL_Python310_stdlib_synthetic_and_help": true,
+  "synthetic_tool_chunk": "85d271",
+  "final_launcher_check": "executed after sole external path alignment",
+  "real_model_or_pixel_arrays_read": false,
+  "torch_imported": false,
+  "CUDA_initialized": false,
+  "actual_output_absent": true,
+  "actual_external_absent": true,
+  "source_changes": false,
+  "old_ADC_FAIL_unchanged": true
+}

@@ -1,0 +1,905 @@
+{
+  "status": "pass",
+  "events": [
+    3600,
+    3700
+  ],
+  "metric_rows": 80,
+  "anchors": 32,
+  "old_controls_exact": true,
+  "summary": [
+    {
+      "event": 3600,
+      "policy": "none",
+      "removed": 0,
+      "survivors": 1094818,
+      "restored_vs_native": 1392,
+      "restored_old": 1374,
+      "restored_clone": 0,
+      "restored_split": 18,
+      "newly_removed_vs_native": 0,
+      "means": {
+        "psnr": 22.030059337615967,
+        "l1": 0.045925624668598175,
+        "ssim": 0.8128963336348534
+      },
+      "delta_vs_native": {
+        "psnr": 0.3440420627593994,
+        "l1": -0.0013021547347307205,
+        "ssim": 0.0022415518760681152
+      },
+      "views_psnr_worse": 0,
+      "views_l1_worse": 0,
+      "psnr_delta_min": 0.0070858001708984375,
+      "psnr_delta_max": 1.4647579193115234
+    },
+    {
+      "event": 3600,
+      "policy": "native",
+      "removed": 1392,
+      "survivors": 1093426,
+      "restored_vs_native": 0,
+      "restored_old": 0,
+      "restored_clone": 0,
+      "restored_split": 0,
+      "newly_removed_vs_native": 0,
+      "means": {
+        "psnr": 21.686017274856567,
+        "l1": 0.047227779403328896,
+        "ssim": 0.8106547817587852
+      },
+      "delta_vs_native": {
+        "psnr": 0.0,
+        "l1": 0.0,
+        "ssim": 0.0
+      },
+      "views_psnr_worse": 0,
+      "views_l1_worse": 0,
+      "psnr_delta_min": 0.0,
+      "psnr_delta_max": 0.0
+    },
+    {
+      "event": 3600,
+      "policy": "no_world",
+      "removed": 1034,
+      "survivors": 1093784,
+      "restored_vs_native": 358,
+      "restored_old": 340,
+      "restored_clone": 0,
+      "restored_split": 18,
+      "newly_removed_vs_native": 0,
+      "means": {
+        "psnr": 22.030035257339478,
+        "l1": 0.045925701037049294,
+        "ssim": 0.8128967136144638
+      },
+      "delta_vs_native": {
+        "psnr": 0.34401798248291016,
+        "l1": -0.001302078366279602,
+        "ssim": 0.0022419318556785583
+      },
+      "views_psnr_worse": 0,
+      "views_l1_worse": 0,
+      "psnr_delta_min": 0.0070476531982421875,
+      "psnr_delta_max": 1.4648246765136719
+    },
+    {
+      "event": 3600,
+      "policy": "eq11_prune_only",
+      "removed": 1056,
+      "survivors": 1093762,
+      "restored_vs_native": 336,
+      "restored_old": 320,
+      "restored_clone": 0,
+      "restored_split": 16,
+      "newly_removed_vs_native": 0,
+      "means": {
+        "psnr": 21.91550374031067,
+        "l1": 0.04628382017835975,
+        "ssim": 0.8120700269937515
+      },
+      "delta_vs_native": {
+        "psnr": 0.22948646545410156,
+        "l1": -0.0009439592249691486,
+        "ssim": 0.001415245234966278
+      },
+      "views_psnr_worse": 0,
+      "views_l1_worse": 0,
+      "psnr_delta_min": 0.006561279296875,
+      "psnr_delta_max": 0.8366909027099609
+    },
+    {
+      "event": 3600,
+      "policy": "rescue_new_world_only",
+      "removed": 1374,
+      "survivors": 1093444,
+      "restored_vs_native": 18,
+      "restored_old": 0,
+      "restored_clone": 0,
+      "restored_split": 18,
+      "newly_removed_vs_native": 0,
+      "means": {
+        "psnr": 21.968045234680176,
+        "l1": 0.046374856028705835,
+        "ssim": 0.8121872991323471
+      },
+      "delta_vs_native": {
+        "psnr": 0.2820279598236084,
+        "l1": -0.0008529233746230602,
+        "ssim": 0.0015325173735618591
+      },
+      "views_psnr_worse": 1,
+      "views_l1_worse": 1,
+      "psnr_delta_min": -4.38690185546875e-05,
+      "psnr_delta_max": 1.3015575408935547
+    },
+    {
+      "event": 3700,
+      "policy": "none",
+      "removed": 0,
+      "survivors": 1125039,
+      "restored_vs_native": 1415,
+      "restored_old": 1401,
+      "restored_clone": 0,
+      "restored_split": 14,
+      "newly_removed_vs_native": 0,
+      "means": {
+        "psnr": 22.679466485977173,
+        "l1": 0.04320189589634538,
+        "ssim": 0.8190438225865364
+      },
+      "delta_vs_native": {
+        "psnr": 0.14249753952026367,
+        "l1": -0.0007217186503112316,
+        "ssim": 0.0011045262217521667
+      },
+      "views_psnr_worse": 0,
+      "views_l1_worse": 1,
+      "psnr_delta_min": 0.012928009033203125,
+      "psnr_delta_max": 0.6461048126220703
+    },
+    {
+      "event": 3700,
+      "policy": "native",
+      "removed": 1415,
+      "survivors": 1123624,
+      "restored_vs_native": 0,
+      "restored_old": 0,
+      "restored_clone": 0,
+      "restored_split": 0,
+      "newly_removed_vs_native": 0,
+      "means": {
+        "psnr": 22.53696894645691,
+        "l1": 0.04392361454665661,
+        "ssim": 0.8179392963647842
+      },
+      "delta_vs_native": {
+        "psnr": 0.0,
+        "l1": 0.0,
+        "ssim": 0.0
+      },
+      "views_psnr_worse": 0,
+      "views_l1_worse": 0,
+      "psnr_delta_min": 0.0,
+      "psnr_delta_max": 0.0
+    },
+    {
+      "event": 3700,
+      "policy": "no_world",
+      "removed": 1078,
+      "survivors": 1123961,
+      "restored_vs_native": 337,
+      "restored_old": 323,
+      "restored_clone": 0,
+      "restored_split": 14,
+      "newly_removed_vs_native": 0,
+      "means": {
+        "psnr": 22.67901849746704,
+        "l1": 0.04320490825921297,
+        "ssim": 0.8190440014004707
+      },
+      "delta_vs_native": {
+        "psnr": 0.14204955101013184,
+        "l1": -0.0007187062874436378,
+        "ssim": 0.001104705035686493
+      },
+      "views_psnr_worse": 0,
+      "views_l1_worse": 1,
+      "psnr_delta_min": 0.012912750244140625,
+      "psnr_delta_max": 0.6459884643554688
+    },
+    {
+      "event": 3700,
+      "policy": "eq11_prune_only",
+      "removed": 1094,
+      "survivors": 1123945,
+      "restored_vs_native": 321,
+      "restored_old": 311,
+      "restored_clone": 0,
+      "restored_split": 10,
+      "newly_removed_vs_native": 0,
+      "means": {
+        "psnr": 22.636775255203247,
+        "l1": 0.04331418173387647,
+        "ssim": 0.8188229277729988
+      },
+      "delta_vs_native": {
+        "psnr": 0.09980630874633789,
+        "l1": -0.0006094328127801418,
+        "ssim": 0.0008836314082145691
+      },
+      "views_psnr_worse": 0,
+      "views_l1_worse": 1,
+      "psnr_delta_min": 0.01371002197265625,
+      "psnr_delta_max": 0.32137298583984375
+    },
+    {
+      "event": 3700,
+      "policy": "rescue_new_world_only",
+      "removed": 1401,
+      "survivors": 1123638,
+      "restored_vs_native": 14,
+      "restored_old": 0,
+      "restored_clone": 0,
+      "restored_split": 14,
+      "newly_removed_vs_native": 0,
+      "means": {
+        "psnr": 22.615725994110107,
+        "l1": 0.043637901078909636,
+        "ssim": 0.8186468258500099
+      },
+      "delta_vs_native": {
+        "psnr": 0.07875704765319824,
+        "l1": -0.00028571346774697304,
+        "ssim": 0.0007075294852256775
+      },
+      "views_psnr_worse": 1,
+      "views_l1_worse": 1,
+      "psnr_delta_min": -0.000274658203125,
+      "psnr_delta_max": 0.5954837799072266
+    }
+  ],
+  "paired_view_deltas": [
+    {
+      "event": 3600,
+      "policy": "none",
+      "view": "000001.jpg",
+      "psnr": 0.059467315673828125,
+      "l1": -0.0002480223774909973,
+      "ssim": 0.0004076957702636719
+    },
+    {
+      "event": 3600,
+      "policy": "none",
+      "view": "000033.jpg",
+      "psnr": 0.0070858001708984375,
+      "l1": -4.177168011665344e-05,
+      "ssim": 0.00036466121673583984
+    },
+    {
+      "event": 3600,
+      "policy": "none",
+      "view": "000065.jpg",
+      "psnr": 0.04547691345214844,
+      "l1": -8.575990796089172e-05,
+      "ssim": 0.0008695721626281738
+    },
+    {
+      "event": 3600,
+      "policy": "none",
+      "view": "000105.jpg",
+      "psnr": 0.9497928619384766,
+      "l1": -0.004655417054891586,
+      "ssim": 0.0077471137046813965
+    },
+    {
+      "event": 3600,
+      "policy": "none",
+      "view": "000137.jpg",
+      "psnr": 0.07845687866210938,
+      "l1": -0.0005071386694908142,
+      "ssim": 0.0008522272109985352
+    },
+    {
+      "event": 3600,
+      "policy": "none",
+      "view": "000177.jpg",
+      "psnr": 1.4647579193115234,
+      "l1": -0.003437954932451248,
+      "ssim": 0.00529247522354126
+    },
+    {
+      "event": 3600,
+      "policy": "none",
+      "view": "000209.jpg",
+      "psnr": 0.022138595581054688,
+      "l1": -0.00016229599714279175,
+      "ssim": 0.000273287296295166
+    },
+    {
+      "event": 3600,
+      "policy": "none",
+      "view": "000249.jpg",
+      "psnr": 0.12516021728515625,
+      "l1": -0.0012788772583007812,
+      "ssim": 0.002125382423400879
+    },
+    {
+      "event": 3600,
+      "policy": "native",
+      "view": "000001.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3600,
+      "policy": "native",
+      "view": "000033.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3600,
+      "policy": "native",
+      "view": "000065.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3600,
+      "policy": "native",
+      "view": "000105.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3600,
+      "policy": "native",
+      "view": "000137.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3600,
+      "policy": "native",
+      "view": "000177.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3600,
+      "policy": "native",
+      "view": "000209.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3600,
+      "policy": "native",
+      "view": "000249.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3600,
+      "policy": "no_world",
+      "view": "000001.jpg",
+      "psnr": 0.05955314636230469,
+      "l1": -0.0002495385706424713,
+      "ssim": 0.0004069209098815918
+    },
+    {
+      "event": 3600,
+      "policy": "no_world",
+      "view": "000033.jpg",
+      "psnr": 0.0070476531982421875,
+      "l1": -4.110857844352722e-05,
+      "ssim": 0.0003657341003417969
+    },
+    {
+      "event": 3600,
+      "policy": "no_world",
+      "view": "000065.jpg",
+      "psnr": 0.04560089111328125,
+      "l1": -8.754804730415344e-05,
+      "ssim": 0.0008704662322998047
+    },
+    {
+      "event": 3600,
+      "policy": "no_world",
+      "view": "000105.jpg",
+      "psnr": 0.9497833251953125,
+      "l1": -0.004655417054891586,
+      "ssim": 0.007747292518615723
+    },
+    {
+      "event": 3600,
+      "policy": "no_world",
+      "view": "000137.jpg",
+      "psnr": 0.07839393615722656,
+      "l1": -0.0005067139863967896,
+      "ssim": 0.0008528828620910645
+    },
+    {
+      "event": 3600,
+      "policy": "no_world",
+      "view": "000177.jpg",
+      "psnr": 1.4648246765136719,
+      "l1": -0.0034382492303848267,
+      "ssim": 0.00529402494430542
+    },
+    {
+      "event": 3600,
+      "policy": "no_world",
+      "view": "000209.jpg",
+      "psnr": 0.022119522094726562,
+      "l1": -0.00016224756836891174,
+      "ssim": 0.00027495622634887695
+    },
+    {
+      "event": 3600,
+      "policy": "no_world",
+      "view": "000249.jpg",
+      "psnr": 0.12482070922851562,
+      "l1": -0.0012758038938045502,
+      "ssim": 0.0021231770515441895
+    },
+    {
+      "event": 3600,
+      "policy": "eq11_prune_only",
+      "view": "000001.jpg",
+      "psnr": 0.05825042724609375,
+      "l1": -0.00024433061480522156,
+      "ssim": 0.0003517270088195801
+    },
+    {
+      "event": 3600,
+      "policy": "eq11_prune_only",
+      "view": "000033.jpg",
+      "psnr": 0.006561279296875,
+      "l1": -3.874674439430237e-05,
+      "ssim": 0.0003533363342285156
+    },
+    {
+      "event": 3600,
+      "policy": "eq11_prune_only",
+      "view": "000065.jpg",
+      "psnr": 0.04446220397949219,
+      "l1": -9.639933705329895e-05,
+      "ssim": 0.0007605552673339844
+    },
+    {
+      "event": 3600,
+      "policy": "eq11_prune_only",
+      "view": "000105.jpg",
+      "psnr": 0.6760215759277344,
+      "l1": -0.003224670886993408,
+      "ssim": 0.00443190336227417
+    },
+    {
+      "event": 3600,
+      "policy": "eq11_prune_only",
+      "view": "000137.jpg",
+      "psnr": 0.06884002685546875,
+      "l1": -0.00047333911061286926,
+      "ssim": 0.0007793307304382324
+    },
+    {
+      "event": 3600,
+      "policy": "eq11_prune_only",
+      "view": "000177.jpg",
+      "psnr": 0.8366909027099609,
+      "l1": -0.0020524412393569946,
+      "ssim": 0.0023835301399230957
+    },
+    {
+      "event": 3600,
+      "policy": "eq11_prune_only",
+      "view": "000209.jpg",
+      "psnr": 0.0207977294921875,
+      "l1": -0.00015287473797798157,
+      "ssim": 0.00018221139907836914
+    },
+    {
+      "event": 3600,
+      "policy": "eq11_prune_only",
+      "view": "000249.jpg",
+      "psnr": 0.124267578125,
+      "l1": -0.0012688711285591125,
+      "ssim": 0.0020793676376342773
+    },
+    {
+      "event": 3600,
+      "policy": "rescue_new_world_only",
+      "view": "000001.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3600,
+      "policy": "rescue_new_world_only",
+      "view": "000033.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3600,
+      "policy": "rescue_new_world_only",
+      "view": "000065.jpg",
+      "psnr": -4.38690185546875e-05,
+      "l1": 4.842877388000488e-08,
+      "ssim": 1.2516975402832031e-06
+    },
+    {
+      "event": 3600,
+      "policy": "rescue_new_world_only",
+      "view": "000105.jpg",
+      "psnr": 0.9202823638916016,
+      "l1": -0.004091594368219376,
+      "ssim": 0.006957411766052246
+    },
+    {
+      "event": 3600,
+      "policy": "rescue_new_world_only",
+      "view": "000137.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3600,
+      "policy": "rescue_new_world_only",
+      "view": "000177.jpg",
+      "psnr": 1.3015575408935547,
+      "l1": -0.002575267106294632,
+      "ssim": 0.004530429840087891
+    },
+    {
+      "event": 3600,
+      "policy": "rescue_new_world_only",
+      "view": "000209.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3600,
+      "policy": "rescue_new_world_only",
+      "view": "000249.jpg",
+      "psnr": 0.034427642822265625,
+      "l1": -0.00015657395124435425,
+      "ssim": 0.0007710456848144531
+    },
+    {
+      "event": 3700,
+      "policy": "none",
+      "view": "000001.jpg",
+      "psnr": 0.04494476318359375,
+      "l1": 5.3159892559051514e-05,
+      "ssim": 0.00028079748153686523
+    },
+    {
+      "event": 3700,
+      "policy": "none",
+      "view": "000033.jpg",
+      "psnr": 0.025274276733398438,
+      "l1": -0.00012307614088058472,
+      "ssim": 0.0002410411834716797
+    },
+    {
+      "event": 3700,
+      "policy": "none",
+      "view": "000065.jpg",
+      "psnr": 0.012928009033203125,
+      "l1": -0.00021002069115638733,
+      "ssim": 0.0006491541862487793
+    },
+    {
+      "event": 3700,
+      "policy": "none",
+      "view": "000105.jpg",
+      "psnr": 0.6461048126220703,
+      "l1": -0.0025425031781196594,
+      "ssim": 0.005690395832061768
+    },
+    {
+      "event": 3700,
+      "policy": "none",
+      "view": "000137.jpg",
+      "psnr": 0.14870643615722656,
+      "l1": -0.0013038329780101776,
+      "ssim": 0.0005713105201721191
+    },
+    {
+      "event": 3700,
+      "policy": "none",
+      "view": "000177.jpg",
+      "psnr": 0.10395050048828125,
+      "l1": -0.0004340223968029022,
+      "ssim": 0.0009821653366088867
+    },
+    {
+      "event": 3700,
+      "policy": "none",
+      "view": "000209.jpg",
+      "psnr": 0.014238357543945312,
+      "l1": -0.00013830140233039856,
+      "ssim": 0.00016683340072631836
+    },
+    {
+      "event": 3700,
+      "policy": "none",
+      "view": "000249.jpg",
+      "psnr": 0.14383316040039062,
+      "l1": -0.0010751523077487946,
+      "ssim": 0.00025451183319091797
+    },
+    {
+      "event": 3700,
+      "policy": "native",
+      "view": "000001.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3700,
+      "policy": "native",
+      "view": "000033.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3700,
+      "policy": "native",
+      "view": "000065.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3700,
+      "policy": "native",
+      "view": "000105.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3700,
+      "policy": "native",
+      "view": "000137.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3700,
+      "policy": "native",
+      "view": "000177.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3700,
+      "policy": "native",
+      "view": "000209.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3700,
+      "policy": "native",
+      "view": "000249.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3700,
+      "policy": "no_world",
+      "view": "000001.jpg",
+      "psnr": 0.043304443359375,
+      "l1": 6.249919533729553e-05,
+      "ssim": 0.0002854466438293457
+    },
+    {
+      "event": 3700,
+      "policy": "no_world",
+      "view": "000033.jpg",
+      "psnr": 0.0253448486328125,
+      "l1": -0.00012748688459396362,
+      "ssim": 0.00024116039276123047
+    },
+    {
+      "event": 3700,
+      "policy": "no_world",
+      "view": "000065.jpg",
+      "psnr": 0.012912750244140625,
+      "l1": -0.00020912662148475647,
+      "ssim": 0.0006464123725891113
+    },
+    {
+      "event": 3700,
+      "policy": "no_world",
+      "view": "000105.jpg",
+      "psnr": 0.6459884643554688,
+      "l1": -0.0025417841970920563,
+      "ssim": 0.005692601203918457
+    },
+    {
+      "event": 3700,
+      "policy": "no_world",
+      "view": "000137.jpg",
+      "psnr": 0.148681640625,
+      "l1": -0.0013037100434303284,
+      "ssim": 0.0005701780319213867
+    },
+    {
+      "event": 3700,
+      "policy": "no_world",
+      "view": "000177.jpg",
+      "psnr": 0.10217094421386719,
+      "l1": -0.00041632354259490967,
+      "ssim": 0.0009772181510925293
+    },
+    {
+      "event": 3700,
+      "policy": "no_world",
+      "view": "000209.jpg",
+      "psnr": 0.014078140258789062,
+      "l1": -0.00013778358697891235,
+      "ssim": 0.00016802549362182617
+    },
+    {
+      "event": 3700,
+      "policy": "no_world",
+      "view": "000249.jpg",
+      "psnr": 0.14391517639160156,
+      "l1": -0.0010759346187114716,
+      "ssim": 0.00025659799575805664
+    },
+    {
+      "event": 3700,
+      "policy": "eq11_prune_only",
+      "view": "000001.jpg",
+      "psnr": 0.0430145263671875,
+      "l1": 6.432086229324341e-05,
+      "ssim": 0.0002715587615966797
+    },
+    {
+      "event": 3700,
+      "policy": "eq11_prune_only",
+      "view": "000033.jpg",
+      "psnr": 0.0253448486328125,
+      "l1": -0.00012748688459396362,
+      "ssim": 0.00024116039276123047
+    },
+    {
+      "event": 3700,
+      "policy": "eq11_prune_only",
+      "view": "000065.jpg",
+      "psnr": 0.013853073120117188,
+      "l1": -0.0002145804464817047,
+      "ssim": 0.0006379485130310059
+    },
+    {
+      "event": 3700,
+      "policy": "eq11_prune_only",
+      "view": "000105.jpg",
+      "psnr": 0.32137298583984375,
+      "l1": -0.001736413687467575,
+      "ssim": 0.004192948341369629
+    },
+    {
+      "event": 3700,
+      "policy": "eq11_prune_only",
+      "view": "000137.jpg",
+      "psnr": 0.1448535919189453,
+      "l1": -0.0012747570872306824,
+      "ssim": 0.0005124807357788086
+    },
+    {
+      "event": 3700,
+      "policy": "eq11_prune_only",
+      "view": "000177.jpg",
+      "psnr": 0.09289932250976562,
+      "l1": -0.00037972256541252136,
+      "ssim": 0.0008109807968139648
+    },
+    {
+      "event": 3700,
+      "policy": "eq11_prune_only",
+      "view": "000209.jpg",
+      "psnr": 0.01371002197265625,
+      "l1": -0.00013453513383865356,
+      "ssim": 0.00015974044799804688
+    },
+    {
+      "event": 3700,
+      "policy": "eq11_prune_only",
+      "view": "000249.jpg",
+      "psnr": 0.143402099609375,
+      "l1": -0.0010722875595092773,
+      "ssim": 0.0002422332763671875
+    },
+    {
+      "event": 3700,
+      "policy": "rescue_new_world_only",
+      "view": "000001.jpg",
+      "psnr": 0.0034236907958984375,
+      "l1": -2.8323382139205933e-05,
+      "ssim": 3.5703182220458984e-05
+    },
+    {
+      "event": 3700,
+      "policy": "rescue_new_world_only",
+      "view": "000033.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3700,
+      "policy": "rescue_new_world_only",
+      "view": "000065.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "event": 3700,
+      "policy": "rescue_new_world_only",
+      "view": "000105.jpg",
+      "psnr": 0.5954837799072266,
+      "l1": -0.002134166657924652,
+      "ssim": 0.0051457881927490234
+    },
+    {
+      "event": 3700,
+      "policy": "rescue_new_world_only",
+      "view": "000137.jpg",
+      "psnr": 0.0047359466552734375,
+      "l1": -8.966773748397827e-06,
+      "ssim": 2.7835369110107422e-05
+    },
+    {
+      "event": 3700,
+      "policy": "rescue_new_world_only",
+      "view": "000177.jpg",
+      "psnr": 0.0266876220703125,
+      "l1": -0.00011583417654037476,
+      "ssim": 0.00044727325439453125
+    },
+    {
+      "event": 3700,
+      "policy": "rescue_new_world_only",
+      "view": "000209.jpg",
+      "psnr": -0.000274658203125,
+      "l1": 1.5832483768463135e-06,
+      "ssim": 3.635883331298828e-06
+    },
+    {
+      "event": 3700,
+      "policy": "rescue_new_world_only",
+      "view": "000249.jpg",
+      "psnr": 0.0,
+      "l1": 0.0,
+      "ssim": 0.0
+    }
+  ],
+  "scope": "Known rules on reused frozen captures/8 diagnostic views. Unequal retained sets and counts. No target-benefit share, layout attribution, training, full IADC, novel method, or candidate advancement inference."
+}

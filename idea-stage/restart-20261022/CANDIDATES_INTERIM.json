@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-22",
+  "status": "mechanisms_received_full_generator_payload_pending",
+  "generation_model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "mechanical_rule": "exact dedup_key only; no subjective pruning",
+  "generated_count": 12,
+  "unique_count": 12,
+  "candidates": [
+    {
+      "dedup_key": "sh_direction_detach",
+      "shard_id": "imageformation",
+      "payload": {
+        "title": "切断SH视线方向到位置的梯度",
+        "method": "SH前向不变，只切断xyz到normalize(x-camera)路径，保留投影与遮挡梯度。",
+        "local_evidence": "未在本地验证该候选所需问题；旧频率实验不构成其直接证据",
+        "pilot_status": "NOT_RUN"
+      }
+    },
+    {
+      "dedup_key": "premultiplied_radiance_coordinates",
+      "shard_id": "imageformation",
+      "payload": {
+        "title": "预乘辐射坐标优化",
+        "method": "优化q_l=opacity*SH_l与独立opacity，保持前向等价，检验颜色透明度条件数。",
+        "local_evidence": "未在本地验证该候选所需问题；旧频率实验不构成其直接证据",
+        "pilot_status": "NOT_RUN"
+      }
+    },
+    {
+      "dedup_key": "leave_view_out_appearance_geometry",
+      "shard_id": "imageformation",
+      "payload": {
+        "title": "用不同视角拟合外观和更新几何",
+        "method": "用训练相机A折拟合SH，用B折误差更新共享几何，再交换两折。",
+        "local_evidence": "未在本地验证该候选所需问题；旧频率实验不构成其直接证据",
+        "pilot_status": "NOT_RUN"
+      }
+    },
+    {
+      "dedup_key": "pixel_phase_marginalization",
+      "shard_id": "imageformation",
+      "payload": {
+        "title": "像素采样相位边际化",
+        "method": "联合平移主点和带限重采样目标，对像素网格相位的期望损失训练。",
+        "local_evidence": "未在本地验证该候选所需问题；旧频率实验不构成其直接证据",
+        "pilot_status": "NOT_RUN"
+      }
+    },
+    {
+      "dedup_key": "pooled_image_psf",
+      "shard_id": "imageformation",
+      "payload": {
+        "title": "整图共享点扩散核",
+        "method": "完整渲染图后用每图一个小各向异性PSF卷积，与高斯共同优化并固定清晰锚。",
+        "local_evidence": "未在本地验证该候选所需问题；旧频率实验不构成其直接证据",
+        "pilot_status": "NOT_RUN"
+      }
+    },
+    {
+      "dedup_key": "linear_compositing_capacity_audit",
+      "shard_id": "imageformation",
+      "payload": {
+        "title": "线性合成与容量因果诊断",
+        "method": "在同显示域loss和点预算下，比较线性辐射合成后sRGB编码与直接sRGB合成。",
+        "local_evidence": "未在本地验证该候选所需问题；旧频率实验不构成其直接证据",
+        "pilot_status": "NOT_RUN"
+      }
+    },
+    {
+      "dedup_key": "fixed_view_cross_transfer",
+      "shard_id": "resource_reliability",
+      "payload": {
+        "title": "按跨相机更新收益选择已有训练视图",
+        "method": "预测更新一张已采集图对其他真实相机块的损失下降，按含评分成本的收益选择。",
+        "local_evidence": "未在本地验证该候选所需问题；旧频率实验不构成其直接证据",
+        "pilot_status": "NOT_RUN"
+      }
+    },
+    {
+      "dedup_key": "sh_nullspace_path_canonicalization",
+      "shard_id": "resource_reliability",
+      "payload": {
+        "title": "观测SH零空间内平滑相机路径外观",
+        "method": "冻结几何，仅在观测方向零空间调整SH，使路径角变化能量降低而保持训练预测。",
+        "local_evidence": "未在本地验证该候选所需问题；旧频率实验不构成其直接证据",
+        "pilot_status": "NOT_RUN"
+      }
+    },
+    {
+      "dedup_key": "sorting_margin_quantization",
+      "shard_id": "resource_reliability",
+      "payload": {
+        "title": "保护排序裕量的位置量化",
+        "method": "在声明相机单元内约束近深度高斯量化后的深度次序，压低量化引入的跳变。",
+        "local_evidence": "未在本地验证该候选所需问题；旧频率实验不构成其直接证据",
+        "pilot_status": "NOT_RUN"
+      }
+    },
+    {
+      "dedup_key": "adversarial_pose_compression_witnesses",
+      "shard_id": "resource_reliability",
+      "payload": {
+        "title": "以最坏相机姿态补充压缩蒸馏",
+        "method": "搜索声明相机域中teacher/student差异最大的姿态，加入校准集并迭代压缩蒸馏。",
+        "local_evidence": "未在本地验证该候选所需问题；旧频率实验不构成其直接证据",
+        "pilot_status": "NOT_RUN"
+      }
+    },
+    {
+      "dedup_key": "surface_evidence_balanced_loss",
+      "shard_id": "resource_reliability",
+      "payload": {
+        "title": "按独立表面证据平衡训练目标",
+        "method": "按表面区域独立角向支持定义目标，用逆共可见性权重减弱重复拍摄分布偏置。",
+        "local_evidence": "未在本地验证该候选所需问题；旧频率实验不构成其直接证据",
+        "pilot_status": "NOT_RUN"
+      }
+    },
+    {
+      "dedup_key": "support_convex_angular_appearance",
+      "shard_id": "resource_reliability",
+      "payload": {
+        "title": "观测支持内的凸组合角向外观",
+        "method": "用4个观测方向RGB锚的凸插值替换SH，并对支持域外作有界延拓。",
+        "local_evidence": "未在本地验证该候选所需问题；旧频率实验不构成其直接证据",
+        "pilot_status": "NOT_RUN"
+      }
+    }
+  ]
+}

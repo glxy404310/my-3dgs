@@ -1,0 +1,87 @@
+{
+  "input_hashes_before": {
+    "teacher": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+    "indices": "f6c9f4da05e064db5c94134c8ee241eb2188fb83a5c3f860655d2eaf279f992f",
+    "history": "de65e533436cd4c073ce35e0eb12c4c5dc58bbc8b0f345f097c9a14c30dcf6c8",
+    "abi_reference": "9567eceb72bc84fb7f82fd8838a479489c3e03fa8d7487eaa6f61516f29bcf84",
+    "contract": "515abe9defd4c4dbd8806113acdea20f457fab85ac278e48d335fef72256565d",
+    "script": "211780be26ce7de41afc85a682f0993e466736a870e66a3771d0f248e527785d",
+    "hash_helper": "184608c651a8f080b192f741267fe221dfd404be13c67dafed26f92e5ec2b06e",
+    "abi_helper": "5227988308b8da132f89da7576ef400a9b1280fb7f1781081ed5e9becf77d35b"
+  },
+  "source_hashes_before": {
+    "/home/administrator/projects/gaussian-splatting/gaussian_renderer/__init__.py": "a25cf5fdb22cd8757fb2a1e37b75352042d65b16138a9fa6243f8616ca1369b8",
+    "/home/administrator/projects/gaussian-splatting/scene/__init__.py": "895d042f4dd2c6ee521dd985aea5c49d9c6f5c7379f76c4d537d8dc5468f18bf",
+    "/home/administrator/projects/gaussian-splatting/scene/gaussian_model.py": "546ba41528a879af4d83bd280a3ef3cbcca9a5e9132204185aaa8f8ee9ffa310",
+    "/home/administrator/projects/gaussian-splatting/scene/cameras.py": "7344b9a4c95e3649becab1b9e30eb0b351a15a61370f64352dcb231aed916128",
+    "/home/administrator/projects/gaussian-splatting/scene/dataset_readers.py": "b06f01648fee893c4785ed38eeb934f91b79817b9dcbb694291c9162b0b6ba94",
+    "/home/administrator/projects/gaussian-splatting/utils/camera_utils.py": "7644d89893f2481a7a9be592227bf11f3e6e5c469c9ce92c3cb25f9ff920c458",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.h": "58b97a9728e24d41602a2ac3e8eace025cfd3228de6e75033dc458d0303a46f4",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.cu": "e338380e2d4631cf842904fbf87025ddb46d49b5f1a5a22fd53bf8ada0ec1109",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/forward.cu": "4bfb6830a138bd016f39fa4558f998825d4182b12cfbda2f62bed0ab75042b54",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/config.h": "86d90fe26989e5a991104842961341d1bcb4374d5068dcb2a56d63a9017f8d65",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so": "6fb6d2d0539cfc28a0ca150a0fd5ff02a1402ef0a92f97ce05f5e72b46255b3c"
+  },
+  "states": [
+    "base",
+    "A_local",
+    "A_global",
+    "A_shuffle",
+    "B_local",
+    "B_global",
+    "B_shuffle"
+  ],
+  "historical_controls": [
+    "gain_1.05",
+    "gain_1.1",
+    "gain_1.25",
+    "opacity_1.1",
+    "opacity_1.25",
+    "opacity_1.5"
+  ],
+  "historical_controls_reused_not_rerendered": true,
+  "seed": 20261023,
+  "nearest_neighbor_workers": 1,
+  "nearest_neighbor_k": 2,
+  "tie_rule": "Recompute float64 squared distances; exact equal k=2 distances trigger nextafter(sqrt(d2),inf) ball and minimum original ID among exact minima.",
+  "main_state": "B_local",
+  "all_train_views": 219,
+  "test_views": 32,
+  "image_size": [
+    979,
+    546
+  ],
+  "projection_ranks": [
+    0,
+    72,
+    145,
+    218
+  ],
+  "projection_overlap": "Distance <= sum of native ceil-three-sigma radii; report all donating pairs and both-visible conditional fractions.",
+  "panel_views": [
+    "000009.jpg",
+    "000017.jpg",
+    "000105.jpg"
+  ],
+  "stage_budget_seconds": 600,
+  "memory_budget_bytes": 10737418240,
+  "uses_training_GT": false,
+  "uses_test_GT_for_fit_or_selection": false,
+  "test_set_previously_used": true,
+  "weights_npy_row_order": [
+    "A",
+    "B"
+  ],
+  "opacity_variants_npy_row_order": [
+    "base",
+    "A_local",
+    "A_global",
+    "A_shuffle",
+    "B_local",
+    "B_global",
+    "B_shuffle"
+  ],
+  "primitive": "tau=softplus(logit); w=1 or mean native post-lowpass Gaussian projected area; fixed nearest surviving center.",
+  "scope": "Known simple proxy mechanism check; no strict optical conservation, optimizer, novelty or deployment-speed claim."
+}

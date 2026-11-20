@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "task": "full50_optimization_inverse_jury",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "no_experiments": true,
+  "timestamp": "2026-10-23T06:51:36.124652+08:00",
+  "agent_id": "01a165cf-35f9-7612-936c-8dea2b3a6faa",
+  "public_final_count": 1,
+  "verdict": "#44 sole bounded preparation recommendation; no efficacy or training approval; #43 stop localfailedrediscovery",
+  "completed_at": "2026-10-23T07:07:23.843701+08:00"
+}

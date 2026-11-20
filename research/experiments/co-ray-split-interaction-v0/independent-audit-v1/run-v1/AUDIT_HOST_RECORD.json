@@ -1,0 +1,19 @@
+{
+  "schema": "co-ray-split-interaction-v0/audit-host-record-v1",
+  "phase": "audit",
+  "complete": true,
+  "exit_code": 0,
+  "automatic_retries": 0,
+  "wall_limit_seconds": 120,
+  "RSS_limit_bytes": 8589934592,
+  "CUDA_VISIBLE_DEVICES": "",
+  "cpu_threads": 1,
+  "formal_PASS_scope": "SAVED_ARTIFACT_CONSISTENCY_ONLY",
+  "training_authorized": false,
+  "audit_sha256": "3c52779593ca315d895778a9f415bdcc85663ed692b2fe887ad8e80cc2c81e23",
+  "wall_seconds": 63.020260562000004,
+  "peak_tree_RSS_bytes": 1280946176,
+  "largest_observed_process_tree": 2,
+  "worker_reaped": true,
+  "supervisor_array_libraries_imported": false
+}

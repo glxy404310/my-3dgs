@@ -1,0 +1,170 @@
+[
+  {
+    "view": "000002.jpg",
+    "rank": 0,
+    "unique_points": 333624,
+    "depth_max_absolute_error": 6.9959585147216785e-06,
+    "depth_max_relative_error": 2.499066858012136e-07,
+    "camera_depth_axis": [
+      -0.6143153366983031,
+      -0.0584841832938814,
+      0.7868902511797295
+    ],
+    "camera_center": [
+      3.419787314564131,
+      0.7126429411208084,
+      -2.445030924141537
+    ],
+    "depth_gate": true,
+    "max_rgb_parity_error": 4.936314431658317e-07,
+    "zero_order_bitwise": true,
+    "zero_rgb_bitwise": true
+  },
+  {
+    "view": "000037.jpg",
+    "rank": 31,
+    "unique_points": 364330,
+    "depth_max_absolute_error": 2.8408316765649033e-06,
+    "depth_max_relative_error": 1.2180800263521892e-07,
+    "camera_depth_axis": [
+      0.3660223776624178,
+      0.05651037701179806,
+      0.9288886888859907
+    ],
+    "camera_center": [
+      -0.9024824060390976,
+      0.2984145235190315,
+      -2.622280114760298
+    ],
+    "depth_gate": true,
+    "max_rgb_parity_error": 4.6325416769299466e-07,
+    "zero_order_bitwise": true,
+    "zero_rgb_bitwise": true
+  },
+  {
+    "view": "000072.jpg",
+    "rank": 62,
+    "unique_points": 284947,
+    "depth_max_absolute_error": 5.087960772698352e-06,
+    "depth_max_relative_error": 1.4845051402710245e-07,
+    "camera_depth_axis": [
+      0.6629678804861311,
+      0.44307846696808584,
+      -0.6034526174878502
+    ],
+    "camera_center": [
+      -2.513820490239979,
+      -0.5440356627111828,
+      2.9132843827786887
+    ],
+    "depth_gate": true,
+    "max_rgb_parity_error": 4.860925368888047e-07,
+    "zero_order_bitwise": true,
+    "zero_rgb_bitwise": true
+  },
+  {
+    "view": "000108.jpg",
+    "rank": 93,
+    "unique_points": 345242,
+    "depth_max_absolute_error": 7.831785723055873e-06,
+    "depth_max_relative_error": 1.9469666045344958e-07,
+    "camera_depth_axis": [
+      -0.4653146061629597,
+      0.21552960391769502,
+      -0.8585041101395442
+    ],
+    "camera_center": [
+      2.8829987521200047,
+      -0.3668563599035546,
+      3.7353056684053323
+    ],
+    "depth_gate": true,
+    "max_rgb_parity_error": 5.62209494847643e-07,
+    "zero_order_bitwise": true,
+    "zero_rgb_bitwise": true
+  },
+  {
+    "view": "000143.jpg",
+    "rank": 124,
+    "unique_points": 314785,
+    "depth_max_absolute_error": 3.6858620120483465e-06,
+    "depth_max_relative_error": 9.834700640259691e-08,
+    "camera_depth_axis": [
+      0.2754113792232149,
+      0.024598589345822937,
+      0.9610116969093363
+    ],
+    "camera_center": [
+      0.002471541417814992,
+      0.14708043474095603,
+      -1.94276686476686
+    ],
+    "depth_gate": true,
+    "max_rgb_parity_error": 4.833111039159732e-07,
+    "zero_order_bitwise": true,
+    "zero_rgb_bitwise": true
+  },
+  {
+    "view": "000179.jpg",
+    "rank": 155,
+    "unique_points": 320964,
+    "depth_max_absolute_error": 7.900685886852443e-06,
+    "depth_max_relative_error": 1.6850386774288702e-07,
+    "camera_depth_axis": [
+      -0.42901705040240334,
+      0.35638949402740194,
+      -0.8300186136532806
+    ],
+    "camera_center": [
+      2.4296994273936607,
+      -0.39310661012700626,
+      3.053872495161889
+    ],
+    "depth_gate": true,
+    "max_rgb_parity_error": 5.936638076686762e-07,
+    "zero_order_bitwise": true,
+    "zero_rgb_bitwise": true
+  },
+  {
+    "view": "000214.jpg",
+    "rank": 186,
+    "unique_points": 350999,
+    "depth_max_absolute_error": 3.1470686039369866e-06,
+    "depth_max_relative_error": 1.0618213732546876e-07,
+    "camera_depth_axis": [
+      0.22345423775263923,
+      -0.00168024509125707,
+      0.9747129733448818
+    ],
+    "camera_center": [
+      -0.5664509552722535,
+      0.357178688948122,
+      -2.2455364279479753
+    ],
+    "depth_gate": true,
+    "max_rgb_parity_error": 6.418048952294697e-07,
+    "zero_order_bitwise": true,
+    "zero_rgb_bitwise": true
+  },
+  {
+    "view": "000251.jpg",
+    "rank": 218,
+    "unique_points": 288255,
+    "depth_max_absolute_error": 5.4998556038299284e-06,
+    "depth_max_relative_error": 2.3113701106138154e-07,
+    "camera_depth_axis": [
+      0.01845100815219289,
+      0.3433071632055188,
+      -0.9390419330306534
+    ],
+    "camera_center": [
+      -0.4033358009556369,
+      -0.8275658143975461,
+      5.286793717309588
+    ],
+    "depth_gate": true,
+    "max_rgb_parity_error": 5.363693887927568e-07,
+    "zero_order_bitwise": true,
+    "zero_rgb_bitwise": true
+  }
+]

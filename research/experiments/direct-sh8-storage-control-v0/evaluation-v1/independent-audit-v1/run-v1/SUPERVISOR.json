@@ -1,0 +1,15 @@
+{
+  "status": "PASS_SAVED_ARTIFACT_CONSISTENCY",
+  "attempts": 1,
+  "automatic_retries": 0,
+  "external_limit_seconds": 100,
+  "internal_limit_seconds": 94,
+  "host_RSS_limit_bytes": 8589934592,
+  "CPU_only": true,
+  "timeout": false,
+  "memory_stop": false,
+  "child_exit_code": 0,
+  "actual_supervisor_wall_seconds": 47.35093613199999,
+  "peak_sampled_combined_host_RSS_bytes": 1464213504,
+  "torch_imported": false
+}

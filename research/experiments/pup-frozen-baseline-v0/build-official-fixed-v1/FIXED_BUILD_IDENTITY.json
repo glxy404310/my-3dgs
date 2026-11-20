@@ -1,0 +1,304 @@
+{
+  "schema": "pup-official-fixed-private-build-identity-v1",
+  "tool_status": "OFFICIAL_FIXED_PRIVATE_BUILD_IMPORT_PASS",
+  "pass_conditions": {
+    "outer_exit_zero": true,
+    "watchdog_pass": true,
+    "stage_pass": true,
+    "within_900_seconds": true,
+    "no_timeout_or_memory_stop": true,
+    "protected_native_teacher_and_old_fisher_unchanged": true,
+    "all_old_build_artifacts_unchanged": true,
+    "all_tracked_sources_unchanged": true,
+    "no_live_stage_group_processes": true,
+    "exact_official_source_correction": true,
+    "pins_match": true,
+    "import_pass": true,
+    "zero_scientific_calls": true,
+    "cuda_never_initialized": true,
+    "no_scientific_stage_or_install": true,
+    "tool_sources_unchanged": true,
+    "actual_private_artifact_hashes_match_import": true,
+    "all_tracked_blob_hashes_match_index": true
+  },
+  "official_fisher_commit": "f62f1cce2cc47a8609c58e4d448ca8eeb6f86e60",
+  "glm_commit": "5c46b9c07008ae65cb81ab79cd677ecc1934b903",
+  "reused_pup_main_commit": "e971ea4802908c69eab7e8601bb1eddd2e443754",
+  "pup_main_path": "/home/administrator/projects/pup-frozen-baseline-e971ea48",
+  "fixed_checkout": "/home/administrator/projects/pup-fisher-official-f62f1cce",
+  "private_build_base": "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1",
+  "private_lib": "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10",
+  "tracked_entry_counts": {
+    "main": 45,
+    "fisher": 21,
+    "glm": 1529,
+    "old_fisher": 21,
+    "old_glm": 1529
+  },
+  "python": {
+    "path": "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/__init__.py",
+    "sha256": "1d4fc43bb67c4552193d340e2d6894ad7ec3c0d04a620fd7655c89ccf855df5b"
+  },
+  "extension": {
+    "path": "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/_C.cpython-310-x86_64-linux-gnu.so",
+    "sha256": "ca99d74bf9d880585b64f75444339bf739276883c8c0f4a85b926fb6e15c9219"
+  },
+  "fixed_backward": {
+    "path": "/home/administrator/projects/pup-fisher-official-f62f1cce/cuda_rasterizer/backward.cu",
+    "mode": "100644",
+    "git_blob_sha1": "edfbb87fc8f33a577d4199b6f5f9db2b8449f1c2",
+    "actual_git_blob_sha1": "edfbb87fc8f33a577d4199b6f5f9db2b8449f1c2",
+    "sha256": "2ce6b8690f4fc5b7d7aa38586ec235360edc3f35ee76baee61775aead9ff48c0",
+    "bytes": 29012
+  },
+  "execution": {
+    "tool_session": {
+      "tool": "exec_command/write_stdin",
+      "session_id": 14856,
+      "initial_chunk_id": "6b8369",
+      "initial_wait_wall_seconds": 10.0030448,
+      "final_chunk_id": "ac8ab9",
+      "final_exit_code": 0,
+      "status": "completed",
+      "execution_attempts": 1,
+      "scope": "Official-fixed source clone/build/import only; no scientific operator calls"
+    },
+    "external": {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "Ubuntu-22.04",
+        "--",
+        "/usr/bin/timeout",
+        "--signal=TERM",
+        "--kill-after=5s",
+        "895s",
+        "/home/administrator/venvs/3dgs/bin/python",
+        "-B",
+        "-u",
+        "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/run_private_build.py"
+      ],
+      "windows_host_pid": 21792,
+      "started_UTC": "2026-10-22T21:11:20.5410881Z",
+      "finished_UTC": "2026-10-22T21:13:26.6544557Z",
+      "exit_code": 0,
+      "wall_seconds": 126.1874355,
+      "outer_timeout_seconds": 895,
+      "outer_kill_after_seconds": 5,
+      "hard_limit_seconds": 900
+    },
+    "stage_pid": 369,
+    "stage_pgid": 369,
+    "watchdog_pid": 368,
+    "watchdog_wall_seconds": 122.33500216399997,
+    "stage_wall_seconds": 121.150041784,
+    "peak_sampled_combined_RSS_bytes": 3577995264,
+    "RSS_limit_bytes": 8589934592,
+    "RSS_poll_seconds": 0.25,
+    "internal_TERM_seconds": 880,
+    "internal_KILL_delay_seconds": 4,
+    "outer_TERM_seconds": 895,
+    "outer_KILL_delay_seconds": 5,
+    "hard_limit_seconds": 900,
+    "remaining_live_stage_group_pids": []
+  },
+  "native_paths_and_hashes": {
+    "paths": {
+      "python": "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py",
+      "extension": "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so"
+    },
+    "before": {
+      "python": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+      "extension": "6fb6d2d0539cfc28a0ca150a0fd5ff02a1402ef0a92f97ce05f5e72b46255b3c"
+    },
+    "after": {
+      "python": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+      "extension": "6fb6d2d0539cfc28a0ca150a0fd5ff02a1402ef0a92f97ce05f5e72b46255b3c"
+    }
+  },
+  "protected_before": {
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so": "6fb6d2d0539cfc28a0ca150a0fd5ff02a1402ef0a92f97ce05f5e72b46255b3c",
+    "/home/administrator/projects/gaussian-splatting/output/truck_30000_r1/point_cloud/iteration_30000/point_cloud.ply": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+    "/home/administrator/projects/pup-frozen-baseline-e971ea48-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/__init__.py": "1d4fc43bb67c4552193d340e2d6894ad7ec3c0d04a620fd7655c89ccf855df5b",
+    "/home/administrator/projects/pup-frozen-baseline-e971ea48-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/_C.cpython-310-x86_64-linux-gnu.so": "68afd301ee97b6eb982be39e3f1a277b50c9200cae11175374ebec550f5c9b94"
+  },
+  "protected_after": {
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so": "6fb6d2d0539cfc28a0ca150a0fd5ff02a1402ef0a92f97ce05f5e72b46255b3c",
+    "/home/administrator/projects/gaussian-splatting/output/truck_30000_r1/point_cloud/iteration_30000/point_cloud.ply": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+    "/home/administrator/projects/pup-frozen-baseline-e971ea48-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/__init__.py": "1d4fc43bb67c4552193d340e2d6894ad7ec3c0d04a620fd7655c89ccf855df5b",
+    "/home/administrator/projects/pup-frozen-baseline-e971ea48-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/_C.cpython-310-x86_64-linux-gnu.so": "68afd301ee97b6eb982be39e3f1a277b50c9200cae11175374ebec550f5c9b94"
+  },
+  "scientific_calls": 0,
+  "numerical_verified": false,
+  "environment_ready_certified": false,
+  "scope": "Clone, exact official source correction, original-author build, isolated import/link paths and callable binding presence only. No CUDA scientific operator, Scene/model, Fisher scoring, rendering, pruning, training, or installation. Numerical witness and fresh doc-follow execution remain unverified.",
+  "records": {
+    "00_git_clone.log": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/00_git_clone.log",
+      "sha256": "6f5158e0a14aef20228f01716d9e71f866c973acf2732cece38faab78da49dbb",
+      "bytes": 76
+    },
+    "01_checkout_official_fixed.log": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/01_checkout_official_fixed.log",
+      "sha256": "3d63f33a72d5c3ab0c1436ee95ed6874dc2b6e315a672e44bc84a3d958fb718f",
+      "bytes": 74
+    },
+    "02_glm_init.log": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/02_glm_init.log",
+      "sha256": "20880d62e063f3b0a15dc61b084b74167c520a077b4a6c96a4edd7765ffdfcf3",
+      "bytes": 283
+    },
+    "03_pin_main.log": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/03_pin_main.log",
+      "sha256": "5377a62e5ffc48ad5b3a6aa639bad083bf16839a6b4461d23a89b1e8e99f58a5",
+      "bytes": 41
+    },
+    "04_pin_fisher.log": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/04_pin_fisher.log",
+      "sha256": "aeb224329965547b618480a7c3bce016e71de83de10e30e9732fa952dde5bc62",
+      "bytes": 41
+    },
+    "05_pin_glm.log": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/05_pin_glm.log",
+      "sha256": "a8068258859561e1e63db3c5c115150aa6e7c0981e5b5e73ab48a20043b6270b",
+      "bytes": 41
+    },
+    "06_pin_old_fisher.log": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/06_pin_old_fisher.log",
+      "sha256": "2f8d8a927ca9801f6161d0cdfb5d3a2412b5ad95a57d3f39ef5a4e955aaebbb7",
+      "bytes": 41
+    },
+    "07_pin_old_glm.log": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/07_pin_old_glm.log",
+      "sha256": "a8068258859561e1e63db3c5c115150aa6e7c0981e5b5e73ab48a20043b6270b",
+      "bytes": 41
+    },
+    "08_verify_merge_parent.log": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/08_verify_merge_parent.log",
+      "sha256": "2f8d8a927ca9801f6161d0cdfb5d3a2412b5ad95a57d3f39ef5a4e955aaebbb7",
+      "bytes": 41
+    },
+    "09_verify_unique_change.log": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/09_verify_unique_change.log",
+      "sha256": "8046d011dc58fe226511273cd0d089002f2ff7e5954a9ee1b1a54c43d5492ff6",
+      "bytes": 30
+    },
+    "10_verify_official_patch.log": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/10_verify_official_patch.log",
+      "sha256": "e21e7d28c0c32920c340096c51974fd495177a2ef9832a2eb257e1340adfb026",
+      "bytes": 723
+    },
+    "11_hardware_readonly.log": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/11_hardware_readonly.log",
+      "sha256": "12ee9bf26778b30aa42f873446faf0f6f3f3accbde33295d6c005ba1c5a005f5",
+      "bytes": 43
+    },
+    "12_nvcc_readonly.log": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/12_nvcc_readonly.log",
+      "sha256": "68f8b0a1301428031e307cf5260142a517bff25cc232a09eae2734be475d721f",
+      "bytes": 208
+    },
+    "13_gxx_readonly.log": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/13_gxx_readonly.log",
+      "sha256": "9eaf9b7f4b11c2e84e2478c2ceb0e4f48f4ba88565bcfc832b3bce49847dda6d",
+      "bytes": 246
+    },
+    "14_author_build.log": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/14_author_build.log",
+      "sha256": "df628a168ea90f7206974da39e717ea12247414c9c3a7984d1157cb4abfeb03d",
+      "bytes": 43370
+    },
+    "15_private_import_only.log": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/15_private_import_only.log",
+      "sha256": "bd8ee0c6f9406295d4d8eb3051c0e79322218e98220f03a285b12d3f9af2b39d",
+      "bytes": 1640
+    },
+    "ATTEMPT_STARTED.json": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/ATTEMPT_STARTED.json",
+      "sha256": "fa35cabf55a418ff1332c6ef27628a337851934b293c03bafa4edd27e43b8342",
+      "bytes": 83
+    },
+    "BUILD_CONTRACT.md": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/BUILD_CONTRACT.md",
+      "sha256": "ce775249b1b4edb495d573d30221cfe364b7409d2cdc240eaae63bdd91706488",
+      "bytes": 3560
+    },
+    "EXTERNAL_RUN.json": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/EXTERNAL_RUN.json",
+      "sha256": "2d12eb02178f46347e72d2662635cdba8cf4ad0b00587a12949510f963feb877",
+      "bytes": 642
+    },
+    "EXTERNAL_RUN.log": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/EXTERNAL_RUN.log",
+      "sha256": "12e511dd06dd984ee0a6afaab37eda5c2160186e1d3348871b23d4571756edeb",
+      "bytes": 399
+    },
+    "FULL_STAGE.log": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/FULL_STAGE.log",
+      "sha256": "2beeecfe3c2cd45a74b082fdc96573bc7641e3e1a65d13cf1f98a18982642527",
+      "bytes": 1067
+    },
+    "IMPORT_RESULT.json": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/IMPORT_RESULT.json",
+      "sha256": "79515da3aeca2a55c748e9eb3d80be0ce48025fa665ee4bf3e2941d0bf40616b",
+      "bytes": 1748
+    },
+    "OFFICIAL_SOURCE_EVIDENCE.json": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/OFFICIAL_SOURCE_EVIDENCE.json",
+      "sha256": "10e5f6528a05bd599e50642c0e1a3f76ee396dace3261379b6067d3c1e90a8c6",
+      "bytes": 33754
+    },
+    "OLD_ARTIFACTS_AFTER.json": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/OLD_ARTIFACTS_AFTER.json",
+      "sha256": "61a393957ebb0f001db6141cb56b49e949ef4822f1a6e7d003a7c34acbbcb75e",
+      "bytes": 5488
+    },
+    "OLD_ARTIFACTS_BEFORE.json": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/OLD_ARTIFACTS_BEFORE.json",
+      "sha256": "61a393957ebb0f001db6141cb56b49e949ef4822f1a6e7d003a7c34acbbcb75e",
+      "bytes": 5488
+    },
+    "STAGE_RESULTS.json": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/STAGE_RESULTS.json",
+      "sha256": "df42250b638bb09014804fb810e553d5063154d5c685feb8b5de4f974f34ca54",
+      "bytes": 18831
+    },
+    "TOOL_SESSION.json": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/TOOL_SESSION.json",
+      "sha256": "1d5040c1e20acfd132e6bc4c595eeccbd37b568ec29d42e48869aa2ded34df63",
+      "bytes": 335
+    },
+    "TRACKED_AFTER.json": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/TRACKED_AFTER.json",
+      "sha256": "3b011a303b085172a416b8b7c2085ded2462455ed8f47386d64524a5de0c3205",
+      "bytes": 1021545
+    },
+    "TRACKED_BEFORE.json": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/TRACKED_BEFORE.json",
+      "sha256": "3b011a303b085172a416b8b7c2085ded2462455ed8f47386d64524a5de0c3205",
+      "bytes": 1021545
+    },
+    "WATCHDOG.json": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/WATCHDOG.json",
+      "sha256": "7eeca0fd6d5da1e19f796fb16a8f49044d085d79c25712225bd1f40f0b652ab1",
+      "bytes": 23965
+    },
+    "finalize_identity.py": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/finalize_identity.py",
+      "sha256": "fa9c6861be311de362a42fe7744aaa432f72667137e215892377f110fcdc95b2",
+      "bytes": 5853
+    },
+    "import_smoke.py": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/import_smoke.py",
+      "sha256": "1d23d0cc8024dca0316e6d1d907070cc686c0b8f42b51b013c8ba5ad12120833",
+      "bytes": 2300
+    },
+    "run_private_build.py": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/run_private_build.py",
+      "sha256": "4e50956a6ed2af5b4a077973ae2a21d9b2767657657530fc919d1a35908cbe74",
+      "bytes": 17770
+    }
+  }
+}

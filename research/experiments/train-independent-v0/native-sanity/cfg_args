@@ -1,0 +1,1 @@
+Namespace(sh_degree=3, source_path='/home/administrator/datasets/tandt_db/tandt/train', model_path='/mnt/d/Documents/my 3dgs/research/experiments/train-independent-v0/native-sanity', images='images', depths='', resolution=1, white_background=False, train_test_exp=False, data_device='cpu', eval=True)

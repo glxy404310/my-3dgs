@@ -1,0 +1,126 @@
+{
+  "status": "complete",
+  "records": [
+    {
+      "seed": "seed0",
+      "method": "clone_corrected",
+      "event": 3600,
+      "n_before": 1094820,
+      "pruned": 1383,
+      "cloned_mothers_pruned": 0,
+      "groups": [
+        {
+          "code": 0,
+          "name": "pre-event survivor",
+          "present": 1044979,
+          "pruned": 1373,
+          "opacity": 1033,
+          "screen": 0,
+          "world": 340,
+          "multiple_reasons": 0
+        },
+        {
+          "code": 1,
+          "name": "clone born in this event",
+          "present": 23205,
+          "pruned": 0,
+          "opacity": 0,
+          "screen": 0,
+          "world": 0,
+          "multiple_reasons": 0
+        },
+        {
+          "code": 2,
+          "name": "split child born in this event",
+          "present": 26636,
+          "pruned": 10,
+          "opacity": 0,
+          "screen": 0,
+          "world": 10,
+          "multiple_reasons": 0
+        }
+      ]
+    },
+    {
+      "seed": "seed0",
+      "method": "clone_corrected_las",
+      "event": 3600,
+      "n_before": 1094820,
+      "pruned": 1391,
+      "cloned_mothers_pruned": 0,
+      "groups": [
+        {
+          "code": 0,
+          "name": "pre-event survivor",
+          "present": 1044980,
+          "pruned": 1373,
+          "opacity": 1033,
+          "screen": 0,
+          "world": 340,
+          "multiple_reasons": 0
+        },
+        {
+          "code": 1,
+          "name": "clone born in this event",
+          "present": 23206,
+          "pruned": 0,
+          "opacity": 0,
+          "screen": 0,
+          "world": 0,
+          "multiple_reasons": 0
+        },
+        {
+          "code": 2,
+          "name": "split child born in this event",
+          "present": 26634,
+          "pruned": 18,
+          "opacity": 0,
+          "screen": 0,
+          "world": 18,
+          "multiple_reasons": 0
+        }
+      ]
+    },
+    {
+      "seed": "seed0",
+      "method": "native",
+      "event": 3600,
+      "n_before": 1094818,
+      "pruned": 1384,
+      "cloned_mothers_pruned": 0,
+      "groups": [
+        {
+          "code": 0,
+          "name": "pre-event survivor",
+          "present": 1044981,
+          "pruned": 1374,
+          "opacity": 1034,
+          "screen": 0,
+          "world": 340,
+          "multiple_reasons": 0
+        },
+        {
+          "code": 1,
+          "name": "clone born in this event",
+          "present": 23205,
+          "pruned": 0,
+          "opacity": 0,
+          "screen": 0,
+          "world": 0,
+          "multiple_reasons": 0
+        },
+        {
+          "code": 2,
+          "name": "split child born in this event",
+          "present": 26632,
+          "pruned": 10,
+          "opacity": 0,
+          "screen": 0,
+          "world": 10,
+          "multiple_reasons": 0
+        }
+      ]
+    }
+  ],
+  "scope": "Descriptive membership/reason counts, reasons overlap. Not proof pruning is harmful or that protecting newborns helps."
+}

@@ -1,0 +1,10 @@
+{
+  "authorization": "User explicitly accepted observed Truck visual tradeoff and requested unchanged-parameter Train replication on 2026-10-22.",
+  "user_request": "我看这个画质损失可以接受，先保持参数不变跑Train，看看能不能复现这个省时和画质折中。原来的FAIL保留，别为了过关改结果。",
+  "original_truck_status": "FAIL",
+  "original_truck_results_sha256": "f206728b95a7271224a19ec191ef622d777270c623ca595c15203742e74952b6",
+  "original_truck_gate_overridden": false,
+  "launch_basis": "New explicit user authorization, not original Truck PASS",
+  "unchanged_runner_sha256": "46dc1636b9e8ad4630579d7af2ea3058e22487318da8fb0eeacb5022b706c840",
+  "thresholds_unchanged": true
+}

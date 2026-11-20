@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-22",
+  "goal": "重新找一个3DGS选题，先查清最接近已有工作，再给有明确创新点、能落地验证的方向",
+  "candidate_count": 9,
+  "selected_dedup_key": "lod|offline_occlusion_compatibility_tree|external_interleaving_commutator",
+  "closest_primary": [
+    "https://arxiv.org/html/2406.12080",
+    "https://arxiv.org/html/2505.23158v2",
+    "https://occlugaussian.github.io/",
+    "https://arxiv.org/html/2605.05876v1",
+    "https://r4dl.github.io/StopThePop/",
+    "https://arxiv.org/html/2603.16103",
+    "https://arxiv.org/html/2609.08730v1",
+    "https://arxiv.org/html/2506.09534",
+    "https://openaccess.thecvf.com/content/CVPR2026/papers/Pan_Learning_Differentiable_Hierarchies_in_3D_Gaussian_Splatting_CVPR_2026_paper.pdf"
+  ],
+  "novelty_verdict": "PROCEED (same-family provisional; scoped search)",
+  "method": "baseline sparse merge graph and matching operator, plus explicit external depth-interleaving alpha-swap edge cost; refresh after batches; fixed final primitive count",
+  "new_inputs": "calibrated training cameras and sampled rendering statistics; disclose added setup cost versus viewless NanoGS",
+  "evidence": {
+    "cpu_mechanism_check": "CPU_DIAGNOSTIC.json",
+    "real_scene_effect": "not tested",
+    "resources": "WSL CUDA available; RTX5070; Truck PLY present; Train early checkpoints located"
+  },
+  "next_action": "preregistered frozen-teacher candidate substitution, then matched-count 50%/25% compaction only if diagnostic passes",
+  "nonclaims": [
+    "guaranteed global novelty",
+    "proven image-quality gain",
+    "whole-merge error bound",
+    "runtime speedup",
+    "paper acceptance"
+  ],
+  "completion_requirements": {
+    "new_topic": "specific post-training merge/LOD topic",
+    "closest_work": "NanoGS, CVT-GS, H3DGS, GHAP, Pan CVPR2026 primary mechanism checked",
+    "clear_innovation": "external primitive-dependent merge edge cost with explicit formula and intervention distinction",
+    "implementable_validation": "data/resources checked, runnable CPU mechanism diagnostic and fixed real-scene protocol"
+  }
+}

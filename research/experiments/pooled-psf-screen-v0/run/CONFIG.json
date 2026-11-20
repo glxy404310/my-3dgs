@@ -1,0 +1,57 @@
+{
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "solver_file_sha256": {
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/scipy/optimize/_minimize.py": "306777b0fe8b370a44951896f39887c411229e16a8865cb481f38bc61b54b3bb",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/scipy/optimize/_slsqp_py.py": "f0a3454622658629eca92308a77fa5ce3aebc3895cad5ec20037f537a93cecb0",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/scipy/optimize/_slsqp.cpython-310-x86_64-linux-gnu.so": "7b137b14ed43577fc114110754f1e675c0388da18d00c672223ee7ba829745f7"
+  },
+  "script_sha256": "4fdf39e171df9b6659f645735edb966cc6550b46c33ef05c38638982eb907268",
+  "contract_sha256": "9a98f84e3b0384704bfd38d1f46d578db82bd5eef89fab9d6bee6809064ced7a",
+  "assumptions_sha256": "9eb739a5d2b06790059bc762623a5543647fb0184acc2e711fbaf3a16f044f37",
+  "upstream_manifest_sha256": "6707cd2d74b698e994fe38578e45b0e80c6b2d3f4ff8b7bd02eae6265c1a9565",
+  "upstream_results_sha256": "959f3bbbea8ff5e4db7137c20d988c2a2818a485452c222fc4b73c22d8c04c2f",
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "solver": {
+    "method": "SLSQP",
+    "ftol": 1e-12,
+    "maxiter": 300,
+    "analytic_gradient": true,
+    "initial": "center delta"
+  },
+  "prediction_dtype": "float32",
+  "npz_compression": "ZIP_STORED",
+  "rgb_domain": "original encoded RGB; teacher clamp[0,1]; GT unchanged",
+  "arms": [
+    "identity",
+    "gaussian_0.5",
+    "gaussian_1",
+    "gaussian_1.5",
+    "exposure",
+    "exposure_translation",
+    "psf"
+  ],
+  "argv": [
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/diagnose_pooled_psf_screen.py",
+    "--upstream",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pruned-opacity-transfer-v0/run",
+    "--contract",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pooled-psf-screen-v0/CONTRACT.md",
+    "--output",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pooled-psf-screen-v0/run"
+  ],
+  "mask_pixels": 466650,
+  "fold_evaluation_pixels": [
+    234000,
+    232650
+  ],
+  "training_sample_pixels": [
+    3164,
+    3149
+  ]
+}

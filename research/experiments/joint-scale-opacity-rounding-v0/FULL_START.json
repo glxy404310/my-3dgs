@@ -1,0 +1,10 @@
+{
+  "previous_goal_turn": "progress",
+  "full_contract_sha256": "D7EAA756CBCD214A30476CB5D24631810D6AC216F978612DD7058727057D7F77",
+  "CPU_pilot_exit": 0,
+  "CPU_pilot_session": 28829,
+  "full_stage": "contract locked, CPU full encoding about to start",
+  "training": false,
+  "CPU_pilot_decision": "PROCEED_TO_FULL_FROZEN_RGB",
+  "encoder_sha256": "4F6AF77AEE5A1855936FE2C246F51737EB836AE19FCF21BC41A07BA029BC012C"
+}

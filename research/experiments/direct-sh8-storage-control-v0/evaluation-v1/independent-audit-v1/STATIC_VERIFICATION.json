@@ -1,0 +1,31 @@
+{
+  "status": "PREPARATION_STATIC_AND_TINY_ONLY_PASS",
+  "python_syntax_compiles": true,
+  "bash_syntax_pass": true,
+  "top_level_imports": [
+    "argparse",
+    "ThreadPoolExecutor",
+    "csv",
+    "hashlib",
+    "json",
+    "math",
+    "os",
+    "Path",
+    "signal",
+    "subprocess",
+    "struct",
+    "sys",
+    "time",
+    "traceback"
+  ],
+  "producer_functions_imported": false,
+  "real_new_arrays_read": false,
+  "real_codec_payload_read": false,
+  "run_directory_absent": true,
+  "native_evaluation_actualrun_absent": true,
+  "old_audit_sha256_unchanged": true,
+  "old_audit_sha256": "8808b5aa1e9bc0ec9ea491decba916298b6ad5522d1b48dacf7845b9dae22f23",
+  "audit_sha256": "b7f26d2b28c0787cc26385990e2d79cb0bfd67f3663fe6efcdc5d1aec40a24c3",
+  "contract_sha256": "d6e34a2a05aa4123dee521c7bbfaf5b631a9eb3fc5687a7833eb9b24178dca3d",
+  "launcher_sha256": "289486289b57e22ea24421c32a7462add94946f678ad87d3e138d6d20fba707d"
+}

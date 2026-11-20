@@ -1,0 +1,15 @@
+{
+  "call_number": 28,
+  "purpose": "post-psf-full26-jury",
+  "timestamp": "2026-10-22T18:04:07.855Z",
+  "agent_id": "01a164c1-cfc1-7c40-ae1e-fc5ff027a1c7",
+  "agent_path": "/root/post_psf_next_jury",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "request_recovered_verbatim": true,
+  "response_recovered_verbatim": true
+}

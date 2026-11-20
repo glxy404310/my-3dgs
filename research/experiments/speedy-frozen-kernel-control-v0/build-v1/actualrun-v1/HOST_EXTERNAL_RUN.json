@@ -1,0 +1,13 @@
+{
+  "schema": "speedy-private-extension/host-external-v1",
+  "scope": "One official private author build and import; zero CUDA dispatch",
+  "started_UTC": "2026-10-22T22:26:51.1136651Z",
+  "finished_UTC": "2026-10-22T22:28:04.1035858Z",
+  "exit_code": 0,
+  "actual_host_wall_seconds": 72.9857417,
+  "hard_limit_seconds": 180,
+  "within_limit": true,
+  "attempts": 1,
+  "automatic_retry": false,
+  "preparation_manifest_sha256": "c4f8684236b8390d8a8be22ed95990d776b4f6ea2044a72cff4d50c74bcaa2ee"
+}

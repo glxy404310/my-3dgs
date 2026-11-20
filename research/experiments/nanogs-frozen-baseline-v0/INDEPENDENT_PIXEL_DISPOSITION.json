@@ -1,0 +1,439 @@
+{
+  "formal_audit_status": "FAIL_UNCHANGED",
+  "requested_core_status": "ONE_SSIM_COMPARISON_OVER_PREDECLARED_TOLERANCE",
+  "original_audit_sha256": "2622897a668f309f61b5c49e9e015e683abf47081fbdd4e98fa836ec427d2399",
+  "original_watchdog_sha256": "71748b49c35d324b870635c25dda0553208c4b1d30dc5874f56f8196375566ef",
+  "script_sha256": "e14c7edf4eae5f948b3abcee6d0d8380b38ba849edbd54a9fcfbc7583a716eb1",
+  "session": {
+    "session_id": 81990,
+    "terminal": true,
+    "exec_outer_exit_code": 1,
+    "auditor_child_exit_code": 2,
+    "external_wall_seconds": 40.798847231,
+    "internal_wall_seconds": 40.240220026,
+    "timeout": false,
+    "within_300_seconds": true
+  },
+  "tol_unchanged": {
+    "mse": 2E-09,
+    "psnr": 0.0002,
+    "ssim": 2E-05,
+    "max_rgb_replay": 2E-05
+  },
+  "raw_arrays_checked": 231,
+  "raw_metric_rows": 165,
+  "unique_hash_verified_files": 423,
+  "checks_count": 3144,
+  "formal_failed_checks": 43,
+  "requested_core_failures": [
+    {
+      "name": "complete:nanogs:000233.jpg:gt_ssim",
+      "pass": false,
+      "detail": 2.000447840977415E-05
+    }
+  ],
+  "auxiliary_validator_definition_bug": {
+    "count": 42,
+    "description": "Auditor applied the MSE 2e-9 tolerance to teacher_max_abs_rgb, an absolute channel statistic computed in float64 versus producer float32 subtraction. This unrequested auxiliary criterion was overly strict. Its original failures are retained and are not evidence of producer pixel corruption.",
+    "max_observed_abs_discrepancy": 2.980232238769531E-08,
+    "failures": [
+      {
+        "name": "complete:nanogs:000001.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 2.980232238769531E-08
+      },
+      {
+        "name": "complete:all219:000009.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 3.725290298461914E-09
+      },
+      {
+        "name": "complete:nanogs:000009.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:all219:000017.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 3.725290298461914E-09
+      },
+      {
+        "name": "complete:nanogs:000017.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:all219:000041.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:nanogs:000041.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:all219:000049.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 2.980232238769531E-08
+      },
+      {
+        "name": "complete:all219:000057.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 7.450580596923828E-09
+      },
+      {
+        "name": "complete:nanogs:000057.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 2.980232238769531E-08
+      },
+      {
+        "name": "complete:all219:000065.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:nanogs:000065.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 2.980232238769531E-08
+      },
+      {
+        "name": "complete:nanogs:000073.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:all219:000081.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:nanogs:000081.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:nanogs:000089.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:all219:000097.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:all219:000105.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 2.980232238769531E-08
+      },
+      {
+        "name": "complete:all219:000113.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:nanogs:000113.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:all219:000121.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 7.450580596923828E-09
+      },
+      {
+        "name": "complete:nanogs:000121.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 2.980232238769531E-08
+      },
+      {
+        "name": "complete:nanogs:000129.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 2.2351741790771484E-08
+      },
+      {
+        "name": "complete:nanogs:000137.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 2.980232238769531E-08
+      },
+      {
+        "name": "complete:nanogs:000145.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 2.980232238769531E-08
+      },
+      {
+        "name": "complete:nanogs:000153.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 2.980232238769531E-08
+      },
+      {
+        "name": "complete:all219:000161.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 2.980232238769531E-08
+      },
+      {
+        "name": "complete:nanogs:000169.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:nanogs:000177.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:all219:000185.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 7.450580596923828E-09
+      },
+      {
+        "name": "complete:nanogs:000185.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:all219:000193.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 2.980232238769531E-08
+      },
+      {
+        "name": "complete:nanogs:000193.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:nanogs:000201.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 2.2351741790771484E-08
+      },
+      {
+        "name": "complete:all219:000209.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 2.980232238769531E-08
+      },
+      {
+        "name": "complete:all219:000225.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:all219:000233.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 2.980232238769531E-08
+      },
+      {
+        "name": "complete:all219:000241.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:nanogs:000241.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:all219:000249.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.4901161193847656E-08
+      },
+      {
+        "name": "complete:nanogs:000249.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 2.980232238769531E-08
+      },
+      {
+        "name": "complete:all219:000016.jpg:teacher_max_abs_rgb",
+        "pass": false,
+        "detail": 1.1175870895385742E-08
+      }
+    ]
+  },
+  "metric_stats": {
+    "gt_mse": {
+      "count": 165,
+      "max_abs_error": 8.825540914400576E-10,
+      "over_saved_tolerance": 0
+    },
+    "gt_psnr": {
+      "count": 165,
+      "max_abs_error": 3.5269415192829E-06,
+      "over_saved_tolerance": 0
+    },
+    "gt_ssim": {
+      "count": 165,
+      "max_abs_error": 2.000447840977415E-05,
+      "over_saved_tolerance": 1
+    },
+    "teacher_mse": {
+      "count": 165,
+      "max_abs_error": 2.8754194728378146E-10,
+      "over_saved_tolerance": 0
+    },
+    "teacher_max_abs_rgb": {
+      "count": 165,
+      "max_abs_error": 2.980232238769531E-08,
+      "over_saved_tolerance": 42
+    }
+  },
+  "SSIM_signed_independent_minus_reported": {
+    "min": -2.000447840977415E-05,
+    "max": -1.5755686696428128E-06,
+    "abs_error_min": 1.5755686696428128E-06,
+    "abs_error_max": 2.000447840977415E-05,
+    "over_tolerance": 1
+  },
+  "SSIM_outlier": {
+    "mode": "complete",
+    "arm": "nanogs",
+    "view": "000233.jpg",
+    "independent_scipy_float64": 0.8491957414474935,
+    "reported_torch_GPU_float32": 0.8492157459259033,
+    "abs_error": 2.000447840977415E-05,
+    "tolerance": 2E-05,
+    "excess": 4.47840977415E-09
+  },
+  "SSIM_cause_status": "CPU float64 versus GPU float32 arithmetic/order difference is a hypothesis, not a verified cause. No extra diagnosis or rerun was performed.",
+  "source_model_raw_hash_and_parameter_hash_failures": 0,
+  "tail4_worst_mean_summary_failures": 0,
+  "reconstructed_parameter_hashes": {
+    "teacher": "b6b71329ebaec4c88887bd2320a7b67fa9189c20af3db54bcdb7824164a3a8f0",
+    "all219": "96fcb4e9942c78fd26d9fb386f6f1c9429f66fce7405ac151c84fe529f9b20fd",
+    "identity": "be29cdd297a379643c13976659e9889f643905b513ed0732fab6cba0d1c46fb0",
+    "nanogs": "cd945d1ec44f959c37137eefaf9a56b5f8db4fb66e5db0cf38afaba274f163ec"
+  },
+  "recomputed_all32_summaries": {
+    "identity-only": {
+      "identity": {
+        "test_count": 32,
+        "mean_gt_mse": 0.002947339538209086,
+        "mean_gt_psnr": 25.4655462820807,
+        "psnr_from_mean_gt_mse": 25.3056982985198,
+        "mean_gt_ssim": 0.8850127449242307,
+        "mean_teacher_mse": 1.0406643715611503E-11,
+        "gt_tail4_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ],
+        "gt_worst_view": "000217.jpg",
+        "teacher_tail4_views": [
+          "000201.jpg",
+          "000025.jpg",
+          "000121.jpg",
+          "000057.jpg"
+        ],
+        "teacher_worst_view": "000201.jpg",
+        "gt_tail4_mean_mse": 0.00468197204680987,
+        "teacher_tail4_mean_mse": 2.8432499106539855E-11
+      },
+      "teacher": {
+        "test_count": 32,
+        "mean_gt_mse": 0.0029473395778827874,
+        "mean_gt_psnr": 25.465546181488122,
+        "psnr_from_mean_gt_mse": 25.30569824006006,
+        "mean_gt_ssim": 0.8850127342077769,
+        "mean_teacher_mse": 0.0,
+        "gt_tail4_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ],
+        "gt_worst_view": "000217.jpg",
+        "teacher_tail4_views": [
+          "000001.jpg",
+          "000009.jpg",
+          "000017.jpg",
+          "000025.jpg"
+        ],
+        "teacher_worst_view": "000001.jpg",
+        "gt_tail4_mean_mse": 0.0046819716811491805,
+        "teacher_tail4_mean_mse": 0.0
+      }
+    },
+    "complete": {
+      "all219": {
+        "test_count": 32,
+        "mean_gt_mse": 0.0035582968034114197,
+        "mean_gt_psnr": 24.693815027937678,
+        "psnr_from_mean_gt_mse": 24.48757829521415,
+        "mean_gt_ssim": 0.874136842800758,
+        "mean_teacher_mse": 0.0006992238872387842,
+        "gt_tail4_views": [
+          "000017.jpg",
+          "000217.jpg",
+          "000097.jpg",
+          "000121.jpg"
+        ],
+        "gt_worst_view": "000017.jpg",
+        "teacher_tail4_views": [
+          "000017.jpg",
+          "000097.jpg",
+          "000113.jpg",
+          "000105.jpg"
+        ],
+        "teacher_worst_view": "000017.jpg",
+        "gt_tail4_mean_mse": 0.005944997823437317,
+        "teacher_tail4_mean_mse": 0.0025733485816596194
+      },
+      "nanogs": {
+        "test_count": 32,
+        "mean_gt_mse": 0.0045066047488757175,
+        "mean_gt_psnr": 23.602472193719876,
+        "psnr_from_mean_gt_mse": 23.461505299941496,
+        "mean_gt_ssim": 0.8572384767153787,
+        "mean_teacher_mse": 0.001493795445610257,
+        "gt_tail4_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000065.jpg",
+          "000225.jpg"
+        ],
+        "gt_worst_view": "000217.jpg",
+        "teacher_tail4_views": [
+          "000033.jpg",
+          "000233.jpg",
+          "000065.jpg",
+          "000225.jpg"
+        ],
+        "teacher_worst_view": "000033.jpg",
+        "gt_tail4_mean_mse": 0.006635748064542521,
+        "teacher_tail4_mean_mse": 0.0020005311692555495
+      },
+      "teacher": {
+        "test_count": 32,
+        "mean_gt_mse": 0.0029473395778827874,
+        "mean_gt_psnr": 25.465546181488122,
+        "psnr_from_mean_gt_mse": 25.30569824006006,
+        "mean_gt_ssim": 0.8850127342077769,
+        "mean_teacher_mse": 0.0,
+        "gt_tail4_views": [
+          "000217.jpg",
+          "000121.jpg",
+          "000153.jpg",
+          "000065.jpg"
+        ],
+        "gt_worst_view": "000217.jpg",
+        "teacher_tail4_views": [
+          "000001.jpg",
+          "000009.jpg",
+          "000017.jpg",
+          "000025.jpg"
+        ],
+        "teacher_worst_view": "000001.jpg",
+        "gt_tail4_mean_mse": 0.0046819716811491805,
+        "teacher_tail4_mean_mse": 0.0
+      }
+    }
+  },
+  "quality_ordering_numeric_fact": "Across the complete 32-test means, teacher has lower MSE and higher PSNR/SSIM than all219; all219 has lower MSE and higher PSNR/SSIM than NanoGS. The independent float64 means preserve that order. This does not change the formal audit FAIL.",
+  "scope_limits": [
+    "No GPU/native rerender, native-repeat certification, training, or simplification.",
+    "Saved raw parameter identity and all hash tables are checked; live process tensor IDs cannot be independently observed after exit.",
+    "This checks reported pixels/metrics/provenance, not whether NanoGS chose optimal Gaussians or reproduced every merge step."
+  ],
+  "rerun_performed": false,
+  "old_report_modified": false
+}

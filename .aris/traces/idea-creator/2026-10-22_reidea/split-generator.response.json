@@ -1,0 +1,371 @@
+{
+  "shard_id": "split-mechanisms-astra",
+  "candidates": [
+    {
+      "dedup_key": "split_birth_negative_curvature_of_rendered_loss",
+      "provenance": {
+        "lens": "split-mechanism/optimization-coordinate",
+        "generation": "idea-creator Phase 2，只生成、不排名",
+        "inputs": [
+          "REIDEATION_LANDSCAPE_20261022.md",
+          "CONSTRAINED_PILOT_FINDINGS.md",
+          "TRAIN_INDEPENDENT_FINDINGS.md",
+          "WORLD_PRUNE_CONTROLS_FINDINGS.md"
+        ]
+      },
+      "payload": {
+        "title": "让分裂沿着真正降低图像损失的二阶方向打开",
+        "one_sentence_method": "把父项变成一对虚拟子项，直接测量相反位移对训练损失的二阶作用，再沿下降方向实际分裂。",
+        "build_train_run": [
+          "保持现有父项选择、每父两个子项、opacity和尺度规则，先只把子项位置写成μ+d与μ−d。",
+          "在固定训练相机上，用位置扰动的有限差分估计三维d对应的3×3损失曲率矩阵；使用最小特征值对应方向，位移幅度沿用同一固定初始化尺度。",
+          "实际创建子项并继续普通GT训练；不保留教师，不改变Adam计龄，也不根据world-prune结果选择父项。",
+          "比较曲率方向、同幅度随机方向和既有LAS方向，观察后续训练而不只看出生瞬间。"
+        ],
+        "hypothesis": "部分高梯度父项的问题不是需要更大的一阶移动，而是当前单高斯局部最优点只能通过对称分裂的二阶自由度离开；损失曲率可以识别这种自由度。",
+        "minimal_decisive_pilot": {
+          "hardware": "单张12GB GPU",
+          "design": "Truck、Train分别从固定3500恢复包运行到下一预定ADC。事先固定最多128个原本会被分裂的父项，三组使用完全相同父项、子项数、尺度、opacity和位移模长，只改变方向。曲率仅用4个固定训练视角估计，随后各继续400步。全部官方留出视角作为评估，另报告分裂前固定投影支持区域内指标。",
+          "controls": [
+            "同幅度随机方向，随机种子提前固定",
+            "既有LAS方向",
+            "候选方向的曲率预测与实际小步损失变化一致性检查"
+          ],
+          "budget_gpu_hours": "估计1.0–1.8；差分逐父处理、只保留局部结果，避免存整幅Jacobian；2小时封顶，运行前用16父项测吞吐",
+          "decision": "机制信号要求：曲率预测在未用于估计的训练视角上对实际小步变化具有一致方向，而非仅拟合4个探针视角。方法信号另要求两场景400步留出PSNR均超过两个方向对照至少0.03dB且L1不恶化；这是待预注册的小试筛选值，不是现成结论。"
+        },
+        "outcome_interpretation": {
+          "positive": "二阶分裂方向有跨视角预测力且后续收益保留，支持研究分裂特有的下降方向；不能据此声称最终训练或一般场景收益。",
+          "negative": "预测的负曲率方向实际经常增损，说明排序、alpha合成或有限差分使该局部模型不可靠；若曲率预测可靠但终点落后，则方向本身不是有效训练优势。",
+          "null": "曲率接近数值噪声，或者方向作用很快被普通优化洗掉；记录为当前阶段不需要该二阶机制，不能以换扰动半径寻找赢家。"
+        },
+        "closest_work": [
+          {
+            "source": "[Splitting Steepest Descent](https://arxiv.org/abs/1910.02366)",
+            "overlap": "已有通过分裂神经元和二阶信息增长模型的思想，不能把二阶分裂原则本身当成新贡献。这里的待检问题是它在排序与alpha合成的3DGS中是否仍有可用含义。"
+          },
+          {
+            "source": "[AdpSplit](https://arxiv.org/html/2605.06876v1)",
+            "overlap": "同样由重建误差决定子项几何；本候选使用反事实分裂的损失曲率，近邻关系需后续正文核验。"
+          },
+          {
+            "source": "[SAD-GS](https://arxiv.org/html/2604.28016v1)",
+            "overlap": "逐轴分裂方向已有；不能把有方向的分裂本身作为区别。"
+          }
+        ],
+        "risk": {
+          "level": "HIGH",
+          "main": "损失不光滑、遮挡排序变化及探针计算成本可能使二阶模型没有实际价值；也可能只是昂贵的初始化选择。",
+          "strongest_objection": "把已有神经元分裂准则搬到3DGS，如果不能揭示合成模型特有的有效性或失效条件，方法空间有限。"
+        },
+        "effort": "有限差分pilot约3–5天；可扩展实现约2–4周。",
+        "contribution_type": [
+          "直接方法",
+          "分裂局部优化机制"
+        ],
+        "non_restart_boundary": "作用对象是普通分裂父项和后续GT训练，不依赖立即world剪枝；不使用约束simplex、不修改其方向补救FAIL。",
+        "near_duplicate_annotation": "与本组平方间距坐标候选都涉及对称分裂的二阶性质，但此项选择出生方向，后者改变出生后的优化坐标；保留两项供机械聚类。"
+      }
+    },
+    {
+      "dedup_key": "split_direction_from_multiview_parent_gradient_conflict",
+      "provenance": {
+        "lens": "split-mechanism/optimization-coordinate",
+        "generation": "idea-creator Phase 2，只生成、不排名"
+      },
+      "payload": {
+        "title": "沿跨视角争执最大的方向分开两个子项",
+        "one_sentence_method": "同一个父高斯被不同相机要求向不同方向移动时，用这些移动要求的分歧决定两个子项的分离方向。",
+        "build_train_run": [
+          "对原本会分裂的父项，在固定小批训练相机上分别保存三维位置梯度，并转换到父项尺度归一化的局部坐标。",
+          "从每个父项的梯度中减去跨相机均值，计算3×3协方差，取最大特征向量作为两子项的相反位移方向。",
+          "使用现有固定子项数量、尺度和opacity初始化，继续普通3DGS训练。",
+          "测量原先意见相反的视角是否开始由不同子项解释，以及留出误差是否下降。"
+        ],
+        "hypothesis": "梯度均值主要表示整个父项应该如何移动，跨视角梯度分歧则可能表示一个父项正承担不相容的几何解释；分裂应响应后一种信号。",
+        "minimal_decisive_pilot": {
+          "hardware": "单张12GB GPU",
+          "design": "Truck与Train各固定一个普通ADC事件、最多256个同一父项集合。比较梯度分歧方向、同幅度随机方向、父项长轴方向，全部使用同一K=2及现有共同初始化合同。探针相机固定为8个训练视角；每组继续500步，后续ADC按统一合同运行并报告点数变化。",
+          "controls": [
+            "均值梯度方向作为机制对照，检验分歧是否比单纯有监督方向更有用",
+            "出生即刻和终点分别记录PSNR、L1，避免只用即时稳定性判断",
+            "按分裂前固定的高分歧与低分歧分组报告，分组只用于分析、不增加方法门槛"
+          ],
+          "budget_gpu_hours": "估计0.8–1.5；额外只需每场景8次反向和小矩阵分解",
+          "decision": "若分歧方向在两场景的500步终点均优于随机及长轴至少0.03dB、L1不恶化，且优势集中于预定高分歧组，形成机制与方法一致的信号；若只胜随机不胜均值方向，则不支持分歧解释。"
+        },
+        "outcome_interpretation": {
+          "positive": "支持把跨视角不相容性作为分裂需要解决的问题，并得到一个可直接运行的方向规则。",
+          "negative": "高分歧父项更容易产生浮点或留出退化，提示分歧主要来自标定误差、遮挡变化或非朗伯外观，而不是可分开的真实结构。",
+          "null": "随机、均值和分歧方向最终相当，说明这个阶段分裂方向很快被优化覆盖，或分歧统计没有额外信息。"
+        },
+        "closest_work": [
+          {
+            "source": "[AdpSplit](https://arxiv.org/html/2605.06876v1)",
+            "overlap": "已有跨视图误差驱动的子项构建与合并；需要核验其是否已经等价利用了父项跨视角梯度分歧。"
+          },
+          {
+            "source": "[SAD-GS](https://arxiv.org/html/2604.28016v1)",
+            "overlap": "已有结构张量、逐轴判断和跨视图一致性，不能仅用协方差或特征向量的名称制造区别。"
+          },
+          {
+            "source": "[BOGausS](https://arxiv.org/html/2504.01844v1)",
+            "overlap": "误差优先分裂与优化改进均有覆盖，需检查其优先级及方向统计细节。"
+          }
+        ],
+        "risk": {
+          "level": "MEDIUM",
+          "main": "跨视角梯度冲突可能主要是不可由两个高斯消除的观测冲突。",
+          "strongest_objection": "规则看似有物理解释，但可能只是另一种对已有残差方向的估计；需靠预测的子项分工行为支撑。"
+        },
+        "effort": "pilot约2–4天；完成训练与机制分析约2–3周。",
+        "contribution_type": [
+          "直接方法",
+          "跨视角分裂需求的实证分析"
+        ],
+        "non_restart_boundary": "不调整mode-clock，不做父项教师拟合，也不围绕少数world被剪子项选事件。",
+        "near_duplicate_annotation": "可能与其他shard中的多视角误差冲突、可辨识性或责任分配候选接近；生成阶段保留。"
+      }
+    },
+    {
+      "dedup_key": "sibling_coupled_render_jacobian_geometry_solver",
+      "provenance": {
+        "lens": "split-mechanism/optimization-coordinate",
+        "generation": "idea-creator Phase 2，只生成、不排名"
+      },
+      "payload": {
+        "title": "把两子项的互相遮挡写进同一个几何更新",
+        "one_sentence_method": "对子项的位置联合求一个六维小更新，显式保留兄弟之间的渲染耦合，而不是分别给两个位置做独立更新。",
+        "build_train_run": [
+          "所有分裂使用相同初始化；记录兄弟关系，仅用于构造两子项六维位置参数块。",
+          "利用实际alpha合成后的像素Jacobian，构造每对兄弟的6×6局部Gauss–Newton矩阵，其中包含两个子项之间的交叉项。",
+          "求解该小系统更新位置，其他参数保持同一普通优化规则；比较完整6×6块与删去兄弟交叉项的两个3×3块。",
+          "在共同移动与相反移动两个方向上记录条件数、实际图像变化和损失下降，检验交叉项是否解决了可观测问题。"
+        ],
+        "hypothesis": "新生兄弟高度重叠时，两者几何梯度强相关，独立更新会把可见的共同移动和难辨识的相对移动混淆；显式交叉项比改变Adam年龄更能处理这一局部病态。",
+        "minimal_decisive_pilot": {
+          "hardware": "单张12GB GPU",
+          "design": "Truck与Train各固定64对普通新生兄弟，三组为普通Adam、两个独立3×3几何块、完整6×6兄弟块。使用有限差分Jacobian先做20个更新的机制pilot，再各继续300步普通训练。全部组起点和参数数目一致。",
+          "controls": [
+            "两个独立3×3块使用相同阻尼、探针相机和Jacobian计算，隔离兄弟交叉项",
+            "普通Adam另获得与候选额外计算相当的GT优化机会",
+            "记录实际渲染变化大小，避免把更大有效步长当成耦合收益"
+          ],
+          "budget_gpu_hours": "估计1.0–1.8；逐对与逐图处理Jacobian，不创建全场景矩阵",
+          "decision": "完整块需要在相同探针计算下较独立块更准确预测损失下降，并在两场景300步终点维持留出L1改善；若只比Adam好、不比独立块好，则不支持兄弟耦合这一核心机制。"
+        },
+        "outcome_interpretation": {
+          "positive": "支持分裂新建的兄弟耦合是值得专门处理的优化结构，下一步才有理由做高效内核。",
+          "negative": "完整块更易过拟合视角或被病态逆矩阵放大，说明当前交叉项估计没有形成有效几何更新。",
+          "null": "完整块和独立块相当，说明主要收益来自一般二阶预条件，而非父子关系；这个区别本身可明确缩小论断。"
+        },
+        "closest_work": [
+          {
+            "source": "[3DGS-LM](https://arxiv.org/abs/2409.12892)",
+            "overlap": "已有替换Adam的LM优化和高效Jacobian运算；不能把二阶优化或小线性系统当作新概念。该候选的问题是分裂产生的兄弟交叉项是否有特别价值。"
+          },
+          {
+            "source": "[BOGausS](https://arxiv.org/html/2504.01844v1)",
+            "overlap": "已覆盖precision相关优化与split状态继承，需进一步核验是否显式包含兄弟之间的参数耦合。"
+          },
+          {
+            "source": "[EvoGS](https://arxiv.org/html/2606.07179v1)",
+            "overlap": "父相对表示及正负细化已有；仅改成共同/差分坐标不构成区别。"
+          }
+        ],
+        "risk": {
+          "level": "HIGH",
+          "main": "额外Jacobian成本可能超过短期训练收益，且广义二阶优化已有强近邻。",
+          "strongest_objection": "如果交叉项收益不能超过同计算的一般局部二阶优化，本方法只是对求解器分块的常规选择。"
+        },
+        "effort": "机制pilot约4–7天；高效训练实现约3–5周。",
+        "contribution_type": [
+          "直接优化方法",
+          "分裂病态的诊断"
+        ],
+        "non_restart_boundary": "不改变Adam年龄、epsilon或固定模式学习率；研究的是由当前渲染Jacobian确定的非对角耦合，不是失败mode-clock换系数。",
+        "near_duplicate_annotation": "与本组外观消元候选共享局部线性代数工具，但此项隔离兄弟位置之间的交叉项，后者隔离位置与外观之间的交叉项。"
+      }
+    },
+    {
+      "dedup_key": "split_geometry_update_after_eliminating_child_appearance",
+      "provenance": {
+        "lens": "split-mechanism/optimization-coordinate",
+        "generation": "idea-creator Phase 2，只生成、不排名"
+      },
+      "payload": {
+        "title": "先扣除改颜色就能解决的误差，再决定子项怎么移动",
+        "one_sentence_method": "在每次子项几何更新前，将能由子项颜色变化解释的残差从几何求解中消去，避免用错误的位置变化补偿暂时不合适的颜色。",
+        "build_train_run": [
+          "使用同一分裂初始化，在训练GT上计算兄弟位置与零阶SH颜色增量对应的局部图像Jacobian。",
+          "建立局部线性化损失，用Schur消元扣除颜色可以解释的变化，再求兄弟位置更新；颜色增量由同一个系统恢复。",
+          "其他参数和存量高斯正常训练；没有分裂前教师图像、父项参考损失或额外表示。",
+          "比较联合Adam、先颜色后位置的简单交替更新，以及显式消元，检查收益是否来自真正的几何—颜色解耦。"
+        ],
+        "hypothesis": "分裂后的早期位置梯度可能被继承颜色与新覆盖区域不匹配主导；将外观作为局部可消去变量，能让几何自由度更接近解决结构误差。",
+        "minimal_decisive_pilot": {
+          "hardware": "单张12GB GPU",
+          "design": "Truck与Train各固定64对兄弟。只消去每子项3维零阶SH增量，高阶SH按共同规则更新。比较三种更新，各运行20次局部更新后接300步普通训练，训练目标与留出集完全相同。",
+          "controls": [
+            "同计算量的普通GT更新",
+            "简单交替颜色/位置更新，排除仅仅先优化颜色的解释",
+            "颜色固定的诊断分支，只用于验证候选声称消除的耦合确实存在"
+          ],
+          "budget_gpu_hours": "估计1.0–1.8；每父项小矩阵顺序处理，图像分块累积",
+          "decision": "候选必须比简单交替更新更准确预测实际几何步的下降，并在两场景留出误差上保留优势。若改进仅出现在训练图或颜色收敛速度，则不支持几何更新机制。"
+        },
+        "outcome_interpretation": {
+          "positive": "支持分裂引入的外观—几何耦合会误导几何更新，并支持一个直接消元方法。",
+          "negative": "消去颜色使真实几何信号也被解释掉，导致细节学习更慢；说明外观子空间与有用结构高度重合。",
+          "null": "交替更新与显式消元相当，意味着简单优化顺序已足够；若三者相当，则当前分裂阶段没有可观测的该类耦合负担。"
+        },
+        "closest_work": [
+          {
+            "source": "[3DGS-LM](https://arxiv.org/abs/2409.12892)",
+            "overlap": "已提供3DGS二阶优化框架；Schur消元和变量投影是已有数学工具，后续需检查其参数分块和消元方式。"
+          },
+          {
+            "source": "[Geometry Gaussians](https://arxiv.org/abs/2606.05124)",
+            "overlap": "已有针对外观与几何冲突的表示分析和额外几何opacity。本候选保留原表示，研究出生阶段的优化耦合；不据摘要判定方法空白。"
+          },
+          {
+            "source": "[ResGS](https://arxiv.org/html/2412.07494v1)",
+            "overlap": "残差细化与父项保留已有；本候选不保留父项，也不把残差训练本身作为区别。"
+          }
+        ],
+        "risk": {
+          "level": "HIGH",
+          "main": "颜色clamp、L1/SSIM及排序使线性化只局部成立；外观消元也可能移除有效几何信号。",
+          "strongest_objection": "这可能只是通用变量投影在一个小参数块上的应用，需证明出生阶段出现了可重复、可预测的特殊耦合。"
+        },
+        "effort": "pilot约5–8天；扩展到完整SH及连续ADC约3–5周。",
+        "contribution_type": [
+          "直接优化方法",
+          "外观与几何耦合的实证分析"
+        ],
+        "non_restart_boundary": "只拟合训练GT；不重启父项teacher-refit，也不以降低teacher偏差作为结果。与普通GT额外拟合和交替更新同时比较。",
+        "near_duplicate_annotation": "与兄弟耦合求解器接近，保留为不同被消去变量的机制候选，后续可由机械聚类标为同族。"
+      }
+    },
+    {
+      "dedup_key": "split_selection_by_render_space_innovation_beyond_neighbors",
+      "provenance": {
+        "lens": "split-mechanism/optimization-coordinate",
+        "generation": "idea-creator Phase 2，只生成、不排名"
+      },
+      "payload": {
+        "title": "只把分裂名额给现有邻居无法代劳的新增变化",
+        "one_sentence_method": "评估一个父项分裂能带来的图像变化，并扣除周围已有高斯通过普通更新就能产生的同类变化，再按剩余作用分配固定分裂名额。",
+        "build_train_run": [
+          "对固定候选池使用同一个既有split算子，估计每个候选分裂产生的图像变化及其与当前残差的关系。",
+          "在同一像素支持区域内，计算少量现有邻居的位置与颜色更新可以产生的图像变化。",
+          "把候选分裂变化投影到邻居变化空间之外，以剩余变化对训练残差的下降量选择固定数量父项。",
+          "创建普通子项并正常训练；方法只替换同预算的父项选择，不增加新primitive、损失模块或裁剪规则。"
+        ],
+        "hypothesis": "高误差不等于需要新增自由度；部分高梯度父项处于已有高斯可继续调整的区域，固定预算下更有用的是能扩展现有局部可表达变化空间的分裂。",
+        "minimal_decisive_pilot": {
+          "hardware": "单张12GB GPU",
+          "design": "Truck与Train各从事先固定的512个原规则候选中选128个分裂。比较原梯度选择、未扣除邻居的分裂预测增益、扣除邻居后的增益。三组使用同一K=2和同一split算子，继续500步正常训练。",
+          "controls": [
+            "未投影的反事实分裂增益，用来区分额外探针信息与邻居去冗余",
+            "固定随机子集作为选择对照",
+            "相同最终分裂名额和出生参数规则；后续点数变化全部报告"
+          ],
+          "budget_gpu_hours": "估计1.2–1.9；限定每父项8个现有邻居、4个训练视角，局部矩阵在CPU或GPU逐块求解",
+          "decision": "核心条件是投影后的排序比未投影排序更能预测留出局部误差在500步后的变化，并在两场景的同名额全局质量比较中不劣。只改善即时预测而没有后续预测力，不能支持该选择原则。"
+        },
+        "outcome_interpretation": {
+          "positive": "支持分裂需求应相对于现有模型剩余可调整能力定义，而不是只看误差强度，并给出固定点数下的选择方法。",
+          "negative": "被当成冗余的分裂实际上更有价值，说明局部邻居虽在一阶上能代劳，却因优化或跨视角约束无法实际完成。",
+          "null": "投影前后选择高度相同或终点相当，说明当前训练阶段冗余并非主要瓶颈；额外计算没有得到有用决策信息。"
+        },
+        "closest_work": [
+          {
+            "source": "[BOGausS](https://arxiv.org/html/2504.01844v1)",
+            "overlap": "已有误差优先与优化信息，本候选需要证明相对现有邻居的可表达变化判断并未被等价覆盖。"
+          },
+          {
+            "source": "[AdpSplit](https://arxiv.org/html/2605.06876v1)",
+            "overlap": "已有从误差生成子项及跨视图合并，去除重复子项是直接近邻；此项在出生前比较新增变化和存量更新变化。"
+          },
+          {
+            "source": "[3DGS-LM](https://arxiv.org/abs/2409.12892)",
+            "overlap": "Jacobian空间和局部求解是已有优化工具，不把投影操作本身当创新。"
+          }
+        ],
+        "risk": {
+          "level": "HIGH",
+          "main": "局部一阶可表达性不等于有限步优化可达性；邻居集合截断和探针视角可能让冗余估计失真。",
+          "strongest_objection": "复杂的选择评分可能被简单梯度或已知误差选择取代，且计算成本无法摊平。"
+        },
+        "effort": "pilot约5–8天；可扩展选择实现约3–5周。",
+        "contribution_type": [
+          "直接分裂选择方法",
+          "新增容量与存量优化的机制分析"
+        ],
+        "non_restart_boundary": "固定分裂名额用于控制比较，不依据帧时构造硬预算，也不恢复已失败的局部几何时间预算路线。",
+        "near_duplicate_annotation": "可能与其他shard的重复发现、遮挡冲突或有效秩候选相近；当前保留完整机制。"
+      }
+    },
+    {
+      "dedup_key": "squared_sibling_separation_coordinate_at_birth",
+      "provenance": {
+        "lens": "split-mechanism/optimization-coordinate",
+        "generation": "idea-creator Phase 2，只生成、不排名"
+      },
+      "payload": {
+        "title": "用间距平方训练刚出生的子项，绕过重合位置的一阶停滞",
+        "one_sentence_method": "沿固定方向把两子项写成μ±√q·u，直接优化非负间距平方q，而不是优化在重合处梯度消失的间距。",
+        "build_train_run": [
+          "使用固定的父项长轴u和同一子项属性，构造两子项μ±s·u；对照直接优化非负s，候选改为q=s²，二者可表示同一组位置。",
+          "在出生重合点，用训练GT的单侧有限差分估计损失对q的导数；离开零点后按同一坐标定义继续更新。",
+          "共同中心、颜色、尺度及opacity按同一规则训练；不加入矩守恒条件，不选择新布局，也不改变子项数。",
+          "比较两种坐标在相同可表示集合、相同渲染变化尺度下的打开速度和后续质量。"
+        ],
+        "hypothesis": "相同兄弟在重合附近具有交换对称性，图像变化首先依赖间距平方；直接优化间距会人为制造一阶弱信号，而优化间距平方可能更接近真正可学习的出生自由度。",
+        "minimal_decisive_pilot": {
+          "hardware": "单张12GB GPU",
+          "design": "先在Truck、Train各64个普通父项上做零点及小间距的数值导数检查。随后比较s坐标、q坐标以及获得同等有限差分探针预算的s坐标更新，各训练300步。全部分支使用同一固定方向与相同位置可行集合。",
+          "controls": [
+            "按相同实际图像变化尺度校准更新，避免把不同坐标下的名义学习率直接比较",
+            "重合与预先固定的小非零间距各一组起点，检验收益是否只是在逃离严格对称点",
+            "所有分支采用相同opacity初始化，不声称重合克隆能严格保持整幅alpha图像"
+          ],
+          "budget_gpu_hours": "估计0.7–1.4；只涉及一维开合坐标和小规模差分探针",
+          "decision": "若q坐标在重合及小非零起点均更快获得跨视角有效的相对位移，并在300步留出L1上持续优于匹配探针的s坐标，支持坐标机制。若收益只存在于严格零点，结论收缩为对称初始化的边界性质。"
+        },
+        "outcome_interpretation": {
+          "positive": "支持出生自由度的自然尺度与常规位置参数不同，可以形成分裂优化坐标的方法与局部分析。",
+          "negative": "q更新容易过冲或在子项颜色分化后变得不稳定，表明对称近似只覆盖极短阶段，难以支撑实用方法。",
+          "null": "微小随机初始化已完全消除差异，或匹配实际渲染步长后优势消失，说明主要问题是初始化或有效学习率，而不是坐标本身。"
+        },
+        "closest_work": [
+          {
+            "source": "[Splitting Steepest Descent](https://arxiv.org/abs/1910.02366)",
+            "overlap": "神经元分裂的二阶下降已有理论来源；需核验平方开合坐标是否只是其等价实现。"
+          },
+          {
+            "source": "[EvoGS](https://arxiv.org/html/2606.07179v1)",
+            "overlap": "父相对正负细化已有，不能把μ±d或兄弟差分表示作为新意。"
+          },
+          {
+            "source": "[BOGausS](https://arxiv.org/html/2504.01844v1)",
+            "overlap": "已有split优化与状态处理；该候选关注参数映射在出生点的退化，而不是继承或年龄。"
+          }
+        ],
+        "risk": {
+          "level": "HIGH",
+          "main": "零点数值导数、alpha排序和后来出现的兄弟属性不对称可能破坏简单平方坐标的有效性。",
+          "strongest_objection": "这可能只是对一个人为构造的重合初始化问题做重参数化；必须在小非零初始化和有效步长匹配下仍有信号。"
+        },
+        "effort": "数值机制pilot约2–4天；稳定实现及理论整理约2–4周。",
+        "contribution_type": [
+          "直接优化坐标方法",
+          "出生对称性与可辨识性的局部理论"
+        ],
+        "non_restart_boundary": "不改Adam计龄，不声称共同/差分旋转就是贡献；不使用约束simplex及矩守恒，也不针对其FAIL调方向或opacity。",
+        "near_duplicate_annotation": "与负曲率出生方向候选同属对称分裂局部分析，但研究变量和干预不同；不在生成阶段合并或删除。"
+      }
+    }
+  ]
+}

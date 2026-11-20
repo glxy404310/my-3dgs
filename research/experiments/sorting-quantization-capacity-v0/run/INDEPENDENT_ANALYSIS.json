@@ -1,0 +1,729 @@
+{
+  "status": "INDEPENDENT_EXISTING_EVIDENCE_AND_POSTPROCESS_VALIDATED",
+  "cpu_budget_seconds": 30,
+  "gpu_used": false,
+  "training_performed": false,
+  "original_experiment_rerun": false,
+  "audit_script_sha256": "2f53202fb7c012bebe82bbe5a41aed48c5b6970df7b5a78aa691f0bbe2920756",
+  "input_hashes": {
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/diagnose_sorting_quantization_capacity.py": {
+      "expected": "400d489c1adb2c9a07610594fa3d3f419ca0521d9a31e810d03b2802fa2f1f69",
+      "actual": "400d489c1adb2c9a07610594fa3d3f419ca0521d9a31e810d03b2802fa2f1f69",
+      "matches": true
+    },
+    "/mnt/d/Documents/my 3dgs/research/experiments/sorting-quantization-capacity-v0/CONTRACT.md": {
+      "expected": "5137b5840183991c53a799ccaa8407ecdae3556248805a19c9484a50ebd6c92d",
+      "actual": "5137b5840183991c53a799ccaa8407ecdae3556248805a19c9484a50ebd6c92d",
+      "matches": true
+    },
+    "/mnt/d/Documents/my 3dgs/research/experiments/sorting-quantization-capacity-v0/run/METRICS.csv": {
+      "expected": "8e370762a865ab8537fe23476c136e5a97f22d7c30cb862a7c1dcbc15665acf5",
+      "actual": "8e370762a865ab8537fe23476c136e5a97f22d7c30cb862a7c1dcbc15665acf5",
+      "matches": true
+    },
+    "/mnt/d/Documents/my 3dgs/research/experiments/sorting-quantization-capacity-v0/run/RESULTS.json": {
+      "expected": "c604912e8be417e27e893f18bd68843babe2eecfe68c815e393c700c0de448a7",
+      "actual": "c604912e8be417e27e893f18bd68843babe2eecfe68c815e393c700c0de448a7",
+      "matches": true
+    },
+    "/home/administrator/projects/gaussian-splatting/output/truck_30000_r1/point_cloud/iteration_30000/point_cloud.ply": {
+      "expected": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+      "actual": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+      "matches": true
+    },
+    "/home/administrator/projects/gaussian-splatting/output/truck_30000_r1/cameras.json": {
+      "expected": "4ceb5372614821a2c7b6097ea1f92e6b4135b0e1a41e3610bb5a3676a115f6bb",
+      "actual": "4ceb5372614821a2c7b6097ea1f92e6b4135b0e1a41e3610bb5a3676a115f6bb",
+      "matches": true
+    },
+    "/mnt/d/Documents/my 3dgs/research/experiments/ray-alpha-omission-v0/run/TRACES.json": {
+      "expected": "858fa3805ad48df5996115d0285ac17c01934eebabb0cf54687846d5ed77a02f",
+      "actual": "858fa3805ad48df5996115d0285ac17c01934eebabb0cf54687846d5ed77a02f",
+      "matches": true
+    },
+    "/mnt/d/Documents/my 3dgs/research/experiments/ray-alpha-omission-v0/run/CACHE_000.npz": {
+      "expected": "193ae8e0be4dfd52de21ad767b35e11a62b1e65f17e1cee647446b27edf07da4",
+      "actual": "193ae8e0be4dfd52de21ad767b35e11a62b1e65f17e1cee647446b27edf07da4",
+      "matches": true
+    },
+    "/mnt/d/Documents/my 3dgs/research/experiments/ray-alpha-omission-v0/run/CACHE_031.npz": {
+      "expected": "47f87025b53db689e6456cd2b1265c99cb02504bf6690aaaa8ba3d5c01365201",
+      "actual": "47f87025b53db689e6456cd2b1265c99cb02504bf6690aaaa8ba3d5c01365201",
+      "matches": true
+    },
+    "/mnt/d/Documents/my 3dgs/research/experiments/ray-alpha-omission-v0/run/CACHE_062.npz": {
+      "expected": "5c990a5f3a97dc24da4506ce677706673488a8ef2e08ab27bc9b7253907dec1b",
+      "actual": "5c990a5f3a97dc24da4506ce677706673488a8ef2e08ab27bc9b7253907dec1b",
+      "matches": true
+    },
+    "/mnt/d/Documents/my 3dgs/research/experiments/ray-alpha-omission-v0/run/CACHE_093.npz": {
+      "expected": "90dd7a966038e30c647a508667f2c761cbab2e337a58009a293f57e102eb939d",
+      "actual": "90dd7a966038e30c647a508667f2c761cbab2e337a58009a293f57e102eb939d",
+      "matches": true
+    },
+    "/mnt/d/Documents/my 3dgs/research/experiments/ray-alpha-omission-v0/run/CACHE_124.npz": {
+      "expected": "d0bf8e29e1bc517d57a6025010fb3843d0ccbd85dabc9e19acbe0243647f67f5",
+      "actual": "d0bf8e29e1bc517d57a6025010fb3843d0ccbd85dabc9e19acbe0243647f67f5",
+      "matches": true
+    },
+    "/mnt/d/Documents/my 3dgs/research/experiments/ray-alpha-omission-v0/run/CACHE_155.npz": {
+      "expected": "ffb948fed7051856cdf75b3ef48aa3d023e61e9d6f3390a39a962eed12b73224",
+      "actual": "ffb948fed7051856cdf75b3ef48aa3d023e61e9d6f3390a39a962eed12b73224",
+      "matches": true
+    },
+    "/mnt/d/Documents/my 3dgs/research/experiments/ray-alpha-omission-v0/run/CACHE_186.npz": {
+      "expected": "96182628e0b43bcb3897c2752dfd4bbc8b2ee1ac101adeb4ae4af240e68e7603",
+      "actual": "96182628e0b43bcb3897c2752dfd4bbc8b2ee1ac101adeb4ae4af240e68e7603",
+      "matches": true
+    },
+    "/mnt/d/Documents/my 3dgs/research/experiments/ray-alpha-omission-v0/run/CACHE_218.npz": {
+      "expected": "eb26d27ede28b8943e39216f3606eca7f8a03004d24a7b517d703867eee09cc6",
+      "actual": "eb26d27ede28b8943e39216f3606eca7f8a03004d24a7b517d703867eee09cc6",
+      "matches": true
+    }
+  },
+  "evidence_files_sha256": {
+    "CONFIG.json": "56daca6f98e1410dcb67d18aca4fcda10b26deb076b2e4af56043949b76be8a3",
+    "RESULTS.json": "c604912e8be417e27e893f18bd68843babe2eecfe68c815e393c700c0de448a7",
+    "RESULTS_POSTPROCESS.json": "bcafcb3c899e136f36810e893a125e817bf558c1b60e2060a952f20b79a0f7aa",
+    "METRICS.csv": "8e370762a865ab8537fe23476c136e5a97f22d7c30cb862a7c1dcbc15665acf5",
+    "PREFLIGHT.json": "0a25157d2abb7206dcdd7bbc236bb06734882cd797ba140c97ec0d3605d5e073",
+    "SUMMARY.csv": "1fa6a2440ab542f8b98c596d212750a958d7a07a8141ac4b993b008447bb4584",
+    "SUMMARY_COMPLETE.csv": "7f2ff602d9683f5abfc83bd6fb07911d9a4927842302e57b97a65202cbcaabcc"
+  },
+  "original_run": {
+    "decision": "FAILED_TOOL_METHOD_UNKNOWN",
+    "tool_valid": false,
+    "error": "dict contains fields not in fieldnames: 'capacity_gate', 'qualifying_views'",
+    "elapsed_seconds": 7.5081667370000105,
+    "external_process_exit_code_recorded_by_postprocess": 1,
+    "producer_failure_return_code": 2,
+    "note": "Producer main returns 2 on tool failure; postprocess records outer process exit 1. Neither is converted to success."
+  },
+  "all_metrics": {
+    "rows": 6144,
+    "configurations": 3,
+    "pixels_per_configuration": 2048,
+    "views": 8,
+    "pixels_per_view": 256,
+    "key_coverage_complete": true,
+    "finite": true,
+    "maximum_rgb_derived_field_errors": {
+      "max_channel_difference": 0.0,
+      "order_mse": 0.0,
+      "old_gt_mse": 0.0,
+      "new_gt_mse": 0.0
+    }
+  },
+  "recomputed_view_and_bit_summaries": [
+    {
+      "pixels": 256,
+      "exceed_count": 230,
+      "exceed_fraction": 0.8984375,
+      "max_channel_difference": 0.38250385533503595,
+      "p99_channel_difference": 0.2359426194703827,
+      "order_mse": 0.002708385171470033,
+      "old_gt_mse": 0.0015200595744741582,
+      "new_gt_mse": 0.003951435325535198,
+      "bit": 8,
+      "view": "000002.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 239,
+      "exceed_fraction": 0.93359375,
+      "max_channel_difference": 0.5948901043184878,
+      "p99_channel_difference": 0.5253788310233418,
+      "order_mse": 0.013324119484152937,
+      "old_gt_mse": 0.0028368196093178037,
+      "new_gt_mse": 0.01581594869376876,
+      "bit": 8,
+      "view": "000037.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 233,
+      "exceed_fraction": 0.91015625,
+      "max_channel_difference": 0.5210993050654813,
+      "p99_channel_difference": 0.23567814595923947,
+      "order_mse": 0.0035198489502256446,
+      "old_gt_mse": 0.0012935334272645036,
+      "new_gt_mse": 0.004951370505369141,
+      "bit": 8,
+      "view": "000072.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 196,
+      "exceed_fraction": 0.765625,
+      "max_channel_difference": 0.5350447177958051,
+      "p99_channel_difference": 0.3070211322705298,
+      "order_mse": 0.0034726470508347944,
+      "old_gt_mse": 0.0006071884958961072,
+      "new_gt_mse": 0.0041130231439911345,
+      "bit": 8,
+      "view": "000108.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 240,
+      "exceed_fraction": 0.9375,
+      "max_channel_difference": 0.5330389455727531,
+      "p99_channel_difference": 0.43159182308652416,
+      "order_mse": 0.009545439107042015,
+      "old_gt_mse": 0.0023839051441302975,
+      "new_gt_mse": 0.011193973966013904,
+      "bit": 8,
+      "view": "000143.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 226,
+      "exceed_fraction": 0.8828125,
+      "max_channel_difference": 0.46412996553072183,
+      "p99_channel_difference": 0.22499416255463497,
+      "order_mse": 0.003335000166346121,
+      "old_gt_mse": 0.0007602025065047967,
+      "new_gt_mse": 0.003915891437029487,
+      "bit": 8,
+      "view": "000179.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 241,
+      "exceed_fraction": 0.94140625,
+      "max_channel_difference": 0.7548081095500945,
+      "p99_channel_difference": 0.7188471977361974,
+      "order_mse": 0.022978098869585337,
+      "old_gt_mse": 0.003658641703939544,
+      "new_gt_mse": 0.025221073164554467,
+      "bit": 8,
+      "view": "000214.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 211,
+      "exceed_fraction": 0.82421875,
+      "max_channel_difference": 0.38749831511092325,
+      "p99_channel_difference": 0.2947169405386498,
+      "order_mse": 0.003909196899529716,
+      "old_gt_mse": 0.0017011198631453012,
+      "new_gt_mse": 0.005855803725702056,
+      "bit": 8,
+      "view": "000251.jpg"
+    },
+    {
+      "pixels": 2048,
+      "exceed_count": 1816,
+      "exceed_fraction": 0.88671875,
+      "max_channel_difference": 0.7548081095500945,
+      "p99_channel_difference": 0.4552793112219687,
+      "order_mse": 0.007849091962398323,
+      "old_gt_mse": 0.0018451837905840642,
+      "new_gt_mse": 0.009377314995245519,
+      "bit": 8,
+      "view": "ALL"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 101,
+      "exceed_fraction": 0.39453125,
+      "max_channel_difference": 0.1222930874075373,
+      "p99_channel_difference": 0.07491224538052209,
+      "order_mse": 0.00020045665682057903,
+      "old_gt_mse": 0.0015200595744741582,
+      "new_gt_mse": 0.001860370504555665,
+      "bit": 12,
+      "view": "000002.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 134,
+      "exceed_fraction": 0.5234375,
+      "max_channel_difference": 0.20558016002515547,
+      "p99_channel_difference": 0.13172053255025876,
+      "order_mse": 0.0007254717401026954,
+      "old_gt_mse": 0.0028368196093178037,
+      "new_gt_mse": 0.0037711153718720312,
+      "bit": 12,
+      "view": "000037.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 110,
+      "exceed_fraction": 0.4296875,
+      "max_channel_difference": 0.20755443673347052,
+      "p99_channel_difference": 0.09822382189301739,
+      "order_mse": 0.00038631852265331296,
+      "old_gt_mse": 0.0012935334272645036,
+      "new_gt_mse": 0.001618521775667597,
+      "bit": 12,
+      "view": "000072.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 80,
+      "exceed_fraction": 0.3125,
+      "max_channel_difference": 0.09606490445887128,
+      "p99_channel_difference": 0.061574646700371,
+      "order_mse": 0.0001446860004869742,
+      "old_gt_mse": 0.0006071884958961072,
+      "new_gt_mse": 0.0007525458113173416,
+      "bit": 12,
+      "view": "000108.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 173,
+      "exceed_fraction": 0.67578125,
+      "max_channel_difference": 0.12937861116921262,
+      "p99_channel_difference": 0.12690774907804048,
+      "order_mse": 0.0008448524720608382,
+      "old_gt_mse": 0.0023839051441302975,
+      "new_gt_mse": 0.003128200845940476,
+      "bit": 12,
+      "view": "000143.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 104,
+      "exceed_fraction": 0.40625,
+      "max_channel_difference": 0.14623932270788592,
+      "p99_channel_difference": 0.08724441235992642,
+      "order_mse": 0.00031114838781454943,
+      "old_gt_mse": 0.0007602025065047967,
+      "new_gt_mse": 0.0011209192692269014,
+      "bit": 12,
+      "view": "000179.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 154,
+      "exceed_fraction": 0.6015625,
+      "max_channel_difference": 0.2318722023487209,
+      "p99_channel_difference": 0.18529624753803042,
+      "order_mse": 0.0009435029818837786,
+      "old_gt_mse": 0.003658641703939544,
+      "new_gt_mse": 0.004818590386628396,
+      "bit": 12,
+      "view": "000214.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 81,
+      "exceed_fraction": 0.31640625,
+      "max_channel_difference": 0.15993130324894184,
+      "p99_channel_difference": 0.08373959363043552,
+      "order_mse": 0.00032410404744242095,
+      "old_gt_mse": 0.0017011198631453012,
+      "new_gt_mse": 0.001740111266725182,
+      "bit": 12,
+      "view": "000251.jpg"
+    },
+    {
+      "pixels": 2048,
+      "exceed_count": 937,
+      "exceed_fraction": 0.45751953125,
+      "max_channel_difference": 0.2318722023487209,
+      "p99_channel_difference": 0.11185327252899045,
+      "order_mse": 0.00048506760115814355,
+      "old_gt_mse": 0.0018451837905840642,
+      "new_gt_mse": 0.002351296903991699,
+      "bit": 12,
+      "view": "ALL"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 13,
+      "exceed_fraction": 0.05078125,
+      "max_channel_difference": 0.014713385001806412,
+      "p99_channel_difference": 0.009191125311124907,
+      "order_mse": 2.8334854809497585e-06,
+      "old_gt_mse": 0.0015200595744741582,
+      "new_gt_mse": 0.0015224157306900445,
+      "bit": 16,
+      "view": "000002.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 18,
+      "exceed_fraction": 0.0703125,
+      "max_channel_difference": 0.024447082570106415,
+      "p99_channel_difference": 0.012757758506303866,
+      "order_mse": 7.691721393435463e-06,
+      "old_gt_mse": 0.0028368196093178037,
+      "new_gt_mse": 0.0028277795163693144,
+      "bit": 16,
+      "view": "000037.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 14,
+      "exceed_fraction": 0.0546875,
+      "max_channel_difference": 0.024779696186734812,
+      "p99_channel_difference": 0.01296963142171451,
+      "order_mse": 5.803806966989069e-06,
+      "old_gt_mse": 0.0012935334272645036,
+      "new_gt_mse": 0.0012842261149735444,
+      "bit": 16,
+      "view": "000072.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 8,
+      "exceed_fraction": 0.03125,
+      "max_channel_difference": 0.01105275422898222,
+      "p99_channel_difference": 0.00715482661203096,
+      "order_mse": 1.2686424173927512e-06,
+      "old_gt_mse": 0.0006071884958961072,
+      "new_gt_mse": 0.0006045897655012819,
+      "bit": 16,
+      "view": "000108.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 24,
+      "exceed_fraction": 0.09375,
+      "max_channel_difference": 0.030397300936064464,
+      "p99_channel_difference": 0.014156563095652212,
+      "order_mse": 9.07624287375387e-06,
+      "old_gt_mse": 0.0023839051441302975,
+      "new_gt_mse": 0.002353738374662619,
+      "bit": 16,
+      "view": "000143.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 21,
+      "exceed_fraction": 0.08203125,
+      "max_channel_difference": 0.01896561353522519,
+      "p99_channel_difference": 0.012077643338385511,
+      "order_mse": 6.006977884646701e-06,
+      "old_gt_mse": 0.0007602025065047967,
+      "new_gt_mse": 0.0007615377959669503,
+      "bit": 16,
+      "view": "000179.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 22,
+      "exceed_fraction": 0.0859375,
+      "max_channel_difference": 0.01382330006698329,
+      "p99_channel_difference": 0.012445354535552133,
+      "order_mse": 4.871455921975941e-06,
+      "old_gt_mse": 0.003658641703939544,
+      "new_gt_mse": 0.0036562458024670943,
+      "bit": 16,
+      "view": "000214.jpg"
+    },
+    {
+      "pixels": 256,
+      "exceed_count": 9,
+      "exceed_fraction": 0.03515625,
+      "max_channel_difference": 0.01967441956979077,
+      "p99_channel_difference": 0.008737876385663984,
+      "order_mse": 2.9948589929261782e-06,
+      "old_gt_mse": 0.0017011198631453012,
+      "new_gt_mse": 0.0017040948041834268,
+      "bit": 16,
+      "view": "000251.jpg"
+    },
+    {
+      "pixels": 2048,
+      "exceed_count": 129,
+      "exceed_fraction": 0.06298828125,
+      "max_channel_difference": 0.030397300936064464,
+      "p99_channel_difference": 0.012265936486443122,
+      "order_mse": 5.068398991508717e-06,
+      "old_gt_mse": 0.0018451837905840642,
+      "new_gt_mse": 0.0018393284881017846,
+      "bit": 16,
+      "view": "ALL"
+    }
+  ],
+  "summary_complete_max_field_error": 0.0,
+  "gates": {
+    "8": {
+      "pixels": 2048,
+      "exceed_count": 1816,
+      "exceed_fraction": 0.88671875,
+      "max_channel_difference": 0.7548081095500945,
+      "p99_channel_difference": 0.4552793112219687,
+      "order_mse": 0.007849091962398323,
+      "old_gt_mse": 0.0018451837905840642,
+      "new_gt_mse": 0.009377314995245519,
+      "bit": 8,
+      "view": "ALL",
+      "qualifying_views": 8,
+      "capacity_gate": true
+    },
+    "12": {
+      "pixels": 2048,
+      "exceed_count": 937,
+      "exceed_fraction": 0.45751953125,
+      "max_channel_difference": 0.2318722023487209,
+      "p99_channel_difference": 0.11185327252899045,
+      "order_mse": 0.00048506760115814355,
+      "old_gt_mse": 0.0018451837905840642,
+      "new_gt_mse": 0.002351296903991699,
+      "bit": 12,
+      "view": "ALL",
+      "qualifying_views": 8,
+      "capacity_gate": true
+    },
+    "16": {
+      "pixels": 2048,
+      "exceed_count": 129,
+      "exceed_fraction": 0.06298828125,
+      "max_channel_difference": 0.030397300936064464,
+      "p99_channel_difference": 0.012265936486443122,
+      "order_mse": 5.068398991508717e-06,
+      "old_gt_mse": 0.0018451837905840642,
+      "new_gt_mse": 0.0018393284881017846,
+      "bit": 16,
+      "view": "ALL",
+      "qualifying_views": 8,
+      "capacity_gate": true
+    }
+  },
+  "passed_main_bits": [
+    8,
+    12
+  ],
+  "serialization_failure_reproduced": "dict contains fields not in fieldnames: 'qualifying_views', 'capacity_gate'",
+  "static_contract_review": {
+    "fixed_bits": [
+      8,
+      12,
+      16
+    ],
+    "full_model_bounds": true,
+    "ties_to_even_rounding": true,
+    "native_depth_plus_quantization_delta": true,
+    "stable_tile_sort": true,
+    "unchanged_support_and_projection_and_colors": true,
+    "fp64_compositing": true,
+    "native_float32_alpha_cap_threshold_and_early_T": true,
+    "crossing_term_excluded": true,
+    "final_clamp": true,
+    "renderer_or_contract_deviation_found": false,
+    "original_report_serialization_bug": true,
+    "source_review_note": "Read producer source, contract and configuration; independently reproduce the equations and gate below. No producer functions imported."
+  },
+  "independent_replay": {
+    "implementation": "Independent scalar math.exp FP64 recurrence; direct original PLY and C2W camera matrices; no producer import",
+    "sample_rule": "Eight fixed midpoint ranks floor((j+0.5)*256/8) per camera, j=0..7",
+    "sample_indices": [
+      16,
+      48,
+      80,
+      112,
+      144,
+      176,
+      208,
+      240
+    ],
+    "cameras": 8,
+    "base_rays": 64,
+    "zero_perturbation_rays": 64,
+    "counterfactual_outputs": 192,
+    "bits": [
+      8,
+      12,
+      16
+    ],
+    "target_rgb_absolute_error": 1e-10,
+    "maximum_counterfactual_rgb_error": 2.220446049250313e-16,
+    "maximum_base_rgb_error": 1.1102230246251565e-16,
+    "maximum_native_rgb_parity_error_on_sample": 5.936638076686762e-07,
+    "maximum_depth_absolute_error_all_cached_unique_ids": 7.900685886852443e-06,
+    "maximum_depth_relative_error_all_cached_unique_ids": 2.499066858012136e-07,
+    "maximum_count_field_error": 0,
+    "zero_order_and_rgb_bitwise": true,
+    "full_model_xyz_bounds_and_steps_verified": true,
+    "quantization_steps": {
+      "8": [
+        0.576427100686466,
+        0.17901734370811312,
+        0.629909231148514
+      ],
+      "12": [
+        0.03589472788157481,
+        0.01114760015764807,
+        0.03922511695796608
+      ],
+      "16": [
+        0.0022429070065621247,
+        0.0006965655397202845,
+        0.002451008681511728
+      ]
+    },
+    "views": [
+      {
+        "view": "000002.jpg",
+        "sample_indices": [
+          16,
+          48,
+          80,
+          112,
+          144,
+          176,
+          208,
+          240
+        ],
+        "rays": 8,
+        "counterfactual_outputs": 24,
+        "depth_unique_ids_checked": 333624,
+        "depth_max_absolute_error": 6.9959585147216785e-06,
+        "depth_max_relative_error": 2.499066858012136e-07,
+        "counterfactual_max_rgb_error": 1.1102230246251565e-16
+      },
+      {
+        "view": "000037.jpg",
+        "sample_indices": [
+          16,
+          48,
+          80,
+          112,
+          144,
+          176,
+          208,
+          240
+        ],
+        "rays": 8,
+        "counterfactual_outputs": 24,
+        "depth_unique_ids_checked": 364330,
+        "depth_max_absolute_error": 2.8408316765649033e-06,
+        "depth_max_relative_error": 1.2180800263521892e-07,
+        "counterfactual_max_rgb_error": 2.7755575615628914e-17
+      },
+      {
+        "view": "000072.jpg",
+        "sample_indices": [
+          16,
+          48,
+          80,
+          112,
+          144,
+          176,
+          208,
+          240
+        ],
+        "rays": 8,
+        "counterfactual_outputs": 24,
+        "depth_unique_ids_checked": 284947,
+        "depth_max_absolute_error": 5.087960772698352e-06,
+        "depth_max_relative_error": 1.4845051402710245e-07,
+        "counterfactual_max_rgb_error": 1.1102230246251565e-16
+      },
+      {
+        "view": "000108.jpg",
+        "sample_indices": [
+          16,
+          48,
+          80,
+          112,
+          144,
+          176,
+          208,
+          240
+        ],
+        "rays": 8,
+        "counterfactual_outputs": 24,
+        "depth_unique_ids_checked": 345242,
+        "depth_max_absolute_error": 7.831785723055873e-06,
+        "depth_max_relative_error": 1.9469666045344958e-07,
+        "counterfactual_max_rgb_error": 0.0
+      },
+      {
+        "view": "000143.jpg",
+        "sample_indices": [
+          16,
+          48,
+          80,
+          112,
+          144,
+          176,
+          208,
+          240
+        ],
+        "rays": 8,
+        "counterfactual_outputs": 24,
+        "depth_unique_ids_checked": 314785,
+        "depth_max_absolute_error": 3.6858620120483465e-06,
+        "depth_max_relative_error": 9.834700640259691e-08,
+        "counterfactual_max_rgb_error": 1.1102230246251565e-16
+      },
+      {
+        "view": "000179.jpg",
+        "sample_indices": [
+          16,
+          48,
+          80,
+          112,
+          144,
+          176,
+          208,
+          240
+        ],
+        "rays": 8,
+        "counterfactual_outputs": 24,
+        "depth_unique_ids_checked": 320964,
+        "depth_max_absolute_error": 7.900685886852443e-06,
+        "depth_max_relative_error": 1.6850386774288702e-07,
+        "counterfactual_max_rgb_error": 2.220446049250313e-16
+      },
+      {
+        "view": "000214.jpg",
+        "sample_indices": [
+          16,
+          48,
+          80,
+          112,
+          144,
+          176,
+          208,
+          240
+        ],
+        "rays": 8,
+        "counterfactual_outputs": 24,
+        "depth_unique_ids_checked": 350999,
+        "depth_max_absolute_error": 3.1470686039369866e-06,
+        "depth_max_relative_error": 1.0618213732546876e-07,
+        "counterfactual_max_rgb_error": 1.1102230246251565e-16
+      },
+      {
+        "view": "000251.jpg",
+        "sample_indices": [
+          16,
+          48,
+          80,
+          112,
+          144,
+          176,
+          208,
+          240
+        ],
+        "rays": 8,
+        "counterfactual_outputs": 24,
+        "depth_unique_ids_checked": 288255,
+        "depth_max_absolute_error": 5.4998556038299284e-06,
+        "depth_max_relative_error": 2.3113701106138154e-07,
+        "counterfactual_max_rgb_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  "original_run_reclassified_as_success": false,
+  "all_source_and_evidence_files_unchanged": true,
+  "saved_metrics_and_postprocess_support_capacity_gate": true,
+  "decision": "NEEDS_FULL_POSITION_QUANTIZATION_AND_NOVELTY",
+  "limitations": [
+    "All 6144 rows and 27 summary rows checked algebraically; rendering independently replayed for 64 of 2048 rays (192 bit outputs), not all rays.",
+    "Depth direction verified for every cached unique ID in all eight cameras; quantizer bounds use every original PLY point.",
+    "Only order under fixed native support, projections, conic, opacity and RGB is varied. No full position quantization, additive error decomposition, actual codec/rate, speed, training, cross-scene generalization or novelty evidence.",
+    "GT is descriptive only: mean GT error increases at 8 and 12 bits; passing is a necessary space/capacity signal, not evidence of improving photographs.",
+    "Original failed RESULTS and nonzero exit are preserved. Recovery validates saved evidence after a report serialization failure; it does not make the original process successful."
+  ],
+  "elapsed_wall_seconds": 4.6178297929999985,
+  "elapsed_cpu_seconds": 2.183922522
+}

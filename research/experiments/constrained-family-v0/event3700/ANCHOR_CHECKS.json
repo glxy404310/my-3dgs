@@ -1,0 +1,258 @@
+[
+  {
+    "policy": "none",
+    "view": "000001.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "none",
+    "view": "000033.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "none",
+    "view": "000065.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "none",
+    "view": "000105.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "none",
+    "view": "000137.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "none",
+    "view": "000177.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "none",
+    "view": "000209.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "none",
+    "view": "000249.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "all",
+    "view": "000001.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "all",
+    "view": "000033.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "all",
+    "view": "000065.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "all",
+    "view": "000105.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "all",
+    "view": "000137.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "all",
+    "view": "000177.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "all",
+    "view": "000209.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "all",
+    "view": "000249.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "old_only",
+    "view": "000001.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "old_only",
+    "view": "000033.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "old_only",
+    "view": "000065.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "old_only",
+    "view": "000105.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "old_only",
+    "view": "000137.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "old_only",
+    "view": "000177.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "old_only",
+    "view": "000209.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "old_only",
+    "view": "000249.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "new_only",
+    "view": "000001.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "new_only",
+    "view": "000033.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "new_only",
+    "view": "000065.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "new_only",
+    "view": "000105.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "new_only",
+    "view": "000137.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "new_only",
+    "view": "000177.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "new_only",
+    "view": "000209.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  },
+  {
+    "policy": "new_only",
+    "view": "000249.jpg",
+    "pass_check": true,
+    "psnr": 0.0,
+    "l1": 0.0,
+    "ssim": 0.0
+  }
+]

@@ -1,0 +1,4501 @@
+{
+  "tool_valid": true,
+  "tool_status": "AUDIT_VALID",
+  "method_passed": false,
+  "decision": "STOP_CURRENT_NEAREST_NEIGHBOR_PROXY_TRANSFER",
+  "phase": "complete",
+  "cpu_only": true,
+  "training_performed": false,
+  "optimizer_created": false,
+  "optimizer_updates": 0,
+  "backward_calls": 0,
+  "audit_budget_seconds": 60,
+  "mse_absolute_tolerance": 5e-09,
+  "psnr_absolute_tolerance": 0.0002,
+  "main_state": "B_local",
+  "scope": "Known nearest-neighbor opacity proxy transfer; no novelty claim or independent rendering.",
+  "limitations": [
+    "White-background RGB was not saved: measured alpha cannot be independently reconstructed; only its saved dtype, dimensions, finiteness, range and manifest hash are checked.",
+    "All 219 native conic arrays were not saved: B weights are checked as fixed artifacts and against AREA aggregate/projection support, without independently rerendering native areas.",
+    "Nearest-neighbor optimality and minimum-original-ID exact-tie selection are checked on 64 fixed donors per arm, not on every pair.",
+    "Historical controls reuse their hashed original CSV, not independently rerendered pixels.",
+    "Saved geometry/restoration records are checked against PLY-derived byte hashes; past GPU memory contents cannot be independently observed."
+  ],
+  "analysis_script_sha256": "f44e053d1cafc2b9739a2b707ef84c9ce0d7729b4b8b3f2808b2a480130521e9",
+  "input_hashes": {
+    "teacher": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+    "indices": "f6c9f4da05e064db5c94134c8ee241eb2188fb83a5c3f860655d2eaf279f992f",
+    "history": "de65e533436cd4c073ce35e0eb12c4c5dc58bbc8b0f345f097c9a14c30dcf6c8",
+    "abi_reference": "9567eceb72bc84fb7f82fd8838a479489c3e03fa8d7487eaa6f61516f29bcf84",
+    "contract": "515abe9defd4c4dbd8806113acdea20f457fab85ac278e48d335fef72256565d",
+    "script": "211780be26ce7de41afc85a682f0993e466736a870e66a3771d0f248e527785d",
+    "hash_helper": "184608c651a8f080b192f741267fe221dfd404be13c67dafed26f92e5ec2b06e",
+    "abi_helper": "5227988308b8da132f89da7576ef400a9b1280fb7f1781081ed5e9becf77d35b"
+  },
+  "source_binary_hashes": {
+    "/home/administrator/projects/gaussian-splatting/gaussian_renderer/__init__.py": "a25cf5fdb22cd8757fb2a1e37b75352042d65b16138a9fa6243f8616ca1369b8",
+    "/home/administrator/projects/gaussian-splatting/scene/__init__.py": "895d042f4dd2c6ee521dd985aea5c49d9c6f5c7379f76c4d537d8dc5468f18bf",
+    "/home/administrator/projects/gaussian-splatting/scene/gaussian_model.py": "546ba41528a879af4d83bd280a3ef3cbcca9a5e9132204185aaa8f8ee9ffa310",
+    "/home/administrator/projects/gaussian-splatting/scene/cameras.py": "7344b9a4c95e3649becab1b9e30eb0b351a15a61370f64352dcb231aed916128",
+    "/home/administrator/projects/gaussian-splatting/scene/dataset_readers.py": "b06f01648fee893c4785ed38eeb934f91b79817b9dcbb694291c9162b0b6ba94",
+    "/home/administrator/projects/gaussian-splatting/utils/camera_utils.py": "7644d89893f2481a7a9be592227bf11f3e6e5c469c9ce92c3cb25f9ff920c458",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.h": "58b97a9728e24d41602a2ac3e8eace025cfd3228de6e75033dc458d0303a46f4",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.cu": "e338380e2d4631cf842904fbf87025ddb46d49b5f1a5a22fd53bf8ada0ec1109",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/forward.cu": "4bfb6830a138bd016f39fa4558f998825d4182b12cfbda2f62bed0ab75042b54",
+    "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/config.h": "86d90fe26989e5a991104842961341d1bcb4374d5068dcb2a56d63a9017f8d65",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so": "6fb6d2d0539cfc28a0ca150a0fd5ff02a1402ef0a92f97ce05f5e72b46255b3c"
+  },
+  "artifact_hashes": {
+    "CONFIG.json": "4a4349f96f61fdd8feececfa79dff122e9ce516373ea9b9eec7abc9546ee5c88",
+    "RESULTS.json": "959f3bbbea8ff5e4db7137c20d988c2a2818a485452c222fc4b73c22d8c04c2f",
+    "METRICS.csv": "c463c6e6c78d0fa076a4e63fde21c524be107378064fd75df7d9423219a94976",
+    "SUMMARY.csv": "0da1e3aa2a234a07b4423c151d3e03b5a2181afc77dbe79e563e301a93f38eb7",
+    "RAW_MANIFEST.json": "6707cd2d74b698e994fe38578e45b0e80c6b2d3f4ff8b7bd02eae6265c1a9565",
+    "EXPLANATIONS.json": "6f92ce49abe64458ad924b6ef696988881a0b41446343a3c17c7e2577d09ed5c",
+    "OPACITY_STATS.json": "9254d503fffff3989c3b683ab4b9f53a4575762c369019f105669fff7b899c8c",
+    "AREA.csv": "a13290feb364e78f11e2a777c916a087487226f342d1c83982371024c117e795",
+    "weights.npy": "dd0bb32d5e6c04507c8239c1a74200da0bfeadfacb83a05271e9a4aae3d0f665",
+    "opacity_variants.npy": "eb2675bfe5d9cfeb9668b86422c56a2c40e1b0d05b72b3f12049ef1202e51722"
+  },
+  "independent_metric_rows": [
+    {
+      "state": "base",
+      "view": "000001.jpg",
+      "gt_mse": 0.0031740439925470767,
+      "teacher_student_mse": 0.001069400422381452,
+      "gt_psnr": 24.983870581772525
+    },
+    {
+      "state": "A_local",
+      "view": "000001.jpg",
+      "gt_mse": 0.0030567305801141413,
+      "teacher_student_mse": 0.0008467883232927392,
+      "gt_psnr": 25.147428382533384
+    },
+    {
+      "state": "A_global",
+      "view": "000001.jpg",
+      "gt_mse": 0.003011049211071562,
+      "teacher_student_mse": 0.0009323115257619151,
+      "gt_psnr": 25.212821465389908
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000001.jpg",
+      "gt_mse": 0.0064197346483132875,
+      "teacher_student_mse": 0.004558293949428635,
+      "gt_psnr": 21.924829225783334
+    },
+    {
+      "state": "B_local",
+      "view": "000001.jpg",
+      "gt_mse": 0.002859755410883338,
+      "teacher_student_mse": 0.0006707002199165299,
+      "gt_psnr": 25.436711096143554
+    },
+    {
+      "state": "B_global",
+      "view": "000001.jpg",
+      "gt_mse": 0.00316128792347818,
+      "teacher_student_mse": 0.0010564913034478338,
+      "gt_psnr": 25.001359477278807
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000001.jpg",
+      "gt_mse": 0.0035818407527150264,
+      "teacher_student_mse": 0.0014329850706416842,
+      "gt_psnr": 24.458937266261604
+    },
+    {
+      "state": "base",
+      "view": "000009.jpg",
+      "gt_mse": 0.0033347751031088378,
+      "teacher_student_mse": 0.0012373466142134,
+      "gt_psnr": 24.76933449535208
+    },
+    {
+      "state": "A_local",
+      "view": "000009.jpg",
+      "gt_mse": 0.0032180842541907383,
+      "teacher_student_mse": 0.001113025766288972,
+      "gt_psnr": 24.924025896182492
+    },
+    {
+      "state": "A_global",
+      "view": "000009.jpg",
+      "gt_mse": 0.003096571605706509,
+      "teacher_student_mse": 0.001107633904363835,
+      "gt_psnr": 25.0911887283069
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000009.jpg",
+      "gt_mse": 0.007981059671166007,
+      "teacher_student_mse": 0.006648033825712367,
+      "gt_psnr": 20.97939442134617
+    },
+    {
+      "state": "B_local",
+      "view": "000009.jpg",
+      "gt_mse": 0.002966014245714869,
+      "teacher_student_mse": 0.0008276065452125398,
+      "gt_psnr": 25.278267673937794
+    },
+    {
+      "state": "B_global",
+      "view": "000009.jpg",
+      "gt_mse": 0.0033178536835116517,
+      "teacher_student_mse": 0.0012236663335366456,
+      "gt_psnr": 24.791427701635648
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000009.jpg",
+      "gt_mse": 0.00367135921098482,
+      "teacher_student_mse": 0.0016367834949994862,
+      "gt_psnr": 24.35173121429954
+    },
+    {
+      "state": "base",
+      "view": "000017.jpg",
+      "gt_mse": 0.006719819567852235,
+      "teacher_student_mse": 0.004162841022656487,
+      "gt_psnr": 21.72642387919113
+    },
+    {
+      "state": "A_local",
+      "view": "000017.jpg",
+      "gt_mse": 0.005182501692783039,
+      "teacher_student_mse": 0.002682707995386353,
+      "gt_psnr": 22.854605473785853
+    },
+    {
+      "state": "A_global",
+      "view": "000017.jpg",
+      "gt_mse": 0.006075126795728462,
+      "teacher_student_mse": 0.003643118361379135,
+      "gt_psnr": 22.16444653349314
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000017.jpg",
+      "gt_mse": 0.021796211807013847,
+      "teacher_student_mse": 0.020699182033012103,
+      "gt_psnr": 16.616189804444566
+    },
+    {
+      "state": "B_local",
+      "view": "000017.jpg",
+      "gt_mse": 0.005564357285951067,
+      "teacher_student_mse": 0.0029634403443601675,
+      "gt_psnr": 22.545849918476264
+    },
+    {
+      "state": "B_global",
+      "view": "000017.jpg",
+      "gt_mse": 0.006688695472175191,
+      "teacher_student_mse": 0.004135488842367351,
+      "gt_psnr": 21.746585764744182
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000017.jpg",
+      "gt_mse": 0.006733617507103643,
+      "teacher_student_mse": 0.004190802488284597,
+      "gt_psnr": 21.71751556684507
+    },
+    {
+      "state": "base",
+      "view": "000025.jpg",
+      "gt_mse": 0.0028599648115515135,
+      "teacher_student_mse": 0.00029134425924226667,
+      "gt_psnr": 25.436393103125717
+    },
+    {
+      "state": "A_local",
+      "view": "000025.jpg",
+      "gt_mse": 0.0029165905995714872,
+      "teacher_student_mse": 0.0003301569530818528,
+      "gt_psnr": 25.35124528308944
+    },
+    {
+      "state": "A_global",
+      "view": "000025.jpg",
+      "gt_mse": 0.002814799961255514,
+      "teacher_student_mse": 0.00033856892204358794,
+      "gt_psnr": 25.505524636225154
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000025.jpg",
+      "gt_mse": 0.008936069940027705,
+      "teacher_student_mse": 0.006223862730522984,
+      "gt_psnr": 20.48853440782193
+    },
+    {
+      "state": "B_local",
+      "view": "000025.jpg",
+      "gt_mse": 0.0027530940097398524,
+      "teacher_student_mse": 0.0001378251770308523,
+      "gt_psnr": 25.601789585252384
+    },
+    {
+      "state": "B_global",
+      "view": "000025.jpg",
+      "gt_mse": 0.002851864021643577,
+      "teacher_student_mse": 0.000285909401479186,
+      "gt_psnr": 25.44871185712777
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000025.jpg",
+      "gt_mse": 0.0030508947399515915,
+      "teacher_student_mse": 0.0005051786845183603,
+      "gt_psnr": 25.1557277585375
+    },
+    {
+      "state": "base",
+      "view": "000033.jpg",
+      "gt_mse": 0.0027653345106205865,
+      "teacher_student_mse": 0.00027211590226367796,
+      "gt_psnr": 25.5825232644623
+    },
+    {
+      "state": "A_local",
+      "view": "000033.jpg",
+      "gt_mse": 0.0027067456644183415,
+      "teacher_student_mse": 0.0002363743479402732,
+      "gt_psnr": 25.675525501877317
+    },
+    {
+      "state": "A_global",
+      "view": "000033.jpg",
+      "gt_mse": 0.0027997189190123264,
+      "teacher_student_mse": 0.0003130179988039949,
+      "gt_psnr": 25.52885567961168
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000033.jpg",
+      "gt_mse": 0.00734917110009494,
+      "teacher_student_mse": 0.005244747658044296,
+      "gt_psnr": 21.337616414539248
+    },
+    {
+      "state": "B_local",
+      "view": "000033.jpg",
+      "gt_mse": 0.002623354309662019,
+      "teacher_student_mse": 0.00013673702639112372,
+      "gt_psnr": 25.811430497300854
+    },
+    {
+      "state": "B_global",
+      "view": "000033.jpg",
+      "gt_mse": 0.0027608687755804042,
+      "teacher_student_mse": 0.00026764651211480924,
+      "gt_psnr": 25.58954234938307
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000033.jpg",
+      "gt_mse": 0.0030563513387248838,
+      "teacher_student_mse": 0.0005797714035057543,
+      "gt_psnr": 25.147967234932427
+    },
+    {
+      "state": "base",
+      "view": "000041.jpg",
+      "gt_mse": 0.002696579714084401,
+      "teacher_student_mse": 0.000262029914952393,
+      "gt_psnr": 25.691867369277247
+    },
+    {
+      "state": "A_local",
+      "view": "000041.jpg",
+      "gt_mse": 0.002731786152223973,
+      "teacher_student_mse": 0.0002901565667321084,
+      "gt_psnr": 25.635533007972793
+    },
+    {
+      "state": "A_global",
+      "view": "000041.jpg",
+      "gt_mse": 0.0027014647634815807,
+      "teacher_student_mse": 0.00032037165000925683,
+      "gt_psnr": 25.68400692801933
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000041.jpg",
+      "gt_mse": 0.010258598307929048,
+      "teacher_student_mse": 0.0074621223696323185,
+      "gt_psnr": 19.88911975356579
+    },
+    {
+      "state": "B_local",
+      "view": "000041.jpg",
+      "gt_mse": 0.002620677922558918,
+      "teacher_student_mse": 0.00016455865260786549,
+      "gt_psnr": 25.81586349923434
+    },
+    {
+      "state": "B_global",
+      "view": "000041.jpg",
+      "gt_mse": 0.0026905169235476654,
+      "teacher_student_mse": 0.00025832955864346375,
+      "gt_psnr": 25.70164271864932
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000041.jpg",
+      "gt_mse": 0.0029709508042530257,
+      "teacher_student_mse": 0.0005821608976474064,
+      "gt_psnr": 25.27104539585881
+    },
+    {
+      "state": "base",
+      "view": "000049.jpg",
+      "gt_mse": 0.002900960817717696,
+      "teacher_student_mse": 0.00026590517982884624,
+      "gt_psnr": 25.374581370242616
+    },
+    {
+      "state": "A_local",
+      "view": "000049.jpg",
+      "gt_mse": 0.002974812913518302,
+      "teacher_student_mse": 0.000309745144891533,
+      "gt_psnr": 25.2654034192922
+    },
+    {
+      "state": "A_global",
+      "view": "000049.jpg",
+      "gt_mse": 0.00305000766864685,
+      "teacher_student_mse": 0.00032051787218384135,
+      "gt_psnr": 25.15699068703436
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000049.jpg",
+      "gt_mse": 0.01783860807164392,
+      "teacher_student_mse": 0.012161153593211047,
+      "gt_psnr": 17.48639036192416
+    },
+    {
+      "state": "B_local",
+      "view": "000049.jpg",
+      "gt_mse": 0.0027804545134653695,
+      "teacher_student_mse": 0.00013016127933771038,
+      "gt_psnr": 25.558842053209688
+    },
+    {
+      "state": "B_global",
+      "view": "000049.jpg",
+      "gt_mse": 0.002899622474827986,
+      "teacher_student_mse": 0.0002617464708446552,
+      "gt_psnr": 25.376585427120677
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000049.jpg",
+      "gt_mse": 0.003207668327235248,
+      "teacher_student_mse": 0.0005138847687087368,
+      "gt_psnr": 24.938105440968286
+    },
+    {
+      "state": "base",
+      "view": "000057.jpg",
+      "gt_mse": 0.00352063288967048,
+      "teacher_student_mse": 0.00022519055439234155,
+      "gt_psnr": 24.533792581739164
+    },
+    {
+      "state": "A_local",
+      "view": "000057.jpg",
+      "gt_mse": 0.0035696399598430647,
+      "teacher_student_mse": 0.00030837951976026663,
+      "gt_psnr": 24.473755853832415
+    },
+    {
+      "state": "A_global",
+      "view": "000057.jpg",
+      "gt_mse": 0.0034843575489351074,
+      "teacher_student_mse": 0.00029631381809253304,
+      "gt_psnr": 24.578772860518278
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000057.jpg",
+      "gt_mse": 0.007882208043016594,
+      "teacher_student_mse": 0.005207257333199166,
+      "gt_psnr": 21.03352106549619
+    },
+    {
+      "state": "B_local",
+      "view": "000057.jpg",
+      "gt_mse": 0.003495696526056652,
+      "teacher_student_mse": 0.00016026455605056206,
+      "gt_psnr": 24.56466277061582
+    },
+    {
+      "state": "B_global",
+      "view": "000057.jpg",
+      "gt_mse": 0.0035140850789676112,
+      "teacher_student_mse": 0.00022203771895203678,
+      "gt_psnr": 24.54187728077244
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000057.jpg",
+      "gt_mse": 0.003810242930167129,
+      "teacher_student_mse": 0.0005159281286749548,
+      "gt_psnr": 24.19047334070389
+    },
+    {
+      "state": "base",
+      "view": "000065.jpg",
+      "gt_mse": 0.004280490460444787,
+      "teacher_student_mse": 0.0003610005181341297,
+      "gt_psnr": 23.685064664865394
+    },
+    {
+      "state": "A_local",
+      "view": "000065.jpg",
+      "gt_mse": 0.0044038890277550225,
+      "teacher_student_mse": 0.0006239720404528044,
+      "gt_psnr": 23.561636332154663
+    },
+    {
+      "state": "A_global",
+      "view": "000065.jpg",
+      "gt_mse": 0.00422560145838642,
+      "teacher_student_mse": 0.00047239622798270404,
+      "gt_psnr": 23.741114662485995
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000065.jpg",
+      "gt_mse": 0.017993753637607846,
+      "teacher_student_mse": 0.013410512328019247,
+      "gt_psnr": 17.44878229981088
+    },
+    {
+      "state": "B_local",
+      "view": "000065.jpg",
+      "gt_mse": 0.004116985258982496,
+      "teacher_student_mse": 0.0002116508185879072,
+      "gt_psnr": 23.854206880071338
+    },
+    {
+      "state": "B_global",
+      "view": "000065.jpg",
+      "gt_mse": 0.0042697469732637305,
+      "teacher_student_mse": 0.0003554219517233134,
+      "gt_psnr": 23.695978606591158
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000065.jpg",
+      "gt_mse": 0.004461073234026378,
+      "teacher_student_mse": 0.0006403428976706973,
+      "gt_psnr": 23.50560647219607
+    },
+    {
+      "state": "base",
+      "view": "000073.jpg",
+      "gt_mse": 0.0018843006394249201,
+      "teacher_student_mse": 0.00012249823044319558,
+      "gt_psnr": 27.248498045012887
+    },
+    {
+      "state": "A_local",
+      "view": "000073.jpg",
+      "gt_mse": 0.0019431624725441028,
+      "teacher_student_mse": 0.00011952517698180141,
+      "gt_psnr": 27.11490885463317
+    },
+    {
+      "state": "A_global",
+      "view": "000073.jpg",
+      "gt_mse": 0.0021572852923448234,
+      "teacher_student_mse": 0.00021415283803238343,
+      "gt_psnr": 26.660924173925746
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000073.jpg",
+      "gt_mse": 0.005295657925555816,
+      "teacher_student_mse": 0.0034553669848754673,
+      "gt_psnr": 22.7608007603089
+    },
+    {
+      "state": "B_local",
+      "view": "000073.jpg",
+      "gt_mse": 0.0018694736284274034,
+      "teacher_student_mse": 6.632422974832545e-05,
+      "gt_psnr": 27.282806568051548
+    },
+    {
+      "state": "B_global",
+      "view": "000073.jpg",
+      "gt_mse": 0.0018891223956349322,
+      "teacher_student_mse": 0.00012024102977676447,
+      "gt_psnr": 27.23739903366228
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000073.jpg",
+      "gt_mse": 0.0021684008983193894,
+      "teacher_student_mse": 0.00032634383129320565,
+      "gt_psnr": 26.638604214730364
+    },
+    {
+      "state": "base",
+      "view": "000081.jpg",
+      "gt_mse": 0.0026705345869660743,
+      "teacher_student_mse": 0.0003590102848766856,
+      "gt_psnr": 25.734017929686726
+    },
+    {
+      "state": "A_local",
+      "view": "000081.jpg",
+      "gt_mse": 0.0027389586137395324,
+      "teacher_student_mse": 0.00035855460441756767,
+      "gt_psnr": 25.624145299805555
+    },
+    {
+      "state": "A_global",
+      "view": "000081.jpg",
+      "gt_mse": 0.0028846592518931426,
+      "teacher_student_mse": 0.00047389447015669704,
+      "gt_psnr": 25.399054801728912
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000081.jpg",
+      "gt_mse": 0.010890174306528952,
+      "teacher_student_mse": 0.008927057721030408,
+      "gt_psnr": 19.629651689349636
+    },
+    {
+      "state": "B_local",
+      "view": "000081.jpg",
+      "gt_mse": 0.0026234995364857678,
+      "teacher_student_mse": 0.00023432244545433143,
+      "gt_psnr": 25.811190081958465
+    },
+    {
+      "state": "B_global",
+      "view": "000081.jpg",
+      "gt_mse": 0.002670212923629431,
+      "teacher_student_mse": 0.0003543634302016951,
+      "gt_psnr": 25.734541064742356
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000081.jpg",
+      "gt_mse": 0.003088302598525097,
+      "teacher_student_mse": 0.000660096756856544,
+      "gt_psnr": 25.10280153144845
+    },
+    {
+      "state": "base",
+      "view": "000089.jpg",
+      "gt_mse": 0.004002160541254095,
+      "teacher_student_mse": 0.0009213896253617184,
+      "gt_psnr": 23.97705494214963
+    },
+    {
+      "state": "A_local",
+      "view": "000089.jpg",
+      "gt_mse": 0.0035970880236795436,
+      "teacher_student_mse": 0.0006133223425237345,
+      "gt_psnr": 24.44048934511052
+    },
+    {
+      "state": "A_global",
+      "view": "000089.jpg",
+      "gt_mse": 0.0039550046152923716,
+      "teacher_student_mse": 0.0008338476618714619,
+      "gt_psnr": 24.028530053660923
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000089.jpg",
+      "gt_mse": 0.0099034618577242,
+      "teacher_student_mse": 0.005949980197122527,
+      "gt_psnr": 20.042129667256702
+    },
+    {
+      "state": "B_local",
+      "view": "000089.jpg",
+      "gt_mse": 0.0035982939378833606,
+      "teacher_student_mse": 0.0005564805150187053,
+      "gt_psnr": 24.439033628396473
+    },
+    {
+      "state": "B_global",
+      "view": "000089.jpg",
+      "gt_mse": 0.003992943094380822,
+      "teacher_student_mse": 0.000910511936200805,
+      "gt_psnr": 23.98706879130106
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000089.jpg",
+      "gt_mse": 0.004213002232197752,
+      "teacher_student_mse": 0.0011369055463651657,
+      "gt_psnr": 23.754083107684977
+    },
+    {
+      "state": "base",
+      "view": "000097.jpg",
+      "gt_mse": 0.005440964432431516,
+      "teacher_student_mse": 0.0025240974778089494,
+      "gt_psnr": 22.643241130665665
+    },
+    {
+      "state": "A_local",
+      "view": "000097.jpg",
+      "gt_mse": 0.004745385254728708,
+      "teacher_student_mse": 0.0019090463200403713,
+      "gt_psnr": 23.2372852355051
+    },
+    {
+      "state": "A_global",
+      "view": "000097.jpg",
+      "gt_mse": 0.00500576122161537,
+      "teacher_student_mse": 0.002164925467241825,
+      "gt_psnr": 23.005298703906178
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000097.jpg",
+      "gt_mse": 0.007874961061901812,
+      "teacher_student_mse": 0.00558296473214058,
+      "gt_psnr": 21.037515849215982
+    },
+    {
+      "state": "B_local",
+      "view": "000097.jpg",
+      "gt_mse": 0.004702662697945707,
+      "teacher_student_mse": 0.00179956620784068,
+      "gt_psnr": 23.27656170238459
+    },
+    {
+      "state": "B_global",
+      "view": "000097.jpg",
+      "gt_mse": 0.005417327991151857,
+      "teacher_student_mse": 0.002502612810066554,
+      "gt_psnr": 22.662148693352393
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000097.jpg",
+      "gt_mse": 0.005552881094688149,
+      "teacher_student_mse": 0.002661773845907362,
+      "gt_psnr": 22.554816260904968
+    },
+    {
+      "state": "base",
+      "view": "000105.jpg",
+      "gt_mse": 0.0035975094021863593,
+      "teacher_student_mse": 0.0014356764474567284,
+      "gt_psnr": 24.43998062349712
+    },
+    {
+      "state": "A_local",
+      "view": "000105.jpg",
+      "gt_mse": 0.0034367963838520693,
+      "teacher_student_mse": 0.0011927503353247786,
+      "gt_psnr": 24.638461972747507
+    },
+    {
+      "state": "A_global",
+      "view": "000105.jpg",
+      "gt_mse": 0.0034250301427922007,
+      "teacher_student_mse": 0.001200924778726953,
+      "gt_psnr": 24.65335602042879
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000105.jpg",
+      "gt_mse": 0.010789937481768305,
+      "teacher_student_mse": 0.008450858047690702,
+      "gt_psnr": 19.669810716657178
+    },
+    {
+      "state": "B_local",
+      "view": "000105.jpg",
+      "gt_mse": 0.0031997653688991016,
+      "teacher_student_mse": 0.0009674498482698905,
+      "gt_psnr": 24.948818662826927
+    },
+    {
+      "state": "B_global",
+      "view": "000105.jpg",
+      "gt_mse": 0.003583339800086321,
+      "teacher_student_mse": 0.0014189391402309127,
+      "gt_psnr": 24.457120067082418
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000105.jpg",
+      "gt_mse": 0.0038380219804551863,
+      "teacher_student_mse": 0.001615000516664849,
+      "gt_psnr": 24.158925423772377
+    },
+    {
+      "state": "base",
+      "view": "000113.jpg",
+      "gt_mse": 0.0051497439366162195,
+      "teacher_student_mse": 0.0021707793787163134,
+      "gt_psnr": 22.882143650713033
+    },
+    {
+      "state": "A_local",
+      "view": "000113.jpg",
+      "gt_mse": 0.004807614298805758,
+      "teacher_student_mse": 0.001757514389013519,
+      "gt_psnr": 23.18070381816358
+    },
+    {
+      "state": "A_global",
+      "view": "000113.jpg",
+      "gt_mse": 0.004769743916465092,
+      "teacher_student_mse": 0.0018183894003093773,
+      "gt_psnr": 23.215049372390478
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000113.jpg",
+      "gt_mse": 0.01082062612696463,
+      "teacher_student_mse": 0.00831258324598893,
+      "gt_psnr": 19.657476083959708
+    },
+    {
+      "state": "B_local",
+      "view": "000113.jpg",
+      "gt_mse": 0.004523343460832161,
+      "teacher_student_mse": 0.0014306022084401738,
+      "gt_psnr": 23.445404346991445
+    },
+    {
+      "state": "B_global",
+      "view": "000113.jpg",
+      "gt_mse": 0.005127362838858011,
+      "teacher_student_mse": 0.0021486546682473713,
+      "gt_psnr": 22.901059485361618
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000113.jpg",
+      "gt_mse": 0.005332012281602106,
+      "teacher_student_mse": 0.0022850656441292605,
+      "gt_psnr": 22.7310885891574
+    },
+    {
+      "state": "base",
+      "view": "000121.jpg",
+      "gt_mse": 0.005361768947254627,
+      "teacher_student_mse": 0.0013132893182725717,
+      "gt_psnr": 22.70691904842952
+    },
+    {
+      "state": "A_local",
+      "view": "000121.jpg",
+      "gt_mse": 0.005215718151516213,
+      "teacher_student_mse": 0.0010783101943368726,
+      "gt_psnr": 22.826858851726982
+    },
+    {
+      "state": "A_global",
+      "view": "000121.jpg",
+      "gt_mse": 0.005124701433088159,
+      "teacher_student_mse": 0.0011956033550326827,
+      "gt_psnr": 22.903314316847762
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000121.jpg",
+      "gt_mse": 0.018306270004756268,
+      "teacher_student_mse": 0.01450876420748927,
+      "gt_psnr": 17.374001363850184
+    },
+    {
+      "state": "B_local",
+      "view": "000121.jpg",
+      "gt_mse": 0.005030516767265492,
+      "teacher_student_mse": 0.00085496464821346,
+      "gt_psnr": 22.983873991102698
+    },
+    {
+      "state": "B_global",
+      "view": "000121.jpg",
+      "gt_mse": 0.005344308197158118,
+      "teacher_student_mse": 0.0012992747841518897,
+      "gt_psnr": 22.721085047866964
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000121.jpg",
+      "gt_mse": 0.00561145063898039,
+      "teacher_student_mse": 0.0015403325123865082,
+      "gt_psnr": 22.509248529925227
+    },
+    {
+      "state": "base",
+      "view": "000129.jpg",
+      "gt_mse": 0.0031978341703656032,
+      "teacher_student_mse": 0.00043023604353093474,
+      "gt_psnr": 24.951440611534046
+    },
+    {
+      "state": "A_local",
+      "view": "000129.jpg",
+      "gt_mse": 0.003132608430200264,
+      "teacher_student_mse": 0.0003663102340497868,
+      "gt_psnr": 25.040938876689587
+    },
+    {
+      "state": "A_global",
+      "view": "000129.jpg",
+      "gt_mse": 0.0032156826584194,
+      "teacher_student_mse": 0.0004933527900022889,
+      "gt_psnr": 24.92726816421571
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000129.jpg",
+      "gt_mse": 0.007555911746092134,
+      "teacher_student_mse": 0.004707407808394816,
+      "gt_psnr": 21.21713123329483
+    },
+    {
+      "state": "B_local",
+      "view": "000129.jpg",
+      "gt_mse": 0.0030554721525685503,
+      "teacher_student_mse": 0.00023779750269822507,
+      "gt_psnr": 25.14921670065878
+    },
+    {
+      "state": "B_global",
+      "view": "000129.jpg",
+      "gt_mse": 0.0031909977800025613,
+      "teacher_student_mse": 0.0004248432414809341,
+      "gt_psnr": 24.960734979478158
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000129.jpg",
+      "gt_mse": 0.0035649594545447173,
+      "teacher_student_mse": 0.0007987281311339009,
+      "gt_psnr": 24.47945405157874
+    },
+    {
+      "state": "base",
+      "view": "000137.jpg",
+      "gt_mse": 0.003769597830584338,
+      "teacher_student_mse": 0.0004997636270951106,
+      "gt_psnr": 24.23704981166809
+    },
+    {
+      "state": "A_local",
+      "view": "000137.jpg",
+      "gt_mse": 0.0036317671883551745,
+      "teacher_student_mse": 0.0004451366667429658,
+      "gt_psnr": 24.398819993726907
+    },
+    {
+      "state": "A_global",
+      "view": "000137.jpg",
+      "gt_mse": 0.0035678344164714634,
+      "teacher_student_mse": 0.0005162769011634971,
+      "gt_psnr": 24.475953094756882
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000137.jpg",
+      "gt_mse": 0.05817076318236168,
+      "teacher_student_mse": 0.05059715534367598,
+      "gt_psnr": 12.352952383554207
+    },
+    {
+      "state": "B_local",
+      "view": "000137.jpg",
+      "gt_mse": 0.0035383960138580923,
+      "teacher_student_mse": 0.00028197042407731736,
+      "gt_psnr": 24.51193562887947
+    },
+    {
+      "state": "B_global",
+      "view": "000137.jpg",
+      "gt_mse": 0.003753815169909847,
+      "teacher_student_mse": 0.0004918470396509108,
+      "gt_psnr": 24.255271149497265
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000137.jpg",
+      "gt_mse": 0.00415652370010239,
+      "teacher_student_mse": 0.0009636853700379489,
+      "gt_psnr": 23.81269738849241
+    },
+    {
+      "state": "base",
+      "view": "000145.jpg",
+      "gt_mse": 0.0034602337576779,
+      "teacher_student_mse": 0.0006571449320551528,
+      "gt_psnr": 24.608945612533407
+    },
+    {
+      "state": "A_local",
+      "view": "000145.jpg",
+      "gt_mse": 0.0031864405636854876,
+      "teacher_student_mse": 0.0005878412036810159,
+      "gt_psnr": 24.96694177954289
+    },
+    {
+      "state": "A_global",
+      "view": "000145.jpg",
+      "gt_mse": 0.0032256871354332983,
+      "teacher_student_mse": 0.0005982717985420346,
+      "gt_psnr": 24.913777578224675
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000145.jpg",
+      "gt_mse": 0.008470540853022677,
+      "teacher_student_mse": 0.006253632026866802,
+      "gt_psnr": 20.720888586203984
+    },
+    {
+      "state": "B_local",
+      "view": "000145.jpg",
+      "gt_mse": 0.0030825808304498306,
+      "teacher_student_mse": 0.00036293486430126915,
+      "gt_psnr": 25.110855266517504
+    },
+    {
+      "state": "B_global",
+      "view": "000145.jpg",
+      "gt_mse": 0.0034434372581045336,
+      "teacher_student_mse": 0.0006460449091726045,
+      "gt_psnr": 24.63007825763379
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000145.jpg",
+      "gt_mse": 0.0036419385117984608,
+      "teacher_student_mse": 0.0009562571568289306,
+      "gt_psnr": 24.386673908343596
+    },
+    {
+      "state": "base",
+      "view": "000153.jpg",
+      "gt_mse": 0.004189435700559231,
+      "teacher_student_mse": 6.774999763122559e-05,
+      "gt_psnr": 23.778444707419673
+    },
+    {
+      "state": "A_local",
+      "view": "000153.jpg",
+      "gt_mse": 0.004273218723869284,
+      "teacher_student_mse": 0.00010031096336472504,
+      "gt_psnr": 23.69244877335293
+    },
+    {
+      "state": "A_global",
+      "view": "000153.jpg",
+      "gt_mse": 0.004477473581886335,
+      "teacher_student_mse": 0.00018466038763670953,
+      "gt_psnr": 23.489669679077046
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000153.jpg",
+      "gt_mse": 0.008129123599046504,
+      "teacher_student_mse": 0.0035256224340224182,
+      "gt_psnr": 20.899562731776925
+    },
+    {
+      "state": "B_local",
+      "view": "000153.jpg",
+      "gt_mse": 0.00420991644456493,
+      "teacher_student_mse": 5.036341140153433e-05,
+      "gt_psnr": 23.757265236475828
+    },
+    {
+      "state": "B_global",
+      "view": "000153.jpg",
+      "gt_mse": 0.004194918749589492,
+      "teacher_student_mse": 6.652117223001777e-05,
+      "gt_psnr": 23.772764465031386
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000153.jpg",
+      "gt_mse": 0.0044966862343723745,
+      "teacher_student_mse": 0.0003105334401502679,
+      "gt_psnr": 23.471074151749363
+    },
+    {
+      "state": "base",
+      "view": "000161.jpg",
+      "gt_mse": 0.0021439661394766197,
+      "teacher_student_mse": 7.583497407637321e-05,
+      "gt_psnr": 26.68782077913308
+    },
+    {
+      "state": "A_local",
+      "view": "000161.jpg",
+      "gt_mse": 0.0022025288827661645,
+      "teacher_student_mse": 0.00015168486978812157,
+      "gt_psnr": 26.570783877768807
+    },
+    {
+      "state": "A_global",
+      "view": "000161.jpg",
+      "gt_mse": 0.0022394004539711553,
+      "teacher_student_mse": 0.00016917010053387388,
+      "gt_psnr": 26.498682380872957
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000161.jpg",
+      "gt_mse": 0.007331110939832513,
+      "teacher_student_mse": 0.0053314435814485256,
+      "gt_psnr": 21.348302083765315
+    },
+    {
+      "state": "B_local",
+      "view": "000161.jpg",
+      "gt_mse": 0.002133557816479863,
+      "teacher_student_mse": 6.03905323291549e-05,
+      "gt_psnr": 26.70895583862579
+    },
+    {
+      "state": "B_global",
+      "view": "000161.jpg",
+      "gt_mse": 0.002143033198491804,
+      "teacher_student_mse": 7.460831394243523e-05,
+      "gt_psnr": 26.689711010953058
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000161.jpg",
+      "gt_mse": 0.0023200136817171976,
+      "teacher_student_mse": 0.0002686986045444138,
+      "gt_psnr": 26.34509453955324
+    },
+    {
+      "state": "base",
+      "view": "000169.jpg",
+      "gt_mse": 0.003049461491354689,
+      "teacher_student_mse": 0.00016340802196402755,
+      "gt_psnr": 25.15776846548864
+    },
+    {
+      "state": "A_local",
+      "view": "000169.jpg",
+      "gt_mse": 0.003024892320709739,
+      "teacher_student_mse": 0.00020195151830871324,
+      "gt_psnr": 25.19290080632643
+    },
+    {
+      "state": "A_global",
+      "view": "000169.jpg",
+      "gt_mse": 0.003039443953438316,
+      "teacher_student_mse": 0.00024007463483822748,
+      "gt_psnr": 25.172058604838124
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000169.jpg",
+      "gt_mse": 0.006366430254545353,
+      "teacher_student_mse": 0.003960775067032955,
+      "gt_psnr": 21.961040143388534
+    },
+    {
+      "state": "B_local",
+      "view": "000169.jpg",
+      "gt_mse": 0.0029677751308681737,
+      "teacher_student_mse": 8.876872576697262e-05,
+      "gt_psnr": 25.275690087578518
+    },
+    {
+      "state": "B_global",
+      "view": "000169.jpg",
+      "gt_mse": 0.0030431964355503664,
+      "teacher_student_mse": 0.00016028900360099682,
+      "gt_psnr": 25.16670013424894
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000169.jpg",
+      "gt_mse": 0.003317866684318382,
+      "teacher_student_mse": 0.0004869772915836797,
+      "gt_psnr": 24.791410684105344
+    },
+    {
+      "state": "base",
+      "view": "000177.jpg",
+      "gt_mse": 0.002381582459315171,
+      "teacher_student_mse": 0.0004344174342592763,
+      "gt_psnr": 26.231343769885918
+    },
+    {
+      "state": "A_local",
+      "view": "000177.jpg",
+      "gt_mse": 0.0024446006044435693,
+      "teacher_student_mse": 0.0004741973399678296,
+      "gt_psnr": 26.117920851926833
+    },
+    {
+      "state": "A_global",
+      "view": "000177.jpg",
+      "gt_mse": 0.0024097530270087027,
+      "teacher_student_mse": 0.00044010334164639917,
+      "gt_psnr": 26.180274655178874
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000177.jpg",
+      "gt_mse": 0.00538306129885228,
+      "teacher_student_mse": 0.003435475483572145,
+      "gt_psnr": 22.68970674688916
+    },
+    {
+      "state": "B_local",
+      "view": "000177.jpg",
+      "gt_mse": 0.002272072029283859,
+      "teacher_student_mse": 0.0002809256578609014,
+      "gt_psnr": 26.435779047283336
+    },
+    {
+      "state": "B_global",
+      "view": "000177.jpg",
+      "gt_mse": 0.0023771460589923463,
+      "teacher_student_mse": 0.0004287192851938684,
+      "gt_psnr": 26.239441330948644
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000177.jpg",
+      "gt_mse": 0.002650673414336853,
+      "teacher_student_mse": 0.0006654933009137581,
+      "gt_psnr": 25.766437777699686
+    },
+    {
+      "state": "base",
+      "view": "000185.jpg",
+      "gt_mse": 0.0024236772551035745,
+      "teacher_student_mse": 0.0007893716326593496,
+      "gt_psnr": 26.155252127481905
+    },
+    {
+      "state": "A_local",
+      "view": "000185.jpg",
+      "gt_mse": 0.0023559595396486868,
+      "teacher_student_mse": 0.000704154370662226,
+      "gt_psnr": 26.27832172228822
+    },
+    {
+      "state": "A_global",
+      "view": "000185.jpg",
+      "gt_mse": 0.002381978664968145,
+      "teacher_student_mse": 0.0007264030776842687,
+      "gt_psnr": 26.230621327474903
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000185.jpg",
+      "gt_mse": 0.005180562594953581,
+      "teacher_student_mse": 0.003632939100995253,
+      "gt_psnr": 22.85623074498682
+    },
+    {
+      "state": "B_local",
+      "view": "000185.jpg",
+      "gt_mse": 0.0021293778316293656,
+      "teacher_student_mse": 0.0004569280350991625,
+      "gt_psnr": 26.71747271566385
+    },
+    {
+      "state": "B_global",
+      "view": "000185.jpg",
+      "gt_mse": 0.002416509029812053,
+      "teacher_student_mse": 0.0007812125390736272,
+      "gt_psnr": 26.16811577686193
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000185.jpg",
+      "gt_mse": 0.0025873333944864806,
+      "teacher_student_mse": 0.000961048820880805,
+      "gt_psnr": 25.871476060508606
+    },
+    {
+      "state": "base",
+      "view": "000193.jpg",
+      "gt_mse": 0.0021658116304790124,
+      "teacher_student_mse": 0.0001114136808802715,
+      "gt_psnr": 26.643793184406164
+    },
+    {
+      "state": "A_local",
+      "view": "000193.jpg",
+      "gt_mse": 0.002175696596486448,
+      "teacher_student_mse": 0.00010875348959663429,
+      "gt_psnr": 26.624016676405837
+    },
+    {
+      "state": "A_global",
+      "view": "000193.jpg",
+      "gt_mse": 0.002209032253324266,
+      "teacher_student_mse": 0.00016773435005806828,
+      "gt_psnr": 26.557979430971063
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000193.jpg",
+      "gt_mse": 0.004746730693129262,
+      "teacher_student_mse": 0.0026418242471105136,
+      "gt_psnr": 23.236054073812124
+    },
+    {
+      "state": "B_local",
+      "view": "000193.jpg",
+      "gt_mse": 0.0021330902123133876,
+      "teacher_student_mse": 6.882073620341788e-05,
+      "gt_psnr": 26.709907770487323
+    },
+    {
+      "state": "B_global",
+      "view": "000193.jpg",
+      "gt_mse": 0.002164552825709278,
+      "teacher_student_mse": 0.00011003494089479895,
+      "gt_psnr": 26.64631810805275
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000193.jpg",
+      "gt_mse": 0.0023419934074857102,
+      "teacher_student_mse": 0.00028366949126339326,
+      "gt_psnr": 26.304143317643423
+    },
+    {
+      "state": "base",
+      "view": "000201.jpg",
+      "gt_mse": 0.0026757568123517727,
+      "teacher_student_mse": 0.0003542107282644875,
+      "gt_psnr": 25.72553360206527
+    },
+    {
+      "state": "A_local",
+      "view": "000201.jpg",
+      "gt_mse": 0.002563143783944217,
+      "teacher_student_mse": 0.00032045358806428824,
+      "gt_psnr": 25.912270306389868
+    },
+    {
+      "state": "A_global",
+      "view": "000201.jpg",
+      "gt_mse": 0.002640332054812452,
+      "teacher_student_mse": 0.0004536427259361734,
+      "gt_psnr": 25.783414517270337
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000201.jpg",
+      "gt_mse": 0.009667688915975883,
+      "teacher_student_mse": 0.006888800970752766,
+      "gt_psnr": 20.146773326384768
+    },
+    {
+      "state": "B_local",
+      "view": "000201.jpg",
+      "gt_mse": 0.0025072790225854945,
+      "teacher_student_mse": 0.0002006169166105017,
+      "gt_psnr": 26.007973328841008
+    },
+    {
+      "state": "B_global",
+      "view": "000201.jpg",
+      "gt_mse": 0.0026653698412337674,
+      "teacher_student_mse": 0.0003490233595120316,
+      "gt_psnr": 25.742425206476007
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000201.jpg",
+      "gt_mse": 0.003041016561887321,
+      "teacher_student_mse": 0.0007655961983299354,
+      "gt_psnr": 25.169812146086837
+    },
+    {
+      "state": "base",
+      "view": "000209.jpg",
+      "gt_mse": 0.0031861664706819537,
+      "teacher_student_mse": 0.00027307904356319495,
+      "gt_psnr": 24.96731536943599
+    },
+    {
+      "state": "A_local",
+      "view": "000209.jpg",
+      "gt_mse": 0.003140257507888438,
+      "teacher_student_mse": 0.0003015828044019522,
+      "gt_psnr": 25.03034737382344
+    },
+    {
+      "state": "A_global",
+      "view": "000209.jpg",
+      "gt_mse": 0.0030664128864329376,
+      "teacher_student_mse": 0.00034380453040139264,
+      "gt_psnr": 25.13369368650992
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000209.jpg",
+      "gt_mse": 0.01166423241461484,
+      "teacher_student_mse": 0.00882451241449903,
+      "gt_psnr": 19.331438354442135
+    },
+    {
+      "state": "B_local",
+      "view": "000209.jpg",
+      "gt_mse": 0.003061368701023406,
+      "teacher_student_mse": 0.00015909660448831437,
+      "gt_psnr": 25.140843622755497
+    },
+    {
+      "state": "B_global",
+      "view": "000209.jpg",
+      "gt_mse": 0.0031748579905163552,
+      "teacher_student_mse": 0.0002682464065354537,
+      "gt_psnr": 24.98275695667887
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000209.jpg",
+      "gt_mse": 0.003383009873063081,
+      "teacher_student_mse": 0.0005992677907054655,
+      "gt_psnr": 24.706967347539766
+    },
+    {
+      "state": "base",
+      "view": "000217.jpg",
+      "gt_mse": 0.006257438346210889,
+      "teacher_student_mse": 0.00015386700399994694,
+      "gt_psnr": 22.036034207500723
+    },
+    {
+      "state": "A_local",
+      "view": "000217.jpg",
+      "gt_mse": 0.0061746395463814704,
+      "teacher_student_mse": 0.00015792821541176324,
+      "gt_psnr": 22.09388389904189
+    },
+    {
+      "state": "A_global",
+      "view": "000217.jpg",
+      "gt_mse": 0.006227225187527966,
+      "teacher_student_mse": 0.0002825355707469774,
+      "gt_psnr": 22.0570542913447
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000217.jpg",
+      "gt_mse": 0.008827379297226823,
+      "teacher_student_mse": 0.0036322988447325846,
+      "gt_psnr": 20.541682121286975
+    },
+    {
+      "state": "B_local",
+      "view": "000217.jpg",
+      "gt_mse": 0.0061889911021868116,
+      "teacher_student_mse": 0.00010448808149392265,
+      "gt_psnr": 22.083801416849443
+    },
+    {
+      "state": "B_global",
+      "view": "000217.jpg",
+      "gt_mse": 0.006248472434363359,
+      "teacher_student_mse": 0.00015114107943465786,
+      "gt_psnr": 22.04226141761932
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000217.jpg",
+      "gt_mse": 0.00641407798585221,
+      "teacher_student_mse": 0.0004751005456011341,
+      "gt_psnr": 21.928657639867204
+    },
+    {
+      "state": "base",
+      "view": "000225.jpg",
+      "gt_mse": 0.004029022669163135,
+      "teacher_student_mse": 0.0004117258030070878,
+      "gt_psnr": 23.948002890611725
+    },
+    {
+      "state": "A_local",
+      "view": "000225.jpg",
+      "gt_mse": 0.0038268192292920727,
+      "teacher_student_mse": 0.00044490846865240263,
+      "gt_psnr": 24.171620524280172
+    },
+    {
+      "state": "A_global",
+      "view": "000225.jpg",
+      "gt_mse": 0.003831138553514917,
+      "teacher_student_mse": 0.00043658624297666416,
+      "gt_psnr": 24.16672141428856
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000225.jpg",
+      "gt_mse": 0.009774169481933213,
+      "teacher_student_mse": 0.00685557505355395,
+      "gt_psnr": 20.099201346724648
+    },
+    {
+      "state": "B_local",
+      "view": "000225.jpg",
+      "gt_mse": 0.0038169363116225007,
+      "teacher_student_mse": 0.0002852078005645969,
+      "gt_psnr": 24.182850865119093
+    },
+    {
+      "state": "B_global",
+      "view": "000225.jpg",
+      "gt_mse": 0.004015634818559144,
+      "teacher_student_mse": 0.0004059702922544322,
+      "gt_psnr": 23.962457887653787
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000225.jpg",
+      "gt_mse": 0.004124228674203359,
+      "teacher_student_mse": 0.0006890211945086153,
+      "gt_psnr": 23.846572625952692
+    },
+    {
+      "state": "base",
+      "view": "000233.jpg",
+      "gt_mse": 0.003998796716611065,
+      "teacher_student_mse": 0.00018379114933314046,
+      "gt_psnr": 23.980706731603192
+    },
+    {
+      "state": "A_local",
+      "view": "000233.jpg",
+      "gt_mse": 0.004083447369656999,
+      "teacher_student_mse": 0.00031072181020926185,
+      "gt_psnr": 23.88973037532279
+    },
+    {
+      "state": "A_global",
+      "view": "000233.jpg",
+      "gt_mse": 0.00406946202345604,
+      "teacher_student_mse": 0.00034974359814641306,
+      "gt_psnr": 23.904630000345325
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000233.jpg",
+      "gt_mse": 0.018147551955999857,
+      "teacher_student_mse": 0.012076584695162568,
+      "gt_psnr": 17.41181951548346
+    },
+    {
+      "state": "B_local",
+      "view": "000233.jpg",
+      "gt_mse": 0.003972200666341759,
+      "teacher_student_mse": 0.00013490490132832313,
+      "gt_psnr": 24.00968820075038
+    },
+    {
+      "state": "B_global",
+      "view": "000233.jpg",
+      "gt_mse": 0.003991831167072992,
+      "teacher_student_mse": 0.00017981905957707099,
+      "gt_psnr": 23.988278353103002
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000233.jpg",
+      "gt_mse": 0.0044160920745628576,
+      "teacher_student_mse": 0.0005740450970789327,
+      "gt_psnr": 23.549618802386163
+    },
+    {
+      "state": "base",
+      "view": "000241.jpg",
+      "gt_mse": 0.0030826952583555512,
+      "teacher_student_mse": 0.00016295769314746958,
+      "gt_psnr": 25.11069405586831
+    },
+    {
+      "state": "A_local",
+      "view": "000241.jpg",
+      "gt_mse": 0.0029935174682657567,
+      "teacher_student_mse": 0.00016414515572502753,
+      "gt_psnr": 25.23818203244272
+    },
+    {
+      "state": "A_global",
+      "view": "000241.jpg",
+      "gt_mse": 0.003123994578471587,
+      "teacher_student_mse": 0.000247815108216662,
+      "gt_psnr": 25.052897284893326
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000241.jpg",
+      "gt_mse": 0.010384453886390789,
+      "teacher_student_mse": 0.0069681697237066725,
+      "gt_psnr": 19.836163378735428
+    },
+    {
+      "state": "B_local",
+      "view": "000241.jpg",
+      "gt_mse": 0.0029937638580388435,
+      "teacher_student_mse": 9.273323613804936e-05,
+      "gt_psnr": 25.237824589011964
+    },
+    {
+      "state": "B_global",
+      "view": "000241.jpg",
+      "gt_mse": 0.0030782637450008712,
+      "teacher_student_mse": 0.00015987947695562732,
+      "gt_psnr": 25.116941726489983
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000241.jpg",
+      "gt_mse": 0.003312146164300345,
+      "teacher_student_mse": 0.0004269277520830893,
+      "gt_psnr": 24.798905061418594
+    },
+    {
+      "state": "base",
+      "view": "000249.jpg",
+      "gt_mse": 0.0034944366471435294,
+      "teacher_student_mse": 0.0006122774751728851,
+      "gt_psnr": 24.566228287186682
+    },
+    {
+      "state": "A_local",
+      "view": "000249.jpg",
+      "gt_mse": 0.003496329969983281,
+      "teacher_student_mse": 0.0006208128497309838,
+      "gt_psnr": 24.56387587084409
+    },
+    {
+      "state": "A_global",
+      "view": "000249.jpg",
+      "gt_mse": 0.0037208086250393995,
+      "teacher_student_mse": 0.0006958787324913111,
+      "gt_psnr": 24.293626667768358
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000249.jpg",
+      "gt_mse": 0.007681951045542712,
+      "teacher_student_mse": 0.004453210671792467,
+      "gt_psnr": 21.145284647728225
+    },
+    {
+      "state": "B_local",
+      "view": "000249.jpg",
+      "gt_mse": 0.0032891604392812457,
+      "teacher_student_mse": 0.0003687537276563994,
+      "gt_psnr": 24.82914941903445
+    },
+    {
+      "state": "B_global",
+      "view": "000249.jpg",
+      "gt_mse": 0.003492325664823615,
+      "teacher_student_mse": 0.0006045383651272335,
+      "gt_psnr": 24.5688526443922
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000249.jpg",
+      "gt_mse": 0.003750293146879013,
+      "teacher_student_mse": 0.0008752993200820907,
+      "gt_psnr": 24.259347837133344
+    }
+  ],
+  "metric_differences_CPU_float64_minus_GPU_float32": [
+    {
+      "state": "base",
+      "view": "000001.jpg",
+      "gt_mse": 3.354040959899218e-11,
+      "teacher_student_mse": 7.926880441107287e-11,
+      "gt_psnr": -8.781884126563e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000001.jpg",
+      "gt_mse": -2.927301803734572e-11,
+      "teacher_student_mse": 3.612995840007738e-11,
+      "gt_psnr": -2.0373884908053697e-06
+    },
+    {
+      "state": "A_global",
+      "view": "000001.jpg",
+      "gt_mse": 2.0679993568278876e-10,
+      "teacher_student_mse": 2.9875168094592452e-12,
+      "gt_psnr": -4.950593108787871e-07
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000001.jpg",
+      "gt_mse": 8.463478442383154e-11,
+      "teacher_student_mse": 3.348921114379455e-10,
+      "gt_psnr": -2.57248892410189e-07
+    },
+    {
+      "state": "B_local",
+      "view": "000001.jpg",
+      "gt_mse": 2.245192833733034e-10,
+      "teacher_student_mse": 2.3193432851370543e-12,
+      "gt_psnr": -3.0762197269496028e-06
+    },
+    {
+      "state": "B_global",
+      "view": "000001.jpg",
+      "gt_mse": 5.694537723310855e-11,
+      "teacher_student_mse": -9.38733903978195e-11,
+      "gt_psnr": -2.3696450206500685e-06
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000001.jpg",
+      "gt_mse": 2.0777598521912188e-10,
+      "teacher_student_mse": 3.2741305326655645e-12,
+      "gt_psnr": -1.3323712089174933e-06
+    },
+    {
+      "state": "base",
+      "view": "000009.jpg",
+      "gt_mse": -2.3111526711513952e-10,
+      "teacher_student_mse": 5.631309047543498e-11,
+      "gt_psnr": -2.977387403291232e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000009.jpg",
+      "gt_mse": -8.672434558681941e-11,
+      "teacher_student_mse": 6.189022081284912e-11,
+      "gt_psnr": -5.930753204097527e-07
+    },
+    {
+      "state": "A_global",
+      "view": "000009.jpg",
+      "gt_mse": -5.210012586284729e-11,
+      "teacher_student_mse": 9.201081997006755e-11,
+      "gt_psnr": 2.9752076713407405e-07
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000009.jpg",
+      "gt_mse": -4.0161364858737336e-10,
+      "teacher_student_mse": 4.340280730305568e-10,
+      "gt_psnr": -4.913735551781429e-07
+    },
+    {
+      "state": "B_local",
+      "view": "000009.jpg",
+      "gt_mse": -1.897999387864835e-10,
+      "teacher_student_mse": 1.0627183052829003e-11,
+      "gt_psnr": 7.671995128077924e-07
+    },
+    {
+      "state": "B_global",
+      "view": "000009.jpg",
+      "gt_mse": 2.476376664492519e-10,
+      "teacher_student_mse": -2.7065137240753212e-11,
+      "gt_psnr": -1.8180176724058583e-06
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000009.jpg",
+      "gt_mse": 1.7300438252126904e-10,
+      "teacher_student_mse": 1.9011873022070636e-11,
+      "gt_psnr": -1.0397287795171906e-06
+    },
+    {
+      "state": "base",
+      "view": "000017.jpg",
+      "gt_mse": 2.9777786746815194e-10,
+      "teacher_student_mse": 1.1817740362685125e-11,
+      "gt_psnr": -1.2917073064500073e-06
+    },
+    {
+      "state": "A_local",
+      "view": "000017.jpg",
+      "gt_mse": 2.984813863085578e-10,
+      "teacher_student_mse": 2.442442472230799e-11,
+      "gt_psnr": -1.1546321161404194e-06
+    },
+    {
+      "state": "A_global",
+      "view": "000017.jpg",
+      "gt_mse": -2.545521085584035e-10,
+      "teacher_student_mse": -1.8217123729652451e-10,
+      "gt_psnr": -1.250930687035634e-06
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000017.jpg",
+      "gt_mse": -1.6559349516609423e-09,
+      "teacher_student_mse": -4.922650342908952e-10,
+      "gt_psnr": -1.5222047267116068e-07
+    },
+    {
+      "state": "B_local",
+      "view": "000017.jpg",
+      "gt_mse": 1.3187973629813499e-10,
+      "teacher_student_mse": 8.444159694392939e-11,
+      "gt_psnr": -8.353079152811915e-07
+    },
+    {
+      "state": "B_global",
+      "view": "000017.jpg",
+      "gt_mse": 5.368831854785094e-10,
+      "teacher_student_mse": 3.098837731557724e-10,
+      "gt_psnr": -1.988551716181064e-06
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000017.jpg",
+      "gt_mse": -2.382362276204253e-10,
+      "teacher_student_mse": -5.515344049522586e-10,
+      "gt_psnr": 1.5287591317303395e-06
+    },
+    {
+      "state": "base",
+      "view": "000025.jpg",
+      "gt_mse": 7.760817032423373e-11,
+      "teacher_student_mse": -1.389466200516637e-11,
+      "gt_psnr": -6.34667252086274e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000025.jpg",
+      "gt_mse": -1.7672298260190678e-10,
+      "teacher_student_mse": -1.3729193183795868e-11,
+      "gt_psnr": -5.970375127617444e-07
+    },
+    {
+      "state": "A_global",
+      "view": "000025.jpg",
+      "gt_mse": -5.16012076817729e-11,
+      "teacher_student_mse": -1.2195859177156071e-11,
+      "gt_psnr": -9.52764104056314e-07
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000025.jpg",
+      "gt_mse": 3.426980053899964e-11,
+      "teacher_student_mse": -2.60213977101853e-10,
+      "gt_psnr": -2.4268948664030177e-06
+    },
+    {
+      "state": "B_local",
+      "view": "000025.jpg",
+      "gt_mse": -6.178250272492747e-11,
+      "teacher_student_mse": 6.782172750924992e-13,
+      "gt_psnr": 1.1076507888674314e-07
+    },
+    {
+      "state": "B_global",
+      "view": "000025.jpg",
+      "gt_mse": -6.85457606473816e-11,
+      "teacher_student_mse": 6.745578217098175e-12,
+      "gt_psnr": 4.618640971898458e-07
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000025.jpg",
+      "gt_mse": 3.0647616389156696e-11,
+      "teacher_student_mse": -1.6614175638550444e-11,
+      "gt_psnr": 3.7206288894253703e-07
+    },
+    {
+      "state": "base",
+      "view": "000033.jpg",
+      "gt_mse": -1.663305834211093e-10,
+      "teacher_student_mse": 6.040565020837968e-12,
+      "gt_psnr": -8.148496632998103e-08
+    },
+    {
+      "state": "A_local",
+      "view": "000033.jpg",
+      "gt_mse": -2.0785569966597084e-10,
+      "teacher_student_mse": 2.188999166392175e-11,
+      "gt_psnr": -1.6340588615548768e-07
+    },
+    {
+      "state": "A_global",
+      "view": "000033.jpg",
+      "gt_mse": 4.5436996613107405e-11,
+      "teacher_student_mse": -1.3289385217274408e-11,
+      "gt_psnr": 1.3094944932845465e-06
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000033.jpg",
+      "gt_mse": -1.0998544523049825e-10,
+      "teacher_student_mse": -7.751564407715295e-11,
+      "gt_psnr": -3.3669548926695825e-06
+    },
+    {
+      "state": "B_local",
+      "view": "000033.jpg",
+      "gt_mse": -7.958377446631859e-12,
+      "teacher_student_mse": -1.3964797200560763e-12,
+      "gt_psnr": -1.3874647706302312e-06
+    },
+    {
+      "state": "B_global",
+      "view": "000033.jpg",
+      "gt_mse": -2.0962548450548235e-10,
+      "teacher_student_mse": 3.823445520693275e-12,
+      "gt_psnr": -3.953294580583133e-08
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000033.jpg",
+      "gt_mse": 2.432868802249022e-10,
+      "teacher_student_mse": 5.057389717514488e-11,
+      "gt_psnr": -1.0573039013195284e-06
+    },
+    {
+      "state": "base",
+      "view": "000041.jpg",
+      "gt_mse": -7.37957811178247e-11,
+      "teacher_student_mse": 9.381722016008759e-12,
+      "gt_psnr": -4.590918933899957e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000041.jpg",
+      "gt_mse": 4.2716889053773244e-11,
+      "teacher_student_mse": -8.187711413813054e-12,
+      "gt_psnr": 6.288224021488986e-07
+    },
+    {
+      "state": "A_global",
+      "view": "000041.jpg",
+      "gt_mse": 1.8869754023209673e-10,
+      "teacher_student_mse": 3.128203474251148e-11,
+      "gt_psnr": -2.623982624072596e-06
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000041.jpg",
+      "gt_mse": 9.861207093952995e-10,
+      "teacher_student_mse": -1.0795871922125722e-10,
+      "gt_psnr": -3.483629207323702e-07
+    },
+    {
+      "state": "B_local",
+      "view": "000041.jpg",
+      "gt_mse": -6.812677592199501e-12,
+      "teacher_student_mse": -7.281869795735044e-12,
+      "gt_psnr": -1.0637539418212327e-06
+    },
+    {
+      "state": "B_global",
+      "view": "000041.jpg",
+      "gt_mse": -1.8720241372685575e-10,
+      "teacher_student_mse": 1.3885532806033607e-12,
+      "gt_psnr": 1.6358856491649476e-06
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000041.jpg",
+      "gt_mse": 1.2626211231062112e-10,
+      "teacher_student_mse": -5.438793133309e-11,
+      "gt_psnr": -2.8895564341269164e-07
+    },
+    {
+      "state": "base",
+      "view": "000049.jpg",
+      "gt_mse": 1.9536235389833179e-10,
+      "teacher_student_mse": 1.1921369815794114e-11,
+      "gt_psnr": -9.204067978885178e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000049.jpg",
+      "gt_mse": 4.081045831133556e-11,
+      "teacher_student_mse": 4.052164907872996e-12,
+      "gt_psnr": -3.2826639539962343e-07
+    },
+    {
+      "state": "A_global",
+      "view": "000049.jpg",
+      "gt_mse": 2.769258398982455e-10,
+      "teacher_student_mse": 6.70857418011081e-12,
+      "gt_psnr": -1.2715838053622974e-06
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000049.jpg",
+      "gt_mse": -4.018954335993641e-10,
+      "teacher_student_mse": 1.155881754894006e-09,
+      "gt_psnr": 1.2017679082987343e-06
+    },
+    {
+      "state": "B_local",
+      "view": "000049.jpg",
+      "gt_mse": 2.801766045730514e-10,
+      "teacher_student_mse": 1.0733181379264656e-13,
+      "gt_psnr": -1.5594612108316142e-06
+    },
+    {
+      "state": "B_global",
+      "view": "000049.jpg",
+      "gt_mse": -3.02648920681714e-10,
+      "teacher_student_mse": -2.162502810284725e-11,
+      "gt_psnr": 4.2040680980903744e-07
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000049.jpg",
+      "gt_mse": 1.3082530718466767e-10,
+      "teacher_student_mse": 5.941034448252169e-12,
+      "gt_psnr": -1.0958969482999237e-06
+    },
+    {
+      "state": "base",
+      "view": "000057.jpg",
+      "gt_mse": -2.0434225709090037e-10,
+      "teacher_student_mse": 9.27414774750529e-13,
+      "gt_psnr": -1.8213370083230984e-06
+    },
+    {
+      "state": "A_local",
+      "view": "000057.jpg",
+      "gt_mse": -2.6537869991793972e-11,
+      "teacher_student_mse": 1.7957419839315092e-11,
+      "gt_psnr": -2.843677350483631e-06
+    },
+    {
+      "state": "A_global",
+      "view": "000057.jpg",
+      "gt_mse": -6.513506964692106e-11,
+      "teacher_student_mse": 7.697456170727146e-12,
+      "gt_psnr": -6.380168784403395e-07
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000057.jpg",
+      "gt_mse": 4.109517743461355e-10,
+      "teacher_student_mse": -1.2119628217677203e-11,
+      "gt_psnr": 1.3206231415097136e-06
+    },
+    {
+      "state": "B_local",
+      "view": "000057.jpg",
+      "gt_mse": 5.964053166260253e-11,
+      "teacher_student_mse": 6.273650327535962e-12,
+      "gt_psnr": -2.0700824236996596e-06
+    },
+    {
+      "state": "B_global",
+      "view": "000057.jpg",
+      "gt_mse": 1.1397699537646355e-10,
+      "teacher_student_mse": 1.2544318421471232e-11,
+      "gt_psnr": -4.658095917875471e-07
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000057.jpg",
+      "gt_mse": -5.241412902659559e-11,
+      "teacher_student_mse": -1.4029114783938035e-11,
+      "gt_psnr": -2.1581466569386976e-07
+    },
+    {
+      "state": "base",
+      "view": "000065.jpg",
+      "gt_mse": 1.2536773962706915e-10,
+      "teacher_student_mse": 1.0296968301886505e-11,
+      "gt_psnr": 3.4906949508695106e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000065.jpg",
+      "gt_mse": 3.1418657345932965e-10,
+      "teacher_student_mse": 1.7143748443429474e-12,
+      "gt_psnr": -1.5462633058405117e-06
+    },
+    {
+      "state": "A_global",
+      "view": "000065.jpg",
+      "gt_mse": 1.6228197605161476e-11,
+      "teacher_student_mse": 2.3268972035653257e-11,
+      "gt_psnr": -9.075823648174719e-07
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000065.jpg",
+      "gt_mse": -1.3834640030796486e-10,
+      "teacher_student_mse": -2.9930963957314205e-11,
+      "gt_psnr": -1.5747008390576411e-06
+    },
+    {
+      "state": "B_local",
+      "view": "000065.jpg",
+      "gt_mse": -2.2224990858105143e-10,
+      "teacher_student_mse": -7.216192243362715e-12,
+      "gt_psnr": -1.1124823728891897e-06
+    },
+    {
+      "state": "B_global",
+      "view": "000065.jpg",
+      "gt_mse": 3.754074473158453e-10,
+      "teacher_student_mse": 3.7004268247688155e-11,
+      "gt_psnr": -1.4654303264194368e-06
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000065.jpg",
+      "gt_mse": -8.26073228918367e-11,
+      "teacher_student_mse": -4.569964491465267e-11,
+      "gt_psnr": -1.1327843978392593e-06
+    },
+    {
+      "state": "base",
+      "view": "000073.jpg",
+      "gt_mse": -8.797228332087237e-11,
+      "teacher_student_mse": -1.0227925006500022e-11,
+      "gt_psnr": -8.716130892594265e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000073.jpg",
+      "gt_mse": -5.3459913579301244e-11,
+      "teacher_student_mse": 1.7312003881223698e-12,
+      "gt_psnr": -1.2710992507436458e-06
+    },
+    {
+      "state": "A_global",
+      "view": "000073.jpg",
+      "gt_mse": -5.151079606260933e-11,
+      "teacher_student_mse": -4.2033572260867513e-13,
+      "gt_psnr": 1.1697753556916268e-06
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000073.jpg",
+      "gt_mse": 3.7277709478283905e-10,
+      "teacher_student_mse": 2.7839985178301774e-10,
+      "gt_psnr": -5.5499871720599e-07
+    },
+    {
+      "state": "B_local",
+      "view": "000073.jpg",
+      "gt_mse": 2.2079365679522622e-11,
+      "teacher_student_mse": -1.9903648363793144e-12,
+      "gt_psnr": -1.7357814598994992e-06
+    },
+    {
+      "state": "B_global",
+      "view": "000073.jpg",
+      "gt_mse": 9.485362256929364e-11,
+      "teacher_student_mse": 2.1603343978082376e-12,
+      "gt_psnr": -1.0212693588584898e-06
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000073.jpg",
+      "gt_mse": -1.3294909444183656e-11,
+      "teacher_student_mse": -9.859060020201565e-12,
+      "gt_psnr": -9.030674874566103e-07
+    },
+    {
+      "state": "base",
+      "view": "000081.jpg",
+      "gt_mse": -6.662305516297318e-11,
+      "teacher_student_mse": 1.3381477458225544e-11,
+      "gt_psnr": -2.3034675713518027e-06
+    },
+    {
+      "state": "A_local",
+      "view": "000081.jpg",
+      "gt_mse": -7.657595261015282e-11,
+      "teacher_student_mse": 1.1595820603640256e-11,
+      "gt_psnr": -2.0800694500167083e-07
+    },
+    {
+      "state": "A_global",
+      "view": "000081.jpg",
+      "gt_mse": 3.422258266702616e-11,
+      "teacher_student_mse": 2.5105237983977235e-13,
+      "gt_psnr": -6.792281190826088e-07
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000081.jpg",
+      "gt_mse": -3.5057744728062e-10,
+      "teacher_student_mse": 2.2382705758272614e-10,
+      "gt_psnr": -3.33965793686275e-07
+    },
+    {
+      "state": "B_local",
+      "view": "000081.jpg",
+      "gt_mse": -6.745626886933698e-11,
+      "teacher_student_mse": -2.341089453371248e-12,
+      "gt_psnr": -1.476879425865718e-06
+    },
+    {
+      "state": "B_global",
+      "view": "000081.jpg",
+      "gt_mse": -1.9084081233702865e-10,
+      "teacher_student_mse": -7.307469137175088e-12,
+      "gt_psnr": 1.2541130089971375e-07
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000081.jpg",
+      "gt_mse": 1.5385847283722054e-10,
+      "teacher_student_mse": -3.982679854311333e-12,
+      "gt_psnr": -7.451628789567621e-07
+    },
+    {
+      "state": "base",
+      "view": "000089.jpg",
+      "gt_mse": 6.142137562448191e-10,
+      "teacher_student_mse": 1.3458140309639821e-11,
+      "gt_psnr": -3.4684949028473966e-06
+    },
+    {
+      "state": "A_local",
+      "view": "000089.jpg",
+      "gt_mse": -1.3445110216142586e-10,
+      "teacher_student_mse": 3.563369391224036e-11,
+      "gt_psnr": -1.37754572904214e-06
+    },
+    {
+      "state": "A_global",
+      "view": "000089.jpg",
+      "gt_mse": -1.2148874874856608e-10,
+      "teacher_student_mse": -7.27400195198874e-11,
+      "gt_psnr": -6.718868661437227e-08
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000089.jpg",
+      "gt_mse": 1.8535853407719571e-10,
+      "teacher_student_mse": 5.491284857384038e-10,
+      "gt_psnr": -1.7566934928936462e-06
+    },
+    {
+      "state": "B_local",
+      "view": "000089.jpg",
+      "gt_mse": -5.0150768520634825e-11,
+      "teacher_student_mse": -3.192886330761341e-11,
+      "gt_psnr": 1.2009569161364197e-07
+    },
+    {
+      "state": "B_global",
+      "view": "000089.jpg",
+      "gt_mse": 1.20016583476934e-12,
+      "teacher_student_mse": -2.6542470478452262e-12,
+      "gt_psnr": 6.150315279285223e-07
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000089.jpg",
+      "gt_mse": -2.7817107211419723e-10,
+      "teacher_student_mse": 3.266134259750919e-11,
+      "gt_psnr": -5.257378745682217e-07
+    },
+    {
+      "state": "base",
+      "view": "000097.jpg",
+      "gt_mse": 6.891613928833307e-11,
+      "teacher_student_mse": 2.7731415688098116e-11,
+      "gt_psnr": -7.516585540656706e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000097.jpg",
+      "gt_mse": 1.1082283007946003e-10,
+      "teacher_student_mse": 2.589669147526341e-12,
+      "gt_psnr": -3.785085702645574e-07
+    },
+    {
+      "state": "A_global",
+      "view": "000097.jpg",
+      "gt_mse": 6.375887951284853e-10,
+      "teacher_student_mse": 1.864534741879975e-11,
+      "gt_psnr": 8.94042244681259e-08
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000097.jpg",
+      "gt_mse": 5.079007527053481e-11,
+      "teacher_student_mse": 2.186897191114312e-10,
+      "gt_psnr": -1.6983914399304467e-06
+    },
+    {
+      "state": "B_local",
+      "view": "000097.jpg",
+      "gt_mse": 1.1450516489847073e-10,
+      "teacher_student_mse": 2.2497166889817732e-12,
+      "gt_psnr": -3.467595632855591e-08
+    },
+    {
+      "state": "B_global",
+      "view": "000097.jpg",
+      "gt_mse": -3.3674235361963456e-10,
+      "teacher_student_mse": 4.046282493092024e-11,
+      "gt_psnr": 1.1713797363199774e-06
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000097.jpg",
+      "gt_mse": 1.6304251698739947e-10,
+      "teacher_student_mse": 1.4377764040104934e-10,
+      "gt_psnr": -9.388020636436067e-07
+    },
+    {
+      "state": "base",
+      "view": "000105.jpg",
+      "gt_mse": 5.3421343737536375e-11,
+      "teacher_student_mse": 9.067917965989436e-11,
+      "gt_psnr": -8.370741682028893e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000105.jpg",
+      "gt_mse": 1.6683642748566152e-11,
+      "teacher_student_mse": 4.249460939381722e-11,
+      "gt_psnr": -9.390288369104383e-08
+    },
+    {
+      "state": "A_global",
+      "view": "000105.jpg",
+      "gt_mse": 3.3786210981712195e-10,
+      "teacher_student_mse": 3.482874015234283e-11,
+      "gt_psnr": -2.4390438646548773e-06
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000105.jpg",
+      "gt_mse": 1.4204519505067736e-10,
+      "teacher_student_mse": 6.840494403553832e-10,
+      "gt_psnr": -5.321221188125946e-07
+    },
+    {
+      "state": "B_local",
+      "view": "000105.jpg",
+      "gt_mse": -8.980393945839937e-11,
+      "teacher_student_mse": 4.8624198417668296e-11,
+      "gt_psnr": 4.560398174646707e-07
+    },
+    {
+      "state": "B_global",
+      "view": "000105.jpg",
+      "gt_mse": 5.863279263149113e-11,
+      "teacher_student_mse": 4.710306602227765e-11,
+      "gt_psnr": -8.283033245959359e-07
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000105.jpg",
+      "gt_mse": -2.6220414728328478e-11,
+      "teacher_student_mse": -2.2794439079321105e-11,
+      "gt_psnr": -5.863594587651733e-07
+    },
+    {
+      "state": "base",
+      "view": "000113.jpg",
+      "gt_mse": 8.825540914400576e-10,
+      "teacher_student_mse": 1.0207709027001965e-10,
+      "gt_psnr": -1.2772654827131191e-06
+    },
+    {
+      "state": "A_local",
+      "view": "000113.jpg",
+      "gt_mse": 4.310922278871754e-11,
+      "teacher_student_mse": 7.521884655935229e-11,
+      "gt_psnr": -2.9865771011827746e-07
+    },
+    {
+      "state": "A_global",
+      "view": "000113.jpg",
+      "gt_mse": 4.962814334832921e-10,
+      "teacher_student_mse": 1.3322168888885155e-12,
+      "gt_psnr": -3.7126186569480524e-07
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000113.jpg",
+      "gt_mse": 7.770853648059184e-10,
+      "teacher_student_mse": 2.763234033947848e-10,
+      "gt_psnr": -3.412111908573934e-07
+    },
+    {
+      "state": "B_local",
+      "view": "000113.jpg",
+      "gt_mse": 5.421451915871289e-11,
+      "teacher_student_mse": 4.6295095578255396e-11,
+      "gt_psnr": 2.9425707026575765e-07
+    },
+    {
+      "state": "B_global",
+      "view": "000113.jpg",
+      "gt_mse": -5.33736107394267e-10,
+      "teacher_student_mse": 1.2352135720511415e-10,
+      "gt_psnr": -6.190084995694178e-07
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000113.jpg",
+      "gt_mse": 8.646198253886572e-11,
+      "teacher_student_mse": 4.9068673603491764e-11,
+      "gt_psnr": -1.956496895161308e-06
+    },
+    {
+      "state": "base",
+      "view": "000121.jpg",
+      "gt_mse": 6.453296490932514e-11,
+      "teacher_student_mse": 4.0085714044998944e-11,
+      "gt_psnr": 3.3199885507428917e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000121.jpg",
+      "gt_mse": 2.0626832446940524e-10,
+      "teacher_student_mse": 4.5682006354769156e-12,
+      "gt_psnr": -1.5761294633875877e-06
+    },
+    {
+      "state": "A_global",
+      "view": "000121.jpg",
+      "gt_mse": -6.85248995567489e-10,
+      "teacher_student_mse": -4.4504821052407384e-11,
+      "gt_psnr": -2.1809549721751864e-06
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000121.jpg",
+      "gt_mse": -2.3698109793968136e-10,
+      "teacher_student_mse": -5.202792363601105e-11,
+      "gt_psnr": -1.0928148554967265e-06
+    },
+    {
+      "state": "B_local",
+      "view": "000121.jpg",
+      "gt_mse": 2.3222177566312174e-10,
+      "teacher_student_mse": -1.0870174660566889e-11,
+      "gt_psnr": -1.2835555054380166e-06
+    },
+    {
+      "state": "B_global",
+      "view": "000121.jpg",
+      "gt_mse": 6.813879209130458e-10,
+      "teacher_student_mse": 4.8067845710708657e-11,
+      "gt_psnr": 4.531404016461238e-07
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000121.jpg",
+      "gt_mse": 2.2760105258812224e-10,
+      "teacher_student_mse": -1.7097555858082425e-10,
+      "gt_psnr": -2.1109439138911057e-06
+    },
+    {
+      "state": "base",
+      "view": "000129.jpg",
+      "gt_mse": 4.185167100032028e-11,
+      "teacher_student_mse": -3.2241037801767486e-11,
+      "gt_psnr": -1.9962318020816383e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000129.jpg",
+      "gt_mse": 1.7669145790585872e-10,
+      "teacher_student_mse": 2.338409885649026e-11,
+      "gt_psnr": -4.5436510021090726e-07
+    },
+    {
+      "state": "A_global",
+      "view": "000129.jpg",
+      "gt_mse": -3.440639440022153e-11,
+      "teacher_student_mse": 2.2922220328444598e-11,
+      "gt_psnr": -8.177178827395437e-07
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000129.jpg",
+      "gt_mse": -5.0269813051812e-10,
+      "teacher_student_mse": 1.3643660767143073e-10,
+      "gt_psnr": -1.3350645460263877e-06
+    },
+    {
+      "state": "B_local",
+      "view": "000129.jpg",
+      "gt_mse": -2.4002030354561277e-10,
+      "teacher_student_mse": -6.613907284260673e-13,
+      "gt_psnr": 1.0024165923994133e-06
+    },
+    {
+      "state": "B_global",
+      "view": "000129.jpg",
+      "gt_mse": -2.0798304961947012e-10,
+      "teacher_student_mse": 4.7284933401506996e-11,
+      "gt_psnr": -2.248915397018436e-06
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000129.jpg",
+      "gt_mse": -1.7023748730138344e-10,
+      "teacher_student_mse": -1.1265439969765367e-11,
+      "gt_psnr": 1.1051398018935288e-08
+    },
+    {
+      "state": "base",
+      "view": "000137.jpg",
+      "gt_mse": 9.346573601881625e-11,
+      "teacher_student_mse": -1.5342645448383763e-11,
+      "gt_psnr": -1.1984637460216163e-06
+    },
+    {
+      "state": "A_local",
+      "view": "000137.jpg",
+      "gt_mse": 7.000550313052134e-11,
+      "teacher_student_mse": 1.1853754739929445e-11,
+      "gt_psnr": -8.833482887382615e-07
+    },
+    {
+      "state": "A_global",
+      "view": "000137.jpg",
+      "gt_mse": -2.010985791951747e-10,
+      "teacher_student_mse": -2.184476601344021e-11,
+      "gt_psnr": -9.610292508455132e-07
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000137.jpg",
+      "gt_mse": 1.269300539674667e-09,
+      "teacher_student_mse": -1.9856449262611875e-09,
+      "gt_psnr": -5.735991130961793e-07
+    },
+    {
+      "state": "B_local",
+      "view": "000137.jpg",
+      "gt_mse": 2.700410012788923e-10,
+      "teacher_student_mse": -3.461516013061883e-14,
+      "gt_psnr": -2.4662133029096367e-06
+    },
+    {
+      "state": "B_global",
+      "view": "000137.jpg",
+      "gt_mse": 3.236326098603193e-10,
+      "teacher_student_mse": -1.1656648194434405e-11,
+      "gt_psnr": -2.669472461747091e-06
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000137.jpg",
+      "gt_mse": -1.4971274046871041e-10,
+      "teacher_student_mse": 9.265417437193807e-11,
+      "gt_psnr": 9.315832301126648e-07
+    },
+    {
+      "state": "base",
+      "view": "000145.jpg",
+      "gt_mse": -4.0572655912035627e-11,
+      "teacher_student_mse": 5.6323833617921704e-11,
+      "gt_psnr": -2.3402420978868577e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000145.jpg",
+      "gt_mse": 2.355494011646586e-10,
+      "teacher_student_mse": -1.1522233904839863e-12,
+      "gt_psnr": -1.961301837383189e-06
+    },
+    {
+      "state": "A_global",
+      "view": "000145.jpg",
+      "gt_mse": -2.901503026557506e-10,
+      "teacher_student_mse": -4.450391530991249e-11,
+      "gt_psnr": 1.180519596744034e-06
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000145.jpg",
+      "gt_mse": -1.3233083032138104e-11,
+      "teacher_student_mse": -6.899677435293072e-10,
+      "gt_psnr": -1.4589620320748509e-06
+    },
+    {
+      "state": "B_local",
+      "view": "000145.jpg",
+      "gt_mse": -3.3979643317832986e-11,
+      "teacher_student_mse": 2.8580461836156396e-11,
+      "gt_psnr": 1.6397844149196317e-07
+    },
+    {
+      "state": "B_global",
+      "view": "000145.jpg",
+      "gt_mse": -1.375128322843311e-10,
+      "teacher_student_mse": 1.546839913102449e-12,
+      "gt_psnr": -1.011775388803926e-06
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000145.jpg",
+      "gt_mse": 1.8678077010406136e-10,
+      "teacher_student_mse": 5.009262817913529e-11,
+      "gt_psnr": -9.726378493724042e-07
+    },
+    {
+      "state": "base",
+      "view": "000153.jpg",
+      "gt_mse": -1.5772023530952195e-10,
+      "teacher_student_mse": -1.6577096276617145e-12,
+      "gt_psnr": -1.4900900922043547e-06
+    },
+    {
+      "state": "A_local",
+      "view": "000153.jpg",
+      "gt_mse": 1.554548339013917e-10,
+      "teacher_student_mse": 6.014422548319617e-12,
+      "gt_psnr": -2.7036978522687605e-06
+    },
+    {
+      "state": "A_global",
+      "view": "000153.jpg",
+      "gt_mse": -3.25286344735054e-10,
+      "teacher_student_mse": 3.0888128426526107e-12,
+      "gt_psnr": -1.2072764121739965e-07
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000153.jpg",
+      "gt_mse": -9.306132444514281e-10,
+      "teacher_student_mse": 1.2146822176567484e-11,
+      "gt_psnr": -1.0391643456841848e-07
+    },
+    {
+      "state": "B_local",
+      "view": "000153.jpg",
+      "gt_mse": 3.372083818772853e-10,
+      "teacher_student_mse": 4.0476637612387595e-12,
+      "gt_psnr": -1.7618151879617017e-06
+    },
+    {
+      "state": "B_global",
+      "view": "000153.jpg",
+      "gt_mse": -2.703480234816924e-10,
+      "teacher_student_mse": 2.1465843832264506e-12,
+      "gt_psnr": 2.5909876910645835e-07
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000153.jpg",
+      "gt_mse": 7.380795193773215e-11,
+      "teacher_student_mse": 2.2062979156307894e-11,
+      "gt_psnr": 1.0011145974431201e-06
+    },
+    {
+      "state": "base",
+      "view": "000161.jpg",
+      "gt_mse": 1.0542186351311655e-10,
+      "teacher_student_mse": 3.4461335152689843e-12,
+      "gt_psnr": 3.445627676512686e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000161.jpg",
+      "gt_mse": -1.117642749182135e-10,
+      "teacher_student_mse": -1.7373821294391217e-12,
+      "gt_psnr": -1.644692130042813e-06
+    },
+    {
+      "state": "A_global",
+      "view": "000161.jpg",
+      "gt_mse": 1.6588104544482118e-10,
+      "teacher_student_mse": 1.1467845282327888e-11,
+      "gt_psnr": 3.58778230236112e-07
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000161.jpg",
+      "gt_mse": 4.02780358545185e-10,
+      "teacher_student_mse": -4.1259795059700455e-11,
+      "gt_psnr": -7.574212084193732e-07
+    },
+    {
+      "state": "B_local",
+      "view": "000161.jpg",
+      "gt_mse": 1.0688365557204316e-11,
+      "teacher_student_mse": 4.579199026260097e-13,
+      "gt_psnr": 7.385528277836784e-08
+    },
+    {
+      "state": "B_global",
+      "view": "000161.jpg",
+      "gt_mse": 1.168261689644956e-10,
+      "teacher_student_mse": -2.9936292838097026e-12,
+      "gt_psnr": 3.938876282916226e-07
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000161.jpg",
+      "gt_mse": 2.0704416479888632e-10,
+      "teacher_student_mse": -7.217960821051528e-12,
+      "gt_psnr": -2.0485815248605377e-06
+    },
+    {
+      "state": "base",
+      "view": "000169.jpg",
+      "gt_mse": 8.749304709551597e-11,
+      "teacher_student_mse": -3.4366855335924568e-12,
+      "gt_psnr": 2.1597692168029425e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000169.jpg",
+      "gt_mse": 1.3768902814778605e-10,
+      "teacher_student_mse": 9.665607615498562e-12,
+      "gt_psnr": -8.050016937488635e-07
+    },
+    {
+      "state": "A_global",
+      "view": "000169.jpg",
+      "gt_mse": -1.4481076190606124e-10,
+      "teacher_student_mse": -1.042398407717117e-11,
+      "gt_psnr": -1.4079792585164341e-06
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000169.jpg",
+      "gt_mse": -6.15750332666476e-11,
+      "teacher_student_mse": -1.4442048251739337e-10,
+      "gt_psnr": -3.534376382674509e-07
+    },
+    {
+      "state": "B_local",
+      "view": "000169.jpg",
+      "gt_mse": 2.628566990806047e-10,
+      "teacher_student_mse": -1.6701547642713338e-12,
+      "gt_psnr": 8.843166199312691e-09
+    },
+    {
+      "state": "B_global",
+      "view": "000169.jpg",
+      "gt_mse": -1.9418248085878442e-10,
+      "teacher_student_mse": 6.606501424481076e-12,
+      "gt_psnr": -2.136258871132668e-06
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000169.jpg",
+      "gt_mse": -2.2902291608312142e-11,
+      "teacher_student_mse": 3.8707293663689524e-11,
+      "gt_psnr": 2.3793835168817168e-07
+    },
+    {
+      "state": "base",
+      "view": "000177.jpg",
+      "gt_mse": -5.2273759973409106e-11,
+      "teacher_student_mse": -1.793824561547447e-11,
+      "gt_psnr": -4.531365433990686e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000177.jpg",
+      "gt_mse": 1.5084328187572882e-10,
+      "teacher_student_mse": 1.560245216445516e-11,
+      "gt_psnr": 9.300518328814178e-07
+    },
+    {
+      "state": "A_global",
+      "view": "000177.jpg",
+      "gt_mse": 1.0301344629745635e-10,
+      "teacher_student_mse": -9.492132991076319e-12,
+      "gt_psnr": -2.2155486654185097e-06
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000177.jpg",
+      "gt_mse": 5.376847144605845e-11,
+      "teacher_student_mse": 4.3030645409739e-10,
+      "gt_psnr": -5.547900272517836e-08
+    },
+    {
+      "state": "B_local",
+      "view": "000177.jpg",
+      "gt_mse": -2.1887697990857768e-10,
+      "teacher_student_mse": 3.215853516640166e-11,
+      "gt_psnr": 1.383098766183366e-06
+    },
+    {
+      "state": "B_global",
+      "view": "000177.jpg",
+      "gt_mse": 1.35318239686405e-10,
+      "teacher_student_mse": -1.535002100471264e-11,
+      "gt_psnr": -1.494368738974572e-06
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000177.jpg",
+      "gt_mse": 1.459739733603027e-10,
+      "teacher_student_mse": -8.584075182442585e-12,
+      "gt_psnr": 2.471821076710512e-07
+    },
+    {
+      "state": "base",
+      "view": "000185.jpg",
+      "gt_mse": -1.055354015983001e-10,
+      "teacher_student_mse": 2.2505883116342995e-11,
+      "gt_psnr": -3.2918313408458744e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000185.jpg",
+      "gt_mse": 4.039386403489886e-11,
+      "teacher_student_mse": -1.553045018976018e-12,
+      "gt_psnr": -4.975604142032353e-07
+    },
+    {
+      "state": "A_global",
+      "view": "000185.jpg",
+      "gt_mse": -1.2437628487890762e-10,
+      "teacher_student_mse": -8.761956980275765e-12,
+      "gt_psnr": -1.041572161852855e-08
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000185.jpg",
+      "gt_mse": 2.142522773779243e-10,
+      "teacher_student_mse": -8.681457202425191e-11,
+      "gt_psnr": -9.444663042756929e-07
+    },
+    {
+      "state": "B_local",
+      "view": "000185.jpg",
+      "gt_mse": -1.9844725732479085e-10,
+      "teacher_student_mse": -7.59576375321952e-12,
+      "gt_psnr": -1.2681007994785887e-06
+    },
+    {
+      "state": "B_global",
+      "view": "000185.jpg",
+      "gt_mse": 5.90298920855048e-11,
+      "teacher_student_mse": 1.3165723285885056e-11,
+      "gt_psnr": 1.6101720490269145e-07
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000185.jpg",
+      "gt_mse": 3.057457741845182e-10,
+      "teacher_student_mse": -5.691721584061976e-11,
+      "gt_psnr": -1.0665665897136023e-06
+    },
+    {
+      "state": "base",
+      "view": "000193.jpg",
+      "gt_mse": 2.845278830251874e-11,
+      "teacher_student_mse": 5.112436271851803e-12,
+      "gt_psnr": 7.832706216959195e-08
+    },
+    {
+      "state": "A_local",
+      "view": "000193.jpg",
+      "gt_mse": -6.334674495026005e-11,
+      "teacher_student_mse": 5.795951121389392e-12,
+      "gt_psnr": 8.683003684950563e-07
+    },
+    {
+      "state": "A_global",
+      "view": "000193.jpg",
+      "gt_mse": 6.608593056470213e-11,
+      "teacher_student_mse": 1.115613127594152e-11,
+      "gt_psnr": -2.060117804347783e-06
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000193.jpg",
+      "gt_mse": -2.1189693576173507e-10,
+      "teacher_student_mse": 1.7302098642701935e-10,
+      "gt_psnr": -1.300333384079977e-06
+    },
+    {
+      "state": "B_local",
+      "view": "000193.jpg",
+      "gt_mse": 1.632849909970202e-10,
+      "teacher_student_mse": -2.8397817680280574e-13,
+      "gt_psnr": -1.6685995909426765e-06
+    },
+    {
+      "state": "B_global",
+      "view": "000193.jpg",
+      "gt_mse": -9.385735331296496e-11,
+      "teacher_student_mse": 8.871905624431922e-13,
+      "gt_psnr": -3.2761619550569776e-07
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000193.jpg",
+      "gt_mse": 2.1559821202637997e-11,
+      "teacher_student_mse": -1.4470603372247065e-11,
+      "gt_psnr": 1.3193524068810802e-06
+    },
+    {
+      "state": "base",
+      "view": "000201.jpg",
+      "gt_mse": 2.561306201853686e-13,
+      "teacher_student_mse": -1.4462702411545403e-12,
+      "gt_psnr": -8.370216448838619e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000201.jpg",
+      "gt_mse": -6.356600142087832e-11,
+      "teacher_student_mse": 1.2950499993138326e-11,
+      "gt_psnr": 7.141047113634613e-07
+    },
+    {
+      "state": "A_global",
+      "view": "000201.jpg",
+      "gt_mse": -4.0512541238379995e-11,
+      "teacher_student_mse": -1.816913584645405e-11,
+      "gt_psnr": -3.2342790490247353e-07
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000201.jpg",
+      "gt_mse": -6.472270289159532e-11,
+      "teacher_student_mse": 2.044337294934695e-10,
+      "gt_psnr": -9.656074198005626e-07
+    },
+    {
+      "state": "B_local",
+      "view": "000201.jpg",
+      "gt_mse": 9.405229806774829e-11,
+      "teacher_student_mse": 7.768735280728675e-12,
+      "gt_psnr": -1.295792781519367e-06
+    },
+    {
+      "state": "B_global",
+      "view": "000201.jpg",
+      "gt_mse": 6.981281178153331e-11,
+      "teacher_student_mse": -1.9873439753657213e-11,
+      "gt_psnr": -7.121030947132567e-07
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000201.jpg",
+      "gt_mse": 1.583016486991773e-10,
+      "teacher_student_mse": -2.7062138012283465e-11,
+      "gt_psnr": -1.010041092541769e-06
+    },
+    {
+      "state": "base",
+      "view": "000209.jpg",
+      "gt_mse": 1.8421344788119298e-10,
+      "teacher_student_mse": 1.4278777325012898e-11,
+      "gt_psnr": -3.043921346090883e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000209.jpg",
+      "gt_mse": -1.6358697252708e-10,
+      "teacher_student_mse": 7.437157823180635e-12,
+      "gt_psnr": -4.502732409150667e-07
+    },
+    {
+      "state": "A_global",
+      "view": "000209.jpg",
+      "gt_mse": 2.475600757376184e-10,
+      "teacher_student_mse": 2.078959232413094e-11,
+      "gt_psnr": -8.558441066952582e-09
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000209.jpg",
+      "gt_mse": 1.1068102562933335e-09,
+      "teacher_student_mse": 5.201886664474298e-11,
+      "gt_psnr": 2.898669393402997e-07
+    },
+    {
+      "state": "B_local",
+      "view": "000209.jpg",
+      "gt_mse": 1.0521466163593285e-10,
+      "teacher_student_mse": 5.979546583356407e-12,
+      "gt_psnr": 1.1850113565969878e-06
+    },
+    {
+      "state": "B_global",
+      "view": "000209.jpg",
+      "gt_mse": -1.7725116947114872e-10,
+      "teacher_student_mse": -1.9013114650398566e-11,
+      "gt_psnr": -6.11680505357981e-07
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000209.jpg",
+      "gt_mse": -5.428422164902025e-11,
+      "teacher_student_mse": 1.4581286156799267e-11,
+      "gt_psnr": -2.86730398357804e-06
+    },
+    {
+      "state": "base",
+      "view": "000217.jpg",
+      "gt_mse": -2.203248226223531e-10,
+      "teacher_student_mse": 2.6373488896253017e-14,
+      "gt_psnr": 5.771296294199146e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000217.jpg",
+      "gt_mse": 2.1334194827415942e-10,
+      "teacher_student_mse": 4.728596258041923e-12,
+      "gt_psnr": 3.8463759466367264e-07
+    },
+    {
+      "state": "A_global",
+      "view": "000217.jpg",
+      "gt_mse": 5.879579297388138e-10,
+      "teacher_student_mse": 8.45523602304929e-12,
+      "gt_psnr": -2.2830862178579991e-07
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000217.jpg",
+      "gt_mse": -6.0746058183625e-10,
+      "teacher_student_mse": -5.880719218878672e-11,
+      "gt_psnr": -1.0757345094702941e-06
+    },
+    {
+      "state": "B_local",
+      "view": "000217.jpg",
+      "gt_mse": 8.827246485848539e-11,
+      "teacher_student_mse": 4.153275068156416e-12,
+      "gt_psnr": 1.473181931999079e-07
+    },
+    {
+      "state": "B_global",
+      "view": "000217.jpg",
+      "gt_mse": -2.897465288531631e-10,
+      "teacher_student_mse": -1.5706769923313352e-12,
+      "gt_psnr": 2.2013107248142205e-06
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000217.jpg",
+      "gt_mse": 2.7549192180981175e-10,
+      "teacher_student_mse": 1.2961362397864024e-11,
+      "gt_psnr": 1.0812892270450902e-07
+    },
+    {
+      "state": "base",
+      "view": "000225.jpg",
+      "gt_mse": 1.3944187471359726e-10,
+      "teacher_student_mse": 5.4443902457092935e-11,
+      "gt_psnr": -8.783091729469561e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000225.jpg",
+      "gt_mse": 1.0186652129456908e-10,
+      "teacher_student_mse": 4.600163327518614e-11,
+      "gt_psnr": -7.983516638887522e-07
+    },
+    {
+      "state": "A_global",
+      "view": "000225.jpg",
+      "gt_mse": -4.80117009517278e-11,
+      "teacher_student_mse": 2.4373368991484345e-12,
+      "gt_psnr": 7.029441917438817e-08
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000225.jpg",
+      "gt_mse": -4.0268888397421154e-10,
+      "teacher_student_mse": 6.170681830092173e-10,
+      "gt_psnr": 1.443320698513162e-07
+    },
+    {
+      "state": "B_local",
+      "view": "000225.jpg",
+      "gt_mse": 1.465281251368522e-10,
+      "teacher_student_mse": 1.1871809633447195e-11,
+      "gt_psnr": -9.26262742950712e-07
+    },
+    {
+      "state": "B_global",
+      "view": "000225.jpg",
+      "gt_mse": 5.084798120752465e-11,
+      "teacher_student_mse": 7.870487031200191e-13,
+      "gt_psnr": -1.6765551968944692e-06
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000225.jpg",
+      "gt_mse": 2.9730816940298777e-10,
+      "teacher_student_mse": -7.764069335364221e-13,
+      "gt_psnr": -2.5002387005201854e-07
+    },
+    {
+      "state": "base",
+      "view": "000233.jpg",
+      "gt_mse": -2.0461233662255607e-10,
+      "teacher_student_mse": 8.88949504285197e-12,
+      "gt_psnr": -2.3443245424914494e-06
+    },
+    {
+      "state": "A_local",
+      "view": "000233.jpg",
+      "gt_mse": -2.5434092765924676e-10,
+      "teacher_student_mse": 3.027426670899197e-12,
+      "gt_psnr": -7.81684192929788e-08
+    },
+    {
+      "state": "A_global",
+      "view": "000233.jpg",
+      "gt_mse": 7.0561114243195e-11,
+      "teacher_student_mse": -1.3731371074909848e-11,
+      "gt_psnr": 1.2466832153279483e-06
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000233.jpg",
+      "gt_mse": -4.299263896279104e-10,
+      "teacher_student_mse": 7.289865933124418e-11,
+      "gt_psnr": 5.7475649128946316e-08
+    },
+    {
+      "state": "B_local",
+      "view": "000233.jpg",
+      "gt_mse": -1.0457061432045389e-11,
+      "teacher_student_mse": 3.323716762969678e-12,
+      "gt_psnr": -1.1303043088162212e-06
+    },
+    {
+      "state": "B_global",
+      "view": "000233.jpg",
+      "gt_mse": 7.304642654637483e-11,
+      "teacher_student_mse": -4.637754644296749e-12,
+      "gt_psnr": 9.178002677856512e-07
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000233.jpg",
+      "gt_mse": -2.2436206538467562e-10,
+      "teacher_student_mse": -1.90029011406731e-11,
+      "gt_psnr": 1.0350521790769562e-06
+    },
+    {
+      "state": "base",
+      "view": "000241.jpg",
+      "gt_mse": 3.0691068696880874e-10,
+      "teacher_student_mse": 5.867328758263346e-12,
+      "gt_psnr": -8.293855948693363e-07
+    },
+    {
+      "state": "A_local",
+      "view": "000241.jpg",
+      "gt_mse": -8.703066435925e-11,
+      "teacher_student_mse": -1.1493493711021291e-11,
+      "gt_psnr": -3.5428374900448034e-08
+    },
+    {
+      "state": "A_global",
+      "view": "000241.jpg",
+      "gt_mse": -1.0537524412074228e-10,
+      "teacher_student_mse": 8.206177545214827e-12,
+      "gt_psnr": -1.1220890954177776e-06
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000241.jpg",
+      "gt_mse": 4.25816638893739e-10,
+      "teacher_student_mse": 2.5059504298041713e-10,
+      "gt_psnr": 8.115967560229365e-07
+    },
+    {
+      "state": "B_local",
+      "view": "000241.jpg",
+      "gt_mse": -3.2078563329956955e-11,
+      "teacher_student_mse": 6.7439785581078354e-12,
+      "gt_psnr": -8.046647934634166e-07
+    },
+    {
+      "state": "B_global",
+      "view": "000241.jpg",
+      "gt_mse": 2.591966710707716e-10,
+      "teacher_student_mse": -4.0511376805246746e-14,
+      "gt_psnr": 2.7446361627880833e-07
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000241.jpg",
+      "gt_mse": 1.059942467997177e-10,
+      "teacher_student_mse": -3.96937495893146e-12,
+      "gt_psnr": -1.2648753511257382e-06
+    },
+    {
+      "state": "base",
+      "view": "000249.jpg",
+      "gt_mse": 2.7340219931754062e-11,
+      "teacher_student_mse": -4.203758760361331e-12,
+      "gt_psnr": -2.4867390990834792e-06
+    },
+    {
+      "state": "A_local",
+      "view": "000249.jpg",
+      "gt_mse": -2.861422166919314e-11,
+      "teacher_student_mse": -2.6419028206423056e-11,
+      "gt_psnr": -1.234868800992217e-06
+    },
+    {
+      "state": "A_global",
+      "view": "000249.jpg",
+      "gt_mse": -1.4919346487396457e-10,
+      "teacher_student_mse": 3.4466412363043375e-11,
+      "gt_psnr": -2.0248585954618648e-06
+    },
+    {
+      "state": "A_shuffle",
+      "view": "000249.jpg",
+      "gt_mse": 5.844232988175269e-10,
+      "teacher_student_mse": 4.5994956975048407e-11,
+      "gt_psnr": -4.981735912679142e-09
+    },
+    {
+      "state": "B_local",
+      "view": "000249.jpg",
+      "gt_mse": 3.534392323083224e-10,
+      "teacher_student_mse": -1.1510605402859087e-11,
+      "gt_psnr": 1.7281863051721302e-07
+    },
+    {
+      "state": "B_global",
+      "view": "000249.jpg",
+      "gt_mse": -1.1236432834529908e-10,
+      "teacher_student_mse": 1.7226615099674714e-12,
+      "gt_psnr": -7.339036969256085e-07
+    },
+    {
+      "state": "B_shuffle",
+      "view": "000249.jpg",
+      "gt_mse": 9.691768438138681e-11,
+      "teacher_student_mse": 4.748897987089801e-11,
+      "gt_psnr": -7.851607009001782e-08
+    }
+  ],
+  "maximum_absolute_metric_differences": {
+    "gt_mse": 1.6559349516609423e-09,
+    "teacher_student_mse": 1.9856449262611875e-09,
+    "gt_psnr": 3.4684949028473966e-06
+  },
+  "historical_GPU_base_replay_maximum_difference": 0.0,
+  "summary_differences_CPU_float64_minus_recorded": {
+    "base": {
+      "mean_gt_mse": 5.6778870667628656e-11,
+      "tail4_gt_mse": 5.27255374777047e-11,
+      "mean_teacher_mse": 1.6996434858487786e-11,
+      "mean_gt_psnr": -7.99432015696766e-07
+    },
+    "A_local": {
+      "mean_gt_mse": 2.4720764497943026e-11,
+      "tail4_gt_mse": 1.9030022002652913e-10,
+      "mean_teacher_mse": 1.3252503803552751e-11,
+      "mean_gt_psnr": -7.027730575259739e-07
+    },
+    "A_global": {
+      "mean_gt_mse": 2.300763442611431e-11,
+      "tail4_gt_mse": 7.143640453483036e-11,
+      "mean_teacher_mse": -3.4452008303501036e-12,
+      "mean_gt_psnr": -6.07997058921228e-07
+    },
+    "A_shuffle": {
+      "mean_gt_mse": 1.8157367970284e-11,
+      "tail4_gt_mse": -2.6338547662319023e-10,
+      "mean_teacher_mse": 6.597480027570324e-11,
+      "mean_gt_psnr": -6.259779681272448e-07
+    },
+    "B_local": {
+      "mean_gt_mse": 4.752965642590423e-11,
+      "tail4_gt_mse": 1.4171978608007452e-10,
+      "mean_teacher_mse": 6.935013544331903e-12,
+      "mean_gt_psnr": -6.584912668472498e-07
+    },
+    "B_global": {
+      "mean_gt_mse": -1.8109888588746514e-12,
+      "tail4_gt_mse": 1.479455559796894e-10,
+      "mean_teacher_mse": 1.4974743125194256e-11,
+      "mean_gt_psnr": -4.733600071915589e-07
+    },
+    "B_shuffle": {
+      "mean_gt_mse": 6.578904825429999e-11,
+      "tail4_gt_mse": 1.0697481615806748e-10,
+      "mean_teacher_mse": -1.4258932142657832e-11,
+      "mean_gt_psnr": -5.21742101966538e-07
+    },
+    "historical_gain_1.05": {
+      "mean_gt_mse": 0.0,
+      "tail4_gt_mse": 0.0,
+      "mean_teacher_mse": 0.0,
+      "mean_gt_psnr": 0.0
+    },
+    "historical_gain_1.1": {
+      "mean_gt_mse": 0.0,
+      "tail4_gt_mse": 0.0,
+      "mean_teacher_mse": 0.0,
+      "mean_gt_psnr": 0.0
+    },
+    "historical_gain_1.25": {
+      "mean_gt_mse": 0.0,
+      "tail4_gt_mse": 0.0,
+      "mean_teacher_mse": 0.0,
+      "mean_gt_psnr": 0.0
+    },
+    "historical_opacity_1.1": {
+      "mean_gt_mse": 0.0,
+      "tail4_gt_mse": 0.0,
+      "mean_teacher_mse": 0.0,
+      "mean_gt_psnr": 0.0
+    },
+    "historical_opacity_1.25": {
+      "mean_gt_mse": 0.0,
+      "tail4_gt_mse": 0.0,
+      "mean_teacher_mse": 0.0,
+      "mean_gt_psnr": 0.0
+    },
+    "historical_opacity_1.5": {
+      "mean_gt_mse": 0.0,
+      "tail4_gt_mse": 0.0,
+      "mean_teacher_mse": 0.0,
+      "mean_gt_psnr": 0.0
+    }
+  },
+  "summary": {
+    "base": {
+      "mean_gt_mse": 0.0035582968034114206,
+      "tail4_gt_mse": 0.005944997823437317,
+      "mean_teacher_mse": 0.0006992238872387841,
+      "mean_gt_psnr": 24.693815027937674,
+      "worst4_views": [
+        "000017.jpg",
+        "000217.jpg",
+        "000097.jpg",
+        "000121.jpg"
+      ],
+      "nonworse_GT_views_vs_base": 32
+    },
+    "A_local": {
+      "mean_gt_mse": 0.0034359803677769087,
+      "tail4_gt_mse": 0.00534511842237162,
+      "mean_teacher_mse": 0.0006009757365257265,
+      "mean_gt_psnr": 24.804219258393324,
+      "worst4_views": [
+        "000217.jpg",
+        "000121.jpg",
+        "000017.jpg",
+        "000113.jpg"
+      ],
+      "nonworse_GT_views_vs_base": 19
+    },
+    "A_global": {
+      "mean_gt_mse": 0.003500829495621621,
+      "tail4_gt_mse": 0.005608203659489989,
+      "mean_teacher_mse": 0.0006872513169691607,
+      "mean_gt_psnr": 24.730236637562633,
+      "worst4_views": [
+        "000217.jpg",
+        "000017.jpg",
+        "000121.jpg",
+        "000097.jpg"
+      ],
+      "nonworse_GT_views_vs_base": 19
+    },
+    "A_shuffle": {
+      "mean_gt_mse": 0.011494317692235415,
+      "tail4_gt_mse": 0.029105199237532912,
+      "mean_teacher_mse": 0.008455880263263734,
+      "mean_gt_psnr": 20.099062353243376,
+      "worst4_views": [
+        "000137.jpg",
+        "000017.jpg",
+        "000121.jpg",
+        "000233.jpg"
+      ],
+      "nonworse_GT_views_vs_base": 0
+    },
+    "B_local": {
+      "mean_gt_mse": 0.0033337463576203026,
+      "tail4_gt_mse": 0.00537163196333727,
+      "mean_teacher_mse": 0.0004546048712655902,
+      "mean_gt_psnr": 24.953891334077703,
+      "worst4_views": [
+        "000217.jpg",
+        "000017.jpg",
+        "000121.jpg",
+        "000097.jpg"
+      ],
+      "nonworse_GT_views_vs_base": 31
+    },
+    "B_global": {
+      "mean_gt_mse": 0.003549172522988371,
+      "tail4_gt_mse": 0.005924701023712131,
+      "mean_teacher_mse": 0.0006913773242694371,
+      "mean_gt_psnr": 24.703976336618478,
+      "worst4_views": [
+        "000017.jpg",
+        "000217.jpg",
+        "000097.jpg",
+        "000121.jpg"
+      ],
+      "nonworse_GT_views_vs_base": 30
+    },
+    "B_shuffle": {
+      "mean_gt_mse": 0.0038083413604325174,
+      "tail4_gt_mse": 0.006078006806656098,
+      "mean_teacher_mse": 0.0009663658123119042,
+      "mean_gt_psnr": 24.364844396508936,
+      "worst4_views": [
+        "000017.jpg",
+        "000217.jpg",
+        "000121.jpg",
+        "000097.jpg"
+      ],
+      "nonworse_GT_views_vs_base": 0
+    },
+    "historical_gain_1.05": {
+      "mean_gt_mse": 0.004118906806979794,
+      "tail4_gt_mse": 0.006205980898812413,
+      "mean_teacher_mse": 0.0012526389127742732,
+      "mean_gt_psnr": 23.980770647525787,
+      "worst4_views": [
+        "000017.jpg",
+        "000217.jpg",
+        "000153.jpg",
+        "000097.jpg"
+      ],
+      "nonworse_GT_views_vs_base": 2
+    },
+    "historical_gain_1.1": {
+      "mean_gt_mse": 0.00601188356813509,
+      "tail4_gt_mse": 0.0079816032666713,
+      "mean_teacher_mse": 0.003147898802126292,
+      "mean_gt_psnr": 22.28186047077179,
+      "worst4_views": [
+        "000153.jpg",
+        "000017.jpg",
+        "000217.jpg",
+        "000121.jpg"
+      ],
+      "nonworse_GT_views_vs_base": 0
+    },
+    "historical_gain_1.25": {
+      "mean_gt_mse": 0.01765403416357003,
+      "tail4_gt_mse": 0.02169511141255498,
+      "mean_teacher_mse": 0.014837768889265135,
+      "mean_gt_psnr": 17.57227712869644,
+      "worst4_views": [
+        "000153.jpg",
+        "000193.jpg",
+        "000073.jpg",
+        "000081.jpg"
+      ],
+      "nonworse_GT_views_vs_base": 0
+    },
+    "historical_opacity_1.1": {
+      "mean_gt_mse": 0.00347305070317816,
+      "tail4_gt_mse": 0.005687371012754738,
+      "mean_teacher_mse": 0.0006296937895058363,
+      "mean_gt_psnr": 24.78081703186035,
+      "worst4_views": [
+        "000017.jpg",
+        "000217.jpg",
+        "000121.jpg",
+        "000097.jpg"
+      ],
+      "nonworse_GT_views_vs_base": 25
+    },
+    "historical_opacity_1.25": {
+      "mean_gt_mse": 0.0035444110544631258,
+      "tail4_gt_mse": 0.005576257826760411,
+      "mean_teacher_mse": 0.0007354435028901207,
+      "mean_gt_psnr": 24.66554033756256,
+      "worst4_views": [
+        "000217.jpg",
+        "000017.jpg",
+        "000121.jpg",
+        "000097.jpg"
+      ],
+      "nonworse_GT_views_vs_base": 14
+    },
+    "historical_opacity_1.5": {
+      "mean_gt_mse": 0.0039713073638267815,
+      "tail4_gt_mse": 0.005826795822940767,
+      "mean_teacher_mse": 0.001228031309437938,
+      "mean_gt_psnr": 24.13772976398468,
+      "worst4_views": [
+        "000217.jpg",
+        "000017.jpg",
+        "000121.jpg",
+        "000153.jpg"
+      ],
+      "nonworse_GT_views_vs_base": 3
+    }
+  },
+  "base_gates": {
+    "teacher_MSE_at_least_20pct_lower": true,
+    "GT_MSE_at_least_5pct_lower": true,
+    "own_tail4_GT_MSE_nonworse": true,
+    "at_least_24_nonworse_GT_views": true
+  },
+  "control_gates": {
+    "A_local": {
+      "GT_mean_at_least_5pct_lower": false,
+      "own_tail4_GT_MSE_nonworse": false
+    },
+    "A_global": {
+      "GT_mean_at_least_5pct_lower": false,
+      "own_tail4_GT_MSE_nonworse": true
+    },
+    "A_shuffle": {
+      "GT_mean_at_least_5pct_lower": true,
+      "own_tail4_GT_MSE_nonworse": true
+    },
+    "B_global": {
+      "GT_mean_at_least_5pct_lower": true,
+      "own_tail4_GT_MSE_nonworse": true
+    },
+    "B_shuffle": {
+      "GT_mean_at_least_5pct_lower": true,
+      "own_tail4_GT_MSE_nonworse": true
+    },
+    "historical_gain_1.05": {
+      "GT_mean_at_least_5pct_lower": true,
+      "own_tail4_GT_MSE_nonworse": true
+    },
+    "historical_gain_1.1": {
+      "GT_mean_at_least_5pct_lower": true,
+      "own_tail4_GT_MSE_nonworse": true
+    },
+    "historical_gain_1.25": {
+      "GT_mean_at_least_5pct_lower": true,
+      "own_tail4_GT_MSE_nonworse": true
+    },
+    "historical_opacity_1.1": {
+      "GT_mean_at_least_5pct_lower": false,
+      "own_tail4_GT_MSE_nonworse": true
+    },
+    "historical_opacity_1.25": {
+      "GT_mean_at_least_5pct_lower": true,
+      "own_tail4_GT_MSE_nonworse": true
+    },
+    "historical_opacity_1.5": {
+      "GT_mean_at_least_5pct_lower": true,
+      "own_tail4_GT_MSE_nonworse": true
+    }
+  },
+  "gate_flips": [],
+  "any_gate_flipped": false,
+  "nonworse_view_classification_changes": [],
+  "CPU_main_mechanism_passed": false,
+  "recorded_main_mechanism_passed": false,
+  "B_local_relative_improvement_vs_base": {
+    "mean_gt_mse": 0.0631061595468474,
+    "mean_teacher_mse": 0.34984362010169257,
+    "tail4_gt_mse": 0.09644509167684345
+  },
+  "PLY_derived_parameter_hashes": {
+    "teacher": "f90a54ffe88db1b16eb78e7acc7f2ebb44556570227f21c48342e6eb819a6822",
+    "student": "48ef8ee6dea3cd03c051c9933e8dab8eb593fd2a0a280abe25fb7377e86d21e8",
+    "geometry": "fe8f903ad9ece7a79e40b227904f00025aab928f3872c4f677e695763d528495"
+  },
+  "proxy_and_nearest_neighbor_checks": {
+    "A": {
+      "donors": 1025385,
+      "receivers": 1025385,
+      "zero_weight_points": 0,
+      "zero_weight_survivors": 0,
+      "zero_weight_deleted": 0,
+      "donation_all_exact": true,
+      "mass_equalities": {
+        "local": {
+          "expected_proxy_mass": 1064718.1805745233,
+          "transferred_proxy_mass": 1064718.180574523,
+          "relative_error": 2.186781891225281e-16,
+          "float32_encoded_proxy_mass": 1064718.180526898,
+          "float32_encoded_relative_error": 4.4730404906824e-11,
+          "all_variant_float32_logits_exactly_reconstructed": true
+        },
+        "global": {
+          "expected_proxy_mass": 1064718.1805745233,
+          "transferred_proxy_mass": 1064718.1805745238,
+          "relative_error": 4.373563782450562e-16,
+          "float32_encoded_proxy_mass": 1064718.1805261727,
+          "float32_encoded_relative_error": 4.5411587465940674e-11,
+          "all_variant_float32_logits_exactly_reconstructed": true
+        },
+        "shuffle": {
+          "expected_proxy_mass": 1064718.1805745233,
+          "transferred_proxy_mass": 1064718.1805745233,
+          "relative_error": 0.0,
+          "float32_encoded_proxy_mass": 1064718.18053573,
+          "float32_encoded_relative_error": 3.643528515883914e-11,
+          "all_variant_float32_logits_exactly_reconstructed": true
+        }
+      },
+      "nearest_neighbor_fixed_samples": [
+        {
+          "donor_original_id": 1,
+          "receiver_original_id": 357189,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.0038181006522699295,
+          "distance_over_sum_max_3d_scales": 0.09950159620144139
+        },
+        {
+          "donor_original_id": 131811,
+          "receiver_original_id": 466596,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.06873114078925117,
+          "distance_over_sum_max_3d_scales": 0.3104834902307734
+        },
+        {
+          "donor_original_id": 173832,
+          "receiver_original_id": 176431,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.0068790524379861665,
+          "distance_over_sum_max_3d_scales": 0.07316509340332732
+        },
+        {
+          "donor_original_id": 209123,
+          "receiver_original_id": 181618,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.1614979019867725,
+          "distance_over_sum_max_3d_scales": 1.5382548981092017
+        },
+        {
+          "donor_original_id": 243052,
+          "receiver_original_id": 1147194,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.01786068575315489,
+          "distance_over_sum_max_3d_scales": 0.20739113927746203
+        },
+        {
+          "donor_original_id": 278962,
+          "receiver_original_id": 361115,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.024286180172514455,
+          "distance_over_sum_max_3d_scales": 0.3973326685177489
+        },
+        {
+          "donor_original_id": 311473,
+          "receiver_original_id": 645764,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.047344677709817304,
+          "distance_over_sum_max_3d_scales": 0.32043016145495
+        },
+        {
+          "donor_original_id": 342334,
+          "receiver_original_id": 368181,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.016611187927849474,
+          "distance_over_sum_max_3d_scales": 0.7226241689520395
+        },
+        {
+          "donor_original_id": 373612,
+          "receiver_original_id": 1550162,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.006327059478059924,
+          "distance_over_sum_max_3d_scales": 0.327496748274963
+        },
+        {
+          "donor_original_id": 405048,
+          "receiver_original_id": 213265,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.04103791111302506,
+          "distance_over_sum_max_3d_scales": 0.259443669234093
+        },
+        {
+          "donor_original_id": 437842,
+          "receiver_original_id": 535173,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.003971156667364833,
+          "distance_over_sum_max_3d_scales": 0.21603884954540487
+        },
+        {
+          "donor_original_id": 471214,
+          "receiver_original_id": 238585,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.049172522486967185,
+          "distance_over_sum_max_3d_scales": 0.5686443391730776
+        },
+        {
+          "donor_original_id": 501889,
+          "receiver_original_id": 411334,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.015573425411042735,
+          "distance_over_sum_max_3d_scales": 0.18787730310354236
+        },
+        {
+          "donor_original_id": 532668,
+          "receiver_original_id": 1246317,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.04628924701781909,
+          "distance_over_sum_max_3d_scales": 0.4597715610847799
+        },
+        {
+          "donor_original_id": 566614,
+          "receiver_original_id": 453896,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.05206105377859448,
+          "distance_over_sum_max_3d_scales": 0.49165585903834064
+        },
+        {
+          "donor_original_id": 596675,
+          "receiver_original_id": 676299,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.018037363516115918,
+          "distance_over_sum_max_3d_scales": 0.25474061650395746
+        },
+        {
+          "donor_original_id": 631148,
+          "receiver_original_id": 936543,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.14758259252697573,
+          "distance_over_sum_max_3d_scales": 1.4748682300787135
+        },
+        {
+          "donor_original_id": 665915,
+          "receiver_original_id": 528137,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.03582371791925674,
+          "distance_over_sum_max_3d_scales": 0.3799422923387368
+        },
+        {
+          "donor_original_id": 697210,
+          "receiver_original_id": 778923,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.08791985462679161,
+          "distance_over_sum_max_3d_scales": 0.7055640987803216
+        },
+        {
+          "donor_original_id": 728513,
+          "receiver_original_id": 872524,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.29897502595598185,
+          "distance_over_sum_max_3d_scales": 0.7726591316964041
+        },
+        {
+          "donor_original_id": 762455,
+          "receiver_original_id": 1740147,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.04312553843328225,
+          "distance_over_sum_max_3d_scales": 0.7540652408026753
+        },
+        {
+          "donor_original_id": 792716,
+          "receiver_original_id": 1139474,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.029807990961730636,
+          "distance_over_sum_max_3d_scales": 0.2803509987240338
+        },
+        {
+          "donor_original_id": 821368,
+          "receiver_original_id": 1399393,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.10305094018477458,
+          "distance_over_sum_max_3d_scales": 1.1215234900271958
+        },
+        {
+          "donor_original_id": 851963,
+          "receiver_original_id": 847900,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.04583536513281091,
+          "distance_over_sum_max_3d_scales": 0.27048776127497376
+        },
+        {
+          "donor_original_id": 884858,
+          "receiver_original_id": 523191,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.12767818211114937,
+          "distance_over_sum_max_3d_scales": 0.5311339158710487
+        },
+        {
+          "donor_original_id": 913073,
+          "receiver_original_id": 1130502,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.0010229994913991724,
+          "distance_over_sum_max_3d_scales": 0.05250561184301122
+        },
+        {
+          "donor_original_id": 942181,
+          "receiver_original_id": 715873,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.18639113794336443,
+          "distance_over_sum_max_3d_scales": 1.5570555908359094
+        },
+        {
+          "donor_original_id": 974456,
+          "receiver_original_id": 851797,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.02222107945005129,
+          "distance_over_sum_max_3d_scales": 0.1962681375576478
+        },
+        {
+          "donor_original_id": 1001990,
+          "receiver_original_id": 2041216,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.19243042043240677,
+          "distance_over_sum_max_3d_scales": 1.0744623467442338
+        },
+        {
+          "donor_original_id": 1032923,
+          "receiver_original_id": 1875689,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.059472820477594154,
+          "distance_over_sum_max_3d_scales": 0.4348033085663258
+        },
+        {
+          "donor_original_id": 1064188,
+          "receiver_original_id": 224913,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.026563736326085056,
+          "distance_over_sum_max_3d_scales": 0.5132876284032685
+        },
+        {
+          "donor_original_id": 1091806,
+          "receiver_original_id": 891279,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.012263261312445815,
+          "distance_over_sum_max_3d_scales": 0.1710269346016463
+        },
+        {
+          "donor_original_id": 1123118,
+          "receiver_original_id": 1416225,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.013763691822709277,
+          "distance_over_sum_max_3d_scales": 0.4215500728423218
+        },
+        {
+          "donor_original_id": 1153024,
+          "receiver_original_id": 1251072,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.13227188085862218,
+          "distance_over_sum_max_3d_scales": 1.1685312411429294
+        },
+        {
+          "donor_original_id": 1183562,
+          "receiver_original_id": 1167768,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.048357686597158396,
+          "distance_over_sum_max_3d_scales": 0.1953376559675825
+        },
+        {
+          "donor_original_id": 1213928,
+          "receiver_original_id": 1156355,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.031147245314475054,
+          "distance_over_sum_max_3d_scales": 0.13299283938850445
+        },
+        {
+          "donor_original_id": 1247151,
+          "receiver_original_id": 597377,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.06399191666318021,
+          "distance_over_sum_max_3d_scales": 0.5886059483335103
+        },
+        {
+          "donor_original_id": 1279304,
+          "receiver_original_id": 957947,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.024215872835198604,
+          "distance_over_sum_max_3d_scales": 0.22515753455884585
+        },
+        {
+          "donor_original_id": 1309291,
+          "receiver_original_id": 1182982,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.01782122932787121,
+          "distance_over_sum_max_3d_scales": 0.2951498424189707
+        },
+        {
+          "donor_original_id": 1338513,
+          "receiver_original_id": 1331017,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.2615222693468584,
+          "distance_over_sum_max_3d_scales": 1.7375186907256766
+        },
+        {
+          "donor_original_id": 1367269,
+          "receiver_original_id": 1353499,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.0018240313118021983,
+          "distance_over_sum_max_3d_scales": 0.016980018513638048
+        },
+        {
+          "donor_original_id": 1398121,
+          "receiver_original_id": 1445430,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.027259861329418558,
+          "distance_over_sum_max_3d_scales": 0.45360655247083276
+        },
+        {
+          "donor_original_id": 1427506,
+          "receiver_original_id": 547278,
+          "exact_minimum_tie_count": 1,
+          "distance": 2.070125978431461,
+          "distance_over_sum_max_3d_scales": 5.792531485423672
+        },
+        {
+          "donor_original_id": 1458611,
+          "receiver_original_id": 1102720,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.08006527373323089,
+          "distance_over_sum_max_3d_scales": 1.2848341525360973
+        },
+        {
+          "donor_original_id": 1488362,
+          "receiver_original_id": 1454510,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.005503613359639558,
+          "distance_over_sum_max_3d_scales": 0.34893467223668045
+        },
+        {
+          "donor_original_id": 1518947,
+          "receiver_original_id": 1245732,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.006332790345481476,
+          "distance_over_sum_max_3d_scales": 0.1216266983784249
+        },
+        {
+          "donor_original_id": 1548087,
+          "receiver_original_id": 1669206,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.005390285341303009,
+          "distance_over_sum_max_3d_scales": 0.14063412598948766
+        },
+        {
+          "donor_original_id": 1579231,
+          "receiver_original_id": 1695073,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.003308368051859532,
+          "distance_over_sum_max_3d_scales": 0.09349312826914784
+        },
+        {
+          "donor_original_id": 1610539,
+          "receiver_original_id": 1655644,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.06118970832832917,
+          "distance_over_sum_max_3d_scales": 0.36308847680927414
+        },
+        {
+          "donor_original_id": 1641300,
+          "receiver_original_id": 348111,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.025270430274842808,
+          "distance_over_sum_max_3d_scales": 0.44068725395578673
+        },
+        {
+          "donor_original_id": 1671715,
+          "receiver_original_id": 1231229,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.014244323603746051,
+          "distance_over_sum_max_3d_scales": 0.17318605811445978
+        },
+        {
+          "donor_original_id": 1701199,
+          "receiver_original_id": 1957316,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.5087715301389436,
+          "distance_over_sum_max_3d_scales": 2.914071634622684
+        },
+        {
+          "donor_original_id": 1731628,
+          "receiver_original_id": 1388369,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.07681486299347265,
+          "distance_over_sum_max_3d_scales": 0.5466243926872109
+        },
+        {
+          "donor_original_id": 1762137,
+          "receiver_original_id": 1122844,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.07192508100685688,
+          "distance_over_sum_max_3d_scales": 1.1822829652563593
+        },
+        {
+          "donor_original_id": 1790364,
+          "receiver_original_id": 1686918,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.00320027718444585,
+          "distance_over_sum_max_3d_scales": 0.07007839742531602
+        },
+        {
+          "donor_original_id": 1819672,
+          "receiver_original_id": 882863,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.011850591493604365,
+          "distance_over_sum_max_3d_scales": 0.5229934901715738
+        },
+        {
+          "donor_original_id": 1849516,
+          "receiver_original_id": 1621781,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.050882077242791146,
+          "distance_over_sum_max_3d_scales": 0.6766785412765245
+        },
+        {
+          "donor_original_id": 1878504,
+          "receiver_original_id": 1526976,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.28038462176124485,
+          "distance_over_sum_max_3d_scales": 2.0318599723623376
+        },
+        {
+          "donor_original_id": 1907581,
+          "receiver_original_id": 1581027,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.007775781667377763,
+          "distance_over_sum_max_3d_scales": 0.12501425956677323
+        },
+        {
+          "donor_original_id": 1936054,
+          "receiver_original_id": 1628290,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.001282768010514056,
+          "distance_over_sum_max_3d_scales": 0.11673976809917143
+        },
+        {
+          "donor_original_id": 1964334,
+          "receiver_original_id": 525179,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.1208219349644466,
+          "distance_over_sum_max_3d_scales": 2.3269863040816507
+        },
+        {
+          "donor_original_id": 1992559,
+          "receiver_original_id": 406311,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.4500435692097233,
+          "distance_over_sum_max_3d_scales": 1.1276637259037467
+        },
+        {
+          "donor_original_id": 2020680,
+          "receiver_original_id": 1999372,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.0290837008530051,
+          "distance_over_sum_max_3d_scales": 0.18204102908984118
+        },
+        {
+          "donor_original_id": 2050769,
+          "receiver_original_id": 1546307,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.34169397366049165,
+          "distance_over_sum_max_3d_scales": 2.0634428961198874
+        }
+      ]
+    },
+    "B": {
+      "donors": 1025159,
+      "receivers": 1025385,
+      "zero_weight_points": 226,
+      "zero_weight_survivors": 0,
+      "zero_weight_deleted": 226,
+      "donation_all_exact": true,
+      "mass_equalities": {
+        "local": {
+          "expected_proxy_mass": 34039001.74503973,
+          "transferred_proxy_mass": 34039001.745039746,
+          "relative_error": 4.377672795888939e-16,
+          "float32_encoded_proxy_mass": 34039001.747124374,
+          "float32_encoded_relative_error": 6.124276687992708e-11,
+          "all_variant_float32_logits_exactly_reconstructed": true
+        },
+        "global": {
+          "expected_proxy_mass": 34039001.74503973,
+          "transferred_proxy_mass": 34039001.74503973,
+          "relative_error": 0.0,
+          "float32_encoded_proxy_mass": 34039001.72595505,
+          "float32_encoded_relative_error": 5.606710999843953e-10,
+          "all_variant_float32_logits_exactly_reconstructed": true
+        },
+        "shuffle": {
+          "expected_proxy_mass": 34039001.74503973,
+          "transferred_proxy_mass": 34039001.745039724,
+          "relative_error": 2.1888363979444696e-16,
+          "float32_encoded_proxy_mass": 34039001.73333425,
+          "float32_encoded_relative_error": 3.4388436545917914e-10,
+          "all_variant_float32_logits_exactly_reconstructed": true
+        }
+      },
+      "nearest_neighbor_fixed_samples": [
+        {
+          "donor_original_id": 1,
+          "receiver_original_id": 357189,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.0038181006522699295,
+          "distance_over_sum_max_3d_scales": 0.09950159620144139
+        },
+        {
+          "donor_original_id": 131816,
+          "receiver_original_id": 1990954,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.025426007691655355,
+          "distance_over_sum_max_3d_scales": 0.08691779145237684
+        },
+        {
+          "donor_original_id": 173840,
+          "receiver_original_id": 281631,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.006268307878775816,
+          "distance_over_sum_max_3d_scales": 0.05088153414087802
+        },
+        {
+          "donor_original_id": 209131,
+          "receiver_original_id": 470764,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.05078889404834493,
+          "distance_over_sum_max_3d_scales": 0.8348716801542028
+        },
+        {
+          "donor_original_id": 243074,
+          "receiver_original_id": 241828,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.25295485042067833,
+          "distance_over_sum_max_3d_scales": 2.154079534761772
+        },
+        {
+          "donor_original_id": 278994,
+          "receiver_original_id": 580749,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.02177337474217613,
+          "distance_over_sum_max_3d_scales": 0.11150038173387544
+        },
+        {
+          "donor_original_id": 311511,
+          "receiver_original_id": 258385,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.03669720225206146,
+          "distance_over_sum_max_3d_scales": 1.4250078301925984
+        },
+        {
+          "donor_original_id": 342372,
+          "receiver_original_id": 115568,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.010943574841863871,
+          "distance_over_sum_max_3d_scales": 0.2353068472029399
+        },
+        {
+          "donor_original_id": 373635,
+          "receiver_original_id": 1758172,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.026453960961626246,
+          "distance_over_sum_max_3d_scales": 1.1948599960847306
+        },
+        {
+          "donor_original_id": 405102,
+          "receiver_original_id": 1202561,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.3471177291052473,
+          "distance_over_sum_max_3d_scales": 0.5903617053285829
+        },
+        {
+          "donor_original_id": 437967,
+          "receiver_original_id": 333193,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.004588549046344015,
+          "distance_over_sum_max_3d_scales": 0.44035668803339356
+        },
+        {
+          "donor_original_id": 471259,
+          "receiver_original_id": 1161637,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.02079657845803473,
+          "distance_over_sum_max_3d_scales": 0.21201003279352537
+        },
+        {
+          "donor_original_id": 502016,
+          "receiver_original_id": 1421981,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.003231232411605394,
+          "distance_over_sum_max_3d_scales": 0.07701654742170257
+        },
+        {
+          "donor_original_id": 532713,
+          "receiver_original_id": 530932,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.02561246971354668,
+          "distance_over_sum_max_3d_scales": 0.09155558135553704
+        },
+        {
+          "donor_original_id": 566659,
+          "receiver_original_id": 628877,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.011602332567588138,
+          "distance_over_sum_max_3d_scales": 0.10545484653059146
+        },
+        {
+          "donor_original_id": 596743,
+          "receiver_original_id": 697943,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.22068383585872567,
+          "distance_over_sum_max_3d_scales": 1.3240467212959883
+        },
+        {
+          "donor_original_id": 631202,
+          "receiver_original_id": 575329,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.013730550569902081,
+          "distance_over_sum_max_3d_scales": 0.07122212141089684
+        },
+        {
+          "donor_original_id": 665957,
+          "receiver_original_id": 425543,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.006055049104400985,
+          "distance_over_sum_max_3d_scales": 0.0508530530989752
+        },
+        {
+          "donor_original_id": 697263,
+          "receiver_original_id": 802188,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.06520178435577799,
+          "distance_over_sum_max_3d_scales": 0.3686295419421461
+        },
+        {
+          "donor_original_id": 728554,
+          "receiver_original_id": 460221,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.6083078476284032,
+          "distance_over_sum_max_3d_scales": 2.4298846136177743
+        },
+        {
+          "donor_original_id": 762483,
+          "receiver_original_id": 605556,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.012869951626423919,
+          "distance_over_sum_max_3d_scales": 0.15962174731041856
+        },
+        {
+          "donor_original_id": 792752,
+          "receiver_original_id": 909304,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.011581149594490454,
+          "distance_over_sum_max_3d_scales": 0.07858130956241936
+        },
+        {
+          "donor_original_id": 821393,
+          "receiver_original_id": 551995,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.06609466060192631,
+          "distance_over_sum_max_3d_scales": 0.35408474354372127
+        },
+        {
+          "donor_original_id": 851994,
+          "receiver_original_id": 1482140,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.07307510820274815,
+          "distance_over_sum_max_3d_scales": 1.5586162066237026
+        },
+        {
+          "donor_original_id": 884917,
+          "receiver_original_id": 364621,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.008127477923900757,
+          "distance_over_sum_max_3d_scales": 0.43179667262353266
+        },
+        {
+          "donor_original_id": 913108,
+          "receiver_original_id": 721962,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.008182669359371248,
+          "distance_over_sum_max_3d_scales": 0.047195257571468814
+        },
+        {
+          "donor_original_id": 942283,
+          "receiver_original_id": 851607,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.12609521952406372,
+          "distance_over_sum_max_3d_scales": 0.9203328604635713
+        },
+        {
+          "donor_original_id": 974504,
+          "receiver_original_id": 848701,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.27449467257301774,
+          "distance_over_sum_max_3d_scales": 1.427102593461969
+        },
+        {
+          "donor_original_id": 1002061,
+          "receiver_original_id": 1002765,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.20043047499245537,
+          "distance_over_sum_max_3d_scales": 1.1632147598396991
+        },
+        {
+          "donor_original_id": 1032975,
+          "receiver_original_id": 898523,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.09995668420648393,
+          "distance_over_sum_max_3d_scales": 0.1634039543838132
+        },
+        {
+          "donor_original_id": 1064268,
+          "receiver_original_id": 1728742,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.02270009531572468,
+          "distance_over_sum_max_3d_scales": 0.16790442228259864
+        },
+        {
+          "donor_original_id": 1091861,
+          "receiver_original_id": 1759414,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.01994124407723889,
+          "distance_over_sum_max_3d_scales": 0.2721855194755364
+        },
+        {
+          "donor_original_id": 1123166,
+          "receiver_original_id": 2036531,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.13873236401766076,
+          "distance_over_sum_max_3d_scales": 2.135646764073256
+        },
+        {
+          "donor_original_id": 1153076,
+          "receiver_original_id": 1156768,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.02039586769327124,
+          "distance_over_sum_max_3d_scales": 0.19203446812915592
+        },
+        {
+          "donor_original_id": 1183619,
+          "receiver_original_id": 1511611,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.1622674437122591,
+          "distance_over_sum_max_3d_scales": 0.5786263163238977
+        },
+        {
+          "donor_original_id": 1214015,
+          "receiver_original_id": 941388,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.10782700463107857,
+          "distance_over_sum_max_3d_scales": 0.1634123171220037
+        },
+        {
+          "donor_original_id": 1247217,
+          "receiver_original_id": 1661687,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.07698038360380671,
+          "distance_over_sum_max_3d_scales": 0.8438289042284716
+        },
+        {
+          "donor_original_id": 1279368,
+          "receiver_original_id": 1376146,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.025848394125664236,
+          "distance_over_sum_max_3d_scales": 0.5273827905845859
+        },
+        {
+          "donor_original_id": 1309354,
+          "receiver_original_id": 1135880,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.07372560796830013,
+          "distance_over_sum_max_3d_scales": 0.4497105413828654
+        },
+        {
+          "donor_original_id": 1338571,
+          "receiver_original_id": 1474240,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.004322857858693984,
+          "distance_over_sum_max_3d_scales": 0.03498061909712211
+        },
+        {
+          "donor_original_id": 1367313,
+          "receiver_original_id": 1992218,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.04322398558029896,
+          "distance_over_sum_max_3d_scales": 0.9119559392788651
+        },
+        {
+          "donor_original_id": 1398211,
+          "receiver_original_id": 883079,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.018845157127129482,
+          "distance_over_sum_max_3d_scales": 0.37787063384469016
+        },
+        {
+          "donor_original_id": 1427553,
+          "receiver_original_id": 942847,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.04725889326508549,
+          "distance_over_sum_max_3d_scales": 2.034604812391802
+        },
+        {
+          "donor_original_id": 1458680,
+          "receiver_original_id": 1436208,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.0046986138942702515,
+          "distance_over_sum_max_3d_scales": 0.057583799522966474
+        },
+        {
+          "donor_original_id": 1488485,
+          "receiver_original_id": 879639,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.01519965776873364,
+          "distance_over_sum_max_3d_scales": 1.7476503599879938
+        },
+        {
+          "donor_original_id": 1519030,
+          "receiver_original_id": 733338,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.006980422831866216,
+          "distance_over_sum_max_3d_scales": 0.6205081791020941
+        },
+        {
+          "donor_original_id": 1548220,
+          "receiver_original_id": 900682,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.0031267357206817446,
+          "distance_over_sum_max_3d_scales": 0.3114550660350328
+        },
+        {
+          "donor_original_id": 1579323,
+          "receiver_original_id": 133086,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.013632357393501743,
+          "distance_over_sum_max_3d_scales": 0.11663977778479087
+        },
+        {
+          "donor_original_id": 1610582,
+          "receiver_original_id": 1772193,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.0670607647986643,
+          "distance_over_sum_max_3d_scales": 0.6241554857107935
+        },
+        {
+          "donor_original_id": 1641372,
+          "receiver_original_id": 1435278,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.006376710821049467,
+          "distance_over_sum_max_3d_scales": 0.09589168135802646
+        },
+        {
+          "donor_original_id": 1671777,
+          "receiver_original_id": 1362206,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.04448569742927508,
+          "distance_over_sum_max_3d_scales": 1.455279415954217
+        },
+        {
+          "donor_original_id": 1701260,
+          "receiver_original_id": 1903405,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.15037219166005514,
+          "distance_over_sum_max_3d_scales": 0.3631731341868042
+        },
+        {
+          "donor_original_id": 1731666,
+          "receiver_original_id": 1925552,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.08475737236143303,
+          "distance_over_sum_max_3d_scales": 0.34633717290200267
+        },
+        {
+          "donor_original_id": 1762184,
+          "receiver_original_id": 1790052,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.005283382584084255,
+          "distance_over_sum_max_3d_scales": 0.2940880808809405
+        },
+        {
+          "donor_original_id": 1790435,
+          "receiver_original_id": 1776279,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.0011669552803757783,
+          "distance_over_sum_max_3d_scales": 0.017636193880439244
+        },
+        {
+          "donor_original_id": 1819722,
+          "receiver_original_id": 2049733,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.03504442976692146,
+          "distance_over_sum_max_3d_scales": 0.37779968683781956
+        },
+        {
+          "donor_original_id": 1849561,
+          "receiver_original_id": 1136776,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.016453927057159444,
+          "distance_over_sum_max_3d_scales": 0.6925789072269696
+        },
+        {
+          "donor_original_id": 1878521,
+          "receiver_original_id": 1908583,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.022650682777081432,
+          "distance_over_sum_max_3d_scales": 0.3215803552613835
+        },
+        {
+          "donor_original_id": 1907608,
+          "receiver_original_id": 1118701,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.004947002259223459,
+          "distance_over_sum_max_3d_scales": 0.06664366450874995
+        },
+        {
+          "donor_original_id": 1936076,
+          "receiver_original_id": 1879138,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.002353613438561335,
+          "distance_over_sum_max_3d_scales": 0.6866670108642
+        },
+        {
+          "donor_original_id": 1964353,
+          "receiver_original_id": 1974163,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.06949990545868104,
+          "distance_over_sum_max_3d_scales": 0.36686886635263743
+        },
+        {
+          "donor_original_id": 1992569,
+          "receiver_original_id": 1991023,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.09686912946855251,
+          "distance_over_sum_max_3d_scales": 0.9948716470549889
+        },
+        {
+          "donor_original_id": 2020681,
+          "receiver_original_id": 1700222,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.36082540814407693,
+          "distance_over_sum_max_3d_scales": 3.197561292670589
+        },
+        {
+          "donor_original_id": 2050769,
+          "receiver_original_id": 1546307,
+          "exact_minimum_tie_count": 1,
+          "distance": 0.34169397366049165,
+          "distance_over_sum_max_3d_scales": 2.0634428961198874
+        }
+      ]
+    }
+  },
+  "manifest_verification": {
+    "files_checked": 293,
+    "bytes_checked": 3089871120,
+    "all_sha256_and_byte_counts_match": true
+  },
+  "elapsed_seconds": 30.501635013000012
+}

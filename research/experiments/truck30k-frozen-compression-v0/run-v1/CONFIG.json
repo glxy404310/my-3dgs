@@ -1,0 +1,1770 @@
+{
+  "teacher": "/home/administrator/projects/gaussian-splatting/output/truck_30000_r1/point_cloud/iteration_30000/point_cloud.ply",
+  "teacher_sha256": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+  "script_sha256": "aa5e81a826979d6b5fba8fd6c4ce98210762b31c227a071ac7f03894b849c650",
+  "training_performed": false,
+  "optimizer_created": false,
+  "resolution": 1,
+  "keep_fraction": 0.5,
+  "score": "exact integrated CUDA Talpha via constant-color derivatives",
+  "calibration": [
+    "000002.jpg",
+    "000082.jpg",
+    "000226.jpg",
+    "000112.jpg",
+    "000047.jpg",
+    "000068.jpg",
+    "000122.jpg",
+    "000176.jpg",
+    "000219.jpg",
+    "000028.jpg",
+    "000244.jpg",
+    "000208.jpg",
+    "000064.jpg",
+    "000192.jpg",
+    "000186.jpg",
+    "000098.jpg",
+    "000054.jpg",
+    "000180.jpg",
+    "000167.jpg",
+    "000204.jpg",
+    "000127.jpg",
+    "000143.jpg",
+    "000050.jpg",
+    "000236.jpg"
+  ],
+  "train_count": 219,
+  "test_count": 32,
+  "virtual_views": [
+    {
+      "view": "virtual_discovery_e00_t25",
+      "group": "virtual_discovery",
+      "edge": 0,
+      "t": 0.25,
+      "endpoints": [
+        "000002.jpg",
+        "000003.jpg"
+      ],
+      "distance": 0.181754469871521,
+      "rotation_degrees": 4.298860962096686
+    },
+    {
+      "view": "virtual_discovery_e00_t50",
+      "group": "virtual_discovery",
+      "edge": 0,
+      "t": 0.5,
+      "endpoints": [
+        "000002.jpg",
+        "000003.jpg"
+      ],
+      "distance": 0.181754469871521,
+      "rotation_degrees": 4.298860962096686
+    },
+    {
+      "view": "virtual_discovery_e00_t75",
+      "group": "virtual_discovery",
+      "edge": 0,
+      "t": 0.75,
+      "endpoints": [
+        "000002.jpg",
+        "000003.jpg"
+      ],
+      "distance": 0.181754469871521,
+      "rotation_degrees": 4.298860962096686
+    },
+    {
+      "view": "virtual_check_e01_t25",
+      "group": "virtual_check",
+      "edge": 1,
+      "t": 0.25,
+      "endpoints": [
+        "000003.jpg",
+        "000006.jpg"
+      ],
+      "distance": 0.16812096536159515,
+      "rotation_degrees": 4.29382852587406
+    },
+    {
+      "view": "virtual_check_e01_t50",
+      "group": "virtual_check",
+      "edge": 1,
+      "t": 0.5,
+      "endpoints": [
+        "000003.jpg",
+        "000006.jpg"
+      ],
+      "distance": 0.16812096536159515,
+      "rotation_degrees": 4.29382852587406
+    },
+    {
+      "view": "virtual_check_e01_t75",
+      "group": "virtual_check",
+      "edge": 1,
+      "t": 0.75,
+      "endpoints": [
+        "000003.jpg",
+        "000006.jpg"
+      ],
+      "distance": 0.16812096536159515,
+      "rotation_degrees": 4.29382852587406
+    },
+    {
+      "view": "virtual_discovery_e02_t25",
+      "group": "virtual_discovery",
+      "edge": 2,
+      "t": 0.25,
+      "endpoints": [
+        "000006.jpg",
+        "000132.jpg"
+      ],
+      "distance": 0.28006523847579956,
+      "rotation_degrees": 10.5503234496184
+    },
+    {
+      "view": "virtual_discovery_e02_t50",
+      "group": "virtual_discovery",
+      "edge": 2,
+      "t": 0.5,
+      "endpoints": [
+        "000006.jpg",
+        "000132.jpg"
+      ],
+      "distance": 0.28006523847579956,
+      "rotation_degrees": 10.5503234496184
+    },
+    {
+      "view": "virtual_discovery_e02_t75",
+      "group": "virtual_discovery",
+      "edge": 2,
+      "t": 0.75,
+      "endpoints": [
+        "000006.jpg",
+        "000132.jpg"
+      ],
+      "distance": 0.28006523847579956,
+      "rotation_degrees": 10.5503234496184
+    },
+    {
+      "view": "virtual_check_e03_t25",
+      "group": "virtual_check",
+      "edge": 3,
+      "t": 0.25,
+      "endpoints": [
+        "000008.jpg",
+        "000134.jpg"
+      ],
+      "distance": 0.24891237914562225,
+      "rotation_degrees": 7.670521611901654
+    },
+    {
+      "view": "virtual_check_e03_t50",
+      "group": "virtual_check",
+      "edge": 3,
+      "t": 0.5,
+      "endpoints": [
+        "000008.jpg",
+        "000134.jpg"
+      ],
+      "distance": 0.24891237914562225,
+      "rotation_degrees": 7.670521611901654
+    },
+    {
+      "view": "virtual_check_e03_t75",
+      "group": "virtual_check",
+      "edge": 3,
+      "t": 0.75,
+      "endpoints": [
+        "000008.jpg",
+        "000134.jpg"
+      ],
+      "distance": 0.24891237914562225,
+      "rotation_degrees": 7.670521611901654
+    },
+    {
+      "view": "virtual_discovery_e04_t25",
+      "group": "virtual_discovery",
+      "edge": 4,
+      "t": 0.25,
+      "endpoints": [
+        "000011.jpg",
+        "000136.jpg"
+      ],
+      "distance": 0.2112172693014145,
+      "rotation_degrees": 8.273718030242842
+    },
+    {
+      "view": "virtual_discovery_e04_t50",
+      "group": "virtual_discovery",
+      "edge": 4,
+      "t": 0.5,
+      "endpoints": [
+        "000011.jpg",
+        "000136.jpg"
+      ],
+      "distance": 0.2112172693014145,
+      "rotation_degrees": 8.273718030242842
+    },
+    {
+      "view": "virtual_discovery_e04_t75",
+      "group": "virtual_discovery",
+      "edge": 4,
+      "t": 0.75,
+      "endpoints": [
+        "000011.jpg",
+        "000136.jpg"
+      ],
+      "distance": 0.2112172693014145,
+      "rotation_degrees": 8.273718030242842
+    },
+    {
+      "view": "virtual_check_e05_t25",
+      "group": "virtual_check",
+      "edge": 5,
+      "t": 0.25,
+      "endpoints": [
+        "000015.jpg",
+        "000016.jpg"
+      ],
+      "distance": 0.16451220214366913,
+      "rotation_degrees": 9.873841570025494
+    },
+    {
+      "view": "virtual_check_e05_t50",
+      "group": "virtual_check",
+      "edge": 5,
+      "t": 0.5,
+      "endpoints": [
+        "000015.jpg",
+        "000016.jpg"
+      ],
+      "distance": 0.16451220214366913,
+      "rotation_degrees": 9.873841570025494
+    },
+    {
+      "view": "virtual_check_e05_t75",
+      "group": "virtual_check",
+      "edge": 5,
+      "t": 0.75,
+      "endpoints": [
+        "000015.jpg",
+        "000016.jpg"
+      ],
+      "distance": 0.16451220214366913,
+      "rotation_degrees": 9.873841570025494
+    },
+    {
+      "view": "virtual_discovery_e06_t25",
+      "group": "virtual_discovery",
+      "edge": 6,
+      "t": 0.25,
+      "endpoints": [
+        "000019.jpg",
+        "000021.jpg"
+      ],
+      "distance": 0.14975208044052124,
+      "rotation_degrees": 10.508089749881556
+    },
+    {
+      "view": "virtual_discovery_e06_t50",
+      "group": "virtual_discovery",
+      "edge": 6,
+      "t": 0.5,
+      "endpoints": [
+        "000019.jpg",
+        "000021.jpg"
+      ],
+      "distance": 0.14975208044052124,
+      "rotation_degrees": 10.508089749881556
+    },
+    {
+      "view": "virtual_discovery_e06_t75",
+      "group": "virtual_discovery",
+      "edge": 6,
+      "t": 0.75,
+      "endpoints": [
+        "000019.jpg",
+        "000021.jpg"
+      ],
+      "distance": 0.14975208044052124,
+      "rotation_degrees": 10.508089749881556
+    },
+    {
+      "view": "virtual_check_e07_t25",
+      "group": "virtual_check",
+      "edge": 7,
+      "t": 0.25,
+      "endpoints": [
+        "000027.jpg",
+        "000028.jpg"
+      ],
+      "distance": 0.36895671486854553,
+      "rotation_degrees": 2.7342935019647987
+    },
+    {
+      "view": "virtual_check_e07_t50",
+      "group": "virtual_check",
+      "edge": 7,
+      "t": 0.5,
+      "endpoints": [
+        "000027.jpg",
+        "000028.jpg"
+      ],
+      "distance": 0.36895671486854553,
+      "rotation_degrees": 2.7342935019647987
+    },
+    {
+      "view": "virtual_check_e07_t75",
+      "group": "virtual_check",
+      "edge": 7,
+      "t": 0.75,
+      "endpoints": [
+        "000027.jpg",
+        "000028.jpg"
+      ],
+      "distance": 0.36895671486854553,
+      "rotation_degrees": 2.7342935019647987
+    },
+    {
+      "view": "virtual_discovery_e08_t25",
+      "group": "virtual_discovery",
+      "edge": 8,
+      "t": 0.25,
+      "endpoints": [
+        "000029.jpg",
+        "000030.jpg"
+      ],
+      "distance": 0.2683907449245453,
+      "rotation_degrees": 1.9813666485456825
+    },
+    {
+      "view": "virtual_discovery_e08_t50",
+      "group": "virtual_discovery",
+      "edge": 8,
+      "t": 0.5,
+      "endpoints": [
+        "000029.jpg",
+        "000030.jpg"
+      ],
+      "distance": 0.2683907449245453,
+      "rotation_degrees": 1.9813666485456825
+    },
+    {
+      "view": "virtual_discovery_e08_t75",
+      "group": "virtual_discovery",
+      "edge": 8,
+      "t": 0.75,
+      "endpoints": [
+        "000029.jpg",
+        "000030.jpg"
+      ],
+      "distance": 0.2683907449245453,
+      "rotation_degrees": 1.9813666485456825
+    },
+    {
+      "view": "virtual_check_e09_t25",
+      "group": "virtual_check",
+      "edge": 9,
+      "t": 0.25,
+      "endpoints": [
+        "000030.jpg",
+        "000148.jpg"
+      ],
+      "distance": 0.15553754568099976,
+      "rotation_degrees": 6.789491871283614
+    },
+    {
+      "view": "virtual_check_e09_t50",
+      "group": "virtual_check",
+      "edge": 9,
+      "t": 0.5,
+      "endpoints": [
+        "000030.jpg",
+        "000148.jpg"
+      ],
+      "distance": 0.15553754568099976,
+      "rotation_degrees": 6.789491871283614
+    },
+    {
+      "view": "virtual_check_e09_t75",
+      "group": "virtual_check",
+      "edge": 9,
+      "t": 0.75,
+      "endpoints": [
+        "000030.jpg",
+        "000148.jpg"
+      ],
+      "distance": 0.15553754568099976,
+      "rotation_degrees": 6.789491871283614
+    },
+    {
+      "view": "virtual_discovery_e10_t25",
+      "group": "virtual_discovery",
+      "edge": 10,
+      "t": 0.25,
+      "endpoints": [
+        "000032.jpg",
+        "000150.jpg"
+      ],
+      "distance": 0.1441417932510376,
+      "rotation_degrees": 5.449914419819265
+    },
+    {
+      "view": "virtual_discovery_e10_t50",
+      "group": "virtual_discovery",
+      "edge": 10,
+      "t": 0.5,
+      "endpoints": [
+        "000032.jpg",
+        "000150.jpg"
+      ],
+      "distance": 0.1441417932510376,
+      "rotation_degrees": 5.449914419819265
+    },
+    {
+      "view": "virtual_discovery_e10_t75",
+      "group": "virtual_discovery",
+      "edge": 10,
+      "t": 0.75,
+      "endpoints": [
+        "000032.jpg",
+        "000150.jpg"
+      ],
+      "distance": 0.1441417932510376,
+      "rotation_degrees": 5.449914419819265
+    },
+    {
+      "view": "virtual_check_e11_t25",
+      "group": "virtual_check",
+      "edge": 11,
+      "t": 0.25,
+      "endpoints": [
+        "000036.jpg",
+        "000051.jpg"
+      ],
+      "distance": 0.4345438480377197,
+      "rotation_degrees": 4.535806117298079
+    },
+    {
+      "view": "virtual_check_e11_t50",
+      "group": "virtual_check",
+      "edge": 11,
+      "t": 0.5,
+      "endpoints": [
+        "000036.jpg",
+        "000051.jpg"
+      ],
+      "distance": 0.4345438480377197,
+      "rotation_degrees": 4.535806117298079
+    },
+    {
+      "view": "virtual_check_e11_t75",
+      "group": "virtual_check",
+      "edge": 11,
+      "t": 0.75,
+      "endpoints": [
+        "000036.jpg",
+        "000051.jpg"
+      ],
+      "distance": 0.4345438480377197,
+      "rotation_degrees": 4.535806117298079
+    },
+    {
+      "view": "virtual_discovery_e12_t25",
+      "group": "virtual_discovery",
+      "edge": 12,
+      "t": 0.25,
+      "endpoints": [
+        "000038.jpg",
+        "000214.jpg"
+      ],
+      "distance": 0.4993336498737335,
+      "rotation_degrees": 10.213786091608291
+    },
+    {
+      "view": "virtual_discovery_e12_t50",
+      "group": "virtual_discovery",
+      "edge": 12,
+      "t": 0.5,
+      "endpoints": [
+        "000038.jpg",
+        "000214.jpg"
+      ],
+      "distance": 0.4993336498737335,
+      "rotation_degrees": 10.213786091608291
+    },
+    {
+      "view": "virtual_discovery_e12_t75",
+      "group": "virtual_discovery",
+      "edge": 12,
+      "t": 0.75,
+      "endpoints": [
+        "000038.jpg",
+        "000214.jpg"
+      ],
+      "distance": 0.4993336498737335,
+      "rotation_degrees": 10.213786091608291
+    },
+    {
+      "view": "virtual_check_e13_t25",
+      "group": "virtual_check",
+      "edge": 13,
+      "t": 0.25,
+      "endpoints": [
+        "000042.jpg",
+        "000043.jpg"
+      ],
+      "distance": 0.384964257478714,
+      "rotation_degrees": 1.1626228984053018
+    },
+    {
+      "view": "virtual_check_e13_t50",
+      "group": "virtual_check",
+      "edge": 13,
+      "t": 0.5,
+      "endpoints": [
+        "000042.jpg",
+        "000043.jpg"
+      ],
+      "distance": 0.384964257478714,
+      "rotation_degrees": 1.1626228984053018
+    },
+    {
+      "view": "virtual_check_e13_t75",
+      "group": "virtual_check",
+      "edge": 13,
+      "t": 0.75,
+      "endpoints": [
+        "000042.jpg",
+        "000043.jpg"
+      ],
+      "distance": 0.384964257478714,
+      "rotation_degrees": 1.1626228984053018
+    },
+    {
+      "view": "virtual_discovery_e14_t25",
+      "group": "virtual_discovery",
+      "edge": 14,
+      "t": 0.25,
+      "endpoints": [
+        "000047.jpg",
+        "000048.jpg"
+      ],
+      "distance": 0.4901866018772125,
+      "rotation_degrees": 5.110158612984515
+    },
+    {
+      "view": "virtual_discovery_e14_t50",
+      "group": "virtual_discovery",
+      "edge": 14,
+      "t": 0.5,
+      "endpoints": [
+        "000047.jpg",
+        "000048.jpg"
+      ],
+      "distance": 0.4901866018772125,
+      "rotation_degrees": 5.110158612984515
+    },
+    {
+      "view": "virtual_discovery_e14_t75",
+      "group": "virtual_discovery",
+      "edge": 14,
+      "t": 0.75,
+      "endpoints": [
+        "000047.jpg",
+        "000048.jpg"
+      ],
+      "distance": 0.4901866018772125,
+      "rotation_degrees": 5.110158612984515
+    },
+    {
+      "view": "virtual_check_e15_t25",
+      "group": "virtual_check",
+      "edge": 15,
+      "t": 0.25,
+      "endpoints": [
+        "000054.jpg",
+        "000222.jpg"
+      ],
+      "distance": 0.35994601249694824,
+      "rotation_degrees": 10.710640889435675
+    },
+    {
+      "view": "virtual_check_e15_t50",
+      "group": "virtual_check",
+      "edge": 15,
+      "t": 0.5,
+      "endpoints": [
+        "000054.jpg",
+        "000222.jpg"
+      ],
+      "distance": 0.35994601249694824,
+      "rotation_degrees": 10.710640889435675
+    },
+    {
+      "view": "virtual_check_e15_t75",
+      "group": "virtual_check",
+      "edge": 15,
+      "t": 0.75,
+      "endpoints": [
+        "000054.jpg",
+        "000222.jpg"
+      ],
+      "distance": 0.35994601249694824,
+      "rotation_degrees": 10.710640889435675
+    },
+    {
+      "view": "virtual_discovery_e16_t25",
+      "group": "virtual_discovery",
+      "edge": 16,
+      "t": 0.25,
+      "endpoints": [
+        "000056.jpg",
+        "000224.jpg"
+      ],
+      "distance": 0.30946022272109985,
+      "rotation_degrees": 8.460946708656374
+    },
+    {
+      "view": "virtual_discovery_e16_t50",
+      "group": "virtual_discovery",
+      "edge": 16,
+      "t": 0.5,
+      "endpoints": [
+        "000056.jpg",
+        "000224.jpg"
+      ],
+      "distance": 0.30946022272109985,
+      "rotation_degrees": 8.460946708656374
+    },
+    {
+      "view": "virtual_discovery_e16_t75",
+      "group": "virtual_discovery",
+      "edge": 16,
+      "t": 0.75,
+      "endpoints": [
+        "000056.jpg",
+        "000224.jpg"
+      ],
+      "distance": 0.30946022272109985,
+      "rotation_degrees": 8.460946708656374
+    },
+    {
+      "view": "virtual_check_e17_t25",
+      "group": "virtual_check",
+      "edge": 17,
+      "t": 0.25,
+      "endpoints": [
+        "000059.jpg",
+        "000060.jpg"
+      ],
+      "distance": 0.37806814908981323,
+      "rotation_degrees": 4.865315682365969
+    },
+    {
+      "view": "virtual_check_e17_t50",
+      "group": "virtual_check",
+      "edge": 17,
+      "t": 0.5,
+      "endpoints": [
+        "000059.jpg",
+        "000060.jpg"
+      ],
+      "distance": 0.37806814908981323,
+      "rotation_degrees": 4.865315682365969
+    },
+    {
+      "view": "virtual_check_e17_t75",
+      "group": "virtual_check",
+      "edge": 17,
+      "t": 0.75,
+      "endpoints": [
+        "000059.jpg",
+        "000060.jpg"
+      ],
+      "distance": 0.37806814908981323,
+      "rotation_degrees": 4.865315682365969
+    },
+    {
+      "view": "virtual_discovery_e18_t25",
+      "group": "virtual_discovery",
+      "edge": 18,
+      "t": 0.25,
+      "endpoints": [
+        "000060.jpg",
+        "000062.jpg"
+      ],
+      "distance": 0.3760322630405426,
+      "rotation_degrees": 3.239936277102616
+    },
+    {
+      "view": "virtual_discovery_e18_t50",
+      "group": "virtual_discovery",
+      "edge": 18,
+      "t": 0.5,
+      "endpoints": [
+        "000060.jpg",
+        "000062.jpg"
+      ],
+      "distance": 0.3760322630405426,
+      "rotation_degrees": 3.239936277102616
+    },
+    {
+      "view": "virtual_discovery_e18_t75",
+      "group": "virtual_discovery",
+      "edge": 18,
+      "t": 0.75,
+      "endpoints": [
+        "000060.jpg",
+        "000062.jpg"
+      ],
+      "distance": 0.3760322630405426,
+      "rotation_degrees": 3.239936277102616
+    },
+    {
+      "view": "virtual_check_e19_t25",
+      "group": "virtual_check",
+      "edge": 19,
+      "t": 0.25,
+      "endpoints": [
+        "000063.jpg",
+        "000230.jpg"
+      ],
+      "distance": 0.3769131302833557,
+      "rotation_degrees": 9.401295477416328
+    },
+    {
+      "view": "virtual_check_e19_t50",
+      "group": "virtual_check",
+      "edge": 19,
+      "t": 0.5,
+      "endpoints": [
+        "000063.jpg",
+        "000230.jpg"
+      ],
+      "distance": 0.3769131302833557,
+      "rotation_degrees": 9.401295477416328
+    },
+    {
+      "view": "virtual_check_e19_t75",
+      "group": "virtual_check",
+      "edge": 19,
+      "t": 0.75,
+      "endpoints": [
+        "000063.jpg",
+        "000230.jpg"
+      ],
+      "distance": 0.3769131302833557,
+      "rotation_degrees": 9.401295477416328
+    },
+    {
+      "view": "virtual_discovery_e20_t25",
+      "group": "virtual_discovery",
+      "edge": 20,
+      "t": 0.25,
+      "endpoints": [
+        "000067.jpg",
+        "000068.jpg"
+      ],
+      "distance": 0.3752612769603729,
+      "rotation_degrees": 4.929471558670671
+    },
+    {
+      "view": "virtual_discovery_e20_t50",
+      "group": "virtual_discovery",
+      "edge": 20,
+      "t": 0.5,
+      "endpoints": [
+        "000067.jpg",
+        "000068.jpg"
+      ],
+      "distance": 0.3752612769603729,
+      "rotation_degrees": 4.929471558670671
+    },
+    {
+      "view": "virtual_discovery_e20_t75",
+      "group": "virtual_discovery",
+      "edge": 20,
+      "t": 0.75,
+      "endpoints": [
+        "000067.jpg",
+        "000068.jpg"
+      ],
+      "distance": 0.3752612769603729,
+      "rotation_degrees": 4.929471558670671
+    },
+    {
+      "view": "virtual_check_e21_t25",
+      "group": "virtual_check",
+      "edge": 21,
+      "t": 0.25,
+      "endpoints": [
+        "000070.jpg",
+        "000240.jpg"
+      ],
+      "distance": 0.4856443405151367,
+      "rotation_degrees": 4.351225043755006
+    },
+    {
+      "view": "virtual_check_e21_t50",
+      "group": "virtual_check",
+      "edge": 21,
+      "t": 0.5,
+      "endpoints": [
+        "000070.jpg",
+        "000240.jpg"
+      ],
+      "distance": 0.4856443405151367,
+      "rotation_degrees": 4.351225043755006
+    },
+    {
+      "view": "virtual_check_e21_t75",
+      "group": "virtual_check",
+      "edge": 21,
+      "t": 0.75,
+      "endpoints": [
+        "000070.jpg",
+        "000240.jpg"
+      ],
+      "distance": 0.4856443405151367,
+      "rotation_degrees": 4.351225043755006
+    },
+    {
+      "view": "virtual_discovery_e22_t25",
+      "group": "virtual_discovery",
+      "edge": 22,
+      "t": 0.25,
+      "endpoints": [
+        "000075.jpg",
+        "000245.jpg"
+      ],
+      "distance": 0.32524046301841736,
+      "rotation_degrees": 12.015954080743802
+    },
+    {
+      "view": "virtual_discovery_e22_t50",
+      "group": "virtual_discovery",
+      "edge": 22,
+      "t": 0.5,
+      "endpoints": [
+        "000075.jpg",
+        "000245.jpg"
+      ],
+      "distance": 0.32524046301841736,
+      "rotation_degrees": 12.015954080743802
+    },
+    {
+      "view": "virtual_discovery_e22_t75",
+      "group": "virtual_discovery",
+      "edge": 22,
+      "t": 0.75,
+      "endpoints": [
+        "000075.jpg",
+        "000245.jpg"
+      ],
+      "distance": 0.32524046301841736,
+      "rotation_degrees": 12.015954080743802
+    },
+    {
+      "view": "virtual_check_e23_t25",
+      "group": "virtual_check",
+      "edge": 23,
+      "t": 0.25,
+      "endpoints": [
+        "000077.jpg",
+        "000084.jpg"
+      ],
+      "distance": 0.317020446062088,
+      "rotation_degrees": 9.431995617407773
+    },
+    {
+      "view": "virtual_check_e23_t50",
+      "group": "virtual_check",
+      "edge": 23,
+      "t": 0.5,
+      "endpoints": [
+        "000077.jpg",
+        "000084.jpg"
+      ],
+      "distance": 0.317020446062088,
+      "rotation_degrees": 9.431995617407773
+    },
+    {
+      "view": "virtual_check_e23_t75",
+      "group": "virtual_check",
+      "edge": 23,
+      "t": 0.75,
+      "endpoints": [
+        "000077.jpg",
+        "000084.jpg"
+      ],
+      "distance": 0.317020446062088,
+      "rotation_degrees": 9.431995617407773
+    },
+    {
+      "view": "virtual_discovery_e24_t25",
+      "group": "virtual_discovery",
+      "edge": 24,
+      "t": 0.25,
+      "endpoints": [
+        "000079.jpg",
+        "000083.jpg"
+      ],
+      "distance": 0.4290851056575775,
+      "rotation_degrees": 9.272438795034265
+    },
+    {
+      "view": "virtual_discovery_e24_t50",
+      "group": "virtual_discovery",
+      "edge": 24,
+      "t": 0.5,
+      "endpoints": [
+        "000079.jpg",
+        "000083.jpg"
+      ],
+      "distance": 0.4290851056575775,
+      "rotation_degrees": 9.272438795034265
+    },
+    {
+      "view": "virtual_discovery_e24_t75",
+      "group": "virtual_discovery",
+      "edge": 24,
+      "t": 0.75,
+      "endpoints": [
+        "000079.jpg",
+        "000083.jpg"
+      ],
+      "distance": 0.4290851056575775,
+      "rotation_degrees": 9.272438795034265
+    },
+    {
+      "view": "virtual_check_e25_t25",
+      "group": "virtual_check",
+      "edge": 25,
+      "t": 0.25,
+      "endpoints": [
+        "000091.jpg",
+        "000092.jpg"
+      ],
+      "distance": 0.21710944175720215,
+      "rotation_degrees": 4.676651848024674
+    },
+    {
+      "view": "virtual_check_e25_t50",
+      "group": "virtual_check",
+      "edge": 25,
+      "t": 0.5,
+      "endpoints": [
+        "000091.jpg",
+        "000092.jpg"
+      ],
+      "distance": 0.21710944175720215,
+      "rotation_degrees": 4.676651848024674
+    },
+    {
+      "view": "virtual_check_e25_t75",
+      "group": "virtual_check",
+      "edge": 25,
+      "t": 0.75,
+      "endpoints": [
+        "000091.jpg",
+        "000092.jpg"
+      ],
+      "distance": 0.21710944175720215,
+      "rotation_degrees": 4.676651848024674
+    },
+    {
+      "view": "virtual_discovery_e26_t25",
+      "group": "virtual_discovery",
+      "edge": 26,
+      "t": 0.25,
+      "endpoints": [
+        "000095.jpg",
+        "000170.jpg"
+      ],
+      "distance": 0.2553096413612366,
+      "rotation_degrees": 9.65421092353628
+    },
+    {
+      "view": "virtual_discovery_e26_t50",
+      "group": "virtual_discovery",
+      "edge": 26,
+      "t": 0.5,
+      "endpoints": [
+        "000095.jpg",
+        "000170.jpg"
+      ],
+      "distance": 0.2553096413612366,
+      "rotation_degrees": 9.65421092353628
+    },
+    {
+      "view": "virtual_discovery_e26_t75",
+      "group": "virtual_discovery",
+      "edge": 26,
+      "t": 0.75,
+      "endpoints": [
+        "000095.jpg",
+        "000170.jpg"
+      ],
+      "distance": 0.2553096413612366,
+      "rotation_degrees": 9.65421092353628
+    },
+    {
+      "view": "virtual_check_e27_t25",
+      "group": "virtual_check",
+      "edge": 27,
+      "t": 0.25,
+      "endpoints": [
+        "000101.jpg",
+        "000102.jpg"
+      ],
+      "distance": 0.34176748991012573,
+      "rotation_degrees": 1.7967880143559944
+    },
+    {
+      "view": "virtual_check_e27_t50",
+      "group": "virtual_check",
+      "edge": 27,
+      "t": 0.5,
+      "endpoints": [
+        "000101.jpg",
+        "000102.jpg"
+      ],
+      "distance": 0.34176748991012573,
+      "rotation_degrees": 1.7967880143559944
+    },
+    {
+      "view": "virtual_check_e27_t75",
+      "group": "virtual_check",
+      "edge": 27,
+      "t": 0.75,
+      "endpoints": [
+        "000101.jpg",
+        "000102.jpg"
+      ],
+      "distance": 0.34176748991012573,
+      "rotation_degrees": 1.7967880143559944
+    },
+    {
+      "view": "virtual_discovery_e28_t25",
+      "group": "virtual_discovery",
+      "edge": 28,
+      "t": 0.25,
+      "endpoints": [
+        "000108.jpg",
+        "000109.jpg"
+      ],
+      "distance": 0.30185627937316895,
+      "rotation_degrees": 4.204200395102228
+    },
+    {
+      "view": "virtual_discovery_e28_t50",
+      "group": "virtual_discovery",
+      "edge": 28,
+      "t": 0.5,
+      "endpoints": [
+        "000108.jpg",
+        "000109.jpg"
+      ],
+      "distance": 0.30185627937316895,
+      "rotation_degrees": 4.204200395102228
+    },
+    {
+      "view": "virtual_discovery_e28_t75",
+      "group": "virtual_discovery",
+      "edge": 28,
+      "t": 0.75,
+      "endpoints": [
+        "000108.jpg",
+        "000109.jpg"
+      ],
+      "distance": 0.30185627937316895,
+      "rotation_degrees": 4.204200395102228
+    },
+    {
+      "view": "virtual_check_e29_t25",
+      "group": "virtual_check",
+      "edge": 29,
+      "t": 0.25,
+      "endpoints": [
+        "000116.jpg",
+        "000117.jpg"
+      ],
+      "distance": 0.3473755121231079,
+      "rotation_degrees": 2.049696154805149
+    },
+    {
+      "view": "virtual_check_e29_t50",
+      "group": "virtual_check",
+      "edge": 29,
+      "t": 0.5,
+      "endpoints": [
+        "000116.jpg",
+        "000117.jpg"
+      ],
+      "distance": 0.3473755121231079,
+      "rotation_degrees": 2.049696154805149
+    },
+    {
+      "view": "virtual_check_e29_t75",
+      "group": "virtual_check",
+      "edge": 29,
+      "t": 0.75,
+      "endpoints": [
+        "000116.jpg",
+        "000117.jpg"
+      ],
+      "distance": 0.3473755121231079,
+      "rotation_degrees": 2.049696154805149
+    },
+    {
+      "view": "virtual_discovery_e30_t25",
+      "group": "virtual_discovery",
+      "edge": 30,
+      "t": 0.25,
+      "endpoints": [
+        "000119.jpg",
+        "000120.jpg"
+      ],
+      "distance": 0.33321723341941833,
+      "rotation_degrees": 1.4053348098878002
+    },
+    {
+      "view": "virtual_discovery_e30_t50",
+      "group": "virtual_discovery",
+      "edge": 30,
+      "t": 0.5,
+      "endpoints": [
+        "000119.jpg",
+        "000120.jpg"
+      ],
+      "distance": 0.33321723341941833,
+      "rotation_degrees": 1.4053348098878002
+    },
+    {
+      "view": "virtual_discovery_e30_t75",
+      "group": "virtual_discovery",
+      "edge": 30,
+      "t": 0.75,
+      "endpoints": [
+        "000119.jpg",
+        "000120.jpg"
+      ],
+      "distance": 0.33321723341941833,
+      "rotation_degrees": 1.4053348098878002
+    },
+    {
+      "view": "virtual_check_e31_t25",
+      "group": "virtual_check",
+      "edge": 31,
+      "t": 0.25,
+      "endpoints": [
+        "000126.jpg",
+        "000127.jpg"
+      ],
+      "distance": 0.45093318819999695,
+      "rotation_degrees": 2.1375828255524336
+    },
+    {
+      "view": "virtual_check_e31_t50",
+      "group": "virtual_check",
+      "edge": 31,
+      "t": 0.5,
+      "endpoints": [
+        "000126.jpg",
+        "000127.jpg"
+      ],
+      "distance": 0.45093318819999695,
+      "rotation_degrees": 2.1375828255524336
+    },
+    {
+      "view": "virtual_check_e31_t75",
+      "group": "virtual_check",
+      "edge": 31,
+      "t": 0.75,
+      "endpoints": [
+        "000126.jpg",
+        "000127.jpg"
+      ],
+      "distance": 0.45093318819999695,
+      "rotation_degrees": 2.1375828255524336
+    },
+    {
+      "view": "virtual_discovery_e32_t25",
+      "group": "virtual_discovery",
+      "edge": 32,
+      "t": 0.25,
+      "endpoints": [
+        "000133.jpg",
+        "000200.jpg"
+      ],
+      "distance": 0.10409650951623917,
+      "rotation_degrees": 13.825714613340086
+    },
+    {
+      "view": "virtual_discovery_e32_t50",
+      "group": "virtual_discovery",
+      "edge": 32,
+      "t": 0.5,
+      "endpoints": [
+        "000133.jpg",
+        "000200.jpg"
+      ],
+      "distance": 0.10409650951623917,
+      "rotation_degrees": 13.825714613340086
+    },
+    {
+      "view": "virtual_discovery_e32_t75",
+      "group": "virtual_discovery",
+      "edge": 32,
+      "t": 0.75,
+      "endpoints": [
+        "000133.jpg",
+        "000200.jpg"
+      ],
+      "distance": 0.10409650951623917,
+      "rotation_degrees": 13.825714613340086
+    },
+    {
+      "view": "virtual_check_e33_t25",
+      "group": "virtual_check",
+      "edge": 33,
+      "t": 0.25,
+      "endpoints": [
+        "000146.jpg",
+        "000147.jpg"
+      ],
+      "distance": 0.368622362613678,
+      "rotation_degrees": 7.328791855183284
+    },
+    {
+      "view": "virtual_check_e33_t50",
+      "group": "virtual_check",
+      "edge": 33,
+      "t": 0.5,
+      "endpoints": [
+        "000146.jpg",
+        "000147.jpg"
+      ],
+      "distance": 0.368622362613678,
+      "rotation_degrees": 7.328791855183284
+    },
+    {
+      "view": "virtual_check_e33_t75",
+      "group": "virtual_check",
+      "edge": 33,
+      "t": 0.75,
+      "endpoints": [
+        "000146.jpg",
+        "000147.jpg"
+      ],
+      "distance": 0.368622362613678,
+      "rotation_degrees": 7.328791855183284
+    },
+    {
+      "view": "virtual_discovery_e34_t25",
+      "group": "virtual_discovery",
+      "edge": 34,
+      "t": 0.25,
+      "endpoints": [
+        "000155.jpg",
+        "000156.jpg"
+      ],
+      "distance": 0.3459734618663788,
+      "rotation_degrees": 7.823088781976705
+    },
+    {
+      "view": "virtual_discovery_e34_t50",
+      "group": "virtual_discovery",
+      "edge": 34,
+      "t": 0.5,
+      "endpoints": [
+        "000155.jpg",
+        "000156.jpg"
+      ],
+      "distance": 0.3459734618663788,
+      "rotation_degrees": 7.823088781976705
+    },
+    {
+      "view": "virtual_discovery_e34_t75",
+      "group": "virtual_discovery",
+      "edge": 34,
+      "t": 0.75,
+      "endpoints": [
+        "000155.jpg",
+        "000156.jpg"
+      ],
+      "distance": 0.3459734618663788,
+      "rotation_degrees": 7.823088781976705
+    },
+    {
+      "view": "virtual_check_e35_t25",
+      "group": "virtual_check",
+      "edge": 35,
+      "t": 0.25,
+      "endpoints": [
+        "000159.jpg",
+        "000231.jpg"
+      ],
+      "distance": 0.3626798987388611,
+      "rotation_degrees": 11.238051073810212
+    },
+    {
+      "view": "virtual_check_e35_t50",
+      "group": "virtual_check",
+      "edge": 35,
+      "t": 0.5,
+      "endpoints": [
+        "000159.jpg",
+        "000231.jpg"
+      ],
+      "distance": 0.3626798987388611,
+      "rotation_degrees": 11.238051073810212
+    },
+    {
+      "view": "virtual_check_e35_t75",
+      "group": "virtual_check",
+      "edge": 35,
+      "t": 0.75,
+      "endpoints": [
+        "000159.jpg",
+        "000231.jpg"
+      ],
+      "distance": 0.3626798987388611,
+      "rotation_degrees": 11.238051073810212
+    },
+    {
+      "view": "virtual_discovery_e36_t25",
+      "group": "virtual_discovery",
+      "edge": 36,
+      "t": 0.25,
+      "endpoints": [
+        "000163.jpg",
+        "000239.jpg"
+      ],
+      "distance": 0.13399730622768402,
+      "rotation_degrees": 9.803113987456355
+    },
+    {
+      "view": "virtual_discovery_e36_t50",
+      "group": "virtual_discovery",
+      "edge": 36,
+      "t": 0.5,
+      "endpoints": [
+        "000163.jpg",
+        "000239.jpg"
+      ],
+      "distance": 0.13399730622768402,
+      "rotation_degrees": 9.803113987456355
+    },
+    {
+      "view": "virtual_discovery_e36_t75",
+      "group": "virtual_discovery",
+      "edge": 36,
+      "t": 0.75,
+      "endpoints": [
+        "000163.jpg",
+        "000239.jpg"
+      ],
+      "distance": 0.13399730622768402,
+      "rotation_degrees": 9.803113987456355
+    },
+    {
+      "view": "virtual_check_e37_t25",
+      "group": "virtual_check",
+      "edge": 37,
+      "t": 0.25,
+      "endpoints": [
+        "000166.jpg",
+        "000167.jpg"
+      ],
+      "distance": 0.3533982038497925,
+      "rotation_degrees": 1.247870941745243
+    },
+    {
+      "view": "virtual_check_e37_t50",
+      "group": "virtual_check",
+      "edge": 37,
+      "t": 0.5,
+      "endpoints": [
+        "000166.jpg",
+        "000167.jpg"
+      ],
+      "distance": 0.3533982038497925,
+      "rotation_degrees": 1.247870941745243
+    },
+    {
+      "view": "virtual_check_e37_t75",
+      "group": "virtual_check",
+      "edge": 37,
+      "t": 0.75,
+      "endpoints": [
+        "000166.jpg",
+        "000167.jpg"
+      ],
+      "distance": 0.3533982038497925,
+      "rotation_degrees": 1.247870941745243
+    },
+    {
+      "view": "virtual_discovery_e38_t25",
+      "group": "virtual_discovery",
+      "edge": 38,
+      "t": 0.25,
+      "endpoints": [
+        "000174.jpg",
+        "000175.jpg"
+      ],
+      "distance": 0.41434013843536377,
+      "rotation_degrees": 1.6836894347670956
+    },
+    {
+      "view": "virtual_discovery_e38_t50",
+      "group": "virtual_discovery",
+      "edge": 38,
+      "t": 0.5,
+      "endpoints": [
+        "000174.jpg",
+        "000175.jpg"
+      ],
+      "distance": 0.41434013843536377,
+      "rotation_degrees": 1.6836894347670956
+    },
+    {
+      "view": "virtual_discovery_e38_t75",
+      "group": "virtual_discovery",
+      "edge": 38,
+      "t": 0.75,
+      "endpoints": [
+        "000174.jpg",
+        "000175.jpg"
+      ],
+      "distance": 0.41434013843536377,
+      "rotation_degrees": 1.6836894347670956
+    },
+    {
+      "view": "virtual_check_e39_t25",
+      "group": "virtual_check",
+      "edge": 39,
+      "t": 0.25,
+      "endpoints": [
+        "000181.jpg",
+        "000182.jpg"
+      ],
+      "distance": 0.3480929136276245,
+      "rotation_degrees": 14.508738753851382
+    },
+    {
+      "view": "virtual_check_e39_t50",
+      "group": "virtual_check",
+      "edge": 39,
+      "t": 0.5,
+      "endpoints": [
+        "000181.jpg",
+        "000182.jpg"
+      ],
+      "distance": 0.3480929136276245,
+      "rotation_degrees": 14.508738753851382
+    },
+    {
+      "view": "virtual_check_e39_t75",
+      "group": "virtual_check",
+      "edge": 39,
+      "t": 0.75,
+      "endpoints": [
+        "000181.jpg",
+        "000182.jpg"
+      ],
+      "distance": 0.3480929136276245,
+      "rotation_degrees": 14.508738753851382
+    },
+    {
+      "view": "virtual_discovery_e40_t25",
+      "group": "virtual_discovery",
+      "edge": 40,
+      "t": 0.25,
+      "endpoints": [
+        "000188.jpg",
+        "000189.jpg"
+      ],
+      "distance": 0.36229652166366577,
+      "rotation_degrees": 11.203146100400074
+    },
+    {
+      "view": "virtual_discovery_e40_t50",
+      "group": "virtual_discovery",
+      "edge": 40,
+      "t": 0.5,
+      "endpoints": [
+        "000188.jpg",
+        "000189.jpg"
+      ],
+      "distance": 0.36229652166366577,
+      "rotation_degrees": 11.203146100400074
+    },
+    {
+      "view": "virtual_discovery_e40_t75",
+      "group": "virtual_discovery",
+      "edge": 40,
+      "t": 0.75,
+      "endpoints": [
+        "000188.jpg",
+        "000189.jpg"
+      ],
+      "distance": 0.36229652166366577,
+      "rotation_degrees": 11.203146100400074
+    },
+    {
+      "view": "virtual_check_e41_t25",
+      "group": "virtual_check",
+      "edge": 41,
+      "t": 0.25,
+      "endpoints": [
+        "000195.jpg",
+        "000196.jpg"
+      ],
+      "distance": 0.3188222646713257,
+      "rotation_degrees": 5.405069530589711
+    },
+    {
+      "view": "virtual_check_e41_t50",
+      "group": "virtual_check",
+      "edge": 41,
+      "t": 0.5,
+      "endpoints": [
+        "000195.jpg",
+        "000196.jpg"
+      ],
+      "distance": 0.3188222646713257,
+      "rotation_degrees": 5.405069530589711
+    },
+    {
+      "view": "virtual_check_e41_t75",
+      "group": "virtual_check",
+      "edge": 41,
+      "t": 0.75,
+      "endpoints": [
+        "000195.jpg",
+        "000196.jpg"
+      ],
+      "distance": 0.3188222646713257,
+      "rotation_degrees": 5.405069530589711
+    },
+    {
+      "view": "virtual_discovery_e42_t25",
+      "group": "virtual_discovery",
+      "edge": 42,
+      "t": 0.25,
+      "endpoints": [
+        "000202.jpg",
+        "000203.jpg"
+      ],
+      "distance": 0.14933454990386963,
+      "rotation_degrees": 14.928883662137117
+    },
+    {
+      "view": "virtual_discovery_e42_t50",
+      "group": "virtual_discovery",
+      "edge": 42,
+      "t": 0.5,
+      "endpoints": [
+        "000202.jpg",
+        "000203.jpg"
+      ],
+      "distance": 0.14933454990386963,
+      "rotation_degrees": 14.928883662137117
+    },
+    {
+      "view": "virtual_discovery_e42_t75",
+      "group": "virtual_discovery",
+      "edge": 42,
+      "t": 0.75,
+      "endpoints": [
+        "000202.jpg",
+        "000203.jpg"
+      ],
+      "distance": 0.14933454990386963,
+      "rotation_degrees": 14.928883662137117
+    },
+    {
+      "view": "virtual_check_e43_t25",
+      "group": "virtual_check",
+      "edge": 43,
+      "t": 0.25,
+      "endpoints": [
+        "000218.jpg",
+        "000219.jpg"
+      ],
+      "distance": 0.292122483253479,
+      "rotation_degrees": 2.49673620613582
+    },
+    {
+      "view": "virtual_check_e43_t50",
+      "group": "virtual_check",
+      "edge": 43,
+      "t": 0.5,
+      "endpoints": [
+        "000218.jpg",
+        "000219.jpg"
+      ],
+      "distance": 0.292122483253479,
+      "rotation_degrees": 2.49673620613582
+    },
+    {
+      "view": "virtual_check_e43_t75",
+      "group": "virtual_check",
+      "edge": 43,
+      "t": 0.75,
+      "endpoints": [
+        "000218.jpg",
+        "000219.jpg"
+      ],
+      "distance": 0.292122483253479,
+      "rotation_degrees": 2.49673620613582
+    },
+    {
+      "view": "virtual_discovery_e44_t25",
+      "group": "virtual_discovery",
+      "edge": 44,
+      "t": 0.25,
+      "endpoints": [
+        "000226.jpg",
+        "000227.jpg"
+      ],
+      "distance": 0.4576904773712158,
+      "rotation_degrees": 9.599954004830995
+    },
+    {
+      "view": "virtual_discovery_e44_t50",
+      "group": "virtual_discovery",
+      "edge": 44,
+      "t": 0.5,
+      "endpoints": [
+        "000226.jpg",
+        "000227.jpg"
+      ],
+      "distance": 0.4576904773712158,
+      "rotation_degrees": 9.599954004830995
+    },
+    {
+      "view": "virtual_discovery_e44_t75",
+      "group": "virtual_discovery",
+      "edge": 44,
+      "t": 0.75,
+      "endpoints": [
+        "000226.jpg",
+        "000227.jpg"
+      ],
+      "distance": 0.4576904773712158,
+      "rotation_degrees": 9.599954004830995
+    },
+    {
+      "view": "virtual_check_e45_t25",
+      "group": "virtual_check",
+      "edge": 45,
+      "t": 0.25,
+      "endpoints": [
+        "000231.jpg",
+        "000232.jpg"
+      ],
+      "distance": 0.31550803780555725,
+      "rotation_degrees": 14.837280585532657
+    },
+    {
+      "view": "virtual_check_e45_t50",
+      "group": "virtual_check",
+      "edge": 45,
+      "t": 0.5,
+      "endpoints": [
+        "000231.jpg",
+        "000232.jpg"
+      ],
+      "distance": 0.31550803780555725,
+      "rotation_degrees": 14.837280585532657
+    },
+    {
+      "view": "virtual_check_e45_t75",
+      "group": "virtual_check",
+      "edge": 45,
+      "t": 0.75,
+      "endpoints": [
+        "000231.jpg",
+        "000232.jpg"
+      ],
+      "distance": 0.31550803780555725,
+      "rotation_degrees": 14.837280585532657
+    },
+    {
+      "view": "virtual_discovery_e46_t25",
+      "group": "virtual_discovery",
+      "edge": 46,
+      "t": 0.25,
+      "endpoints": [
+        "000236.jpg",
+        "000237.jpg"
+      ],
+      "distance": 0.12025115638971329,
+      "rotation_degrees": 10.759735519212715
+    },
+    {
+      "view": "virtual_discovery_e46_t50",
+      "group": "virtual_discovery",
+      "edge": 46,
+      "t": 0.5,
+      "endpoints": [
+        "000236.jpg",
+        "000237.jpg"
+      ],
+      "distance": 0.12025115638971329,
+      "rotation_degrees": 10.759735519212715
+    },
+    {
+      "view": "virtual_discovery_e46_t75",
+      "group": "virtual_discovery",
+      "edge": 46,
+      "t": 0.75,
+      "endpoints": [
+        "000236.jpg",
+        "000237.jpg"
+      ],
+      "distance": 0.12025115638971329,
+      "rotation_degrees": 10.759735519212715
+    },
+    {
+      "view": "virtual_check_e47_t25",
+      "group": "virtual_check",
+      "edge": 47,
+      "t": 0.25,
+      "endpoints": [
+        "000250.jpg",
+        "000251.jpg"
+      ],
+      "distance": 0.11828570067882538,
+      "rotation_degrees": 3.7180485393229854
+    },
+    {
+      "view": "virtual_check_e47_t50",
+      "group": "virtual_check",
+      "edge": 47,
+      "t": 0.5,
+      "endpoints": [
+        "000250.jpg",
+        "000251.jpg"
+      ],
+      "distance": 0.11828570067882538,
+      "rotation_degrees": 3.7180485393229854
+    },
+    {
+      "view": "virtual_check_e47_t75",
+      "group": "virtual_check",
+      "edge": 47,
+      "t": 0.75,
+      "endpoints": [
+        "000250.jpg",
+        "000251.jpg"
+      ],
+      "distance": 0.11828570067882538,
+      "rotation_degrees": 3.7180485393229854
+    }
+  ],
+  "scene_extent": 5.847915172576904,
+  "seed": 20261022
+}

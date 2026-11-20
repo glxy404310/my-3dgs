@@ -1,0 +1,10 @@
+{
+  "started_UTC": "2026-10-22T21:30:07.3428128Z",
+  "finished_UTC": "2026-10-22T21:31:26.3845268Z",
+  "exit_code": 0,
+  "actual_host_wall_seconds": 79.0357449,
+  "hard_limit_seconds": 900,
+  "within_900_seconds": true,
+  "attempts": 1,
+  "scope": "One official corrected PUP frozen219 score/export; zero parameter updates"
+}

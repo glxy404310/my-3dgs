@@ -1,0 +1,503 @@
+[2610.17605] PLEDGE: Progressive Lossy Error-Bounded Compression of 3D Gaussian Splatting (https://arxiv.org/abs/2610.17605)
+citeturn67view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/abs/2610.17605","lineno":null}); Total lines: 165
+L0: 【0†Search】 【1†Submit】 【2†Donate†info.arxiv.org】 【3†Log in】
+L1: 
+L2: Search arXiv [Input: Search papers by title, author, abstract, or ID...] [Input] [Input]
+L3: 
+L4: Press Enter to search · 【4†Advanced search】
+L5: 
+L6: # Computer Science > Computer Vision and Pattern Recognition
+L7: 
+L8: [Submitted on 13 Oct 2026]
+L9: # Title:PLEDGE: Progressive Lossy Error-Bounded Compression of 3D Gaussian Splatting
+L10: 
+L11: Authors:【5†Mingze Xia】, 【6†Yuxiao Li】, 【7†Baixi Sun】, 【8†Wenbo Li】, 【9†Pu Jiao】, 【10†Sheng Di】, 【11†Franck Cappello】, 【12†Hanqi Guo】, 【13†Xin Liang】
+L12: 
+L13: View a PDF of the paper titled PLEDGE: Progressive Lossy Error-Bounded Compression of 3D Gaussian Splatting, by Mingze Xia and 8 other authors
+L14: 
+L15: 【14†View PDF】 【15†HTML (experimental)】
+L16: > Abstract:Existing 3D Gaussian Splatting (3DGS) codecs report reconstruction quality after compression, and give users little control over the distortion of individual primitives. We present PLEDGE, a training-free, progressive, error-bounded codec that translates four user-declared tolerances into per-primitive quantization bounds: screen-space position, footprint deformation due to rotation and scale, view-dependent color, and opacity.
+L17: The bounds apply throughout a declared camera domain, including previously unseen viewpoints. Position and opacity are bounded directly; footprint deformation is bounded under the rasterizer's affine projection model, and color is bounded over all viewing directions. PLEDGE organizes quantized residuals into a progressive bitstream with explicit error bounds for every valid prefix.
+L18: Experiments across thirteen scenes verify all declared per-mechanism bounds and demonstrate competitive rate-distortion performance. The four tolerances incur substantially different rate costs, so users can spend rate where their application needs it.
+L19: Subjects:  | Computer Vision and Pattern Recognition (cs.CV)
+L20: Cite as:  | 【16†arXiv:2610.17605】 [cs.CV]
+L21:    | (or 【17†arXiv:2610.17605v1】 [cs.CV] for this version)
+L22:    | 【18†https://doi.org/10.48550/arXiv.2610.17605†doi.org】 arXiv-issued DOI via DataCite
+L23: ## Submission history
+L24: 
+L25: From: Mingze Xia [【19†view email】]
+L26: [v1] Tue, 13 Oct 2026 02:25:08 UTC (4,033 KB)
+L27: 
+L28: Full-text links:
+L29: 
+L30: ## Access Paper:
+L31: 
+L32: View a PDF of the paper titled PLEDGE: Progressive Lossy Error-Bounded Compression of 3D Gaussian Splatting, by Mingze Xia and 8 other authors
+L33: 
+L34:   * 【14†View PDF】
+L35:   * 【15†HTML (experimental)】
+L36:   * 【20†TeX Source】
+L37: 
+L38: 【21†view license】
+L39: 
+L40: ### Additional Features
+L41: 
+L42:   * 【22†Audio Summary】
+L43: ### Current browse context:
+L44: 
+L45: cs.CV
+L46: 
+L47: 【23†< prev】   |   【24†next >】
+L48: 
+L49: 【25†new】 | 【26†recent】 | 【27†2026-10】
+L50: 
+L51: Change to browse by:
+L52: 
+L53: 【28†cs】
+L54: 
+L55: ### References & Citations
+L56: 
+L57:   * 【29†SciX†scixplorer.org】
+L58:   * 【30†Google Scholar†scholar.google.com】
+L59:   * 【31†Semantic Scholar†api.semanticscholar.org】
+L60: 
+L61: [Button: export BibTeX citation] Loading...
+L62: 
+L63: ## BibTeX formatted citation
+L64: 
+L65: [Button: ×]
+L66: 
+L67: loading...
+L68: 
+L69: Data provided by:
+L70: 
+L71: ### Bookmark
+L72: 
+L73: [Input] Bibliographic Tools
+L74: # Bibliographic and Citation Tools
+L75: 
+L76: [Input] Bibliographic Explorer Toggle
+L77: 
+L78: Bibliographic Explorer (【32†What is the Explorer?†info.arxiv.org】)
+L79: 
+L80: [Input] Connected Papers Toggle
+L81: 
+L82: Connected Papers (【33†What is Connected Papers?†www.connectedpapers.com】)
+L83: 
+L84: [Input] Litmaps Toggle
+L85: 
+L86: Litmaps (【34†What is Litmaps?†www.litmaps.co】)
+L87: 
+L88: [Input] scite.ai Toggle
+L89: 
+L90: scite Smart Citations (【35†What are Smart Citations?†www.scite.ai】)
+L91: 
+L92: [Input] Code, Data, Media
+L93: # Code, Data and Media Associated with this Article
+L94: 
+L95: [Input] alphaXiv Toggle
+L96: 
+L97: alphaXiv (【36†What is alphaXiv?†alphaxiv.org】)
+L98: 
+L99: [Input] Links to Code Toggle
+L100: 
+L101: CatalyzeX Code Finder for Papers (【37†What is CatalyzeX?†www.catalyzex.com】)
+L102: 
+L103: [Input] DagsHub Toggle
+L104: 
+L105: DagsHub (【38†What is DagsHub?†dagshub.com】)
+L106: 
+L107: [Input] GotitPub Toggle
+L108: 
+L109: Gotit.pub (【39†What is GotitPub?†gotit.pub】)
+L110: 
+L111: [Input] Huggingface Toggle
+L112: 
+L113: Hugging Face (【40†What is Huggingface?†huggingface.co】)
+L114: 
+L115: [Input] ScienceCast Toggle
+L116: ScienceCast (【41†What is ScienceCast?†sciencecast.org】)
+L117: 
+L118: [Input] Demos
+L119: # Demos
+L120: 
+L121: [Input] Replicate Toggle
+L122: 
+L123: Replicate (【42†What is Replicate?†replicate.com】)
+L124: 
+L125: [Input] Spaces Toggle
+L126: 
+L127: Hugging Face Spaces (【43†What is Spaces?†huggingface.co】)
+L128: 
+L129: [Input] Spaces Toggle
+L130: 
+L131: TXYZ.AI (【44†What is TXYZ.AI?†txyz.ai】)
+L132: 
+L133: [Input] Related Papers
+L134: # Recommenders and Search Tools
+L135: 
+L136: [Input] Link to Influence Flower
+L137: 
+L138: Influence Flower (【45†What are Influence Flowers?†influencemap.cmlab.dev】)
+L139: 
+L140: [Input] Core recommender toggle
+L141: 
+L142: CORE Recommender (【46†What is CORE?†core.ac.uk】)
+L143: 
+L144:   * Author
+L145:   * Venue
+L146:   * Institution
+L147:   * Topic
+L148: 
+L149: [Input] About arXivLabs
+L150: # arXivLabs: experimental projects with community collaborators
+L151: 
+L152: arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.
+L153: 
+L154: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.
+L155: Have an idea for a project that will add value for arXiv's community? 【47†Learn more about arXivLabs†info.arxiv.org】.
+L156: 
+L157: 【48†Which authors of this paper are endorsers?】 | Disable MathJax (【49†What is MathJax?†info.arxiv.org】)
+L158: 
+L159: We gratefully acknowledge support from our major funders, 【50†member institutions†info.arxiv.org】, , and all contributors.
+L160: 【51†About†info.arxiv.org】 · 【52†Help†info.arxiv.org】 · 【53†Contact†info.arxiv.org】 · 【54†Subscribe†info.arxiv.org】 · 【55†Copyright†info.arxiv.org】 · 【56†Privacy†info.arxiv.org】 · 【57†Accessibility†info.arxiv.org】 · 【58†Operational Status (opens in new tab)†status.arxiv.org】
+L161: 
+L162: Major funding support from
+L163: 
+L164: 【59†(opens in new tab)†www.simonsfoundation.org】 【60†(opens in new tab)†www.sfi.org.bm】 【61†(opens in new tab)†www.schmidtsciences.org】
+--------------------------------------------------------------------------------
+[2610.13503] SplatQ: Interaction-Aware Pruning of 3D Gaussian Splatting via Quadratic Selection (https://arxiv.org/abs/2610.13503)
+citeturn67view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/abs/2610.13503","lineno":null}); Total lines: 167
+L0: 【0†Search】 【1†Submit】 【2†Donate†info.arxiv.org】 【3†Log in】
+L1: 
+L2: Search arXiv [Input: Search papers by title, author, abstract, or ID...] [Input] [Input]
+L3: 
+L4: Press Enter to search · 【4†Advanced search】
+L5: 
+L6: # Computer Science > Computer Vision and Pattern Recognition
+L7: 
+L8: [Submitted on 9 Oct 2026]
+L9: # Title:SplatQ: Interaction-Aware Pruning of 3D Gaussian Splatting via Quadratic Selection
+L10: 
+L11: Authors:【5†Hongbin Ye】, 【6†Haixu Liu】, 【7†Shenwei Kang】, 【8†Wenxiu Wei】, 【9†Tinglan Wang】, 【10†Hongdong Zhu】, 【11†Fan Tang】, 【12†Qi Gao】, 【13†Yin Ma】, 【14†Kai Wen】, 【15†Hai Wei】, 【16†Nuo Qian】, 【17†Wei-Shi Zheng】, 【18†Shaobo Chen】, 【19†Fa-Ting Hong】, 【20†Jingke Meng】
+L12: 
+L13: View a PDF of the paper titled SplatQ: Interaction-Aware Pruning of 3D Gaussian Splatting via Quadratic Selection, by Hongbin Ye and 15 other authors
+L14: 【21†View PDF】 【22†HTML (experimental)】
+L15: > Abstract:Existing 3D Gaussian Splatting (3DGS) pruning methods primarily rely on global Top-K selection based on independent importance scores, lacking regional budget control and ignoring joint deletion effects. Consequently, they cannot ensure balanced reconstruction quality across a scene. We propose SplatQ, a combinatorial pruning algorithm that coordinates regional budget allocation and joint Gaussian selection under a fixed budget.
+L16: SplatQ partitions Gaussians by spatial proximity and appearance similarity into size-limited blocks, decomposing global selection into subproblems of a specific size. It then smooths importance-based block retention quotas to prevent excessive budget concentration. Finally, it constructs a quadratic approximation of joint deletion effects using the responses of representative pixel colors to changes in Gaussian opacity.
+L17: Individual responses, pairwise interactions, and quota penalties are incorporated into a quadratic unconstrained binary optimization (QUBO) objective, solved using simulated annealing (SA) or a coherent Ising machine (CIM) to jointly select Gaussians. Experiments on 5 benchmarks demonstrate that SplatQ outperforms state-of-the-art pruning methods in aggregate reconstruction quality, spatial quality balance, and rendering speed.
+L18: Ablations confirm that budget smoothing improves local detail reconstruction, while interaction modeling improves Gaussian selection quality under a fixed budget.
+L19: Comments:  | Under review at ICLR 2027 (main paper 9 pages, 5 figures, 2 tables; appendix included)
+L20: Subjects:  | Computer Vision and Pattern Recognition (cs.CV); Graphics (cs.GR)
+L21: Cite as:  | 【23†arXiv:2610.13503】 [cs.CV]
+L22:    | (or 【24†arXiv:2610.13503v1】 [cs.CV] for this version)
+L23:    | 【25†https://doi.org/10.48550/arXiv.2610.13503†doi.org】 arXiv-issued DOI via DataCite
+L24: ## Submission history
+L25: 
+L26: From: Hongbin Ye [【26†view email】]
+L27: [v1] Fri, 9 Oct 2026 12:30:13 UTC (45,879 KB)
+L28: 
+L29: Full-text links:
+L30: 
+L31: ## Access Paper:
+L32: 
+L33: View a PDF of the paper titled SplatQ: Interaction-Aware Pruning of 3D Gaussian Splatting via Quadratic Selection, by Hongbin Ye and 15 other authors
+L34: 
+L35:   * 【21†View PDF】
+L36:   * 【22†HTML (experimental)】
+L37:   * 【27†TeX Source】
+L38: 
+L39: 【28†view license†creativecommons.org】
+L40: 
+L41: ### Additional Features
+L42: 
+L43:   * 【29†Audio Summary】
+L44: ### Current browse context:
+L45: 
+L46: cs.CV
+L47: 
+L48: 【30†< prev】   |   【31†next >】
+L49: 
+L50: 【32†new】 | 【33†recent】 | 【34†2026-10】
+L51: 
+L52: Change to browse by:
+L53: 
+L54: 【35†cs】
+L55: 【36†cs.GR】
+L56: 
+L57: ### References & Citations
+L58: 
+L59:   * 【37†SciX†scixplorer.org】
+L60:   * 【38†Google Scholar†scholar.google.com】
+L61:   * 【39†Semantic Scholar†api.semanticscholar.org】
+L62: 
+L63: [Button: export BibTeX citation] Loading...
+L64: 
+L65: ## BibTeX formatted citation
+L66: 
+L67: [Button: ×]
+L68: 
+L69: loading...
+L70: 
+L71: Data provided by:
+L72: 
+L73: ### Bookmark
+L74: 
+L75: [Input] Bibliographic Tools
+L76: # Bibliographic and Citation Tools
+L77: 
+L78: [Input] Bibliographic Explorer Toggle
+L79: 
+L80: Bibliographic Explorer (【40†What is the Explorer?†info.arxiv.org】)
+L81: 
+L82: [Input] Connected Papers Toggle
+L83: 
+L84: Connected Papers (【41†What is Connected Papers?†www.connectedpapers.com】)
+L85: 
+L86: [Input] Litmaps Toggle
+L87: 
+L88: Litmaps (【42†What is Litmaps?†www.litmaps.co】)
+L89: 
+L90: [Input] scite.ai Toggle
+L91: 
+L92: scite Smart Citations (【43†What are Smart Citations?†www.scite.ai】)
+L93: 
+L94: [Input] Code, Data, Media
+L95: # Code, Data and Media Associated with this Article
+L96: 
+L97: [Input] alphaXiv Toggle
+L98: 
+L99: alphaXiv (【44†What is alphaXiv?†alphaxiv.org】)
+L100: 
+L101: [Input] Links to Code Toggle
+L102: 
+L103: CatalyzeX Code Finder for Papers (【45†What is CatalyzeX?†www.catalyzex.com】)
+L104: 
+L105: [Input] DagsHub Toggle
+L106: 
+L107: DagsHub (【46†What is DagsHub?†dagshub.com】)
+L108: 
+L109: [Input] GotitPub Toggle
+L110: 
+L111: Gotit.pub (【47†What is GotitPub?†gotit.pub】)
+L112: 
+L113: [Input] Huggingface Toggle
+L114: 
+L115: Hugging Face (【48†What is Huggingface?†huggingface.co】)
+L116: 
+L117: [Input] ScienceCast Toggle
+L118: ScienceCast (【49†What is ScienceCast?†sciencecast.org】)
+L119: 
+L120: [Input] Demos
+L121: # Demos
+L122: 
+L123: [Input] Replicate Toggle
+L124: 
+L125: Replicate (【50†What is Replicate?†replicate.com】)
+L126: 
+L127: [Input] Spaces Toggle
+L128: 
+L129: Hugging Face Spaces (【51†What is Spaces?†huggingface.co】)
+L130: 
+L131: [Input] Spaces Toggle
+L132: 
+L133: TXYZ.AI (【52†What is TXYZ.AI?†txyz.ai】)
+L134: 
+L135: [Input] Related Papers
+L136: # Recommenders and Search Tools
+L137: 
+L138: [Input] Link to Influence Flower
+L139: 
+L140: Influence Flower (【53†What are Influence Flowers?†influencemap.cmlab.dev】)
+L141: 
+L142: [Input] Core recommender toggle
+L143: 
+L144: CORE Recommender (【54†What is CORE?†core.ac.uk】)
+L145: 
+L146:   * Author
+L147:   * Venue
+L148:   * Institution
+L149:   * Topic
+L150: 
+L151: [Input] About arXivLabs
+L152: # arXivLabs: experimental projects with community collaborators
+L153: 
+L154: arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.
+L155: 
+L156: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.
+L157: Have an idea for a project that will add value for arXiv's community? 【55†Learn more about arXivLabs†info.arxiv.org】.
+L158: 
+L159: 【56†Which authors of this paper are endorsers?】 | Disable MathJax (【57†What is MathJax?†info.arxiv.org】)
+L160: 
+L161: We gratefully acknowledge support from our major funders, 【58†member institutions†info.arxiv.org】, , and all contributors.
+L162: 【59†About†info.arxiv.org】 · 【60†Help†info.arxiv.org】 · 【61†Contact†info.arxiv.org】 · 【62†Subscribe†info.arxiv.org】 · 【63†Copyright†info.arxiv.org】 · 【64†Privacy†info.arxiv.org】 · 【65†Accessibility†info.arxiv.org】 · 【66†Operational Status (opens in new tab)†status.arxiv.org】
+L163: 
+L164: Major funding support from
+L165: 
+L166: 【67†(opens in new tab)†www.simonsfoundation.org】 【68†(opens in new tab)†www.sfi.org.bm】 【69†(opens in new tab)†www.schmidtsciences.org】
+--------------------------------------------------------------------------------
+[2609.05255] Compact Neural Appearance Models for Efficient Gaussian Splatting (https://arxiv.org/abs/2609.05255)
+citeturn67view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/abs/2609.05255","lineno":null}); Total lines: 162
+L0: 【0†Search】 【1†Submit】 【2†Donate†info.arxiv.org】 【3†Log in】
+L1: 
+L2: Search arXiv [Input: Search papers by title, author, abstract, or ID...] [Input] [Input]
+L3: 
+L4: Press Enter to search · 【4†Advanced search】
+L5: 
+L6: # Computer Science > Computer Vision and Pattern Recognition
+L7: 
+L8: [Submitted on 4 Sep 2026]
+L9: # Title:Compact Neural Appearance Models for Efficient Gaussian Splatting
+L10: 
+L11: Authors:【5†Florian Hahlbohm】, 【6†Jorge Condor】, 【7†Linus Franke】, 【8†Martin Eisemann】, 【9†Marcus Magnor】
+L12: 
+L13: View a PDF of the paper titled Compact Neural Appearance Models for Efficient Gaussian Splatting, by Florian Hahlbohm and 4 other authors
+L14: 
+L15: 【10†View PDF】 【11†HTML (experimental)】
+L16: > Abstract:Explicit primitive-based radiance fields such as 3D Gaussian Splatting typically model view-dependent appearance using low-order spherical harmonics (SH). Although efficient to evaluate, SH coefficients dominate per-primitive storage and memory traffic, while their band-limited basis restricts angular detail.
+L17: We present a thorough, end-to-end comparison of SH and recent spherical appearance models and introduce an implicit alternative that decodes compact per-primitive latent codes using a tiny shared MLP. We integrate all models into the same optimized pipeline, fusing their forward and backward passes into a differentiable CUDA rasterizer and provide a portable WebGL viewer for laptop and mobile GPUs.
+L18: Our evaluation across reconstruction quality, memory use, and optimization and rendering performance shows that recent spherical models offer the strongest overall quality-efficiency trade-off. Our neural representation is the most compact model evaluated and, compared to third-degree SH, reduces the per-primitive appearance footprint from 192 to 28 bytes, accelerates optimization by 1.3$\times$, while improving reconstruction quality.
+L19: We further analyze how appearance parametrization shapes optimization, identifying differences in recovered geometry and the tendency of expressive models to absorb non-static scene content. Together, our framework and analysis provide practical guidance for replacing SH beyond what image metrics alone can capture.
+L20: Comments:  | Project page: 【12†this https URL†fhahlbohm.github.io】
+L21: Subjects:  | Computer Vision and Pattern Recognition (cs.CV); Graphics (cs.GR)
+L22: Cite as:  | 【13†arXiv:2609.05255】 [cs.CV]
+L23:    | (or 【14†arXiv:2609.05255v1】 [cs.CV] for this version)
+L24:    | 【15†https://doi.org/10.48550/arXiv.2609.05255†doi.org】 arXiv-issued DOI via DataCite
+L25: ## Submission history
+L26: 
+L27: From: Florian Hahlbohm [【16†view email】]
+L28: [v1] Fri, 4 Sep 2026 15:18:54 UTC (31,180 KB)
+L29: 
+L30: Full-text links:
+L31: 
+L32: ## Access Paper:
+L33: 
+L34: View a PDF of the paper titled Compact Neural Appearance Models for Efficient Gaussian Splatting, by Florian Hahlbohm and 4 other authors
+L35: 
+L36:   * 【10†View PDF】
+L37:   * 【11†HTML (experimental)】
+L38:   * 【17†TeX Source】
+L39: 
+L40: 【18†view license】
+L41: ### Current browse context:
+L42: 
+L43: cs.CV
+L44: 
+L45: 【19†< prev】   |   【20†next >】
+L46: 
+L47: 【21†new】 | 【22†recent】 | 【23†2026-09】
+L48: 
+L49: Change to browse by:
+L50: 
+L51: 【24†cs】
+L52: 【25†cs.GR】
+L53: 
+L54: ### References & Citations
+L55: 
+L56:   * 【26†NASA ADS†ui.adsabs.harvard.edu】
+L57:   * 【27†Google Scholar†scholar.google.com】
+L58:   * 【28†Semantic Scholar†api.semanticscholar.org】
+L59: 
+L60: [Button: export BibTeX citation] Loading...
+L61: 
+L62: ## BibTeX formatted citation
+L63: 
+L64: [Button: ×]
+L65: 
+L66: loading...
+L67: 
+L68: Data provided by:
+L69: 
+L70: ### Bookmark
+L71: 
+L72: [Input] Bibliographic Tools
+L73: # Bibliographic and Citation Tools
+L74: 
+L75: [Input] Bibliographic Explorer Toggle
+L76: 
+L77: Bibliographic Explorer (【29†What is the Explorer?†info.arxiv.org】)
+L78: 
+L79: [Input] Connected Papers Toggle
+L80: 
+L81: Connected Papers (【30†What is Connected Papers?†www.connectedpapers.com】)
+L82: 
+L83: [Input] Litmaps Toggle
+L84: 
+L85: Litmaps (【31†What is Litmaps?†www.litmaps.co】)
+L86: 
+L87: [Input] scite.ai Toggle
+L88: 
+L89: scite Smart Citations (【32†What are Smart Citations?†www.scite.ai】)
+L90: 
+L91: [Input] Code, Data, Media
+L92: # Code, Data and Media Associated with this Article
+L93: 
+L94: [Input] alphaXiv Toggle
+L95: 
+L96: alphaXiv (【33†What is alphaXiv?†alphaxiv.org】)
+L97: 
+L98: [Input] Links to Code Toggle
+L99: 
+L100: CatalyzeX Code Finder for Papers (【34†What is CatalyzeX?†www.catalyzex.com】)
+L101: 
+L102: [Input] DagsHub Toggle
+L103: 
+L104: DagsHub (【35†What is DagsHub?†dagshub.com】)
+L105: 
+L106: [Input] GotitPub Toggle
+L107: 
+L108: Gotit.pub (【36†What is GotitPub?†gotit.pub】)
+L109: 
+L110: [Input] Huggingface Toggle
+L111: 
+L112: Hugging Face (【37†What is Huggingface?†huggingface.co】)
+L113: 
+L114: [Input] ScienceCast Toggle
+L115: ScienceCast (【38†What is ScienceCast?†sciencecast.org】)
+L116: 
+L117: [Input] Demos
+L118: # Demos
+L119: 
+L120: [Input] Replicate Toggle
+L121: 
+L122: Replicate (【39†What is Replicate?†replicate.com】)
+L123: 
+L124: [Input] Spaces Toggle
+L125: 
+L126: Hugging Face Spaces (【40†What is Spaces?†huggingface.co】)
+L127: 
+L128: [Input] Spaces Toggle
+L129: 
+L130: TXYZ.AI (【41†What is TXYZ.AI?†txyz.ai】)
+L131: 
+L132: [Input] Related Papers
+L133: # Recommenders and Search Tools
+L134: 
+L135: [Input] Link to Influence Flower
+L136: 
+L137: Influence Flower (【42†What are Influence Flowers?†influencemap.cmlab.dev】)
+L138: 
+L139: [Input] Core recommender toggle
+L140: 
+L141: CORE Recommender (【43†What is CORE?†core.ac.uk】)
+L142: 
+L143:   * Author
+L144:   * Venue
+L145:   * Institution
+L146:   * Topic
+L147: 
+L148: [Input] About arXivLabs
+L149: # arXivLabs: experimental projects with community collaborators
+L150: 
+L151: arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.
+L152: 
+L153: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.
+L154: Have an idea for a project that will add value for arXiv's community? 【44†Learn more about arXivLabs†info.arxiv.org】.
+L155: 
+L156: 【45†Which authors of this paper are endorsers?】 | Disable MathJax (【46†What is MathJax?†info.arxiv.org】)
+L157: 
+L158: We gratefully acknowledge support from our major funders, 【47†member institutions†info.arxiv.org】, , and all contributors.
+L159: 【48†About†info.arxiv.org】 · 【49†Help†info.arxiv.org】 · 【50†Contact†info.arxiv.org】 · 【51†Subscribe†info.arxiv.org】 · 【52†Copyright†info.arxiv.org】 · 【53†Privacy†info.arxiv.org】 · 【54†Accessibility†info.arxiv.org】 · 【55†Operational Status (opens in new tab)†status.arxiv.org】
+L160: 
+L161: Major funding support from
+

@@ -1,0 +1,23 @@
+{
+  "call_number": 67,
+  "purpose": "speedy-fresh-doc-witness",
+  "timestamp": "2026-10-22T22:28:32.217Z",
+  "agent_path": "/root/speedy_fresh_doc_witness",
+  "agent_id": "01a165ba-ef60-7130-850b-2aa914f1e981",
+  "model": "inherited_root_not_separately_queried",
+  "model_provenance": "No model/effort override on fresh fork-none agent",
+  "status": "ok_actual_doc_follow",
+  "review_independence": "same-family",
+  "acceptance_status": "synthetic_tool_scope_only_not_research_acceptance",
+  "prompt_provenance": "Verbatim originating public root spawn arguments",
+  "response_provenance": "Only public assistant final_answer; no hidden reasoning/encrypted fields accessed",
+  "session_log": "C:\\Users\\Administrator\\.codex\\sessions\\2026\\10\\23\\rollout-2026-10-23T06-28-32-01a165ba-ef60-7130-850b-2aa914f1e981.jsonl",
+  "actual": {
+    "tool_exit": 0,
+    "chunk": "a9c20a",
+    "external_wall_seconds": 4.5387741,
+    "forward_calls": 3,
+    "backward_calls": 0,
+    "updates": 0
+  }
+}

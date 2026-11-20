@@ -1,0 +1,14 @@
+{
+  "status": "SH8_NATIVE_STORAGE_CONTROL_EVALUATED_AUDIT_PENDING",
+  "automatic_retries": 0,
+  "main_external_limit_seconds": 200,
+  "audit_external_limit_seconds": 100,
+  "combined_external_limit_seconds": 300,
+  "host_RSS_limit_bytes": 10737418240,
+  "gpu_allocated_limit_bytes": 4294967296,
+  "worker_exit_code": 0,
+  "main_internal_wall_seconds": 64.09208967100001,
+  "peak_sampled_combined_host_RSS_bytes": 2922979328,
+  "supervisor_torch_imported": false,
+  "external_wall_measurement": "Root must save actual main and independent CPU audit host walls; review waiting excluded"
+}

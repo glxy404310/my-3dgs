@@ -1,0 +1,12 @@
+{
+  "call_number": 32,
+  "purpose": "frozen-request-verify",
+  "timestamp": "2026-10-22T18:51:48.084Z",
+  "tool": "spawn_agent",
+  "model": "inherited-primary",
+  "fork_turns": "all",
+  "prompt": "当前用户只要求 Truck 30k 冻结压缩诊断、确认校准之外退化、并排展示最差教师/压缩图、不训练。请独立只读核验 research/experiments/truck30k-frozen-compression-v0/run-v1 METRICS.csv/CONFIG.json/RESULTS.json 及 review-20261023/PROVENANCE.json：重算五组统计与预定门槛，确认全局最差真实非校准000016与留出最差000017/000009，报告其PSNR/SSIM/MSE及校准成员身份。核查现有图片路径、文件存在、教师/学生列顺序。禁止训练、渲染、改历史文件、跑其他候选。不需要新大报告，给出具体数值和证据即可。",
+  "prompt_source": "exact invocation text transcribed by executor; stored session argument is encrypted",
+  "root_session_log": "/mnt/c/Users/Administrator/.codex/sessions/2026/10/22/rollout-2026-10-22T11-58-49-01a161c2-f47e-7b32-a425-d3a7067b3684.jsonl",
+  "stored_call_arguments_sha256": "2a43309eb8c2252b3ab295a4086f0bcb1c4c3dc8e4cfb5e47c5a02279d2e0948"
+}

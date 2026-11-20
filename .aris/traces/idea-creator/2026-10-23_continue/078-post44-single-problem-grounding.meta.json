@@ -1,0 +1,10 @@
+{
+  "agent_path": "/root/post44_single_problem_grounding",
+  "status": "COMPLETE",
+  "public_final_count": 1,
+  "captured_at": "2026-10-23T07:48:50.004870+08:00",
+  "review_route": {
+    "fork_turns": "all"
+  },
+  "scope": "public tool arguments and public final messages only; no hidden reasoning"
+}

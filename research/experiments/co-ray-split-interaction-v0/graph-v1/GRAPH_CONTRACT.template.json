@@ -1,0 +1,54 @@
+{
+  "schema": "co-ray-split-interaction-v0/graph-contract-v1",
+  "frozen_by_root": false,
+  "reviewed_full_code": false,
+  "reviewed_code_sha256": {},
+  "fixed": {
+    "width": 979,
+    "height": 546,
+    "grid_width": 128,
+    "grid_height": 72,
+    "grid_rule": "floor((2*i+1)*raw_dimension/(2*grid_dimension))",
+    "capacities": [371, 370, 370, 370],
+    "random_seeds": [101, 202],
+    "calibration_train_ranks": [0, 31, 62, 93, 124, 155, 186, 218],
+    "evaluation_train_ranks": [15, 46, 77, 108, 139, 170, 201, 217],
+    "wall_seconds": 180,
+    "address_space_bytes": 2147483648,
+    "max_samples_nnz": 8000000
+  },
+  "include_base_repeat": null,
+  "cameras": {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/evaluation-v1/run-v2/CAMERAS.json",
+    "sha256": "ROOT_TO_PIN"
+  },
+  "selection": {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/matched-count-v0/early/las_split/selection.json",
+    "sha256": "ROOT_TO_PIN"
+  },
+  "native_sources": {
+    "auxiliary.h": {
+      "path": "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/auxiliary.h",
+      "sha256": "5a3345d46acd23a85e44c214dac404f4be195d7c4c49c9effa280ba3bbb10a51"
+    },
+    "forward.cu": {
+      "path": "/home/administrator/projects/gaussian-splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/forward.cu",
+      "sha256": "4bfb6830a138bd016f39fa4558f998825d4182b12cfbda2f62bed0ab75042b54"
+    }
+  },
+  "additional_source_pins": [
+    {"path": "/mnt/d/Documents/my 3dgs/idea-stage/optimization-inverse-20261023/CANDIDATES.json", "sha256": "ROOT_TO_PIN"},
+    {"path": "/mnt/d/Documents/my 3dgs/idea-stage/optimization-inverse-20261023/ROOT_PRIOR_NOTES.md", "sha256": "ROOT_TO_PIN"},
+    {"path": "ROOT_PROJECTION_MANIFEST_PATH", "sha256": "ROOT_TO_PIN"}
+  ],
+  "projections": [
+    {"train_rank": 0, "image_name": "ROOT_FROM_ACTUAL_SORTED_NAMES", "path": "ROOT_PROJECTION_PATH", "sha256": "ROOT_TO_PIN"},
+    {"train_rank": 31, "image_name": "ROOT_FROM_ACTUAL_SORTED_NAMES", "path": "ROOT_PROJECTION_PATH", "sha256": "ROOT_TO_PIN"},
+    {"train_rank": 62, "image_name": "ROOT_FROM_ACTUAL_SORTED_NAMES", "path": "ROOT_PROJECTION_PATH", "sha256": "ROOT_TO_PIN"},
+    {"train_rank": 93, "image_name": "ROOT_FROM_ACTUAL_SORTED_NAMES", "path": "ROOT_PROJECTION_PATH", "sha256": "ROOT_TO_PIN"},
+    {"train_rank": 124, "image_name": "ROOT_FROM_ACTUAL_SORTED_NAMES", "path": "ROOT_PROJECTION_PATH", "sha256": "ROOT_TO_PIN"},
+    {"train_rank": 155, "image_name": "ROOT_FROM_ACTUAL_SORTED_NAMES", "path": "ROOT_PROJECTION_PATH", "sha256": "ROOT_TO_PIN"},
+    {"train_rank": 186, "image_name": "ROOT_FROM_ACTUAL_SORTED_NAMES", "path": "ROOT_PROJECTION_PATH", "sha256": "ROOT_TO_PIN"},
+    {"train_rank": 218, "image_name": "ROOT_FROM_ACTUAL_SORTED_NAMES", "path": "ROOT_PROJECTION_PATH", "sha256": "ROOT_TO_PIN"}
+  ]
+}

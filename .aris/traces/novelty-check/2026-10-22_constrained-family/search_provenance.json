@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-22",
+  "purpose": "Early candidate novelty boundary, not certification or exhaustive proof of absence",
+  "queries": [
+    "Gaussian splatting split children immediately pruned scale threshold pruning densification",
+    "3D Gaussian splatting pruning aware splitting scale constrained split children",
+    "AdpSplit adaptive splitting Gaussian number children scale 2026",
+    "Gaussian splatting split covariance rank children moment matching",
+    "Gaussian splatting splitting simplex",
+    "Gaussian splatting split minimum children covariance eigenvalues",
+    "Gaussian splatting splitting moment bound",
+    "Gaussian splatting split tetrahedron",
+    "Gaussian splatting pruning splitting covariance constraint",
+    "SplitGS-Loc arxiv",
+    "Refining Gaussian Splatting Volumetric Densification",
+    "Gaussian splitting simplex covariance mixture",
+    "Gaussian mixture splitting minimum covariance sigma points simplex",
+    "Gaussian splatting rank moment splitting bound"
+  ],
+  "primary_sources_opened": [
+    "https://arxiv.org/html/2503.14274v1",
+    "https://arxiv.org/html/2403.09143v1",
+    "https://arxiv.org/html/2605.07351v1",
+    "https://arxiv.org/html/2605.06876v1",
+    "https://vcai.mpi-inf.mpg.de/projects/SAD-GS/",
+    "https://arxiv.org/abs/2404.09591",
+    "https://arxiv.org/abs/2508.05187",
+    "https://link.springer.com/article/10.1186/s13634-015-0221-2"
+  ],
+  "additional_reviewer_sources": "SAD-GS HTML2604.28016; MMGS2605.19304; FDS-GS2503.07000; Julier/Uhlmann2004 simplex sigma points",
+  "reviewer": "/root/constrained_family_novelty",
+  "model": "gpt-6-astra",
+  "reasoning": "xhigh",
+  "fork": "none",
+  "review_status": "complete",
+  "candidate": "research/experiments/CONSTRAINED_FAMILY_CANDIDATE.md",
+  "no_implementation": true,
+  "verdict": "PROCEED WITH CAUTION",
+  "score": 5,
+  "assurance": "same-family/provisional; early gate only"
+}

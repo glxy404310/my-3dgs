@@ -1,0 +1,14 @@
+{
+  "started_UTC": "2026-10-22T21:43:50.7921991Z",
+  "finished_UTC": "2026-10-22T21:44:48.8396828Z",
+  "exit_code": 0,
+  "actual_host_wall_seconds": 58.0393507,
+  "hard_limit_seconds": 100,
+  "within_100_seconds": true,
+  "attempts": 1,
+  "prior_primary_external_wall_seconds": 72.3562999,
+  "combined_external_wall_seconds": 130.3956506,
+  "shared_limit_seconds": 300,
+  "within_shared_300_seconds": true,
+  "scope": "Independent saved raw pixel/source/panel quality audit only; no GPU"
+}

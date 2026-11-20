@@ -1,0 +1,330 @@
+[
+  {
+    "view": "000002.jpg",
+    "path": "raw/projection/000002.jpg.npz",
+    "bytes": 54336,
+    "sha256": "cb23529cc0a97c4adb0b0f1213f7e2ad4512e158cf350e5e2827f75f463a6439",
+    "arrays": {
+      "parent_ids": {
+        "dtype": "int64",
+        "shape": [
+          1481
+        ],
+        "array_sha256": "c1a818bd9b2366aa7d69d1edfb29db032bde2599ed8d7064001e3628e3c20176"
+      },
+      "means2D": {
+        "dtype": "float32",
+        "shape": [
+          1481,
+          2
+        ],
+        "array_sha256": "1d2200ea2207a60321dcc195c0a4b28b6979507273f624102a85e5ebde6022a1"
+      },
+      "conic_opacity": {
+        "dtype": "float32",
+        "shape": [
+          1481,
+          4
+        ],
+        "array_sha256": "09046e35cf03bbfcca8debfb3d6c9a3121ecdf45d4cf16f4ef5d8792e155a865"
+      },
+      "radii": {
+        "dtype": "int32",
+        "shape": [
+          1481
+        ],
+        "array_sha256": "2d86e6eded1a62490262c1a1ca53acdd74614e67eeb69f9922c949c2793c7d76"
+      }
+    },
+    "native_original_prebirth_only": true,
+    "inactive_projection_fields_zero": true,
+    "internal_radii_read": false
+  },
+  {
+    "view": "000037.jpg",
+    "path": "raw/projection/000037.jpg.npz",
+    "bytes": 54336,
+    "sha256": "61c457d14d94b0837f734f93b3877206e473e4e6abb1225f73d0db7665be7594",
+    "arrays": {
+      "parent_ids": {
+        "dtype": "int64",
+        "shape": [
+          1481
+        ],
+        "array_sha256": "c1a818bd9b2366aa7d69d1edfb29db032bde2599ed8d7064001e3628e3c20176"
+      },
+      "means2D": {
+        "dtype": "float32",
+        "shape": [
+          1481,
+          2
+        ],
+        "array_sha256": "5486f64b10721b5a05bf4c7aa430ec478f218492ea440fb754ce06fd80a49715"
+      },
+      "conic_opacity": {
+        "dtype": "float32",
+        "shape": [
+          1481,
+          4
+        ],
+        "array_sha256": "4bad211e7214f3ae261adf3e9bc72355e1f95a7a74fd3236ec58c771ed369056"
+      },
+      "radii": {
+        "dtype": "int32",
+        "shape": [
+          1481
+        ],
+        "array_sha256": "416bfd868a81b727f771525c78cc1b57693ed6f8025cc4f128b1db3b0d8adfa1"
+      }
+    },
+    "native_original_prebirth_only": true,
+    "inactive_projection_fields_zero": true,
+    "internal_radii_read": false
+  },
+  {
+    "view": "000072.jpg",
+    "path": "raw/projection/000072.jpg.npz",
+    "bytes": 54336,
+    "sha256": "8fe71bea48076bc6e4ade395b6b0a6a845db0a8439c33f10ebe759851f13c726",
+    "arrays": {
+      "parent_ids": {
+        "dtype": "int64",
+        "shape": [
+          1481
+        ],
+        "array_sha256": "c1a818bd9b2366aa7d69d1edfb29db032bde2599ed8d7064001e3628e3c20176"
+      },
+      "means2D": {
+        "dtype": "float32",
+        "shape": [
+          1481,
+          2
+        ],
+        "array_sha256": "f6b9aec19c692ceb150328ac970b59097a0355444a379d683f56f42465d933f9"
+      },
+      "conic_opacity": {
+        "dtype": "float32",
+        "shape": [
+          1481,
+          4
+        ],
+        "array_sha256": "3d29edffa493055d645c3cfcb9aec6c88bb6d8049fd9fd460a1a874ed43d1408"
+      },
+      "radii": {
+        "dtype": "int32",
+        "shape": [
+          1481
+        ],
+        "array_sha256": "a1c693911b041af5e7e55a6a767fa1bad629a2ceeca8d1c52f9e9034077fe9b6"
+      }
+    },
+    "native_original_prebirth_only": true,
+    "inactive_projection_fields_zero": true,
+    "internal_radii_read": false
+  },
+  {
+    "view": "000108.jpg",
+    "path": "raw/projection/000108.jpg.npz",
+    "bytes": 54336,
+    "sha256": "adb2d054a75e6011a13067bb2088e8daf7ccebddf98c527ec9aa31b62bbc19b9",
+    "arrays": {
+      "parent_ids": {
+        "dtype": "int64",
+        "shape": [
+          1481
+        ],
+        "array_sha256": "c1a818bd9b2366aa7d69d1edfb29db032bde2599ed8d7064001e3628e3c20176"
+      },
+      "means2D": {
+        "dtype": "float32",
+        "shape": [
+          1481,
+          2
+        ],
+        "array_sha256": "859dd6d31bad6f6a0a5dcdde67f39c703b20b17a234d4b9092d0aab8e1437f1a"
+      },
+      "conic_opacity": {
+        "dtype": "float32",
+        "shape": [
+          1481,
+          4
+        ],
+        "array_sha256": "331b4fe84ca415e47984b19b464b8214bcff4612744832602b7891cb70d625f6"
+      },
+      "radii": {
+        "dtype": "int32",
+        "shape": [
+          1481
+        ],
+        "array_sha256": "42555f3c65201eeca8d473a40b4cf1ef762d944a2fde1a2af2d3ac7bc7c1f983"
+      }
+    },
+    "native_original_prebirth_only": true,
+    "inactive_projection_fields_zero": true,
+    "internal_radii_read": false
+  },
+  {
+    "view": "000143.jpg",
+    "path": "raw/projection/000143.jpg.npz",
+    "bytes": 54336,
+    "sha256": "c58d539b7938ad9f01da931cc21ce23c1d37af6af86139d8d1ed0dc6ae3906bd",
+    "arrays": {
+      "parent_ids": {
+        "dtype": "int64",
+        "shape": [
+          1481
+        ],
+        "array_sha256": "c1a818bd9b2366aa7d69d1edfb29db032bde2599ed8d7064001e3628e3c20176"
+      },
+      "means2D": {
+        "dtype": "float32",
+        "shape": [
+          1481,
+          2
+        ],
+        "array_sha256": "504223591bb5ace1df84aaac43a11d61f855cd2493e1fb1e2f83fdfaa99d300f"
+      },
+      "conic_opacity": {
+        "dtype": "float32",
+        "shape": [
+          1481,
+          4
+        ],
+        "array_sha256": "d5beccf10119fddff00c3ce92f5b2264a8858a20e33aee8048ad1118b79926d0"
+      },
+      "radii": {
+        "dtype": "int32",
+        "shape": [
+          1481
+        ],
+        "array_sha256": "8a783f008ee1b8cd6e4ae0a657c30e60e77e6a2264dca6591b27bf9da46edd39"
+      }
+    },
+    "native_original_prebirth_only": true,
+    "inactive_projection_fields_zero": true,
+    "internal_radii_read": false
+  },
+  {
+    "view": "000179.jpg",
+    "path": "raw/projection/000179.jpg.npz",
+    "bytes": 54336,
+    "sha256": "0f7870c5509364fd029b04bf75a9e2a1d2039b2b77c43a073fa17f58ba93fe7c",
+    "arrays": {
+      "parent_ids": {
+        "dtype": "int64",
+        "shape": [
+          1481
+        ],
+        "array_sha256": "c1a818bd9b2366aa7d69d1edfb29db032bde2599ed8d7064001e3628e3c20176"
+      },
+      "means2D": {
+        "dtype": "float32",
+        "shape": [
+          1481,
+          2
+        ],
+        "array_sha256": "cd298a51bdf8610db87aeb640b6eedbd0ddbce7690d2a2560268746e9e4f1ed6"
+      },
+      "conic_opacity": {
+        "dtype": "float32",
+        "shape": [
+          1481,
+          4
+        ],
+        "array_sha256": "2c4ff5d0807830a2432b4c274e1a6b71d92f63cf5a9cf87370e250fcd2c9bc8b"
+      },
+      "radii": {
+        "dtype": "int32",
+        "shape": [
+          1481
+        ],
+        "array_sha256": "a6cc18b595face4e83f865351f44690d0d569261b5651e72fc200d3030378cd5"
+      }
+    },
+    "native_original_prebirth_only": true,
+    "inactive_projection_fields_zero": true,
+    "internal_radii_read": false
+  },
+  {
+    "view": "000214.jpg",
+    "path": "raw/projection/000214.jpg.npz",
+    "bytes": 54336,
+    "sha256": "791f9721436164023a6c7b594bf315e9d8d12e454fc2904352f5821dedfd4ebf",
+    "arrays": {
+      "parent_ids": {
+        "dtype": "int64",
+        "shape": [
+          1481
+        ],
+        "array_sha256": "c1a818bd9b2366aa7d69d1edfb29db032bde2599ed8d7064001e3628e3c20176"
+      },
+      "means2D": {
+        "dtype": "float32",
+        "shape": [
+          1481,
+          2
+        ],
+        "array_sha256": "3734316088e61dd771b79252ec8ff2826911ee09493f3a3f04260e536193147b"
+      },
+      "conic_opacity": {
+        "dtype": "float32",
+        "shape": [
+          1481,
+          4
+        ],
+        "array_sha256": "500e9ae737945fa87bad5631693a4a2618bdee64f33a86c9dcb912511a03aec2"
+      },
+      "radii": {
+        "dtype": "int32",
+        "shape": [
+          1481
+        ],
+        "array_sha256": "11fe48b6d35c9ad8ccef8f2d9c66d5a049ff62567898b7c7fb9078735b771a99"
+      }
+    },
+    "native_original_prebirth_only": true,
+    "inactive_projection_fields_zero": true,
+    "internal_radii_read": false
+  },
+  {
+    "view": "000251.jpg",
+    "path": "raw/projection/000251.jpg.npz",
+    "bytes": 54336,
+    "sha256": "0e06df6ba5a71ccc044947cd7e91249584ab3629762b4162264d7ed526f4fa3c",
+    "arrays": {
+      "parent_ids": {
+        "dtype": "int64",
+        "shape": [
+          1481
+        ],
+        "array_sha256": "c1a818bd9b2366aa7d69d1edfb29db032bde2599ed8d7064001e3628e3c20176"
+      },
+      "means2D": {
+        "dtype": "float32",
+        "shape": [
+          1481,
+          2
+        ],
+        "array_sha256": "ab5731048754632519288cdb126f1745af050f4011808fa2f429a17cb1b6ec32"
+      },
+      "conic_opacity": {
+        "dtype": "float32",
+        "shape": [
+          1481,
+          4
+        ],
+        "array_sha256": "bcf034ac259facb1ba9c07d51db3188b8f8c8712f5c78f2b8dd2ff77138de666"
+      },
+      "radii": {
+        "dtype": "int32",
+        "shape": [
+          1481
+        ],
+        "array_sha256": "4f3f723a0da43b6a2711289b2c9940d841e1f15cc001457865b84c06d0ea48ee"
+      }
+    },
+    "native_original_prebirth_only": true,
+    "inactive_projection_fields_zero": true,
+    "internal_radii_read": false
+  }
+]

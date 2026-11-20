@@ -1,0 +1,20 @@
+{
+  "schema": "speedy-frozen-control/host-external-v1",
+  "scope": "Frozen original Truck teacher, native versus official Speedy full forward",
+  "started_UTC": "2026-10-22T22:36:40.7215946Z",
+  "finished_UTC": "2026-10-22T22:37:29.0739936Z",
+  "exit_code": 0,
+  "actual_host_wall_seconds": 48.347527,
+  "hard_limit_seconds": 240,
+  "within_limit": true,
+  "attempts": 1,
+  "automatic_retry": false,
+  "shared_main_plus_audit_limit_seconds": 340,
+  "independent_audit_reserved_seconds": 100,
+  "build_result_sha256": "cea80ccd4a289b14bc05e4566e6c63b959fcea4aa552daa137cd14281dfeb204",
+  "build_supervisor_sha256": "5a177f61312bedbcb6db5b98ebe4f178e56ac54077efd815138f520c4207eac1",
+  "build_external_sha256": "1cb8ac08094241a5d6a508489477701dce1bd13866a8a4c52e46919d7f7fb8ca",
+  "witness_result_sha256": "9ffae6c10890fbb02a4843d6e78de1f137e19c383b78c4f96e2047d2ff382db3",
+  "witness_supervisor_sha256": "0fe272ac163f19a787202e3f7be67e925bcb6fa344c05893da0bdb1c290ec649",
+  "witness_external_sha256": "de6f826dd37034e39bbb88179e4fa653823d23538cc46d143ad6a49c14ef4095"
+}

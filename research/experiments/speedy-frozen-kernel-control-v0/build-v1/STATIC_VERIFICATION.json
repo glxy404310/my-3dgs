@@ -1,0 +1,25 @@
+{
+  "status": "PREPARATION_STATIC_PASS",
+  "python_ast_files": {
+    "common.py": "f8f5d1b8daa32f40c8ff8121eb572a91049f9b3bce15a9cc7e9fd198f0e00238",
+    "freeze_preparation.py": "b8a0d45b4d36fa39aaac8ba13b20622cbe49a18124357f715f9e62de7cad6c1d",
+    "import_only.py": "10dfce5fcdca758ae17bb52176015e4dcc1d4f90f1fbdc0718f73854f56232a1",
+    "prepare_sources.py": "7a31c0d53892aa9f2e05157260fd170d9175902afa7a1e0cf2f9c5a8065bec05",
+    "prepare_test.py": "6eaf8db2aa7759fa7f64eff72141ebacae097575e335977345d5da7782816b9e",
+    "run_private_build.py": "11c8275c0fb19d8d54139f4640b22aaea2a05a4d3bcdadff1c8ad40a54fa8cac",
+    "tiny_forward_witness.py": "3dca23cfac6b38b4366bfae4a4196cc6b1a1b1a1c93075d196d282ecc8451447"
+  },
+  "canonical_spec_sha256": "5d2d53f39bae50eb363a2d6e3501ecd8561d02ab58ad5347505ab5267cae9275",
+  "source_snapshot_canonical_sha256": "b9eecdef3daf1272681f79f0a0a34d51d5cb1b2f7739e60bf906a0d9b9ee6677",
+  "protected_libraries": {
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so": "6fb6d2d0539cfc28a0ca150a0fd5ff02a1402ef0a92f97ce05f5e72b46255b3c",
+    "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/__init__.py": "1d4fc43bb67c4552193d340e2d6894ad7ec3c0d04a620fd7655c89ccf855df5b",
+    "/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10/rasterization_and_pup_fisher/_C.cpython-310-x86_64-linux-gnu.so": "ca99d74bf9d880585b64f75444339bf739276883c8c0f4a85b926fb6e15c9219"
+  },
+  "no_torch_import": true,
+  "no_build": true,
+  "no_cuda": true,
+  "no_actual_arrays": true,
+  "scope": "Static/stdlib preparation only, neither build/import nor numerical witness passed"
+}

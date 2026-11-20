@@ -1,0 +1,58 @@
+{
+  "source_hashes": {
+    "7000": "e54272f09be80a577288dbbc8475df6a35368578b5c8c444b4eede76064da020",
+    "30000": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736"
+  },
+  "script_sha256": "d282d6160e5373f8b351026077fa0e566648726b58846d05c6ccdd1b9bf3d143",
+  "contract_sha256": "d8519ec80d41770ae3b8dcd3ba695697eddda2cc30c38e9c2161949b3372a283",
+  "iterations": [
+    7000,
+    30000
+  ],
+  "resolution": 1,
+  "image_size": [
+    979,
+    546
+  ],
+  "train_ranks": [
+    0,
+    72,
+    145,
+    218
+  ],
+  "repeats": 8,
+  "losses": [
+    "mse",
+    "training"
+  ],
+  "fields": [
+    "_xyz",
+    "_features_dc",
+    "_features_rest",
+    "_scaling",
+    "_rotation",
+    "_opacity"
+  ],
+  "native_renderer_only": true,
+  "high_contribution_mass": 0.9,
+  "minimum_repeat_ratio": 0.01,
+  "minimum_large_noise_mass": 0.1,
+  "minimum_noise_to_neighbor_ratio": 0.1,
+  "minimum_distinct_views": 2,
+  "zero_gradient_floor_multiplier": 1e-06,
+  "precision_bias_checked": false,
+  "kappa_checked": false,
+  "optimizer_update_impact_checked": false,
+  "main_views": [
+    "000002.jpg",
+    "000084.jpg",
+    "000167.jpg",
+    "000251.jpg"
+  ],
+  "neighbor_views": [
+    "000003.jpg",
+    "000085.jpg",
+    "000168.jpg",
+    "000250.jpg"
+  ]
+}

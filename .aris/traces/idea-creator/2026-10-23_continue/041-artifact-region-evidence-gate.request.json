@@ -1,0 +1,13 @@
+{
+  "call_number": 41,
+  "purpose": "artifact-region-evidence-gate",
+  "tool": "followup_task",
+  "agent_path": "/root/artifact_full34_jury",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "prompt": "root接受保持#33唯一下一证据检查，但需修一个关键风险：纯元数据刚完成136029点、82974点≥4个distinct train views，所以『有3个静态纹理区域』几乎是通用SfM基础能力，不能冒充伪影路线进展。请给具体预锁最小协议，把背景见证与成熟teacher真实伪影联系起来，仍不得用test000121/217选组/宣称独立验收，也不回退为只数track。可先按原#14相机等距12train名单做独立artifact-discovery收集（30k仅原生前向，不做SE3/匹配/fit；已有前三base可重用，其余9前向），同时保留全部GT/teacher，之后从发现折挑疑似ghost、确认折核可靠背景；但如果这改变你的唯一方案或需新合同请直说。深度±5%不能凭存储reproj error叫置信区间：一种可解释的候选是固定±1 native px重投影矩形形成3D线性半空间，LP求目标camera-depth上下界，仅为条件一致性工程包络（非校准置信度），heldout相机再验证。要预锁图像缩放/数组中心转换，point同图15953额外track需distinct image计数，不能凑数。请只审这个关键修正，给一条能让核心假设失败的实际停止线；不做实验/编辑/广泛新文献。",
+  "supplementary_messages": [
+    "为避免只等待计划，root已让助手准备一个尚不启动的独立发现收集：固定原12train名单，30k冻结，仅存teacher/GT全12对；重用#14已保存前三base，新增9render+1缓存anchor，无SE3/matching/fit/删点，300s硬限，无方法PASS线。12全作discovery，未来确认照片必须不在其中且另锁角色/region合同；不把已看32test当独立终验。你的关键修正请评价如何把后续真实背景见证落到这些实际异常区域；若一般SfM容量路线本身无增量，直接说停止当前立项，不需要为#33救结果。"
+  ],
+  "request_source": "exact executor invocation text; stored session arguments encrypted"
+}

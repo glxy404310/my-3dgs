@@ -1,0 +1,8 @@
+{
+  "status": "helper_unresolved",
+  "tool": "evidence_check.py",
+  "resolution_attempts": ["project tools/", "project .aris/installed-skills-codex.txt", "C:/Users/Administrator/.codex recursive filename search"],
+  "semantic_review_may_continue": true,
+  "independent_runtime_checks": "research/experiments/split-diagnostic-v0/integrity_checks.json",
+  "warning": "The runtime integrity script checks actual artifacts and paired geometry but is not a replacement for the skill evidence helper or semantic claim judgment."
+}

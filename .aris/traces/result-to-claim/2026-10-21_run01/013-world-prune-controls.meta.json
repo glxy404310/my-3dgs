@@ -1,0 +1,17 @@
+{
+  "reviewer": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "claim_supported": "yes_local_known_rule_comparison",
+  "new_method": "no",
+  "candidate_advancement": "no",
+  "integrity_status": "unavailable",
+  "confidence": "high_local_medium_route_closure",
+  "route": "close current world-bound split geometry; reideate parent-child/split/LOD",
+  "metric_rows": 80,
+  "anchors": 32,
+  "old_metric_rows_exact": 64,
+  "input_method": "clone_corrected_las",
+  "native_label": "original final-prune mask only"
+}

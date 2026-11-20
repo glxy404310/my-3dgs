@@ -1,0 +1,9 @@
+{
+  "phase": "import before main",
+  "exit_code": 1,
+  "tool_failure": "ModuleNotFoundError scipy",
+  "scientific_computation_started": false,
+  "run_directory_created": false,
+  "original_contract_sha256": "515abe9defd4c4dbd8806113acdea20f457fab85ac278e48d335fef72256565d",
+  "repair": "Explicit scipy==1.15.3 CPU dependency; no scientific condition or experimental script change"
+}

@@ -1,0 +1,27 @@
+{
+  "repo_commit": "54c035f7834b564019656c3e3fcc3646292f727d",
+  "model": "/home/administrator/projects/gaussian-splatting/output/truck_7000_r1",
+  "source": "/home/administrator/datasets/tandt_db/tandt/truck",
+  "iteration": 7000,
+  "n": 1685305,
+  "resolution": 2,
+  "stage": "sanity",
+  "cases": 8,
+  "seed": 20261022,
+  "fit": [
+    "000002.jpg",
+    "000022.jpg",
+    "000044.jpg",
+    "000066.jpg"
+  ],
+  "check": [
+    "000012.jpg",
+    "000034.jpg"
+  ],
+  "test": [
+    "000001.jpg",
+    "000033.jpg"
+  ],
+  "script_sha256": "bd751314140b3009005b63b58b606739bfb7a9327ffad4e0c02a830b0547f9b0",
+  "ply_sha256": "f9917bdeeea7be583e2602cbadf479305ea393ad9fa1a7e5a180bf23fd62fdf0"
+}

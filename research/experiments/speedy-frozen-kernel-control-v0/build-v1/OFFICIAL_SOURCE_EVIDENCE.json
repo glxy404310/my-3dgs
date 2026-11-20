@@ -1,0 +1,200 @@
+{
+  "schema": "speedy-frozen-kernel-control-v0/primary-source-v1",
+  "retrieval": "Official GitHub connector, pinned refs, CPU metadata only",
+  "entries": {
+    "main_commit": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "commit": {
+          "sha": "34c45c6d9b8bd6110231864f2f358b6d3abbf73d",
+          "message": "Adds training clarification to README.",
+          "url": "https://api.github.com/repos/j-alex-hanson/speedy-splat/commits/34c45c6d9b8bd6110231864f2f358b6d3abbf73d",
+          "html_url": "https://github.com/j-alex-hanson/speedy-splat/commit/34c45c6d9b8bd6110231864f2f358b6d3abbf73d",
+          "diff": "@@ -28,6 +28,8 @@ bash train.sh\n \n This script follows the 3D-GS pipeline to train a scene on the data provided by `SCENE_DATA_PATH` and saves the model in the `SCENE_MODEL_PATH` directory. Tensorboard logging has been updated to include all metrics reported in the Speedy-Splat manuscript.\n \n+Note: This setup trains at a higher image resolution than the original 3D-GS `full_eval.py` protocol, resulting in larger models and a more demanding evaluation setting.\n+\n ### Scene Metrics\n \n To compute scene metrics for an already trained model, set the environment variables `SCENE_DATA_PATH`,`SCENE_MODEL_PATH`, and `ONLY_RAW_KERNEL_TIMES` then run:",
+          "files": [
+            {
+              "filename": "README.md",
+              "patch": "@@ -28,6 +28,8 @@ bash train.sh\n \n This script follows the 3D-GS pipeline to train a scene on the data provided by `SCENE_DATA_PATH` and saves the model in the `SCENE_MODEL_PATH` directory. Tensorboard logging has been updated to include all metrics reported in the Speedy-Splat manuscript.\n \n+Note: This setup trains at a higher image resolution than the original 3D-GS `full_eval.py` protocol, resulting in larger models and a more demanding evaluation setting.\n+\n ### Scene Metrics\n \n To compute scene metrics for an already trained model, set the environment variables `SCENE_DATA_PATH`,`SCENE_MODEL_PATH`, and `ONLY_RAW_KERNEL_TIMES` then run:"
+            }
+          ],
+          "repository_full_name": "j-alex-hanson/speedy-splat",
+          "comments": null,
+          "author": {
+            "login": "j-alex-hanson",
+            "name": null,
+            "email": null,
+            "avatar_url": "https://avatars.githubusercontent.com/u/11342031?v=4",
+            "id": 11342031
+          },
+          "committer": {
+            "login": "j-alex-hanson",
+            "name": null,
+            "email": null,
+            "avatar_url": "https://avatars.githubusercontent.com/u/11342031?v=4",
+            "id": 11342031
+          },
+          "created_at": "2026-02-18T21:30:30Z",
+          "git_author_email": null,
+          "display_url": "https://github.com/j-alex-hanson/speedy-splat/commit/34c45c6d9b8bd6110231864f2f358b6d3abbf73d",
+          "display_title": "Adds training clarification to README."
+        },
+        "url": "https://github.com/j-alex-hanson/speedy-splat/commit/34c45c6d9b8bd6110231864f2f358b6d3abbf73d",
+        "title": "Adds training clarification to README.",
+        "diff": "@@ -28,6 +28,8 @@ bash train.sh\n \n This script follows the 3D-GS pipeline to train a scene on the data provided by `SCENE_DATA_PATH` and saves the model in the `SCENE_MODEL_PATH` directory. Tensorboard logging has been updated to include all metrics reported in the Speedy-Splat manuscript.\n \n+Note: This setup trains at a higher image resolution than the original 3D-GS `full_eval.py` protocol, resulting in larger models and a more demanding evaluation setting.\n+\n ### Scene Metrics\n \n To compute scene metrics for an already trained model, set the environment variables `SCENE_DATA_PATH`,`SCENE_MODEL_PATH`, and `ONLY_RAW_KERNEL_TIMES` then run:",
+        "display_url": "https://github.com/j-alex-hanson/speedy-splat/commit/34c45c6d9b8bd6110231864f2f358b6d3abbf73d",
+        "display_title": "Adds training clarification to README."
+      },
+      "isError": false
+    },
+    "main_gitmodules": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "content": "[submodule \"submodules/simple-knn\"]\n\tpath = submodules/simple-knn\n\turl = https://gitlab.inria.fr/bkerbl/simple-knn.git\n[submodule \"submodules/diff-gaussian-rasterization\"]\n\tpath = submodules/diff-gaussian-rasterization\n\turl = https://github.com/j-alex-hanson/speedy-splat-rasterizer.git\n[submodule \"SIBR_viewers\"]\n\tpath = SIBR_viewers\n\turl = https://gitlab.inria.fr/sibr/sibr_core.git\n",
+        "encoding": "utf-8",
+        "sha": "0592cdae42466ecbbeff8dde5a1e3a321d51454f",
+        "display_url": "https://github.com/j-alex-hanson/speedy-splat/blob/34c45c6d9b8bd6110231864f2f358b6d3abbf73d/.gitmodules",
+        "display_title": ".gitmodules"
+      },
+      "isError": false
+    },
+    "renderer": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "content": "#\n# Copyright (C) 2023, Inria\n# GRAPHDECO research group, https://team.inria.fr/graphdeco\n# All rights reserved.\n#\n# This software is free for non-commercial, research and evaluation use \n# under the terms of the LICENSE.md file.\n#\n# For inquiries contact  george.drettakis@inria.fr\n#\n\nimport torch\nimport math\nfrom diff_gaussian_rasterization import GaussianRasterizationSettings, GaussianRasterizer\nfrom scene.gaussian_model import GaussianModel\nfrom utils.sh_utils import eval_sh\n\ndef render(viewpoint_camera, pc : GaussianModel, pipe, bg_color : torch.Tensor, scores = None, scaling_modifier = 1.0, override_color = None):\n    \"\"\"\n    Render the scene. \n    \n    Background tensor (bg_color) must be on GPU!\n    \"\"\"\n \n    # Create zero tensor. We will use it to make pytorch return gradients of the 2D (screen-space) means\n    screenspace_points = torch.zeros_like(pc.get_xyz, dtype=pc.get_xyz.dtype, requires_grad=True, device=\"cuda\") + 0\n    try:\n        screenspace_points.retain_grad()\n    except:\n        pass\n\n    # Set up rasterization configuration\n    tanfovx = math.tan(viewpoint_camera.FoVx * 0.5)\n    tanfovy = math.tan(viewpoint_camera.FoVy * 0.5)\n\n    raster_settings = GaussianRasterizationSettings(\n        image_height=int(viewpoint_camera.image_height),\n        image_width=int(viewpoint_camera.image_width),\n        tanfovx=tanfovx,\n        tanfovy=tanfovy,\n        bg=bg_color,\n        scale_modifier=scaling_modifier,\n        viewmatrix=viewpoint_camera.world_view_transform,\n        projmatrix=viewpoint_camera.full_proj_transform,\n        sh_degree=pc.active_sh_degree,\n        campos=viewpoint_camera.camera_center,\n        prefiltered=False,\n        debug=pipe.debug\n    )\n\n    rasterizer = GaussianRasterizer(raster_settings=raster_settings)\n\n    means3D = pc.get_xyz\n    means2D = screenspace_points\n    opacity = pc.get_opacity\n\n    # set scores to the correct size if not passed in\n    if scores is None:\n        scores = torch.zeros_like(opacity)\n\n    # If precomputed 3d covariance is provided, use it. If not, then it will be computed from\n    # scaling / rotation by the rasterizer.\n    scales = None\n    rotations = None\n    cov3D_precomp = None\n    if pipe.compute_cov3D_python:\n        cov3D_precomp = pc.get_covariance(scaling_modifier)\n    else:\n        scales = pc.get_scaling\n        rotations = pc.get_rotation\n\n    # If precomputed colors are provided, use them. Otherwise, if it is desired to precompute colors\n    # from SHs in Python, do it. If not, then SH -> RGB conversion will be done by rasterizer.\n    shs = None\n    colors_precomp = None\n    if override_color is None:\n        if pipe.convert_SHs_python:\n            shs_view = pc.get_features.transpose(1, 2).view(-1, 3, (pc.max_sh_degree+1)**2)\n            dir_pp = (pc.get_xyz - viewpoint_camera.camera_center.repeat(pc.get_features.shape[0], 1))\n            dir_pp_normalized = dir_pp/dir_pp.norm(dim=1, keepdim=True)\n            sh2rgb = eval_sh(pc.active_sh_degree, shs_view, dir_pp_normalized)\n            colors_precomp = torch.clamp_min(sh2rgb + 0.5, 0.0)\n        else:\n            shs = pc.get_features\n    else:\n        colors_precomp = override_color\n\n    # Rasterize visible Gaussians to image, obtain their radii (on screen). \n    rendered_image, radii, kernel_times = rasterizer(\n        means3D = means3D,\n        means2D = means2D,\n        shs = shs,\n        colors_precomp = colors_precomp,\n        opacities = opacity,\n        scores = scores,\n        scales = scales,\n        rotations = rotations,\n        cov3D_precomp = cov3D_precomp)\n\n    # Those Gaussians that were frustum culled or had a radius of 0 were not visible.\n    # They will be excluded from value updates used in the splitting criteria.\n    return {\"render\": rendered_image,\n            \"viewspace_points\": screenspace_points,\n            \"visibility_filter\" : radii > 0,\n            \"radii\": radii,\n            \"kernel_times\": kernel_times}\n",
+        "encoding": "utf-8",
+        "sha": "97d5583de9cf17254f0ce88e37ba147c5b91efe9",
+        "display_url": "https://github.com/j-alex-hanson/speedy-splat/blob/34c45c6d9b8bd6110231864f2f358b6d3abbf73d/gaussian_renderer/__init__.py",
+        "display_title": "__init__.py"
+      },
+      "isError": false
+    },
+    "raster_commit": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "commit": {
+          "sha": "b38abb6da7a7217999f8c5ec0e9219284464ffe0",
+          "message": "Initialize max line",
+          "url": "https://api.github.com/repos/j-alex-hanson/speedy-splat-rasterizer/commits/b38abb6da7a7217999f8c5ec0e9219284464ffe0",
+          "html_url": "https://github.com/j-alex-hanson/speedy-splat-rasterizer/commit/b38abb6da7a7217999f8c5ec0e9219284464ffe0",
+          "diff": "@@ -202,6 +202,11 @@ __device__ inline uint32_t processTiles(\n     float ellipse_min, ellipse_max;\n     float min_line, max_line;\n \n+    // Initialize max line\n+    // Just need the min to be >= all points on the ellipse\n+    // and  max to be <= all points on the ellipse\n+    intersect_max_line = {bbox_max.y, bbox_min.y};\n+\n     min_line = rect_min.x * BLOCK_U;\n     // Initialize min line intersections.\n     if (bbox_min.x <= min_line) {\n@@ -210,9 +215,8 @@ __device__ inline uint32_t processTiles(\n                 con_o, disc, t, p, isY, rect_min.x * BLOCK_U);\n \n     } else {\n-      // Just need the min to be >= all points on the ellipse and\n-      // max to be <= all points on the ellipse\n-      intersect_min_line = {bbox_max.y, bbox_min.y};\n+      // Same as max line\n+      intersect_min_line = intersect_max_line;\n     }\n \n ",
+          "files": [
+            {
+              "filename": "cuda_rasterizer/auxiliary.h",
+              "patch": "@@ -202,6 +202,11 @@ __device__ inline uint32_t processTiles(\n     float ellipse_min, ellipse_max;\n     float min_line, max_line;\n \n+    // Initialize max line\n+    // Just need the min to be >= all points on the ellipse\n+    // and  max to be <= all points on the ellipse\n+    intersect_max_line = {bbox_max.y, bbox_min.y};\n+\n     min_line = rect_min.x * BLOCK_U;\n     // Initialize min line intersections.\n     if (bbox_min.x <= min_line) {\n@@ -210,9 +215,8 @@ __device__ inline uint32_t processTiles(\n                 con_o, disc, t, p, isY, rect_min.x * BLOCK_U);\n \n     } else {\n-      // Just need the min to be >= all points on the ellipse and\n-      // max to be <= all points on the ellipse\n-      intersect_min_line = {bbox_max.y, bbox_min.y};\n+      // Same as max line\n+      intersect_min_line = intersect_max_line;\n     }\n \n "
+            }
+          ],
+          "repository_full_name": "j-alex-hanson/speedy-splat-rasterizer",
+          "comments": null,
+          "author": {
+            "login": "j-alex-hanson",
+            "name": null,
+            "email": null,
+            "avatar_url": "https://avatars.githubusercontent.com/u/11342031?v=4",
+            "id": 11342031
+          },
+          "committer": {
+            "login": "j-alex-hanson",
+            "name": null,
+            "email": null,
+            "avatar_url": "https://avatars.githubusercontent.com/u/11342031?v=4",
+            "id": 11342031
+          },
+          "created_at": "2025-02-21T19:10:33Z",
+          "git_author_email": null,
+          "display_url": "https://github.com/j-alex-hanson/speedy-splat-rasterizer/commit/b38abb6da7a7217999f8c5ec0e9219284464ffe0",
+          "display_title": "Initialize max line"
+        },
+        "url": "https://github.com/j-alex-hanson/speedy-splat-rasterizer/commit/b38abb6da7a7217999f8c5ec0e9219284464ffe0",
+        "title": "Initialize max line",
+        "diff": "@@ -202,6 +202,11 @@ __device__ inline uint32_t processTiles(\n     float ellipse_min, ellipse_max;\n     float min_line, max_line;\n \n+    // Initialize max line\n+    // Just need the min to be >= all points on the ellipse\n+    // and  max to be <= all points on the ellipse\n+    intersect_max_line = {bbox_max.y, bbox_min.y};\n+\n     min_line = rect_min.x * BLOCK_U;\n     // Initialize min line intersections.\n     if (bbox_min.x <= min_line) {\n@@ -210,9 +215,8 @@ __device__ inline uint32_t processTiles(\n                 con_o, disc, t, p, isY, rect_min.x * BLOCK_U);\n \n     } else {\n-      // Just need the min to be >= all points on the ellipse and\n-      // max to be <= all points on the ellipse\n-      intersect_min_line = {bbox_max.y, bbox_min.y};\n+      // Same as max line\n+      intersect_min_line = intersect_max_line;\n     }\n \n ",
+        "display_url": "https://github.com/j-alex-hanson/speedy-splat-rasterizer/commit/b38abb6da7a7217999f8c5ec0e9219284464ffe0",
+        "display_title": "Initialize max line"
+      },
+      "isError": false
+    },
+    "raster_gitmodules": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "content": "[submodule \"third_party/glm\"]\n\tpath = third_party/glm\n\turl = https://github.com/g-truc/glm.git\n",
+        "encoding": "utf-8",
+        "sha": "4553c29f4224a9a8723482bc9aca759a97693a64",
+        "display_url": "https://github.com/j-alex-hanson/speedy-splat-rasterizer/blob/b38abb6da7a7217999f8c5ec0e9219284464ffe0/.gitmodules",
+        "display_title": ".gitmodules"
+      },
+      "isError": false
+    },
+    "setup": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "content": "#\n# Copyright (C) 2023, Inria\n# GRAPHDECO research group, https://team.inria.fr/graphdeco\n# All rights reserved.\n#\n# This software is free for non-commercial, research and evaluation use \n# under the terms of the LICENSE.md file.\n#\n# For inquiries contact  george.drettakis@inria.fr\n#\n\nfrom setuptools import setup\nfrom torch.utils.cpp_extension import CUDAExtension, BuildExtension\nimport os\nos.path.dirname(os.path.abspath(__file__))\n\nsetup(\n    name=\"diff_gaussian_rasterization\",\n    packages=['diff_gaussian_rasterization'],\n    ext_modules=[\n        CUDAExtension(\n            name=\"diff_gaussian_rasterization._C\",\n            sources=[\n            \"cuda_rasterizer/rasterizer_impl.cu\",\n            \"cuda_rasterizer/forward.cu\",\n            \"cuda_rasterizer/backward.cu\",\n            \"rasterize_points.cu\",\n            \"ext.cpp\"],\n            extra_compile_args={\"nvcc\": [\"-I\" + os.path.join(os.path.dirname(os.path.abspath(__file__)), \"third_party/glm/\")]})\n        ],\n    cmdclass={\n        'build_ext': BuildExtension\n    }\n)\n",
+        "encoding": "utf-8",
+        "sha": "bb7220d2934d006ea756e35ecb0f391403b43d64",
+        "display_url": "https://github.com/j-alex-hanson/speedy-splat-rasterizer/blob/b38abb6da7a7217999f8c5ec0e9219284464ffe0/setup.py",
+        "display_title": "setup.py"
+      },
+      "isError": false
+    },
+    "wrapper": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "content": "#\n# Copyright (C) 2023, Inria\n# GRAPHDECO research group, https://team.inria.fr/graphdeco\n# All rights reserved.\n#\n# This software is free for non-commercial, research and evaluation use \n# under the terms of the LICENSE.md file.\n#\n# For inquiries contact  george.drettakis@inria.fr\n#\n\nfrom typing import NamedTuple\nimport torch.nn as nn\nimport torch\nfrom . import _C\n\ndef cpu_deep_copy_tuple(input_tuple):\n    copied_tensors = [item.cpu().clone() if isinstance(item, torch.Tensor) else item for item in input_tuple]\n    return tuple(copied_tensors)\n\ndef rasterize_gaussians(\n    means3D,\n    means2D,\n    sh,\n    colors_precomp,\n    opacities,\n    scales,\n    rotations,\n    cov3Ds_precomp,\n    scores,\n    raster_settings,\n):\n    return _RasterizeGaussians.apply(\n        means3D,\n        means2D,\n        sh,\n        colors_precomp,\n        opacities,\n        scales,\n        rotations,\n        cov3Ds_precomp,\n        scores,\n        raster_settings,\n    )\n\nclass _RasterizeGaussians(torch.autograd.Function):\n    @staticmethod\n    def forward(\n        ctx,\n        means3D,\n        means2D,\n        sh,\n        colors_precomp,\n        opacities,\n        scales,\n        rotations,\n        cov3Ds_precomp,\n        scores,\n        raster_settings,\n    ):\n\n        # Restructure arguments the way that the C++ lib expects them\n        args = (\n            raster_settings.bg, \n            means3D,\n            colors_precomp,\n            opacities,\n            scales,\n            rotations,\n            raster_settings.scale_modifier,\n            cov3Ds_precomp,\n            raster_settings.viewmatrix,\n            raster_settings.projmatrix,\n            raster_settings.tanfovx,\n            raster_settings.tanfovy,\n            raster_settings.image_height,\n            raster_settings.image_width,\n            sh,\n            raster_settings.sh_degree,\n            raster_settings.campos,\n            raster_settings.prefiltered,\n            raster_settings.debug\n        )\n\n        # Invoke C++/CUDA rasterizer\n        if raster_settings.debug:\n            cpu_args = cpu_deep_copy_tuple(args) # Copy them before they can be corrupted\n            try:\n                num_rendered, color, radii, kernel_times, geomBuffer, binningBuffer, imgBuffer = _C.rasterize_gaussians(*args)\n            except Exception as ex:\n                torch.save(cpu_args, \"snapshot_fw.dump\")\n                print(\"\\nAn error occured in forward. Please forward snapshot_fw.dump for debugging.\")\n                raise ex\n        else:\n            num_rendered, color, radii, kernel_times, geomBuffer, binningBuffer, imgBuffer = _C.rasterize_gaussians(*args)\n\n        # Keep relevant tensors for backward\n        ctx.raster_settings = raster_settings\n        ctx.num_rendered = num_rendered\n        ctx.save_for_backward(colors_precomp, means3D, scales, rotations, cov3Ds_precomp, radii, sh, geomBuffer, binningBuffer, imgBuffer)\n        return color, radii, kernel_times\n\n    @staticmethod\n    def backward(ctx, grad_out_color, _0, _1):\n\n        # Restore necessary values from context\n        num_rendered = ctx.num_rendered\n        raster_settings = ctx.raster_settings\n        colors_precomp, means3D, scales, rotations, cov3Ds_precomp, radii, sh, geomBuffer, binningBuffer, imgBuffer = ctx.saved_tensors\n\n        # Restructure args as C++ method expects them\n        args = (raster_settings.bg,\n                means3D, \n                radii, \n                colors_precomp, \n                scales, \n                rotations, \n                raster_settings.scale_modifier, \n                cov3Ds_precomp, \n                raster_settings.viewmatrix, \n                raster_settings.projmatrix, \n                raster_settings.tanfovx, \n                raster_settings.tanfovy, \n                grad_out_color, \n                sh, \n                raster_settings.sh_degree, \n                raster_settings.campos,\n                geomBuffer,\n                num_rendered,\n                binningBuffer,\n                imgBuffer,\n                raster_settings.debug)\n\n        # Compute gradients for relevant tensors by invoking backward method\n        if raster_settings.debug:\n            cpu_args = cpu_deep_copy_tuple(args) # Copy them before they can be corrupted\n            try:\n                grad_means2D, grad_colors_precomp, grad_opacities, grad_means3D, grad_cov3Ds_precomp, grad_sh, grad_scales, grad_rotations, grad_gaussians2 = _C.rasterize_gaussians_backward(*args)\n            except Exception as ex:\n                torch.save(cpu_args, \"snapshot_bw.dump\")\n                print(\"\\nAn error occured in backward. Writing snapshot_bw.dump for debugging.\\n\")\n                raise ex\n        else:\n             grad_means2D, grad_colors_precomp, grad_opacities, grad_means3D, grad_cov3Ds_precomp, grad_sh, grad_scales, grad_rotations, grad_gaussians2 = _C.rasterize_gaussians_backward(*args)\n\n        grads = (\n            grad_means3D,\n            grad_means2D,\n            grad_sh,\n            grad_colors_precomp,\n            grad_opacities,\n            grad_scales,\n            grad_rotations,\n            grad_cov3Ds_precomp,\n            grad_gaussians2,\n            None,\n        )\n\n        return grads\n\nclass GaussianRasterizationSettings(NamedTuple):\n    image_height: int\n    image_width: int \n    tanfovx : float\n    tanfovy : float\n    bg : torch.Tensor\n    scale_modifier : float\n    viewmatrix : torch.Tensor\n    projmatrix : torch.Tensor\n    sh_degree : int\n    campos : torch.Tensor\n    prefiltered : bool\n    debug : bool\n\nclass GaussianRasterizer(nn.Module):\n    def __init__(self, raster_settings):\n        super().__init__()\n        self.raster_settings = raster_settings\n\n    def markVisible(self, positions):\n        # Mark visible points (based on frustum culling for camera) with a boolean \n        with torch.no_grad():\n            raster_settings = self.raster_settings\n            visible = _C.mark_visible(\n                positions,\n                raster_settings.viewmatrix,\n                raster_settings.projmatrix)\n            \n        return visible\n\n    def forward(self, means3D, means2D, opacities, scores, shs = None, colors_precomp = None, scales = None, rotations = None, cov3D_precomp = None):\n        \n        raster_settings = self.raster_settings\n\n        if (shs is None and colors_precomp is None) or (shs is not None and colors_precomp is not None):\n            raise Exception('Please provide excatly one of either SHs or precomputed colors!')\n        \n        if ((scales is None or rotations is None) and cov3D_precomp is None) or ((scales is not None or rotations is not None) and cov3D_precomp is not None):\n            raise Exception('Please provide exactly one of either scale/rotation pair or precomputed 3D covariance!')\n        \n        if shs is None:\n            shs = torch.Tensor([])\n        if colors_precomp is None:\n            colors_precomp = torch.Tensor([])\n\n        if scales is None:\n            scales = torch.Tensor([])\n        if rotations is None:\n            rotations = torch.Tensor([])\n        if cov3D_precomp is None:\n            cov3D_precomp = torch.Tensor([])\n\n        # Invoke C++/CUDA rasterization routine\n        return rasterize_gaussians(\n            means3D,\n            means2D,\n            shs,\n            colors_precomp,\n            opacities,\n            scales, \n            rotations,\n            cov3D_precomp,\n            scores,\n            raster_settings, \n        )\n\n",
+        "encoding": "utf-8",
+        "sha": "eeceb3494ce178bd8260ed3be38dc0fcda6905b6",
+        "display_url": "https://github.com/j-alex-hanson/speedy-splat-rasterizer/blob/b38abb6da7a7217999f8c5ec0e9219284464ffe0/diff_gaussian_rasterization/__init__.py",
+        "display_title": "__init__.py"
+      },
+      "isError": false
+    },
+    "ext": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "content": "/*\n * Copyright (C) 2023, Inria\n * GRAPHDECO research group, https://team.inria.fr/graphdeco\n * All rights reserved.\n *\n * This software is free for non-commercial, research and evaluation use \n * under the terms of the LICENSE.md file.\n *\n * For inquiries contact  george.drettakis@inria.fr\n */\n\n#include <torch/extension.h>\n#include \"rasterize_points.h\"\n\nPYBIND11_MODULE(TORCH_EXTENSION_NAME, m) {\n  m.def(\"rasterize_gaussians\", &RasterizeGaussiansCUDA);\n  m.def(\"rasterize_gaussians_backward\", &RasterizeGaussiansBackwardCUDA);\n  m.def(\"mark_visible\", &markVisible);\n}",
+        "encoding": "utf-8",
+        "sha": "d768779579761238347972a973fbd1603d44235e",
+        "display_url": "https://github.com/j-alex-hanson/speedy-splat-rasterizer/blob/b38abb6da7a7217999f8c5ec0e9219284464ffe0/ext.cpp",
+        "display_title": "ext.cpp"
+      },
+      "isError": false
+    }
+  }
+}

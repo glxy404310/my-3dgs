@@ -1,0 +1,191 @@
+Color-cued Efficient Densification Method for 3D Gaussian Splatting (https://openaccess.thecvf.com/content/CVPR2024W/3DMV/papers/Kim_Color-cued_Efficient_Densification_Method_for_3D_Gaussian_Splatting_CVPRW_2024_paper.pdf)
+citeturn69search12 [wordlim: 200] Crawled: 10 months ago; Upper section titled “2D Position Gradient” shows a red-outlined block with inputs “color,” “transmittance,” and a yellow box “∂L/∂channel,” feeding into “Red,” plus separate boxes “Same of Green” and “Same of Blue.” ... The caption states that the upper section depicts the 2D position gradient of each Gaussian, while the lower section depicts the 0th spherical harmonics gradient of each Gaussian; values for pixels are in yellow, while values for Gaussians are in blue.
+
+3.1. Inefficiency Analysis of the Original 3DGS Densification
+
+The original densification method has inefficiencies in two aspects. Firstly, the original densification overestimates the necessity for a new Gaussian. The orange box in Figure 2 shows the densification scheme used by the original 3DGS.
+
+<visual_element id="e2">
+Figure 3 gradient breakdown diagram. Upper section titled “2D Position Gradient” shows a red-outlined block with inputs “color,” “transmittance,” and a yellow box “∂L/∂channel,” feeding into “Red,” plus separate boxes “Same of Green” and “Same of Blue.” To the right are blue boxes and green circular nodes showing the chain of derivatives for opacity and 2D position terms, including labels such as “Opacity,” “∂L/∂c,” “-G × dx,” “x of conic matrix,” “-G × dy,” “y of conic matrix,” “0.5 × W,” “∂L/∂mean2D,” “∂G/∂x,” and “∂G/∂y.” Lower section titled “0th Spherical Harmonics Gradient” shows inputs “c = min(0.99, opacity × G)” and “transmittance,” leading through yellow/blue boxes labeled “∂L/∂channel,” “∂channel/∂color,” “clamped,” “∂L/∂decoder,” “∂L/∂RGB,” and “∂L/∂SH(0).” The caption states that the upper section depicts the 2D position gradient of each Gaussian, while the lower section depicts the 0th spherical harmonics gradient of each Gaussian; values for pixels are in yellow, while values for Gaussians are in blue.
+</visual_element>
+
+Figure 3. Breakdown of gradients mentioned in this paper. The upper section depicts the 2D position gradient of each Gaussian, while the lower section depicts the 0th spherical harmonics gradient of each Gaussian. Values for pixels are in yellow, while values for Gaussians are in blue.
+
+The original 3DGS utilizes each Gaussian’s 2D position gradient to determine whether a Gaussian is under/over-reconstructed and employs the scale of each Gaussian to differentiate between under and over-reconstruction. The right column in Figure 2 illustrates instances where the 2D position gradient can be large, but cloning or splitting is unnecessary. Optimization of scale and rotation of a single Gaussian is enough to represent the true geometry. Since there are no ground truth Gaussians to compare with, the original paper uses the 2D position gradient to roughly capture the difference between the true scene and each Gaussian, leading to aggressive densification that results in a large model with an inefficient Gaussian population.
+
+Secondly, relying on the 2D position gradient as a cue is insufficient for addressing the ‘color under-represented’ scenario depicted in Figure 2. This scenario occurs when a single Gaussian cannot represent multiple colors in the
+
+777--------------------------------------------------------------------------------
+Utils - gsplat documentation (https://docs.gsplat.studio/main/apis/utils)
+citeturn69search0 [wordlim: 200] Crawled: last month; spherical_harmonics(degrees_to_use: int, means: Tensor, viewmats: Tensor, coeffs: Tensor, masks: Tensor | None = None, batch_ids: Tensor | None = None, camera_ids: Tensor | None = None, gaussian_ids: Tensor | None = None, viewmats_rs: Tensor | None = None) → Tensor[source]¶ ... spherical_harmonics_l1_plus(degrees_to_use: int, means: Tensor, viewmats: Tensor, shN: Tensor, masks: Tensor | None = None, batch_ids: Tensor | None = None, camera_ids: Tensor | None = None, gaussian_ids: Tensor | None = None, viewmats_rs: Tensor | None = None) → Tensor[source]¶ ...   * quats – Quaternions (No need to be normalized). ... If True, during backward the gradients of {means, covars, quats, scales} will be a sparse Tensor in COO layout.
+
+# Utils¶
+
+Below are the basic functions that supports the rasterization.
+
+## 3DGS¶
+
+spherical_harmonics(degrees_to_use: int, means: Tensor, viewmats: Tensor, coeffs: Tensor, masks: Tensor | None = None, batch_ids: Tensor | None = None, camera_ids: Tensor | None = None, gaussian_ids: Tensor | None = None, viewmats_rs: Tensor | None = None) → Tensor[source]¶
+    
+
+Computes spherical harmonics.
+
+The output channel count `D` is taken from the last dim of `coeffs` and can be any positive integer (e.g. 3 for RGB, 1 for scalar features).
+
+In packed mode, callers pre-gather coefficients by `gaussian_ids` so the first coefficient dimension is `nnz`.
+
+The camera position is recovered from each view matrix as `-R^T t`. This assumes that the upper-left 3x3 rotation block `R` is orthonormal. Results are approximate when a view matrix contains scale or shear, or when a raw matrix optimization does not preserve orthonormality.
+--------------------------------------------------------------------------------
+UW-GS: Distractor-Aware 3D Gaussian Splatting for Enhanced Underwater Scene Reconstruction (https://openaccess.thecvf.com/content/WACV2025/papers/Wang_UW-GS_Distractor-Aware_3D_Gaussian_Splatting_for_Enhanced_Underwater_Scene_Reconstruction_WACV_2025_paper.pdf)
+citeturn69search13 [wordlim: 200] This adjustment effectively compensates for biased 2D position gradient calculations, allowing 3DGS to generate denser Gaussian point clouds with improved representational accuracy.Furthermore, by adjusting the 2D position gradient, this method optimizes regions where object color information is substantially attenuated, thereby enhancing 3DGS performance in areas characterized by smooth color transitions.
+<visual_element id="e1">
+Figure 3. Two-panel diagram.
+
+Left panel title: “2D Position Gradient Calculation”
+- Three input blocks on the left:
+  - \(\frac{\partial L_{Rec}}{\partial color_R} \times T^D_R\)
+  - \(T \times color_R\)
+  - \(\frac{\partial L_{Rec}}{\partial color_G} \times T^D_G\)
+  - \(T \times color_G\)
+  - \(\frac{\partial L_{Rec}}{\partial color_B} \times T^D_B\)
+  - \(T \times color_B\)
+- These feed through multiply and sum nodes into an opacity block and gradient blocks labeled \(\frac{\partial G}{\partial x}\) and \(\frac{\partial x}{\partial x}\), ending at a highlighted yellow output:
+  - \(\alpha_{atten}(z) \cdot \frac{\partial L_{Rec}}{\partial mean2D}\)
+  - label below: “2D Position Gradient”
+- Text at upper right of left panel:
+  - “For clear medium: \(\alpha_{atten}(z) \equiv 1\)”
+  - “For water: \(\alpha_{atten}(z) < \frac{1}{z}\)”
+
+Right panel title: “Densification Process”
+- Left side labels:
+  - \(\alpha_{atten}(z_1) = \frac{\partial L}{\partial mean2D_1} > \tau \alpha_{atten}(z_2) = \frac{\partial L}{\partial mean2D_2} < \tau\)
+--------------------------------------------------------------------------------
+CVPR 2024 Open Access Repository (https://openaccess.thecvf.com/content/CVPR2024W/3DMV/html/Kim_Color-cued_Efficient_Densification_Method_for_3D_Gaussian_Splatting_CVPRW_2024_paper.html)
+citeturn69search1 [wordlim: 200] Crawled: 4 months ago; In contrast to the original approach which relies solely on the 2D position gradient our method additionally leverages the spherical harmonics (SH) gradient to consider color cues. ... @InProceedings{Kim_2024_CVPR, author = {Kim, Sieun and Lee, Kyungjin and Lee, Youngki}, title = {Color-cued Efficient Densification Method for 3D Gaussian Splatting}, booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops}, month = {June}, year = {2024}, pages = {775-783} }
+
+Color-cued Efficient Densification Method for 3D Gaussian Splatting     
+
+Sieun Kim, Kyungjin Lee, Youngki Lee; Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2024, pp. 775-783
+
+Abstract
+
+Many variants of Neural Radiance Fields (NeRF) have been explored in pursuit of high-quality results with reasonable data size and real-time rendering speed. 3D Gaussian Splatting (3DGS) gained popularity due to its ability to render quality images in real-time; however it still faces challenges with large data sizes. Meanwhile the densification process of 3DGS plays a large role in deciding the quality and the data size of a model. Hence it is crucial to devise a densification method that can populate Gaussians efficiently so that quality can be enhanced and fewer Gaussians are used. An efficient densification method that results in fewer Gaussians can also promote efficiency in training time GPU memory usage and rendering speed. Hence we propose a novel efficient densification method based on color cues aiming to achieve a more compact Gaussian model without sacrificing image quality. By expanding the original 3DGS densification scheme we identify weaknesses in the original method that lead to redundant Gaussians and compromise quality. In contrast to the original approach which relies solely on the 2D position gradient our method additionally leverages the spherical harmonics (SH) gradient to consider color cues. This approach resolves the inefficiencies of the original densification by aligning with the expanded scheme. Our method achieves at least 9x data size reduction with increased perceptual quality accompanied by additional efficiencies in training time GPU memory usage and rendering speed.
+
+Related Material
+    [pdf]
+
+[bibtex]
+
+@InProceedings{Kim_2024_CVPR, author = {Kim, Sieun and Lee, Kyungjin and Lee, Youngki}, title = {Color-cued Efficient Densification Method for 3D Gaussian Splatting}, booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops}, month = {June}, year = {2024}, pages = {775-783} }--------------------------------------------------------------------------------
+gsplat.cuda._wrapper - gsplat documentation (https://docs.gsplat.studio/main/_modules/gsplat/cuda/_wrapper.html)
+citeturn69search2 [wordlim: 200] Crawled: last month;         """Python autograd hooks for the gsplat::spherical_harmonics op.""" ...             # save_for_backward round-trips None as None, so the optional masks save directly. ...             quats: Quaternions (No need to be normalized). ...             densify: Dummy variable to keep track of gradient for densification.[..., N, 2] if packed, [nnz, 3] if packed is True.
+--------------------------------------------------------------------------------
+Aniso-GS: Anisotropic appearance field for complex highlight modeling in 3D Gaussian splatting - ScienceDirect (https://www.sciencedirect.com/science/article/abs/pii/S0097849326000646)
+citeturn69search3 [wordlim: 200] Crawled: last month; And the gradient of the positional feature u is not backpropagated to the Gaussian position. ... Finally, we parameterize the 3D Gaussians using the opacity and color outputs from the anisotropic appearance field, along with the position, scaling matrix, and rotation matrix initialized from the sparse SFM point cloud.We then apply Eqs. (2), (3) for Gaussian splatting and fast rasterization, respectively, to enable real-time image rendering.
+--------------------------------------------------------------------------------
+Wang, H., Anantrasirichai, N., Zhang, F., & Bull, D. (2025). UW-GS: (https://research-information.bris.ac.uk/files/470481193/Wang_UW-GS_Distractor-Aware_3D_Gaussian_Splatting_for_Enhanced_Underwater_Scene_Reconstruction_WACV_2025_paper.pdf)
+citeturn69search14 [wordlim: 200] Published: last year; Our color appearance model uses view-direction R and depth z encoded by position encoding γ to estimate ... In the splatting process, ... each Gaussian color gradient has an attenuation factor T D
+--------------------------------------------------------------------------------
+GitHub - ydah/gsplat: A differentiable 3D Gaussian splatting renderer and trainer for Ruby, with Numo::NArray and optional OpenMP acceleration. · GitHub (https://ithub.global.ssl.fastly.net/ydah/gsplat)
+citeturn69search4 [wordlim: 200] Crawled: last month; It provides a portable `Numo::NArray` implementation, an optional C/OpenMP fast path, reverse-mode automatic differentiation, and training and IO utilities modeled after Python `gsplat`. ... Spherical harmonic coefficients are `[N,K,D]`. ... Non-scalar outputs require an explicit backward gradient. ... `gsplat.spherical_harmonics(...) ...     bundle exec rubocop --no-server --cache false
+--------------------------------------------------------------------------------
+How Splats Learn (https://taosengine.com/docs/gaussian_splats/index.html)
+citeturn69search5 [wordlim: 200] Crawled: last week; Now we reconstruct the look of the scene — not as surfaces, but as a cloud of soft, semi-transparent, colored blobs called Gaussian splats. ... #### Where the position gradient comes from ...   * max(0, ·)color can't go negative; a channel clamped here simply gets no gradient this step. ... Interactive · the spherical-harmonic basis — the fixed patterns a splat's color is built from
+--------------------------------------------------------------------------------
+3DGS.zip: A survey on 3D Gaussian Splatting Compression Methods - Bagdasarian - 2025 - Computer Graphics Forum - Wiley Online Library (https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.70078)
+citeturn69search6 [wordlim: 200] Published: 1.5 years ago; Crawled: 2 weeks ago; The rendering of 3D Gaussian primitives, also called splatting, is achieved by their projection from a three-dimensional space onto a two-dimensional image plane. ... Throughout the training or optimization phase, the position, size (as represented by the covariance matrix), opacity, and color of the Gaussian functions are systematically refined to optimally correspond to the input views.
+--------------------------------------------------------------------------------
+third_party/gsplat/tests/test_basic.py · qitaoz/E-RayZer at main (https://huggingface.co/spaces/qitaoz/E-RayZer/blob/main/third_party/gsplat/tests/test_basic.py)
+citeturn69search7 [wordlim: 200] Crawled: 2 months ago;  | @pytest.mark.skipif(not torch.cuda.is_available(), reason="No CUDA device") ...  | from gsplat.cuda._torch_impl import _spherical_harmonics | from gsplat.cuda._wrapper import spherical_harmonics
+--------------------------------------------------------------------------------
+3D Gaussian Splatting Compression Survey (https://w-m.github.io/3dgs-compression-survey/)
+citeturn69search8 [wordlim: 200] Published: 1.8 years ago; Crawled: 3 months ago; ## Color-cued Efficient Densification Method for 3D Gaussian Splatting ... It leverages the view-independent (0th) spherical harmonics (SH) coefficient gradient to better assess color cues for densification, while using the 2D position gradient more coarsely to refine areas where structure-from-motion (SfM) struggles to capture fine structures.
+--------------------------------------------------------------------------------
+(PDF) DeMapGS: Simultaneous Mesh Deformation and Surface Attribute Mapping via Gaussian Splatting (https://www.researchgate.net/publication/398602141_DeMapGS_Simultaneous_Mesh_Deformation_and_Surface_Attribute_Mapping_via_Gaussian_Splatting)
+citeturn69search9 [wordlim: 200] Published: 10 months ago; Crawled: last month; of a 3D Gaussian splat (3DGS) is full-directional—equivalently, it ... direction of position gradient (Secs.
+--------------------------------------------------------------------------------
+cl-splats/clsplats/representation/cl_gaussians.py at main · jan-ackermann/cl-splats · GitHub (https://github.com/jan-ackermann/cl-splats/blob/main/clsplats/representation/cl_gaussians.py)
+citeturn69search10 [wordlim: 200] Crawled: 3 weeks ago; self.params = GaussianParamView(self) ... sh = params.sh_features.detach().to(self.device).permute(0, 2, 1).contiguous()
+--------------------------------------------------------------------------------
+Splat Trainer — Reconstructing 3D Gaussian Splats from Taos Engine Renders · Sample Deep Dives (https://taosengine.com/book/samples/splat_trainer.html)
+citeturn69search11 [wordlim: 200] Crawled: 3 days ago; Each splat is an anisotropic 3D Gaussian with a handful of trainable parameters, packed at stride 14 floats (`splat_diff_aniso.ts`): ... Position  | 3  | world xyz  | — ... Color (SH-DC)  | 3  | DC term  | `SH_C0·dc + 0.5` ... The heart of the trainer is an analytic backward pass: given the loss gradient on the rendered image, scatter it back through the alpha-composite, the 2D conic, the 2D covariance, the 3D covariance, and finally onto each splat's scale and quaternion.
+--------------------------------------------------------------------------------
+Spherical harmonics (https://en.wikipedia.org/wiki/Spherical_harmonics)
+citeturn69search15 [wordlim: 200] Crawled: last week; The distance of the surface from the origin indicates the absolute value of ${\displaystyle Y_{\ell }^{m}(\theta ,\varphi )}$ in angular direction ${\displaystyle (\theta ,\varphi )}$. ... Notice, however, that spherical harmonics are not functions on the sphere which are harmonic with respect to the Laplace-Beltrami operator for the standard round metric on the sphere: the only harmonic functions in this sense on the sphere are the constants, since harmonic functions satisfy the Maximum principle. ... From the analytic solutions for the hydrogen atom, the eigenfunctions of the angular part of the wave function are spherical harmonics.However, the solutions of the non-relativistic Schrödinger equation without magnetic terms can be made real. ... For example, as can be seen from the table of spherical harmonics, the usual p functions (${\displaystyle \ell =1}$) are complex and mix axis directions, but the real versions are essentially just x, y, and z. ... Note that n = ℓ. ... When ℓ = |m| (bottom-right in the figure), there are no zero crossings in latitude, and the functions are referred to as sectoral.
+--------------------------------------------------------------------------------
+What am i doing wrong? 3DGS renders look terrible. fuzzy, porous, blobby, confetti base (https://www.reddit.com/r/GaussianSplatting/comments/1rcuh9u/what_am_i_doing_wrong_3dgs_renders_look_terrible/)
+citeturn69reddit16 [wordlim: 200] Published: 8 months ago; Phone capture (48 photos, single orbit) → COLMAP → VGGT (dense depth + point cloud) → BiRefNet masks → gsplat training (7K steps, depth-supervised, SH0, full res) → postprocess ... Im no expert in VGGT but 7k iterations seems low, for vanilla 3dgs 30k is the usual rule of thumb, for scaffoldGS a bit less. ... Pipeline that produced the attached results: flow-reprojected forward-backward correspondences from reference + N auxiliary views combined with ALIKED+LightGlue matches, fed to COLMAP.
+--------------------------------------------------------------------------------
+Realtime Gaussian Splatting (https://www.reddit.com/r/GaussianSplatting/comments/1iyz4si/realtime_gaussian_splatting/)
+citeturn69reddit17 [wordlim: 200] Published: 1.6 years ago; The most obvious compromise is the image quality compared to non real-time splatting. ... But since it needs to be fast, there is no actual "training" at runtime. ...   My particular neural net is heavily inspired by the FWD paper, except I output gaussians instead of a direct pixel rendering. ...   Edit: I forgot to mention that for the actual rendering, I use a modified version of nerfstudio's gsplat library https://github.com/nerfstudio-project/gsplat ... For instance, the cameras need to all be facing the same general direction. ...   My setup works even if the cameras are pointing different directions and are very spread out in space.
+--------------------------------------------------------------------------------
+Gaussian splatting (https://en.wikipedia.org/wiki/Gaussian_splatting)
+citeturn69search18 [wordlim: 200] Crawled: 5 days ago; * Color representation: Using spherical harmonics to model view-dependent appearance.* Optimization algorithm: Optimizing the parameters using stochastic gradient descent to minimize a loss function combining L1 loss and D-SSIM, inspired by the Plenoxels work.* Rasterizer: Implementing a tile-based rasterizer for fast sorting and backward pass, enabling efficient blending of Gaussian components.
+--------------------------------------------------------------------------------
+Brush 0.3 - Easy splat training everywhere! (https://www.reddit.com/r/GaussianSplatting/comments/1ngzilo/brush_03_easy_splat_training_everywhere/)
+citeturn69reddit19 [wordlim: 200] Published: 1.1 years ago; It's a tool to create gaussian splats that requires no setup, runs on any platform (windows/mac/linux/mobile), or straight in your browser (Chrome or Edge only atm)!Brush 0.3 is a big update to train higher quality splats, while training faster, and with a ton of new features. ... - Reduce atomic adds to improve the speed of the backward pass [1] ... Would love to see some of the advanced stuff from NerfStudio/Gsplat in an easy-to-use package.
+--------------------------------------------------------------------------------
+Difix3D+: Improving 3D Reconstruction with Single-Step Diffusion Models (https://www.reddit.com/r/GaussianSplatting/comments/1lan2gj)
+citeturn69reddit20 [wordlim: 200] Published: 1.4 years ago; Crawled: 1.3 years ago; So is the output a cleaned gsplat? ...     Ok so this has an automated way of generating novel views through diffusion during the gsplat training process?
+--------------------------------------------------------------------------------
+Gsplat all-in-one GUI for Mac Silicon (https://www.reddit.com/r/GaussianSplatting/comments/1q430m5/gsplat_allinone_gui_for_mac_silicon/)
+citeturn69reddit21 [wordlim: 200] Published: 9 months ago; Crawled: last month; It's now powered by **upscayl-ncnn** — a standalone binary, no Python dependencies whatsoever. ... * Dropped cluttered checkboxes for a sleek, **unified training mode selector** (dynamically adapting the UI for GSplat, 360 Extractor, 4DGS, or Apple Sharp). ... * **Training Mode Selector**: Refactored the "Entraînement" tab to use a dropdown for Training Mode (Gsplat, ML Sharp, 360 Extractor, 4DGS) instead of generic radio buttons, adapting the UI dynamically for each mode. ... * **- Choose the image conversion format: PNG, JPEG, or none (HEIC, TIFF, WebP… are handled). ... * **- SplatTransform tab (PlayCanvas): PLY ↔ SPZ ↔ GLB, NaN and floater filtering, decimation, harmonics stripping. ... I also had the issue where your directions don't include your git username, i.e. the command: ... note: all the other dependencies install fine, just seems to be an issue with brush. ...       Imported target "freeimage::FreeImage" includes non-existent path
+--------------------------------------------------------------------------------
+Does anyone else experience Postshot creating a bunch of floaters? Brush barely creates them, but Postshot constantly introduces splats randomly in the air, no matter what (https://www.reddit.com/r/GaussianSplatting/comments/1tw62jk/does_anyone_else_experience_postshot_creating_a/)
+citeturn69reddit22 [wordlim: 200] Published: 4 months ago; Not sure how big your scene is but I am guessing it is pretty large being that you are using a spherical camera. ... There are many recipes adaptive density control ( original paper), mcmc, etc. that attack the Gaussian alignment in different ways, what I am hypothesizing is that you have a large scene, postshot limits max number of Gaussians (mcmc) and you will get smearing like this.Just something I have ran into with gsplat so thought I would share.
+--------------------------------------------------------------------------------
+My Interior Splat is just not working (https://www.reddit.com/r/GaussianSplatting/comments/1t6ewhv/my_interior_splat_is_just_not_working/)
+citeturn69reddit23 [wordlim: 200] Published: 5 months ago; This is my first attempt, pretty new to photogrammetry and super new to the gaussian splatting world. ... What I've tried (all 30k–60k steps, 2048 cubes — none sharp enough) ... It isn’t too bad considering you have blank walls and no features to appropriately triangulate for depth. ... Construct the initial point cloud using lidar and use that for gsplat training. ... My initial reaction is that for GS need a higher res spherical camera like 8k (I used 4k) or just use a 4K fisheye camera.
+--------------------------------------------------------------------------------
+2D Gaussian Splatting - implementations (https://www.reddit.com/r/GaussianSplatting/comments/1fv1tc9)
+citeturn69reddit24 [wordlim: 200] Published: 2.0 years ago; Crawled: 2.0 years ago; Theres a 2D GS trainer in GSPLAT:
+--------------------------------------------------------------------------------
+Can I align coordinates between COLMAP results and gsplat results? (https://www.reddit.com/r/GaussianSplatting/comments/1iaa7ov)
+citeturn69reddit25 [wordlim: 200] Published: 1.7 years ago; Crawled: 1.7 years ago; I'm now trying to train a scene using the garden dataset which often used as an example and gsplat as a 3DGS library. ...   Thanks, yes I’m using gsplat developed by nerf studio.
+--------------------------------------------------------------------------------
+GS 3D model FPS (https://www.reddit.com/r/GaussianSplatting/comments/1jz90to)
+citeturn69reddit26 [wordlim: 200] Published: 1.5 years ago; Crawled: 1.5 years ago; const initialPosition = new SPLAT.Vector3( ... I am using gsplat library from https://github.com/huggingface/gsplat.js and I am able to use fps but unable to spawn at a exact position that I want
+--------------------------------------------------------------------------------
+need some help (https://www.reddit.com/r/GaussianSplatting/comments/1v3ev7b/need_some_help/)
+citeturn69reddit27 [wordlim: 200] Published: 3 months ago; so am new to guassian splatting, decided to try to splat my livvingroom, used my quest 3 and a sideloaded app called splatarascan (URL) ....it took 2020 photos, so i put it into postshot and it actually did a pretty good job of the lower half of the room, the problem is the subscription is expensive and i cant export the .ply without sub, so i departed from postshot, I first tried building my own stack using COLMAP and Nerfstudio, but i kept getting either CUDA version issues or gsplat issues or pytorch issues I couldnt resolve the version mismatchs without getting some other form of issue, so i gave up on that and tried lichtfeld studio i built it from source successfully it ran a training it took 20 hours (5060ti) 5m max guassians 200kiterations this looks HORRENDOUS couldnt even tell what it was, I then tried using chatgpt to help suggest training settings, it looks a tad better but still terrible with all sorts of floating gobs everywhere, I ended up trying Brush instead, and it looked alot better then lichtfeld but still not as good as postshot, what am i doing wrong?
+--------------------------------------------------------------------------------
+DIST: Rendering Deep Implicit Signed Distance Function with Differentiable Sphere Tracing (https://arxiv.org/abs/1911.13225)
+citeturn69academia28 [wordlim: 200] Published: 6.9 years ago; Title: DIST: Rendering Deep Implicit Signed Distance Function with Differentiable Sphere Tracing ... Due to the nature of the implicit function, the rendering process requires tremendous function queries, which is particularly problematic when the function is represented as a neural network.We optimize both the forward and backward passes of our rendering layer to make it run efficiently with affordable memory consumption on a commodity graphics card.Our rendering method is fully differentiable such that losses can be directly computed on the rendered 2D observations, and the gradients can be propagated backwards to optimize the 3D geometry. ... With the geometry based reasoning, our 3D shape prediction methods show excellent generalization capability and robustness against various noises.
+--------------------------------------------------------------------------------
+Laplace's equation (https://en.wikipedia.org/wiki/Laplace%27s_equation)
+citeturn69search29 [wordlim: 200] Crawled: 5 months ago; ### Laplace's spherical harmonicsReal (Laplace) spherical harmonics Y_{ℓ}^{m} for ℓ = 0, ..., 4 (top to bottom) and m = 0, ..., ℓ (left to right).
+--------------------------------------------------------------------------------
+Help with running gsplat on 50 series card (https://www.reddit.com/r/GaussianSplatting/comments/1l5ad42)
+citeturn69reddit30 [wordlim: 200] Published: 1.4 years ago; Crawled: 1.4 years ago; Hi Im trying to run gsplat but i cannot pass through these errors  . ... git clone https://github.com/nerfstudio-project/gsplat.git
+--------------------------------------------------------------------------------
+Sphere mapping (https://en.wikipedia.org/wiki/Sphere_mapping)
+citeturn69search31 [wordlim: 200] Crawled: 7 months ago; * The image being created is orthographic, or the viewer is infinitely far away, so that the view direction does not change as one moves across the image.At texture coordinate ${\displaystyle (x,y)}$, note that the depicted location on the sphere is ${\displaystyle (x,y,z)}$ (where z is ${\displaystyle {\sqrt {1-x^{2}-y^{2}}}}$), and the normal at that location is also ${\displaystyle \langle x,y,z\rangle }$.
+--------------------------------------------------------------------------------
+Spherical coordinate system (https://en.wikipedia.org/wiki/Spherical_coordinate_system)
+citeturn69search32 [wordlim: 200] Crawled: last week; To define a spherical coordinate system, one must designate an origin point in space, O, and two orthogonal directions: the zenith reference direction and the azimuth reference direction.
+--------------------------------------------------------------------------------
+Rendering (computer graphics) (https://en.wikipedia.org/wiki/Rendering_%28computer_graphics%29)
+citeturn69search33 [wordlim: 200] Crawled: today; "3D Gaussian Splatting for Real-Time Radiance Field Rendering".
+--------------------------------------------------------------------------------
+Generalized gradient approximation for solids and their surfaces (https://arxiv.org/abs/0707.2088)
+citeturn69academia34 [wordlim: 200] Published: 19.3 years ago; Restoration of the first-principles gradient expansion for the exchange energy over a wide range of density gradients eliminates this bias.
+--------------------------------------------------------------------------------
+3D Gaussian Splatting for Real-Time Radiance Field Rendering (https://arxiv.org/abs/2308.04079)
+citeturn69academia35 [wordlim: 200] Published: 3.2 years ago; For unbounded and complete scenes (rather than isolated objects) and 1080p resolution rendering, no current method can achieve real-time display rates.We introduce three key elements that allow us to achieve state-of-the-art visual quality while maintaining competitive training times and importantly allow high-quality real-time (>= 30 fps) novel-view synthesis at 1080p resolution.
+--------------------------------------------------------------------------------
+Restoring the density-gradient expansion for exchange in solids and surfaces (https://arxiv.org/abs/0711.0156)
+citeturn69academia36 [wordlim: 200] Published: 19.0 years ago; Restoration of the first-principles gradient expansion for exchange over a wide range of density gradients eliminates this bias.
+--------------------------------------------------------------------------------
+ (https://raw.githubusercontent.com/nerfstudio-project/gsplat/main/gsplat/cuda/_wrapper.py)
+citeturn69view0 [wordlim: 200] Crawled: today; Content type: text/plain; Source: open({"ref_id":"https://raw.githubusercontent.com/nerfstudio-project/gsplat/main/gsplat/cuda/_wrapper.py","lineno":null}); Total lines: 3021
+L0: # SPDX-FileCopyrightText: Copyright 2024-2025 the Regents of the University of California, Nerfstudio Team and contributors. All rights reserved.
+L1: # SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+L2: # SPDX-License-Identifier: Apache-2.0
+L3: #
+L4: # Licensed under the Apache License, Version 2.0 (the "License");
+L5: # you may not use this file except in compliance with the License.
+L6: # You may obtain a copy of the License at
+L7: #
+L8: # http://www.apache.org/licenses/LICENSE-2.0
+L9: #
+

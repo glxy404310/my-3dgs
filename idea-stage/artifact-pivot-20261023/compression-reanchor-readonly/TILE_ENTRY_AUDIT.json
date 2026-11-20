@@ -1,0 +1,138 @@
+{
+  "scope": "Existing-cache, source-level tile-entry reconstruction only",
+  "rows": [
+    {
+      "rank": 0,
+      "view": "000002.jpg",
+      "teacher_points": 2050770,
+      "kept_points": 1025385,
+      "visible_teacher": 917676,
+      "visible_kept": 616212,
+      "tile_entries_teacher": 4525910,
+      "tile_entries_kept": 3667520,
+      "kept_tile_entry_fraction": 0.8103386943178278,
+      "plus15_vs_source_order_changed_active_rectangles": 0,
+      "teacher_radius_quantiles": [
+        5.0,
+        15.0,
+        46.0
+      ],
+      "kept_radius_quantiles": [
+        6.0,
+        17.0,
+        55.0
+      ]
+    },
+    {
+      "rank": 72,
+      "view": "000084.jpg",
+      "teacher_points": 2050770,
+      "kept_points": 1025385,
+      "visible_teacher": 704745,
+      "visible_kept": 473036,
+      "tile_entries_teacher": 3901196,
+      "tile_entries_kept": 3173026,
+      "kept_tile_entry_fraction": 0.8133469838480302,
+      "plus15_vs_source_order_changed_active_rectangles": 0,
+      "teacher_radius_quantiles": [
+        5.0,
+        17.0,
+        50.0
+      ],
+      "kept_radius_quantiles": [
+        6.0,
+        19.0,
+        59.0
+      ]
+    },
+    {
+      "rank": 145,
+      "view": "000167.jpg",
+      "teacher_points": 2050770,
+      "kept_points": 1025385,
+      "visible_teacher": 616907,
+      "visible_kept": 426623,
+      "tile_entries_teacher": 4752759,
+      "tile_entries_kept": 3959194,
+      "kept_tile_entry_fraction": 0.8330306670294033,
+      "plus15_vs_source_order_changed_active_rectangles": 0,
+      "teacher_radius_quantiles": [
+        7.0,
+        23.0,
+        67.0
+      ],
+      "kept_radius_quantiles": [
+        8.0,
+        26.0,
+        79.0
+      ]
+    },
+    {
+      "rank": 218,
+      "view": "000251.jpg",
+      "teacher_points": 2050770,
+      "kept_points": 1025385,
+      "visible_teacher": 848089,
+      "visible_kept": 586784,
+      "tile_entries_teacher": 3941761,
+      "tile_entries_kept": 3190565,
+      "kept_tile_entry_fraction": 0.8094262944912185,
+      "plus15_vs_source_order_changed_active_rectangles": 0,
+      "teacher_radius_quantiles": [
+        5.0,
+        14.0,
+        42.0
+      ],
+      "kept_radius_quantiles": [
+        5.0,
+        16.0,
+        49.0
+      ]
+    }
+  ],
+  "image_wh": [
+    979,
+    546
+  ],
+  "tile_wh": [
+    16,
+    16
+  ],
+  "grid_xy": [
+    62,
+    35
+  ],
+  "quantiles": [
+    0.5,
+    0.9,
+    0.99
+  ],
+  "native_forward_calls": 0,
+  "backward_calls": 0,
+  "optimizer_updates": 0,
+  "model_writes": 0,
+  "compression_runs": 0,
+  "source_sha256": {
+    "forward.cu": "4bfb6830a138bd016f39fa4558f998825d4182b12cfbda2f62bed0ab75042b54",
+    "auxiliary.h": "5a3345d46acd23a85e44c214dac404f4be195d7c4c49c9effa280ba3bbb10a51",
+    "config.h": "86d90fe26989e5a991104842961341d1bcb4374d5068dcb2a56d63a9017f8d65"
+  },
+  "input_sha256": {
+    "/mnt/d/Documents/my 3dgs/research/experiments/truck30k-coverage-controls-v0/run/all219_indices.npy": "f6c9f4da05e064db5c94134c8ee241eb2188fb83a5c3f860655d2eaf279f992f",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pruned-opacity-transfer-v0/run/projections/000.npz": "0e771a0caf60b7cf9eef3200e4ee3f1913e7ac23a3d834ed60cb68c627255c6a",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pruned-opacity-transfer-v0/run/projections/072.npz": "7306cb7fa5f736899b9e748fd3607b1d30f149bbad6fb60e5b3fd75df57ff129",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pruned-opacity-transfer-v0/run/projections/145.npz": "e059cf17d866441eeb9dad16c692ff9b1a97589a8d31b3e75bf0daf8b037fde1",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pruned-opacity-transfer-v0/run/projections/218.npz": "f865e5ac2a800f9852f4de0b4c663db480778719d1f4704bd3f5054020cc1249"
+  },
+  "script_sha256": "f7d635398507e2fa7c06edfca3cfe9a055b75d31ee7f7bfdb299c12b4e521715",
+  "numpy_version": "2.2.6",
+  "elapsed_seconds": 1.5858444620000003,
+  "interpretation": "50% point retention keeps about 81-83% of source-level candidate tile entries in these four cached views. This is not actual render timing, opacity-accepted contribution count, or proof of a new method.",
+  "limitations": [
+    "Only four pre-existing fixed views; not all219 or test set.",
+    "Uses saved teacher geometry and exact subset indices; subset projection geometry is unchanged.",
+    "No saved native tiles_touched field was used to independently validate the reconstructed integers.",
+    "CUDA compilation flags/binary provenance may alter arithmetic; this report claims source-level reconstruction only.",
+    "Compositing early termination and post-pruning transmittance can change actual work; no runtime speedup inferred."
+  ]
+}

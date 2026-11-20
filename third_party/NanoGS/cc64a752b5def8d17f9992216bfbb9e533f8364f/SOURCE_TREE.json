@@ -1,0 +1,140 @@
+{
+  "sha": "cc64a752b5def8d17f9992216bfbb9e533f8364f",
+  "url": "https://api.github.com/repos/saliteta/NanoGS/git/trees/cc64a752b5def8d17f9992216bfbb9e533f8364f",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cc73b8b1f79129bbbcd03bd359beee1fb47a030",
+      "size": 19,
+      "url": "https://api.github.com/repos/saliteta/NanoGS/git/blobs/2cc73b8b1f79129bbbcd03bd359beee1fb47a030"
+    },
+    {
+      "path": "CITATION.bib",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4603cf6bffddf7ee0fb66e58dbcefe346ae77901",
+      "size": 359,
+      "url": "https://api.github.com/repos/saliteta/NanoGS/git/blobs/4603cf6bffddf7ee0fb66e58dbcefe346ae77901"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c657cab45c850057a63b3605897f5195f3c4ac02",
+      "size": 19346,
+      "url": "https://api.github.com/repos/saliteta/NanoGS/git/blobs/c657cab45c850057a63b3605897f5195f3c4ac02"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50aad124e290032c493875fb944ac075df59ba6a",
+      "size": 3322,
+      "url": "https://api.github.com/repos/saliteta/NanoGS/git/blobs/50aad124e290032c493875fb944ac075df59ba6a"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b55386afe0cb255a4e6cbf58184d7aa4073dd45",
+      "size": 255,
+      "url": "https://api.github.com/repos/saliteta/NanoGS/git/blobs/1b55386afe0cb255a4e6cbf58184d7aa4073dd45"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7926c2627ae0e51d5f3ac3418864488438ca4998",
+      "url": "https://api.github.com/repos/saliteta/NanoGS/git/trees/7926c2627ae0e51d5f3ac3418864488438ca4998"
+    },
+    {
+      "path": "src/nanogs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "23cf3f6b9fe6f7249d03abead962ad94373fc666",
+      "url": "https://api.github.com/repos/saliteta/NanoGS/git/trees/23cf3f6b9fe6f7249d03abead962ad94373fc666"
+    },
+    {
+      "path": "src/nanogs/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bbb422cf33a7c43d7f1f1ea7528550c644f2347",
+      "size": 91,
+      "url": "https://api.github.com/repos/saliteta/NanoGS/git/blobs/4bbb422cf33a7c43d7f1f1ea7528550c644f2347"
+    },
+    {
+      "path": "src/nanogs/py.typed",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/saliteta/NanoGS/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/nanogs/simplification.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a052a7def4cb26fd7b1da74228290fa346404454",
+      "size": 7282,
+      "url": "https://api.github.com/repos/saliteta/NanoGS/git/blobs/a052a7def4cb26fd7b1da74228290fa346404454"
+    },
+    {
+      "path": "src/nanogs/utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37945e9d82016f400a49c41d2ee31ce54f6c855b",
+      "url": "https://api.github.com/repos/saliteta/NanoGS/git/trees/37945e9d82016f400a49c41d2ee31ce54f6c855b"
+    },
+    {
+      "path": "src/nanogs/utils/cost.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2a0dfd6c6196a981a50386a37b272d58663a646",
+      "size": 7937,
+      "url": "https://api.github.com/repos/saliteta/NanoGS/git/blobs/b2a0dfd6c6196a981a50386a37b272d58663a646"
+    },
+    {
+      "path": "src/nanogs/utils/merge.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "947d9360a6b9030d1584bb9f81eeaa566b22883c",
+      "size": 3093,
+      "url": "https://api.github.com/repos/saliteta/NanoGS/git/blobs/947d9360a6b9030d1584bb9f81eeaa566b22883c"
+    },
+    {
+      "path": "src/nanogs/utils/params.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc7735fb3af5809e6a4afe4a811cb06475494290",
+      "size": 219,
+      "url": "https://api.github.com/repos/saliteta/NanoGS/git/blobs/bc7735fb3af5809e6a4afe4a811cb06475494290"
+    },
+    {
+      "path": "src/nanogs/utils/ply_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "299d2e9b25cc8bcf3441374e8e36a94da98d4892",
+      "size": 10142,
+      "url": "https://api.github.com/repos/saliteta/NanoGS/git/blobs/299d2e9b25cc8bcf3441374e8e36a94da98d4892"
+    },
+    {
+      "path": "src/nanogs/utils/splat_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cdf2e60dcf2ae56870009e5746d8499b7f25aa6",
+      "size": 5074,
+      "url": "https://api.github.com/repos/saliteta/NanoGS/git/blobs/5cdf2e60dcf2ae56870009e5746d8499b7f25aa6"
+    },
+    {
+      "path": "teaser.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8f9d4e708358c4bf764c66498881b48fdc69881",
+      "size": 4515808,
+      "url": "https://api.github.com/repos/saliteta/NanoGS/git/blobs/d8f9d4e708358c4bf764c66498881b48fdc69881"
+    }
+  ],
+  "truncated": false
+}

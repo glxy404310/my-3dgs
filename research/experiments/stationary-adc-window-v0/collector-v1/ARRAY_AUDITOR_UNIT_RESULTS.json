@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic unit fixtures only; no real experimental arrays read",
+  "tests": {
+    "known_3_4_5_norms_empty_visibility_z_ignored_chunk_tail": {
+      "status": "PASS",
+      "report": {
+        "schema": "stationary-adc-window-v0/collector-v1/numpy-array-audit-v1",
+        "status": "SYNTHETIC_FIXTURE_PASS",
+        "scope": "Saved-array consistency conditional on producer's asserted zero initial statistics; not GPU execution certification",
+        "tolerances": {
+          "gradient_rtol": 3e-05,
+          "gradient_atol": 1e-12,
+          "denom": "bit-exact",
+          "max_radii": "bit-exact",
+          "visibility": "exact ordered indices"
+        },
+        "chunk_points": 2,
+        "actual_forward": 0,
+        "actual_backward": 0,
+        "actual_parameter_updates": 0,
+        "torch_imported": false,
+        "contract_sha256": "0a50082687e8cb5fecf6b46b2fec1917ae6a0468742fa1e0bdc1c422410b2ba4",
+        "initial_statistics_independently_verified": false,
+        "GPU_execution_independently_certified": false,
+        "synthetic_unit_fixture": true,
+        "n_points": 5,
+        "steps": 100,
+        "checked_points": 5,
+        "files_hashed": 303,
+        "max_gradient_absolute_error": 0.0,
+        "max_gradient_tolerance_ratio": 0.0,
+        "manifest_sha256": {
+          "CAMERA_HISTORY.json": "b0ac4ce227734c59498cd9955fea82d5ceb873eaf182040215869445e5574a0c",
+          "RESULTS.json": "ae6b6cf7edf8babe9b6bb4b66b8ae27da0a29025986ef5209f457de63d49d679",
+          "FINAL_ARRAYS.json": "06f440ae629322a76de69315fa346c1058696eb16f24ce68962e70a62b0da345"
+        },
+        "elapsed_seconds": 12.59489639
+      }
+    },
+    "packed_non_multiple_of_8_empty_and_full_visibility": {
+      "status": "PASS",
+      "points": 5,
+      "physical_bytes_per_mask": 1,
+      "first_logical_shape": [
+        0,
+        1
+      ],
+      "second_logical_shape": [
+        5,
+        1
+      ],
+      "chunk_points": 2
+    },
+    "correct_physical_hash_but_bad_padding": {
+      "status": "PASS",
+      "caught": "Nonzero packed visibility padding"
+    },
+    "correct_physical_hash_but_bad_logical_sha": {
+      "status": "PASS",
+      "caught": "Packed visibility logical SHA256 differs"
+    },
+    "correct_physical_hash_but_bad_logical_count": {
+      "status": "PASS",
+      "caught": "Packed visibility logical count differs"
+    },
+    "ambiguous_old_visibility_format_rejected": {
+      "status": "PASS",
+      "caught": "Explicit packed visibility encoding/logical dtype is required"
+    },
+    "identical_correct_arrays_but_producer_invalid": {
+      "status": "PASS",
+      "caught": "Producer status is not eligible for array audit"
+    },
+    "contract_producer_synthetic_flag_mismatch": {
+      "status": "PASS",
+      "caught": "Contract/producer synthetic fixture flags differ"
+    },
+    "missing_visibility_is_incomplete": {
+      "status": "PASS",
+      "caught": "Actual per-step visibility_filter export absent; radii-derived mask alone is not independent verification"
+    },
+    "raw_checksum_corruption": {
+      "status": "PASS",
+      "caught": "Array byte count/hash mismatch: PER_STEP/3502-radii.npy"
+    },
+    "correctly_hashed_wrong_native_denom": {
+      "status": "PASS",
+      "caught": "Native denominator differs exactly"
+    },
+    "correctly_hashed_wrong_native_gradient": {
+      "status": "PASS",
+      "caught": "Reconstructed accumulated gradient exceeds predeclared tolerance"
+    }
+  },
+  "actual_forward": 0,
+  "actual_backward": 0,
+  "actual_parameter_updates": 0,
+  "actual_models_loaded": 0,
+  "actual_subprocesses": 0,
+  "torch_imported": false,
+  "auditor_sha256": "1e3439045b751d3f6634883a821e245d9478dc1066c6047e61e1ece5263ebba1",
+  "test_sha256": "4148dea36933142793d49df1d71e38fb99f04fe26582736b56a800e2fd137f8d",
+  "elapsed_seconds": 39.608019943
+}

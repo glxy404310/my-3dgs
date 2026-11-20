@@ -1,0 +1,51 @@
+{
+  "source": "https://arxiv.org/html/2503.14274v1#S4.SS1",
+  "equations": "9-11",
+  "rows": [
+    {
+      "scene": "truck",
+      "camera_set": "training_every8_holdout",
+      "cameras": 219,
+      "sfm_points": 136029,
+      "native_extent": 5.847915172576904,
+      "iadc_eq11_extent": 7.200865745544434,
+      "corrected_over_native": 1.2313560530617866,
+      "native_world_bound": 0.5847915172576904,
+      "corrected_world_bound": 0.7200865745544434
+    },
+    {
+      "scene": "truck",
+      "camera_set": "all_cameras_descriptive_only",
+      "cameras": 251,
+      "sfm_points": 136029,
+      "native_extent": 5.843423843383789,
+      "iadc_eq11_extent": 7.201148986816406,
+      "corrected_over_native": 1.2323509606392664,
+      "native_world_bound": 0.5843423843383789,
+      "corrected_world_bound": 0.7201148986816407
+    },
+    {
+      "scene": "train",
+      "camera_set": "training_every8_holdout",
+      "cameras": 263,
+      "sfm_points": 182686,
+      "native_extent": 7.451763153076172,
+      "iadc_eq11_extent": 4.932206153869629,
+      "corrected_over_native": 0.6618844497001436,
+      "native_world_bound": 0.7451763153076172,
+      "corrected_world_bound": 0.49322061538696294
+    },
+    {
+      "scene": "train",
+      "camera_set": "all_cameras_descriptive_only",
+      "cameras": 301,
+      "sfm_points": 182686,
+      "native_extent": 7.490638256072998,
+      "iadc_eq11_extent": 4.932661533355713,
+      "corrected_over_native": 0.6585101782690657,
+      "native_world_bound": 0.7490638256072999,
+      "corrected_world_bound": 0.49326615333557133
+    }
+  ],
+  "scope": "Dataset geometry only, no image loss or candidate. Training-camera extent is the intended matched protocol; all-camera values are descriptive, never a hyperparameter choice. Eq11 component alone is not full IADC. Changing global extent also changes clone/split and spatial LR, so prune-only adaptation is separately named."
+}

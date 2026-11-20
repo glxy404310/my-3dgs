@@ -1,0 +1,271 @@
+{
+  "checks": "pass",
+  "scope": "Train-view pre/post split rendering only. No training, held-out selection, budget policy, or novel method tested.",
+  "results": [
+    {
+      "view": "000002.jpg",
+      "policy": "original_split",
+      "control": "noop",
+      "gpu_stream_ms_delta_mean": -0.03931528727213518,
+      "gpu_stream_ms_delta_sd": 0.12232992300352373,
+      "gpu_stream_ms_delta_median": 0.0077336629231776755,
+      "wall_ms_delta_mean": -0.04230082666670878,
+      "wall_ms_delta_sd": 0.12094692351679691,
+      "wall_ms_delta_median": 0.007688066667318694
+    },
+    {
+      "view": "000002.jpg",
+      "policy": "las_split",
+      "control": "noop",
+      "gpu_stream_ms_delta_mean": 0.012482706705729107,
+      "gpu_stream_ms_delta_sd": 0.1736994986746397,
+      "gpu_stream_ms_delta_median": 0.025638326009114643,
+      "wall_ms_delta_mean": 0.009926160000001617,
+      "wall_ms_delta_sd": 0.1722553981363799,
+      "wall_ms_delta_median": 0.02562649999902078
+    },
+    {
+      "view": "000002.jpg",
+      "policy": "las_split",
+      "control": "original_split",
+      "gpu_stream_ms_delta_mean": 0.05179799397786429,
+      "gpu_stream_ms_delta_sd": 0.08911076167041257,
+      "gpu_stream_ms_delta_median": 0.07039591471354179,
+      "wall_ms_delta_mean": 0.0522269866667104,
+      "wall_ms_delta_sd": 0.09039862091199312,
+      "wall_ms_delta_median": 0.07094520000142346
+    },
+    {
+      "view": "000037.jpg",
+      "policy": "original_split",
+      "control": "noop",
+      "gpu_stream_ms_delta_mean": 0.01934702555338532,
+      "gpu_stream_ms_delta_sd": 0.06268234754783279,
+      "gpu_stream_ms_delta_median": 0.024097188313802143,
+      "wall_ms_delta_mean": 0.02088320666662913,
+      "wall_ms_delta_sd": 0.0627337465807282,
+      "wall_ms_delta_median": 0.024304533332990097
+    },
+    {
+      "view": "000037.jpg",
+      "policy": "las_split",
+      "control": "noop",
+      "gpu_stream_ms_delta_mean": 0.031526285807291644,
+      "gpu_stream_ms_delta_sd": 0.027967712764954022,
+      "gpu_stream_ms_delta_median": 0.021989440917968395,
+      "wall_ms_delta_mean": 0.032044259999679706,
+      "wall_ms_delta_sd": 0.028331579143048517,
+      "wall_ms_delta_median": 0.022331366666132446
+    },
+    {
+      "view": "000037.jpg",
+      "policy": "las_split",
+      "control": "original_split",
+      "gpu_stream_ms_delta_mean": 0.01217926025390632,
+      "gpu_stream_ms_delta_sd": 0.05320581462501543,
+      "gpu_stream_ms_delta_median": 0.03302307128906268,
+      "wall_ms_delta_mean": 0.011161053333050574,
+      "wall_ms_delta_sd": 0.053177095493084525,
+      "wall_ms_delta_median": 0.03354070000038245
+    },
+    {
+      "view": "000072.jpg",
+      "policy": "original_split",
+      "control": "noop",
+      "gpu_stream_ms_delta_mean": -0.00010762532552099913,
+      "gpu_stream_ms_delta_sd": 0.047948169060925375,
+      "gpu_stream_ms_delta_median": 0.020220947265625178,
+      "wall_ms_delta_mean": -0.010094839999889338,
+      "wall_ms_delta_sd": 0.06639547828267638,
+      "wall_ms_delta_median": 0.020209799999785893
+    },
+    {
+      "view": "000072.jpg",
+      "policy": "las_split",
+      "control": "noop",
+      "gpu_stream_ms_delta_mean": 0.07945933024088525,
+      "gpu_stream_ms_delta_sd": 0.08728421419801806,
+      "gpu_stream_ms_delta_median": 0.08743998209635429,
+      "wall_ms_delta_mean": 0.08033884666663962,
+      "wall_ms_delta_sd": 0.08842349246484633,
+      "wall_ms_delta_median": 0.08865403333402355
+    },
+    {
+      "view": "000072.jpg",
+      "policy": "las_split",
+      "control": "original_split",
+      "gpu_stream_ms_delta_mean": 0.07956695556640625,
+      "gpu_stream_ms_delta_sd": 0.061852585753093034,
+      "gpu_stream_ms_delta_median": 0.055086771647134825,
+      "wall_ms_delta_mean": 0.09043368666652896,
+      "wall_ms_delta_sd": 0.05054133935277715,
+      "wall_ms_delta_median": 0.05890596666612691
+    },
+    {
+      "view": "000108.jpg",
+      "policy": "original_split",
+      "control": "noop",
+      "gpu_stream_ms_delta_mean": -0.018309631347656462,
+      "gpu_stream_ms_delta_sd": 0.1636026685214389,
+      "gpu_stream_ms_delta_median": 0.04157002766927054,
+      "wall_ms_delta_mean": -0.018066780000178008,
+      "wall_ms_delta_sd": 0.16359210568760105,
+      "wall_ms_delta_median": 0.04148286666634249
+    },
+    {
+      "view": "000108.jpg",
+      "policy": "las_split",
+      "control": "noop",
+      "gpu_stream_ms_delta_mean": 0.05887318929036436,
+      "gpu_stream_ms_delta_sd": 0.11291571903402056,
+      "gpu_stream_ms_delta_median": 0.039464314778646425,
+      "wall_ms_delta_mean": 0.059138360000285314,
+      "wall_ms_delta_sd": 0.1133422301414285,
+      "wall_ms_delta_median": 0.03954183333310901
+    },
+    {
+      "view": "000108.jpg",
+      "policy": "las_split",
+      "control": "original_split",
+      "gpu_stream_ms_delta_mean": 0.07718282063802082,
+      "gpu_stream_ms_delta_sd": 0.2532001809320482,
+      "gpu_stream_ms_delta_median": 0.059685262044270715,
+      "wall_ms_delta_mean": 0.07720514000046333,
+      "wall_ms_delta_sd": 0.25371283291225094,
+      "wall_ms_delta_median": 0.05954259999991063
+    },
+    {
+      "view": "000143.jpg",
+      "policy": "original_split",
+      "control": "noop",
+      "gpu_stream_ms_delta_mean": 0.029243469238281427,
+      "gpu_stream_ms_delta_sd": 0.10174574090719418,
+      "gpu_stream_ms_delta_median": 0.04880421956380232,
+      "wall_ms_delta_mean": 0.02906418000028079,
+      "wall_ms_delta_sd": 0.10208970491372532,
+      "wall_ms_delta_median": 0.0488055333335069
+    },
+    {
+      "view": "000143.jpg",
+      "policy": "las_split",
+      "control": "noop",
+      "gpu_stream_ms_delta_mean": 0.05257588704427078,
+      "gpu_stream_ms_delta_sd": 0.11172856210856712,
+      "gpu_stream_ms_delta_median": 0.0948928833007816,
+      "wall_ms_delta_mean": 0.05247836666588555,
+      "wall_ms_delta_sd": 0.1121986487221345,
+      "wall_ms_delta_median": 0.0951748666655785
+    },
+    {
+      "view": "000143.jpg",
+      "policy": "las_split",
+      "control": "original_split",
+      "gpu_stream_ms_delta_mean": 0.02333241780598936,
+      "gpu_stream_ms_delta_sd": 0.037296086668879784,
+      "gpu_stream_ms_delta_median": 0.01558787027994768,
+      "wall_ms_delta_mean": 0.023414186665604752,
+      "wall_ms_delta_sd": 0.03724232354452277,
+      "wall_ms_delta_median": 0.015541066665036851
+    },
+    {
+      "view": "000179.jpg",
+      "policy": "original_split",
+      "control": "noop",
+      "gpu_stream_ms_delta_mean": 0.16792388916015605,
+      "gpu_stream_ms_delta_sd": 0.220274682069595,
+      "gpu_stream_ms_delta_median": 0.055732218424479285,
+      "wall_ms_delta_mean": 0.1675549266663742,
+      "wall_ms_delta_sd": 0.21954047864254406,
+      "wall_ms_delta_median": 0.0558230000005242
+    },
+    {
+      "view": "000179.jpg",
+      "policy": "las_split",
+      "control": "noop",
+      "gpu_stream_ms_delta_mean": 0.09635823567708339,
+      "gpu_stream_ms_delta_sd": 0.11487067764922435,
+      "gpu_stream_ms_delta_median": 0.06351877848307286,
+      "wall_ms_delta_mean": 0.10058651999884223,
+      "wall_ms_delta_sd": 0.11426139020029133,
+      "wall_ms_delta_median": 0.06375093333303994
+    },
+    {
+      "view": "000179.jpg",
+      "policy": "las_split",
+      "control": "original_split",
+      "gpu_stream_ms_delta_mean": -0.07156565348307264,
+      "gpu_stream_ms_delta_sd": 0.1998738604979495,
+      "gpu_stream_ms_delta_median": 0.012236022949219105,
+      "wall_ms_delta_mean": -0.06696840666753197,
+      "wall_ms_delta_sd": 0.19015607162380221,
+      "wall_ms_delta_median": 0.012181199999379722
+    },
+    {
+      "view": "000214.jpg",
+      "policy": "original_split",
+      "control": "noop",
+      "gpu_stream_ms_delta_mean": 0.04251220703125007,
+      "gpu_stream_ms_delta_sd": 0.09689751153724736,
+      "gpu_stream_ms_delta_median": 0.021478271484375533,
+      "wall_ms_delta_mean": 0.04376947333336538,
+      "wall_ms_delta_sd": 0.09507576403906517,
+      "wall_ms_delta_median": 0.021343033334157546
+    },
+    {
+      "view": "000214.jpg",
+      "policy": "las_split",
+      "control": "noop",
+      "gpu_stream_ms_delta_mean": 0.014898071289062464,
+      "gpu_stream_ms_delta_sd": 0.06961102789793398,
+      "gpu_stream_ms_delta_median": 0.04575246175130232,
+      "wall_ms_delta_mean": 0.014843106666830686,
+      "wall_ms_delta_sd": 0.06939190765522617,
+      "wall_ms_delta_median": 0.045612833334492286
+    },
+    {
+      "view": "000214.jpg",
+      "policy": "las_split",
+      "control": "original_split",
+      "gpu_stream_ms_delta_mean": -0.027614135742187608,
+      "gpu_stream_ms_delta_sd": 0.06692019046714551,
+      "gpu_stream_ms_delta_median": -0.03733317057291696,
+      "wall_ms_delta_mean": -0.028926366666534697,
+      "wall_ms_delta_sd": 0.06639526945162386,
+      "wall_ms_delta_median": -0.0427055666667302
+    },
+    {
+      "view": "000251.jpg",
+      "policy": "original_split",
+      "control": "noop",
+      "gpu_stream_ms_delta_mean": -0.040095520019531074,
+      "gpu_stream_ms_delta_sd": 0.1258647359707387,
+      "gpu_stream_ms_delta_median": -0.019215901692708037,
+      "wall_ms_delta_mean": -0.04028876666666274,
+      "wall_ms_delta_sd": 0.12583848785071025,
+      "wall_ms_delta_median": -0.01911613333239348
+    },
+    {
+      "view": "000251.jpg",
+      "policy": "las_split",
+      "control": "noop",
+      "gpu_stream_ms_delta_mean": -0.053084513346354,
+      "gpu_stream_ms_delta_sd": 0.14177448629924072,
+      "gpu_stream_ms_delta_median": -0.04918518066406197,
+      "wall_ms_delta_mean": -0.0530422733337824,
+      "wall_ms_delta_sd": 0.14171482380122774,
+      "wall_ms_delta_median": -0.049581066667769846
+    },
+    {
+      "view": "000251.jpg",
+      "policy": "las_split",
+      "control": "original_split",
+      "gpu_stream_ms_delta_mean": -0.012988993326822929,
+      "gpu_stream_ms_delta_sd": 0.045374453352619214,
+      "gpu_stream_ms_delta_median": -0.01915944417317661,
+      "wall_ms_delta_mean": -0.012753506667119652,
+      "wall_ms_delta_sd": 0.04518262756405388,
+      "wall_ms_delta_median": -0.01787430000111634
+    }
+  ],
+  "warning": "Within-view timing repeat SD is measurement variability, not independent training uncertainty. No significance or algorithm efficacy claim."
+}

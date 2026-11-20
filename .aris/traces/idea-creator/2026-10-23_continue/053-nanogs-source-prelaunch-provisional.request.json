@@ -1,0 +1,10 @@
+{
+  "call_number": 53,
+  "purpose": "nanogs-source-prelaunch-provisional",
+  "timestamp": "2026-10-22T20:22:59.809Z",
+  "tool": "collaboration.followup_task",
+  "agent_path": "/root/problem_reanchor_artifacts",
+  "model": "inherited-primary",
+  "prompt": "你的成熟teacher结论采纳，不新增#35。现在只做短prelaunch审阅已有方法baseline：root已锁 research/experiments/nanogs-frozen-baseline-v0/CONTRACT.md SHA41140ba8c045b81c1ce54512bbc0bf2f671d35125578e215633c099de9a88062；官方saliteta/NanoGS commitcc64a752b5def8d17f9992216bfbb9e533f8364f，默认ratio.5/k16/mergecap.5/opacity.1/lamgeo1/lamsh1，官方实际src/nanogs模块（README旧root脚本路径过时）。backend正准备sourcepin+CPUrunner，newthird_party/NanoGS/<commit>/newexperiment；no真实简化yet。相关精确只读source/依赖/比较风险见idea-stage/artifact-pivot-20261023/compression-reanchor-readonly/READONLY_REANCHOR.md与NANOGS_STATIC.json。请短读合同、source/runner可见时静态核最容易毁比较或误launch的问题（SH/quat/activation、固定默认、资源、while无progress、teacher只读、ratio exact），不新effects不写代码不长论文review。CPU30min/10GiB原算法不改、单独PLY output；32test原native对teacher/all21950%/NanoGS50%，非新方法PASS/no training。只提必须修的真实问题；未知成本可保留，不为过run改作者params。请final明确可launch或具体阻断，无需重复报告前阶段。",
+  "prompt_provenance": "Readable root call manually transcribed; encrypted logs not decrypted"
+}

@@ -1,0 +1,2 @@
+timestamp, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%]
+2026/10/22 13:18:00.331, NVIDIA GeForce RTX 5070, 2184 MiB, 12227 MiB, 4 %

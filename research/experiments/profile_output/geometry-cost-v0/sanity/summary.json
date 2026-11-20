@@ -1,0 +1,81 @@
+{
+  "complete": true,
+  "scope": "Train-view pre/post split rendering only. No training, held-out selection, budget policy, or novel method tested.",
+  "n_gaussians": {
+    "noop": 1058297,
+    "original_split": 1070701,
+    "las_split": 1070701
+  },
+  "checks": {
+    "original_split": "exact_saved_child_geometry_match",
+    "las_split": "exact_saved_child_geometry_match"
+  },
+  "views": [
+    "000002.jpg",
+    "000251.jpg"
+  ],
+  "heldout_overlap": false,
+  "args": {
+    "repo": "/home/administrator/projects/gaussian-splatting",
+    "sh_degree": 3,
+    "source_path": "/home/administrator/datasets/tandt_db/tandt/truck",
+    "model_path": "/mnt/d/Documents/my 3dgs/research/experiments/profile_output/geometry-cost-v0/sanity",
+    "images": "images",
+    "depths": "",
+    "resolution": 1,
+    "white_background": false,
+    "train_test_exp": false,
+    "data_device": "cpu",
+    "eval": true,
+    "iterations": 30000,
+    "position_lr_init": 0.00016,
+    "position_lr_final": 1.6e-06,
+    "position_lr_delay_mult": 0.01,
+    "position_lr_max_steps": 30000,
+    "feature_lr": 0.0025,
+    "opacity_lr": 0.025,
+    "scaling_lr": 0.005,
+    "rotation_lr": 0.001,
+    "exposure_lr_init": 0.01,
+    "exposure_lr_final": 0.001,
+    "exposure_lr_delay_steps": 0,
+    "exposure_lr_delay_mult": 0.0,
+    "percent_dense": 0.01,
+    "lambda_dssim": 0.2,
+    "densification_interval": 100,
+    "opacity_reset_interval": 3000,
+    "densify_from_iter": 500,
+    "densify_until_iter": 15000,
+    "densify_grad_threshold": 0.0002,
+    "depth_l1_weight_init": 1.0,
+    "depth_l1_weight_final": 0.01,
+    "random_background": false,
+    "optimizer_type": "default",
+    "convert_SHs_python": false,
+    "compute_cov3D_python": false,
+    "debug": false,
+    "antialiasing": false,
+    "event": "/mnt/d/Documents/my 3dgs/research/experiments/split-diagnostic-v0/early3600_seed0/event_state.pth",
+    "reference_root": "/mnt/d/Documents/my 3dgs/research/experiments/split-diagnostic-v0/early3600_seed0",
+    "output": "/mnt/d/Documents/my 3dgs/research/experiments/profile_output/geometry-cost-v0/sanity",
+    "views": 2,
+    "rounds": 2,
+    "repeats": 3
+  },
+  "script_sha256": "3a9095deedb2989c330040caa2753463947b35666838717a754a78f3d9853d6a",
+  "means": {
+    "noop": {
+      "gpu_stream_ms": 5.454400062561035,
+      "wall_ms": 5.542915499998931
+    },
+    "original_split": {
+      "gpu_stream_ms": 5.378309408823649,
+      "wall_ms": 5.378595583335273
+    },
+    "las_split": {
+      "gpu_stream_ms": 5.486034711201985,
+      "wall_ms": 5.485842666665519
+    }
+  },
+  "timing_scope": "CUDA stream elapsed and synchronized wall time, averaged over repeated render calls; excludes GT transfer, mask and quality metrics. CUDA intervals may contain CPU launch gaps."
+}

@@ -1,0 +1,15 @@
+{
+  "call_number": 40,
+  "purpose": "artifact-full34-jury",
+  "agent_id": "01a1650c-606d-7650-b93f-2b88f877c49e",
+  "agent_path": "/root/artifact_full34_jury",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "response_recovered_verbatim": true,
+  "response_source": "idea-stage/artifact-pivot-20261023/JURY.md (copied verbatim from first actual public final response)",
+  "archived_at": "2026-10-22T19:28:31.951739+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "skill": "novelty-check",
+  "status": "running",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "timestamp": "2026-10-23T06:52:43.306894+08:00",
+  "candidate_ids": [
+    43,
+    44
+  ],
+  "no_experiments": true,
+  "run_id": "2026-10-23_run01",
+  "project_dir": "D:\\Documents\\my 3dgs"
+}

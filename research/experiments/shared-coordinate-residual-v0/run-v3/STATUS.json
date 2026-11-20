@@ -1,0 +1,12 @@
+{
+  "stage": "TERMINATED",
+  "decision": "INCONCLUSIVE_MATCHING_CAPACITY",
+  "original_failure": {
+    "code": "INCONCLUSIVE_MATCHING_CAPACITY",
+    "message": "Fixed view 000002.jpg cannot meet common capacity even before remaining gates: single_checkpoint_complete_mask",
+    "type": "Stop",
+    "traceback": "Traceback (most recent call last):\n  File \"/mnt/d/Documents/my 3dgs/scripts/experiments/diagnose_shared_coordinate_residual_v3.py\", line 1052, in main\n    data = {30000: quality_and_matches(bundle30, cameras30),\n  File \"/mnt/d/Documents/my 3dgs/scripts/experiments/diagnose_shared_coordinate_residual_v3.py\", line 504, in quality_and_matches\n    capacity_upper_bound(valid, bundle.iteration, view, 'single_checkpoint_complete_mask')\n  File \"/mnt/d/Documents/my 3dgs/scripts/experiments/diagnose_shared_coordinate_residual_v3.py\", line 417, in capacity_upper_bound\n    raise Stop('INCONCLUSIVE_MATCHING_CAPACITY',\nStop: Fixed view 000002.jpg cannot meet common capacity even before remaining gates: single_checkpoint_complete_mask\n",
+    "elapsed_before_failure_save_seconds": 27.68777873800002
+  },
+  "integrity_complete": true
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "co-ray-split-interaction-v0/metrics-contract-v1",
+  "frozen_by_root": false,
+  "reviewed_full_code": false,
+  "reviewed_code_sha256": {},
+  "arms": {"path": "ROOT_GRAPH_RUN_ARMS_JSON", "sha256": "ROOT_TO_PIN"},
+  "raw_manifest": {"path": "ROOT_EFFECTS_RUN_RAW_MANIFEST_JSON", "sha256": "ROOT_TO_PIN"},
+  "views": ["ROOT_EXACT_8_EVALUATION_NAMES_IN_LOCKED_RANK_ORDER"],
+  "near_zero_energy_threshold": null,
+  "root_denominator_thresholds": {"D": 1e-18, "Delta": 1e-10},
+  "require_base_repeat": null
+}

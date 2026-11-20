@@ -1,0 +1,24 @@
+{
+  "user_instruction": "继续当前目标,直到完成或者周额度剩余 50% 时停止",
+  "objective_unchanged": true,
+  "stop_when_weekly_remaining_percent_lte": 50,
+  "weekly_window_duration_minutes": 10080,
+  "preferred_limit_source": "get_usage_limits.rateLimitsByLimitId.codex",
+  "remaining_definition": "max(0, min(100, 100 - usedPercent))",
+  "last_observed_weekly_used_percent": 50,
+  "last_observed_weekly_remaining_percent": 50,
+  "last_observed_resets_at_unix_seconds": 1793293759,
+  "usage_is_shared_across_account": true,
+  "check_at_major_stage_boundaries_and_before_large_new_dispatches": true,
+  "missing_usage_is_not_assumed_zero": true,
+  "at_threshold": [
+    "Stop launching work and interrupt delegated work",
+    "Preserve authoritative evidence and incomplete state",
+    "Pause the active goal under this explicit conditional user instruction",
+    "Report observed remaining quota and final saved handoff"
+  ],
+  "last_observed_at": "2026-10-23T11:41:24+08:00",
+  "threshold_reached": true,
+  "work_stopped_at": "2026-10-23T08:53:33.663032+08:00",
+  "goal_status": "paused"
+}

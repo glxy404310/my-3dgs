@@ -1,0 +1,6 @@
+{"stage": "load_checkpoint", "elapsed_before_progress_write_seconds": 3.204525638, "iteration": 30000}
+{"stage": "witness", "elapsed_before_progress_write_seconds": 11.411245519000001, "index": 0, "view": "000002.jpg"}
+{"stage": "witness", "elapsed_before_progress_write_seconds": 14.138528258000001, "index": 1, "view": "000023.jpg"}
+{"stage": "witness", "elapsed_before_progress_write_seconds": 16.783785519000002, "index": 2, "view": "000046.jpg"}
+{"stage": "witnesses_complete", "elapsed_before_progress_write_seconds": 19.248742897, "sigma_shift": 0.028741438712388517, "sigma_zero": 2.74521244944881e-06}
+{"stage": "load_checkpoint", "elapsed_before_progress_write_seconds": 19.255928045, "iteration": 7000}

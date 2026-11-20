@@ -1,0 +1,313 @@
+{
+  "status": "pass",
+  "policy": "fresh",
+  "parent_actual_steps": {
+    "xyz": 3569,
+    "f_dc": 3569,
+    "f_rest": 3569,
+    "opacity": 3569,
+    "scaling": 3569,
+    "rotation": 3569
+  },
+  "legacy_max_abs_error": null,
+  "update_stats": [
+    {
+      "step": 1,
+      "groups": [
+        {
+          "group": "xyz",
+          "nominal_lr": 0.000538337063014659,
+          "common_age": 1,
+          "difference_age": 1,
+          "common_update_rms": 0.00019246729789301753,
+          "difference_update_rms": 0.00018094918050337583,
+          "child_update_rms": 0.00018679702770896256
+        },
+        {
+          "group": "f_dc",
+          "nominal_lr": 0.0025,
+          "common_age": 1,
+          "difference_age": 1,
+          "common_update_rms": 0.0008552567451260984,
+          "difference_update_rms": 0.0007920670905150473,
+          "child_update_rms": 0.0008242676267400384
+        },
+        {
+          "group": "f_rest",
+          "nominal_lr": 0.000125,
+          "common_age": 1,
+          "difference_age": 1,
+          "common_update_rms": 4.256924512446858e-05,
+          "difference_update_rms": 3.9791200833860785e-05,
+          "child_update_rms": 4.1203642467735335e-05
+        },
+        {
+          "group": "opacity",
+          "nominal_lr": 0.025,
+          "common_age": 1,
+          "difference_age": 1,
+          "common_update_rms": 0.009175519458949566,
+          "difference_update_rms": 0.00815258827060461,
+          "child_update_rms": 0.00867913756519556
+        },
+        {
+          "group": "scaling",
+          "nominal_lr": 0.005,
+          "common_age": 1,
+          "difference_age": 1,
+          "common_update_rms": 0.001906910678371787,
+          "difference_update_rms": 0.0015450018690899014,
+          "child_update_rms": 0.001735416240990162
+        },
+        {
+          "group": "rotation",
+          "nominal_lr": 0.001,
+          "common_age": 1,
+          "difference_age": 1,
+          "common_update_rms": 0.00034667880390770733,
+          "difference_update_rms": 0.0003476506390143186,
+          "child_update_rms": 0.0003471650998108089
+        }
+      ]
+    },
+    {
+      "step": 20,
+      "groups": [
+        {
+          "group": "xyz",
+          "nominal_lr": 0.0005367692324091196,
+          "common_age": 20,
+          "difference_age": 20,
+          "common_update_rms": 0.00014690299576614052,
+          "difference_update_rms": 0.00015293245087377727,
+          "child_update_rms": 0.00014994802768342197
+        },
+        {
+          "group": "f_dc",
+          "nominal_lr": 0.0025,
+          "common_age": 20,
+          "difference_age": 20,
+          "common_update_rms": 0.0007805333589203656,
+          "difference_update_rms": 0.0005887430161237717,
+          "child_update_rms": 0.0006913214456290007
+        },
+        {
+          "group": "f_rest",
+          "nominal_lr": 0.000125,
+          "common_age": 20,
+          "difference_age": 20,
+          "common_update_rms": 3.8874251913512126e-05,
+          "difference_update_rms": 2.9239428840810433e-05,
+          "child_update_rms": 3.439587089815177e-05
+        },
+        {
+          "group": "opacity",
+          "nominal_lr": 0.025,
+          "common_age": 20,
+          "difference_age": 20,
+          "common_update_rms": 0.007912136614322662,
+          "difference_update_rms": 0.005913255270570517,
+          "child_update_rms": 0.006984571926295757
+        },
+        {
+          "group": "scaling",
+          "nominal_lr": 0.005,
+          "common_age": 20,
+          "difference_age": 20,
+          "common_update_rms": 0.0016850837273523211,
+          "difference_update_rms": 0.0011051974724978209,
+          "child_update_rms": 0.0014249506639316678
+        },
+        {
+          "group": "rotation",
+          "nominal_lr": 0.001,
+          "common_age": 20,
+          "difference_age": 20,
+          "common_update_rms": 0.0002821601228788495,
+          "difference_update_rms": 0.0002725947124417871,
+          "child_update_rms": 0.00027741867233999074
+        }
+      ]
+    },
+    {
+      "step": 100,
+      "groups": [
+        {
+          "group": "xyz",
+          "nominal_lr": 0.0005302177723290854,
+          "common_age": 100,
+          "difference_age": 100,
+          "common_update_rms": 0.0001295666879741475,
+          "difference_update_rms": 0.00011273632117081434,
+          "child_update_rms": 0.00012144340871600434
+        },
+        {
+          "group": "f_dc",
+          "nominal_lr": 0.0025,
+          "common_age": 100,
+          "difference_age": 100,
+          "common_update_rms": 0.0006398543482646346,
+          "difference_update_rms": 0.0004742187156807631,
+          "child_update_rms": 0.0005631593521684408
+        },
+        {
+          "group": "f_rest",
+          "nominal_lr": 0.000125,
+          "common_age": 100,
+          "difference_age": 100,
+          "common_update_rms": 3.1443738407688215e-05,
+          "difference_update_rms": 2.3342458007391542e-05,
+          "child_update_rms": 2.7690964998328127e-05
+        },
+        {
+          "group": "opacity",
+          "nominal_lr": 0.025,
+          "common_age": 100,
+          "difference_age": 100,
+          "common_update_rms": 0.006213018670678139,
+          "difference_update_rms": 0.0047881403006613255,
+          "child_update_rms": 0.005546525586396456
+        },
+        {
+          "group": "scaling",
+          "nominal_lr": 0.005,
+          "common_age": 100,
+          "difference_age": 100,
+          "common_update_rms": 0.0012989855604246259,
+          "difference_update_rms": 0.0008936231606639922,
+          "child_update_rms": 0.0011148825287818909
+        },
+        {
+          "group": "rotation",
+          "nominal_lr": 0.001,
+          "common_age": 100,
+          "difference_age": 100,
+          "common_update_rms": 0.00023674352269154042,
+          "difference_update_rms": 0.00021909544011577964,
+          "child_update_rms": 0.00022809022630099207
+        }
+      ]
+    },
+    {
+      "step": 200,
+      "groups": [
+        {
+          "group": "xyz",
+          "nominal_lr": 0.0005221407804345151,
+          "common_age": 200,
+          "difference_age": 200,
+          "common_update_rms": 0.00016676264931447804,
+          "difference_update_rms": 0.00013654281792696565,
+          "child_update_rms": 0.00015240360517054796
+        },
+        {
+          "group": "f_dc",
+          "nominal_lr": 0.0025,
+          "common_age": 200,
+          "difference_age": 200,
+          "common_update_rms": 0.0007971492595970631,
+          "difference_update_rms": 0.0005946012679487467,
+          "child_update_rms": 0.0007032061112113297
+        },
+        {
+          "group": "f_rest",
+          "nominal_lr": 0.000125,
+          "common_age": 200,
+          "difference_age": 200,
+          "common_update_rms": 3.981871122960001e-05,
+          "difference_update_rms": 2.9803000870742835e-05,
+          "child_update_rms": 3.516922515700571e-05
+        },
+        {
+          "group": "opacity",
+          "nominal_lr": 0.025,
+          "common_age": 200,
+          "difference_age": 200,
+          "common_update_rms": 0.007872642949223518,
+          "difference_update_rms": 0.006231709849089384,
+          "child_update_rms": 0.0070997439324855804
+        },
+        {
+          "group": "scaling",
+          "nominal_lr": 0.005,
+          "common_age": 200,
+          "difference_age": 200,
+          "common_update_rms": 0.0016607206780463457,
+          "difference_update_rms": 0.0011453150073066354,
+          "child_update_rms": 0.0014264886267483234
+        },
+        {
+          "group": "rotation",
+          "nominal_lr": 0.001,
+          "common_age": 200,
+          "difference_age": 200,
+          "common_update_rms": 0.0003010084619745612,
+          "difference_update_rms": 0.0002857230429071933,
+          "child_update_rms": 0.000293465331196785
+        }
+      ]
+    },
+    {
+      "step": 500,
+      "groups": [
+        {
+          "group": "xyz",
+          "nominal_lr": 0.0004986405738555234,
+          "common_age": 500,
+          "difference_age": 500,
+          "common_update_rms": 0.00011537889804458246,
+          "difference_update_rms": 7.618256495334208e-05,
+          "child_update_rms": 9.776520892046392e-05
+        },
+        {
+          "group": "f_dc",
+          "nominal_lr": 0.0025,
+          "common_age": 500,
+          "difference_age": 500,
+          "common_update_rms": 0.0005868234438821673,
+          "difference_update_rms": 0.00040224858094006777,
+          "child_update_rms": 0.0005030733882449567
+        },
+        {
+          "group": "f_rest",
+          "nominal_lr": 0.000125,
+          "common_age": 500,
+          "difference_age": 500,
+          "common_update_rms": 2.798880268528592e-05,
+          "difference_update_rms": 1.9468974642222747e-05,
+          "child_update_rms": 2.4108236175379716e-05
+        },
+        {
+          "group": "opacity",
+          "nominal_lr": 0.025,
+          "common_age": 500,
+          "difference_age": 500,
+          "common_update_rms": 0.005668774247169495,
+          "difference_update_rms": 0.004089152906090021,
+          "child_update_rms": 0.004942478146404028
+        },
+        {
+          "group": "scaling",
+          "nominal_lr": 0.005,
+          "common_age": 500,
+          "difference_age": 500,
+          "common_update_rms": 0.001180684776045382,
+          "difference_update_rms": 0.0007867186795920134,
+          "child_update_rms": 0.001003230456262827
+        },
+        {
+          "group": "rotation",
+          "nominal_lr": 0.001,
+          "common_age": 500,
+          "difference_age": 500,
+          "common_update_rms": 0.0002214507112512365,
+          "difference_update_rms": 0.00021446557366289198,
+          "child_update_rms": 0.000217986133066006
+        }
+      ]
+    }
+  ],
+  "proposal_does_not_mutate_outer": true,
+  "child_only_override": true,
+  "scope": "Isolated 500-step sibling pairing only; native child state computed but ignored; no full-ADC handoff"
+}

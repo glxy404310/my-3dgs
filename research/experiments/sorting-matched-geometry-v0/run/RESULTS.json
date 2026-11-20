@@ -1,0 +1,19 @@
+{
+  "tool_valid": false,
+  "integrity_complete": false,
+  "decision": "INCONCLUSIVE",
+  "training_performed": false,
+  "backward_calls": 0,
+  "optimizer_created": false,
+  "optimization_updates": 0,
+  "fixed_parameter_interventions": true,
+  "native_forward_calls": 41,
+  "phase": "mode_uniform8",
+  "thread_limit": 1,
+  "hard_process_limit_seconds": 600,
+  "tool_failure": "RuntimeError: Original native depth probe does not cover every Q candidate",
+  "original_xyz_object_restored": true,
+  "parameters_after_final_restore": "f90a54ffe88db1b16eb78e7acc7f2ebb44556570227f21c48342e6eb819a6822",
+  "parameters_restored_after_exit": true,
+  "elapsed_stage_seconds": 61.94716470100002
+}

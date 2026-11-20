@@ -1,0 +1,95 @@
+{
+  "schema": "speedy-private-extension/env-spec-v1",
+  "base": "Existing WSL Ubuntu-22.04 Python 3.10.12 / torch 2.7.1+cu128 / CUDA 12.8",
+  "system_pkgs": [],
+  "pip_phases": [],
+  "weight_dirs": {},
+  "provider": {
+    "shape": "direct local WSL host",
+    "python": "/home/administrator/venvs/3dgs/bin/python",
+    "distribution": "Ubuntu-22.04",
+    "gpu_expected": "NVIDIA GeForce RTX 5070"
+  },
+  "sources": {
+    "main": {
+      "url": "https://github.com/j-alex-hanson/speedy-splat.git",
+      "commit": "34c45c6d9b8bd6110231864f2f358b6d3abbf73d",
+      "path": "/home/administrator/projects/speedy-frozen-main-34c45c6d"
+    },
+    "rasterizer": {
+      "url": "https://github.com/j-alex-hanson/speedy-splat-rasterizer.git",
+      "commit": "b38abb6da7a7217999f8c5ec0e9219284464ffe0",
+      "path": "/home/administrator/projects/speedy-frozen-rasterizer-b38abb6d"
+    },
+    "glm": {
+      "url": "https://github.com/g-truc/glm.git",
+      "commit": "5c46b9c07008ae65cb81ab79cd677ecc1934b903",
+      "relative_path": "third_party/glm"
+    }
+  },
+  "build": {
+    "base": "/home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1",
+    "command": [
+      "/home/administrator/venvs/3dgs/bin/python",
+      "-B",
+      "setup.py",
+      "build",
+      "--build-base",
+      "/home/administrator/projects/speedy-rasterizer-b38abb6d-private-build-v1"
+    ],
+    "attempts": 1,
+    "hard_seconds": 180,
+    "maximum_rss_bytes": 8589934592,
+    "compilation_only_no_cuda_dispatch": true
+  },
+  "env": {
+    "CUDA_HOME": "/usr/local/cuda-12.8",
+    "TORCH_CUDA_ARCH_LIST": "12.0",
+    "MAX_JOBS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "smoke": {
+    "import_names": [
+      "torch",
+      "diff_gaussian_rasterization"
+    ],
+    "gpu_tests": [
+      {
+        "cmd": "/home/administrator/venvs/3dgs/bin/python -B -u '/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/tiny_forward_witness.py' --preparation-manifest-sha256 \"$SPEEDY_PREPARATION_SHA256\" --build-result-sha256 \"$SPEEDY_BUILD_RESULT_SHA256\" --build-supervisor-sha256 \"$SPEEDY_BUILD_SUPERVISOR_SHA256\" --build-external-sha256 \"$SPEEDY_BUILD_EXTERNAL_SHA256\"",
+        "expect": "^SPEEDY_SYNTHETIC_FORWARD_WITNESS_PASS",
+        "seed": 0,
+        "forward_calls": 3,
+        "backward_calls": 0,
+        "parameter_updates": 0,
+        "shape": [
+          3,
+          4,
+          4
+        ],
+        "nonzero_SH1_with_active_degree_3": true,
+        "repeat_max_abs_tolerance": 0.000001,
+        "sh_response_min_abs": 0.000001,
+        "hard_seconds": 60,
+        "maximum_gpu_allocated_bytes": 2147483648,
+        "maximum_rss_bytes": 4294967296
+      }
+    ],
+    "cli_checks": [
+      "/usr/lib/wsl/lib/nvidia-smi",
+      "/usr/local/cuda-12.8/bin/nvcc --version"
+    ]
+  },
+  "prohibitions": [
+    "No pip/install/venv edits",
+    "No source patches",
+    "No Scene, Truck, GT, native model or real array loading",
+    "No optimization, pruning or backward",
+    "Native and Speedy same namespace: separate processes only"
+  ]
+}

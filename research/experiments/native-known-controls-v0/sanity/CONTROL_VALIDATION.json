@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "records": [
+    {
+      "seed": 0,
+      "method": "native",
+      "complete": true,
+      "resume": "pass",
+      "observer": "pass",
+      "operators": "pass",
+      "events": 1
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected",
+      "complete": true,
+      "resume": "pass",
+      "observer": "pass",
+      "operators": "pass",
+      "events": 1
+    },
+    {
+      "seed": 0,
+      "method": "clone_corrected_las",
+      "complete": true,
+      "resume": "pass",
+      "observer": "pass",
+      "operators": "pass",
+      "events": 1
+    }
+  ],
+  "scope": "Known operators and common fresh-resume package checked; exact initial capture and RNG, same camera sequence. Not independent-from-scratch training or new-method evidence."
+}

@@ -1,0 +1,10 @@
+{
+  "call_number": 50,
+  "purpose": "mature-teacher-mechanism-reanchor",
+  "timestamp": "2026-10-22T20:12:54.055Z",
+  "tool": "collaboration.spawn_agent",
+  "agent_path": "/root/problem_reanchor_artifacts",
+  "model": "inherited-primary",
+  "prompt": "独立只读找真实机制，不生成idea清单。项目D:\\Documents\\my 3dgs，WSL Ubuntu22.04，当前持续研究目标：用现有基线/结果找到确实存在且值得解决、能区分强已有control的问题；当前34项冻结筛选已结束，未验证新方法。周额度剩87%，到50停，无须消耗到阈值。禁止新训练/参数梯度更新；此任务不跑新effects、不改文件，只读现有数据/源码/图片，可窄查primary文献。至多给**一个**有证据机制/直接最小验证；找不到就明确不足，不强造创新，不把普通blur/低秩/计数当进展。\n请实际读idea-stage/artifact-pivot-20261023/CANDIDATES.json、POST_STAGE27_REVIEW.md与当前idea-stage/IDEA_REPORT.md、continue-20261022/CONTINUATION_STATE.json避免34换名。未压缩teacher30k32test CPUtriage在research/experiments/teacher-artifact-triage-v0，有8整图/4事后ROI；000121人物旁半透明ghost与000217reflectionsmear是探索观察，不能叫可靠wrongoccupancy。#33固定12train teacher/GT actualdiscover in teacher-artifact-discovery-v0 root与freshblind各0合格wrongocclusion vs3required，按合同STOP，不换图或把GT有人teacher无/真实fenceblur当artifact救；genericCOLMAP轨迹多也不证明artifact。#14共享坐标配准diag工具PASS但firstviewlocalnative响应质量mask8/48，停止当前协议/方法unknown。共享PSF32image7arm实际mean3.6969%<5、6/32<8、超过曝光平移仅.54%<5 STOP；光度0/32 STOP；#4 phasejitterGTresample已有Mipofficial；endpointclampedL1hinge是恒等。#34support非负SH只是proposal，穿零统计不等于实际artifact，OGCactive-set/正值激活/降阶强control；3DGRT已有逐射线SH，别包装。Clean-GS已有posthoc cleanup，TIDI/DOC/Wild/Spotless/OptimizeUnseen等主源核查文件ARTIFACT_POSTHOC_PRIMARY_OVERLAP.md。其他方法边界读各FINDINGS。\n从**成熟teacher自身质量损伤的实际生成机制**出发，结合7k→30k训练遗留日志/可用checkpoint、图像、真实渲染规则，是否有一个未被旧控制解释的可复现异常值得直接实验？可以指出原问题定义错了或现有数据不够，不能认为换个词就是创新。实际看图才讲视觉，不碰未锁确认图（teacher-artifact-discovery协议已停，其他207train未看也不要新读取GT）。只读已有已探索图。报告精确文件/数值/causal未知、最强反对/primary先例、独立操作与最小直接方法试验（不再任意capacity gate）。最终原文会完整保存same-familyprovisional trace；不创建其他agent。",
+  "prompt_provenance": "Readable root tool call manually transcribed; encrypted argument logs not decrypted"
+}

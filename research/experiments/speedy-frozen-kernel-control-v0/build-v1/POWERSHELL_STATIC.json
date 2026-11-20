@@ -1,0 +1,12 @@
+[
+  {
+    "path": "research\\experiments\\speedy-frozen-kernel-control-v0\\build-v1\\run-build.ps1",
+    "parse_errors": [],
+    "pass": true
+  },
+  {
+    "path": "research\\experiments\\speedy-frozen-kernel-control-v0\\build-v1\\run-witness.ps1",
+    "parse_errors": [],
+    "pass": true
+  }
+]

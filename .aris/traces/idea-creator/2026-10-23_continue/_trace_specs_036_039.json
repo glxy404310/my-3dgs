@@ -1,0 +1,41 @@
+[
+  {
+    "n": 36,
+    "purpose": "shared-coordinate-v2-witness-verification",
+    "target": "shared_coord_failure_disposition",
+    "tool": "followup_task",
+    "occurrence": 0,
+    "prompt": "请独立只读核验v2实际工具见证，并可新建唯一 run-v2/INDEPENDENT_WITNESS_ANALYSIS.json（禁止改RESULTS/source/任何已有文件，不用GPU）。v2 session34770 exit1，9forwards3合成见证通过后load7000因重复sys.path注册导致guard异常，真实GT还未开始，原判INCONCLUSIVE保留。用保存raw NPY/NPZ从原数组独立重算：三个knownshift有效数量、中位/P90/RMS、sigma_shift；repeat/zeroRGB最大差/MSE及sigma_zero归一化梯度feature值；若可便宜核验合成target双线性像素与source/s，也检查匹配raw refinedoffset→summary的join。不要调用主程序或GPU/旧helper来重跑结果，不修改参数/阈值。记录科学数据尚无、不能methodpass，模型/相机hash状态含义；给出证据覆盖与局限。检查新v3只做路径注册幂等，不必再重复评审整个设计。"
+  },
+  {
+    "n": 37,
+    "purpose": "shared-coordinate-v3-capacity-verification",
+    "target": "shared_coord_failure_disposition",
+    "tool": "followup_task",
+    "occurrence": 1,
+    "prompt": "v3已实际terminal：session81415 exit1，RESULTS INCONCLUSIVE_MATCHING_CAPACITY，33forwards、第一30k000002 nativequality32，texture75、matching62，intersection8；coverage fold6/2、quadrants0/5/1/2。不放宽/不重跑。请独立CPU核验这些原始mask及决定性native quality计算：新建 scripts/experiments/analyze_shared_coordinate_capacity.py 和唯一run-v3/INDEPENDENT_CAPACITY_ANALYSIS.json可允许。禁止GPU/模型加载/导入main或helper计算结果。用base/GT NPY、24FD15RGB NPZ独立重算梯度feature A、Bmain/Bhalf、标准化LS得到H、全部native质量mask及交集、上下界容量证明；真实matchesraw的accepted逻辑/summary join核验即可，若完整289cost网格非必要说明局限。核hash/camera保存前后及计时作用域；不得把原模型hash日志叫独立重加载。记录240次LS只是FD诊断、没有共享科学fit。程序脚本只CPU可运行一次，source/hash保存。给出这个诊断必须停、shared residual方法仍unknown，不需要设计更松条件。"
+  },
+  {
+    "n": 38,
+    "purpose": "representation-artifact-new-lens",
+    "target": "frozen_representation_new_lens",
+    "tool": "spawn_agent",
+    "occurrence": 0,
+    "model": "gpt-6-astra",
+    "reasoning_effort": "xhigh",
+    "prompt": "按 idea-creator 的单一分析lens，提出6–8个原始研究候选，不排名、不淘汰、不写共享文件。Lens：3D Gaussian Splatting 的有限观测、表示可辨识性与压缩中被忽略的约束；要有一个重要且能被最低成本真实证据推翻的假设。当前Windows workspace D:\\Documents\\my 3dgs，WSL原生3DGS54c035...、Truck7k/30k（30k2,050,770高斯）、219train32test、979x546、12GB5070。人类当前只授权冻结诊断，禁止3DGS训练/参数优化；可提出以后需训练的方法，但最小先验筛查不能偷换成训练收益。已有完整26候选在 idea-stage/continue-20261023/CANDIDATES.json，最新POST_PSF_JURY.md；请完整只读这些及ROUND_REPORT.md，再生成。已有停止载体：24校准50%剪枝的主动新位姿（失败可被真实照片发现）、成熟Truck曝光/5x5整图共享核、scale-opacity联合舍入、低视差背景规则、最近邻alpha转移、累计省略恢复；工具失败未否定SH截梯度或排序全方法。#14共享坐标跨图残差诊断正在修测量导入错误，未有真实科学结果。最新额外查新发现Mip-Splatting官方已有ray_jitter+同步GT重采样；OGC2609.28997附录N已有SH零空间删除/加倍。所以不要把这些统计本身再包装创新。可接近强现有工作，不因拥挤避开问题；新候选保留与旧方案重叠的也标dedup_key，root机械合并和后续评审。可以针对必要的最新前沿实际浏览primarysources（官方论文/代码），最多6篇；没有外部证据不能称无人做过。返回JSON {shard_id:'frozen_representation_new_lens',candidates:[{payload:{title,core_hypothesis,why_problem_matters,minimal_frozen_falsification,strong_simple_control,what_would_kill_it,actual_method_if_signal_exists,training_needed_for_final_claim,closest_sources,novelty_unknowns},dedup_key}]}。不要只列控制方案/诊断协议：每项需一句明确可实施方法，解释能优于哪个强简单基线；方法收益未知就直说。",
+    "supplements": [
+      "用户新 steering：『如果本方法还是失败无效,可以考虑从去除伪影的角度提出创新点』。保留你已生成的原6–8候选不删，但请立即把分析侧重点转到伪影消除。用现有Truck7k/30k和真实照片可验证的具体伪影（floaters/ghosting/streaks/dark holes/SH闪烁/coverage boundary等），解释成因可辨识性与强现有artifact-removal/regularization control；先冻结诊断、别训练。不必再扩成大池，可追加2–3个artifact-focused原始候选；新sources额外最多3篇primary。仍只返回原始JSON，不排名淘汰。避免把去除被50%纯剪枝人为制造的黑洞当成熟teacher本身有同等伪影。",
+      "当前#14真实测量已按原门槛终止：INCONCLUSIVE_MATCHING_CAPACITY，第一固定000002最终8/48有效点（texture75/match62/nativequality32交集8），方法未知，不放宽或继续该诊断。根代理另让CPU助手做成熟teacher32真实GT的原图triage（已有raw，不重渲、不训练），以便先证实际伪影；禁止把GT最大残差直接叫floater。你的8项原始JSON即可尽快收尾，保留未验证/强近邻，别扩展更多模块或做排名。",
+      "root实际查看成熟teacher/GT新triage：000121背景行人明显半透明紫黑拖影；000217车窗反射糊抹、背景人物残影；均未压缩teacher，不是剪枝黑洞。这是探索定位，还不能自动归因为Gaussian floaters。你8项请先原样收尾交付；我另派定向posthoc transient/artifact primary查新，不需要你再扩sources或合并新模块。"
+    ]
+  },
+  {
+    "n": 39,
+    "purpose": "artifact-posthoc-primary-overlap",
+    "target": "artifact_posthoc_primary_overlap",
+    "tool": "spawn_agent",
+    "occurrence": 0,
+    "prompt": "用户希望从去伪影找创新，root已实际查看成熟Truck30k未压缩teacher vsGT：teacher-artifact-triage-v0/panels/02_worst_000121.jpg...及ROI1显示背景行人半透明紫黑拖影，000217车窗反射明显糊抹并有背景人物残影。仅视觉探索，不证明因果或标量MSE＝伪影。请实际浏览primary官方论文/代码（2025–26及RobustNeRF/WildGaussians/SpotLessSplats等），定向查『已训练固定3DGS的事后瞬态残影/漂浮物清除，无需重训练整个场景，保护细节与反射』最接近6篇以内。关键区分：训练时mask/深度正则vs已有model的posthoc清理；单视角异常vs多视角真实空域证据；删除/opacity修改vs恢复/优化。检查有没有直接现成的同类方案（比如GaussClean/FloatFree/FloaterFree名字请核真，不凭记忆造）。给每篇primarylink/机制/输入输出/需否训练/与可能方法『由跨视角可见背景证明的空域排斥、实际原生反事实群删除只在非占用视角确认改善』重合。检索不到不能证明新颖。禁止实现/运行实验/编辑共享文件，不需要大综述。直接指出哪些熟悉操作已被覆盖，什么尚有明确未解决缺口。"
+  }
+]

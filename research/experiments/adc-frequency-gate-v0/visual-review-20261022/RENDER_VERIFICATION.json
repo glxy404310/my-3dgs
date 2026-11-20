@@ -1,0 +1,1289 @@
+{
+  "records": [
+    {
+      "run": "A0",
+      "view": "000001.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8910720944404602,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.05253028869629,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000009.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8890555500984192,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.971290588378906,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000017.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8415102362632751,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.441715240478516,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000025.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8608213663101196,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.068374633789062,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000033.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8447477221488953,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.558565139770508,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000041.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8641191124916077,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.786853790283203,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000049.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8696038722991943,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.742029190063477,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000057.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8282678723335266,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.631799697875977,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000065.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8395711779594421,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 22.88306427001953,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000073.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8938798308372498,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.13393211364746,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000081.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8500953316688538,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.488706588745117,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000089.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8712329268455505,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.96424102783203,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000097.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8785037398338318,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.855649948120117,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000105.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8815522193908691,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.84246063232422,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000113.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8421875238418579,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.302927017211914,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000121.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8176618814468384,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 22.57607650756836,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000129.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8399444818496704,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.232154846191406,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000137.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8472033739089966,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.20611572265625,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000145.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8165872693061829,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.872203826904297,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000153.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8383243680000305,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 22.463455200195312,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000161.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8489307165145874,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.185443878173828,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000169.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8622515201568604,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.220687866210938,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000177.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8682870268821716,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.614315032958984,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000185.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8512864112854004,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.802873611450195,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000193.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8631955981254578,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.92209243774414,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000201.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8866413831710815,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.826473236083984,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000209.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8728718161582947,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.15992546081543,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000217.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8041728734970093,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 21.07213592529297,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000225.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8491940498352051,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.442203521728516,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000233.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8249290585517883,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 22.656126022338867,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000241.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8721213340759277,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.183441162109375,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A0",
+      "view": "000249.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8674286603927612,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.578052520751953,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000001.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.889912486076355,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.0291805267334,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000009.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8879896402359009,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.090152740478516,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000017.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8380803465843201,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.4487361907959,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000025.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8599615097045898,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.14092254638672,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000033.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8442384600639343,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.498764038085938,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000041.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8614497780799866,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.792573928833008,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000049.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.87026047706604,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.457056045532227,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000057.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.82687908411026,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.61248207092285,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000065.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8373159170150757,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 22.843149185180664,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000073.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8942486643791199,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.083131790161133,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000081.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8489294648170471,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.462268829345703,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000089.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8704310655593872,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.099626541137695,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000097.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8778340816497803,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.887710571289062,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000105.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8812602758407593,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.936893463134766,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000113.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.839820921421051,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.22454833984375,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000121.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8151476979255676,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 22.52499008178711,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000129.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8385436534881592,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.01893424987793,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000137.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8460239768028259,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.06198501586914,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000145.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8157234191894531,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.945728302001953,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000153.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.837939977645874,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 22.4246883392334,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000161.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8471044898033142,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.127552032470703,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000169.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8618480563163757,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.258460998535156,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000177.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8675040602684021,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.558563232421875,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000185.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8487067818641663,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.721481323242188,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000193.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8615756630897522,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.42170524597168,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000201.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8855127096176147,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.895431518554688,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000209.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8718361258506775,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.183956146240234,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000217.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8026167154312134,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 21.022254943847656,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000225.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8470517992973328,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.393596649169922,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000233.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8221738934516907,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 22.642108917236328,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000241.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8704347014427185,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.112178802490234,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B0",
+      "view": "000249.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.866361677646637,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.62552261352539,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000001.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8988651633262634,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.768600463867188,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000009.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8898986577987671,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.267959594726562,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000017.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8409029841423035,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.794050216674805,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000025.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8629834651947021,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.299240112304688,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000033.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8394116163253784,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.469982147216797,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000041.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.871031641960144,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.006576538085938,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000049.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8740720152854919,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 22.945138931274414,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000057.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8275390267372131,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.78881072998047,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000065.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8409862518310547,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.18023681640625,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000073.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8943476676940918,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.39731788635254,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000081.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8447442054748535,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.038850784301758,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000089.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8819003701210022,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.69849395751953,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000097.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8796654343605042,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.883930206298828,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000105.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8789008855819702,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.625877380371094,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000113.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8508284687995911,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.58946990966797,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000121.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8178578615188599,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 22.33736801147461,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000129.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8465019464492798,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.239912033081055,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000137.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8555929064750671,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.863554000854492,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000145.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8265748023986816,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.23279571533203,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000153.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.837228000164032,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 22.472694396972656,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000161.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8551162481307983,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.254718780517578,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000169.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.86434006690979,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.347122192382812,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000177.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8718004822731018,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.69017219543457,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000185.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8627933859825134,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.19430923461914,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000193.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8709242343902588,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.950639724731445,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000201.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8818912506103516,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.95016860961914,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000209.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8619443774223328,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.677352905273438,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000217.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.7967800498008728,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 21.14017105102539,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000225.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8495262265205383,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.578380584716797,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000233.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8161851167678833,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 21.713579177856445,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000241.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8648562431335449,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.661914825439453,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "A1",
+      "view": "000249.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8630334734916687,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.524702072143555,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000001.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8960910439491272,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.42278289794922,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000009.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8875464200973511,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.862194061279297,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000017.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8366104960441589,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.731159210205078,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000025.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.86217200756073,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.342247009277344,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000033.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8379150629043579,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.397350311279297,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000041.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8696598410606384,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.01350212097168,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000049.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8752071261405945,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.168750762939453,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000057.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8264472484588623,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.791893005371094,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000065.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.839434802532196,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.08506965637207,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000073.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8945505023002625,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.450468063354492,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000081.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8435049653053284,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.087005615234375,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000089.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8796185255050659,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.612539291381836,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000097.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8773802518844604,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.928136825561523,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000105.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8765312433242798,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.540861129760742,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000113.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8471201658248901,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.343833923339844,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000121.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8161073327064514,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 22.286846160888672,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000129.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8451275825500488,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.30746078491211,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000137.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8545499444007874,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.789236068725586,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000145.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8256850838661194,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.243864059448242,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000153.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8367857933044434,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 22.438594818115234,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000161.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8544111251831055,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.229997634887695,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000169.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8635846972465515,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 24.357341766357422,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000177.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8699724674224854,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.63776397705078,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000185.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8608286380767822,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.18108558654785,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000193.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8700743317604065,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.454195022583008,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000201.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8804934620857239,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 25.057857513427734,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000209.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8601730465888977,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.6721248626709,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000217.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.7950853705406189,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 21.132661819458008,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000225.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8466548919677734,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.44841194152832,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000233.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8143805861473083,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 21.73050880432129,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000241.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8636721968650818,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.627092361450195,
+      "psnr_delta_to_original": 0.0
+    },
+    {
+      "run": "B1",
+      "view": "000249.jpg",
+      "width": 979,
+      "height": 546,
+      "ssim": 0.8612289428710938,
+      "ssim_delta_to_original": 0.0,
+      "psnr": 23.468263626098633,
+      "psnr_delta_to_original": 0.0
+    }
+  ],
+  "max_abs_ssim_delta": 0.0,
+  "max_abs_psnr_delta": 0.0,
+  "comparisons": 128,
+  "checkpoint_iteration": 7000,
+  "training_performed": false
+}

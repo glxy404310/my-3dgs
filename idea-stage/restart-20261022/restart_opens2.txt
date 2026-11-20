@@ -1,0 +1,324 @@
+"3DGS"^2-TR: Scalable Second-Order Trust-Region Method for 3D Gaussian Splatting (https://arxiv.org/html/2602.00395v1)
+citeturn37view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2602.00395v1","lineno":70}); Total lines: 578
+L69: Our work aligns most closely with a third direction: improving the optimizer itself. The standard optimizer for 3DGS is ADAM (【39†Kingma, 2014】), a first-order gradient-descent method widely used in deep learning. While first-order optimizers are easy to implement and scale well, they suffer from slow convergence in highly non-convex and ill-conditioned parameter spaces (【55†Sutton, 1986】; 【56†Dauphin et al., 2014】; 【57†Bottou et al., 2018】).
+L70: The optimization landscape of 3DGS is particularly challenging due to the strong coupling between geometry parameters (position, rotation, scale) and appearance parameters (opacity, color), leading to inefficient convergence and excessive training iterations. Additionally, first-order methods require meticulous tuning of learning rates for each parameter (【55†Sutton, 1986】; 【58†Schaul et al., 2013】; 【56†Dauphin et al., 2014】; 【57†Bottou et al., 2018】).
+L71: 3DGS occupies a unique position in machine learning: the model quality scales with the number of parameters, yet each parameter remains highly interpretable as a component of an unnormalized 3D Gaussian distribution. This has motivated prior work to explore second-order optimization algorithms—such as Newton’s method, Gauss-Newton, or Levenberg-Marquardt—to achieve superlinear convergence (【37†Höllein et al., 2025】; 【38†Lan et al., 2025】; 【59†Pehlivan et al., 2025】).
+L72: However, the 3DGS rasterization function poses fundamental challenges for second-order methods. First, it is highly nonlinear due to the sequential rendering of Gaussian splats at each pixel, where the transmittance seen by each splat depends on the opacities of all preceding splats in depth order. Second, the loss function is only piecewise continuous since depth-based sorting of Gaussian splats causes render order to change discontinuously with position parameters.
+L73: These discontinuities become more frequent in regions with dense clusters of splats, which commonly occur towards the end of training. Moreover, existing implementations of second-order methods incur high memory overhead from storing curvature information and suffer from expensive per-iteration costs due to matrix operations, offsetting any convergence speedup and making them unsuitable for production use with large scenes.
+--------------------------------------------------------------------------------
+Geometry Gaussians: Decoupling Appearance and Geometry in Gaussian Splatting (https://arxiv.org/html/2606.05124v1)
+citeturn37view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2606.05124v1","lineno":48}); Total lines: 336
+L29:     4. 【19†4.4 Transparency-aware Multi-view Stereo Loss】
+L30:   6. 【20†5 Experiments】
+L31:     1. 【21†5.1 Datasets】
+L32:     2. 【22†5.2 Baseline models】
+L33:     3. 【23†5.3 With Ground-truth Geometry】
+L34:     4. 【24†5.4 Geometry from Vision Foundation Models】
+L35:       1. 【25†Transparency.】
+L36:       2. 【26†Reflectance.】
+L37:       3. 【27†Ordinary Materials.】
+L38:     5. 【28†5.5 Ablation Study】
+L39:   7. 【29†6 Conclusion】
+L40:   8. 【30†References】
+L41: 【31†License: CC BY 4.0†info.arxiv.org】
+L42: 
+L43: arXiv:2606.05124v1 [cs.GR] 03 Jun 2026
+L44: # Geometry Gaussians: Decoupling Appearance and Geometry in Gaussian Splatting
+L45: 
+L46: Hongyu Zhou Affiliation: University of Bonn, Germany Affiliation: Lamarr Institut    Zorah Lähner Affiliation: University of Bonn, Germany Affiliation: Lamarr Institut
+L47: ###### Abstract
+L48: After the success of 3D Gaussian Splatting (3DGS) for novel view synthesis, many works have explored how to also use it for geometric surface representation. However, extracting accurate geometric information directly from 3DGS remains challenging and can often reduce the appearance rendering quality. In this work, we show that 3DGS in its default form is inheritedly unsuited to represent texture and geometry at the same time, by training with complete ground-truth texture and geometry information.
+L49: We also propose a simple solution by applying a single additional geometry opacity parameter to each splat, together with an optional transparency-curated optimization pipeline. Our experiments, both with ground-truth and vision foundation model geometric input, show that this change leads to improved rendering and geometry performance on a wide variety of dataset, and especially complex scenes with transparent objects benefit significantly from our method.
+L50: Figure 1: Comparison of 3DGS trained with full knowledge of the texture and geometry (in form of depth maps) without and with our method. A single additional parameter opacity_{geo} for each splat allows to capture the full scene information by separating color from geometry information which is especially important for transparent objects.
+L51: ## 1 Introduction
+L52: 
+L53: 3D Gaussian Splatting (3DGS) [【32†11】] has introduced, with great success, a new representation for novel view synthesis that enables high-quality, real-time rendering and efficient training. Due to its wide adaption, there is a growing interest in using 3DGS for other applications, including those that need a faithful 3D geometry, for example robotics, augmented reality, or physical simulations [【33†46】, 【34†41】, 【35†44】, 【36†2】].
+--------------------------------------------------------------------------------
+Faster 3D Gaussian Splatting Convergence via Structure-Aware Densification (https://arxiv.org/html/2604.28016v1)
+citeturn37view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2604.28016v1","lineno":60}); Total lines: 431
+L58: Linjie Lyu email: llyu@mpi-inf.mpg.de Affiliation: Max-Planck-Institut für Informatik, Germany , Ayush Tewari email: at2164@cam.ac.uk Affiliation: Cambridge University, United Kingdom , Jianchun Chen email: jchen@mpi-inf.mpg.de Affiliation: Max-Planck-Institut für Informatik, Germany , Thomas Leimkühler email: thomas.leimkuehler@mpi-inf.mpg.de Affiliation: Max-Planck-Institut für Informatik, Germany and Christian Theobalt email: theobalt@mpi-inf.mpg.de Affiliation: Max-Planck-Institut für Informatik, Germany Affiliation: Saarbrücken Research Center for Visual Computing, Interaction, and Artificial Intelligence (VIA), Germany
+L59: 【45†Image: Refer to caption】 Figure 1. Our approach addresses population control in the 3D Gaussian Splatting representation. Instead of conventional split or clone operations for Gaussians, we analyze multiscale image structure in the input views (left) and leverage this information for structure-aware anisotropic densification (right). Our method leads to significant acceleration of convergence (53 s on the Mip-NeRF360 and 41 s on the Deep Blending dataset) and achieves the best perceptual quality.
+L60: ###### Abstract.
+L61: 3D Gaussian Splatting has emerged as a powerful scene representation for real-time novel-view synthesis. However, its standard adaptive density control relies on screen-space positional gradients, which do not distinguish between geometric misplacement and frequency aliasing, often leading to either over-blurred high-frequency textures or inefficient over-densification. We present a structure-aware densification framework.
+L62: Our key insight is that the decision to subdivide a Gaussian should be driven by an explicit comparison between its projected screen-space extent and the local structure of the texture it seeks to represent. We introduce a multi-scale frequency analysis combining structure tensors with Laplacian scale space analysis to estimate the dominant frequency at each pixel, enabling robust supervision across varying texture scales.
+L63: Based on this analysis, we define $\eta$, a per-Gaussian, per-axis frequency violation metric that indicates when a primitive may be under-resolving local texture details. Unlike methods that perform isotropic splitting (e.g., splitting each Gaussian into two smaller ones with uniform shape), our approach performs anisotropic splitting. For each axis with high $\eta$, we compute a split factor to better resolve the local frequency content.
+L64: We further introduce a multiview consistency criterion that aggregates $\eta$ observations across multiple views. By performing densification early and faster, we skip the lengthy iterative densification phases required by baseline methods and achieve significantly faster convergence. Experiments on standard benchmarks demonstrate that our method also achieves superior reconstruction quality, particularly in high-frequency regions.
+--------------------------------------------------------------------------------
+QIRF: Quantum-Inspired Non-Orthogonal Function-Space Compression for 3D Gaussian Splatting (https://arxiv.org/html/2607.18067v1)
+citeturn37view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2607.18067v1","lineno":40}); Total lines: 288
+L15:   1. 【5†Abstract】
+L16:   2. 【6†1 Introduction】
+L17:   3. 【7†2 Related Work】
+L18:     1. 【8†Neural Radiance Fields and 3D Gaussian Splatting】
+L19:     2. 【9†Compact 3D Gaussian Representations】
+L20:   4. 【10†3 Method】
+L21:     1. 【11†Background】
+L22:     2. 【12†Method Overview】
+L23:     3. 【13†Problem Formulation and Adaptive Partitioning】
+L24:     4. 【14†Local Function-Space Modeling】
+L25:     5. 【15†Generalized Natural Scene Orbital Compression】
+L26:     6. 【16†Detail-Aware Safeguarding and Post-Pruning Optimization】
+L27:   5. 【17†4 Experiments】
+L28:     1. 【18†Experimental Settings】
+L29:     2. 【19†Experimental Results】
+L30:     3. 【20†Ablation Study】
+L31:     4. 【21†Limitations and Future Work】
+L32:   6. 【22†5 Conclusion】
+L33:   7. 【23†References】
+L34: 【24†License: CC BY 4.0†info.arxiv.org】
+L35: 
+L36: arXiv:2607.18067v1 [cs.CV] 20 Jul 2026
+L37: # QIRF: Quantum-Inspired Non-Orthogonal Function-Space Compression for 3D Gaussian Splatting
+L38: 
+L39: Shizeng Jiang ^{†}^{†}thanks: First Author    Hao Zhang ^{†}^{†}thanks: Corresponding Author    Xuerui Ma    Ying Hu    Tao Zhang ^{†}^{†}thanks: Corresponding Author
+L40: ###### Abstract
+L41: 3D Gaussian Splatting (3DGS) achieves high-quality real-time rendering by representing a scene with a large collection of anisotropic Gaussian primitives. However, complex scenes often require millions of Gaussians, resulting in substantial storage and rendering costs.
+L42: Existing compression methods mainly reduce redundancy through primitive-wise pruning, attribute quantization, clustering, or neural coding, while redundancy caused by strongly overlapping and non-orthogonal Gaussian basis functions remains largely unexplored. We present QIRF, a quantum-inspired non-orthogonal function-space compression for 3D gaussian splatting.
+L43: QIRF models neighboring Gaussian primitives as a local non-orthogonal basis and formulates primitive reduction as a subspace-aware selection problem. Specifically, an analytic Gaussian overlap matrix and a radiance-response density matrix are constructed to characterize functional redundancy and rendering relevance. Generalized eigendecomposition is then used to identify the dominant local subspace and select representative Gaussian primitives.
+L44: An RRDM-based response model and detail-aware safeguarding further preserve visually important high-frequency structures under aggressive pruning. Experiments on 13 scenes from Mip-NeRF 360, Tanks&Temples, and Deep Blending show that QIRF reduces the Gaussian count and raw PLY storage by $71.7\%$ on average, corresponding to approximately $3.54\times$ compression, while maintaining reconstruction quality comparable to 3DGS and achieving a marginal average PSNR improvement of $0.10$ dB.
+L45: QIRF also improves the average rendering speed over 3DGS by $34.3\%$. These results suggest that non-orthogonal function-space redundancy is an important yet underexplored source of representational redundancy in explicit Gaussian radiance fields.
+--------------------------------------------------------------------------------
+Revisiting Photometric Ambiguity for Accurate Gaussian-Splatting Surface Reconstruction (https://arxiv.org/html/2605.12494v1)
+citeturn37view4 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2605.12494v1","lineno":45}); Total lines: 602
+L30:   9. 【20†B Analysis of High-Degree Spherical Harmonics Indicator】
+L31:   10. 【21†C Analysis of Low $I_{SH}$ in Optimization】
+L32:   11. 【22†D Additional Ablation Study】
+L33:     1. 【23†D.1 Depth Priors】
+L34:     2. 【24†D.2 Gaussian Primitive Truncation】
+L35:     3. 【25†D.3 Spherical Harmonics Ambiguity Indication】
+L36:     4. 【26†D.4 Ray-Color Consistency】
+L37:   12. 【27†E Experimental Details】
+L38:     1. 【28†E.1 Implementation Details】
+L39:     2. 【29†E.2 Datasets】
+L40:     3. 【30†E.3 Baselines】
+L41:   13. 【31†F Discussion to Voxel Geometric Uncertainty】
+L42:   14. 【32†G Qualitative Comparison】
+L43:   15. 【33†H Effect on Non-Lambertian Surfaces】
+L44:   16. 【34†I Stability of Percentile-Based Primitive Selection】
+L45:   17. 【35†J Performance of Amorphous Mask in Detecting Ill-Constrained Regions】
+L46:   18. 【36†K Reconstruction Effect for Delicate Structures from Primitive Truncation】
+L47:   19. 【37†L Photometric Ambiguity Indication under Sparse Views】
+L48:   20. 【38†M Conclusion and Discussions】
+L49: 【39†License: arXiv.org perpetual non-exclusive license†info.arxiv.org】
+L50: 
+L51: arXiv:2605.12494v1 [cs.CV] 12 May 2026
+L52: # Revisiting Photometric Ambiguity for Accurate Gaussian-Splatting
+L53: Surface Reconstruction
+L54: Jiahe Li Affiliation: School of Computer Science and Engineering, State Key Laboratory of Complex Critical & Software Environment, Jiangxi Research Institute, Beihang University Affiliation: School of Computing, National University of Singapore    Jiawei Zhang Affiliation: School of Computer Science and Engineering, State Key Laboratory of Complex Critical & Software Environment, Jiangxi Research Institute, Beihang University    Xiao Bai Affiliation: School of Computer Science and Engineering, State Key Laboratory of Complex Critical & Software Environment, Jiangxi Research Institute, Beihang University Correspondence to: baixiao@buaa.edu.cn    Jin Zheng Affiliation: School of Computer Science and Engineering, State Key Laboratory of Complex Critical & Software Environment, Jiangxi Research Institute, Beihang University Affiliation: State Key Laboratory of Virtual Reality Technology and Systems, Beijing Correspondence to: jinzheng@buaa.edu.cn    Xiaohan Yu Affiliation: Macquarie University    Lin Gu Affiliation: Tohoku University    Gim Hee Lee Affiliation: School of Computing, National University of Singapore
+--------------------------------------------------------------------------------
+TruncGradGS: Improved 3D Gaussian Splatting viaTruncated Gradient Updates (https://arxiv.org/html/2609.03534v1)
+citeturn37view5 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2609.03534v1","lineno":45}); Total lines: 378
+L40: 3D Gaussian Splatting has become a de facto scene representation for novel view synthesis, yet robustly learning 3D Gaussian primitives from visual input remains challenging. Standard optimization relies on gradient-based updates, but a common issue is the gradient vanishing phenomenon: a pixel far from a Gaussian primitive often has diminishing gradient magnitudes to influence primitive attributes, resulting in suboptimal scene reconstruction.
+L41: In this paper, we propose a method to address gradient vanishing with a piecewise truncated gradient formulation that improves the optimization stability and robustness to initializations. We show that our method consistently improves 3D Gaussian Splatting with random and COLMAP initializations while being generalizable across static and dynamic Gaussian Splatting.
+L42: As a by-product, we also examine the limitations of current benchmarks for dynamic scenes, and introduce a novel dataset for benchmarking dynamic Gaussian Splatting using synthetic 3D scenes. We demonstrate the effectiveness of our method in both static and dynamic settings for the public benchmarks and our proposed dataset.
+L43: ###### ccs
+L44: 
+L45: Computing methodologies Rasterization
+L46: ###### ccs
+L47: 
+L48: Computing methodologies Reconstruction
+L49: ^{†}^{†}year: 2026^{†}^{†}year: 2026^{†}^{†}editors: Y. He, N. Thürey, and L. Liu^{†}^{†}subject: Pacific Graphics Short Papers 【21†Image: Refer to caption】 Figure 1: Visualization of our piecewise truncated gradient field. The example assumes a 2D Gaussian primitive that splats at the center of an image. The left column shows the derivative of the Gaussian distribution w.r.t. its mean on the $x$ and $y$ axis. It can be seen that the gradient is near zero for any pixel outside the local support.
+L50: In the right column, the piecewise gradient fields for the same Gaussian splat show a wider support with stronger gradient signals in far-away regions. Our piecewise gradient field is composed of the true Gaussian derivative inside the isocontour of the Gaussian splat, and of a linear surrogate outside. We define the isocontour by a density threshold and ensure gradient continuity at the contour boundary.
+L51: ## 1 Introduction
+L52: 3D Gaussian Splatting has emerged as a de facto scene representation in visual computing, supporting diverse applications in novel view synthesis, scene reconstruction, and content creation. Its central idea is to model the radiance field of a scene using a collection of ellipsoids formulated as 3D Gaussian primitives. Each 3D Gaussian is parametrized by a mean, covariance matrix, and appearance-related attributes such as opacity and spherical harmonics coefficients.
+L53: These primitives are typically learned through optimization. However, robustly learning such Gaussian primitives remains challenging, particularly in the setting of random initialization or dynamic scenes.
+--------------------------------------------------------------------------------
+StructGS: Adaptive Spherical Harmonics and Rendering Enhancements for Superior 3D Gaussian Splatting (https://arxiv.org/html/2503.06462v1)
+citeturn37view6 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://arxiv.org/html/2503.06462v1","lineno":40}); Total lines: 318
+L15:   1. 【5†Abstract】
+L16:   2. 【6†I Introduction】
+L17:   3. 【7†II Related Work】
+L18:   4. 【8†III Methodology】
+L19:     1. 【9†III-A Preliminary】
+L20:     2. 【10†III-B Non-Local Structural Information in SSIM】
+L21:     3. 【11†III-C Dynamic Adjustment of Spherical Harmonics Initialisation】
+L22:     4. 【12†III-D Multi-scale Residual Network】
+L23:     5. 【13†III-E Training Losses】
+L24:   5. 【14†IV Experiments】
+L25:     1. 【15†IV-A Dataset and Metrics】
+L26:     2. 【16†IV-B Baselines and Implementation】
+L27:     3. 【17†IV-C Results Comparison】
+L28:     4. 【18†IV-D Ablation Study】
+L29:       1. 【19†IV-D1 Loss terms and Regulariser】
+L30:       2. 【20†IV-D2 Dynamic Spherical Harmonics Initialisation】
+L31:       3. 【21†IV-D3 Multi-scale Residual Network】
+L32:     5. 【22†IV-E Limitation and Future Work】
+L33:   6. 【23†V Conclusion】
+L34:   7. 【24†References】
+L35: 【25†License: arXiv.org perpetual non-exclusive license†info.arxiv.org】
+L36: 
+L37: arXiv:2503.06462v1 [cs.CV] 09 Mar 2025
+L38: # StructGS: Adaptive Spherical Harmonics and Rendering Enhancements for Superior 3D Gaussian Splatting
+L39: 
+L40: Zexu Huang    Min Xu    Stuart Perry ^{†}^{†}thanks: Zexu Huang, Min Xu and Stuart Perry are with the Perceptual Imaging Laboratory (PILab), School of Electrical and Data Engineering, University of Technology Sydney, Ultimo, NSW 2007, Australia (email: zexu.huang@student.uts.edu.au; min.xu@uts.edu.au; stuart.perry@uts.edu.au)^{†}^{†}thanks: Manuscript received Dec 3, 2024
+L41: ###### Abstract
+L42: Recent advancements in 3D reconstruction coupled with neural rendering techniques have greatly improved the creation of photo-realistic 3D scenes, influencing both academic research and industry applications. The technique of 3D Gaussian Splatting and its variants incorporate the strengths of both primitive-based and volumetric representations, achieving superior rendering quality.
+L43: While 3D Geometric Scattering (3DGS) and its variants have advanced the field of 3D representation, they fall short in capturing the stochastic properties of non-local structural information during the training process. Additionally, the initialisation of spherical functions in 3DGS-based methods often fails to engage higher-order terms in early training rounds, leading to unnecessary computational overhead as training progresses.
+L44: Furthermore, current 3DGS-based approaches require training on higher resolution images to render higher resolution outputs, significantly increasing memory demands and prolonging training durations. We introduce StructGS, a framework that enhances 3D Gaussian Splatting (3DGS) for improved novel-view synthesis in 3D reconstruction.
+L45: StructGS innovatively incorporates a patch-based SSIM loss, dynamic spherical harmonics initialisation and a Multi-scale Residual Network (MSRN) to address the above-mentioned limitations, respectively. Our framework significantly reduces computational redundancy, enhances detail capture and supports high-resolution rendering from low-resolution inputs.
+--------------------------------------------------------------------------------
+GitHub - moholo-founder/ogc-3dgs: Training-free observation-Gram compaction of spherical-harmonic appearance in 3D Gaussian Splatting · GitHub (https://github.com/moholo-founder/ogc-3dgs)
+citeturn37view7 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://github.com/moholo-founder/ogc-3dgs","lineno":200}); Total lines: 344
+L184: Name  | Name  | Last commit message  | Last commit date
+L185: --- | --- | --- | ---
+L186: 【78†cuda】  | 【78†cuda】  |    |
+L187: 【79†data】  | 【79†data】  |    |
+L188: 【80†docs】  | 【80†docs】  |    |
+L189: 【81†hosts】  | 【81†hosts】  |    |
+L190: 【82†tests】  | 【82†tests】  |    |
+L191: 【83†train】  | 【83†train】  |    |
+L192: 【84†.gitignore】  | 【84†.gitignore】  |    |
+L193: 【85†LICENSE】  | 【85†LICENSE】  |    |
+L194: 【86†README.md】  | 【86†README.md】  |    |
+L195: 【87†after_master.sh】  | 【87†after_master.sh】  |    |
+L196: 【88†arc_eval.py】  | 【88†arc_eval.py】  |    |
+L197: 【89†bench_render.py】  | 【89†bench_render.py】  |    |
+L198: 【90†bench_train.py】  | 【90†bench_train.py】  |    |
+L199: 【91†bench_when_quiet.sh】  | 【91†bench_when_quiet.sh】  |    |
+L200: 【92†check_results.py】  | 【92†check_results.py】  |    |
+L201: 【93†check_views.py】  | 【93†check_views.py】  |    |
+L202: 【94†common.py】  | 【94†common.py】  |    |
+L203: 【95†compact.py】  | 【95†compact.py】  |    |
+L204: 【96†entropy.py】  | 【96†entropy.py】  |    |
+L205: 【97†evaluate.py】  | 【97†evaluate.py】  |    |
+L206: 【98†extrap.py】  | 【98†extrap.py】  |    |
+L207: 【99†fastrender.py】  | 【99†fastrender.py】  |    |
+L208: 【100†fig_teaser.py】  | 【100†fig_teaser.py】  |    |
+L209: 【101†geo.py】  | 【101†geo.py】  |    |
+L210: 【102†geo_adaptive.py】  | 【102†geo_adaptive.py】  |    |
+L211: 【103†gram.py】  | 【103†gram.py】  |    |
+L212: 【104†gsrender.py】  | 【104†gsrender.py】  |    |
+L213: 【105†hessian.py】  | 【105†hessian.py】  |    |
+L214: 【106†make_abstract_txt.py】  | 【106†make_abstract_txt.py】  |    |
+L215: 【107†make_arxiv.sh】  | 【107†make_arxiv.sh】  |    |
+L216: 【108†make_claims.py】  | 【108†make_claims.py】  |    |
+L217: 【109†make_figs.py】  | 【109†make_figs.py】  |    |
+L218: 【110†make_page.py】  | 【110†make_page.py】  |    |
+L219: 【111†make_rd.py】  | 【111†make_rd.py】  |    |
+L220: 【112†make_tables.py】  | 【112†make_tables.py】  |    |
+L221: 【113†master2.sh】  | 【113†master2.sh】  |    |
+L222: 【114†master3.sh】  | 【114†master3.sh】  |    |
+L223: 【115†master4.sh】  | 【115†master4.sh】  |    |
+L224: 【116†night.sh】  | 【116†night.sh】  |    |
+L225: 【117†night2.sh】  | 【117†night2.sh】  |    |
+L226: 【118†night3.sh】  | 【118†night3.sh】  |    |
+L227: 【119†pipeline.py】  | 【119†pipeline.py】  |    |
+L228: 【120†plugin.py】  | 【120†plugin.py】  |    |
+L229: 【121†pull_results.sh】  | 【121†pull_results.sh】  |    |
+L230: 【122†queue.sh】  | 【122†queue.sh】  |    |
+L231: 【123†rd.py】  | 【123†rd.py】  |    |
+L232: 【124†rd_metrics.py】  | 【124†rd_metrics.py】  |    |
+L233: 【125†repair.sh】  | 【125†repair.sh】  |    |
+L234: 【126†repair2.sh】  | 【126†repair2.sh】  |    |
+L235: 【127†repair3.sh】  | 【127†repair3.sh】  |    |
+L236: 【128†requirements.txt】  | 【128†requirements.txt】  |    |
+--------------------------------------------------------------------------------
+GitHub - nerficg-project/faster-gaussian-splatting: An efficient and research-friendly Gaussian Splatting framework described in the CVPR'26 paper "Faster-GS: Analyzing and Improving Gaussian Splatting Optimization" · GitHub (https://github.com/nerficg-project/faster-gaussian-splatting)
+citeturn37view8 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://github.com/nerficg-project/faster-gaussian-splatting","lineno":185}); Total lines: 366
+L117: ## Repository navigation
+L118: 
+L119:   *   * 【62†Code】
+L120:   * 【63†Issues】
+L121:   * 【64†Pull requests1 (1)】
+L122:   * 【65†Actions】
+L123:   * 【66†Projects】
+L124:   * 【67†Security and quality】
+L125:   * 【68†Insights】
+L126: 
+L127: More items
+L128: 
+L129: 【69†Image: nerficg-project†avatars.githubusercontent.com】
+L130: 
+L131: 【62†faster-gaussian-splatting】
+L132: 
+L133: Public
+L134: 
+L135:   * 【70†Notifications】You must be signed in to change notification settings
+L136:   * 【70†Fork39 (39)】
+L137:   * 【70†Star268 (268)】You must be signed in to star a repository
+L138: ## About
+L139: 
+L140: An efficient and research-friendly Gaussian Splatting framework described in the CVPR'26 paper "Faster-GS: Analyzing and Improving Gaussian Splatting Optimization"
+L141: 
+L142: 【71†fhahlbohm.github.io/faster-gaussian-splatting/†fhahlbohm.github.io】
+L143: 
+L144: ### Topics
+L145: 
+L146: 【72†computer-graphics】【73†computer-vision】【74†gaussian-splatting】【75†novel-view-synthesis】
+L147: 
+L148: ### Resources
+L149: 
+L150: 【76†Readme】
+L151: 
+L152: 【77†Apache-2.0 license】
+L153: 
+L154: 【78†Activity】
+L155: 
+L156: 【79†Custom properties】
+L157: 
+L158: ### Stars
+L159: 
+L160: 268 stars
+L161: 
+L162: ### Watchers
+L163: 
+L164: 15 watching
+L165: ### Forks
+L166: 
+L167: 【80†39 forks】
+L168: 
+L169: 【81†Report repository】
+L170: 
+L171: main
+L172: 
+L173: 【82†Branches】【83†Tags】
+L174: 
+L175: [Input: Go to file]
+L176: 
+L177: Go to file
+L178: 
+L179: Code
+L180: 
+L181: Open more actions menu
+L182: 
+L183: ## Latest commit
+L184: 
+L185: 
+L186: 
+L187: ## History
+L188: 
+L189: 21 Commits
+L190: ## Folders and files
+L191: Name  | Name  | Last commit message  | Last commit date
+L192: --- | --- | --- | ---
+L193: 【84†FasterGSCudaBackend】  | 【84†FasterGSCudaBackend】  |    |
+L194: 【85†resources】  | 【85†resources】  |    |
+L195: 【86†.gitignore】  | 【86†.gitignore】  |    |
+L196: 【87†LICENSE】  | 【87†LICENSE】  |    |
+L197: 【88†Loss.py】  | 【88†Loss.py】  |    |
+L198: 【89†Model.py】  | 【89†Model.py】  |    |
+L199: 【90†README.md】  | 【90†README.md】  |    |
+L200: 【91†Renderer.py】  | 【91†Renderer.py】  |    |
+L201: 【92†Trainer.py】  | 【92†Trainer.py】  |    |
+L202: 【93†__init__.py】  | 【93†__init__.py】  |    |
+L203: 【94†fastergs_garden.yaml】  | 【94†fastergs_garden.yaml】  |    |
+L204: 【95†utils.py】  | 【95†utils.py】  |    |
+L205: [Button: View all files]
+L206: ## Repository files navigation
+L207: 
+L208:   *   * 【96†README】
+L209:   * 【96†Apache-2.0 license】
+L210: 
+L211: More items
+L212: # Faster Gaussian Splatting
+L213: 
+L214: 
+L215: 
+L216: Progress accelerates when feedback cycles shrink.
+L217: Ever wondered how much faster you could iterate in your 【97†3D Gaussian Splatting†repo-sam.inria.fr】 research by unifying the most impactful advances from its many follow-up works?
+L218: This repository presents our answer: the official implementation of “Faster-GS: Analyzing and Improving Gaussian Splatting Optimization”, an updated baseline for 3DGS optimization.
+L219: > Faster-GS: Analyzing and Improving Gaussian Splatting Optimization
+L220: > 【98†Florian Hahlbohm†fhahlbohm.github.io】, 【99†Linus Franke†lfranke.github.io】, 【100†Martin Eisemann†graphics.tu-bs.de】, 【101†Marcus Magnor†graphics.tu-bs.de】
+L221: > CVPR, June 2026
+L222: > 【102†Project page†fhahlbohm.github.io】 | 【103†Paper†fhahlbohm.github.io】 | 【104†BibTeX†fhahlbohm.github.io】
+

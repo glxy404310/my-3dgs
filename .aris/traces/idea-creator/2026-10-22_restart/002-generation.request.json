@@ -1,0 +1,13 @@
+{
+  "call_number": 2,
+  "purpose": "generation-resource-reliability",
+  "tool": "collaboration.spawn_agent",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "agent_id": "/root/restart_resource_reliability",
+  "files_referenced": [
+    "idea-stage/restart-20261022/BRIEF.md"
+  ],
+  "prompt": "Apply idea-creator generation shard, read-only, no edits. Read D:/Documents/my 3dgs/idea-stage/restart-20261022/BRIEF.md and historical findings as needed. Lens: reliable static novel-view rendering under finite data/compute, worst-view or camera-path artifacts, useful representation/resource decisions beyond failed split/merge tricks. Generate 6 concrete SIMPLE research candidates, actual mechanism not only problem. Available RTX5070 12GB, Truck/Train early checkpoints and Truck older30k; no training this turn. Browse primary sources. Do NOT rank/reject/claim novelty/publishability; fresh parent jury does. Return JSON {shard_id:'resource_reliability',candidates:[{dedup_key,payload:{title,method_steps:[2-4],hypothesis,local_problem_evidence_or_missing,closest_sources:[{title,url,overlap,claimed_delta_to_verify}],minimal_falsification,strong_simple_controls,compute_estimate_and_unknowns,risk,so_what,contribution_type}}]}. Don't repeat fixed failed mechanisms, hide simple knobs as novelty, or stack modules. A named risk is okay. Differentiate known data acquisition NBV from fixed-existing-view optimization sampling, interpolation regularizers from real camera GT. Date2026-10-22, cover recent6months. Keep all6 with citations.",
+  "followup": "Stop retrieval; return final JSON using six already supplied mechanisms and existing evidence; unknown metadata remains unknown; no ranking."
+}

@@ -1,0 +1,8 @@
+{
+  "view": "000002.jpg",
+  "max_abs_RGB_difference": 0.0,
+  "RGB_MSE_float64": 0.0,
+  "max_limit": 2e-05,
+  "MSE_limit": 1e-10,
+  "purpose": "cache identity only; no teacher-versus-GT score"
+}

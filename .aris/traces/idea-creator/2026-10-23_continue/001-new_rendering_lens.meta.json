@@ -1,0 +1,12 @@
+{
+  "agent_path": "/root/new_rendering_lens",
+  "review_independence": "same-family",
+  "reviewer_family": "openai",
+  "call_number": 1,
+  "status": "ok",
+  "model": "gpt-6-astra",
+  "acceptance_status": "provisional",
+  "raw_output_path": "D:\\Documents\\my 3dgs\\idea-stage\\continue-20261023\\RENDERING_RAW.json",
+  "agent_id": "01a1646e-18d6-70a1-9d5d-b9b30e33a365",
+  "purpose": "new_rendering_lens"
+}

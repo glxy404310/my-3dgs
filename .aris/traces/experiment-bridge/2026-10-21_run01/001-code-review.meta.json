@@ -1,0 +1,11 @@
+{
+  "call_number": 1,
+  "purpose": "diagnostic-code-review",
+  "agent_id": "/root/diagnostic_code_review",
+  "model": "gpt-6-astra",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "routing_action": "proceed_to_sanity"
+}

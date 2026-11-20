@@ -1,0 +1,229 @@
+{
+  "display_rule": "teacher left / GT right; no enhancements",
+  "view_selection": "descending MSE ranks 1..6,17,32",
+  "ROI_selection": "posthoc 192x192 stride24 maximum MSE, then maximum nonoverlapping crop",
+  "images": [
+    {
+      "view": "000217.jpg",
+      "input_filename": "000217.jpg.npz",
+      "mse": 0.006126526942477726,
+      "psnr_db": 22.127856522619858,
+      "psnr_infinite": false,
+      "teacher_values_outside_0_1_before_clamp": 46637,
+      "rank_mse_descending": 1,
+      "selection": "worst",
+      "pair_png": "panels/01_worst_000217.jpg_teacher_left_GT_right.png",
+      "pair_size_wh": [
+        1958,
+        546
+      ],
+      "left": "clamped mature teacher",
+      "right": "original GT",
+      "rois": [
+        {
+          "posthoc_max_error_selection": true,
+          "selection_order": 1,
+          "candidate_count": 495,
+          "ROI_size": 192,
+          "stride": 24,
+          "box_yx_y1x1_exclusive": [
+            72,
+            528,
+            264,
+            720
+          ],
+          "ROI_mse": 0.022790175675364666,
+          "png": "panels/01_000217.jpg_posthoc_ROI1_2xnearest.png",
+          "size_wh": [
+            768,
+            384
+          ]
+        },
+        {
+          "posthoc_max_error_selection": true,
+          "selection_order": 2,
+          "candidate_count": 495,
+          "ROI_size": 192,
+          "stride": 24,
+          "box_yx_y1x1_exclusive": [
+            72,
+            240,
+            264,
+            432
+          ],
+          "ROI_mse": 0.014801664617113158,
+          "png": "panels/01_000217.jpg_posthoc_ROI2_2xnearest.png",
+          "size_wh": [
+            768,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "view": "000121.jpg",
+      "input_filename": "000121.jpg.npz",
+      "mse": 0.004494045788043235,
+      "psnr_db": 23.473625070407856,
+      "psnr_infinite": false,
+      "teacher_values_outside_0_1_before_clamp": 94516,
+      "rank_mse_descending": 2,
+      "selection": "worst",
+      "pair_png": "panels/02_worst_000121.jpg_teacher_left_GT_right.png",
+      "pair_size_wh": [
+        1958,
+        546
+      ],
+      "left": "clamped mature teacher",
+      "right": "original GT",
+      "rois": [
+        {
+          "posthoc_max_error_selection": true,
+          "selection_order": 1,
+          "candidate_count": 495,
+          "ROI_size": 192,
+          "stride": 24,
+          "box_yx_y1x1_exclusive": [
+            48,
+            696,
+            240,
+            888
+          ],
+          "ROI_mse": 0.012659177697710237,
+          "png": "panels/02_000121.jpg_posthoc_ROI1_2xnearest.png",
+          "size_wh": [
+            768,
+            384
+          ]
+        },
+        {
+          "posthoc_max_error_selection": true,
+          "selection_order": 2,
+          "candidate_count": 495,
+          "ROI_size": 192,
+          "stride": 24,
+          "box_yx_y1x1_exclusive": [
+            120,
+            0,
+            312,
+            192
+          ],
+          "ROI_mse": 0.011092442635330192,
+          "png": "panels/02_000121.jpg_posthoc_ROI2_2xnearest.png",
+          "size_wh": [
+            768,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "view": "000153.jpg",
+      "input_filename": "000153.jpg.npz",
+      "mse": 0.00419195909554643,
+      "psnr_db": 23.77582963778419,
+      "psnr_infinite": false,
+      "teacher_values_outside_0_1_before_clamp": 66192,
+      "rank_mse_descending": 3,
+      "selection": "worst",
+      "pair_png": "panels/03_worst_000153.jpg_teacher_left_GT_right.png",
+      "pair_size_wh": [
+        1958,
+        546
+      ],
+      "left": "clamped mature teacher",
+      "right": "original GT",
+      "rois": []
+    },
+    {
+      "view": "000065.jpg",
+      "input_filename": "000065.jpg.npz",
+      "mse": 0.003915354898529328,
+      "psnr_db": 24.072288661763295,
+      "psnr_infinite": false,
+      "teacher_values_outside_0_1_before_clamp": 65944,
+      "rank_mse_descending": 4,
+      "selection": "worst",
+      "pair_png": "panels/04_worst_000065.jpg_teacher_left_GT_right.png",
+      "pair_size_wh": [
+        1958,
+        546
+      ],
+      "left": "clamped mature teacher",
+      "right": "original GT",
+      "rois": []
+    },
+    {
+      "view": "000233.jpg",
+      "input_filename": "000233.jpg.npz",
+      "mse": 0.003866791038636986,
+      "psnr_db": 24.12649296563844,
+      "psnr_infinite": false,
+      "teacher_values_outside_0_1_before_clamp": 124447,
+      "rank_mse_descending": 5,
+      "selection": "worst",
+      "pair_png": "panels/05_worst_000233.jpg_teacher_left_GT_right.png",
+      "pair_size_wh": [
+        1958,
+        546
+      ],
+      "left": "clamped mature teacher",
+      "right": "original GT",
+      "rois": []
+    },
+    {
+      "view": "000225.jpg",
+      "input_filename": "000225.jpg.npz",
+      "mse": 0.003554809885624074,
+      "psnr_db": 24.491836207660565,
+      "psnr_infinite": false,
+      "teacher_values_outside_0_1_before_clamp": 41936,
+      "rank_mse_descending": 6,
+      "selection": "worst",
+      "pair_png": "panels/06_worst_000225.jpg_teacher_left_GT_right.png",
+      "pair_size_wh": [
+        1958,
+        546
+      ],
+      "left": "clamped mature teacher",
+      "right": "original GT",
+      "rois": []
+    },
+    {
+      "view": "000017.jpg",
+      "input_filename": "000017.jpg.npz",
+      "mse": 0.0027490185758153613,
+      "psnr_db": 25.608223255087136,
+      "psnr_infinite": false,
+      "teacher_values_outside_0_1_before_clamp": 26656,
+      "rank_mse_descending": 17,
+      "selection": "median_rank17",
+      "pair_png": "panels/17_median_rank17_000017.jpg_teacher_left_GT_right.png",
+      "pair_size_wh": [
+        1958,
+        546
+      ],
+      "left": "clamped mature teacher",
+      "right": "original GT",
+      "rois": []
+    },
+    {
+      "view": "000185.jpg",
+      "input_filename": "000185.jpg.npz",
+      "mse": 0.0017688403107107857,
+      "psnr_db": 27.523113730301052,
+      "psnr_infinite": false,
+      "teacher_values_outside_0_1_before_clamp": 39610,
+      "rank_mse_descending": 32,
+      "selection": "best",
+      "pair_png": "panels/32_best_000185.jpg_teacher_left_GT_right.png",
+      "pair_size_wh": [
+        1958,
+        546
+      ],
+      "left": "clamped mature teacher",
+      "right": "original GT",
+      "rois": []
+    }
+  ]
+}

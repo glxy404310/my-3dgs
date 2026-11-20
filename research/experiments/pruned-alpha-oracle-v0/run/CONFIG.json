@@ -1,0 +1,21 @@
+{
+  "input_hashes": {
+    "teacher": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+    "original24": "d1b13a40ea7c27def31d8ec4030f6d42b66b5d94c83cf59d165c63c55a8d61b3",
+    "all219": "f6c9f4da05e064db5c94134c8ee241eb2188fb83a5c3f860655d2eaf279f992f",
+    "contract": "9945e48c38e3866566f946a64051e155cdd76c0b704bf7b1072fdcd8bfd22523",
+    "script": "7ddebd3ab7c392eaefc318282ac0d995bd8165fd2646f45b38acaf5dd028617f"
+  },
+  "alpha_threshold": 0.0001,
+  "fixed_gain": [
+    1.05,
+    1.1,
+    1.25
+  ],
+  "fixed_opacity": [
+    1.1,
+    1.25,
+    1.5
+  ],
+  "selection_uses_GT": false
+}

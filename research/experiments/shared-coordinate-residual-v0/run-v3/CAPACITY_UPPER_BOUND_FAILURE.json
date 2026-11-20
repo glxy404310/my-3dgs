@@ -1,0 +1,19 @@
+{
+  "iteration": 30000,
+  "view": 0,
+  "name": "000002.jpg",
+  "stage": "single_checkpoint_complete_mask",
+  "single_checkpoint_superset_count": 8,
+  "spatial_fold_upper_bounds": [
+    6,
+    2
+  ],
+  "quadrant_upper_bounds": [
+    0,
+    5,
+    1,
+    2
+  ],
+  "actual_two_checkpoint_common_mask": "unknown_until_both_checkpoint_masks_complete",
+  "proof": "The final two-checkpoint common mask is a subset of this mask."
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "path": "panels/000016.jpg.fixed.full.png",
+    "sha256": "2242998ff61d6df6bc219259c8aa28f1f493a85891f115c973b46d821e2d1a0c",
+    "bytes": 4125710,
+    "view": "000016.jpg",
+    "height": 546,
+    "width": 5874,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "all219",
+      "NanoGS",
+      "PUP",
+      "SH8"
+    ],
+    "tag": "fixed",
+    "image_source": "actual_saved_native_pixels",
+    "AI_generated": false
+  },
+  {
+    "path": "panels/000016.jpg.fixed.top220.png",
+    "sha256": "b7077ac1626c354d4bd7a165f853e0b9524e8e92128cf18be2e85bbc13f7fed2",
+    "bytes": 2256797,
+    "view": "000016.jpg",
+    "height": 220,
+    "width": 5874,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "all219",
+      "NanoGS",
+      "PUP",
+      "SH8"
+    ],
+    "tag": "fixed x0 y0 w979 h220",
+    "image_source": "actual_saved_native_pixels",
+    "AI_generated": false
+  },
+  {
+    "path": "panels/000017.jpg.fixed.full.png",
+    "sha256": "14010711bf7be10d21819d23f628e50001e10598f3e13cf3e8ce326b82b001e0",
+    "bytes": 3928265,
+    "view": "000017.jpg",
+    "height": 546,
+    "width": 5874,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "all219",
+      "NanoGS",
+      "PUP",
+      "SH8"
+    ],
+    "tag": "fixed",
+    "image_source": "actual_saved_native_pixels",
+    "AI_generated": false
+  },
+  {
+    "path": "panels/000017.jpg.fixed.top220.png",
+    "sha256": "36c27977da480d4bf7f752b720a96eafe0fdb680ed0b443b9a38c5c0b40f69ec",
+    "bytes": 2102703,
+    "view": "000017.jpg",
+    "height": 220,
+    "width": 5874,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "all219",
+      "NanoGS",
+      "PUP",
+      "SH8"
+    ],
+    "tag": "fixed x0 y0 w979 h220",
+    "image_source": "actual_saved_native_pixels",
+    "AI_generated": false
+  },
+  {
+    "path": "panels/000105.jpg.fixed.full.png",
+    "sha256": "056a2022a890e20be5e95c7b6b1222d03f5f0ba4a63ad92f29701e0e47d3fdca",
+    "bytes": 3483402,
+    "view": "000105.jpg",
+    "height": 546,
+    "width": 5874,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "all219",
+      "NanoGS",
+      "PUP",
+      "SH8"
+    ],
+    "tag": "fixed",
+    "image_source": "actual_saved_native_pixels",
+    "AI_generated": false
+  },
+  {
+    "path": "panels/000105.jpg.fixed.top220.png",
+    "sha256": "4a5c59e83758c54f7e8d7c6e6f3ada8ef5290a4672492da45ab866f601aa58b0",
+    "bytes": 1732730,
+    "view": "000105.jpg",
+    "height": 220,
+    "width": 5874,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "all219",
+      "NanoGS",
+      "PUP",
+      "SH8"
+    ],
+    "tag": "fixed x0 y0 w979 h220",
+    "image_source": "actual_saved_native_pixels",
+    "AI_generated": false
+  },
+  {
+    "path": "panels/000153.jpg.exploratory_rank1.full.png",
+    "sha256": "717c2284a2a9873a8d74504798a2096ec6ba8d583adf7a9ab071be2de166735b",
+    "bytes": 3106417,
+    "view": "000153.jpg",
+    "height": 546,
+    "width": 5874,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "all219",
+      "NanoGS",
+      "PUP",
+      "SH8"
+    ],
+    "tag": "exploratory SH8 minus all219 GT-MSE rank1",
+    "image_source": "actual_saved_native_pixels",
+    "AI_generated": false
+  },
+  {
+    "path": "panels/000161.jpg.exploratory_rank2.full.png",
+    "sha256": "c62f023220d1889af4f1a8da80c625fc0bc7d8dceebacce0432280376038da46",
+    "bytes": 2960344,
+    "view": "000161.jpg",
+    "height": 546,
+    "width": 5874,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "all219",
+      "NanoGS",
+      "PUP",
+      "SH8"
+    ],
+    "tag": "exploratory SH8 minus all219 GT-MSE rank2",
+    "image_source": "actual_saved_native_pixels",
+    "AI_generated": false
+  },
+  {
+    "path": "panels/000073.jpg.exploratory_rank3.full.png",
+    "sha256": "7ac76a8797c8e2ed9352c5c6310fabf5a4d77fd174e86c1e09dccefa17da50f9",
+    "bytes": 3003974,
+    "view": "000073.jpg",
+    "height": 546,
+    "width": 5874,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "all219",
+      "NanoGS",
+      "PUP",
+      "SH8"
+    ],
+    "tag": "exploratory SH8 minus all219 GT-MSE rank3",
+    "image_source": "actual_saved_native_pixels",
+    "AI_generated": false
+  },
+  {
+    "path": "panels/000193.jpg.exploratory_rank4.full.png",
+    "sha256": "91c840354c3bd3614e8b6af2ca456c6e5c3d0649f847009216ca22ef5d75b31e",
+    "bytes": 2955906,
+    "view": "000193.jpg",
+    "height": 546,
+    "width": 5874,
+    "header_height": 28,
+    "columns": [
+      "GT",
+      "teacher",
+      "all219",
+      "NanoGS",
+      "PUP",
+      "SH8"
+    ],
+    "tag": "exploratory SH8 minus all219 GT-MSE rank4",
+    "image_source": "actual_saved_native_pixels",
+    "AI_generated": false
+  }
+]

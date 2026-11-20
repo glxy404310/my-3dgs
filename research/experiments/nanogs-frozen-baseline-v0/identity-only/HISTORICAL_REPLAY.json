@@ -1,0 +1,232 @@
+[
+  {
+    "arm": "teacher",
+    "view": "000001.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000009.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000017.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000025.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000033.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000041.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000049.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000057.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000065.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000073.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000081.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000089.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000097.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000105.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000113.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000121.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000129.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000137.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000145.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000153.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000161.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000169.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000177.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000185.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000193.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000201.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000209.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000217.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000225.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000233.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000241.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000249.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0,
+    "historical_max_abs_rgb": 0.0
+  },
+  {
+    "arm": "teacher",
+    "view": "000016.jpg",
+    "coverage_psnr_abs_error": 0.0,
+    "coverage_ssim_abs_error": 0.0
+  }
+]

@@ -1,0 +1,113 @@
+{
+  "contract_sha256": "d956919518fae6dbc2331f594a2fe86a01062823dac677c19fb2c3889dd2b07d",
+  "helper_sha256": "2a089b7d85987b571bb53f22ce9a97912fe690e01fc2d9d950dead39fd3a29a3",
+  "selected_names": [
+    "000002.jpg",
+    "000023.jpg",
+    "000046.jpg",
+    "000069.jpg",
+    "000092.jpg",
+    "000115.jpg",
+    "000136.jpg",
+    "000159.jpg",
+    "000182.jpg",
+    "000205.jpg",
+    "000228.jpg",
+    "000251.jpg"
+  ],
+  "selected_ranks": [
+    0,
+    19,
+    39,
+    59,
+    79,
+    99,
+    118,
+    138,
+    158,
+    178,
+    198,
+    218
+  ],
+  "model_iteration": 30000,
+  "SH_degree": 3,
+  "resolution": 1,
+  "black_background": true,
+  "AA": false,
+  "exposure": false,
+  "raw_shape_HWC": [
+    546,
+    979,
+    3
+  ],
+  "raw_dtype": "float32",
+  "CPU_threads": 1,
+  "new_forward_plan": {
+    "anchor": 1,
+    "remaining_uncached_views": 9,
+    "total": 10
+  },
+  "cached_views": [
+    "000002.jpg",
+    "000023.jpg",
+    "000046.jpg"
+  ],
+  "old_cache_provenance": {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/shared-coordinate-residual-v0/run-v3",
+    "old_results_sha256": "8f8548dcde8677b1a40fbdd4fd82422b819380bea3970da88825dea39966f131",
+    "old_terminal_decision": "INCONCLUSIVE_MATCHING_CAPACITY",
+    "old_30k_parameters_before_after_sha256": "b6b71329ebaec4c88887bd2320a7b67fa9189c20af3db54bcdb7824164a3a8f0",
+    "old_source_PLY_sha256": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+    "cached_names": [
+      "000002.jpg",
+      "000023.jpg",
+      "000046.jpg"
+    ],
+    "old_camera_archive_sha256": "835bb5cd31d88362c64b9136ef2e71cab55f8a884e71ea11597d8232df8d0262",
+    "cached_RGB_sha256": {
+      "000002.jpg": "736416b72c637a6d280c84dd48c76ad9f156e6880dc8a98bf1f81b0d48b74e25",
+      "000023.jpg": "3afc9c00c608fc2ac6b61fe1907f46409d945ea64bc4082cf07465537ab173a0",
+      "000046.jpg": "d9ecf4edafb1deec314dfe9d06dde661acf890990fb2fab1b6c1d5e46878aca1"
+    }
+  },
+  "all_input_hashes_before": {
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/shared_coordinate_native_v3.py": "2a089b7d85987b571bb53f22ce9a97912fe690e01fc2d9d950dead39fd3a29a3",
+    "/mnt/d/Documents/my 3dgs/research/experiments/teacher-artifact-discovery-v0/CONTRACT.md": "d956919518fae6dbc2331f594a2fe86a01062823dac677c19fb2c3889dd2b07d",
+    "/mnt/d/Documents/my 3dgs/research/experiments/teacher-artifact-discovery-v0/ASSUMPTIONS.md": "16dcc9bc857d2871596ee6c32648715911a98817822ffb081fd1bbfc1de04f15",
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/collect_teacher_artifact_discovery.py": "d129117ffc93545710d7f9b62da7aeaedf87bd0845caff7820a7404935ffa212",
+    "/mnt/d/Documents/my 3dgs/research/experiments/launchers/run-teacher-artifact-discovery.sh": "92a7810c9552a2d256760cdee78678430a18677ed4a78e665f468f475b90afd0",
+    "/mnt/d/Documents/my 3dgs/research/experiments/shared-coordinate-residual-v0/run-v3/RESULTS.json": "8f8548dcde8677b1a40fbdd4fd82422b819380bea3970da88825dea39966f131",
+    "/home/administrator/projects/gaussian-splatting/scene/__init__.py": "895d042f4dd2c6ee521dd985aea5c49d9c6f5c7379f76c4d537d8dc5468f18bf",
+    "/home/administrator/projects/gaussian-splatting/scene/dataset_readers.py": "b06f01648fee893c4785ed38eeb934f91b79817b9dcbb694291c9162b0b6ba94",
+    "/home/administrator/projects/gaussian-splatting/scene/cameras.py": "7344b9a4c95e3649becab1b9e30eb0b351a15a61370f64352dcb231aed916128",
+    "/home/administrator/projects/gaussian-splatting/scene/gaussian_model.py": "546ba41528a879af4d83bd280a3ef3cbcca9a5e9132204185aaa8f8ee9ffa310",
+    "/home/administrator/projects/gaussian-splatting/gaussian_renderer/__init__.py": "a25cf5fdb22cd8757fb2a1e37b75352042d65b16138a9fa6243f8616ca1369b8",
+    "/home/administrator/projects/gaussian-splatting/utils/camera_utils.py": "7644d89893f2481a7a9be592227bf11f3e6e5c469c9ce92c3cb25f9ff920c458",
+    "/home/administrator/projects/gaussian-splatting/utils/graphics_utils.py": "d6e75de8161e98b72c2691e8a944a842e1b6625d2306035d079c868ac632edfc",
+    "/home/administrator/datasets/tandt_db/tandt/truck/sparse/0/cameras.bin": "f183f5e1a0ddbca7bb4e1e12c74ee2939069ea69929710a5af0692d3f53e3ac5",
+    "/home/administrator/datasets/tandt_db/tandt/truck/sparse/0/images.bin": "437cdb07de6e45ecb4bdf986f7faa0017148879437b66497145ecdb7ec31403e",
+    "/home/administrator/datasets/tandt_db/tandt/truck/sparse/0/points3D.ply": "3c6194b82d1459541477b5fdd887fe5ccaf5af57426116c77172f72a814093fe",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000002.jpg": "fb9ff085527b1e5d2c8b3b9f2c1bac3fc1161b7156f45b97496784ec1e15b662",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000023.jpg": "56073d92efb2e4f04cb54bfcfd6ac5046aa3e944aa6e0cdb889c0755ffb59220",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000046.jpg": "83d2cb70da887cad041d9eb327dc033d172b82d2aee5530a3140148b13e4c079",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000069.jpg": "8051b018de9e5c7aa935b4fcc459cda0fb0297b51b60fae948724ababaf5af56",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000092.jpg": "06e7ee15a9551f6ecfced7e943399e6e8eabbdfa37fe477fab74159e884cf653",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000115.jpg": "716b195ac6e4d6fd0cbf0112f19d2a59bfbc3d32922c6c11b4dfc9e4fcc0a4c7",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000136.jpg": "b81ad1b13a8665820d45aedc31a714d19dea2f541f65fff4577a63a847727582",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000159.jpg": "0800510e10d4247d0abd2c0d968cfcd19482b91a589ee2304c15554623a96eb0",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000182.jpg": "5f304c817b72cc5fbd6a8e155919fcd76a1195db95fdf78bc16dcc2217d6ab57",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000205.jpg": "cb7bad9f0e23e1a9fc58661e72c79d84b937772b86f80610f0f4a6c5647ab96c",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000228.jpg": "589b7c5572f8f9ddac25035e50e0fbc955042d10eca757568d1a33ed815fddc2",
+    "/home/administrator/datasets/tandt_db/tandt/truck/images/000251.jpg": "76164dcbe913380f29eab50648b4a0bf5afce19954b9e0f6a186c416e000f8a1",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so": "6fb6d2d0539cfc28a0ca150a0fd5ff02a1402ef0a92f97ce05f5e72b46255b3c",
+    "/home/administrator/venvs/3dgs/lib/python3.10/site-packages/simple_knn/_C.cpython-310-x86_64-linux-gnu.so": "3b418444b3b8f94d7b79f418ddb73b42d134a9c1ff471523307c755331c599b5",
+    "/home/administrator/projects/gaussian-splatting/output/truck_30000_r1/point_cloud/iteration_30000/point_cloud.ply": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+    "/mnt/d/Documents/my 3dgs/research/experiments/shared-coordinate-residual-v0/run-v3/raw/cameras_30000_before.npz": "835bb5cd31d88362c64b9136ef2e71cab55f8a884e71ea11597d8232df8d0262",
+    "/mnt/d/Documents/my 3dgs/research/experiments/shared-coordinate-residual-v0/run-v3/raw/cameras_30000_after.npz": "835bb5cd31d88362c64b9136ef2e71cab55f8a884e71ea11597d8232df8d0262",
+    "/mnt/d/Documents/my 3dgs/research/experiments/shared-coordinate-residual-v0/run-v3/raw/30000_000002.jpg_base.npy": "736416b72c637a6d280c84dd48c76ad9f156e6880dc8a98bf1f81b0d48b74e25",
+    "/mnt/d/Documents/my 3dgs/research/experiments/shared-coordinate-residual-v0/run-v3/raw/30000_000023.jpg_base.npy": "3afc9c00c608fc2ac6b61fe1907f46409d945ea64bc4082cf07465537ab173a0",
+    "/mnt/d/Documents/my 3dgs/research/experiments/shared-coordinate-residual-v0/run-v3/raw/30000_000046.jpg_base.npy": "d9ecf4edafb1deec314dfe9d06dde661acf890990fb2fab1b6c1d5e46878aca1"
+  },
+  "purpose": "discovery, no independent confirmation"
+}

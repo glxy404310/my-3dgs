@@ -1,0 +1,146 @@
+[
+  {
+    "view": "000002.jpg",
+    "weight_sum": 518276.75,
+    "alpha_sum": 518277.1875,
+    "relative_error": 8.441428844482954e-07
+  },
+  {
+    "view": "000082.jpg",
+    "weight_sum": 522614.5,
+    "alpha_sum": 522615.5,
+    "relative_error": 1.9134526243481107e-06
+  },
+  {
+    "view": "000226.jpg",
+    "weight_sum": 524360.75,
+    "alpha_sum": 524361.25,
+    "relative_error": 9.535410940453742e-07
+  },
+  {
+    "view": "000112.jpg",
+    "weight_sum": 509079.5,
+    "alpha_sum": 509079.84375,
+    "relative_error": 6.752378909128633e-07
+  },
+  {
+    "view": "000047.jpg",
+    "weight_sum": 521967.5625,
+    "alpha_sum": 521968.1875,
+    "relative_error": 1.1973909808440193e-06
+  },
+  {
+    "view": "000068.jpg",
+    "weight_sum": 529185.6875,
+    "alpha_sum": 529186.6875,
+    "relative_error": 1.8896922836895818e-06
+  },
+  {
+    "view": "000122.jpg",
+    "weight_sum": 518208.9375,
+    "alpha_sum": 518209.5,
+    "relative_error": 1.085468328928744e-06
+  },
+  {
+    "view": "000176.jpg",
+    "weight_sum": 523082.5625,
+    "alpha_sum": 523082.75,
+    "relative_error": 3.5845188930432137e-07
+  },
+  {
+    "view": "000219.jpg",
+    "weight_sum": 511399.4375,
+    "alpha_sum": 511400.0625,
+    "relative_error": 1.2221351654606026e-06
+  },
+  {
+    "view": "000028.jpg",
+    "weight_sum": 525691.5,
+    "alpha_sum": 525692.3125,
+    "relative_error": 1.5455809047997063e-06
+  },
+  {
+    "view": "000244.jpg",
+    "weight_sum": 520919.3125,
+    "alpha_sum": 520920.4375,
+    "relative_error": 2.159638822003408e-06
+  },
+  {
+    "view": "000208.jpg",
+    "weight_sum": 521980.125,
+    "alpha_sum": 521980.5,
+    "relative_error": 7.18417642038352e-07
+  },
+  {
+    "view": "000064.jpg",
+    "weight_sum": 525825.4375,
+    "alpha_sum": 525825.9375,
+    "relative_error": 9.508850065046477e-07
+  },
+  {
+    "view": "000192.jpg",
+    "weight_sum": 526527.375,
+    "alpha_sum": 526528.3125,
+    "relative_error": 1.7805310326973157e-06
+  },
+  {
+    "view": "000186.jpg",
+    "weight_sum": 522153.625,
+    "alpha_sum": 522154.59375,
+    "relative_error": 1.8552934544588596e-06
+  },
+  {
+    "view": "000098.jpg",
+    "weight_sum": 514396.78125,
+    "alpha_sum": 514396.9375,
+    "relative_error": 3.0375375242198055e-07
+  },
+  {
+    "view": "000054.jpg",
+    "weight_sum": 521818.625,
+    "alpha_sum": 521818.96875,
+    "relative_error": 6.587533619627544e-07
+  },
+  {
+    "view": "000180.jpg",
+    "weight_sum": 518927.6875,
+    "alpha_sum": 518928.0,
+    "relative_error": 6.022030031141122e-07
+  },
+  {
+    "view": "000167.jpg",
+    "weight_sum": 530856.1875,
+    "alpha_sum": 530857.25,
+    "relative_error": 2.0014796821556076e-06
+  },
+  {
+    "view": "000204.jpg",
+    "weight_sum": 518638.09375,
+    "alpha_sum": 518639.0,
+    "relative_error": 1.7473618451369836e-06
+  },
+  {
+    "view": "000127.jpg",
+    "weight_sum": 517054.75,
+    "alpha_sum": 517055.5,
+    "relative_error": 1.4505212689933672e-06
+  },
+  {
+    "view": "000143.jpg",
+    "weight_sum": 521580.40625,
+    "alpha_sum": 521580.5,
+    "relative_error": 1.797421491025834e-07
+  },
+  {
+    "view": "000050.jpg",
+    "weight_sum": 521409.40625,
+    "alpha_sum": 521409.9375,
+    "relative_error": 1.0188720271561759e-06
+  },
+  {
+    "view": "000236.jpg",
+    "weight_sum": 519487.53125,
+    "alpha_sum": 519489.71875,
+    "relative_error": 4.210862931539009e-06
+  }
+]

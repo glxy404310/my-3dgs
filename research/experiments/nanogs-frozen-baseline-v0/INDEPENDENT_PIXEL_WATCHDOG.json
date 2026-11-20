@@ -1,0 +1,23 @@
+{
+  "timeout_seconds": 295,
+  "timeout": false,
+  "script_sha256_before": "e14c7edf4eae5f948b3abcee6d0d8380b38ba849edbd54a9fcfbc7583a716eb1",
+  "predeclared_tolerances": {
+    "mse": 2e-09,
+    "psnr": 0.0002,
+    "ssim": 2e-05,
+    "max_rgb_replay": 2e-05
+  },
+  "CPU_only": true,
+  "command": [
+    "/home/administrator/venvs/3dgs/bin/python",
+    "-B",
+    "-u",
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/verify_nanogs_pixels_independent_v1.py",
+    "--child"
+  ],
+  "child_exit_code": 2,
+  "external_wall_seconds": 40.798847231,
+  "script_sha256_after": "e14c7edf4eae5f948b3abcee6d0d8380b38ba849edbd54a9fcfbc7583a716eb1",
+  "within_300_seconds": true
+}

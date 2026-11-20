@@ -1,0 +1,252 @@
+--- pup_fisher_kernel_witness.py
++++ pup_fisher_kernel_witness_sh3.py
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env python3
+-"""One-shot official-fixed PUP SH0 Fisher witness; import/CPU check are stdlib-only."""
++"""Independent official-fixed PUP SH3 direction/permutation witness; no runtime during preparation."""
+ import argparse
+ import hashlib
+ import json
+@@ -16,7 +16,12 @@
+ 
+ PROJECT = Path(__file__).resolve().parents[2]
+ EXPERIMENT = PROJECT/'research/experiments/pup-frozen-baseline-v0'
+-OUTPUT = EXPERIMENT/'witness-fixed-v1'
++OUTPUT = EXPERIMENT/'witness-fixed-sh3-v1'
++SH0_OUTPUT = EXPERIMENT/'witness-fixed-v1'
++SH0_SOURCE_SHA = '5e0694ff2f738177f7d66e6f187042a401993549e0b0b4fdc4871a14023771c7'
++SH0_CONTRACT_SHA = 'b7563ff129d970d334bf05c5411b404afe5cdb2d38910346535a7a5c4dbd9495'
++SH0_DOC_SHA = '049d0f566b1a441401c915544820351d1b389683acc93a14c91a7c02dd41f0af'
++PERMUTATION = (1, 2, 0)
+ SOURCE = Path('/home/administrator/projects/pup-frozen-baseline-e971ea48')
+ FIXED = Path('/home/administrator/projects/pup-fisher-official-f62f1cce')
+ LIB = Path('/home/administrator/projects/pup-fisher-official-f62f1cce-private-build-v1/lib.linux-x86_64-3.10')
+@@ -84,12 +89,14 @@
+                 result.append(dict(kind='FD', gaussian=gaussian, dimension=dimension,
+                                    name=DIMENSIONS[dimension], sign=sign, epsilon=EPSILON))
+     result.append(dict(kind='official_pool', forward=1, statistical_backward=1, resolution=1))
++    result.append(dict(kind='permuted_RGB', permutation=PERMUTATION, forward=1))
++    result.append(dict(kind='permuted_official_pool', forward=1, statistical_backward=1, resolution=1))
+     return result
+ 
+ 
+ def cpu_synthcheck():
+     plan = schedule()
+-    need(len(plan) == 26 and sum(item['kind'] == 'FD' for item in plan) == 24, 'Fixed 26-forward schedule')
++    need(len(plan) == 28 and sum(item['kind'] == 'FD' for item in plan) == 24, 'Fixed 28-forward schedule')
+     for g in range(2):
+         for d in range(6):
+             need([x['sign'] for x in plan if x.get('gaussian') == g and x.get('dimension') == d] == [1, -1], 'Plus/minus order')
+@@ -99,9 +106,13 @@
+     gram = [[sum(row[a]*row[b] for row in j) for b in range(6)] for a in range(6)]
+     need(all(gram[a][b] == gram[b][a] for a in range(6) for b in range(6)), 'Gram symmetry')
+     need(sum(gram[k][k] for k in range(6)) > 0, 'Toy Gram nonzero')
++    permuted_j = [j[16*channel+pixel] for channel in PERMUTATION for pixel in range(16)]
++    permuted_gram = [[sum(row[a]*row[b] for row in permuted_j) for b in range(6)] for a in range(6)]
++    need(max(abs(gram[a][b]-permuted_gram[a][b]) for a in range(6) for b in range(6)) <= 1e-12,
++         'Algebraic channel-permutation Gram identity')
+     need('torch' not in sys.modules and 'scene' not in sys.modules, 'CPU check imported a backend')
+-    return dict(status='PASS', CPU_only=True, plan_forwards=26, FD_forwards=24, baseline_forwards=1,
+-                pool_forwards=1, statistical_backwards=1, algebra_shape=[48, 6],
++    return dict(status='PASS', CPU_only=True, plan_forwards=28, FD_forwards=24, baseline_forwards=1,
++                pool_forwards=2, permutation_forwards=1, statistical_backwards=2, algebra_shape=[48, 6],
+                 scientific_inputs_read=False, torch_imported=False)
+ 
+ 
+@@ -184,9 +195,9 @@
+     originals, counts, trace = [], {}, []
+     phase = {'value': 'initialization'}
+     result = dict(decision='KERNEL_WITNESS_INCONCLUSIVE_TOOL_UNCERTIFIED', environment_ready=False,
+-        certification_scope='Only this fixed SH0 local synthetic kernel case; no SH3/full219 authorization',
++        certification_scope='Only this independent fixed SH3 synthetic direction/permutation case; no full219 authorization',
+         scene_instances=0, dataset_loads=0, teacher_loads=0, GT_used=False, training=False, optimizer_steps=0,
+-        expected_private_forwards=26, expected_statistical_backwards=1, epsilon=EPSILON,
++        expected_private_forwards=28, expected_statistical_backwards=2, epsilon=EPSILON,
+         call_counts=counts, call_trace=trace, parameter_value_integrity=None, camera_integrity=None,
+         file_integrity=False, tracked_integrity=False, per_block=[])
+ 
+@@ -212,7 +223,25 @@
+     try:
+         record, imported, build_files = fixed_build_identity(args.fixed_build_record, args.fixed_build_record_sha256)
+         for path in (args.fixed_build_record, *build_files.values(), Path(__file__).resolve(),
+-                     EXPERIMENT/'KERNEL_CONTRACT.md', PROJECT/'.aris/compute/pup-private-extension.md'):
++                     EXPERIMENT/'KERNEL_CONTRACT_SH3.md', PROJECT/'.aris/compute/pup-private-extension-sh3.md'):
++            protected[str(path)] = sha(path)
++        # This case is a separately locked, pre-effect challenge. It is never
++        # a fallback for SH0 failure and cannot run before the SH0 tool PASS.
++        for path, pin in {
++            PROJECT/'scripts/experiments/pup_fisher_kernel_witness.py': SH0_SOURCE_SHA,
++            EXPERIMENT/'KERNEL_CONTRACT.md': SH0_CONTRACT_SHA,
++            PROJECT/'.aris/compute/pup-private-extension.md': SH0_DOC_SHA
++        }.items():
++            need(sha(path) == pin, 'Frozen SH0 preparation changed')
++            protected[str(path)] = pin
++        sh0_result = read_json(SH0_OUTPUT/'RESULTS.json')
++        sh0_watchdog = read_json(SH0_OUTPUT/'WATCHDOG.json')
++        need(sh0_result['decision'] == 'SYNTHETIC_SH0_FISHER_WITNESS_PASS' and sh0_watchdog['complete'] and
++             sh0_result['call_count_gate'] and sh0_result['file_integrity'] and sh0_result['tracked_integrity'] and
++             sh0_result['parameter_value_integrity'] and sh0_result['parameter_value_integrity_post_pool'] and
++             sh0_result['camera_integrity'], 'SH0 must PASS; otherwise do not run SH3')
++        for name in ('RESULTS.json', 'WATCHDOG.json', 'MANIFEST.json'):
++            path = SH0_OUTPUT/name
+             protected[str(path)] = sha(path)
+         old_manifest = EXPERIMENT/'build-v1/TRACKED_BEFORE.json'
+         need(sha(old_manifest) == OLD_TRACKED_SHA, 'Old tracked build manifest identity')
+@@ -271,17 +300,21 @@
+         for name in ('scene.gaussian_model', 'utils.graphics_utils', 'utils.sh_utils', 'fisher_renderer', 'fisher_pool_xyz_scaling'):
+             need(Path(sys.modules[name].__file__).resolve().is_relative_to(SOURCE), 'Foreign PUP Python module: '+name)
+         need(pool_module.fisher_render is fisher_render, 'Use original unmodified pool forward helper')
+-        model = GaussianModel(0)
++        model = GaussianModel(3)
+         arrays = {
+             '_xyz': torch.tensor([[.05, -.03, 3.0], [.12, .07, 3.6]], dtype=torch.float32, device='cuda'),
+             '_scaling': torch.log(torch.tensor([[.8, .7, .6], [.7, .9, .65]], dtype=torch.float32, device='cuda')),
+             '_rotation': torch.tensor([[1., 0, 0, 0], [math.cos(.2), 0, math.sin(.2), 0]], dtype=torch.float32, device='cuda'),
+             '_opacity': torch.logit(torch.tensor([[.45], [.6]], dtype=torch.float32, device='cuda')),
+-            '_features_dc': RGB2SH(torch.tensor([[.2, .4, .6], [.6, .3, .2]], dtype=torch.float32, device='cuda'))[:, None, :],
+-            '_features_rest': torch.empty((2, 0, 3), dtype=torch.float32, device='cuda')}
++            '_features_dc': RGB2SH(torch.tensor([[.4, .45, .5], [.5, .35, .45]], dtype=torch.float32, device='cuda'))[:, None, :],
++            '_features_rest': torch.zeros((2, 15, 3), dtype=torch.float32, device='cuda')}
++        sh1 = torch.tensor([[.25, -.15, .05], [-.1, .2, -.25], [.15, .07, -.18]], dtype=torch.float32, device='cuda')
++        arrays['_features_rest'][0, :3] = sh1
++        arrays['_features_rest'][1, :3] = -.7*sh1
+         for name, value in arrays.items():
+             setattr(model, name, torch.nn.Parameter(value, requires_grad=name in ('_xyz', '_scaling')))
+-        need(model.optimizer is None and model.active_sh_degree == model.max_sh_degree == 0, 'Only synthetic SH0 model, no optimizer')
++        model.active_sh_degree = 3
++        need(model.optimizer is None and model.active_sh_degree == model.max_sh_degree == 3, 'Only synthetic SH3 model, no optimizer')
+         original = {name: getattr(model, name).detach().clone() for name in FIELDS}
+         numpy_original = {name: tensor.cpu().numpy().copy() for name, tensor in original.items()}
+         parameter_before = values_hash(numpy_original)
+@@ -307,7 +340,8 @@
+             dimensions=DIMENSIONS, epsilon=EPSILON, CPU_aggregation_dtype='float64', pool_resolution=1,
+             official_module_origins={name: str(Path(sys.modules[name].__file__).resolve()) for name in
+                 ('scene.gaussian_model', 'utils.graphics_utils', 'utils.sh_utils', 'fisher_renderer', 'fisher_pool_xyz_scaling')},
+-            display_clamp=False, GT=False, main_commit=MAIN_COMMIT, fixed_commit=FIXED_COMMIT,
++            display_clamp=False, GT=False, SH_degree=3, permutation=PERMUTATION,
++            prior_SH0_decision=sh0_result['decision'], main_commit=MAIN_COMMIT, fixed_commit=FIXED_COMMIT,
+             no_scene_instance=True, observational_C_wrappers='Unchanged args/return; each captured original called once; restored in finally')
+         dump(OUTPUT/'CONFIG.json', config)
+         # Observational wrappers record exact C entry calls, including autograd's
+@@ -377,28 +411,75 @@
+         result['parameter_value_hash_post_pool_before_cleanup'] = parameter_post_pool
+         result['parameter_value_integrity_post_pool'] = parameter_post_pool == parameter_before
+         need(result['parameter_value_integrity_post_pool'], 'Official statistical pool changed parameter values')
++        # Permute every SH coefficient's RGB channels, without any extra FD.
++        # Store and verify the permuted values before restoring the base case.
++        with torch.no_grad():
++            for name in ('_features_dc', '_features_rest'):
++                getattr(model, name).copy_(original[name][:, :, list(PERMUTATION)])
++        permuted_parameters = {name: getattr(model, name).detach().cpu().numpy().copy() for name in FIELDS}
++        parameter_permuted_before = values_hash(permuted_parameters)
++        np.savez(OUTPUT/'PARAMETERS_PERMUTED_BEFORE.npz', **permuted_parameters)
++        permuted_RGB = forward_raw('permuted_RGB')
++        budget()
++        phase['value'] = 'permuted_original_pool_fisher_cuda_once'
++        permuted_tensor = torch.zeros((2, 6, 6), dtype=torch.float32, device='cuda')
++        with torch.enable_grad():
++            permuted_returned = pool_module.pool_fisher_cuda(0, camera, model, pipe, background, permuted_tensor, resolution=1)
++        torch.cuda.synchronize()
++        need(permuted_returned is permuted_tensor, 'Permuted original pool accumulator identity')
++        permuted_actual = permuted_tensor.detach().cpu().numpy().copy()
++        np.save(OUTPUT/'PERMUTED_ACTUAL_FISHER.npy', permuted_actual, allow_pickle=False)
++        permuted_after = {name: getattr(model, name).detach().cpu().numpy().copy() for name in FIELDS}
++        np.savez(OUTPUT/'PARAMETERS_PERMUTED_AFTER_POOL.npz', **permuted_after)
++        result['parameter_permuted_hash_before'] = parameter_permuted_before
++        result['parameter_permuted_hash_after_pool'] = values_hash(permuted_after)
++        result['parameter_permuted_integrity'] = parameter_permuted_before == result['parameter_permuted_hash_after_pool']
++        need(result['parameter_permuted_integrity'], 'Permuted official pool changed parameter values')
++        with torch.no_grad():
++            for name in ('_features_dc', '_features_rest'):
++                getattr(model, name).copy_(original[name])
++        result['parameter_value_hash_after_case_before_cleanup'] = values_hash(
++            {name: getattr(model, name).detach().cpu().numpy().copy() for name in FIELDS})
++        result['parameter_original_case_restored'] = result['parameter_value_hash_after_case_before_cleanup'] == parameter_before
++        need(result['parameter_original_case_restored'], 'Original SH3 case not restored before cleanup')
++        RGB_permutation_error = float(np.max(np.abs(permuted_RGB.astype(np.float64)-base[list(PERMUTATION)].astype(np.float64))))
+         finite = bool(np.isfinite(base).all() and np.isfinite(fd_images).all() and np.isfinite(J).all() and
+-                      np.isfinite(expected).all() and np.isfinite(actual).all())
++                      np.isfinite(expected).all() and np.isfinite(actual).all() and
++                      np.isfinite(permuted_RGB).all() and np.isfinite(permuted_actual).all())
+         np.savez(OUTPUT/'FINITE_MASKS.npz', base=np.isfinite(base), FD_RGB=np.isfinite(fd_images),
+-                 FD_J=np.isfinite(J), expected=np.isfinite(expected), actual=np.isfinite(actual))
++                 FD_J=np.isfinite(J), expected=np.isfinite(expected), actual=np.isfinite(actual),
++                 permuted_RGB=np.isfinite(permuted_RGB), permuted_actual=np.isfinite(permuted_actual))
+         conditions = []
+         for g in range(2):
+             norm = float(np.linalg.norm(expected[g]))
+             relative = float(np.linalg.norm(actual[g].astype(np.float64)-expected[g])/norm) if norm > 0 and math.isfinite(norm) else None
+             symmetry = float(np.max(np.abs(actual[g].astype(np.float64)-actual[g].astype(np.float64).T)))
++            permuted_symmetry = float(np.max(np.abs(permuted_actual[g].astype(np.float64)-permuted_actual[g].astype(np.float64).T)))
++            actual_norm = float(np.linalg.norm(actual[g].astype(np.float64)))
++            permuted_relative = float(np.linalg.norm(permuted_actual[g].astype(np.float64)-actual[g].astype(np.float64))/actual_norm) \
++                if actual_norm > 0 and math.isfinite(actual_norm) else None
+             row = dict(gaussian=g, expected_Frobenius=norm, relative_Frobenius=relative,
+                        actual_max_symmetry_difference=symmetry,
+                        expected_max_symmetry_difference=float(np.max(np.abs(expected[g]-expected[g].T))),
+-                       actual_expected_max_abs_difference=float(np.max(np.abs(actual[g].astype(np.float64)-expected[g]))))
++                       actual_expected_max_abs_difference=float(np.max(np.abs(actual[g].astype(np.float64)-expected[g]))),
++                       permuted_actual_max_symmetry_difference=permuted_symmetry,
++                       permutation_Frobenius_relative_to_original_actual=permuted_relative)
+             result['per_block'].append(row)
+-            conditions.append(relative is not None and math.isfinite(relative) and relative <= .02 and math.isfinite(symmetry) and symmetry <= 1e-6)
+-        counts_ok = counts['private.rasterize_gaussians'] == dict(attempted=26, completed=26, failed=0) and \
+-                    counts['private.rasterize_gaussians_backward'] == dict(attempted=1, completed=1, failed=0) and \
++            conditions.append(relative is not None and math.isfinite(relative) and relative <= .02 and math.isfinite(symmetry) and symmetry <= 1e-6 and
++                              math.isfinite(permuted_symmetry) and permuted_symmetry <= 1e-6 and permuted_relative is not None and
++                              math.isfinite(permuted_relative) and permuted_relative <= 1e-4)
++        counts_ok = counts['private.rasterize_gaussians'] == dict(attempted=28, completed=28, failed=0) and \
++                    counts['private.rasterize_gaussians_backward'] == dict(attempted=2, completed=2, failed=0) and \
+                     all(value['attempted'] == 0 for key, value in counts.items() if key.startswith('ordinary.') or key.endswith('mark_visible'))
+         result.update(finite=finite, total_expected_nonzero=bool(np.linalg.norm(expected) > 0),
+-                      total_actual_nonzero=bool(np.linalg.norm(actual.astype(np.float64)) > 0), call_count_gate=counts_ok)
+-        passed = finite and all(conditions) and result['total_expected_nonzero'] and result['total_actual_nonzero'] and counts_ok
+-        result['decision'] = 'SYNTHETIC_SH0_FISHER_WITNESS_PASS' if passed else 'KERNEL_WITNESS_FAIL_TOOL_UNCERTIFIED'
++                      total_actual_nonzero=bool(np.linalg.norm(actual.astype(np.float64)) > 0),
++                      total_permuted_actual_nonzero=bool(np.linalg.norm(permuted_actual.astype(np.float64)) > 0),
++                      RGB_permutation_max_abs_error=RGB_permutation_error,
++                      RGB_permutation_gate=math.isfinite(RGB_permutation_error) and RGB_permutation_error <= 2e-5,
++                      call_count_gate=counts_ok)
++        passed = finite and all(conditions) and result['total_expected_nonzero'] and result['total_actual_nonzero'] and \
++                 result['total_permuted_actual_nonzero'] and result['RGB_permutation_gate'] and counts_ok
++        result['decision'] = 'SYNTHETIC_SH3_FISHER_WITNESS_PASS' if passed else 'KERNEL_WITNESS_FAIL_TOOL_UNCERTIFIED'
+         budget()
+     except BaseException as exc:
+         result.update(decision='KERNEL_WITNESS_INCONCLUSIVE_TOOL_UNCERTIFIED', error=repr(exc), traceback=traceback.format_exc())
+@@ -442,7 +523,8 @@
+         import resource
+         result['CPU_kernel_maxrss_bytes'] = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*1024
+         tool_integrity = result['tracked_integrity'] and result['file_integrity'] and result['parameter_value_integrity'] and \
+-                         result.get('parameter_value_integrity_post_pool', False) and result['camera_integrity'] and \
++                         result.get('parameter_value_integrity_post_pool', False) and result.get('parameter_permuted_integrity', False) and \
++                         result.get('parameter_original_case_restored', False) and result['camera_integrity'] and \
+                          result.get('GPU_peak_allocated_bytes', GPU_LIMIT+1) <= GPU_LIMIT and result['CPU_kernel_maxrss_bytes'] <= CPU_LIMIT
+         if not tool_integrity:
+             result['decision_before_integrity_check'] = result['decision']
+@@ -452,7 +534,7 @@
+         dump(OUTPUT/'MANIFEST.json', dict(input_hashes_before=protected, input_hashes_after=after_files, output_hashes=outputs))
+         flush()
+     print(json.dumps(clean(result), allow_nan=False), flush=True)
+-    return 0 if result['decision'] == 'SYNTHETIC_SH0_FISHER_WITNESS_PASS' else 2
++    return 0 if result['decision'] == 'SYNTHETIC_SH3_FISHER_WITNESS_PASS' else 2
+ 
+ 
+ def rss_tree(root):
+@@ -480,7 +562,7 @@
+ 
+ 
+ def supervise(args):
+-    need(not OUTPUT.exists(), 'Fresh witness-fixed-v1 required; no retry or old witness execution')
++    need(not OUTPUT.exists(), 'Fresh witness-fixed-sh3-v1 required; no retry or old witness execution')
+     need(os.environ.get('PYTHONPATH') == EXPECTED_PATH, 'Run the documented exact PYTHONPATH invocation')
+     OUTPUT.mkdir(parents=True)
+     started, child, reason, peak = time.monotonic(), None, None, 0
+@@ -519,7 +601,7 @@
+         code = child.returncode if child is not None else None
+         elapsed = time.monotonic()-started
+         status = read_json(OUTPUT/'RESULTS.json').get('decision') if (OUTPUT/'RESULTS.json').is_file() else None
+-        complete = reason is None and code == 0 and elapsed <= 120 and status == 'SYNTHETIC_SH0_FISHER_WITNESS_PASS'
++        complete = reason is None and code == 0 and elapsed <= 120 and status == 'SYNTHETIC_SH3_FISHER_WITNESS_PASS'
+         dump(OUTPUT/'WATCHDOG.json', dict(worker_command=command, exact_PYTHONPATH=EXPECTED_PATH,
+              worker_exit_code=code, supervisor_wall_seconds_before_save=elapsed,
+              process_tree_sampled_peak_RSS_bytes=peak, CPU_RSS_limit_bytes=CPU_LIMIT,

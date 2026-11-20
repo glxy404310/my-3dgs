@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "wall_seconds": 24.001330309,
+  "q_fit_seconds": 2.8447953519999984,
+  "direct_fit_seconds": 0.19627889100000218,
+  "peak_gpu_allocated_bytes": 1415915520,
+  "measured_cases": 8,
+  "total_cases": 8,
+  "merges_per_policy": 4,
+  "anchors_pass": true
+}

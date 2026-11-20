@@ -1,0 +1,58 @@
+{
+  "commit": "cc64a752b5def8d17f9992216bfbb9e533f8364f",
+  "contract_sha256": "41140ba8c045b81c1ce54512bbc0bf2f671d35125578e215633c099de9a88062",
+  "source_manifest_sha256": "12c8b71eaac7f170494e14ebe34984eeb5b046b182394d9ecd51fb54de720ed8",
+  "input_hashes_before": {
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/SOURCE_MANIFEST.json": "12c8b71eaac7f170494e14ebe34984eeb5b046b182394d9ecd51fb54de720ed8",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/SOURCE_TREE.json": "d484c14f0656a6b424dca08f468e9861361de85c05b5b1107e05c8122da6b2ba",
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/run_nanogs_frozen_baseline.py": "bcd98b46ab47a736192b5e47cfea81b4c80c22ab23d6fac279b63a9a88872b9e",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/ASSUMPTIONS.md": "48ac3a5df0b92714f8482c9ced8a9cadd1334f0007ef994b1f275c8be3cc3fd6",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/CONTRACT.md": "41140ba8c045b81c1ce54512bbc0bf2f671d35125578e215633c099de9a88062",
+    "/mnt/d/Documents/my 3dgs/research/experiments/launchers/run-nanogs-frozen-baseline.sh": "de8ff2529aa83307dac2af8f2bef63089f009ae605da8c955f07316ef9d35fb3",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/.gitignore": "452f80b3a9fc1e55486c4d890fd141632977851b767e7e8d24b0c106946f6b0b",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/CITATION.bib": "94206aa092a93d12d26f181ec45caff9eaf765838d37e01cec9de1a93ea01743",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/LICENSE": "3711f963c05d0be80d53e5923308a6dee31b203da23435c9cfb7c7b6e4dd5e19",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/README.md": "ad4636ad794969c32eafa9be4cf5d2c3bb336e82d84ce70eefb8bbefe1cfda3a",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/pyproject.toml": "bc657ca642fdb35491906ffa6faa39e007694a407401f62703ca77b72ca4b006",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/__init__.py": "62596b9cba9c3d296dfec27411c9b268df58ab57a5091b15bb5a70da32bfcf7b",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/py.typed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/simplification.py": "8e13e21720dd5be5bbe8da2dbb1d4aa33277cd7ef783920607086b93f36d66f5",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/utils/cost.py": "75a23902cccd21755fce049fe34816251830401d9817a693a420afbc7c3324b3",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/utils/merge.py": "e8cd9b8ab6c5988587bcd6e5b799091b73a6250792ff6d10fd982dc5f44e4d5c",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/utils/params.py": "ca0773dd4bc2e03afac5cc5c4c67d81760116fd7c42783f4412174d44d040ece",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/utils/ply_utils.py": "bb5ce26467bec8c9839379d9118c663008c75f64dc0f632a8719f1ca9223d28e",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/utils/splat_utils.py": "b372b4c52912dbc7f15ccbe3a8167058f097a19c5d8cc130bddf449018c79a64"
+  },
+  "input_hashes_after": {
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/SOURCE_MANIFEST.json": "12c8b71eaac7f170494e14ebe34984eeb5b046b182394d9ecd51fb54de720ed8",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/SOURCE_TREE.json": "d484c14f0656a6b424dca08f468e9861361de85c05b5b1107e05c8122da6b2ba",
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/run_nanogs_frozen_baseline.py": "bcd98b46ab47a736192b5e47cfea81b4c80c22ab23d6fac279b63a9a88872b9e",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/ASSUMPTIONS.md": "48ac3a5df0b92714f8482c9ced8a9cadd1334f0007ef994b1f275c8be3cc3fd6",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/CONTRACT.md": "41140ba8c045b81c1ce54512bbc0bf2f671d35125578e215633c099de9a88062",
+    "/mnt/d/Documents/my 3dgs/research/experiments/launchers/run-nanogs-frozen-baseline.sh": "de8ff2529aa83307dac2af8f2bef63089f009ae605da8c955f07316ef9d35fb3",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/.gitignore": "452f80b3a9fc1e55486c4d890fd141632977851b767e7e8d24b0c106946f6b0b",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/CITATION.bib": "94206aa092a93d12d26f181ec45caff9eaf765838d37e01cec9de1a93ea01743",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/LICENSE": "3711f963c05d0be80d53e5923308a6dee31b203da23435c9cfb7c7b6e4dd5e19",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/README.md": "ad4636ad794969c32eafa9be4cf5d2c3bb336e82d84ce70eefb8bbefe1cfda3a",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/pyproject.toml": "bc657ca642fdb35491906ffa6faa39e007694a407401f62703ca77b72ca4b006",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/__init__.py": "62596b9cba9c3d296dfec27411c9b268df58ab57a5091b15bb5a70da32bfcf7b",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/py.typed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/simplification.py": "8e13e21720dd5be5bbe8da2dbb1d4aa33277cd7ef783920607086b93f36d66f5",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/utils/cost.py": "75a23902cccd21755fce049fe34816251830401d9817a693a420afbc7c3324b3",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/utils/merge.py": "e8cd9b8ab6c5988587bcd6e5b799091b73a6250792ff6d10fd982dc5f44e4d5c",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/utils/params.py": "ca0773dd4bc2e03afac5cc5c4c67d81760116fd7c42783f4412174d44d040ece",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/utils/ply_utils.py": "bb5ce26467bec8c9839379d9118c663008c75f64dc0f632a8719f1ca9223d28e",
+    "/mnt/d/Documents/my 3dgs/third_party/NanoGS/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/utils/splat_utils.py": "b372b4c52912dbc7f15ccbe3a8167058f097a19c5d8cc130bddf449018c79a64"
+  },
+  "outputs": {
+    "synthetic_input.ply": {
+      "bytes": 2022,
+      "sha256": "33e18f52410a1072e3aa96101ca1ba55adc22e8ef94130e8819dcf9a89566d4c"
+    },
+    "synthetic_merged.ply": {
+      "bytes": 1774,
+      "sha256": "416785f04c547202b2fe7a540a5d0948de9c16b7537664eba580bff52c1ad66f"
+    }
+  },
+  "quality_evaluated": false
+}

@@ -1,0 +1,17 @@
+{
+  "call_number": 3,
+  "purpose": "full-pool-jury",
+  "agent_id": "01a16430-0a4a-7470-ad23-a8de27e17aa9",
+  "agent_path": "/root/continue_fullpool_jury",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "reviewed_count": 23,
+  "raw_response_path": ".aris/traces/idea-creator/2026-10-22_continue/003-full-pool-jury.response.md",
+  "full_review_path": "idea-stage/continue-20261022/JURY.md",
+  "full_review_sha256": "A40701BA8D8E745CFA779AA887B7EED6A158352D66994059BE2756BBAF2C1688",
+  "auxiliary_followups_capture": "Slow full-log parser terminated after required request, response, meta, full authored review and complete-pool supplement were saved"
+}

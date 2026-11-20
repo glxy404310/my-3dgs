@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "device": "cpu",
+  "dtype": "float64",
+  "adam_reference_max_error": 1.1102230246251565e-16,
+  "checks": [
+    "standard Adam matches torch",
+    "orthonormal roundtrip",
+    "SGD coordinate invariance",
+    "gradient energy preservation",
+    "sibling-swap equivariance"
+  ],
+  "zero_moment_old_clock_ratios": [
+    {
+      "local_step": 1,
+      "legacy_step_to_fresh_step_ratio": 3.114298629755835
+    },
+    {
+      "local_step": 5,
+      "legacy_step_to_fresh_step_ratio": 5.709538232866648
+    },
+    {
+      "local_step": 20,
+      "legacy_step_to_fresh_step_ratio": 6.148035457840197
+    },
+    {
+      "local_step": 100,
+      "legacy_step_to_fresh_step_ratio": 3.1962976677997164
+    }
+  ],
+  "scope": "Algebra and numerical interface only. Ratios assume constant scalar gradients. Does not show this issue causes real-scene error or that the proposed family optimizer improves quality."
+}

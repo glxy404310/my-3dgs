@@ -1,0 +1,22 @@
+{
+  "audit.py": {
+    "sha256": "47e86e2219b79c1273c9b05941e9043aef706371c995036dce082cc8313e4d07",
+    "bytes": 50284
+  },
+  "run-audit.py": {
+    "sha256": "bfdf7b3e71411c772f8f3482d324f07520e1757dc93cb7ddaeb16c78739e3a26",
+    "bytes": 6514
+  },
+  "AUDIT_CONTRACT.template.json": {
+    "sha256": "88ce4f0f3c53ac4c66b8e09c478addaf2421b72caeddd0edc802eb050960668c",
+    "bytes": 3558
+  },
+  "PREPARATION.md": {
+    "sha256": "5f83b8d4ac82a1376e7f24530967af2641a9cd54c69c6b38207173b0e83cfb71",
+    "bytes": 6532
+  },
+  "STATIC_VERIFICATION.json": {
+    "sha256": "ba4baf63c895496dc19dd195698477de3c5e26ff31dc8635b848e80cd2673372",
+    "bytes": 485
+  }
+}

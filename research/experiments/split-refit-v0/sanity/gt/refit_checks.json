@@ -1,0 +1,45 @@
+{
+  "status": "pass",
+  "outer_unchanged_during_inner": true,
+  "temporary_state_discarded": true,
+  "train_cameras": [
+    "000002.jpg",
+    "000251.jpg"
+  ],
+  "reference_cache_seconds": 0.012116451000000694,
+  "refit_seconds": 0.37610587600000045,
+  "steps": [
+    {
+      "step": 1,
+      "camera": "000002.jpg",
+      "base_loss": 0.053433243185281754,
+      "auxiliary_loss": 0.0,
+      "total_loss": 0.053433243185281754,
+      "q_fraction": 0.0
+    },
+    {
+      "step": 2,
+      "camera": "000251.jpg",
+      "base_loss": 0.08834338188171387,
+      "auxiliary_loss": 0.0,
+      "total_loss": 0.08834338188171387,
+      "q_fraction": 0.0
+    },
+    {
+      "step": 3,
+      "camera": "000002.jpg",
+      "base_loss": 0.053433243185281754,
+      "auxiliary_loss": 0.0,
+      "total_loss": 0.053433243185281754,
+      "q_fraction": 0.0
+    },
+    {
+      "step": 4,
+      "camera": "000251.jpg",
+      "base_loss": 0.08834338188171387,
+      "auxiliary_loss": 0.0,
+      "total_loss": 0.08834338188171387,
+      "q_fraction": 0.0
+    }
+  ]
+}

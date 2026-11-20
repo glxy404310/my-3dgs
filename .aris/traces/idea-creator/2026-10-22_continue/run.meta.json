@@ -1,0 +1,11 @@
+{
+  "skill": "idea-creator",
+  "run_id": "2026-10-22_continue",
+  "executor": "codex",
+  "executor_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "project_dir": "D:/Documents/my 3dgs",
+  "secondary_model_note": "gpt-5.5 not in supported tool models; two independent gpt-6-astra analytic lenses used; no cross-family independence claimed",
+  "previous_goal_turn": "progress: frozen395-view diagnosis changed active-pose decision"
+}

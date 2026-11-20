@@ -1,0 +1,165 @@
+{
+  "scope": "Conditional on fixed checkpoint, selected parents, event seed and sampled cameras. Views are correlated; this is not cross-event significance.",
+  "comparisons": [
+    {
+      "variant": "original_split",
+      "step": 0,
+      "views": 32,
+      "delta_l1": 0.00043425685726106167,
+      "delta_psnr": -0.08569860458374023,
+      "delta_ssim": -0.002195160835981369,
+      "fraction_views_l1_worse": 0.84375,
+      "delta_l1_view_bootstrap_ci95": [
+        0.00025123839877778665,
+        0.0006350393217871897
+      ],
+      "max_view_delta_l1": 0.0021829716861248016,
+      "min_view_delta_l1": -0.0008186809718608856,
+      "render_change_l1": 0.0033171697323268745
+    },
+    {
+      "variant": "original_split",
+      "step": 1,
+      "views": 32,
+      "delta_l1": 0.00042387720895931125,
+      "delta_psnr": -0.08148664236068726,
+      "delta_ssim": -0.002137264236807823,
+      "fraction_views_l1_worse": 0.84375,
+      "delta_l1_view_bootstrap_ci95": [
+        0.0002403725520707667,
+        0.0006217655260115861
+      ],
+      "max_view_delta_l1": 0.0021069012582302094,
+      "min_view_delta_l1": -0.0007256530225276947,
+      "render_change_l1": 0.004112847935175523
+    },
+    {
+      "variant": "original_split",
+      "step": 5,
+      "views": 32,
+      "delta_l1": 0.0003893273533321917,
+      "delta_psnr": -0.06927371025085449,
+      "delta_ssim": -0.0018539950251579285,
+      "fraction_views_l1_worse": 0.84375,
+      "delta_l1_view_bootstrap_ci95": [
+        0.00023266976786544548,
+        0.0005618364390102215
+      ],
+      "max_view_delta_l1": 0.001710265874862671,
+      "min_view_delta_l1": -0.000487741082906723,
+      "render_change_l1": 0.007570531059172936
+    },
+    {
+      "variant": "original_split",
+      "step": 20,
+      "views": 32,
+      "delta_l1": 0.00024377793306484818,
+      "delta_psnr": -0.04267317056655884,
+      "delta_ssim": -0.0013806503266096115,
+      "fraction_views_l1_worse": 0.8125,
+      "delta_l1_view_bootstrap_ci95": [
+        0.00010552841413300485,
+        0.0003771992473048158
+      ],
+      "max_view_delta_l1": 0.0011366084218025208,
+      "min_view_delta_l1": -0.0010942108929157257,
+      "render_change_l1": 0.014686135400552303
+    },
+    {
+      "variant": "original_split",
+      "step": 100,
+      "views": 32,
+      "delta_l1": 8.118717232719064e-05,
+      "delta_psnr": -0.014386594295501709,
+      "delta_ssim": -0.0004643108695745468,
+      "fraction_views_l1_worse": 0.71875,
+      "delta_l1_view_bootstrap_ci95": [
+        -0.00011856916244141757,
+        0.0002517597589758224
+      ],
+      "max_view_delta_l1": 0.0011540595442056656,
+      "min_view_delta_l1": -0.0017733126878738403,
+      "render_change_l1": 0.017047189234290272
+    },
+    {
+      "variant": "opacity_corrected_split",
+      "step": 0,
+      "views": 32,
+      "delta_l1": 0.00033092492958530784,
+      "delta_psnr": -0.07210677862167358,
+      "delta_ssim": -0.0016257669776678085,
+      "fraction_views_l1_worse": 0.8125,
+      "delta_l1_view_bootstrap_ci95": [
+        0.00011664315825328232,
+        0.0005584365804679691
+      ],
+      "max_view_delta_l1": 0.002239089459180832,
+      "min_view_delta_l1": -0.0012693516910076141,
+      "render_change_l1": 0.0030751694102946203
+    },
+    {
+      "variant": "opacity_corrected_split",
+      "step": 1,
+      "views": 32,
+      "delta_l1": 0.0003249607398174703,
+      "delta_psnr": -0.06924927234649658,
+      "delta_ssim": -0.0015772879123687744,
+      "fraction_views_l1_worse": 0.8125,
+      "delta_l1_view_bootstrap_ci95": [
+        0.00010173367627430707,
+        0.0005520168400835245
+      ],
+      "max_view_delta_l1": 0.0021566972136497498,
+      "min_view_delta_l1": -0.0012549534440040588,
+      "render_change_l1": 0.003890728043188574
+    },
+    {
+      "variant": "opacity_corrected_split",
+      "step": 5,
+      "views": 32,
+      "delta_l1": 0.0002903534914366901,
+      "delta_psnr": -0.05613601207733154,
+      "delta_ssim": -0.001354958862066269,
+      "fraction_views_l1_worse": 0.8125,
+      "delta_l1_view_bootstrap_ci95": [
+        9.115045686485246e-05,
+        0.00048719432088546445
+      ],
+      "max_view_delta_l1": 0.0016927197575569153,
+      "min_view_delta_l1": -0.001221202313899994,
+      "render_change_l1": 0.0073734085308387876
+    },
+    {
+      "variant": "opacity_corrected_split",
+      "step": 20,
+      "views": 32,
+      "delta_l1": 0.00019125710241496563,
+      "delta_psnr": -0.034051477909088135,
+      "delta_ssim": -0.001099148765206337,
+      "fraction_views_l1_worse": 0.78125,
+      "delta_l1_view_bootstrap_ci95": [
+        5.079219699837268e-05,
+        0.00033150804811157283
+      ],
+      "max_view_delta_l1": 0.00112113356590271,
+      "min_view_delta_l1": -0.0011627450585365295,
+      "render_change_l1": 0.014583011390641332
+    },
+    {
+      "variant": "opacity_corrected_split",
+      "step": 100,
+      "views": 32,
+      "delta_l1": 9.183899965137243e-05,
+      "delta_psnr": -0.015967071056365967,
+      "delta_ssim": -0.0004433579742908478,
+      "fraction_views_l1_worse": 0.75,
+      "delta_l1_view_bootstrap_ci95": [
+        -8.395668846787885e-05,
+        0.00025082480715354905
+      ],
+      "max_view_delta_l1": 0.001043606549501419,
+      "min_view_delta_l1": -0.0014049448072910309,
+      "render_change_l1": 0.017073679337045178
+    }
+  ]
+}

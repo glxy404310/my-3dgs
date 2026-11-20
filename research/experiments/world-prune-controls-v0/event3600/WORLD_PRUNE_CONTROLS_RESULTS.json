@@ -1,0 +1,79 @@
+{
+  "status": "pass",
+  "capture": "/mnt/d/Documents/my 3dgs/research/experiments/frozen-prune-v0/capture",
+  "means": {
+    "none": {
+      "psnr": 22.030059337615967,
+      "l1": 0.045925624668598175,
+      "ssim": 0.8128963336348534
+    },
+    "all": {
+      "psnr": 21.686017274856567,
+      "l1": 0.047227779403328896,
+      "ssim": 0.8106547817587852
+    },
+    "no_world": {
+      "psnr": 22.030035257339478,
+      "l1": 0.045925701037049294,
+      "ssim": 0.8128967136144638
+    },
+    "eq11_prune_only": {
+      "psnr": 21.91550374031067,
+      "l1": 0.04628382017835975,
+      "ssim": 0.8120700269937515
+    },
+    "rescue_new_world_only": {
+      "psnr": 21.968045234680176,
+      "l1": 0.046374856028705835,
+      "ssim": 0.8121872991323471
+    }
+  },
+  "contrasts": {
+    "no_world_minus_native": {
+      "psnr": 0.34401798248291016,
+      "l1": -0.001302078366279602,
+      "ssim": 0.0022419318556785583
+    },
+    "eq11_minus_native": {
+      "psnr": 0.22948646545410156,
+      "l1": -0.0009439592249691486,
+      "ssim": 0.001415245234966278
+    },
+    "new_rescue_minus_native": {
+      "psnr": 0.2820279598236084,
+      "l1": -0.0008529233746230602,
+      "ssim": 0.0015325173735618591
+    },
+    "eq11_minus_no_world": {
+      "psnr": -0.1145315170288086,
+      "l1": 0.0003581191413104534,
+      "ssim": -0.0008266866207122803
+    },
+    "full_deletion": {
+      "psnr": -0.3440420627593994,
+      "l1": 0.0013021547347307205,
+      "ssim": -0.0022415518760681152
+    }
+  },
+  "removed": {
+    "none": 0,
+    "all": 1392,
+    "no_world": 1034,
+    "eq11_prune_only": 1056,
+    "rescue_new_world_only": 1374
+  },
+  "anchor_checks_pass": true,
+  "extent": {
+    "scene": "truck",
+    "camera_set": "training_every8_holdout",
+    "cameras": 219,
+    "sfm_points": 136029,
+    "native_extent": 5.847915172576904,
+    "iadc_eq11_extent": 7.200865745544434,
+    "corrected_over_native": 1.2313560530617866,
+    "native_world_bound": 0.5847915172576904,
+    "corrected_world_bound": 0.7200865745544434
+  },
+  "eligible_new_split": 18,
+  "scope": "Posthoc known-rule immediate intervention, same two existing Truck captures. Eq11 prune-only is not full IADC/global extent baseline. Different retained sets/counts preclude layout attribution. No candidate, training, novelty, generalization, or advancement claim."
+}

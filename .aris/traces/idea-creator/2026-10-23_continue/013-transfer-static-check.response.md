@@ -1,0 +1,1 @@
+Same-family provisional静态核查：未发现阻断点。native前缀布局与已验证helper及本地源码一致；面积仅检查radii>0项，返回后不保留图。最近邻tie按最小原索引处理，零权重点不转移；local/global/shuffle代理总量公式一致，softplus及逆变换稳定。主项固定B_local，全部控制与门槛齐全；正常完成及异常路径均恢复原opacity对象，保存clamp前RGB与未裁剪alpha。未运行GPU，未验证运行时像素、预算达成或实际ABI读取结果。

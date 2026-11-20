@@ -1,0 +1,56 @@
+[
+  {
+    "policy": "simplex",
+    "pass_check": true,
+    "proposed": 25,
+    "surviving": 25,
+    "world_ratio_max": 0.9998998641967773,
+    "alpha_min": 0.07815390825271606,
+    "screen_scope": "New ADC rows have zero max_radii2D in this installed path."
+  },
+  {
+    "policy": "coincident",
+    "pass_check": true,
+    "proposed": 25,
+    "surviving": 25,
+    "world_ratio_max": 0.9998998641967773,
+    "alpha_min": 0.07815390825271606,
+    "screen_scope": "New ADC rows have zero max_radii2D in this installed path."
+  },
+  {
+    "policy": "random_20261022",
+    "pass_check": true,
+    "proposed": 25,
+    "surviving": 25,
+    "world_ratio_max": 0.9998998641967773,
+    "alpha_min": 0.07815390825271606,
+    "screen_scope": "New ADC rows have zero max_radii2D in this installed path."
+  },
+  {
+    "policy": "random_20261023",
+    "pass_check": true,
+    "proposed": 25,
+    "surviving": 25,
+    "world_ratio_max": 0.9998998641967773,
+    "alpha_min": 0.07815390825271606,
+    "screen_scope": "New ADC rows have zero max_radii2D in this installed path."
+  },
+  {
+    "policy": "recursive_published",
+    "pass_check": true,
+    "proposed": 44,
+    "surviving": 44,
+    "world_ratio_max": 0.9693107604980469,
+    "alpha_min": 0.034729957580566406,
+    "screen_scope": "New ADC rows have zero max_radii2D in this installed path."
+  },
+  {
+    "policy": "recursive_shared",
+    "pass_check": true,
+    "proposed": 44,
+    "surviving": 44,
+    "world_ratio_max": 0.9693107604980469,
+    "alpha_min": 0.03987184166908264,
+    "screen_scope": "New ADC rows have zero max_radii2D in this installed path."
+  }
+]

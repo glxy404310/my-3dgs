@@ -1,0 +1,13 @@
+{
+  "tool_chunk": "2ac71f",
+  "import_only_status": "IMPORT_ONLY_STRICT_PROVENANCE_PASS",
+  "native_root_count": 1,
+  "utils_paths": ["/home/administrator/projects/gaussian-splatting/utils"],
+  "Scene_constructed": false,
+  "model_loaded": false,
+  "CUDA_initialized": false,
+  "render_calls": 0,
+  "initial_shell_static_check": "FAIL: newly Windows-written launcher had CRLF heredoc delimiters; normalized only that new launcher to LF before any execution",
+  "original_v1_state": "INCONCLUSIVE unchanged; no scientific rerender",
+  "path_helper_unchanged": true
+}

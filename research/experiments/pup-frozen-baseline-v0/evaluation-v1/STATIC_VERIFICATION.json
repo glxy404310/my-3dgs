@@ -1,0 +1,9 @@
+{
+  "status": "STATIC_AND_SYNTHETIC_ONLY_PASS",
+  "py_compile": true,
+  "launcher_syntax": true,
+  "launcher_frozen_hashes": true,
+  "synthetic_metrics_and_five_column_panels": true,
+  "actual_Scene_GPU_render_execution": false,
+  "run_v1_absent": true
+}

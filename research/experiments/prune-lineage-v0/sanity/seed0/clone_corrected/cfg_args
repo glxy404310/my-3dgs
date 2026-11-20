@@ -1,0 +1,1 @@
+Namespace(sh_degree=3, source_path='/home/administrator/datasets/tandt_db/tandt/truck', model_path='/mnt/d/Documents/my 3dgs/research/experiments/prune-lineage-v0/sanity/seed0/clone_corrected', images='images', depths='', resolution=1, white_background=False, train_test_exp=False, data_device='cpu', eval=True)

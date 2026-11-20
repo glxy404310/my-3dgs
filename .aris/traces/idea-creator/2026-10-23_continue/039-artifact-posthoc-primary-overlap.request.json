@@ -1,0 +1,12 @@
+{
+  "call_number": 39,
+  "purpose": "artifact-posthoc-primary-overlap",
+  "timestamp": "2026-10-22T19:12:44.601Z",
+  "tool": "spawn_agent",
+  "model": "inherited-primary",
+  "reasoning_effort": "inherited",
+  "prompt": "用户希望从去伪影找创新，root已实际查看成熟Truck30k未压缩teacher vsGT：teacher-artifact-triage-v0/panels/02_worst_000121.jpg...及ROI1显示背景行人半透明紫黑拖影，000217车窗反射明显糊抹并有背景人物残影。仅视觉探索，不证明因果或标量MSE＝伪影。请实际浏览primary官方论文/代码（2025–26及RobustNeRF/WildGaussians/SpotLessSplats等），定向查『已训练固定3DGS的事后瞬态残影/漂浮物清除，无需重训练整个场景，保护细节与反射』最接近6篇以内。关键区分：训练时mask/深度正则vs已有model的posthoc清理；单视角异常vs多视角真实空域证据；删除/opacity修改vs恢复/优化。检查有没有直接现成的同类方案（比如GaussClean/FloatFree/FloaterFree名字请核真，不凭记忆造）。给每篇primarylink/机制/输入输出/需否训练/与可能方法『由跨视角可见背景证明的空域排斥、实际原生反事实群删除只在非占用视角确认改善』重合。检索不到不能证明新颖。禁止实现/运行实验/编辑共享文件，不需要大综述。直接指出哪些熟悉操作已被覆盖，什么尚有明确未解决缺口。",
+  "supplementary_messages": [],
+  "request_source": "exact executor invocation text; stored session message argument encrypted",
+  "stored_call_arguments_sha256": "e736317c21871df39181e816ef6ef89978b269993557d9f7843cc9a4059d665d"
+}

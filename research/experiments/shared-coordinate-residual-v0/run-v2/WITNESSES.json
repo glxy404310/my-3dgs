@@ -1,0 +1,93 @@
+{
+  "records": [
+    {
+      "index": 0,
+      "view": "000002.jpg",
+      "known_shift_yx": [
+        0.375,
+        -0.625
+      ],
+      "source_texture_count": 72,
+      "valid_count": 72,
+      "median_error_px": 0.004536517335694051,
+      "p90_error_px": 0.012956391744955009,
+      "rms_error_px": 0.008665261168031894,
+      "zero_checks": [
+        {
+          "kind": "repeat",
+          "max_rgb_difference": 0.0,
+          "rgb_mse": 0.0,
+          "feature_count": 120,
+          "feature_l2_rms": 0.0
+        },
+        {
+          "kind": "zero_copy",
+          "max_rgb_difference": 2.384185791015625e-07,
+          "rgb_mse": 8.294904973229789e-16,
+          "feature_count": 120,
+          "feature_l2_rms": 1.7291052037189446e-06
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "view": "000023.jpg",
+      "known_shift_yx": [
+        -0.45,
+        0.7
+      ],
+      "source_texture_count": 32,
+      "valid_count": 32,
+      "median_error_px": 0.010950943114148837,
+      "p90_error_px": 0.023887691250913445,
+      "rms_error_px": 0.01972638913894921,
+      "zero_checks": [
+        {
+          "kind": "repeat",
+          "max_rgb_difference": 0.0,
+          "rgb_mse": 0.0,
+          "feature_count": 120,
+          "feature_l2_rms": 0.0
+        },
+        {
+          "kind": "zero_copy",
+          "max_rgb_difference": 2.384185791015625e-07,
+          "rgb_mse": 5.642614092805636e-16,
+          "feature_count": 120,
+          "feature_l2_rms": 4.4353734776350114e-06
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "view": "000046.jpg",
+      "known_shift_yx": [
+        0.6,
+        0.3
+      ],
+      "source_texture_count": 38,
+      "valid_count": 38,
+      "median_error_px": 0.012387812394766357,
+      "p90_error_px": 0.035465289247803886,
+      "rms_error_px": 0.028741438712388517,
+      "zero_checks": [
+        {
+          "kind": "repeat",
+          "max_rgb_difference": 0.0,
+          "rgb_mse": 0.0,
+          "feature_count": 120,
+          "feature_l2_rms": 0.0
+        },
+        {
+          "kind": "zero_copy",
+          "max_rgb_difference": 2.384185791015625e-07,
+          "rgb_mse": 5.761070912162713e-16,
+          "feature_count": 120,
+          "feature_l2_rms": 4.749190000833444e-06
+        }
+      ]
+    }
+  ],
+  "sigma_shift": 0.028741438712388517,
+  "sigma_zero": 2.74521244944881e-06
+}

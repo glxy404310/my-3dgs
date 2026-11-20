@@ -1,0 +1,185 @@
+{
+  "scope": "Conditional on fixed checkpoint, selected parents, event seed and sampled cameras. Views are correlated; this is not cross-event significance.",
+  "comparisons": [
+    {
+      "variant": "original_split",
+      "step": 0,
+      "views": 32,
+      "delta_l1": 7.281621219590306e-05,
+      "delta_psnr": -0.01640242338180542,
+      "delta_ssim": -0.0002670940011739731,
+      "fraction_views_l1_worse": 0.78125,
+      "median_delta_l1": 4.482083022594452e-05,
+      "mean_delta_l1_excluding_worst_view": 5.547906602582624e-05,
+      "delta_l1_view_bootstrap_ci95": [
+        2.3529783356934788e-05,
+        0.0001293533685384318
+      ],
+      "max_view_delta_l1": 0.0006102677434682846,
+      "min_view_delta_l1": -0.00022044405341148376,
+      "render_change_l1": 0.0005870620134373894
+    },
+    {
+      "variant": "original_split",
+      "step": 1,
+      "views": 32,
+      "delta_l1": 7.853214628994465e-05,
+      "delta_psnr": -0.016753673553466797,
+      "delta_ssim": -0.00026204437017440796,
+      "fraction_views_l1_worse": 0.75,
+      "median_delta_l1": 4.3375417590141296e-05,
+      "mean_delta_l1_excluding_worst_view": 6.0719407854541656e-05,
+      "delta_l1_view_bootstrap_ci95": [
+        2.648242370923981e-05,
+        0.00013670894113602115
+      ],
+      "max_view_delta_l1": 0.0006307270377874374,
+      "min_view_delta_l1": -0.00021389871835708618,
+      "render_change_l1": 0.0012255190613359446
+    },
+    {
+      "variant": "original_split",
+      "step": 5,
+      "views": 32,
+      "delta_l1": 9.439676068723202e-05,
+      "delta_psnr": -0.018157005310058594,
+      "delta_ssim": -0.00022813677787780762,
+      "fraction_views_l1_worse": 0.78125,
+      "median_delta_l1": 5.015358328819275e-05,
+      "mean_delta_l1_excluding_worst_view": 7.459407131518088e-05,
+      "delta_l1_view_bootstrap_ci95": [
+        3.205977554898709e-05,
+        0.00016507652471773324
+      ],
+      "max_view_delta_l1": 0.0007082801312208176,
+      "min_view_delta_l1": -0.00017664581537246704,
+      "render_change_l1": 0.003596888080210192
+    },
+    {
+      "variant": "original_split",
+      "step": 20,
+      "views": 32,
+      "delta_l1": 0.00010702281724661589,
+      "delta_psnr": -0.019119977951049805,
+      "delta_ssim": -0.00018668733537197113,
+      "fraction_views_l1_worse": 0.53125,
+      "median_delta_l1": 1.3865530490875244e-05,
+      "mean_delta_l1_excluding_worst_view": 7.884120268206442e-05,
+      "delta_l1_view_bootstrap_ci95": [
+        2.2601049568038434e-05,
+        0.0002060288243228569
+      ],
+      "max_view_delta_l1": 0.0009806528687477112,
+      "min_view_delta_l1": -0.00017571821808815002,
+      "render_change_l1": 0.010334229140426032
+    },
+    {
+      "variant": "original_split",
+      "step": 100,
+      "views": 32,
+      "delta_l1": 7.82185816206038e-05,
+      "delta_psnr": -0.011988818645477295,
+      "delta_ssim": -7.849559187889099e-05,
+      "fraction_views_l1_worse": 0.59375,
+      "median_delta_l1": 3.075413405895233e-05,
+      "mean_delta_l1_excluding_worst_view": 6.476098731640846e-05,
+      "delta_l1_view_bootstrap_ci95": [
+        3.081156028201804e-05,
+        0.00013114104222040622
+      ],
+      "max_view_delta_l1": 0.0004954040050506592,
+      "min_view_delta_l1": -0.0001079663634300232,
+      "render_change_l1": 0.014721538464073092
+    },
+    {
+      "variant": "las_split",
+      "step": 0,
+      "views": 32,
+      "delta_l1": 7.55565706640482e-05,
+      "delta_psnr": -0.013158082962036133,
+      "delta_ssim": -0.00015670247375965118,
+      "fraction_views_l1_worse": 0.625,
+      "median_delta_l1": 3.231316804885864e-05,
+      "mean_delta_l1_excluding_worst_view": 5.1621107324477165e-05,
+      "delta_l1_view_bootstrap_ci95": [
+        1.751880918163806e-05,
+        0.00014564461307600135
+      ],
+      "max_view_delta_l1": 0.0008175559341907501,
+      "min_view_delta_l1": -0.00020065903663635254,
+      "render_change_l1": 0.000588302554206166
+    },
+    {
+      "variant": "las_split",
+      "step": 1,
+      "views": 32,
+      "delta_l1": 8.59720166772604e-05,
+      "delta_psnr": -0.014023542404174805,
+      "delta_ssim": -0.00015417858958244324,
+      "fraction_views_l1_worse": 0.6875,
+      "median_delta_l1": 4.703737795352936e-05,
+      "mean_delta_l1_excluding_worst_view": 5.818993574188602e-05,
+      "delta_l1_view_bootstrap_ci95": [
+        2.1664630912709983e-05,
+        0.00016667526215314863
+      ],
+      "max_view_delta_l1": 0.0009472165256738663,
+      "min_view_delta_l1": -0.00019393116235733032,
+      "render_change_l1": 0.0012360348637230345
+    },
+    {
+      "variant": "las_split",
+      "step": 5,
+      "views": 32,
+      "delta_l1": 9.396817767992616e-05,
+      "delta_psnr": -0.013878047466278076,
+      "delta_ssim": -0.000128917396068573,
+      "fraction_views_l1_worse": 0.71875,
+      "median_delta_l1": 3.601144999265671e-05,
+      "mean_delta_l1_excluding_worst_view": 7.410744024861244e-05,
+      "delta_l1_view_bootstrap_ci95": [
+        2.5047341478057205e-05,
+        0.0001705277332803234
+      ],
+      "max_view_delta_l1": 0.0007096510380506516,
+      "min_view_delta_l1": -0.00023386627435684204,
+      "render_change_l1": 0.0036079974634048995
+    },
+    {
+      "variant": "las_split",
+      "step": 20,
+      "views": 32,
+      "delta_l1": 0.0001061156508512795,
+      "delta_psnr": -0.015822529792785645,
+      "delta_ssim": -0.00013815052807331085,
+      "fraction_views_l1_worse": 0.59375,
+      "median_delta_l1": 1.2283213436603546e-05,
+      "mean_delta_l1_excluding_worst_view": 7.809872829145001e-05,
+      "delta_l1_view_bootstrap_ci95": [
+        2.056668599834666e-05,
+        0.00020514042407739904
+      ],
+      "max_view_delta_l1": 0.0009746402502059937,
+      "min_view_delta_l1": -0.0002880580723285675,
+      "render_change_l1": 0.010361367181758396
+    },
+    {
+      "variant": "las_split",
+      "step": 100,
+      "views": 32,
+      "delta_l1": 7.925723912194371e-05,
+      "delta_psnr": -0.010809600353240967,
+      "delta_ssim": -8.437782526016235e-05,
+      "fraction_views_l1_worse": 0.625,
+      "median_delta_l1": 4.599615931510925e-05,
+      "mean_delta_l1_excluding_worst_view": 6.582473795260153e-05,
+      "delta_l1_view_bootstrap_ci95": [
+        2.927900495706126e-05,
+        0.0001328330225078389
+      ],
+      "max_view_delta_l1": 0.0004956647753715515,
+      "min_view_delta_l1": -0.00015427544713020325,
+      "render_change_l1": 0.014729301648912951
+    }
+  ]
+}

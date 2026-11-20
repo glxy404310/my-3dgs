@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-23",
+  "goal_status": "active",
+  "training_performed": false,
+  "checks": [
+    {
+      "name": "coverage_controls",
+      "session_id": 86018,
+      "terminal_exit_code": 0,
+      "rows": 1580,
+      "decision": "STOP_CURRENT_ACTIVE_POSE_IMPLEMENTATION"
+    },
+    {
+      "name": "sh_direction_path",
+      "session_id": 84774,
+      "terminal_exit_code": 1,
+      "rows": 56,
+      "decision": "FAILED_PARITY_NOT_METHOD_VERDICT"
+    },
+    {
+      "name": "photometric_screen",
+      "session_id": 48676,
+      "terminal_exit_code": 0,
+      "rows": 256,
+      "decision": "STOP_CURRENT_PHOTOMETRIC_CANDIDATE"
+    },
+    {
+      "name": "low_parallax_budget",
+      "session_id": 36118,
+      "terminal_exit_code": 0,
+      "points": 2050770,
+      "decision": "STOP_CURRENT_SELECTION_NO_CAPACITY"
+    },
+    {
+      "decision": "PROCEED_TO_FULL_FROZEN_RGB",
+      "name": "joint_rounding_alpha_cpu",
+      "sample_points": 8192,
+      "session_id": 28829,
+      "terminal_exit_code": 0,
+      "cpu_seconds": 12.569143946
+    },
+    {
+      "decision": "ENCODED_NOT_YET_RGB_EVALUATED",
+      "name": "joint_rounding_full_encode",
+      "session_id": 81741,
+      "terminal_exit_code": 0,
+      "points": 2050770,
+      "cpu_seconds": 129.613532404
+    },
+    {
+      "rows": 192,
+      "name": "joint_rounding_full_rgb",
+      "session_id": 90524,
+      "decision": "STOP_CURRENT_IMPLEMENTATION",
+      "tool_valid": true,
+      "terminal_exit_code": 0
+    },
+    {
+      "name": "repeat_pose_feasibility",
+      "session_id": null,
+      "chunk_id": "cf48aa",
+      "selected_pairs": 1,
+      "terminal_exit_code": 0,
+      "decision": "INCONCLUSIVE_INSUFFICIENT_NEAR_REPEAT_OBSERVATIONS",
+      "required_pairs": 3
+    },
+    {
+      "name": "native_gradient_repeat",
+      "session_id": 64644,
+      "terminal_exit_code": 0,
+      "decision": "STOP_CURRENT_NONDETERMINISM_DRIVEN_IMPLEMENTATION",
+      "tool_valid": true,
+      "evidence": "research/experiments/native-gradient-repeat-v0/run/RESULTS.json"
+    },
+    {
+      "name": "pruned_alpha_oracle",
+      "session_id": 69631,
+      "terminal_exit_code": 0,
+      "decision": "NEEDS_PRACTICAL_REPAIR_AND_STRONGER_BASELINES",
+      "tool_valid": true,
+      "evidence": "research/experiments/pruned-alpha-oracle-v0/run/RESULTS.json"
+    },
+    {
+      "name": "ray_alpha_omission",
+      "session_id": 50664,
+      "terminal_exit_code": 0,
+      "decision": "STOP_CURRENT_CUMULATIVE_OMISSION_DRIVEN_DEPLOYMENT",
+      "tool_valid": true,
+      "evidence": "research/experiments/ray-alpha-omission-v0/run/RESULTS.json"
+    },
+    {
+      "name": "pruned_opacity_transfer",
+      "session_id": 87638,
+      "terminal_exit_code": 0,
+      "tool_valid": true,
+      "rows": 224,
+      "decision": "STOP_CURRENT_NEAREST_NEIGHBOR_PROXY_TRANSFER",
+      "main_gates_all_true": true,
+      "strong_controls_failed": true,
+      "evidence": "research/experiments/pruned-opacity-transfer-v0/run/RESULTS.json",
+      "earlier_tool_failures_preserved": true,
+      "independent_raw_pixel_check": "passed, no gate flips",
+      "raw_npz_files": 293,
+      "raw_npz_bytes": 3089871120,
+      "elapsed_seconds": 64.95719970100004,
+      "import_failure_preserved": true,
+      "invalid_internal_radii_check_failure_preserved": true
+    },
+    {
+      "name": "sorting_quantization_capacity",
+      "session_id": null,
+      "terminal_exit_code": 1,
+      "rows": 6144,
+      "decision": "SAVED_DATA_SUPPORTS_CAPACITY_AFTER_INDEPENDENT_POSTPROCESS",
+      "original_tool_state": "FAILED_TOOL_METHOD_UNKNOWN",
+      "passed_main_bits": [
+        8,
+        12
+      ],
+      "evidence": "research/experiments/sorting-quantization-capacity-v0/run/INDEPENDENT_ANALYSIS.json",
+      "original_failure_not_reclassified_as_success": true,
+      "independent_replay_outputs": 192,
+      "independent_replay_max_RGB_difference": 2.220446049250313e-16,
+      "original_process_exit_observed": 1,
+      "original_script_failure_return_intended": 2,
+      "main_capacity_pass": true,
+      "full_position_codec_claim_supported": false
+    }
+  ],
+  "updated_at": "2026-10-23T01:20:44.462135+08:00",
+  "pending": [
+    {
+      "name": "sorting_local_bbox_matched_displacement_controls",
+      "state": "review recommendation; not implemented or launched",
+      "parity_required": true,
+      "training_authorized": false
+    }
+  ]
+}

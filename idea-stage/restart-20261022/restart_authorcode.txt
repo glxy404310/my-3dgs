@@ -1,0 +1,385 @@
+GitHub - rogerhh/3dgs2-tr: Scalable second-order trust-region method for 3DGS · GitHub (https://github.com/rogerhh/3dgs2-tr)
+citeturn50view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://github.com/rogerhh/3dgs2-tr","lineno":null}); Total lines: 309
+L0: 【0†Skip to content】
+L1: ## Navigation Menu
+L2: 
+L3: 【1†Sign in】
+L4: 
+L5: Appearance settings
+L6: 
+L7:   * Platform
+L8: 
+L9:     * AI CODE CREATION
+L10:       * 【2†GitHub CopilotWrite better code with AI】
+L11:       * 【3†GitHub Copilot appDirect agents from issue to merge】
+L12:       * 【4†MCP RegistryIntegrate external tools】
+L13: 
+L14:     * DEVELOPER WORKFLOWS
+L15:       * 【5†ActionsAutomate any workflow】
+L16:       * 【6†CodespacesInstant dev environments】
+L17:       * 【7†IssuesPlan and track work】
+L18:       * 【8†Code ReviewManage code changes】
+L19:       * 【9†Code QualityEnforce quality at merge】
+L20:     * APPLICATION SECURITY
+L21:       * 【10†GitHub Advanced SecurityFind and fix vulnerabilities】
+L22:       * 【11†Code securitySecure your code as you build】
+L23:       * 【12†Secret protectionStop leaks before they start】
+L24: 
+L25:     * EXPLORE
+L26:       * 【13†Why GitHub】
+L27:       * 【14†Documentation†docs.github.com】
+L28:       * 【15†Blog†github.blog】
+L29:       * 【16†Changelog†github.blog】
+L30:       * 【17†Marketplace】
+L31: 
+L32: 【18†View all features】
+L33: 
+L34:   * Solutions
+L35:     * BY COMPANY SIZE
+L36:       * 【19†Enterprises】
+L37:       * 【20†Small and medium teams】
+L38:       * 【21†Startups】
+L39:       * 【22†Nonprofits】
+L40: 
+L41:     * BY USE CASE
+L42:       * 【23†App Modernization】
+L43:       * 【24†DevSecOps】
+L44:       * 【25†DevOps】
+L45:       * 【26†CI/CD】
+L46:       * 【27†View all use cases】
+L47: 
+L48:     * BY INDUSTRY
+L49:       * 【28†Healthcare】
+L50:       * 【29†Financial services】
+L51:       * 【30†Manufacturing】
+L52:       * 【31†Government】
+L53:       * 【32†View all industries】
+L54: 
+L55: 【33†View all solutions】
+L56: 
+L57:   * Resources
+L58:     * EXPLORE BY TOPIC
+L59:       * 【34†AI】
+L60:       * 【35†Software Development】
+L61:       * 【36†DevOps】
+L62:       * 【37†Security】
+L63:       * 【38†View all topics】
+L64: 
+L65:     * EXPLORE BY TYPE
+L66:       * 【39†Customer stories】
+L67:       * 【40†Events & webinars】
+L68:       * 【41†Ebooks & reports】
+L69:       * 【42†Business insights】
+L70:       * 【43†GitHub Skills†skills.github.com】
+L71:     * SUPPORT & SERVICES
+L72:       * 【14†Documentation†docs.github.com】
+L73:       * 【44†Customer support†support.github.com】
+L74:       * 【45†Community forum】
+L75:       * 【46†Trust center】
+L76:       * 【47†Partners】
+L77: 
+L78: 【48†View all resources】
+L79: 
+L80:   * Open Source
+L81: 
+L82:     * COMMUNITY
+L83:       * 【49†GitHub SponsorsFund open source developers】
+L84:     * PROGRAMS
+L85:       * 【50†Security Lab†securitylab.github.com】
+L86:       * 【51†Maintainer Community†maintainers.github.com】
+L87:       * 【52†GitHub Stars†stars.github.com】
+L88:       * 【53†Archive Program†archiveprogram.github.com】
+L89: 
+L90:     * REPOSITORIES
+L91:       * 【54†Topics】
+L92:       * 【55†Trending】
+L93:       * 【56†Collections】
+L94: 
+L95:   * Enterprise
+L96: 
+L97:     * ENTERPRISE SOLUTIONS
+L98:       * 【19†Enterprise platformAI-powered developer platform】
+L99:     * AVAILABLE ADD-ONS
+L100:       * 【10†GitHub Advanced SecurityEnterprise-grade security features】
+L101:       * 【57†Copilot for BusinessEnterprise-grade AI features】
+L102:       * 【58†Premium SupportEnterprise-grade 24/7 support】
+L103: 
+L104:   * 【59†Pricing】
+L105: 
+L106: Search`/`
+L107: 
+L108: 【1†Sign in】
+L109: 
+L110: 【60†Sign up】
+L111: 
+L112: Appearance settings
+L113: You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert
+L114: 
+L115:   1. 【61†rogerhh】
+L116:   2. 【62†3dgs2-tr】
+L117: ## Repository navigation
+L118: 
+L119:   *   * 【62†Code】
+L120:   * 【63†Pull requests2 (2)】
+L121:   * 【64†Actions】
+L122:   * 【65†Projects】
+L123:   * 【66†Security and quality】
+L124:   * 【67†Insights】
+L125: 
+L126: More items
+L127: 
+L128: 【68†Image: rogerhh†avatars.githubusercontent.com】
+L129: 
+L130: 【62†3dgs2-tr】
+L131: 
+L132: Public
+L133: 
+L134: forked from 【69†graphdeco-inria/gaussian-splatting】
+L135: 
+L136:   * 【70†Notifications】You must be signed in to change notification settings
+L137:   * 【70†Fork2 (2)】
+L138:   * 【70†Star3 (3)】You must be signed in to star a repository
+L139: ## About
+L140: 
+L141: Scalable second-order trust-region method for 3DGS
+L142: 
+L143: ### Resources
+L144: 
+L145: 【71†Readme】
+L146: 
+L147: 【72†License】
+L148: 
+L149: 【73†Activity】
+L150: 
+L151: ### Stars
+L152: 
+L153: 3 stars
+L154: 
+L155: ### Watchers
+L156: 
+L157: 0 watching
+L158: 
+L159: ### Forks
+L160: 
+L161: 【74†2 forks】
+L162: 
+L163: 【75†Report repository】
+L164: 
+L165: main
+L166: 
+L167: 【76†Branches】【77†Tags】
+L168: 
+L169: [Input: Go to file]
+L170: 
+L171: Go to file
+L172: 
+L173: Code
+L174: 
+L175: Open more actions menu
+L176: 
+L177: 
+L178: 
+L179: 
+L180: 
+L181: ## Latest commit
+L182: 
+L183: 
+L184: 
+L185: ## History
+L186: 
+L187: 363 Commits
+L188: ## Folders and files
+L189: Name  | Name  | Last commit message  | Last commit date
+L190: --- | --- | --- | ---
+L191: 【78†SIBR_viewers @ d8856f6】  | 【78†SIBR_viewers @ d8856f6】  |    |
+L192: 【79†arguments】  | 【79†arguments】  |    |
+L193: 【80†assets】  | 【80†assets】  |    |
+L194: 【81†gaussian_renderer】  | 【81†gaussian_renderer】  |    |
+L195: 【82†lpipsPyTorch】  | 【82†lpipsPyTorch】  |    |
+L196: 【83†scene】  | 【83†scene】  |    |
+L197: 【84†scripts】  | 【84†scripts】  |    |
+L198: 【85†solver】  | 【85†solver】  |    |
+L199: 【86†submodules】  | 【86†submodules】  |    |
+L200: 【87†tests】  | 【87†tests】  |    |
+L201: 【88†utils】  | 【88†utils】  |    |
+L202: 【89†.gitignore】  | 【89†.gitignore】  |    |
+L203: 【90†.gitmodules】  | 【90†.gitmodules】  |    |
+L204: 【91†LICENSE.md】  | 【91†LICENSE.md】  |    |
+L205: 【92†README.md】  | 【92†README.md】  |    |
+L206: 【93†benchmark.sh】  | 【93†benchmark.sh】  |    |
+L207: 【94†convert.py】  | 【94†convert.py】  |    |
+L208: 【95†environment.yml】  | 【95†environment.yml】  |    |
+L209: 【96†evaluate_from_checkpoint.py】  | 【96†evaluate_from_checkpoint.py】  |    |
+L210: 【97†full_eval.py】  | 【97†full_eval.py】  |    |
+L211: 【98†metrics.py】  | 【98†metrics.py】  |    |
+L212: 【99†render.py】  | 【99†render.py】  |    |
+L213: 【100†results.md】  | 【100†results.md】  |    |
+L214: 【101†run_jvp_timing.sh】  | 【101†run_jvp_timing.sh】  |    |
+L215: 【102†run_train_bonsai.sh】  | 【102†run_train_bonsai.sh】  |    |
+L216: 【103†run_train_garden.sh】  | 【103†run_train_garden.sh】  |    |
+L217: 【104†run_train_jvp_train.sh】  | 【104†run_train_jvp_train.sh】  |    |
+L218: 【105†run_train_train.sh】  | 【105†run_train_train.sh】  |    |
+L219: 【106†sourceme.sh】  | 【106†sourceme.sh】  |    |
+L220: 【107†srun_sub_all.sh】  | 【107†srun_sub_all.sh】  |    |
+L221: 【108†train.py】  | 【108†train.py】  |    |
+L222: 【109†train_cg.py】  | 【109†train_cg.py】  |    |
+L223: 【110†train_cg2.py】  | 【110†train_cg2.py】  |    |
+L224: 【111†train_cg3.py】  | 【111†train_cg3.py】  |    |
+L225: 【112†train_cg_steihaug.py】  | 【112†train_cg_steihaug.py】  |    |
+L226: 【113†train_cg_with_adam.py】  | 【113†train_cg_with_adam.py】  |    |
+L227: 【114†train_hybrid.py】  | 【114†train_hybrid.py】  |    |
+L228: 【115†train_jvp.py】  | 【115†train_jvp.py】  |    |
+L229: 【116†train_l2.py】  | 【116†train_l2.py】  |    |
+L230: 【117†train_mcmc.py】  | 【117†train_mcmc.py】  |    |
+L231: 【118†train_mcmc_adam.py】  | 【118†train_mcmc_adam.py】  |    |
+L232: 【119†train_mcmc_sophia_hellinger.py】  | 【119†train_mcmc_sophia_hellinger.py】  |    |
+L233: 【120†train_sgd.py】  | 【120†train_sgd.py】  |    |
+L234: 【121†train_sophia.py】  | 【121†train_sophia.py】  |    |
+L235: 【122†train_sophia_tr.py】  | 【122†train_sophia_tr.py】  |    |
+L236: 【123†train_sophia_tr_hellinger.py】  | 【123†train_sophia_tr_hellinger.py】  |    |
+L237: [Button: View all files]
+L238: ## Repository files navigation
+L239: 
+L240:   *   * 【124†README】
+L241:   * 【124†License】
+L242: 
+L243: More items
+L244: 
+L245: ## Cloning the Repository
+L246: 
+L247: The repository contains submodules, thus please check it out with
+L248: 
+L249:     # SSH
+L250:     git clone https://github.com/rogerhh/gaussian-splatting-lm --recursive
+L251: 
+L252: ### Setup
+L253: #### Local Setup
+L254: 
+L255:     mamba env create -f environment.yml
+L256:     conda activate gaussian_splatting-jvp
+L257:     (cd submodules/diff_gaussian_rasterization && pip install -e .)
+L258:     (cd submodules/fused-ssim && pip install -e .)
+L259:     (cd submodules/simple-knn && pip install -e .)
+L260:     # extra env needed
+L261:     apt update && apt install libtiff5
+L262: ### Running
+L263: 
+L264: To run the optimizer, simply use
+L265: 
+L266:     python train_mcmc_sophia_hellinger.py -s <path to COLMAP or NeRF Synthetic dataset> --start_checkpoint <path/to/checkpoint> --iterations 30000 --loss_type="l1" --noise_lr=0.0 --eval --eval_interval=1000 --cap_max <CAP_MAX> --densify_preserve_gaussians --sparsify_gaussians --sparsify_ratio=0.01 [--diagonal_accum_abs]
+L267: For Adam with new densification strategy, use
+L268: 
+L269:     python train_mcmc_adam.py -s <path to COLMAP or NeRF Synthetic dataset> --iterations 30000 --noise_lr=0.0 --eval --eval_interval=1000 --cap_max <CAP_MAX> --densify_preserve_gaussians --sparsify_gaussians --sparsify_ratio=0.01
+L270: 
+L271: cap_max is the max number of Gaussians, set to 1100000 for the train dataset
+L272: 
+L273: One more difference: In the 3DGS-MCMC train script, the densify_until_iter parameter is set to 25000, but it is default to 15000 in our script.
+L274: ## About
+L275: 
+L276: Scalable second-order trust-region method for 3DGS
+L277: 
+L278: ### Resources
+L279: 
+L280: 【71†Readme】
+L281: 
+L282: 【72†License】
+L283: 
+L284: 【73†Activity】
+L285: 
+L286: ### Stars
+L287: 
+L288: 3 stars
+L289: 
+L290: ### Watchers
+L291: 
+L292: 0 watching
+L293: 
+L294: ### Forks
+L295: 
+L296: 【74†2 forks】
+L297: 
+L298: 【75†Report repository】
+L299: 
+L300: ## Releases
+L301: 
+L302: ## Packages
+L303: 
+L304: ## Contributors
+L305: 
+L306: ## Languages
+L307: 
+L308: You can’t perform that action at this time.
+--------------------------------------------------------------------------------
+3DGS²-TR (https://rogerhh.github.io/3dgs2-tr.github.io/)
+citeturn50view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://rogerhh.github.io/3dgs2-tr.github.io/","lineno":null}); Total lines: 70
+L0: # 3DGS^{2}-TR: Scalable Second-Order Trust-Region Method for 3D Gaussian Splatting
+L1: 
+L2: 【0†Roger Hsiao】^{1}, 【0†Yuchen Fang】^{1}, 【0†Xiangru Huang】^{1}, 【0†Ruilong Li】^{2}, 【0†Hesam Rabeti】^{2}, 【0†Zan Gojcic】^{2}, 【0†Javad Lavaei】^{1}, 【0†James Demmel】^{1}, 【0†Sophia Shao】^{1}
+L3: 
+L4: ^{1}UC Berkeley, ^{2}NVIDIA
+L5: 
+L6: ICML 2026
+L7: 
+L8: 【1†Image: UC Berkeley】
+L9: 
+L10: 【2†Image: SLICE】
+L11: 
+L12: 【3†Paper†arxiv.org】 【4†arXiv†arxiv.org】 【5†Code†github.com】
+L13: ## Abstract
+L14: We propose 3DGS^{2}-TR, a second-order optimizer for accelerating the scene training problem in 3D Gaussian Splatting (3DGS). Unlike existing second-order approaches that rely on explicit or dense curvature representations, such as 3DGS-LM (Höllein et al., 2025) or 3DGS2 (Lan et al., 2025), our method approximates curvature using only the diagonal of the Hessian matrix, efficiently via Hutchinson's method.
+L15: Our approach is fully matrix-free and has the same complexity as ADAM (Kingma, 2024), O(n) in both computation and memory costs. To ensure stable optimization in the presence of strong nonlinearity in the 3DGS rasterization process, we introduce a parameter-wise trust-region technique based on the squared Hellinger distance, regularizing updates to Gaussian parameters.
+L16: Under identical parameter initialization and without densification, 3DGS^{2}-TR is able to achieve better reconstruction quality on standard datasets, using 50% fewer training iterations compared to ADAM, while incurring less than 1GB of peak GPU memory overhead (17% more than ADAM and 85% less than 3DGS-LM), enabling scalability to very large scenes and potentially to distributed training settings.
+L17: ## Second Order Optimizer
+L18: The 3DGS scene training problem can be formulated as an optimization problem. SOTA methods use first-order methods such as ADAM, which may have a slower convergence. We note that higher-order methods, such as Newton's Method, Gauss-Newton Method, Levenberg-Marquardt Method, make strong assumptions about the local smoothness of the loss function while also requiring the materialization of very large matrices given the problem dimensions.
+L19: Instead we follow the approach of AdaHessian (Yao et al., 2021) and SOPHIA (Liu et al., 2023), which estimate the diagonal values of the Hessian matrix using Hutchinson's Method and use the diagonal values of the Hessian to condition the update step. Enabling Hutchinson's Method requires both the forward- and backward-mode autodiff of the 3DGS rasterization kernel. Our forward-mode autodiff library is implemented in-house based on dual numbers using CUDA templating.
+L20: 【6†Image: Algorithm】
+L21: ## Squared Hellinger Distance Trust Region
+L22: We found that for some Gaussian parameters, the diagonal estimation can be off due to high variance, which may cause the updates to be unstable. We propose to use a data-aware trust-region method to bound the update to each Gaussian splat. Consider a single Gaussian splat before and after the update step, the distance of the update step can be measured by the statistical distance using the squared Hellinger distance.
+L23: (The squared Hellinger distance is chosen because it is able to handle the unnormalized probability mass of a Gaussian.)
+L24: \[ \begin{align*} H^2(G,G') &= \frac{1}{2}(Z+Z') \\ &\quad - (Z\cdot Z')^{\frac{1}{2}} \cdot \Sigma_1 \cdot \exp\!\left(-\frac{\Delta\mu^T \Sigma_2^{-1} \Delta\mu}{8}\right), \end{align*} \] where $\Delta\mu = \mu - \mu'$, $\Sigma_1 = \dfrac{\det(\Sigma)^{\frac{1}{4}}\det(\Sigma')^{\frac{1}{4}}} {\det\!\left(\dfrac{\Sigma+\Sigma'}{2}\right)^{\frac{1}{2}}}$, and $\Sigma_2 = \dfrac{\Sigma+\Sigma'}{2}$.
+L25: 
+L26: A more intuitive interpretation is illustrated below.
+L27: 
+L28: 【7†Image: Trust region illustration】
+L29: ## Gaussian Fitting Example
+L30: 
+L31: 【8†Image: Longside】 【9†Image: Shortside】 【10†Image: Rotation】 【11†Image: Two Gaussians】
+L32: 
+L33: [Input]
+L34: 
+L35: Longside
+L36: 
+L37: Shortside
+L38: 
+L39: Rotation
+L40: 
+L41: Two Gaussians
+L42: 
+L43: ## Image Fitting Example
+L44: 
+L45: 【12†Image: Image fitting Picasso】
+L46: 
+L47: ## 3D Scene Training Example
+L48: 
+L49: 【13†Image: 3D Gaussian fitting bonsai】
+L50: ## Results and Conclusion
+L51: 
+L52: We are able to achieve 2–4× speedup in terms of training iterations compared to ADAM, while incurring a 10% overhead from the diagonal estimation and only a 1GB GPU memory overhead. We will, however, note the following caveats: 1) the current implementation is not optimized, 2) densification is supported but does not work well with second-order methods. These are areas that we are actively improving.
+L53: 
+L54: 【14†Image: Results table】
+L55: ## References
+L56: 
+L57:   * Liu, H., Li, Z., Hall, D., Liang, P., and Ma, T. Sophia: A scalable stochastic second-order optimizer for language model pre-training. arXiv preprint arXiv:2305.14342, 2023.
+L58:   * Yao, Z., Gholami, A., Shen, S., Mustafa, M., Keutzer, K., and Mahoney, M. AdaHessian: An adaptive second order optimizer for machine learning. In Proceedings of the AAAI Conference on Artificial Intelligence, volume 35, pp. 10665–10673, 2021.
+L59: ## BibTeX
+L60: 
+L61:     `@article{hsiao20253dgs2tr,
+L62:       author    = {Hsiao, Roger and Fang, Yuchen and Huang, Xiangru and Li, Ruilong and Rabeti, Hesam and Gojcic, Zan and Lavaei, Javad and Demmel, James and Shao, Sophia},
+L63:       title     = {3DGS$^2$-TR: Scalable Second-Order Trust-Region Method for 3D Gaussian Splatting},
+L64:       journal   = {arXiv preprint arXiv:2602.00395},
+L65:       year      = {2025},
+L66:     }`
+L67: This website is licensed under a 【15†Creative Commons Attribution-ShareAlike 4.0 International License†creativecommons.org】.
+L68: 
+L69: Website template borrowed from 【16†Nerfies†nerfies.github.io】.
+

@@ -1,0 +1,15 @@
+{
+  "status": "AUDIT_PASS_SCOPE_LIMITED",
+  "execution_attempt": 1,
+  "automatic_retries": 0,
+  "wall_limit_seconds": 110.0,
+  "host_RSS_limit_bytes": 8589934592,
+  "peak_sampled_combined_host_RSS_bytes": 2357022720,
+  "worker_pid": 439,
+  "worker_pgid": 439,
+  "worker_exit_code": 0,
+  "remaining_live_group_pids": [],
+  "wall_seconds": 17.970901709000003,
+  "supervisor_torch_imported": false,
+  "within_budget": true
+}

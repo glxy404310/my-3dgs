@@ -1,0 +1,276 @@
+{
+  "tool_valid": false,
+  "decision": "FAILED_TOOL_METHOD_UNKNOWN",
+  "training_performed": false,
+  "optimizer_created": false,
+  "parameter_updates": 0,
+  "native_forward_calls": 0,
+  "gpu_used": false,
+  "hard_process_limit_seconds": 120,
+  "thread_limit": 1,
+  "phase": "complete",
+  "preflight": [
+    {
+      "view": "000002.jpg",
+      "rank": 0,
+      "unique_points": 333624,
+      "depth_max_absolute_error": 6.9959585147216785e-06,
+      "depth_max_relative_error": 2.499066858012136e-07,
+      "camera_depth_axis": [
+        -0.6143153366983031,
+        -0.0584841832938814,
+        0.7868902511797295
+      ],
+      "camera_center": [
+        3.419787314564131,
+        0.7126429411208084,
+        -2.445030924141537
+      ],
+      "depth_gate": true,
+      "max_rgb_parity_error": 4.936314431658317e-07,
+      "zero_order_bitwise": true,
+      "zero_rgb_bitwise": true
+    },
+    {
+      "view": "000037.jpg",
+      "rank": 31,
+      "unique_points": 364330,
+      "depth_max_absolute_error": 2.8408316765649033e-06,
+      "depth_max_relative_error": 1.2180800263521892e-07,
+      "camera_depth_axis": [
+        0.3660223776624178,
+        0.05651037701179806,
+        0.9288886888859907
+      ],
+      "camera_center": [
+        -0.9024824060390976,
+        0.2984145235190315,
+        -2.622280114760298
+      ],
+      "depth_gate": true,
+      "max_rgb_parity_error": 4.6325416769299466e-07,
+      "zero_order_bitwise": true,
+      "zero_rgb_bitwise": true
+    },
+    {
+      "view": "000072.jpg",
+      "rank": 62,
+      "unique_points": 284947,
+      "depth_max_absolute_error": 5.087960772698352e-06,
+      "depth_max_relative_error": 1.4845051402710245e-07,
+      "camera_depth_axis": [
+        0.6629678804861311,
+        0.44307846696808584,
+        -0.6034526174878502
+      ],
+      "camera_center": [
+        -2.513820490239979,
+        -0.5440356627111828,
+        2.9132843827786887
+      ],
+      "depth_gate": true,
+      "max_rgb_parity_error": 4.860925368888047e-07,
+      "zero_order_bitwise": true,
+      "zero_rgb_bitwise": true
+    },
+    {
+      "view": "000108.jpg",
+      "rank": 93,
+      "unique_points": 345242,
+      "depth_max_absolute_error": 7.831785723055873e-06,
+      "depth_max_relative_error": 1.9469666045344958e-07,
+      "camera_depth_axis": [
+        -0.4653146061629597,
+        0.21552960391769502,
+        -0.8585041101395442
+      ],
+      "camera_center": [
+        2.8829987521200047,
+        -0.3668563599035546,
+        3.7353056684053323
+      ],
+      "depth_gate": true,
+      "max_rgb_parity_error": 5.62209494847643e-07,
+      "zero_order_bitwise": true,
+      "zero_rgb_bitwise": true
+    },
+    {
+      "view": "000143.jpg",
+      "rank": 124,
+      "unique_points": 314785,
+      "depth_max_absolute_error": 3.6858620120483465e-06,
+      "depth_max_relative_error": 9.834700640259691e-08,
+      "camera_depth_axis": [
+        0.2754113792232149,
+        0.024598589345822937,
+        0.9610116969093363
+      ],
+      "camera_center": [
+        0.002471541417814992,
+        0.14708043474095603,
+        -1.94276686476686
+      ],
+      "depth_gate": true,
+      "max_rgb_parity_error": 4.833111039159732e-07,
+      "zero_order_bitwise": true,
+      "zero_rgb_bitwise": true
+    },
+    {
+      "view": "000179.jpg",
+      "rank": 155,
+      "unique_points": 320964,
+      "depth_max_absolute_error": 7.900685886852443e-06,
+      "depth_max_relative_error": 1.6850386774288702e-07,
+      "camera_depth_axis": [
+        -0.42901705040240334,
+        0.35638949402740194,
+        -0.8300186136532806
+      ],
+      "camera_center": [
+        2.4296994273936607,
+        -0.39310661012700626,
+        3.053872495161889
+      ],
+      "depth_gate": true,
+      "max_rgb_parity_error": 5.936638076686762e-07,
+      "zero_order_bitwise": true,
+      "zero_rgb_bitwise": true
+    },
+    {
+      "view": "000214.jpg",
+      "rank": 186,
+      "unique_points": 350999,
+      "depth_max_absolute_error": 3.1470686039369866e-06,
+      "depth_max_relative_error": 1.0618213732546876e-07,
+      "camera_depth_axis": [
+        0.22345423775263923,
+        -0.00168024509125707,
+        0.9747129733448818
+      ],
+      "camera_center": [
+        -0.5664509552722535,
+        0.357178688948122,
+        -2.2455364279479753
+      ],
+      "depth_gate": true,
+      "max_rgb_parity_error": 6.418048952294697e-07,
+      "zero_order_bitwise": true,
+      "zero_rgb_bitwise": true
+    },
+    {
+      "view": "000251.jpg",
+      "rank": 218,
+      "unique_points": 288255,
+      "depth_max_absolute_error": 5.4998556038299284e-06,
+      "depth_max_relative_error": 2.3113701106138154e-07,
+      "camera_depth_axis": [
+        0.01845100815219289,
+        0.3433071632055188,
+        -0.9390419330306534
+      ],
+      "camera_center": [
+        -0.4033358009556369,
+        -0.8275658143975461,
+        5.286793717309588
+      ],
+      "depth_gate": true,
+      "max_rgb_parity_error": 5.363693887927568e-07,
+      "zero_order_bitwise": true,
+      "zero_rgb_bitwise": true
+    }
+  ],
+  "passed_main_bits": [
+    8,
+    12
+  ],
+  "main_capacity_gate": true,
+  "gates": {
+    "8": {
+      "bit": 8,
+      "view": "ALL",
+      "pixels": 2048,
+      "exceed_count": 1816,
+      "exceed_fraction": 0.88671875,
+      "view_gate": true,
+      "max_channel_difference": 0.7548081095500945,
+      "p99_channel_difference": 0.4552793112219687,
+      "order_mse": 0.007849091962398323,
+      "old_gt_mse": 0.0018451837905840642,
+      "new_gt_mse": 0.009377314995245519,
+      "accepted_old": 161967,
+      "accepted_new": 160722,
+      "executed_order_changed_contributions": 139655,
+      "candidate_positions_changed": 4433627,
+      "qualifying_views": 8,
+      "capacity_gate": true
+    },
+    "12": {
+      "bit": 12,
+      "view": "ALL",
+      "pixels": 2048,
+      "exceed_count": 937,
+      "exceed_fraction": 0.45751953125,
+      "view_gate": true,
+      "max_channel_difference": 0.2318722023487209,
+      "p99_channel_difference": 0.11185327252899045,
+      "order_mse": 0.00048506760115814355,
+      "old_gt_mse": 0.0018451837905840642,
+      "new_gt_mse": 0.002351296903991699,
+      "accepted_old": 161967,
+      "accepted_new": 161914,
+      "executed_order_changed_contributions": 88354,
+      "candidate_positions_changed": 3914058,
+      "qualifying_views": 8,
+      "capacity_gate": true
+    },
+    "16": {
+      "bit": 16,
+      "view": "ALL",
+      "pixels": 2048,
+      "exceed_count": 129,
+      "exceed_fraction": 0.06298828125,
+      "view_gate": true,
+      "max_channel_difference": 0.030397300936064464,
+      "p99_channel_difference": 0.012265936486443122,
+      "order_mse": 5.068398991508717e-06,
+      "old_gt_mse": 0.0018451837905840642,
+      "new_gt_mse": 0.0018393284881017846,
+      "accepted_old": 161967,
+      "accepted_new": 161986,
+      "executed_order_changed_contributions": 27209,
+      "candidate_positions_changed": 2512089,
+      "qualifying_views": 8,
+      "capacity_gate": true
+    }
+  },
+  "pixels": 2048,
+  "metric_rows": 6144,
+  "summary_rows": 27,
+  "input_integrity_complete": true,
+  "hashes_after": {
+    "ply": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+    "cameras": "4ceb5372614821a2c7b6097ea1f92e6b4135b0e1a41e3610bb5a3676a115f6bb",
+    "traces": "858fa3805ad48df5996115d0285ac17c01934eebabb0cf54687846d5ed77a02f",
+    "caches": {
+      "/mnt/d/Documents/my 3dgs/research/experiments/ray-alpha-omission-v0/run/CACHE_000.npz": "193ae8e0be4dfd52de21ad767b35e11a62b1e65f17e1cee647446b27edf07da4",
+      "/mnt/d/Documents/my 3dgs/research/experiments/ray-alpha-omission-v0/run/CACHE_031.npz": "47f87025b53db689e6456cd2b1265c99cb02504bf6690aaaa8ba3d5c01365201",
+      "/mnt/d/Documents/my 3dgs/research/experiments/ray-alpha-omission-v0/run/CACHE_062.npz": "5c990a5f3a97dc24da4506ce677706673488a8ef2e08ab27bc9b7253907dec1b",
+      "/mnt/d/Documents/my 3dgs/research/experiments/ray-alpha-omission-v0/run/CACHE_093.npz": "90dd7a966038e30c647a508667f2c761cbab2e337a58009a293f57e102eb939d",
+      "/mnt/d/Documents/my 3dgs/research/experiments/ray-alpha-omission-v0/run/CACHE_124.npz": "d0bf8e29e1bc517d57a6025010fb3843d0ccbd85dabc9e19acbe0243647f67f5",
+      "/mnt/d/Documents/my 3dgs/research/experiments/ray-alpha-omission-v0/run/CACHE_155.npz": "ffb948fed7051856cdf75b3ef48aa3d023e61e9d6f3390a39a962eed12b73224",
+      "/mnt/d/Documents/my 3dgs/research/experiments/ray-alpha-omission-v0/run/CACHE_186.npz": "96182628e0b43bcb3897c2752dfd4bbc8b2ee1ac101adeb4ae4af240e68e7603",
+      "/mnt/d/Documents/my 3dgs/research/experiments/ray-alpha-omission-v0/run/CACHE_218.npz": "eb26d27ede28b8943e39216f3606eca7f8a03004d24a7b517d703867eee09cc6"
+    },
+    "script": "400d489c1adb2c9a07610594fa3d3f419ca0521d9a31e810d03b2802fa2f1f69",
+    "contract": "5137b5840183991c53a799ccaa8407ecdae3556248805a19c9484a50ebd6c92d"
+  },
+  "script_sha256": "400d489c1adb2c9a07610594fa3d3f419ca0521d9a31e810d03b2802fa2f1f69",
+  "contract_sha256": "5137b5840183991c53a799ccaa8407ecdae3556248805a19c9484a50ebd6c92d",
+  "max_rgb_parity_error": 6.418048952294697e-07,
+  "max_depth_relative_error": 2.499066858012136e-07,
+  "nominal_position_payload_only": true,
+  "scope": "Order-only fixed-support counterfactual. No complete position-quantization rendering, actual codec, speed, training or novelty demonstrated.",
+  "error_type": "ValueError",
+  "error": "dict contains fields not in fieldnames: 'capacity_gate', 'qualifying_views'",
+  "elapsed_seconds": 7.5081667370000105
+}

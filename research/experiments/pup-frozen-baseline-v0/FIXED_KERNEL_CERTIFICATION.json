@@ -1,0 +1,89 @@
+{
+  "schema": "pup-frozen-score-kernel-certification-v1",
+  "status": "PASS",
+  "numerical_verified": true,
+  "created_utc": "2026-10-22T21:28:25.258983+00:00",
+  "author": "root",
+  "official_fisher_commit": "f62f1cce2cc47a8609c58e4d448ca8eeb6f86e60",
+  "private_python_sha256": "1d4fc43bb67c4552193d340e2d6894ad7ec3c0d04a620fd7655c89ccf855df5b",
+  "private_extension_sha256": "ca99d74bf9d880585b64f75444339bf739276883c8c0f4a85b926fb6e15c9219",
+  "fixed_build_identity": {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/FIXED_BUILD_IDENTITY.json",
+    "sha256": "5630aad4281ff1242674910393a085583f0e7f4a62d517e2bf041ad1c3bbe092"
+  },
+  "witnesses": {
+    "SH0": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/witness-fixed-v1/RESULTS.json",
+      "sha256": "fe17840ed6db092073df4b6ead71a8a3ff99e4e508e2d61f86dc5242eaa000fc",
+      "status": "PASS",
+      "watchdog": {
+        "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/witness-fixed-v1/WATCHDOG.json",
+        "sha256": "00f32cca82f15277cc1a87d2e0a4a17f2b9f7efbc876d721835fe9d2f5e0c2fa"
+      },
+      "external": {
+        "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/witness-fixed-v1.EXTERNAL_RUN.json",
+        "sha256": "9e73108164f076773ca211c23cac69aae57d2af20d1bff7b20c66c74203dbb88",
+        "actual_host_wall_seconds": 9.7664205
+      },
+      "manifest": {
+        "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/witness-fixed-v1/MANIFEST.json",
+        "sha256": "29832880b0c8d1b8b20fe5b7e6f3f4e21f1c4e3054beb1e7d2d6474a4256fd47"
+      },
+      "raw_CPU_recomputed": true,
+      "per_block": [
+        {
+          "gaussian": 0,
+          "relative_Frobenius": 0.00011698789219866518,
+          "symmetry": 0.0
+        },
+        {
+          "gaussian": 1,
+          "relative_Frobenius": 6.051842750469515e-05,
+          "symmetry": 0.0
+        }
+      ],
+      "forward_calls": 26,
+      "statistical_backward_calls": 1
+    },
+    "SH3": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/witness-fixed-sh3-v1/RESULTS.json",
+      "sha256": "c529da10c0b8a6f29302ba7c1235f914de9fca6d5f54c6bed4b0d6cb8709d6e1",
+      "status": "PASS",
+      "watchdog": {
+        "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/witness-fixed-sh3-v1/WATCHDOG.json",
+        "sha256": "6f66553d4300fc9ab6afebf631f086a13665659b4b2867e5e2c4c0cb0cd9d09f"
+      },
+      "external": {
+        "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/witness-fixed-sh3-v1.EXTERNAL_RUN.json",
+        "sha256": "5a875facb2beab94b2bc3c7bde1f7f61256b93a1edd4cf65bd3113e488439a0f",
+        "actual_host_wall_seconds": 9.9129102
+      },
+      "manifest": {
+        "path": "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/witness-fixed-sh3-v1/MANIFEST.json",
+        "sha256": "0f0583a69b7ed7832481135aaf964280b10a2e7bf8e2df4823fc65ebf795b08d"
+      },
+      "raw_CPU_recomputed": true,
+      "per_block": [
+        {
+          "gaussian": 0,
+          "relative_Frobenius": 0.00012084929188607607,
+          "symmetry": 0.0,
+          "permutation_relative_Frobenius": 2.612479011701437e-07
+        },
+        {
+          "gaussian": 1,
+          "relative_Frobenius": 5.37807060820774e-05,
+          "symmetry": 0.0,
+          "permutation_relative_Frobenius": 1.0351694275590614e-07
+        }
+      ],
+      "forward_calls": 28,
+      "statistical_backward_calls": 2
+    }
+  },
+  "scope": "Only the two prelocked 2-Gaussian 4x4 synthetic SH0 and SH3 cases, including SH3 channel permutation; not real-scene accuracy, full219 feasibility, quality or novelty.",
+  "extra_render_calls": 0,
+  "training_steps": 0,
+  "tolerances_changed": false,
+  "raw_recomputation": "Read all saved +/- RGB, reconstruct full48x6 FD and per-G Gram on CPU float64; no producer imports, no torch, no Scene or teacher loads."
+}

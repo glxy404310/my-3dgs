@@ -1,0 +1,10 @@
+{
+  "call_number": 40,
+  "purpose": "artifact-full34-jury",
+  "tool": "spawn_agent",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "fork_turns": "none",
+  "prompt": "你是全池研究候选评审，不执行实验、不编辑文件、不把same-family结论当accepted。用户目标：继续找真正有价值创新，没希望立即停换，广泛提出；新steering优先去除伪影；当前只做冻结诊断不训练。quota stop：周剩余50%时停止，目前刚查90%。工作区D:\\Documents\\my 3dgs。必须完整读取 idea-stage/artifact-pivot-20261023/CANDIDATES.json 的全部34项原payload，不只看标题/最后2条；还读原26旧JURY/POST_PSF_JURY以知道未知vs停止、不重新判已停实施：idea-stage/continue-20261023/POST_PSF_JURY.md。最新证据优先：research/experiments/shared-coordinate-residual-v0/FINDINGS.md（首图8/48，科学fit未开始，当前诊断停/方法unknown），idea-stage/continue-20261023/PIXEL_PHASE_PRIMARY_OVERLAP.md（Mip已有同步ray-jitter+GT重采样，默认off），idea-stage/artifact-pivot-20261023/ARTIFACT_POSTHOC_PRIMARY_OVERLAP.md（Clean-GS直接posthoc无训练清理、多证据保护细节等已存在），research/experiments/teacher-artifact-triage-v0/SUMMARY.json及IMAGE_INDEX.md。根代理实看成熟未压缩teacher000121背景行人紫黑半透明拖影，000217车窗反射糊抹/人物残影；这是posthoc按GT误差选图探索，不是机制或浮点因果证明。不能把动态人的GT差异都当静态重建错误，不能把50%剪枝黑洞当成熟teacher本身有同等问题。请逐项给34项当前状态与一句理由，未测不冒充失败，主题重叠归并不能删原记录。选择唯一下一项最小必要条件检查，优先artifact-removal且若无足够依据不要勉强排artifact第一。必须说明原始method一句话、其独特可检验增量是否只是已知操作拼接、强简单/直接现有control、零训练最小证伪方案及预先固定capacity/tool/scientific停止线、如何避免把代理指标/动态GT/已有方法当新收益。下一步可以是纯COLMAP可信背景轨迹/真实照片证据容量，不能自动放宽#14/重复其实现，也不能做新3DGS参数拟合。若选#33，请具体区分Clean-GS、TIDI-GS、SplatQ群相互作用以及classic自由空间；方法需超过同预算无空域条件的群删除与semanticmask。你的参数建议仍是未锁草案，不应称已运行。原始模型Truck7k/30k与219train32test存在；已有raycache8训练view2048ray只是局部覆盖不能充当219完整观察。返回中文审慎报告；不做广泛新web，已给primarysources，有不确定就标unknown；不以『没检索到』认证新颖。",
+  "request_source": "exact executor invocation text; stored root session arguments encrypted"
+}

@@ -1,0 +1,51 @@
+# Fresh novelty review briefing
+
+User request: Run unchanged Train replication of an accepted visual quality/time tradeoff after Truck's original strict gate FAIL; retain that FAIL. Also check whether the direction is already done. Do not propose an idea pool. Review literature/novelty only; do not train or change experiment files.
+
+Actual intervention: existing clone-opacity correction plus isolated author LAS, same 3500 checkpoint and paired camera sequence; change full ADC interval 100 versus 200. ADC includes clone/split/prune and statistics resets. Train to7000, ADC cutoff6500, last event6400 in both arms, measure6500/6750/7000 all official held-out views. Fixed continuation seeds0/1 and A0 replay. No new adaptive rule, primitive score, loss, or renderer. Truck saved result FAIL under original quality/time gates; measured8.078%/10.697% training-segment savings with SSIM drops.001576/.001329. User has viewed actual A/B/GT and accepts those visual losses, asking Train replication. No claim of new method yet.
+
+Judge three potential claims separately:
+1. The constant interval200 modification itself is a novel method.
+2. Less-frequent ADC can trade fine texture quality/model count for training time; our concrete operator combination/two-scene fixed-window measurements might be a novel scientific finding rather than a local engineering reproduction.
+3. A broad research direction of reducing redundant densification or recovery-related training overhead remains available; proximity alone must not kill every possible future mechanism. There is no concrete new mechanism now.
+
+Verified primary-source leads (please independently check the decisive passages and latest versions/status where relevant):
+
+- Official3DGS repository README: https://github.com/graphdeco-inria/gaussian-splatting ; parameter densification_interval100 is documented; FAQ explicitly recommends raising it to reduce resource use while warning quality changes. Our local pinned repo54c035f exposes same option. This is known configurable behavior, not a paper reproducing our exact two-scene comparison.
+- VR-Splatting: Foveated Radiance Field Rendering via3DGS and Neural Points, Franke/Fink/Stamminger, PACMCGIT2025 DOI10.1145/3728302; https://arxiv.org/html/2410.17932v2 §4 Implementation says densification interval200. Hybrid foveated rendering, cropped training/opacity decay differ; does not establish our exact comparison or our8% result. ACM DOI fetching403, arXiv author fulltext succeeds.
+- FastGS: Training3DGS in100Seconds, https://arxiv.org/html/2511.04283v1 §4 implementation explicitly base ADC every500 and FastGS_Big every100 to trade speed/quality. Includes VCD/VCP/consistencybasemask, not our fixed-operator A/B; verify latest publication status before calling published.
+- DashGaussian CVPR2025: https://arxiv.org/html/2503.18402v1 §§4–5 and Table3: joint resolution/primitive growth scheduler, momentum budget; primitive-only ablation. Official https://dashgaussian.github.io/ and CVF PDF available. Not just a constant interval change; its paper-reported acceleration cannot be directly compared to our local window.
+- Improving Densification in3DGS for High-Fidelity Rendering: https://arxiv.org/html/2508.12313v1 §3.5 GrowthControl prevents early growth/overhead; LAS/RAP/MU are distinct. We reuse isolatedLAS, not full algorithm. MU update interval refers to gradient updates afterdensification, not ADC interval; do not conflate them.
+- Decomposing Densification for Faster3D Scene Reconstruction: https://arxiv.org/html/2507.20239v1 §3 global-to-local split-only then split+clone plus energy-basedmultires and adaptiveopacitypruning. Neighbor on early redundantgrowth, not same mechanism.
+- AdpSplit2026-05-07: https://arxiv.org/html/2605.06876v1 §4 shortened densification variants anderror-driven variablechildren; baseline T100 except FastGS T500. Explicit shortened-schedule baseline controls; not identical to doublingcadence at fixed iterations.
+- SIG / Signal Structure-AwareGS: https://arxiv.org/html/2607.01698v1 and ICLR2026 official https://proceedings.iclr.cc/paper_files/paper/2026/hash/f67449c7ab72f441d3a713b046c6818c-Abstract-Conference.html : scene-frequency convergence drives resolution/densification. Broader adaptive-scheduling claim already has neighbors.
+- Smart Target Point Control: https://arxiv.org/html/2605.16158v1 May2026, quadratic targettrajectory, quota governor, thresholdcontrol and resetlockout. Neighbor to budget/growthcontrol, not an exactmatch.
+- DART-3DGS Journal ofImaging2026-10-07/10? https://www.mdpi.com/2313-433x/12/10/483 : age-gated densification Tmat=2cadence, not globalcadencechange. Primary fullpage currently429; indexed publisher text suggests overlap but parent has not accepted fullmechanism claims as verified. Do not use as decisive without obtaining fulltext.
+
+Search: multiple formulations interval200, densificationfrequency, speed-qualitytradeoff, scheduling, fewerrounds, recovery; explicit recentwindow2026-04-22 to2026-10-22 searches found AdpSplit/SIG/SmartTPC and other leads. Undermind orientation reportsUSER_NOT_LOGGED_IN; web/authorfulltexts are available. No finite search proves absence.
+
+Return Chinese report: closest exact overlap, what is already known, any defensible concrete scientific delta actually present (do not invent one), separate engineering usefulness from novelty; recommendation about this fixed100→200 idea versus a broad future direction. Be concise. Save your full response to `.aris/traces/novelty-check/2026-10-22_adc-frequency/001-review.response.md` and return it. Do not modify any other files except reviewer-specific notes in that trace directory. This review is same-family provisional, not an experiment integrity audit.
+
+=== NOVELTY VERDICT LIMITS (these bound how you judge, never how widely you search) ===
+Search exhaustively; judge calibrated. Two failures waste months equally:
+passing an idea a published paper already contains, and killing a viable idea
+because the territory has neighbors.
+1. Proximity is information, not a verdict. Someone working nearby goes in the
+   report; it is not by itself a reason to reject.
+2. ABANDON has exactly one qualification: a specific published paper already
+   contains this result — name that paper. No named paper, no ABANDON.
+3. Crowded-but-deltaed is PROCEED: state the delta in one sentence a reviewer
+   could verify. Thin or contested delta is PROCEED WITH CAUTION — say what
+   would make it carry, not why it should die. CAUTION is not a safe middle:
+   if you cannot name the specific thing that makes the delta thin, the
+   verdict is PROCEED.
+4. Concurrent or competing work is not a veto. That is a race — report it and
+   let the user decide whether to run it.
+5. A direct attack on a central problem is legitimate novelty when nobody has
+   executed it well. "This area is hot" does not mean "this area is taken."
+6. This check is an early gate, never the last one — more triage, pilots, or
+   external review still stand between any idea and a paper, whatever order
+   this run uses. A wrongly passed idea dies cheaply at one of them; a wrongly
+   killed idea is never seen again. When torn between two verdicts, choose the
+   more permissive one.
+Say plainly when an idea clears the check. Do not manufacture overlap.

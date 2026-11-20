@@ -1,0 +1,14 @@
+{
+  "started_UTC": "2026-10-22T21:40:58.9991815Z",
+  "finished_UTC": "2026-10-22T21:41:59.6191413Z",
+  "exit_code": 0,
+  "actual_host_wall_seconds": 60.612248,
+  "hard_limit_seconds": 188,
+  "within_188_seconds": true,
+  "attempts": 1,
+  "prior_failed_external_wall_seconds": 11.7440519,
+  "cumulative_main_external_wall_seconds": 72.3562999,
+  "within_all_primary_200_seconds": true,
+  "shared_main_plus_audit_limit_seconds": 300,
+  "scope": "Explicit path repair only; PUP33 native evaluation, no changed scientific parameters"
+}

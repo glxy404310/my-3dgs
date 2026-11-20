@@ -1,0 +1,12 @@
+{
+  "status": "CPU_SYNTHETIC_ONLY_PASS",
+  "torch_imported": false,
+  "scientific_inputs_read": false,
+  "actual_author_prune_cases": 4,
+  "ties_preserved": true,
+  "negative_infinity_preserved": true,
+  "namespace_basename_checks": true,
+  "interrupted_group_cleanup": true,
+  "numerical_kernel_certification": false,
+  "scientific_run_verified": false
+}

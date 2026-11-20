@@ -1,0 +1,19 @@
+{
+  "skill": "novelty-check",
+  "status": "complete",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "timestamp": "2026-10-23T06:52:43.306894+08:00",
+  "candidate_ids": [
+    43,
+    44
+  ],
+  "no_experiments": true,
+  "agent_id": "01a165d0-cba9-7f00-bedb-c05fca7b2711",
+  "public_final_count": 2,
+  "verdict": "#44 sole bounded preparation recommendation; no efficacy or training approval; #43 stop localfailedrediscovery",
+  "completed_at": "2026-10-23T07:07:23.860435+08:00"
+}

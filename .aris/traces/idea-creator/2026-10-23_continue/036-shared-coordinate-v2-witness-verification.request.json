@@ -1,0 +1,12 @@
+{
+  "call_number": 36,
+  "purpose": "shared-coordinate-v2-witness-verification",
+  "timestamp": "2026-10-22T19:02:43.659Z",
+  "tool": "followup_task",
+  "model": "inherited-primary",
+  "reasoning_effort": "inherited",
+  "prompt": "请独立只读核验v2实际工具见证，并可新建唯一 run-v2/INDEPENDENT_WITNESS_ANALYSIS.json（禁止改RESULTS/source/任何已有文件，不用GPU）。v2 session34770 exit1，9forwards3合成见证通过后load7000因重复sys.path注册导致guard异常，真实GT还未开始，原判INCONCLUSIVE保留。用保存raw NPY/NPZ从原数组独立重算：三个knownshift有效数量、中位/P90/RMS、sigma_shift；repeat/zeroRGB最大差/MSE及sigma_zero归一化梯度feature值；若可便宜核验合成target双线性像素与source/s，也检查匹配raw refinedoffset→summary的join。不要调用主程序或GPU/旧helper来重跑结果，不修改参数/阈值。记录科学数据尚无、不能methodpass，模型/相机hash状态含义；给出证据覆盖与局限。检查新v3只做路径注册幂等，不必再重复评审整个设计。",
+  "supplementary_messages": [],
+  "request_source": "exact executor invocation text; stored session message argument encrypted",
+  "stored_call_arguments_sha256": "b70227b81ffc3f92b886299a20a1def38a1293e23ee1ea522581ce943e411ea8"
+}

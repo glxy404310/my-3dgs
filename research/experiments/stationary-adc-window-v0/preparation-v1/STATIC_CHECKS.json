@@ -1,0 +1,15 @@
+{
+  "status": "STATIC_BLUEPRINT_CHECKS_PASS",
+  "executed_model_or_training_code": false,
+  "checks": {
+    "prepared_json_valid": true,
+    "native_train_ast_parses": true,
+    "initial_stack_restore_text_anchor_occurrences": 1,
+    "after_add_densification_stats_text_anchor_occurrences": 1,
+    "native_commit_id_length": 40,
+    "new_updates_authorized": false
+  },
+  "method": "Windows Python standard library read-only JSON parsing, ast.parse, exact string counting, SHA-256; no native source compilation/import/execution",
+  "not_tested": ["runtime package restore", "runtime state invariants", "runtime stop boundary", "backend provenance collection", "GPU execution", "resource supervision"],
+  "scope": "Blueprint anchors and JSON only; not executable collector validation"
+}

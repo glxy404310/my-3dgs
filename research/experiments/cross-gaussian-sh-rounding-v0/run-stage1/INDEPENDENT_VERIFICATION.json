@@ -1,0 +1,16 @@
+{
+  "audit_valid": false,
+  "failure": "independent_worker_exception",
+  "worker_stdout": "",
+  "independent_worker_watchdog": {
+    "actual_child_exit_code": 1,
+    "external_child_process_wall_seconds": 9.690460655999999,
+    "child_timeout_seconds": 290,
+    "shell_TERM_seconds": 295,
+    "shell_KILL_seconds": 300,
+    "timed_out": false,
+    "wall_scope": "before subprocess spawn through complete worker wait/stdout collection; includes worker imports and JSON serialization, excludes coordinator final audit JSON write",
+    "stderr": "Traceback (most recent call last):\n  File \"/mnt/d/Documents/my 3dgs/scripts/experiments/verify_cross_gaussian_sh_rounding_stage1.py\", line 519, in <module>\n    raise SystemExit(main())\n  File \"/mnt/d/Documents/my 3dgs/scripts/experiments/verify_cross_gaussian_sh_rounding_stage1.py\", line 487, in main\n    print(json.dumps(worker(run), allow_nan=False))\n  File \"/mnt/d/Documents/my 3dgs/scripts/experiments/verify_cross_gaussian_sh_rounding_stage1.py\", line 434, in worker\n    check(before == after, \"all_independent_input_hashes_unchanged_after_audit\")\n  File \"/mnt/d/Documents/my 3dgs/scripts/experiments/verify_cross_gaussian_sh_rounding_stage1.py\", line 199, in check\n    checks.append({\"label\": label, \"passed\": bool(condition)})\nValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()\n",
+    "automatic_retry_permitted": false
+  }
+}

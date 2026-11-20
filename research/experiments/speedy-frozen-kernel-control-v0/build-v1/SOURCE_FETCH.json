@@ -1,0 +1,84 @@
+{
+  "status": "SOURCE_PREPARATION_PASS",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "clone",
+        "--no-checkout",
+        "--filter=blob:none",
+        "https://github.com/j-alex-hanson/speedy-splat.git",
+        "/home/administrator/projects/speedy-frozen-main-34c45c6d"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.558231286,
+      "log": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/source-fetch-00.log"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/home/administrator/projects/speedy-frozen-main-34c45c6d",
+        "checkout",
+        "--detach",
+        "34c45c6d9b8bd6110231864f2f358b6d3abbf73d"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.012186506,
+      "log": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/source-fetch-01.log"
+    },
+    {
+      "argv": [
+        "git",
+        "clone",
+        "--no-checkout",
+        "--filter=blob:none",
+        "https://github.com/j-alex-hanson/speedy-splat-rasterizer.git",
+        "/home/administrator/projects/speedy-frozen-rasterizer-b38abb6d"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.455713151999998,
+      "log": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/source-fetch-02.log"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/home/administrator/projects/speedy-frozen-rasterizer-b38abb6d",
+        "checkout",
+        "--detach",
+        "b38abb6da7a7217999f8c5ec0e9219284464ffe0"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.582957371,
+      "log": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/source-fetch-03.log"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/home/administrator/projects/speedy-frozen-rasterizer-b38abb6d",
+        "submodule",
+        "update",
+        "--init",
+        "--depth",
+        "1",
+        "--",
+        "third_party/glm"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 43.40292611499999,
+      "log": "/mnt/d/Documents/my 3dgs/research/experiments/speedy-frozen-kernel-control-v0/build-v1/source-fetch-04.log"
+    }
+  ],
+  "torch_imported": false,
+  "build_performed": false,
+  "cuda_initialized": false,
+  "source_manifest_sha256": "fe2868c40914c6951eca9b7de2428dc9ea498c4904c78a2c257eb210beab847e",
+  "tracked_file_counts": {
+    "main": 37,
+    "rasterizer": 21,
+    "glm": 1529
+  },
+  "elapsed_seconds": 96.13997617400001
+}

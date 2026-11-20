@@ -1,0 +1,10 @@
+{
+  "started_UTC": "2026-10-22T22:02:31.2130136Z",
+  "finished_UTC": "2026-10-22T22:03:01.1301772Z",
+  "exit_code": 0,
+  "actual_host_wall_seconds": 29.9126482,
+  "hard_limit_seconds": 180,
+  "within_180_seconds": true,
+  "attempts": 1,
+  "scope": "Full actual SH8 encode-independentdecode-rawverification CPU only"
+}

@@ -1,0 +1,33 @@
+START git_clone
+END git_clone exit=0 wall=11.760s
+START checkout_official_fixed
+END checkout_official_fixed exit=0 wall=16.534s
+START glm_init
+END glm_init exit=0 wall=10.188s
+START pin_main
+END pin_main exit=0 wall=0.006s
+START pin_fisher
+END pin_fisher exit=0 wall=0.005s
+START pin_glm
+END pin_glm exit=0 wall=0.005s
+START pin_old_fisher
+END pin_old_fisher exit=0 wall=0.006s
+START pin_old_glm
+END pin_old_glm exit=0 wall=0.006s
+START verify_merge_parent
+END verify_merge_parent exit=0 wall=0.006s
+START verify_unique_change
+END verify_unique_change exit=0 wall=0.006s
+START verify_official_patch
+END verify_official_patch exit=0 wall=12.156s
+START hardware_readonly
+END hardware_readonly exit=0 wall=0.092s
+START nvcc_readonly
+END nvcc_readonly exit=0 wall=0.011s
+START gxx_readonly
+END gxx_readonly exit=0 wall=0.006s
+START author_build
+END author_build exit=0 wall=68.275s
+START private_import_only
+END private_import_only exit=0 wall=0.989s
+{"decision": "PRIVATE_AUTHOR_BUILD_AND_IMPORT_COMPLETE_NO_SCORING", "error": null, "stage_wall_seconds": 121.150041784}

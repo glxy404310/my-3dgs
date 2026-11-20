@@ -1,0 +1,60 @@
+{
+  "goal_status": "active",
+  "previous_goal_turn": "progress: independent 395-row join and byte-identical global-worst image provenance verification completed; no new GPU/training",
+  "completed": [
+    "23-item complete provisional jury",
+    "Four actual frozen or CPU checks, no training",
+    "Timestamped report and archived previous latest",
+    "2026-10-23 joint alpha/full-codec/fullRGB and independent CSV checks",
+    "2026-10-23 near-repeat pose-only capacity0.5025s,1/3pairs",
+    "26-item complete provisional jury; no unreserved PROCEED",
+    "native-repeat96 summaries/672 repeats independently recomputed; current nondeterminism route STOP",
+    "alpha oracle576rows independent recomputation; necessary-room gates true, not a practical repair",
+    "ray-cache2048rows and64independent replays; current frozen deployment STOP",
+    "2026-10-23 opacity-transfer224 rows valid and independent293NPZ raw verification strictSTOP",
+    "2026-10-23 sorting6144 saved rows original serializationFAILED preserved; independent192-output replay validates capacity",
+    "2026-10-23 fresh complete26 post-pilot provisional review, one priority next control",
+    "2026-10-23 integrated timestamped report and README/NEXT/findings/MANIFEST updated",
+    "2026-10-23 matched-Q sorting61.947s41forward8192rows terminal INCONCLUSIVE; independent28.442s512-output replay and5actualcodecs checked",
+    "2026-10-23 JPEG source-chain readonly feasibility: current JPEG corresponds to loaded GT; raw coefficients/clean references unknown",
+    "2026-10-23 shared-PSF screen contract locked; implementation being prepared; not yet launched",
+    "2026-10-23 395-view frozen image evidence independently rechecked including global worst000016 image provenance"
+  ],
+  "terminal_experiments": [
+    "coverage session86018 exit0",
+    "SH session84774 exit1, parity failure not method verdict",
+    "photometric session48676 exit0, gatefalse",
+    "parallax session36118 exit0, gatefalse",
+    "alpha28829exit0, encode81741exit0, RGB90524exit0 valid STOP",
+    "repeat-pose synchronous cf48aa exit0 no live session",
+    "native-repeat session64644 exit0",
+    "alpha-oracle session69631 exit0",
+    "ray-alpha-omission session50664 exit0",
+    "opacity-transfer attempt0 import missing scipy exit1, no model computation",
+    "opacity-transfer attempt1 invalid backup-radii assertion exit1;1forward/0eval archived",
+    "opacity-transfer corrected measurement session87638 exit0;224rows64.9572s STOP",
+    "sorting CPU original outerexit1 after6144rows serialization error;postprocess independently verified, no rerun",
+    "sorting matched-Q session74770 exit1 original native depth probe coverage failure; INCONCLUSIVE preserved"
+  ],
+  "current_action": "Prepare CPU-only shared-PSF screen under locked contract; no scientific process active yet. Matched-Q implementation continuation stopped, method remains unknown.",
+  "active_agent": [
+    "/root/sorting_position_codec (PSF code preparation, no launch)",
+    "/root/psf_primary_source_overlap (primary literature source verification)"
+  ],
+  "next_required_evidence": "Root review prepared PSF implementation, then one CPU process hard300sec: known-kernel witness first, real held-block-out oracle only after witness passes; no 3DGS training",
+  "no_automatic_rerun": [
+    "SH parity failure",
+    "photometric failed gate",
+    "parallax failed gate",
+    "active novel-pose carrier",
+    "joint rounding full-GT failed implementation",
+    "repeat-pose currentTruck insufficient capacity under fixed rule",
+    "native-repeat current nondeterminism gate not met",
+    "ray-alpha-omission current frozen deployment gate failed",
+    "nearest-neighbor projected-area opacity transfer: strict strong-control gate failed; no formula or multiplier rescue",
+    "matched-Q sorting strict native-probe coverage failure; do not approximate missing depths or rescue main displacement violation"
+  ],
+  "updated_at": "2026-10-23T01:52:36.857969+08:00",
+  "current_goal_turn": "in progress: new CPU scientific screen being implemented, not yet an experimental outcome",
+  "entry_previous_goal_turn_classification": "no progress: only rechecked earlier frozen images"
+}

@@ -1,0 +1,11 @@
+{
+  "hashes": {
+    "teacher": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+    "scores": "f873c5f648c40a65222b35400d9a5390d7756eb46f260b69d7feb89774149770",
+    "cameras": "4ceb5372614821a2c7b6097ea1f92e6b4135b0e1a41e3610bb5a3676a115f6bb",
+    "contract": "e7b863631efb2041d79c82df9549d52f562f958608e25e6d9742e60e255bf3d0",
+    "script": "723a6cf3de8fea9a7369a8dfd2bc788706afaee178f3a318f0d9dd2eb832a4ec"
+  },
+  "training_performed": false,
+  "gpu_used": false
+}

@@ -1,0 +1,19 @@
+{
+  "source": "/mnt/d/Documents/my 3dgs/research/experiments/truck30k-coverage-controls-v0/run/000016.jpg_coverage.png",
+  "source_sha256": "a70f37cd2acca3b5529b5821475fcf91b178850ab4eb719a211b4805141a344e",
+  "output": "global_worst_000016_teacher_compressed.png",
+  "output_sha256": "e1bd0aa9b96494850c6f370a7cc8783b273d1cec1212a9eed0a946b538fdfb69",
+  "operation": "Extract first two original-resolution columns (teacher, original24). No resampling or pixel/color changes.",
+  "crop_box": [
+    0,
+    0,
+    1958,
+    578
+  ],
+  "point_selection": "original frozen 24-calibration 50-percent pruning, replay verified in original control results",
+  "view": "000016.jpg",
+  "scope": "highest teacher-student MSE among all 395 original evaluated views; real non-calibration training camera",
+  "teacher_student_mse": 0.017623452469706535,
+  "new_rendering": false,
+  "training": false
+}

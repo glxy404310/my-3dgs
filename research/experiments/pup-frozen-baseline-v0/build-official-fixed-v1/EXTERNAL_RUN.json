@@ -1,0 +1,24 @@
+{
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu-22.04",
+    "--",
+    "/usr/bin/timeout",
+    "--signal=TERM",
+    "--kill-after=5s",
+    "895s",
+    "/home/administrator/venvs/3dgs/bin/python",
+    "-B",
+    "-u",
+    "/mnt/d/Documents/my 3dgs/research/experiments/pup-frozen-baseline-v0/build-official-fixed-v1/run_private_build.py"
+  ],
+  "windows_host_pid": 21792,
+  "started_UTC": "2026-10-22T21:11:20.5410881Z",
+  "finished_UTC": "2026-10-22T21:13:26.6544557Z",
+  "exit_code": 0,
+  "wall_seconds": 126.1874355,
+  "outer_timeout_seconds": 895,
+  "outer_kill_after_seconds": 5,
+  "hard_limit_seconds": 900
+}

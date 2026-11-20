@@ -1,0 +1,15 @@
+{
+  "process_exit_code": 0,
+  "actual_wall_seconds": 18.2401446,
+  "terminate_after_seconds": 115,
+  "kill_after_seconds": 5,
+  "hard_limit_seconds": 120,
+  "timeout": false,
+  "within_120_seconds": true,
+  "complete": true,
+  "session_id": 11683,
+  "terminal": true,
+  "audit_result_status": "PASS",
+  "audit_result_sha256": "98e69c060547c760982b6bd553e371ff41c152704ecf484dc1ed4399089f19f5",
+  "audit_script_sha256": "eb75f1d5896ee04975786351d3ac60a449f2ca9dd7382547db3294edaaa62f5b"
+}

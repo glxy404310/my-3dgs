@@ -1,0 +1,10 @@
+{
+  "started_UTC": "2026-10-22T21:27:21.9276915Z",
+  "finished_UTC": "2026-10-22T21:27:31.8447978Z",
+  "exit_code": 0,
+  "actual_host_wall_seconds": 9.9129102,
+  "hard_limit_seconds": 120,
+  "within_120_seconds": true,
+  "attempts": 1,
+  "scientific_scope": "Independent fixed 2G/4x4 SH3 direction and permutation witness only"
+}

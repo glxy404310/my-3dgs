@@ -1,0 +1,28 @@
+{
+  "round": 2,
+  "scope": "Read-only review of output paths and RSS monitor lifecycle",
+  "output_paths": "PASS",
+  "undeclared": [],
+  "stale_rows": [],
+  "semantic_undeclared": [],
+  "findings": [
+    {
+      "priority": "P1",
+      "location": "scripts/experiments/run_pup_frozen_score.py:643",
+      "issue": "SIGUSR1 can interrupt terminate_group during exception cleanup before SIGKILL/reap. cleanup_exception is recorded without completing termination, allowing a detached stage to survive supervisor exit.",
+      "trigger": "Timeout/error followed by RSS exceeding the limit while the child saves partial tensors after TERM.",
+      "fix": "Latch monitor failure and prevent resource signals from interrupting cleanup; guarantee group kill/reap in a finally path."
+    },
+    {
+      "priority": "P2",
+      "location": "scripts/experiments/run_pup_frozen_score.py:614",
+      "issue": "Monitor startup occurs before the protected try, and monitor shutdown occurs inside an unprotected finally. An early or pending SIGUSR1 can bypass final result persistence.",
+      "fix": "Protect monitor startup and disarm or safely handle pending resource signals during shutdown."
+    }
+  ],
+  "verdict": "CHANGES_REQUIRED",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "code_executed": false,
+  "scientific_execution_verified": false
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "event": 3600,
+    "policy": "simplex",
+    "eligible": 9,
+    "proposed": 27,
+    "surviving": 27,
+    "theoretical_mean_error_max": 7.105427357601002e-15,
+    "theoretical_cov_error_max": 7.771561172376096e-16,
+    "actual_mean_error_max": 1.2715657646822365e-06,
+    "actual_cov_error_max": 3.981619779991341e-07
+  },
+  {
+    "event": 3600,
+    "policy": "coincident",
+    "eligible": 9,
+    "proposed": 27,
+    "surviving": 27,
+    "theoretical_mean_error_max": 7.105427357601002e-15,
+    "theoretical_cov_error_max": 1.003085618968828,
+    "actual_mean_error_max": 7.105427357601002e-15,
+    "actual_cov_error_max": 1.0030855469441682
+  },
+  {
+    "event": 3600,
+    "policy": "random_20261022",
+    "eligible": 9,
+    "proposed": 27,
+    "surviving": 27,
+    "theoretical_mean_error_max": 7.105427357601002e-15,
+    "theoretical_cov_error_max": 1.7621828463433822,
+    "actual_mean_error_max": 1.2715657504713818e-06,
+    "actual_cov_error_max": 1.7621828002297926
+  },
+  {
+    "event": 3600,
+    "policy": "random_20261023",
+    "eligible": 9,
+    "proposed": 27,
+    "surviving": 27,
+    "theoretical_mean_error_max": 7.105427357601002e-15,
+    "theoretical_cov_error_max": 0.9859574897259518,
+    "actual_mean_error_max": 1.2715657504713818e-06,
+    "actual_cov_error_max": 0.9859574176378032
+  },
+  {
+    "event": 3600,
+    "policy": "recursive_published",
+    "eligible": 9,
+    "proposed": 40,
+    "surviving": 40,
+    "theoretical_mean_error_max": 7.105427357601002e-15,
+    "theoretical_cov_error_max": 1.4779844015322396e-15,
+    "actual_mean_error_max": 5.960464477539063e-08,
+    "actual_cov_error_max": 7.893000045083864e-07
+  },
+  {
+    "event": 3600,
+    "policy": "recursive_shared",
+    "eligible": 9,
+    "proposed": 40,
+    "surviving": 40,
+    "theoretical_mean_error_max": 7.105427357601002e-15,
+    "theoretical_cov_error_max": 1.4779844015322396e-15,
+    "actual_mean_error_max": 5.960464477539063e-08,
+    "actual_cov_error_max": 7.893000045083864e-07
+  },
+  {
+    "event": 3700,
+    "policy": "simplex",
+    "eligible": 7,
+    "proposed": 25,
+    "surviving": 25,
+    "theoretical_mean_error_max": 8.881784197001252e-16,
+    "theoretical_cov_error_max": 1.6653345369377348e-15,
+    "actual_mean_error_max": 1.2715657504713818e-06,
+    "actual_cov_error_max": 5.135043501525161e-07
+  },
+  {
+    "event": 3700,
+    "policy": "coincident",
+    "eligible": 7,
+    "proposed": 25,
+    "surviving": 25,
+    "theoretical_mean_error_max": 3.552713678800501e-15,
+    "theoretical_cov_error_max": 0.5266088603564392,
+    "actual_mean_error_max": 3.552713678800501e-15,
+    "actual_cov_error_max": 0.5266088075817741
+  },
+  {
+    "event": 3700,
+    "policy": "random_20261022",
+    "eligible": 7,
+    "proposed": 25,
+    "surviving": 25,
+    "theoretical_mean_error_max": 3.552713678800501e-15,
+    "theoretical_cov_error_max": 0.33509032172290343,
+    "actual_mean_error_max": 4.76837158203125e-07,
+    "actual_cov_error_max": 0.3350904254761169
+  },
+  {
+    "event": 3700,
+    "policy": "random_20261023",
+    "eligible": 7,
+    "proposed": 25,
+    "surviving": 25,
+    "theoretical_mean_error_max": 3.552713678800501e-15,
+    "theoretical_cov_error_max": 0.25289191949321477,
+    "actual_mean_error_max": 4.76837158203125e-07,
+    "actual_cov_error_max": 0.2528918123423342
+  },
+  {
+    "event": 3700,
+    "policy": "recursive_published",
+    "eligible": 7,
+    "proposed": 44,
+    "surviving": 44,
+    "theoretical_mean_error_max": 1.7763568394002505e-15,
+    "theoretical_cov_error_max": 1.1657341758564144e-15,
+    "actual_mean_error_max": 0.0,
+    "actual_cov_error_max": 1.59341237621069e-06
+  },
+  {
+    "event": 3700,
+    "policy": "recursive_shared",
+    "eligible": 7,
+    "proposed": 44,
+    "surviving": 44,
+    "theoretical_mean_error_max": 1.7763568394002505e-15,
+    "theoretical_cov_error_max": 1.1657341758564144e-15,
+    "actual_mean_error_max": 0.0,
+    "actual_cov_error_max": 1.59341237621069e-06
+  }
+]

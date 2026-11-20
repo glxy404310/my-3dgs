@@ -1,0 +1,13 @@
+{
+  "call_number": 1,
+  "purpose": "fixed-cadence-novelty",
+  "timestamp": "2026-10-22T13:25:26.9041924+08:00",
+  "agent_id": "/root/adc_frequency_novelty",
+  "model": "gpt-6-astra",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "duration_ms": null,
+  "status": "ok",
+  "response_file": "001-review.response.md"
+}

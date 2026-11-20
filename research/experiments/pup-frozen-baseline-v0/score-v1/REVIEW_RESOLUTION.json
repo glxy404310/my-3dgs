@@ -1,0 +1,27 @@
+{
+  "schema": "pup-frozen-score-static-review-resolution-v1",
+  "review_round_budget": 2,
+  "review_rounds_used": 2,
+  "semantic_undeclared_count": 0,
+  "round1_findings": "Fixed and reread by same-family reviewer before its public final",
+  "round2_findings": [
+    {
+      "id": "P1",
+      "executor_resolution": "supervisor.begin_cleanup latches closing, stops monitor, disarms signals; terminate_group always sends group SIGKILL and reaps in finally",
+      "check": "CPU synthetic child ignores TERM; injected self SIGUSR1 interrupts TERM wait; unconditional KILL/reap and no live group members verified",
+      "status": "EXECUTOR_FIXED_CPU_CHECK_PASS_ROOT_REVIEW_PENDING"
+    },
+    {
+      "id": "P2",
+      "executor_resolution": "monitor.start is inside try; begin_cleanup covers except/finally and ignores late resource/deadline signals; join only occurs if monitor started",
+      "check": "AST-only parse plus executor static inspection; interrupted group cleanup CPU check",
+      "status": "EXECUTOR_FIXED_STATIC_CHECK_PASS_ROOT_REVIEW_PENDING"
+    }
+  ],
+  "fixes_after_last_independent_review": true,
+  "root_must_review_final_diff_before_science": true,
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "scientific_execution_verified": false,
+  "launch_authorized": false
+}

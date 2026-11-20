@@ -1,0 +1,16 @@
+{
+  "call_number": 23,
+  "purpose": "psf-minimal-design",
+  "timestamp": "2026-10-22T17:40:16.103Z",
+  "agent_id": "01a164b2-4561-7190-a768-4a440f31c060",
+  "agent_path": "/root/psf_frozen_minimal_design",
+  "model": "inherited-primary",
+  "reasoning_effort": "inherited-primary",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "request_recovered_verbatim": true,
+  "response_recovered_verbatim": true,
+  "response_scope": "selected actual final answer; inherited transcript answers excluded"
+}

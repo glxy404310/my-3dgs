@@ -1,0 +1,77 @@
+{
+  "status": "pass",
+  "policy": "mode_clock",
+  "parent_actual_steps": {
+    "xyz": 3569,
+    "f_dc": 3569,
+    "f_rest": 3569,
+    "opacity": 3569,
+    "scaling": 3569,
+    "rotation": 3569
+  },
+  "legacy_max_abs_error": null,
+  "update_stats": [
+    {
+      "step": 1,
+      "groups": [
+        {
+          "group": "xyz",
+          "nominal_lr": 0.000538337063014659,
+          "common_age": 3570,
+          "difference_age": 1,
+          "common_update_rms": 0.0007051520515233278,
+          "difference_update_rms": 6.382615538313985e-07,
+          "child_update_rms": 0.0004986179992556572
+        },
+        {
+          "group": "f_dc",
+          "nominal_lr": 0.0025,
+          "common_age": 3570,
+          "difference_age": 1,
+          "common_update_rms": 0.0029460047371685505,
+          "difference_update_rms": 0.0,
+          "child_update_rms": 0.0020831399597227573
+        },
+        {
+          "group": "f_rest",
+          "nominal_lr": 0.000125,
+          "common_age": 3570,
+          "difference_age": 1,
+          "common_update_rms": 0.000150105741340667,
+          "difference_update_rms": 0.0,
+          "child_update_rms": 0.0001061407892848365
+        },
+        {
+          "group": "opacity",
+          "nominal_lr": 0.025,
+          "common_age": 3570,
+          "difference_age": 1,
+          "common_update_rms": 0.011866890825331211,
+          "difference_update_rms": 0.0,
+          "child_update_rms": 0.00839115958660841
+        },
+        {
+          "group": "scaling",
+          "nominal_lr": 0.005,
+          "common_age": 3570,
+          "difference_age": 1,
+          "common_update_rms": 0.005671937018632889,
+          "difference_update_rms": 0.0,
+          "child_update_rms": 0.004010665230453014
+        },
+        {
+          "group": "rotation",
+          "nominal_lr": 0.001,
+          "common_age": 3570,
+          "difference_age": 1,
+          "common_update_rms": 0.0010741535807028413,
+          "difference_update_rms": 0.0,
+          "child_update_rms": 0.0007595412898808718
+        }
+      ]
+    }
+  ],
+  "proposal_does_not_mutate_outer": true,
+  "child_only_override": true,
+  "scope": "Isolated 500-step sibling pairing only; native child state computed but ignored; no full-ADC handoff"
+}

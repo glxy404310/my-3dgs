@@ -1,0 +1,10 @@
+{
+  "call_number": 45,
+  "purpose": "cross-sh-primary-overlap",
+  "timestamp": "2026-10-22T19:55:47.930Z",
+  "tool": "collaboration.followup_task",
+  "agent_path": "/root/artifact_posthoc_primary_overlap",
+  "model": "inherited-primary",
+  "prompt": "当前唯一新候选#27 cross_gaussian_compositing_sh_rounding，准备stage1 cache replay/capacity，尚无effects。请只做窄范围主源查新，查是否已经有**冻结标准3DGS不同高斯SH合法码字/邻码舍入联合选择，以完整compositing交叉项优化，同普通SH解码/相同bit预算**的具体机制。OGC arxiv2609.28997v1 §4.4/5明确独立项忽略cross terms仍排序；SplatQ2610.13503v1已联合opacity删除，但不据此判同SH码字。还需检查Transforming harmonic coefficients for3D splat compression arxiv2609.15735, Error diffusion/vector quantization/RAHT是否已同操作。只依赖primary paper/officialcode，明确训练/gradientQA-aware vs冻结discreteposthoc；不以搜索没找到给noveltyPASS。不生成新ideas不改全pool不运行effects。请保存新独立文件 idea-stage/artifact-pivot-20261023/CROSS_GAUSSIAN_SH_PRIMARY_OVERLAP.md，给精确来源/机制/原始增量是否值得stage1继续（最强反对）。",
+  "prompt_provenance": "Exact readable call text this root turn; encrypted arguments not decrypted"
+}

@@ -1,0 +1,20 @@
+{
+  "original24": {
+    "rows": 395,
+    "all_group_stats_match": true
+  },
+  "uniform24": {
+    "rows": 395,
+    "all_group_stats_match": true
+  },
+  "random24": {
+    "rows": 395,
+    "all_group_stats_match": true
+  },
+  "all219": {
+    "rows": 395,
+    "all_group_stats_match": true
+  },
+  "all219_virtual_tail_reduction_fraction": 0.6976177930792726,
+  "scope": "single frozen carrier, no training; differing score-view budget explicitly reported"
+}

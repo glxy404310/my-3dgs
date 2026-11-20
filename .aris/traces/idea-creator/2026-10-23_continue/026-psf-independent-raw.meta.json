@@ -1,0 +1,14 @@
+{
+  "call_number": 26,
+  "purpose": "psf-independent-raw",
+  "timestamp": "2026-10-22T18:00:52.306Z",
+  "agent_id": "01a164af-790f-71a2-91f4-8a6ab0ab0c73",
+  "agent_path": "/root/matched_geometry_cpu_verify",
+  "model": "inherited-primary",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "request_recovered_verbatim": true,
+  "response_recovered_verbatim": true
+}

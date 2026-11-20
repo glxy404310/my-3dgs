@@ -1,0 +1,13 @@
+{
+  "schema": "co-ray-split-interaction-v0/external-root-v1",
+  "true_external_wall_seconds": 76.3996426,
+  "maximum_seconds": 300,
+  "within_300_seconds": true,
+  "timed_out": false,
+  "exit_code": 0,
+  "attempts": 1,
+  "automatic_retry": false,
+  "launcher_sha256": "857a9c746ab3f99c680f0153f160674992aceecfd2b4a6034c85141d94e0a809",
+  "contract_sha256": "dec210a7767adbe64e259fb0d62102f1cbdbc084f7ad56b3b50c5b0a0edb91d4",
+  "arms_sha256": "f0e12b40c16b4832a381fef9a3d1329be9a1200a364fce9311d8f442637c25dd"
+}

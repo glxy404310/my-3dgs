@@ -1,0 +1,10 @@
+{
+  "started_UTC": "2026-10-22T21:26:18.0990790Z",
+  "finished_UTC": "2026-10-22T21:26:27.8701045Z",
+  "exit_code": 0,
+  "actual_host_wall_seconds": 9.7664205,
+  "hard_limit_seconds": 120,
+  "within_120_seconds": true,
+  "attempts": 1,
+  "scientific_scope": "Fixed 2G/4x4 SH0 kernel tool witness only"
+}

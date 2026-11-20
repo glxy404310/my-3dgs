@@ -1,0 +1,217 @@
+{
+  "date": "2026-10-22",
+  "coverage": "non-exhaustive primary-source searches; 2026-04-22..2026-10-22 plusolderclosest",
+  "undermind": "USER_NOT_LOGGED_IN",
+  "sources": [
+    {
+      "title": "3DGS 官方 rasterizer backward.cu",
+      "url": "https://github.com/graphdeco-inria/diff-gaussian-rasterization/blob/main/cuda_rasterizer/backward.cu",
+      "overlap": "computeColorFromSH 将观察方向引起的均值梯度累加到位置梯度。",
+      "claimed_delta_to_verify": "仅移除该导数项的优化干预；是否已有等价实现尚待核验。",
+      "candidate_keys": [
+        "sh_direction_detach"
+      ]
+    },
+    {
+      "title": "AmbiSuR, 2026-05",
+      "url": "https://arxiv.org/html/2605.12494v1",
+      "overlap": "讨论 SH 与几何歧义，其 ray-color consistency 对颜色以外的变量停止求导。",
+      "claimed_delta_to_verify": "本项改动原 photometric loss 的位置梯度路径，未增加 ray-color 正则；实际区别及价值待验证。",
+      "candidate_keys": [
+        "sh_direction_detach",
+        "leave_view_out_appearance_geometry"
+      ]
+    },
+    {
+      "title": "3D Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2308.04079",
+      "overlap": "前向贡献包含颜色与 opacity 的乘积。",
+      "claimed_delta_to_verify": "改变优化坐标而保持表示族与前向模型；预乘颜色本身是已有概念，不能作为创新声明。",
+      "candidate_keys": [
+        "premultiplied_radiance_coordinates"
+      ]
+    },
+    {
+      "title": "ReorgGS, 2026-05",
+      "url": "https://arxiv.org/html/2605.08739v1",
+      "overlap": "分析透明度遮挡及重叠造成的优化退化，并重建参数分布。",
+      "claimed_delta_to_verify": "本项保持中心、拓扑和渲染模型，仅改变外观坐标；需核验其是否只是常规预条件的等价形式。",
+      "candidate_keys": [
+        "premultiplied_radiance_coordinates"
+      ]
+    },
+    {
+      "title": "OGC 作者仓库",
+      "url": "https://github.com/moholo-founder/ogc-3dgs",
+      "overlap": "按实际观察方向及贡献构造 SH 拟合度量，并进行闭式降阶拟合。",
+      "claimed_delta_to_verify": "本项目标是训练期间的跨视角几何更新，而非 SH 压缩；等价 cross-fitting 或双层方法仍待搜索核验。",
+      "candidate_keys": [
+        "leave_view_out_appearance_geometry",
+        "sh_nullspace_path_canonicalization"
+      ]
+    },
+    {
+      "title": "Mip-Splatting",
+      "url": "https://arxiv.org/abs/2311.16493",
+      "overlap": "通过 3D 平滑及 2D Mip 滤波处理采样频率与 aliasing。",
+      "claimed_delta_to_verify": "本项改变训练损失的采样相位分布；是否只是其滤波目标的低效近似需要验证。",
+      "candidate_keys": [
+        "pixel_phase_marginalization"
+      ]
+    },
+    {
+      "title": "SAD-GS, 2026-04",
+      "url": "https://arxiv.org/html/2604.28016v1",
+      "overlap": "使用局部频率分析指导增密，并在 footprint 内随机采样。",
+      "claimed_delta_to_verify": "本项不改变增密评分，直接训练相位平均的成像误差；随机采样与已有抗锯齿训练的重叠尚未穷尽核验。",
+      "candidate_keys": [
+        "pixel_phase_marginalization"
+      ]
+    },
+    {
+      "title": "CoMoGaussian",
+      "url": "https://arxiv.org/abs/2503.05332",
+      "overlap": "联合建模曝光内相机运动和 Gaussian 场景，解决模糊输入重建。",
+      "claimed_delta_to_verify": "仅用每图共享的低维图像核近似轻微模糊；这可能只是已有模型的简化情形，需评审其独立价值。",
+      "candidate_keys": [
+        "pooled_image_psf"
+      ]
+    },
+    {
+      "title": "MotionGS-SLAM, 2026-08",
+      "url": "https://arxiv.org/abs/2608.15024",
+      "overlap": "将模糊形成过程加入 Gaussian 渲染及优化。",
+      "claimed_delta_to_verify": "本项只处理已有静态 RGB 图像，无 event 数据或轨迹模型；不声称首次显式建模模糊。",
+      "candidate_keys": [
+        "pooled_image_psf"
+      ]
+    },
+    {
+      "title": "PPISP, CVPR2026",
+      "url": "https://research.nvidia.com/labs/sil/projects/ppisp/",
+      "overlap": "显式建模曝光、暗角、颜色校正及非线性相机响应，并讨论光度变化被写入几何。",
+      "claimed_delta_to_verify": "这里拟研究固定编码下合成顺序对容量需求的因果影响，不提出新的 ISP 校准模块；该具体归因是否已有系统分析待核验。",
+      "candidate_keys": [
+        "linear_compositing_capacity_audit"
+      ]
+    },
+    {
+      "title": "Geometry Gaussians, 2026-06",
+      "url": "https://arxiv.org/html/2606.05124v1",
+      "overlap": "指出外观与几何表示的冲突，并采用独立几何 opacity。",
+      "claimed_delta_to_verify": "检验其中一类冲突能否由颜色合成域解释，不增加几何 opacity；不能用本实验替代其完整表示分析。",
+      "candidate_keys": [
+        "linear_compositing_capacity_audit"
+      ]
+    },
+    {
+      "title": "LiTe-GS, 2026-09-24",
+      "url": "https://arxiv.org/abs/2609.30393",
+      "overlap": "信息驱动的视角选择，并计入评分查询成本。",
+      "claimed_delta_to_verify": "本项重新调度固定已有图像，以真实跨图像优化收益评分；LiTe-GS研究新增观测选择。",
+      "candidate_keys": [
+        "fixed_view_cross_transfer"
+      ]
+    },
+    {
+      "title": "Two-View Accumulation as the Primary Training Lever, 2026-04",
+      "url": "https://arxiv.org/html/2605.00052v1",
+      "overlap": "跨相机组梯度分析；随机双视图累积是强基线。",
+      "claimed_delta_to_verify": "不做梯度手术，测试候选更新的跨块迁移能否提供超出随机累积的收益。",
+      "candidate_keys": [
+        "fixed_view_cross_transfer",
+        "surface_evidence_balanced_loss"
+      ]
+    },
+    {
+      "title": "Compact Neural Appearance Models, 2026-09-04",
+      "url": "https://arxiv.org/abs/2609.05255",
+      "overlap": "比较外观表达，并分析表达对几何与优化的影响。",
+      "claimed_delta_to_verify": "本项保持表达及几何，隔离观测不确定自由度对路径表现的作用。",
+      "candidate_keys": [
+        "sh_nullspace_path_canonicalization"
+      ]
+    },
+    {
+      "title": "PLEDGE",
+      "url": "https://arxiv.org/html/2610.17605v1",
+      "verification_note": "root verified §3 scope and §6 excludes composedvalue bound undergeometry+alpha changes"
+    },
+    {
+      "title": "StopThePop",
+      "url": "https://arxiv.org/abs/2402.00525",
+      "overlap": "直接处理深度排序造成的popping和视角不一致。",
+      "claimed_delta_to_verify": "本项控制压缩新增的排序变化；不是替代排序渲染器，也不是旧遮挡交换合并评分。",
+      "candidate_keys": [
+        "sorting_margin_quantization"
+      ]
+    },
+    {
+      "title": "LightGaussian",
+      "url": "https://arxiv.org/abs/2311.17245",
+      "overlap": "已有剪枝恢复、教师蒸馏及伪视图增强。",
+      "claimed_delta_to_verify": "仅待验证依据当前压缩差异寻找最坏位姿的约束生成，不能把虚拟视图蒸馏当新方法。",
+      "candidate_keys": [
+        "adversarial_pose_compression_witnesses"
+      ]
+    },
+    {
+      "title": "SplatQ, 2026-10-09",
+      "url": "https://arxiv.org/abs/2610.13503",
+      "overlap": "固定预算下协调区域保留数量与联合删除效应，关注空间质量平衡。",
+      "claimed_delta_to_verify": "本项搜索相机域中的失败约束，不提出新的高斯交互删除评分。",
+      "candidate_keys": [
+        "adversarial_pose_compression_witnesses"
+      ]
+    },
+    {
+      "title": "CoverPruneGS",
+      "url": "https://proceedings.mlr.press/v306/xiao26u.html",
+      "verification_note": "rootverified formalICML2026 record afterjuryresponse"
+    },
+    {
+      "title": "Compact Neural Appearance Models, 2026-09-04，含Spherical Voronoi原方法说明",
+      "url": "https://arxiv.org/html/2609.05255v1",
+      "overlap": "§3.2/A.2已有球面站点RGB的softmax凸插值，可学习方向与温度，并比较优化稳定性。",
+      "claimed_delta_to_verify": "凸插值已存在；唯一待核验差别是固定在实际观测方向、显式支持边界及其外部延拓。",
+      "candidate_keys": [
+        "support_convex_angular_appearance"
+      ]
+    },
+    {
+      "title": "G²ARD-GS",
+      "url": "https://arxiv.org/html/2608.05704v1",
+      "verification_note": "root+jury verified §3.3 fixed geometry coverage selection; selected supervision reused across rounds"
+    },
+    {
+      "title": "OGC preprint",
+      "url": "https://arxiv.org/abs/2609.28997",
+      "verification_note": "root verified2026-09-24v1; jury checkednullspace AppendixN"
+    },
+    {
+      "title": "Mobile-4DGS",
+      "url": "https://arxiv.org/html/2610.05289v1",
+      "verification_note": "root+jury verifieddepthordercertificate for dynamicorderreuse, notsavedpositionquantization"
+    },
+    {
+      "title": "RoofGS",
+      "url": "https://arxiv.org/abs/2608.15785",
+      "verification_note": "root arxiv abstractverified sortingkeyquantization, not3Dpositioncodec"
+    },
+    {
+      "title": "3DGS²-TR authorpage",
+      "url": "https://rogerhh.github.io/3dgs2-tr.github.io/",
+      "verification_note": "currentdensification supportedbutpoor; do notusev1absenceclaim"
+    },
+    {
+      "title": "3DGS²-TR code",
+      "url": "https://github.com/rogerhh/3dgs2-tr",
+      "verification_note": "root verified SophiaMCMC densificationflags"
+    },
+    {
+      "title": "BAGS",
+      "url": "https://nwang43jhu.github.io/BAGS/",
+      "verification_note": "rootverifiedECCV2024 authorpage wholeimageconvolutionwithperpixelkernels"
+    }
+  ]
+}

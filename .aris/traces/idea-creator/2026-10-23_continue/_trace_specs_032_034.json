@@ -1,0 +1,20 @@
+[
+  {
+    "number": 32,
+    "purpose": "frozen-request-verify",
+    "name": "frozen_request_verify",
+    "prompt": "当前用户只要求 Truck 30k 冻结压缩诊断、确认校准之外退化、并排展示最差教师/压缩图、不训练。请独立只读核验 research/experiments/truck30k-frozen-compression-v0/run-v1 METRICS.csv/CONFIG.json/RESULTS.json 及 review-20261023/PROVENANCE.json：重算五组统计与预定门槛，确认全局最差真实非校准000016与留出最差000017/000009，报告其PSNR/SSIM/MSE及校准成员身份。核查现有图片路径、文件存在、教师/学生列顺序。禁止训练、渲染、改历史文件、跑其他候选。不需要新大报告，给出具体数值和证据即可。"
+  },
+  {
+    "number": 33,
+    "purpose": "shared-coordinate-failure-disposition",
+    "name": "shared_coord_failure_disposition",
+    "prompt": "请独立只读判断 #14 frozen shared-coordinate-residual-v0 当前首次run-v1工具失败的处置，禁止写文件/重渲/训练。实际RESULTS decisionINCONCLUSIVE_EXCEPTION，utils import path guard，load_checkpoint30000阶段0forward/0LS，全部源hash未变；launcher单次命名、no automatic retry，合同300sec超时禁止自动重跑/不重跑已停实现。请读CONTRACT/主helper和RESULTS，区分科学门槛失败、测量实现错误，提出不为结果调参的最低成本后续：是否值得保留run-v1并修 namespace import path guard 后另命名一次新实现？此处是自主目标授权下的正常修复判断，不要求用户重新许可。若存在真实科学/资源理由反对继续直说，不以自己写的launcher当不可撤销人类禁令。给出具体操作边界和停止线。"
+  },
+  {
+    "number": 34,
+    "purpose": "next-frozen-candidate-review",
+    "name": "next_frozen_candidate_review",
+    "prompt": "当前目标继续寻找真正创新点、无望立即换、广泛提出，但严格不启动3DGS训练。请只读现有 idea-stage/continue-20261023/CANDIDATES.json、CANDIDATE_INDEX、POST_PSF_JURY.md及最新实验记录，找 #14 之外两个尚未实际测量且能用现有模型做必要条件诊断的候选。不要重命名已失败的alpha/PSF/photometric/主动新位姿/排序实现救活，不把工具失败当方法失败。输出每项精确原id/核心mechanism、已有证据vs未知、一个最小静态或CPU/冻结GPU验证、强控制与预锁停止线；若这些只有训练能验证请明确。禁止编辑/实验/新web；本task是准备后续，不是接受novelty。"
+  }
+]

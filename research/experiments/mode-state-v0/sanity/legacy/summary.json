@@ -1,0 +1,27 @@
+{
+  "variant": "las_split_legacy",
+  "selected_parents": 4,
+  "n_before": 1058297,
+  "n_after": 1058301,
+  "before": {
+    "l1": 0.04092671163380146,
+    "psnr": 23.098047256469727,
+    "ssim": 0.8342280089855194,
+    "render_change_l1": 0.0
+  },
+  "immediate": {
+    "l1": 0.04092671163380146,
+    "psnr": 23.098047256469727,
+    "ssim": 0.8342280089855194,
+    "render_change_l1": 0.0
+  },
+  "split_seconds": 0.06598518700000255,
+  "recovery_update_seconds": 0.4812597039999993,
+  "total_seconds": 12.624478663,
+  "peak_allocated_bytes": 1562404864,
+  "peak_reserved_bytes": 1728053248,
+  "camera_sequence": [
+    "000130.jpg"
+  ],
+  "complete": true
+}

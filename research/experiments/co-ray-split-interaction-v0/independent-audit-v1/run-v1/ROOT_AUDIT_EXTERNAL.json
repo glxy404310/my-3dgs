@@ -1,0 +1,7 @@
+{
+  "true_external_wall_seconds": 66.5484602,
+  "exit_code": 0,
+  "maximum_seconds": 120,
+  "phase": "audit",
+  "contract_sha256": "9167238f07ae74d0db9764cabf339908a35402b5ea4fb9bede98c406b6a4f805"
+}

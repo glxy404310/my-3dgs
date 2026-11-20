@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "decision": "approved_sanity_and_conditional_main",
+  "reviewer": "/root/geometry_cost_code_review",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "resolved_blocker": "Scene exposure fields initialized before restore",
+  "sanity_exit_code": 0,
+  "sanity_geometry_checks": "pass",
+  "main_status": "completed_exit0",
+  "timing_scope": "Full official rendering wrapper, including host synchronizations; not kernel-only",
+  "formal_integrity_audit": "unavailable"
+}

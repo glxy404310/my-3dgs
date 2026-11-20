@@ -1,0 +1,87 @@
+--- evaluate_pup_frozen_baseline.py
++++ evaluate_pup_frozen_baseline_v2.py
+@@ -20,7 +20,7 @@
+ PROJECT = Path(__file__).resolve().parents[2]
+ STAGE = PROJECT/'research/experiments/pup-frozen-baseline-v0'
+ EVALUATION = STAGE/'evaluation-v1'
+-OUTPUT = EVALUATION/'run-v1'
++OUTPUT = EVALUATION/'run-v2'
+ OLD = PROJECT/'research/experiments/nanogs-frozen-baseline-v0/evaluation-v1'
+ SCORE = STAGE/'score-v1/run-v1'
+ PYTHON = Path('/home/administrator/venvs/3dgs/bin/python')
+@@ -33,7 +33,8 @@
+ EXTERNAL_SHA = '81ec1d44ff857ec5ebcba221f6c8643b66bf9382e441910a4555b2c61d3007a2'
+ COMPLETE_SCORE = 'OFFICIAL_FIXED_SCORE_EXPORT_COMPLETE_NO_QUALITY_CLAIM'
+ HOST_LIMIT, GPU_LIMIT = 8*1024**3, 4*1024**3
+-MAIN_LIMIT, INTERNAL_LIMIT, AUDIT_RESERVE = 200, 195, 100
++MAIN_LIMIT, INTERNAL_LIMIT, AUDIT_RESERVE = 188, 183, 100
++PRIOR_MAIN_SECONDS = 11.7440519
+ ARMS = ('teacher', 'all219', 'nanogs', 'pup')
+ FIXED = ('000016.jpg', '000017.jpg', '000105.jpg')
+ SSIM_DEFINITION = 'CPU_float64_SciPy_Gaussian11_sigma1.5_constant0_population_CHWmean_C1.01sq_C2.03sq'
+@@ -72,10 +73,14 @@
+         files[str(actual.resolve())] = expected_sha
+     for relative, expected in read(EVALUATION/'READONLY_PINS.json').items():
+         files[str(PROJECT/relative)] = expected
+-    for path in (Path(__file__).resolve(), STAGE/'EVALUATION_CONTRACT.md', EVALUATION/'ASSUMPTIONS.md',
+-                 EVALUATION/'READONLY_PINS.json', EVALUATION/'run-evaluation.sh'):
++    for path in (Path(__file__).resolve(), STAGE/'EVALUATION_CONTRACT.md', STAGE/'EVALUATION_V2_TOOL_REPAIR.md', EVALUATION/'ASSUMPTIONS.md',
++                 EVALUATION/'READONLY_PINS.json', EVALUATION/'run-evaluation.sh', EVALUATION/'run-evaluation-v2.sh',
++                 PROJECT/'scripts/experiments/evaluate_pup_frozen_baseline.py',
++                 EVALUATION/'run-v1/SUPERVISOR.json', EVALUATION/'run-v1/WORKER.log', EVALUATION/'EXTERNAL_RUN.json'):
+         files[str(path)] = sha(path)
+     protected_hashes(files)
++    prior = read(EVALUATION/'EXTERNAL_RUN.json')
++    need(prior['exit_code'] == 1 and prior['attempts'] == 1 and prior['actual_host_wall_seconds'] == PRIOR_MAIN_SECONDS, 'Preserved v1 tool failure identity')
+     score, supervisor, external = read(args.score_result), read(args.score_supervisor), read(args.score_external)
+     need(score['status'] == supervisor['status'] == COMPLETE_SCORE and score['phase'] == 'complete' and
+          score['file_integrity'] and score['camera_identity_unchanged'] and supervisor['input_integrity'] and
+@@ -132,6 +137,7 @@
+                 score_external_sha256=EXTERNAL_SHA, pup_ply=dict(ply),
+                 native_commit=NATIVE_COMMIT, main_external_limit_seconds=MAIN_LIMIT,
+                 audit_external_reserve_seconds=AUDIT_RESERVE, combined_external_limit_seconds=300,
++                prior_failed_main_external_seconds=PRIOR_MAIN_SECONDS, all_primary_external_limit_seconds=200,
+                 host_RSS_limit_bytes=HOST_LIMIT, gpu_allocated_limit_bytes=GPU_LIMIT,
+                 optimizer_steps=0, backward_calls=0, quality_acceptance_gate=None)
+ 
+@@ -217,7 +223,9 @@
+     torch.cuda.reset_peak_memory_stats()
+     for name in ('scene', 'utils', 'gaussian_renderer'):
+         _check_import_path(name, DEFAULT_REPO)
+-    sys.path.insert(0, str(DEFAULT_REPO))
++    native_root = str(DEFAULT_REPO)
++    sys.path[:] = [native_root] + [entry for entry in sys.path if entry != native_root]
++    need(sys.path.count(native_root) == 1, 'Exactly one native namespace search root required')
+     from scene import Scene, GaussianModel
+     from gaussian_renderer import render
+     import diff_gaussian_rasterization as rasterizer
+@@ -391,7 +399,7 @@
+ 
+ def supervise(args):
+     need(sys.platform == 'linux' and Path(sys.executable).resolve() == PYTHON.resolve(), 'Pinned WSL Python required')
+-    need(not OUTPUT.exists(), 'One-shot run-v1 must be absent; never retry')
++    need(not OUTPUT.exists(), 'One-shot run-v2 must be absent; preserve v1 and never retry')
+     started = time.monotonic()
+     active, peak_rss = None, 0
+     record = dict(status='INCONCLUSIVE', automatic_retries=0, main_limit_seconds=MAIN_LIMIT,
+@@ -417,7 +425,7 @@
+             while active.poll() is None:
+                 peak_rss = max(peak_rss, tree_rss())
+                 need(peak_rss <= HOST_LIMIT, 'Aggregate host RSS exceeds8GiB')
+-                need(time.monotonic()-started < INTERNAL_LIMIT, 'Main195-second internal deadline')
++                need(time.monotonic()-started < INTERNAL_LIMIT, 'Main183-second internal deadline')
+                 time.sleep(.1)
+             record['worker_exit_code'] = active.returncode
+         need(active.returncode == 0, 'Worker failed; original log/result retained')
+@@ -436,7 +444,10 @@
+                 active.wait(timeout=1)
+         record['main_internal_wall_seconds'] = time.monotonic()-started
+         record['peak_sampled_combined_host_RSS_bytes'] = peak_rss
+-        record['within_200_seconds'] = record['main_internal_wall_seconds'] <= MAIN_LIMIT
++        record['within_188_seconds'] = record['main_internal_wall_seconds'] <= MAIN_LIMIT
++        record['prior_failed_main_external_seconds'] = PRIOR_MAIN_SECONDS
++        record['all_primary_external_limit_seconds'] = 200
++        record['actual_cumulative_external_wall'] = 'Root saves v1 plus v2 actual host walls separately'
+         record['supervisor_torch_imported'] = 'torch' in sys.modules
+         dump(OUTPUT/'SUPERVISOR.json', record)
+     return 0 if record['status'] == 'PUP_FROZEN_NATIVE_EVALUATED_AUDIT_PENDING' else 1

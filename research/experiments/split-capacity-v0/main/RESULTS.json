@@ -1,0 +1,233 @@
+{
+  "scope": "Two scenes, single checkpoint/seed each; isolated 500-step screening, not paper validation",
+  "scenes": {
+    "truck": {
+      "endpoint": {
+        "noop": {
+          "psnr": 23.053581535816193,
+          "l1": 0.04279717092867941,
+          "ssim": 0.8259442672133446
+        },
+        "native": {
+          "psnr": 23.055466890335083,
+          "l1": 0.04280096746515483,
+          "ssim": 0.8259111177176237
+        },
+        "random": {
+          "psnr": 23.05127602815628,
+          "l1": 0.042799264076165855,
+          "ssim": 0.8258151281625032
+        },
+        "long": {
+          "psnr": 23.045950174331665,
+          "l1": 0.04282529070042074,
+          "ssim": 0.825732508674264
+        },
+        "mean": {
+          "psnr": 23.052860021591187,
+          "l1": 0.04279803961981088,
+          "ssim": 0.8258929885923862
+        },
+        "conflict": {
+          "psnr": 23.04861956834793,
+          "l1": 0.04281237255781889,
+          "ssim": 0.8258543275296688
+        },
+        "select_projected": {
+          "psnr": 23.05346655845642,
+          "l1": 0.04279363574460149,
+          "ssim": 0.8260570801794529
+        },
+        "select_raw": {
+          "psnr": 23.05469238758087,
+          "l1": 0.04279491293709725,
+          "ssim": 0.8260932099074125
+        },
+        "select_gradient": {
+          "psnr": 23.04845768213272,
+          "l1": 0.04281830450054258,
+          "ssim": 0.8258777726441622
+        },
+        "select_random": {
+          "psnr": 23.05182594060898,
+          "l1": 0.042801147676073015,
+          "ssim": 0.8259557578712702
+        }
+      },
+      "direction_contrasts": {
+        "random": {
+          "psnr": -0.0026564598083496094,
+          "l1": 1.3108481653034687e-05,
+          "ssim": 3.919936716556549e-05
+        },
+        "long": {
+          "psnr": 0.002669394016265869,
+          "l1": -1.2918142601847649e-05,
+          "ssim": 0.00012181885540485382
+        },
+        "mean": {
+          "psnr": -0.004240453243255615,
+          "l1": 1.4332938008010387e-05,
+          "ssim": -3.8661062717437744e-05
+        }
+      },
+      "selection_contrasts": {
+        "select_raw": {
+          "psnr": -0.0012258291244506836,
+          "l1": -1.2771924957633018e-06,
+          "ssim": -3.6129727959632874e-05
+        },
+        "select_gradient": {
+          "psnr": 0.005008876323699951,
+          "l1": -2.4668755941092968e-05,
+          "ssim": 0.00017930753529071808
+        },
+        "select_random": {
+          "psnr": 0.001640617847442627,
+          "l1": -7.511931471526623e-06,
+          "ssim": 0.00010132230818271637
+        }
+      },
+      "direction_screen_pass": false,
+      "selection_screen_pass": false,
+      "probe": {
+        "raw_vs_unseen_train_raw_gain_spearman": -0.01804809232019919,
+        "projected_vs_unseen_train_raw_gain_spearman": 0.10044027924775346,
+        "gradient_vs_unseen_train_raw_gain_spearman": -0.22239692664470462,
+        "median_unexplained_fraction": 1.5834831970096275e-06,
+        "median_finite_relative_error": 0.2681434154510498,
+        "zero_sampled_response": 21,
+        "candidates": 64,
+        "median_unexplained_nonzero": 4.312497367209289e-06,
+        "median_finite_error_nonzero": 0.4561922252178192,
+        "median_basis_rank": 8.5
+      },
+      "selection_overlap": {
+        "select_raw": 7,
+        "select_gradient": 3,
+        "select_random": 5
+      },
+      "direction_abs_cosine_median": {
+        "long": 0.999688982963562,
+        "mean": 0.9999927878379822,
+        "random": 0.4562267065048218
+      },
+      "measured_seconds": 303.080522231
+    },
+    "train": {
+      "endpoint": {
+        "noop": {
+          "psnr": 19.070135267157305,
+          "l1": 0.08273406228736828,
+          "ssim": 0.6827954665610665
+        },
+        "native": {
+          "psnr": 19.081985875179893,
+          "l1": 0.08263203158582512,
+          "ssim": 0.6828673513312089
+        },
+        "random": {
+          "psnr": 19.056840921703138,
+          "l1": 0.08284293389634083,
+          "ssim": 0.6819657785327811
+        },
+        "long": {
+          "psnr": 19.051078043485944,
+          "l1": 0.08277831314817856,
+          "ssim": 0.6825002910275209
+        },
+        "mean": {
+          "psnr": 19.069258112656442,
+          "l1": 0.08274024577909395,
+          "ssim": 0.6828787891488326
+        },
+        "conflict": {
+          "psnr": 19.052002655832393,
+          "l1": 0.08291569459987314,
+          "ssim": 0.6822112469296706
+        },
+        "select_projected": {
+          "psnr": 19.052097546426875,
+          "l1": 0.08282786107769138,
+          "ssim": 0.6822749580207624
+        },
+        "select_raw": {
+          "psnr": 19.06185604396619,
+          "l1": 0.0828030944654816,
+          "ssim": 0.6822583071495357
+        },
+        "select_gradient": {
+          "psnr": 19.055919421346562,
+          "l1": 0.08281802738967695,
+          "ssim": 0.682658505282904
+        },
+        "select_random": {
+          "psnr": 19.06112133829217,
+          "l1": 0.08279010908384073,
+          "ssim": 0.6825374474650935
+        }
+      },
+      "direction_contrasts": {
+        "random": {
+          "psnr": -0.0048382658707453174,
+          "l1": 7.27607035323069e-05,
+          "ssim": 0.0002454683968895477
+        },
+        "long": {
+          "psnr": 0.0009246123464485834,
+          "l1": 0.0001373814516945765,
+          "ssim": -0.000289044097850244
+        },
+        "mean": {
+          "psnr": -0.017255456824049276,
+          "l1": 0.00017544882077918933,
+          "ssim": -0.0006675422191619873
+        }
+      },
+      "selection_contrasts": {
+        "select_raw": {
+          "psnr": -0.009758497539316124,
+          "l1": 2.4766612209778383e-05,
+          "ssim": 1.665087122670883e-05
+        },
+        "select_gradient": {
+          "psnr": -0.003821874919687218,
+          "l1": 9.833688014437847e-06,
+          "ssim": -0.0003835472621415148
+        },
+        "select_random": {
+          "psnr": -0.009023791865296005,
+          "l1": 3.7751993850657084e-05,
+          "ssim": -0.0002624894443310488
+        }
+      },
+      "direction_screen_pass": false,
+      "selection_screen_pass": false,
+      "probe": {
+        "raw_vs_unseen_train_raw_gain_spearman": 0.292160816007291,
+        "projected_vs_unseen_train_raw_gain_spearman": -0.03957528563133782,
+        "gradient_vs_unseen_train_raw_gain_spearman": -0.055439553100980185,
+        "median_unexplained_fraction": 0.002185517951147631,
+        "median_finite_relative_error": 0.2934744358062744,
+        "zero_sampled_response": 19,
+        "candidates": 64,
+        "median_unexplained_nonzero": 0.04529401659965515,
+        "median_finite_error_nonzero": 0.4378979802131653,
+        "median_basis_rank": 12.0
+      },
+      "selection_overlap": {
+        "select_raw": 7,
+        "select_gradient": 2,
+        "select_random": 4
+      },
+      "direction_abs_cosine_median": {
+        "long": 0.8176207542419434,
+        "mean": 0.9978450536727905,
+        "random": 0.5399888157844543
+      },
+      "measured_seconds": 261.6906058289999
+    }
+  },
+  "direction_screen_pass": false,
+  "selection_screen_pass": false
+}

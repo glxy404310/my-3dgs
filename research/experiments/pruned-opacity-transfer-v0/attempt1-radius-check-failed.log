@@ -1,0 +1,1 @@
+{"decision": "TOOL_FAILED", "tool_valid": false, "tool_failure": "RuntimeError: Native radius ABI mismatch", "elapsed_seconds": 12.40320084900003, "rows": null}

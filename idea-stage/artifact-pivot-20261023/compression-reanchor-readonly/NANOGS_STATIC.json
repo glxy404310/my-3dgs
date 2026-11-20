@@ -1,0 +1,70 @@
+{
+  "repository": "https://github.com/saliteta/NanoGS",
+  "commit": "cc64a752b5def8d17f9992216bfbb9e533f8364f",
+  "read_method": "GitHub connector fetch_file pinned to commit",
+  "files": [
+    {
+      "path": "src/nanogs/simplification.py",
+      "git_blob_sha": "a052a7def4cb26fd7b1da74228290fa346404454",
+      "url": "https://github.com/saliteta/NanoGS/blob/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/simplification.py"
+    },
+    {
+      "path": "src/nanogs/utils/ply_utils.py",
+      "git_blob_sha": "299d2e9b25cc8bcf3441374e8e36a94da98d4892",
+      "url": "https://github.com/saliteta/NanoGS/blob/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/utils/ply_utils.py"
+    },
+    {
+      "path": "src/nanogs/utils/cost.py",
+      "git_blob_sha": "b2a0dfd6c6196a981a50386a37b272d58663a646",
+      "url": "https://github.com/saliteta/NanoGS/blob/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/utils/cost.py"
+    },
+    {
+      "path": "src/nanogs/utils/merge.py",
+      "git_blob_sha": "947d9360a6b9030d1584bb9f81eeaa566b22883c",
+      "url": "https://github.com/saliteta/NanoGS/blob/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/utils/merge.py"
+    },
+    {
+      "path": "src/nanogs/utils/splat_utils.py",
+      "git_blob_sha": "5cdf2e60dcf2ae56870009e5746d8499b7f25aa6",
+      "url": "https://github.com/saliteta/NanoGS/blob/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/utils/splat_utils.py"
+    },
+    {
+      "path": "pyproject.toml",
+      "git_blob_sha": "1b55386afe0cb255a4e6cbf58184d7aa4073dd45",
+      "url": "https://github.com/saliteta/NanoGS/blob/cc64a752b5def8d17f9992216bfbb9e533f8364f/pyproject.toml"
+    },
+    {
+      "path": "src/nanogs/__init__.py",
+      "git_blob_sha": "4bbb422cf33a7c43d7f1f1ea7528550c644f2347",
+      "url": "https://github.com/saliteta/NanoGS/blob/cc64a752b5def8d17f9992216bfbb9e533f8364f/src/nanogs/__init__.py"
+    }
+  ],
+  "native_environment": {
+    "python": "/home/administrator/venvs/3dgs/bin/python",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "tqdm": "4.70.1",
+    "MemTotal_kB": 11667096,
+    "MemAvailable_kB": 10938224,
+    "SwapTotal_kB": 3145728,
+    "SwapFree_kB": 3145728
+  },
+  "status": {
+    "downloaded_or_installed": false,
+    "compression_launched": false,
+    "training_launched": false,
+    "native_render_launched": false
+  },
+  "defaults": {
+    "ratio": 0.5,
+    "k": 16,
+    "merge_cap": 0.5,
+    "opacity_threshold": 0.1,
+    "lam_geo": 1,
+    "lam_sh": 1,
+    "n_mc_from_getattr": 1,
+    "seed_from_getattr": 0
+  },
+  "expected_target_count": 1025385,
+  "cost_status": "Runtime and peak RSS unmeasured; million-point graph construction, sorting, greedy Python loop and rowwise PLY output can take many minutes or exceed a short budget; no 300-second promise."
+}

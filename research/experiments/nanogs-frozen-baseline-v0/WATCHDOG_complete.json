@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/home/administrator/venvs/3dgs/bin/python",
+    "-B",
+    "-u",
+    "/mnt/d/Documents/my 3dgs/scripts/experiments/evaluate_nanogs_frozen_baseline.py",
+    "--mode",
+    "complete",
+    "--output-dir",
+    "/mnt/d/Documents/my 3dgs/research/experiments/nanogs-frozen-baseline-v0/evaluation-v1"
+  ],
+  "mode": "complete",
+  "prior_external_seconds": 31.035072466000003,
+  "remaining_external_seconds": 268.964927534,
+  "timeout": false,
+  "script_sha256_before": "0c62664a1b90f6581215d2285971462175aae4c753cfe9fad5a0cd207c2525e6",
+  "launcher_sha256": "df381c5db6d31fc52ad0e48208745e465ed4dc5a1c7cc6b2c7f8bcae349e6f92",
+  "child_exit_code": 0,
+  "external_wall_seconds": 49.812512510999994,
+  "combined_external_wall_seconds": 80.847584977,
+  "script_sha256_after": "0c62664a1b90f6581215d2285971462175aae4c753cfe9fad5a0cd207c2525e6"
+}

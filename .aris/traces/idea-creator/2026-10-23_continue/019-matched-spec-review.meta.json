@@ -1,0 +1,16 @@
+{
+  "call_number": 19,
+  "purpose": "matched-spec-review",
+  "timestamp": "2026-10-22T17:25:20.683Z",
+  "agent_id": "01a164a2-e049-7d90-90c3-cd8adda133f9",
+  "agent_path": "/root/sorting_matched_spec_review",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "request_recovered_verbatim": true,
+  "response_recovered_verbatim": true,
+  "response_scope": "selected actual final answer; inherited transcript answers excluded"
+}

@@ -1,0 +1,5 @@
+CPU pixels audited 8/33 views
+CPU pixels audited 16/33 views
+CPU pixels audited 24/33 views
+CPU pixels audited 32/33 views
+{"status": "FAIL", "checks": 3144, "failed_checks": 43, "rows": 165, "wall_seconds": 40.240220026}

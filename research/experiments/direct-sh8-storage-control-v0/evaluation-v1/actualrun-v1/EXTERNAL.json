@@ -1,0 +1,13 @@
+{
+  "schema": "direct-sh8-native-evaluation-v1/external-v1",
+  "exit_code": 0,
+  "attempts": 1,
+  "actual_host_wall_seconds": 64.62335493,
+  "hard_limit_seconds": 200,
+  "timeout_term_seconds": 195,
+  "timeout_kill_after_seconds": 3,
+  "within_200_seconds": true,
+  "combined_main_plus_audit_limit_seconds": 300,
+  "independent_audit_reserved_seconds": 100,
+  "launcher_sha256": "7a556fbba77bd51b32bc92b41c3b55db4fbdd9b0ac5eec8477ccc4aa84e77d94"
+}

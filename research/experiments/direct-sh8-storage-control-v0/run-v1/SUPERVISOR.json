@@ -1,0 +1,81 @@
+{
+  "schema": "direct-sh8-storage-control-v0/supervisor-v1",
+  "status": "verified",
+  "started_utc": "2026-10-22T22:02:34.662211+00:00",
+  "rss_limit_bytes": 8589934592,
+  "rss_sample_seconds": 0.1,
+  "work_deadline_seconds": 160,
+  "alarm_seconds": 165,
+  "peak_tree_rss_bytes": 1550823424,
+  "stages": [
+    {
+      "name": "encode",
+      "argv": [
+        "/home/administrator/venvs/3dgs/bin/python",
+        "-B",
+        "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/encode.py",
+        "--source",
+        "/home/administrator/projects/gaussian-splatting/output/truck_30000_r1/point_cloud/iteration_30000/point_cloud.ply",
+        "--output",
+        "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/control.dsh8",
+        "--source-sha256",
+        "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+        "--expected-points",
+        "2050770",
+        "--report",
+        "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/encode.json"
+      ],
+      "started_utc": "2026-10-22T22:02:35.169961+00:00",
+      "exit_code": 0,
+      "peak_tree_rss_bytes": 667983872,
+      "log": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/encode.log",
+      "elapsed_seconds": 3.2734202930000005,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "decode",
+      "argv": [
+        "/home/administrator/venvs/3dgs/bin/python",
+        "-B",
+        "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/decode.py",
+        "--codec",
+        "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/control.dsh8",
+        "--output",
+        "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/decoded.ply",
+        "--report",
+        "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/decode.json"
+      ],
+      "started_utc": "2026-10-22T22:02:38.469193+00:00",
+      "exit_code": 0,
+      "peak_tree_rss_bytes": 373481472,
+      "log": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/decode.log",
+      "elapsed_seconds": 7.7121550789999995,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "verify",
+      "argv": [
+        "/home/administrator/venvs/3dgs/bin/python",
+        "-B",
+        "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/verify.py",
+        "--source",
+        "/home/administrator/projects/gaussian-splatting/output/truck_30000_r1/point_cloud/iteration_30000/point_cloud.ply",
+        "--codec",
+        "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/control.dsh8",
+        "--decoded",
+        "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/decoded.ply",
+        "--report",
+        "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/verify.json"
+      ],
+      "started_utc": "2026-10-22T22:02:46.204975+00:00",
+      "exit_code": 0,
+      "peak_tree_rss_bytes": 1550823424,
+      "log": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/verify.log",
+      "elapsed_seconds": 12.103912842000002,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "automatic_retry": false,
+  "finished_utc": "2026-10-22T22:03:01.433543+00:00",
+  "elapsed_seconds": 26.771358977
+}

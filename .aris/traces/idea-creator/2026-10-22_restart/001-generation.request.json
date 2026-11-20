@@ -1,0 +1,13 @@
+{
+  "call_number": 1,
+  "purpose": "generation-imageformation",
+  "tool": "collaboration.spawn_agent",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "agent_id": "/root/restart_imageformation",
+  "files_referenced": [
+    "idea-stage/restart-20261022/BRIEF.md"
+  ],
+  "prompt": "Apply idea-creator generation shard, read-only, no edits. Read D:/Documents/my 3dgs/idea-stage/restart-20261022/BRIEF.md and historical findings as needed. Lens: image formation / appearance-geometry estimation, optimization conditioning, central static 3DGS problem. Generate 6 concrete SIMPLE research candidates with an actual mechanism, not a question alone. Existing RTX5070 12GB and Truck/Train; no training now. Browse only primary sources to ground candidates. Do NOT rank, reject, claim novelty or publishability; parent fresh jury decides. Return JSON {shard_id:'imageformation',candidates:[{dedup_key,payload:{title,method_steps:[2-4],hypothesis,local_problem_evidence_or_missing,closest_sources:[{title,url,overlap,claimed_delta_to_verify}],minimal_falsification,strong_simple_controls,compute_estimate_and_unknowns,risk,so_what,contribution_type}}]}. Do not resurrect fixed failed mechanisms or call ordinary parameter changes innovations. Do not hide a poor mechanism behind extra gates/modules. Sources in BRIEF are leads, verify any used. Date2026-10-22; ensure recent6months. Raw full candidate set will be kept; cite sources.",
+  "followup": "Stop retrieval; return final JSON using six already supplied mechanisms and existing evidence; unknown metadata remains unknown; no ranking."
+}

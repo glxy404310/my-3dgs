@@ -1,0 +1,12 @@
+{
+ "date":"2026-10-22",
+ "claim_groups":[
+  {"claim":"Constantinterval200 as a proposedmethod", "queries":["\"Gaussian splatting\" \"densification interval\" \"200\"","\"Gaussian splatting\" \"densification frequency\" training","\"densification_interval\" \"quality\" site:github.com/graphdeco-inria/gaussian-splatting"]},
+  {"claim":"Less densification trades quality/resources/trainingtime", "queries":["3D Gaussian splatting densification interval quality speed tradeoff 2024 2025","Gaussian splatting reduce densification frequency recovery training 2026","\"Gaussian splatting\" \"reduce\" \"densification rounds\" \"2026\""]},
+  {"claim":"Broaderadaptive/recovery-driven scheduling direction", "queries":["Gaussian splatting adaptive densification scheduling frequency 2026","\"Gaussian splatting\" \"adaptive densification\" \"2026\" schedule convergence","\"Gaussian splatting\" \"recovery\" \"densification\" \"2025\" \"2026\""]}
+ ],
+ "recent_window_query":"site:arxiv.org Gaussian densification schedule interval after:2026-04-21 before:2026-10-23",
+ "primary_fulltexts_checked":["graphdecoofficialREADME","VR-Splatting2410.17932v2","FastGS2511.04283v3","DashGaussian2503.18402v1","Improved-GS2508.12313v1","Decomposing2507.20239v1","AdpSplit2605.06876v1","SIG2607.01698v1","TPC2605.16158v1"],
+ "other_routes":{"Undermind":"Unavailable, USER_NOT_LOGGED_IN","latest_versions":"Freshsame-familyreviewer checks decisive passages andpublicationstatus"},
+ "negative_search_interpretation":"No exacthit does not proveabsence; current exactmechanism is an existing exposedparameter, no distinctnewrule claimed"
+}

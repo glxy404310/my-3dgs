@@ -1,0 +1,16 @@
+[
+  {
+    "path": "raw/vanilla_parity/000016.jpg.npz",
+    "sha256": "a8e1c292c6af398fba57feec3689e5cefba9b1912f15b3e27a6b7b1e5c589833",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "array_sha256": "9d5eca4c967cb96b434be8c4b41e23c095b7a9ad8b4bef87edbf92f42a98ebed",
+    "png_path": "images/vanilla_parity/000016.jpg.png",
+    "png_sha256": "c3f7a2b18276d2a45fce076f6d9b5d9b94dcfc17fb9da175841ab76fa8d4e3ea"
+  }
+]

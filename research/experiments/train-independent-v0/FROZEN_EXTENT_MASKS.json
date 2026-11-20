@@ -1,0 +1,88 @@
+{
+  "extent": {
+    "scene": "truck",
+    "camera_set": "training_every8_holdout",
+    "cameras": 219,
+    "sfm_points": 136029,
+    "native_extent": 5.847915172576904,
+    "iadc_eq11_extent": 7.200865745544434,
+    "corrected_over_native": 1.2313560530617866,
+    "native_world_bound": 0.5847915172576904,
+    "corrected_world_bound": 0.7200865745544434
+  },
+  "events": [
+    {
+      "event": 3600,
+      "source": "/mnt/d/Documents/my 3dgs/research/experiments/frozen-prune-v0/capture",
+      "counts": [
+        {
+          "policy": "native",
+          "removed": 1392,
+          "new_split_removed": 18,
+          "restored_vs_native": 0,
+          "new_split_restored": 0
+        },
+        {
+          "policy": "no_world",
+          "removed": 1034,
+          "new_split_removed": 0,
+          "restored_vs_native": 358,
+          "new_split_restored": 18
+        },
+        {
+          "policy": "eq11_prune_only",
+          "removed": 1056,
+          "new_split_removed": 2,
+          "restored_vs_native": 336,
+          "new_split_restored": 16
+        },
+        {
+          "policy": "rescue_new_world_only",
+          "removed": 1374,
+          "new_split_removed": 0,
+          "restored_vs_native": 18,
+          "new_split_restored": 18
+        }
+      ],
+      "eligible_new_split": 18,
+      "eq11_remaining_new_target": 2
+    },
+    {
+      "event": 3700,
+      "source": "/mnt/d/Documents/my 3dgs/research/experiments/frozen-prune-confirm-v0/capture",
+      "counts": [
+        {
+          "policy": "native",
+          "removed": 1415,
+          "new_split_removed": 14,
+          "restored_vs_native": 0,
+          "new_split_restored": 0
+        },
+        {
+          "policy": "no_world",
+          "removed": 1078,
+          "new_split_removed": 0,
+          "restored_vs_native": 337,
+          "new_split_restored": 14
+        },
+        {
+          "policy": "eq11_prune_only",
+          "removed": 1094,
+          "new_split_removed": 4,
+          "restored_vs_native": 321,
+          "new_split_restored": 10
+        },
+        {
+          "policy": "rescue_new_world_only",
+          "removed": 1401,
+          "new_split_removed": 0,
+          "restored_vs_native": 14,
+          "new_split_restored": 14
+        }
+      ],
+      "eligible_new_split": 14,
+      "eq11_remaining_new_target": 4
+    }
+  ],
+  "scope": "Posthoc CPU mask classification on the two existing Truck captures. Eq11 prune-only adaptation is not full IADC or global extent baseline. No render/quality or candidate efficacy inference; no new event selection."
+}

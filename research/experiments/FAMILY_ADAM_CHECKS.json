@@ -1,0 +1,46 @@
+{
+  "status": "pass",
+  "device": "cpu",
+  "actual_module_checked": true,
+  "standard_policy_reference_max_error": 4.440892098500626e-16,
+  "clock_vs_effective_schedule_max_error": 2.220446049250313e-16,
+  "policies": [
+    {
+      "policy": "legacy",
+      "finite": true,
+      "source_parameter_unchanged_by_propose": true,
+      "survivors_unchanged": true
+    },
+    {
+      "policy": "inherit",
+      "finite": true,
+      "source_parameter_unchanged_by_propose": true,
+      "survivors_unchanged": true
+    },
+    {
+      "policy": "fresh",
+      "finite": true,
+      "source_parameter_unchanged_by_propose": true,
+      "survivors_unchanged": true
+    },
+    {
+      "policy": "rotated_fresh",
+      "finite": true,
+      "source_parameter_unchanged_by_propose": true,
+      "survivors_unchanged": true
+    },
+    {
+      "policy": "rotated_old_difference",
+      "finite": true,
+      "source_parameter_unchanged_by_propose": true,
+      "survivors_unchanged": true
+    },
+    {
+      "policy": "mode_clock",
+      "finite": true,
+      "source_parameter_unchanged_by_propose": true,
+      "survivors_unchanged": true
+    }
+  ],
+  "scope": "Numerical module checks only; no renderer or scientific efficacy evidence."
+}

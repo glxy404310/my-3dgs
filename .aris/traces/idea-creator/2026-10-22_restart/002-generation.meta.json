@@ -1,0 +1,14 @@
+{
+  "call_number": 2,
+  "purpose": "generation",
+  "agent_id": "/root/restart_resource_reliability",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "role": "generation-only; no ranking",
+  "final_candidates": 6,
+  "operational_note": "Initial retrieval interrupted after6 interimmechanisms; sameagentfollowup finalized currentJSON; no candidates discarded."
+}

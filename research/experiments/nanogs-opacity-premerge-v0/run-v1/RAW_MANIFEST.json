@@ -1,0 +1,794 @@
+[
+  {
+    "path": "raw/GT/000001.jpg.npz",
+    "sha256": "75d0523ca5dd061c464fe59c43e015f3efcb9fe8de33d7ffd8a6746e0138053c",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000001.jpg.npz",
+    "sha256": "9d395718e3593f46d36d86c6a4d494e7895a7226b53de44339a9bd8644b8da7f",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000009.jpg.npz",
+    "sha256": "6ed1fcc65e247450c8aa00b8638308b6b8d93e22e715b605d48623a361948ae5",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000009.jpg.npz",
+    "sha256": "e6cb4e3a11071267fe8e1ab195497fee590d3116694eeeed4cbcd03a1631950d",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000017.jpg.npz",
+    "sha256": "7ef26daf1a4d28fd2f53707145b56e6f47048c99965c767abcb8e411d5d8e718",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000017.jpg.npz",
+    "sha256": "6bcd7392b2d5fcf50c6b8c0ba96d74af147f5cba0e5791a31a1818b9a55b6eaf",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000025.jpg.npz",
+    "sha256": "2afb731450fda68db0f9735eddfc63840c5d8db1a16ec60fbc0cacf7afbcab1b",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000025.jpg.npz",
+    "sha256": "fc4a8988f7563a6898321329f01d47dd9b9e02fb68e869952d96780cc3e0cef8",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000033.jpg.npz",
+    "sha256": "4835c0e1047d273d5e63bbba7610c958a61e854e7e8aea2c3e7c410aacdf24d9",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000033.jpg.npz",
+    "sha256": "21a21c7f81976de75fbddf102f355d7f2e96dbbcfadbeaea28165586602c9593",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000041.jpg.npz",
+    "sha256": "244716f92a4a69bd9eeb5b6c097cf5ae0bcf961483425de3261cd0ceb6883f8a",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000041.jpg.npz",
+    "sha256": "a9f7a1ad4076dc9f1017a45513d86ca274a7ff27be7db2c78929cfa8e4d5a182",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000049.jpg.npz",
+    "sha256": "5107c7f17f5de7d4faa0e753d1ea41eaacc020dabeac83314656243fbbe3bc8d",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000049.jpg.npz",
+    "sha256": "a40f1f62c7e7a06d945ed351e9d835fbe26360d413b0169e25e5766a315fb4b2",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000057.jpg.npz",
+    "sha256": "a7bed7d3d1806149b13a10cadfbb649ac9bc6adce38e9139b3212cd7c5797532",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000057.jpg.npz",
+    "sha256": "91829653ae8b0e5ce59c4010c6a4c580e14d7e5b51b60c8956bd61ced1eea5f7",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000065.jpg.npz",
+    "sha256": "a790aaaf834362e88ff6466b75ef1cd730c23cda1f55831382bf49c9d6efab32",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000065.jpg.npz",
+    "sha256": "ce946369945233c507ae799ffb119c9fe518a07e46849b91eebb01e31ee91ea2",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000073.jpg.npz",
+    "sha256": "2ec05ee3e93248d84efd918eb347d4b8a7ea4cd8ec1bb554b5da76afc37a076e",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000073.jpg.npz",
+    "sha256": "11a478e92221d114731a061b77ab7efe23d8406a4d6366e1e7928948dfc4ef3f",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000081.jpg.npz",
+    "sha256": "0c454860671110b87237b8a0417371309a5c8b23d7507a4bbf7cb5ce20e1ffcf",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000081.jpg.npz",
+    "sha256": "a196367fb6ed512394f4f62284b7ca101c10b789ab1dc4181619439a1b053b2a",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000089.jpg.npz",
+    "sha256": "ef70e42bdb4a10a98fbac4b1e2b52e5ebb08c162b4167ea26649f617598ab9e8",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000089.jpg.npz",
+    "sha256": "64a68a8a86d468680a62105a5ebc0c94f5745a39d7b4a7414872beb5f86ac08f",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000097.jpg.npz",
+    "sha256": "2527d2413defa0226b4e293ea8cd2eb6bb8459b111f480fc4c4ef616cd7d05fb",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000097.jpg.npz",
+    "sha256": "d25cccb851235a73443113b72276ccad8c426b774142e6ca4c028c300bd128c2",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000105.jpg.npz",
+    "sha256": "4ab1abcaf0462cf335870559081b7fee2342ea8b61c4610c4f5a5332b41cb90d",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000105.jpg.npz",
+    "sha256": "5c7c4c5f44f963abb6793d29a916f74e0f852ec6e3f436cb283da3beb2ab7b51",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000113.jpg.npz",
+    "sha256": "5b3e2061efff1c35d2cc57b12d5d02ee8d2a5548dce47c5df4435cf9bd7bdff6",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000113.jpg.npz",
+    "sha256": "e193919f9dda45671d19adfd54b1a41b6bbd3c693ef46407f3f4ded0c8d90671",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000121.jpg.npz",
+    "sha256": "102154db6930008895c6ff2ffb7e00c8438c3d0714ed41053ef676fea8f2b028",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000121.jpg.npz",
+    "sha256": "326ff243296cacb6943ccdc9d4213992de04e70ac2f2e1ca607916e82e8fbb01",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000129.jpg.npz",
+    "sha256": "b940c9c837dd01cd44ebf157b35172076d1b0e52d40536932ce3e42410d6eb38",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000129.jpg.npz",
+    "sha256": "35ca63ced74af45ee11861bd5129c17fd680b502c2c7d0be07f71ebce2690201",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000137.jpg.npz",
+    "sha256": "58a969c748ab036b89579f309a4d4e386e8b60114bc94662bb0dbb51b3a197a1",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000137.jpg.npz",
+    "sha256": "516f9fb8bb04ab6edbe4da644686d379f951c30bae3635ea8ccb5ccc816edce9",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000145.jpg.npz",
+    "sha256": "d2c6f65c0d4868aec6e8b1b120513cae1d9b2d57770df46f792d64f35842ace4",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000145.jpg.npz",
+    "sha256": "5d9cedc833b9cf33d2ab7683639288d8aa14695169f964112bf4685cbd9dfcf1",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000153.jpg.npz",
+    "sha256": "e95e6fc597a6d68fcc34bc089275b2f7f4a52dcfcd3226cb20198a4c002dbc78",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000153.jpg.npz",
+    "sha256": "0ab241d65eda43bafbb614663c2d1fe7f43fe30a1ad3e9d19ce56c61a13f9649",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000161.jpg.npz",
+    "sha256": "c341ab5131bbbbdaabb03ba2ed6dec0d9c7c16dbb4bcfd7e90138f40b28587f5",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000161.jpg.npz",
+    "sha256": "cfd624fd85c31bc248f8d42367818b05c1a65878263841a0dee82964a22c4ff3",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000169.jpg.npz",
+    "sha256": "050ce5812036a2b7435bc759a47cb11513a7a9137ebaa74fa486d349e15ca4e6",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000169.jpg.npz",
+    "sha256": "da462ec4b09d4a09770e1cb6822465a19b1a6ade782fd7d887599af71b69a3a5",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000177.jpg.npz",
+    "sha256": "c7b890bbc0da37e50723019161412af725ddec7738bd9d8a90b43251e5b8780e",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000177.jpg.npz",
+    "sha256": "4b5b3866c5ade0d21b5af8d396261c41f63c21b9ccbd56170a12cabfea197195",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000185.jpg.npz",
+    "sha256": "ccf507e8aa8c8307ae9fb0f4f918393681e6aab458364546619387086abd3733",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000185.jpg.npz",
+    "sha256": "f6548e157569e8134047cb91377f189a1bd9f348c904af2f6487ad3de0a65a48",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000193.jpg.npz",
+    "sha256": "97a3cc3b48a240d761b21522944501aab1a4356618d25348d976be8627525da4",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000193.jpg.npz",
+    "sha256": "2dee8f1d6aca1cfa974b3fc7c1192618f392f7b527eceb7d0bc6728c693c96f6",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000201.jpg.npz",
+    "sha256": "308a4a7886b5dd9585bec3b0652c7bb02b60d4b328c2989666737a54b9efb182",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000201.jpg.npz",
+    "sha256": "1dc8274086a0e593e655416fb3c40976e6bfbe06a1c298537c5cce5b837df8cf",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000209.jpg.npz",
+    "sha256": "dfd74a9a2497a19412ff77c65817afd2c6d84ebc6875cca647c26dde9edaff19",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000209.jpg.npz",
+    "sha256": "f5025aed471da65dfc5ebde3063dbd473f4f5bbbefde7a013f102421241e5de4",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000217.jpg.npz",
+    "sha256": "60ddbc46a97f80502cba24d55d447e869f5042b196b4e3edd1fd919793e8f621",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000217.jpg.npz",
+    "sha256": "b828a1ceabfc8bbc4c1c9b1f3549fdbc9b4d22bb57cf4e8d22f7f51cdd5b3258",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000225.jpg.npz",
+    "sha256": "e05e0c993392e1f6970ecb290f40cae1c536109f6bc121c5b22081663fc0ff05",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000225.jpg.npz",
+    "sha256": "3f16275f96b2c60617f8a6f842d55928f256caf4c52e44c68dee7a7a85b95556",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000233.jpg.npz",
+    "sha256": "b2e9eb6b3d50369a7c91a62ba79b83a52140943a8a9d30aa4b20d2272bc88e7a",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000233.jpg.npz",
+    "sha256": "d7a71918c938939b90c7875c338c7760325c27f3d93f507f90568ee71dd09ea6",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000241.jpg.npz",
+    "sha256": "f5124c1c33a64c4889de444ea2850edf5e22c51bfd9fe786ddb3246614e38460",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000241.jpg.npz",
+    "sha256": "6a516f222aadef053e327396cfa2fe1816e17c7431802a6804771687178a2f0f",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000249.jpg.npz",
+    "sha256": "137ac84b685cc5e5f271f8c8e45899d340c4a25cff3b67bd9f51b0b9a8c9546c",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000249.jpg.npz",
+    "sha256": "28dc5e814463f29b1c2c6e39af5d365300542ba7fb453abc19437ac885914843",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  },
+  {
+    "path": "raw/GT/000016.jpg.npz",
+    "sha256": "c3c10ed2dc083432419d53f2cd195849371f6062313d7a223ae946ac43ee77ff",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "GT"
+  },
+  {
+    "path": "raw/premerge/000016.jpg.npz",
+    "sha256": "d24c9ca037cf4fa407fc909df2d8130c3299eea74aa272888e6f3d721b482925",
+    "bytes": 6414668,
+    "dtype": "float32",
+    "shape": [
+      3,
+      546,
+      979
+    ],
+    "role": "premerge"
+  }
+]

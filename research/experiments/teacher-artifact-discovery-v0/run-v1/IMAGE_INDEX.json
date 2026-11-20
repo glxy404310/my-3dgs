@@ -1,0 +1,182 @@
+[
+  {
+    "selected_index": 0,
+    "name": "000002.jpg",
+    "teacher_origin": "reused_old_base_byte_for_byte",
+    "teacher_float": "raw/teacher/000002.jpg.npy",
+    "GT_float": "raw/GT/000002.jpg.npy",
+    "pair_png": "panels/00_000002.jpg_teacher_left_GT_right.png",
+    "pair_size_wh": [
+      1958,
+      546
+    ],
+    "left": "frozen mature teacher",
+    "right": "current native original GT",
+    "role": "discovery only; not independent confirmation"
+  },
+  {
+    "selected_index": 1,
+    "name": "000023.jpg",
+    "teacher_origin": "reused_old_base_byte_for_byte",
+    "teacher_float": "raw/teacher/000023.jpg.npy",
+    "GT_float": "raw/GT/000023.jpg.npy",
+    "pair_png": "panels/01_000023.jpg_teacher_left_GT_right.png",
+    "pair_size_wh": [
+      1958,
+      546
+    ],
+    "left": "frozen mature teacher",
+    "right": "current native original GT",
+    "role": "discovery only; not independent confirmation"
+  },
+  {
+    "selected_index": 2,
+    "name": "000046.jpg",
+    "teacher_origin": "reused_old_base_byte_for_byte",
+    "teacher_float": "raw/teacher/000046.jpg.npy",
+    "GT_float": "raw/GT/000046.jpg.npy",
+    "pair_png": "panels/02_000046.jpg_teacher_left_GT_right.png",
+    "pair_size_wh": [
+      1958,
+      546
+    ],
+    "left": "frozen mature teacher",
+    "right": "current native original GT",
+    "role": "discovery only; not independent confirmation"
+  },
+  {
+    "selected_index": 3,
+    "name": "000069.jpg",
+    "teacher_origin": "one_new_unperturbed_native_forward",
+    "teacher_float": "raw/teacher/000069.jpg.npy",
+    "GT_float": "raw/GT/000069.jpg.npy",
+    "pair_png": "panels/03_000069.jpg_teacher_left_GT_right.png",
+    "pair_size_wh": [
+      1958,
+      546
+    ],
+    "left": "frozen mature teacher",
+    "right": "current native original GT",
+    "role": "discovery only; not independent confirmation"
+  },
+  {
+    "selected_index": 4,
+    "name": "000092.jpg",
+    "teacher_origin": "one_new_unperturbed_native_forward",
+    "teacher_float": "raw/teacher/000092.jpg.npy",
+    "GT_float": "raw/GT/000092.jpg.npy",
+    "pair_png": "panels/04_000092.jpg_teacher_left_GT_right.png",
+    "pair_size_wh": [
+      1958,
+      546
+    ],
+    "left": "frozen mature teacher",
+    "right": "current native original GT",
+    "role": "discovery only; not independent confirmation"
+  },
+  {
+    "selected_index": 5,
+    "name": "000115.jpg",
+    "teacher_origin": "one_new_unperturbed_native_forward",
+    "teacher_float": "raw/teacher/000115.jpg.npy",
+    "GT_float": "raw/GT/000115.jpg.npy",
+    "pair_png": "panels/05_000115.jpg_teacher_left_GT_right.png",
+    "pair_size_wh": [
+      1958,
+      546
+    ],
+    "left": "frozen mature teacher",
+    "right": "current native original GT",
+    "role": "discovery only; not independent confirmation"
+  },
+  {
+    "selected_index": 6,
+    "name": "000136.jpg",
+    "teacher_origin": "one_new_unperturbed_native_forward",
+    "teacher_float": "raw/teacher/000136.jpg.npy",
+    "GT_float": "raw/GT/000136.jpg.npy",
+    "pair_png": "panels/06_000136.jpg_teacher_left_GT_right.png",
+    "pair_size_wh": [
+      1958,
+      546
+    ],
+    "left": "frozen mature teacher",
+    "right": "current native original GT",
+    "role": "discovery only; not independent confirmation"
+  },
+  {
+    "selected_index": 7,
+    "name": "000159.jpg",
+    "teacher_origin": "one_new_unperturbed_native_forward",
+    "teacher_float": "raw/teacher/000159.jpg.npy",
+    "GT_float": "raw/GT/000159.jpg.npy",
+    "pair_png": "panels/07_000159.jpg_teacher_left_GT_right.png",
+    "pair_size_wh": [
+      1958,
+      546
+    ],
+    "left": "frozen mature teacher",
+    "right": "current native original GT",
+    "role": "discovery only; not independent confirmation"
+  },
+  {
+    "selected_index": 8,
+    "name": "000182.jpg",
+    "teacher_origin": "one_new_unperturbed_native_forward",
+    "teacher_float": "raw/teacher/000182.jpg.npy",
+    "GT_float": "raw/GT/000182.jpg.npy",
+    "pair_png": "panels/08_000182.jpg_teacher_left_GT_right.png",
+    "pair_size_wh": [
+      1958,
+      546
+    ],
+    "left": "frozen mature teacher",
+    "right": "current native original GT",
+    "role": "discovery only; not independent confirmation"
+  },
+  {
+    "selected_index": 9,
+    "name": "000205.jpg",
+    "teacher_origin": "one_new_unperturbed_native_forward",
+    "teacher_float": "raw/teacher/000205.jpg.npy",
+    "GT_float": "raw/GT/000205.jpg.npy",
+    "pair_png": "panels/09_000205.jpg_teacher_left_GT_right.png",
+    "pair_size_wh": [
+      1958,
+      546
+    ],
+    "left": "frozen mature teacher",
+    "right": "current native original GT",
+    "role": "discovery only; not independent confirmation"
+  },
+  {
+    "selected_index": 10,
+    "name": "000228.jpg",
+    "teacher_origin": "one_new_unperturbed_native_forward",
+    "teacher_float": "raw/teacher/000228.jpg.npy",
+    "GT_float": "raw/GT/000228.jpg.npy",
+    "pair_png": "panels/10_000228.jpg_teacher_left_GT_right.png",
+    "pair_size_wh": [
+      1958,
+      546
+    ],
+    "left": "frozen mature teacher",
+    "right": "current native original GT",
+    "role": "discovery only; not independent confirmation"
+  },
+  {
+    "selected_index": 11,
+    "name": "000251.jpg",
+    "teacher_origin": "one_new_unperturbed_native_forward",
+    "teacher_float": "raw/teacher/000251.jpg.npy",
+    "GT_float": "raw/GT/000251.jpg.npy",
+    "pair_png": "panels/11_000251.jpg_teacher_left_GT_right.png",
+    "pair_size_wh": [
+      1958,
+      546
+    ],
+    "left": "frozen mature teacher",
+    "right": "current native original GT",
+    "role": "discovery only; not independent confirmation"
+  }
+]

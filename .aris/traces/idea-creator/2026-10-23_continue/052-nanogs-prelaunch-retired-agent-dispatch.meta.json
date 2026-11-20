@@ -1,0 +1,7 @@
+{
+  "call_number": 52,
+  "status": "dispatch_failed",
+  "review_received": false,
+  "reviewer_family": "openai",
+  "acceptance_status": "not_reviewed"
+}

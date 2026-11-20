@@ -1,0 +1,192 @@
+{
+  "schema": "direct-sh8-storage-control-v0/result-v1",
+  "status": "verified",
+  "started_utc": "2026-10-22T22:02:34.662211+00:00",
+  "points": 2050770,
+  "sh_degree": 3,
+  "source": {
+    "path": "/home/administrator/projects/gaussian-splatting/output/truck_30000_r1/point_cloud/iteration_30000/point_cloud.ply",
+    "expected_sha256": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+    "bytes_before": 508592492,
+    "sha256_before": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+    "bytes_after": 508592492,
+    "sha256_after": "3d222d1a0a3e9514730a32bdaf0900ebe8866493081d61d99826d009e9f77736",
+    "unchanged": true
+  },
+  "codec": {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/control.dsh8",
+    "bytes": 239940218,
+    "sha256": "0b6e62e28165df7e89635575906af403cc0952cc50f420d86d2e46da861a1038",
+    "header_sha256": "72a1fe9cea829887424995856028f4e237fc1c87e4aa21f5894b892ddeebfd37",
+    "payload_sha256": "c1d5e5d2a380c56e42f1232f030f1d4c072dfee7ff3abbf24574b78ad0d3b685"
+  },
+  "decoded_ply": {
+    "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/decoded.ply",
+    "bytes": 508592492,
+    "sha256": "2de17e7d0ce7d667fb384a95b547eac2e90308762356ace3f6c5501b1b5efe1b"
+  },
+  "code_sha256": {
+    "CONTRACT.md": "a65d991ba414f386e770a8c4fb24ee13d4935a50fd3a747180c2266b1aefbcb9",
+    "ASSUMPTIONS.md": "d1ba9da7de54ca7b3f28f9e1d55e50745233def685c71ea1905ae97dca236985",
+    "encode.py": "307ff7bb1824e61d03d3dba5b8701bddeb45f82090036632f7414840e2305379",
+    "decode.py": "b64a2356eb5722695f05e8ee4aad260e4d4605b94e86c36ab85234e59fb2f4b0",
+    "verify.py": "d3b7dabdabfcb390692e5e85405f9ae745e3b7c359ebab380f365a4bebf2329f",
+    "run_control.py": "51f4bb68a42f9a669758d795dec873526f1e99d6cf44eb951cc1da9b2dfcf16c",
+    "run-control.sh": "62dce14a8eae3d8acf5957f17b27297746f475a9e27b8b58b126d74e0bd72e5b",
+    "prepare_test.py": "4f8f5cf2fa292cf4585d9235ec882787e7f3d6d8fccba680847d91a26c46bff1"
+  },
+  "reports": {
+    "encode": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/encode.json",
+      "sha256": "78923b0fb5c4196fe7f840abb79981e7db1b886502f85a00445c3b714b3fd82d"
+    },
+    "decode": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/decode.json",
+      "sha256": "18a23619d6ad5bf919e3903333a0f121bf6d0e401e72c07ca99b1329cf9e2bb8"
+    },
+    "verify": {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/verify.json",
+      "sha256": "071dbd92aa0aeebc3d7ac5c4c2323d04b2775d597b9812f58d1237860beda54b"
+    }
+  },
+  "runtime": {
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "executable": "/home/administrator/venvs/3dgs/bin/python",
+    "numpy": "2.2.6",
+    "plyfile": "1.1.5",
+    "gpu_used": false
+  },
+  "fields": [
+    "x",
+    "y",
+    "z",
+    "nx",
+    "ny",
+    "nz",
+    "f_dc_0",
+    "f_dc_1",
+    "f_dc_2",
+    "f_rest_0",
+    "f_rest_1",
+    "f_rest_2",
+    "f_rest_3",
+    "f_rest_4",
+    "f_rest_5",
+    "f_rest_6",
+    "f_rest_7",
+    "f_rest_8",
+    "f_rest_9",
+    "f_rest_10",
+    "f_rest_11",
+    "f_rest_12",
+    "f_rest_13",
+    "f_rest_14",
+    "f_rest_15",
+    "f_rest_16",
+    "f_rest_17",
+    "f_rest_18",
+    "f_rest_19",
+    "f_rest_20",
+    "f_rest_21",
+    "f_rest_22",
+    "f_rest_23",
+    "f_rest_24",
+    "f_rest_25",
+    "f_rest_26",
+    "f_rest_27",
+    "f_rest_28",
+    "f_rest_29",
+    "f_rest_30",
+    "f_rest_31",
+    "f_rest_32",
+    "f_rest_33",
+    "f_rest_34",
+    "f_rest_35",
+    "f_rest_36",
+    "f_rest_37",
+    "f_rest_38",
+    "f_rest_39",
+    "f_rest_40",
+    "f_rest_41",
+    "f_rest_42",
+    "f_rest_43",
+    "f_rest_44",
+    "opacity",
+    "scale_0",
+    "scale_1",
+    "scale_2",
+    "rot_0",
+    "rot_1",
+    "rot_2",
+    "rot_3"
+  ],
+  "checks": {
+    "retained_exact": true,
+    "q_formula_exact": true,
+    "decoded_formula_exact": true,
+    "error_bound_violations": 0
+  },
+  "storage": {
+    "actual_codec_bytes": 239940218,
+    "source_bytes": 508592492,
+    "source_over_codec": 2.1196633738158894,
+    "codec_over_source": 0.4717730241287164,
+    "supplied_half_point_ply_bytes": 254297012,
+    "codec_over_supplied_half_point_ply": 0.9435432060837584,
+    "predicted_payload_bytes": 239940090,
+    "header_bytes": 128,
+    "scope": "actual single-file storage only; decoded points/VRAM/render work unchanged"
+  },
+  "available_files": [
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/control.dsh8",
+      "bytes": 239940218,
+      "partial": false,
+      "sha256": "0b6e62e28165df7e89635575906af403cc0952cc50f420d86d2e46da861a1038"
+    },
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/decode.json",
+      "bytes": 1878,
+      "partial": false,
+      "sha256": "18a23619d6ad5bf919e3903333a0f121bf6d0e401e72c07ca99b1329cf9e2bb8"
+    },
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/decode.log",
+      "bytes": 0,
+      "partial": false,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/decoded.ply",
+      "bytes": 508592492,
+      "partial": false,
+      "sha256": "2de17e7d0ce7d667fb384a95b547eac2e90308762356ace3f6c5501b1b5efe1b"
+    },
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/encode.json",
+      "bytes": 848,
+      "partial": false,
+      "sha256": "78923b0fb5c4196fe7f840abb79981e7db1b886502f85a00445c3b714b3fd82d"
+    },
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/encode.log",
+      "bytes": 0,
+      "partial": false,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/verify.json",
+      "bytes": 34606,
+      "partial": false,
+      "sha256": "071dbd92aa0aeebc3d7ac5c4c2323d04b2775d597b9812f58d1237860beda54b"
+    },
+    {
+      "path": "/mnt/d/Documents/my 3dgs/research/experiments/direct-sh8-storage-control-v0/run-v1/verify.log",
+      "bytes": 0,
+      "partial": false,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "finished_utc": "2026-10-22T22:03:01.433543+00:00",
+  "elapsed_seconds": 26.771358977
+}

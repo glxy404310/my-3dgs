@@ -1,0 +1,14 @@
+{
+  "call_number": 15,
+  "purpose": "scipy-env-follows-doc",
+  "timestamp": "2026-10-23T01:10:02.612455+08:00",
+  "agent_id": "01a16494-4c95-7b70-93d4-23a6c50d8128",
+  "agent_path": "/root/scipy_env_follows_doc",
+  "model": "inherited-primary",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "status": "ok",
+  "request_recovered_verbatim": true,
+  "response_recovered_verbatim": true
+}

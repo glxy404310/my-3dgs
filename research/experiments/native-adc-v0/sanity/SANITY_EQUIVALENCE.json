@@ -1,0 +1,340 @@
+{
+  "status": "fail",
+  "failures": [
+    "events",
+    "checkpoint/0/1:values",
+    "checkpoint/0/2:values",
+    "checkpoint/0/3:values",
+    "checkpoint/0/4:values",
+    "checkpoint/0/5:values",
+    "checkpoint/0/6:values",
+    "checkpoint/0/10/state/0/exp_avg:values",
+    "checkpoint/0/10/state/0/exp_avg_sq:values",
+    "checkpoint/0/10/state/1/exp_avg:values",
+    "checkpoint/0/10/state/1/exp_avg_sq:values",
+    "checkpoint/0/10/state/2/exp_avg:values",
+    "checkpoint/0/10/state/2/exp_avg_sq:values",
+    "checkpoint/0/10/state/3/exp_avg:values",
+    "checkpoint/0/10/state/3/exp_avg_sq:values",
+    "checkpoint/0/10/state/4/exp_avg:values",
+    "checkpoint/0/10/state/4/exp_avg_sq:values",
+    "checkpoint/0/10/state/5/exp_avg:values",
+    "checkpoint/0/10/state/5/exp_avg_sq:values"
+  ],
+  "tensors": [
+    {
+      "path": "checkpoint/0/1",
+      "shape": [
+        1093438,
+        3
+      ],
+      "exact": false,
+      "close": false,
+      "max_abs": 157.0081024169922,
+      "rtol": 1e-05,
+      "atol": 1e-06
+    },
+    {
+      "path": "checkpoint/0/2",
+      "shape": [
+        1093438,
+        1,
+        3
+      ],
+      "exact": false,
+      "close": false,
+      "max_abs": 8.427593231201172,
+      "rtol": 1e-05,
+      "atol": 1e-06
+    },
+    {
+      "path": "checkpoint/0/3",
+      "shape": [
+        1093438,
+        15,
+        3
+      ],
+      "exact": false,
+      "close": false,
+      "max_abs": 0.33444613218307495,
+      "rtol": 1e-05,
+      "atol": 1e-06
+    },
+    {
+      "path": "checkpoint/0/4",
+      "shape": [
+        1093438,
+        3
+      ],
+      "exact": false,
+      "close": false,
+      "max_abs": 14.205970764160156,
+      "rtol": 1e-05,
+      "atol": 1e-06
+    },
+    {
+      "path": "checkpoint/0/5",
+      "shape": [
+        1093438,
+        4
+      ],
+      "exact": false,
+      "close": false,
+      "max_abs": 1.857046365737915,
+      "rtol": 1e-05,
+      "atol": 1e-06
+    },
+    {
+      "path": "checkpoint/0/6",
+      "shape": [
+        1093438,
+        1
+      ],
+      "exact": false,
+      "close": false,
+      "max_abs": 11.185087203979492,
+      "rtol": 1e-05,
+      "atol": 1e-06
+    },
+    {
+      "path": "checkpoint/0/7",
+      "shape": [
+        1093438
+      ],
+      "exact": true,
+      "close": true,
+      "max_abs": 0.0,
+      "rtol": 1e-05,
+      "atol": 1e-06
+    },
+    {
+      "path": "checkpoint/0/8",
+      "shape": [
+        1093438,
+        1
+      ],
+      "exact": true,
+      "close": true,
+      "max_abs": 0.0,
+      "rtol": 1e-05,
+      "atol": 1e-06
+    },
+    {
+      "path": "checkpoint/0/9",
+      "shape": [
+        1093438,
+        1
+      ],
+      "exact": true,
+      "close": true,
+      "max_abs": 0.0,
+      "rtol": 1e-05,
+      "atol": 1e-06
+    },
+    {
+      "path": "checkpoint/0/10/state/0/step",
+      "shape": [],
+      "exact": true,
+      "close": true,
+      "max_abs": 0.0,
+      "rtol": 1e-05,
+      "atol": 1e-06
+    },
+    {
+      "path": "checkpoint/0/10/state/0/exp_avg",
+      "shape": [
+        1093438,
+        3
+      ],
+      "exact": false,
+      "close": false,
+      "max_abs": 0.003424973227083683,
+      "rtol": 0.0001,
+      "atol": 1e-10
+    },
+    {
+      "path": "checkpoint/0/10/state/0/exp_avg_sq",
+      "shape": [
+        1093438,
+        3
+      ],
+      "exact": false,
+      "close": false,
+      "max_abs": 2.2717826141160913e-05,
+      "rtol": 0.0001,
+      "atol": 1e-10
+    },
+    {
+      "path": "checkpoint/0/10/state/1/step",
+      "shape": [],
+      "exact": true,
+      "close": true,
+      "max_abs": 0.0,
+      "rtol": 1e-05,
+      "atol": 1e-06
+    },
+    {
+      "path": "checkpoint/0/10/state/1/exp_avg",
+      "shape": [
+        1093438,
+        1,
+        3
+      ],
+      "exact": false,
+      "close": false,
+      "max_abs": 4.657115277950652e-05,
+      "rtol": 0.0001,
+      "atol": 1e-10
+    },
+    {
+      "path": "checkpoint/0/10/state/1/exp_avg_sq",
+      "shape": [
+        1093438,
+        1,
+        3
+      ],
+      "exact": false,
+      "close": false,
+      "max_abs": 4.922739105239771e-09,
+      "rtol": 0.0001,
+      "atol": 1e-10
+    },
+    {
+      "path": "checkpoint/0/10/state/2/step",
+      "shape": [],
+      "exact": true,
+      "close": true,
+      "max_abs": 0.0,
+      "rtol": 1e-05,
+      "atol": 1e-06
+    },
+    {
+      "path": "checkpoint/0/10/state/2/exp_avg",
+      "shape": [
+        1093438,
+        15,
+        3
+      ],
+      "exact": false,
+      "close": false,
+      "max_abs": 9.795858204597607e-05,
+      "rtol": 0.0001,
+      "atol": 1e-10
+    },
+    {
+      "path": "checkpoint/0/10/state/2/exp_avg_sq",
+      "shape": [
+        1093438,
+        15,
+        3
+      ],
+      "exact": false,
+      "close": false,
+      "max_abs": 1.1437947478043498e-08,
+      "rtol": 0.0001,
+      "atol": 1e-10
+    },
+    {
+      "path": "checkpoint/0/10/state/3/step",
+      "shape": [],
+      "exact": true,
+      "close": true,
+      "max_abs": 0.0,
+      "rtol": 1e-05,
+      "atol": 1e-06
+    },
+    {
+      "path": "checkpoint/0/10/state/3/exp_avg",
+      "shape": [
+        1093438,
+        1
+      ],
+      "exact": false,
+      "close": false,
+      "max_abs": 0.00010546332487137988,
+      "rtol": 0.0001,
+      "atol": 1e-10
+    },
+    {
+      "path": "checkpoint/0/10/state/3/exp_avg_sq",
+      "shape": [
+        1093438,
+        1
+      ],
+      "exact": false,
+      "close": false,
+      "max_abs": 1.376413383269437e-08,
+      "rtol": 0.0001,
+      "atol": 1e-10
+    },
+    {
+      "path": "checkpoint/0/10/state/4/step",
+      "shape": [],
+      "exact": true,
+      "close": true,
+      "max_abs": 0.0,
+      "rtol": 1e-05,
+      "atol": 1e-06
+    },
+    {
+      "path": "checkpoint/0/10/state/4/exp_avg",
+      "shape": [
+        1093438,
+        3
+      ],
+      "exact": false,
+      "close": false,
+      "max_abs": 9.511065582046285e-05,
+      "rtol": 0.0001,
+      "atol": 1e-10
+    },
+    {
+      "path": "checkpoint/0/10/state/4/exp_avg_sq",
+      "shape": [
+        1093438,
+        3
+      ],
+      "exact": false,
+      "close": false,
+      "max_abs": 9.362728548012456e-08,
+      "rtol": 0.0001,
+      "atol": 1e-10
+    },
+    {
+      "path": "checkpoint/0/10/state/5/step",
+      "shape": [],
+      "exact": true,
+      "close": true,
+      "max_abs": 0.0,
+      "rtol": 1e-05,
+      "atol": 1e-06
+    },
+    {
+      "path": "checkpoint/0/10/state/5/exp_avg",
+      "shape": [
+        1093438,
+        4
+      ],
+      "exact": false,
+      "close": false,
+      "max_abs": 0.00018984152120538056,
+      "rtol": 0.0001,
+      "atol": 1e-10
+    },
+    {
+      "path": "checkpoint/0/10/state/5/exp_avg_sq",
+      "shape": [
+        1093438,
+        4
+      ],
+      "exact": false,
+      "close": false,
+      "max_abs": 1.259152213606285e-07,
+      "rtol": 0.0001,
+      "atol": 1e-10
+    }
+  ],
+  "camera_sequence_match": true,
+  "events_match": false,
+  "scope": "100-step observer-disabled vs enabled, actual checkpoint parameters/statistics/Adam capture. Explicit tolerances fixed before run; not bit-exact claim unless all tensors exact."
+}
